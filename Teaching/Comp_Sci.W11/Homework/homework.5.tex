@@ -1,0 +1,92 @@
+\documentclass[12pt]{article}
+\oddsidemargin=-0.20in
+\evensidemargin=-0.20in
+\textwidth=6.5in
+\topmargin=-.28in
+\textheight=9.2in
+%\usepackage{doublespace}
+ 
+\begin{document}
+\pagestyle{empty}
+ 
+\begin{center}
+{\large {\bf Introduction to Computer Science}}\\
+\medskip
+{\large {\bf Homework Five}}\\
+\medskip
+{ {\bf Due Sunday February 6, 2011}}\\ 
+\end{center}
+
+%\hspace{2mm}\\
+
+\noindent General Instructions
+
+\begin{itemize}
+\setlength{\itemsep}{-1mm}
+  \item Please email me the programs as a .py attachment.
+  \item Name your programs with a helpful name.  Include your name
+    somewhere in the file name.
+  \item Your program should be fully commented.  Be sure to include
+    your name and the date and an overall description of what the
+    program does, in addition to any other comments that are needed. \\
+\end{itemize}
+
+
+
+\noindent This is likely a more annoying assignment than the ones
+we've done thus far.  Give yourself some time to work on it, and if
+you  have questions or need help, be sure to ask.\\
+
+\noindent   Your task is to write two programs.  One program will
+encrypt a plaintext file.  The other program will read in the
+encrypted file and decode it.  There is a third text file that you
+should use as a key. \\
+
+\noindent   The encryption program should:
+
+\begin{itemize}
+    \item Read in a plaintext file.  The user should be able to
+      specify this file.
+
+    \item Encrypt it using another file as a key.  The user should
+      enter the name of the key file.
+
+    \item The encrypted file---i.e. the ciphertext---should be written
+      to a third file.  Again, the user should specify the name for
+      the ciphertext file.  
+
+\end{itemize}
+
+
+\noindent The decryption program should do the opposite.  It should
+read in the cipher text, decode it using the key, and then print out a
+plaintext file. \\
+
+\noindent For the encryption scheme I would recommend the following.
+Convert both the plain text and the key to unicode.  Add these
+together, character by character.  Then take these numbers and convert
+back to characters.  (The characters will look odd, since the unicode
+numbers will be mostly beyond the regular alphabet.  But they'll still
+be readable in a plain text file.)  \\
+
+%\hspace{2mm}\\
+
+\noindent {\bf Alternative Assignment.}  I am certainly open to other
+assignments if this one doesn't sound exciting to you.  The main thing
+I want you to practice is reading in information from a file that may
+not be in the exact format that you want, doing something with that
+information, and then writing that info to another file.  There are
+lots of statistics/data analysis things you could do.  You could also
+have some fun transforming text.  If you want to do an alternative
+assignment, please clear it with me first.  \\
+
+\noindent {\bf Optional Problems.}  I recommend doing these if you
+have time. 
+\begin{itemize}
+\setlength{\itemsep}{-1mm}
+  \item Exercise 4, page 162 of Zelle
+  \item Exercise 10, page 163 of Zelle
+\end{itemize}
+
+
+\end{document}

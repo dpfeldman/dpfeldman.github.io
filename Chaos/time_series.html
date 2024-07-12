@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<title>Logistic Equation: Time Series Plots</title>
+    <script language="javascript" type="text/javascript" src="./jquery.min.js"></script>
+    <script language="javascript" type="text/javascript" src="./dist/jquery.jqplot.js"></script>
+    <script type="text/javascript" src="./dist/plugins/jqplot.canvasTextRenderer.min.js"></script>
+    <script type="text/javascript" src="./dist/plugins/jqplot.canvasAxisLabelRenderer.min.js"></script>
+    <script language="javascript" type="text/javascript" src="./time_series.js"></script>
+<link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="./dist/jquery.jqplot.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="header">
+<h1 align=left>Chaos and Fractals: An Elementary Introduction</font></h1> 
+<h2 align=left>David P. Feldman</h2>  
+<h3 align=left>
+<a href="./index.html">Home</a> | 
+<a href="./programs.html">Programs</a> | 
+<a href="./contents.html">Contents</a> | 
+<a href="./author.html">Author</a> | 
+<a href="./errata.html">Errata</a> | 
+<a href="./teaching.html">Teaching</a/> | 
+<a href="./review.html">Reviews</a> |
+<a href="./buy.html">Buy</a>
+</h3>
+
+</div> <!-- end header -->
+<div class="spacer"></div>
+<br><hr/><br>
+<h1 >Logistic Equation: Time Series Plots</h1>
+
+
+<p>This program will make time series plots for the logistic
+equation <i>f(x)=rx(1-x)</i>.  In the boxes below enter a value for
+the parameter <i>r</i>, the initial condition <i>x<sub>0</sub></i>,
+and <i>n</i>, the number of iterates you want plotted.  </p><br><br>
+
+
+<form>
+<table>
+<tr><td>
+Number of Iterations (<i>n</i>): 
+</td><td>
+<input type="text" name="iterations" value="40"/>
+</td></tr>
+<tr><td>
+Initial condition (<i>x<sub>0</sub></i>): 
+</td>
+<td>
+<input type="text" name="initial" value="0.2" />
+</td></tr>
+<tr><td>
+Parameter (<i>r</i>): 
+</td><td>
+<input type="text" name="param" value="3.2" />
+</td></tr>
+</table><br><br>
+<button type="button" name="mybutton" onclick="timeseries(this.form.iterations.value,this.form.initial.value,this.form.param.value)">Make the time series plot</button>
+<br><br>
+<!--<button type="button" name="mybutton" onclick="myFunction()">Make the time series plot</button>-->
+<div id="error"></div>
+<div id="placeholder" style="width:700px;height:350px;"></div>
+<br><br>
+<div id="msg"></div>
+</form>
+<div id="plot">
+
+</div>
+
+
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=8192428;
+var sc_invisible=1;
+var sc_security="e3920519";
+</script>
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script>
+<noscript><div class="statcounter"><a title="tumblr hit tracking tool"
+href="http://statcounter.com/tumblr/" target="_blank"><img
+class="statcounter" src="http://c.statcounter.com/8192428/0/e3920519/1/"
+alt="tumblr hit tracking tool"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+</body>
+</html>

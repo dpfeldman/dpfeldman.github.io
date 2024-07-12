@@ -1,0 +1,67 @@
+
+<html>
+<head>
+<title> Testing Forms </title>
+</head>
+
+<body>
+
+<h1> Testing forms and CGI</h1><p>
+<br>
+<hr>
+
+<a href="timer.html">Countdown!</a>
+
+
+<form action="/cgi-bin/unix.pl" mtehod="get">
+Command: <input type="text" Name="command" size=40>
+<p>
+<input type="submit" value="submit form">
+<input type="reset" value="clear form">
+</form>
+<br>
+<hr>
+</body>
+</html>
+
+
+
+<HR>
+<br>
+<table border=0 cellspacing=0 width = 700 >
+<tr>
+  <td align=left valign = top>
+  David P. Feldman</td>
+  <td>
+  <a href=mailto:dave@hornacek.coa.edu>dave@hornacek.coa.edu</a>
+  </td>
+</tr>
+<tr>
+    <td>
+    <a href="http://www.coa.edu">College of the Atlantic</a>
+    </td>
+    <td>
+    207 288-5015 (<i>Phone</i>)
+    </td>
+</tr>  
+<tr>
+    <td>
+    105 Eden St.
+    </td>
+    <td> 
+    207 288-4126 (<i>Fax</i>)
+    </td>
+</tr>
+<tr>
+    <td>
+    Bar Harbor, ME 04609
+    </td>
+    <td>
+    <a href="http://hornacek.coa.edu/dave">http://hornacek.coa.edu/dave</a>
+    </td>
+</tr>
+
+
+</table><p><br>
+
+</html>

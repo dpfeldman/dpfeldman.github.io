@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Calculus II</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="container">
+<div id="header">
+<h1 align=right>calculus II</h1>
+<h2 align=right>college of the atlantic</h2> 
+<h2 align=right><a href="http://hornacek.coa.edu/dave">david p. feldman</a> |
+spring 2015</h2>  
+<br />
+<hr />
+
+</div> <!-- end header -->
+
+<div class="spacer"></div>
+<div id="left">
+
+<div id="leftcontent">
+
+  <ul>
+    <li><a href="./index.html">Home</a></li>
+    <li><a href="./overview.html">Overview</a></li>
+    <li><a href="./description.html">Description</a></li>
+    <li><a href="./homework.html">Assignments</a></li>
+    <li><a href="./handouts.html">Handouts</a></li>
+    <li><a href="./videos.html">Videos</a></li>
+    <li><a href="./projects.html">Projects</a></li>
+    <li><a href="./textbook.html">Textbook</a></li>
+    </ul>
+<p>&nbsp;</p>
+
+
+
+</div> <!-- end left content -->
+</div> <!-- end left division -->
+
+<div id="main">
+<div id="maincontent">
+
+<h3>Homework Assignments</h3>
+<br><br>
+<ol>
+  <li><a href="./Homework/homework.1.pdf">Homework one</a>, due Friday,
+  April 3, 2015.
+  <li><a href="./Homework/homework.2.pdf">Homework two</a>, due Friday,
+  April 10, 2015.
+  <li><a href="./Homework/homework.3.pdf">Homework three</a>, due Friday, 
+  April 17, 2015.
+  <li><a href="./Homework/homework.4.pdf">Homework four</a>, due Friday, 
+  April 24, 2015.
+  <li><a href="./Homework/homework.5.pdf">Homework five</a>, due Friday, 
+  May 1, 2015.
+  <li><a href="./Homework/homework.6.pdf">Homework six</a>, due Friday, 
+  May 8, 2015.
+  <li><a href="./Homework/homework.7.pdf">Homework seven</a>, due
+    Friday, May 15, 2015
+  <li><a href="./Homework/homework.8.pdf">Homework eight</a>, due
+   Friday, May 22, 2015
+<!--<li>Homework two: <a href="./Homework/calc.2.spreadsheet.pdf">spreadsheet exercise</a> and <a href="./Homework/homework.sage.1.html">sage 
+exercises</a>.  Here is the <a href="./Homework/calc2.example.xls">example spreadsheet</a>-->
+<!--  <li><a href="./Homework/homework.2.pdf">Homework two</a>, due Friday,
+  January 18, 2013.-->
+</ol>
+<br><br>
+<p class="no-box">
+<a href="./solutions.html">Expectations for Homework Solutions</a>
+
+</p>
+
+</div> <!-- end main content section -->
+</div> 
+<div id="footer"><div class="spacer"></div>
+
+<hr />
+<center>
+<p class="no-box"> <a href="http://www.coa.edu">COA</a> | <a href="http://hornacek.coa.edu/dave">Dave</a> | <a href="./">Calc II</a></p>
+<p>&nbsp;</p>
+</div> <!-- end footer -->
+
+</div> <!-- end container -->
+</body>
+
+</html>

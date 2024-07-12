@@ -1,0 +1,463 @@
+<!DOCTYPE HTML>
+<!--
+	Hielo by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+<head>
+  <title>Physics+Math of Sustainable Energy 2021 | College of the Atlantic</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <script type="text/javascript" src="scripts/Functions.js"></script>
+  <script type="text/javascript">callScripts();</script> 
+  
+</head>
+<body class="subpage">
+  
+  <!-- Header -->
+  <header id="header">
+    <div class="logo"><a href="index.html">Physics+Math of Sustainable Energy | Fall 2021 </a> </div>
+    <a href="#menu">Menu</a>
+  </header>
+  
+<!-- Nav -->
+<nav id="menu">
+  <ul class="links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="schedule.html">Schedule+Assignments</a></li>
+    <li><a href="resources.html">Resources+Links</a></li>
+  </ul>
+</nav>
+
+<!-- One -->
+<section id="One" class="wrapper style3">
+  <div class="inner">
+    <header class="align-center">
+      <!--	  <p>introduction to</p>-->
+      <h2>Physics+Math of Sustainable Energy</h2>
+      <h3>Course Schedule and Assignments</h4>
+</header>
+</div>
+</section>
+
+<!-- Two -->
+<section id="two" class="wrapper style2">
+  <div class="inner">
+    <div class="box">
+      <div class="content">
+	<!--<header class="align-center">
+	    <p>maecenas sapien feugiat ex purus</p>
+	    <h2>Lorem ipsum dolor</h2>
+	</header>-->
+
+	
+<p><b><a href="http://hornacek.coa.edu/dave/Energy/protected/energybook.pdf" target="_blank">Link
+      to Textbook</a></b></p> 
+
+		
+<h3><b>Week One</b></h3>
+<ul class="sched"> 
+  <li><b>Class 1</b> Tuesday, September 14
+    <ul class="sched">
+      <li><b>Pre-class</b>:
+	<ul>
+	  <li>None
+	  <!--<li>Video: <a href="https://youtu.be/PkYB4_NazOg" target="_blank">Introduction
+	      to Winter 2021</a>.  Thoughts on learning during a pandemic.</li>-->
+	</ul>
+	<li><b>Class Content</b>
+    <ul class="sched">
+      <li>Introductions to course and each other</li>
+      <li>What is Energy: <a href="https://caltechletters.org/viewpoints/feynman-harassment-science">Feynman</a>'s blocks</li>
+      <li>Introduction to kinetic energy and Joules [<a href="./pdf/chapter03.pdf">handout</a>]</li>
+      <li><a href="https://youtu.be/QZs2jImKBuk">Video of Class</a></li>
+    </ul>
+	</li>
+    </ul><br>
+    
+  <li><b>Lab Week 01</b> Tuesday, September 14 and Wednesday September 15</li>
+  <ul class="sched">
+    <li>Introductions</li>
+    <li>Large Numbers [<a href="./pdf/large_numbers_lab.pdf">handout</a>]</li>
+  </ul>
+  <br>
+  
+  <li><b>Class 2</b> Friday, September 17 </li>
+  <ul class="sched">
+    <li><b>Pre-class</b>:
+      <ul class="sched">
+	<li><b>Read:</b> The syllabus. (The <a href="./about">about</a>
+	section in the main menu.)</li> 
+	<li><b>Watch:</b> Video: <a href="https://youtu.be/JfAMg9wusjs" target="blank">Homework
+	    logistics</a>. (<b>optional</b>)</li>
+	<li><b>Watch:</b> Video: Do you need a calculator?
+	  Yes. <a href="https://youtu.be/xxv-Sxav1qQ">This video</a> has
+	  the details. (<b>optional</b>)</li>
+	<li>Make an account on edfinity if you haven't already done
+	so. Details were sent to you via email.</li>  
+      </ul>
+    </li>
+    <li><b>Class Content</b>
+      <ul class="sched">
+	<li>Introduction to Power.  Watts and kiloWatts.</li>
+	<li><a href="./pdf/chapter04a.pdf">Worksheet from
+	    Class</a></li>
+	<li><a href="https://coa.zoom.us/rec/share/YMYsMBeaaeQWCfOC2tpBXgY0ZQZJUa3NdFmDK5kxRs3cPbFvQOWtj2eDt044S96r.Zrm1W3Pmm62nrMj_">Video
+	of class</a></li>  
+      </ul>
+    </li>
+  </ul>
+    <br>
+  </li>
+
+  <li><b><a href="./pdf/homework.01.pdf">Homework 01</a></b>  Due
+    Friday, September 17</li>
+  </ul>
+
+<hr style="height:8px;background:black">
+<!-- ************************************************************ -->
+		
+<h3><b>Week Two</b></h3>
+<ul class="sched"> 
+  <li><b>Class 3</b> Tuesday, September 21
+    <ul class="sched">
+	<li><b>Class Content</b>
+    <ul class="sched">
+      <li>Power and energy. KiloWatt Hours</li>
+      <li><a href="./pdf/chapter04b.pdf">Handout 1</a> &#160
+	<a href="./pdf/chapter04c.pdf">Handout 2</a> &#160
+	<a href="./pdf/power_bill.pdf">Power Bill</a></li>
+      <li><a href="https://youtu.be/clRspRLd8bI">Video of Class</a></li>
+      <!--<li><a href="./pdf/names.pdf">Group names</a></li>-->
+    </ul>
+	</li>
+    </ul><br>
+    
+  <li><b>Lab Week 02</b> Tuesday, September 21 and Wednesday September 22</li>
+  <ul class="sched">
+    <li>Measuring power</li>
+    <li><a href="./pdf/.pdf">Lab Handout</a></li>
+  </ul>
+  <br>
+  
+  <li><b>Class 4</b> Friday, September 25</li>
+  <ul class="sched">
+    <li><b>Class Content</b>
+      <ul class="sched">
+	<li>Greenhouse gas emissions.</li>
+	<li><a href="https://youtu.be/0_M3AVjV0XM" target="_blank">Video of class</a></li>  
+      </ul>
+    </li>
+  </ul>
+  </li>
+
+  <br>
+  <li><b><a href="./pdf/homework.02.pdf">Homework 02</a></b>  Due
+    Friday, September 24</li>
+  </ul>
+
+
+
+<hr style="height:8px;background:black">
+<!-- ************************************************************ -->		
+<h3><b>Week Three</b></h3>
+<ul class="sched"> 
+  <li><b>Class 5</b> Tuesday, September 28
+    <ul class="sched">
+	<li><b>Class Content</b>
+    <ul class="sched">
+      <li>Capacity factors.  Introduction to Solar PV.</li>
+      <li><a href="./pdf/solar_PV_F21_a.pdf" target="_blank">Handout</a> &#160
+      <li><a href="https://youtu.be/CLCvaRM5NXs">Video of Class</a></li>
+    </ul>
+	</li>
+    </ul><br>
+    
+  <li><b>Lab Week 03</b> Tuesday, September 28 and Wednesday September 29</li>
+  <ul class="sched">
+    <li>Using the solar pathfinder</li>
+    <li>Lab Handouts: &#160 [<a href="./pdf/solar_pathfinder_fall21.pdf">Lab Handout</a>]
+     &#160 [<a href="./pdf/PVWatts_Studio5-6.pdf">PV Watts Info</a>]</li>
+  </ul>
+  <br>
+  
+  <li><b>Class 6</b> Friday, October 1</li>
+  <ul class="sched">
+    <li><b>Class Content</b>
+      <ul class="sched">
+	<li>More solar PV.  Areas</li>
+	<li><a href="https://youtu.be/egQuzOtfLbM" target="_blank">Video of class</a></li>  
+      </ul>
+    </li>
+  </ul>
+  </li>
+  <br>
+  <li><b><a href="./pdf/homework.03.pdf">Homework 03</a></b>  Due
+    Friday, October 1</li>
+  </ul>
+
+<hr style="height:8px;background:black">
+<!-- ************************************************************ -->		
+<h3><b>Week Four</b></h3>
+<ul class="sched"> 
+  <li><b>Class 7</b> Tuesday, September 28
+    <ul class="sched">
+	<li><b>Class Content</b>
+    <ul class="sched">
+      <li>Generators and electromagnetic induction.  Windpower
+	basics. Proportional reasoning.</li>
+      <li><a href="./pdf/wind+proportions.pdf">Handout</a> &#160
+      <li><a href="https://youtu.be/t-4NGJ1SG2g" target="blank">Video of Class</a></li>
+    </ul>
+	</li>
+    </ul><br>
+    
+  <li><b>Lab Week 04</b> Tuesday, September 28 and Wednesday September 29</li>
+  <ul class="sched">
+    <li>Building a Generator!</li>
+    <li>Lab Handouts: &#160 [<a href="./pdf/">Lab Handout</a>]</li>
+  </ul>
+  <br>
+  
+  <li><b>Class 8</b> Friday, October 1</li>
+  <ul class="sched">
+    <li><b>Class Content</b>
+      <ul class="sched">
+	<li>More windpower.  Carbon intensity of electricity generation. </li>
+	<li><a href="./pdf/wind_part2.pdf">Handout from class</a>
+	<li><a href="https://youtu.be/qRxblAFl11U" target="_blank">Video of class</a></li>  
+      </ul>
+    </li>
+  </ul>
+  </li>
+  <br>
+  <li><b><a href="./pdf/homework.04.pdf">Homework 04</a></b>  Due
+    Friday, October 8</li>
+  </ul>
+
+<hr style="height:8px;background:black">
+<!-- ************************************************************ -->		
+<h3><b>Week Five</b></h3>
+<ul class="sched"> 
+  <li><b>Class 9</b> Tuesday, October 12
+    <ul class="sched">
+	<li><b>Class Content</b>
+    <ul class="sched">
+      <li>Introduction to thermal energy. Caloric value of
+	fuels. Carbon intensity of fuels</li>
+      <li><a href="./pdf/thermal_1.pdf">Handout</a> &#160
+      <li><a href="https://youtu.be/asPWMbKN6z4" target="_blank">Video of Class</a></li>
+    </ul>
+	</li>
+    </ul><br>
+    
+  <li><b>Lab Week 05</b> Tuesday, October 12 and Wednesday October 13</li>
+  <ul class="sched">
+    <li>Building a Wind Turbine!</li>
+    <li>Lab Handouts: &#160 [<a href="./pdf/">Lab Handout</a>]</li>
+  </ul>
+  <br>
+  
+  <li><b>Class 10</b> Friday, October 15</li>
+  <ul class="sched">
+    <li><b>Class Content</b>
+      <ul class="sched">
+	<li>Home heating. R values. Furnaces, resistive heaters, heat pumps </li>
+	<li><a href="./pdf/thermal_2.pdf">Handout from class</a></li>
+	<li><a href="https://youtu.be/PZoQMs38vIw" target="_blank">Video of class</a></li>
+      </ul>
+    </li>
+  </ul>
+  </li>
+  <br>
+  <li><b><a href="./pdf/homework.05.pdf">Homework 05</a></b>  Due
+    Friday, October 15</li>
+  </ul>
+
+<hr style="height:8px;background:black">
+<!-- ************************************************************ -->		
+<h3><b>Week Six</b></h3>
+<ul class="sched"> 
+  <li><b>Class 11</b> Tuesday, October 19
+    <ul class="sched">
+      <li>Transportation. Facts about cars. Model of energy used by cars</li>
+      <li><a href="./pdf/cars_1.pdf">Handout</a> &#160
+      <li><a href="https://youtu.be/9sPLpVJNdKc" target="_blank">Video of Class</a></li>
+    </ul><br>
+    
+  <li><b>Lab Week 06</b> Tuesday, October 19 and Wednesday October 20</li>
+  <ul class="sched">
+    <li>Insulation and heat loss</li>
+    <li>Lab Handouts: &#160 [<a href="./pdf/">Lab Handout</a>]</li>
+  </ul>
+  <br>
+  
+  <li><b>Class 12</b> Friday, October 15</li>
+  <ul class="sched">
+    <li>More cars and transportation</li>
+    <li><a href="./pdf/cars_2.pdf">Handout</a> &#160
+    <li><a href="https://youtu.be/kHFqfOsf8kg" target="_blank">Video of class</a></li>
+  </ul>
+  <br>
+  <li><b><a href="./pdf/homework.06.pdf">Homework 06</a></b>  Due
+    Friday, October 23</li>
+  </ul>
+</ul>
+
+
+<hr style="height:8px;background:black">
+<!-- ************************************************************ -->		
+<h3><b>Week Seven</b></h3>
+<ul class="sched"> 
+  <li><b>Class 13</b> Tuesday, October 26
+    <ul class="sched">
+      <li>Trains and planes.  Time value of money.</li>
+      <!--<li><a href="./pdf/cars_1.pdf">Handout</a> &#160-->
+      <li><a href="https://youtu.be/zcTQPjrhNyE" target="_blank">Video of Class</a></li>
+    </ul><br>
+    
+  <li><b>Lab Week 07</b> Tuesday, October 26 and Wednesday October 27</li>
+  <ul class="sched">
+    <li>Spreadsheets and time value of money</li>
+    <li>Lab Handouts: &#160 [<a href="./spreadsheet_lab.pdf">Lab Handout</a>]</li>
+  </ul>
+  <br>
+  
+  <li><b>Class 14</b> Friday, October 15</li>
+  <ul class="sched">
+    <li>Valuing Investments</li>
+    <!--<li><a href="./pdf/cars_2.pdf">Handout</a> &#160-->
+    <li><a href="https://youtu.be/x4obBmqK4Q0" target="_blank">Video of class</a></li>
+  </ul>
+  <br>
+  <li><b><a href="./pdf/homework.07.pdf">Homework 07</a></b>  Due
+    Friday, October 29</li>
+  </ul>
+
+<hr style="height:8px;background:black">
+<!-- ************************************************************ -->		
+<h3><b>Week Eight</b></h3>
+<ul class="sched"> 
+  <li><b>Class 15</b> Tuesday, November 2
+    <ul class="sched">
+      <li>Nuclear Power.</li>
+      <li><a href="https://youtu.be/8a7-wJIJZCQ" target="_blank">Video of Class</a></li>
+    </ul><br>
+    
+  <li><b>Lab Week 08</b> Tuesday, November 2 and Wednesday November 3</li>
+  <ul class="sched">
+    <li>Financial Analysis Exercise</li>
+    <li>Lab Handouts: &#160 [<a href="./pdf/finance_exercise.pdf">Lab Handout</a>]</li>
+  </ul>
+  <br>
+  
+  <li><b>Class 16</b> Friday, November 5</li>
+  <ul class="sched">
+    <li>Nuclear Safety.  Life cycle assessment.</li>
+    <li><a href="./pdf/stuff.pdf">Handout</a> 
+    <li><a href="https://youtu.be/9i2PI8F6U_I" target="_blank">Video of class</a></li>
+  </ul>
+  <br>
+  <li><b><a href="./pdf/homework.08.pdf">Homework 08</a></b>  Due
+    Friday, November 5</li>
+  </ul>
+
+<hr style="height:8px;background:black">
+<!-- ************************************************************ -->		
+<h3><b>Week Nine</b></h3>
+<ul class="sched"> 
+  <li><b>Class 17</b> Tuesday, November 9
+    <ul class="sched">
+      <li>Food and Agriculture.</li>
+      <li>Read <a href="https://pubs.acs.org/doi/10.1021/es702969f"
+      target="_blank">Food-Miles and the Relative Climate Impacts of
+      Food Choices in the United States</a> by Weber and Matthews.</li>
+      <!--<li><a href="./pdf/cars_1.pdf">Handout</a> &#160-->
+      <li><a href="https://youtu.be/s_EM6IsEGek" target="_blank">Video of Class</a></li>
+    </ul><br>
+    
+  <li><b>Lab Week 09</b> Tuesday, November 9 and Wednesday November 10</li>
+  <ul class="sched">
+    <li>Campus Energy Tour!</li>
+  </ul>
+  <br>
+  
+  <li><b>Class 18</b> Friday, November 12</li>
+  <ul class="sched">
+    <li>Biofuels.  Rebounds. </li>
+    <li><a href="./pdf/biofuels.pdf">Handout</a>
+    <li><a href="https://youtu.be/nYQH4I-PoiY" target="_blank">Video of class</a></li>
+  </ul>
+  <br>
+  <!--<li><b><a href="./pdf/homework.08.pdf">Homework 08</a></b>  Due
+    Friday, November 5</li>-->
+</ul>
+
+<hr style="height:8px;background:black">
+<!-- ************************************************************ -->		
+<h3><b>Week Ten</b></h3>
+<ul class="sched"> 
+  <li><b>Class 19</b> Tuesday, November 16
+    <ul class="sched">
+      <li>The Grid.  </li>
+      <!--<li><a href="./pdf/cars_1.pdf">Handout</a> &#160-->
+      <li><a href="" target="_blank">Video of Class (coming soon)</a></li>
+    </ul><br>
+    
+  <li><b>Lab Week 09</b> Tuesday, November 16 and Wednesday November 17</li>
+  <ul class="sched">
+    <li>No Labs</li>
+  </ul>
+  <br>
+  
+  <li><b>Class 20</b> Friday, November 19</li>
+  <ul class="sched">
+    <li>Microgrids.  CCS and BECCS.  Conclusions</li>
+    <!--<li><a href="./pdf/cars_2.pdf">Handout</a> &#160-->
+    <li><a href="https://youtu.be/NZsJNf-P05Y" target="_blank">Video of class</a></li>
+  </ul>
+  <br>
+  <li><b><a href="./pdf/homework.09.pdf">Homework 09</a></b>  Due
+    Friday, November 19</li>
+    <li><b><a href="./pdf/energy_plan_2021.pdf">Energy Plan</a></b>  Due
+    Friday, November 19</li>
+  </ul>
+
+
+</div>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer id="footer">
+  <div class="container">
+    <ul class="icons">
+      
+      <ul class="icons">
+	
+	<li><a href="http://www.twitter.com/DavidFeldman" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+	<li><a href="http://www.di.fm/channels" class="icon fa-headphones"><span class="label">di</span></a></li>
+	<li><a href="http://ohoriscoffee.com" class="icon fa-coffee"><span class="label">Coffee</span></a></li>
+	<li><a href="http://www.coa.edu" class="icon fa-graduation-cap"><span class="label">COA</span></a></li>
+	<li><a href="http://hornacek.coa.edu/dave" class="icon fa-male"><span class="label">Dave</span></a></li>
+	
+      </ul>
+  </div>
+  <div class="copyright">
+    &copy; David P. Feldman. All rights reserved.
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

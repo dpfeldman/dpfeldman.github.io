@@ -1,0 +1,1270 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Physics II: Modern Physics</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="scripts/Functions.js"></script>
+<script type="text/javascript">callScripts();</script>
+
+<!--		<script type="text/javascript">
+			var level = '';			
+			var currentPage = "Lecture Outlines";
+		</script>
+		<script type="text/javascript">makeTitle();</script>
+-->
+</head>
+
+<body>
+<div id="container">
+<div id="header">
+<h1 align=right>physics ii: modern physics</h1>
+<h2 align=right><a href="http://www.coa.edu">college of the atlantic</a></h2>  
+<h2 align=right><a href="http://hornacek.coa.edu/dave">david p. feldman</a> |
+spring 2022</h2>  
+<br />
+<hr />
+
+</div> <!-- end header -->
+
+<div class="spacer"></div>
+<div id="left">
+
+<div id="leftcontent">
+
+  <ul>
+    <li><a href="./index.html">home</a></li>
+    <li><a href="./overview.html">info</a></li>
+    <li><a href="./schedule.html">schedule</a></li>
+    </ul>
+<p>&nbsp;</p>
+
+</div> <!-- end left content -->
+</div> <!-- end left division -->
+
+<div id="main">
+<div id="maincontent">
+
+
+<div id="content">
+<!--  <script type="text/javascript">makeLogo();</script>
+  <script type="text/javascript">makeNavbar();</script>-->
+  <div id="actualcontent">
+
+
+<h3>week 01</h3>
+    
+<dl>
+  <dt class="expand">Class 01 (March 28, 2022): Logistics,
+  Introductions, Reference Frames, Intro to Principle of
+  Relativity</dt>  
+  <div class="collapse"><dd>	
+      <p>Pre-class: </p>
+      <ul>
+	<li><b>Optional</b>:  Watch: <a href="https://youtu.be/iteUqErz2jU">Homework
+	Logistics</a></li> 
+      </ul>	    
+      <p>In-class content</p>
+      <ul>
+	<li>Topics: Introductions, Axioms and Community Agreement,
+	Reference Frame, Principle of Relativity</li>
+	<!--<li><a href="https://docs.google.com/document/d/1Ux5KoT2pRhp7pRzc4wlNyrgTXmoDcXmU3y_-Xz0AkMQ/edit?usp=sharing"
+	    target="blank">Axioms
+	    and Community Agreement</a> google doc</li>-->
+	<li>In case you're curious, here is an article in which
+	<a href="http://math.sfsu.edu/federico/">Federico
+	Ardila-Mantilla</a> discusses the community agreement he uses
+	in his
+	classes. <a href="http://math.sfsu.edu/federico/Articles/firstdayofclass.pdf">Todxs 
+	cuentan: building community and welcoming humanity from the
+	first day of class</a>.  (See section 5 on page 4.)
+	<li>Handout: <a href="./Handouts/handout.01a.pdf">Axioms, Goals, etc</a></li>
+      </ul>
+    </dd>
+  </div>
+</dl>
+
+<dl>
+  <dt class="expand">Discussion 01 (March 29 and 30, 2022): More
+  Introductions, Working with Very Large and Very Small Numbers</dt>  
+  <div class="collapse"><dd>
+     
+      <p>Pre-class:</p>
+      <ul>
+	<li>There is no reading for this week.</li>
+      </ul>
+      <p>In-class content:</p>
+      <ul>
+	<li>Handshake paradox activity</li>
+	<li>Handouts: [<a href="./Handouts/discussion.01.sci_notation.pdf">Large Numbers</a>]</li>
+      </ul>
+    </dd>
+  </div>      
+</dl>
+
+<dl>
+  <dt class="expand">Class 02 (March 31, 2022): SR Units, Spacetime
+  Diagrams, Intro to Synchronizing Clocks</dt>
+  <div class="collapse"><dd>
+      <p>Pre-class: </p>
+      <ul>
+	<li> Watch:
+	<a href="https://www.youtube.com/watch?v=F2bhw-iemQc"
+	target="blank">Deriving the Galilean Relativity
+	  Equations</a>. [10:10]</li>
+	<li>Watch:
+	<a href="https://www.youtube.com/watch?v=JgYwRBQASBA"
+	target="blank">Galilean Transformation Example</a>. [7:29] You 
+	could skip this if you feel you don't need to watch an
+	example.</li>
+	<li>Two quizzes (not graded or anything) to check your
+	understanding: [<a href="https://forms.gle/P61bdQvQHqjBGMAX8"
+	target="blank">Quiz One</a>]
+	[<a href="https://forms.gle/hasVHSNGP3KcEUnc8"
+	target="blank">Quiz Two</a>]</li>
+	<li>Watch:
+	<a href="https://www.youtube.com/watch?v=Pehl_42HYuE"
+	   target="blank">Galilean Velocity
+	   Transformations</a>. [3:35] </li>
+	<li>Watch:
+	<a href="https://www.youtube.com/watch?v=73SS_rQ_rJY"
+	target="blank">Galilean Velocity Transformation Example</a>. [3:32]
+	You can skip this is you feel you don't need to watch an
+	example.</li>
+	<li>A <a href="https://forms.gle/XMswVc7RigccwxkY6"
+	target="blank">quiz to check your understanding</a> of
+	velocity transformations</li>
+      </ul>	   
+      <p>In-class content</p>
+      <ul>
+	<li>Handout: [<a href="./Handouts/handout.02a.pdf">SR Units and Spacetime Diagrams</a>]</li>
+	<li>Here are some videos that cover much of what we did in class:
+	  <ul>
+	    <li><a href="https://youtu.be/KpFD0vMjfho"
+		target="blank">SR Units and Light-Seconds</a>
+		[7:15]</li> 
+	    <li><a href="https://youtu.be/1XHdaM5_B3k"
+		target="blank">SR Units for Velocity</a> [7:23]</li>  
+	    <li><a href="https://youtu.be/l0uBx4iA6DY"
+		target="blank">Introduction to Maxwell's Equations</a>
+		[6:45]</li> 
+	    <li><a href="https://youtu.be/xJ3vhpnrB10"
+		target="blank">The Ether and the Speed of Light</a>
+		[8:40] </li> 
+	    <li><a href="https://youtu.be/Z5Vi2HQ8AWg"
+		   target="blank">Einstein Rejects Galilean
+		Relativity</a> [5:45] </li>
+	    <li><a href="https://youtu.be/8wt1-ovO4Zw"
+	    target="blank">Introduction to Spacetime Diagrams</a>
+	    [7:04] </li>  
+	  </ul>
+	</li>
+	     
+      </ul>
+    </dd>
+  </div>      
+</dl>
+
+<dl>
+  <dt class="expand">Homework 01 (Due Friday, April 1, 2022)</dt>
+  <div class="collapse"><dd>
+      <ul>
+	<li><a href="./Homework/homework.01.pdf">Homework 01</a>, due
+	  Friday, April 1. </li>
+      </ul>
+    </dd>
+  </div>
+</dl>
+
+<!-- ************************************************************ -->    
+
+
+<h3>Week 02</h3>
+
+
+
+<dl>
+  <dt class="expand">Class 03 (April 4, 2022): Coordinate Time,
+  Proper Time, and the Spacetime Interval</dt>
+  <div class="collapse"><dd>
+      <p>Pre-class: </p>
+      <ul>
+	<li>None</li>
+      </ul>	   
+      <p>In-class content</p>
+      <ul>
+	<li>Handout: [<a href="./Handouts/handout.03a.pdf">Different
+	Types of Time</a>]</li>
+	<li>Here are some videos that cover much of what we did in class:
+	  <ul>
+	    <li><a href="https://youtu.be/kohL9jC4Gls"
+		   target="blank">Coordinate Time Part I: The Moving
+		Frame</a> 
+	      [6:05] </li> 
+	    <li><a href="https://youtu.be/CSYhJpz1dUk"
+		   target="blank">Coordinate Time Part II: The At-Rest 
+		Frame</a> [5:54] </li> 
+	    <li><a href="https://youtu.be/-UkvvyWhFiM"
+		   target="blank">Clock Synchronization is Frame
+		   Dependent</a> 
+	      [2:38] </li> 
+	    <li><a href="https://youtu.be/Je6AJcJnuMM"
+		   target="blank">Coordinate Time and the Radar
+		   Method</a> [6:17] </li> 
+	  </ul>
+	</li>   
+      </ul>
+    </dd>
+  </div>      
+</dl>
+
+
+
+<dl>
+  <dt class="expand">Discussion 02 (April 5 and 6, 2022): Geometry,
+  Circles, and Hyperbolas</dt>  
+  <div class="collapse"><dd>
+     
+      <p>Pre-class:</p>
+      <ul>
+	<li>There is no reading for this week.</li>
+      </ul>
+      <p>In-class content:</p>
+      <ul>
+	<li>Handouts: [<a href="./Handouts/discussion.02.space.pdf">Space</a>]
+	  [<a href="./Handouts/discussion.02.spacetime.pdf">Spacetime</a>]</li>
+      </ul>
+    </dd>
+  </div>      
+</dl>
+
+
+<dl>
+  <dt class="expand">Class 04 (April 7, 2022): Muons and Proper Time</dt>
+  <div class="collapse"><dd>
+      <p>Pre-class: </p>
+      <ul>
+	<li>None</li>
+      </ul>	   
+      <p>In-class content</p>
+      <ul>
+	<li>Handout: [<a href="./Handouts/handout.04a.pdf">Muons and
+	Proper Time</a>]</li> 
+	<li>A <a href="https://www.youtube.com/watch?v=rbzt8gDSYIM"
+		 target="blank">documentary about the Frisch/Smith muon
+	    experiment</a></li> 
+	<li>Here are some videos that cover much of what we did in
+	  class:
+	  <ul>
+	    <li><a href="https://youtu.be/9yRCoyPgKsc"
+		   target="blank">Muons Part I: Half lives</a> [8:59] </li>  
+	    <li>Quiz: <a href="https://forms.gle/4jbzgbbNc8Qhz3gT6"
+			 target="blank">Muons and Half Lives</a> </li> 
+	    <li><a href="https://youtu.be/ZOL1v_OhVEs"
+		   target="blank">Muons Part II: Experimental Evidence for the Metric
+		Equation</a> [14:20]</li>
+	    <li><a href="https://youtu.be/wJImD67cHOQ"
+		   target="blank">Curved Paths in Space: Part I</a>
+	      [8:44] </li> 
+	    <li><a href="https://youtu.be/j5TrRuqaBxA"
+		   target="blank">Curved Paths in Space: Part II</a>
+	      [10:39] </li> 
+	    <li><a href="https://youtu.be/cn0pH-xWZC4"
+		   target="blank">Curved Paths in Space: Example</a>
+	      [4:26] </li>  
+	    <li><a href="https://youtu.be/1kBBaV4LGUY"
+		   target="blank">Proper Time: Part I</a>
+	      [11:51] </li> 
+	    <li><a href="https://youtu.be/Wdo-9bxIivo"
+		   target="blank">Proper Time: Part I</a> [7:44] </li>  
+	    <li><a href="https://youtu.be/PQpk2Et4MtE"
+		   target="blank">Proper Time Example</a> [9:10] </li> 
+	</ul></li>
+      </ul>
+    </dd>
+  </div>      
+</dl>
+
+
+<dl>
+  <dt class="expand">Homework 02 (Due Friday, April 8, 2022)</dt>
+  <div class="collapse"><dd>
+      <ul>
+	<li><a href="./Homework/homework.02.pdf">Homework 02</a>, due
+	  Friday, April 8. </li>
+      </ul>
+    </dd>
+  </div>
+</dl>
+
+
+<h3>week 03</h3>
+
+
+
+
+<dl>
+  <dt class="expand">Class 05 (April 11, 2022): Proper Time, Binomial
+  Approximation </dt>
+  <div class="collapse"><dd>
+      <p>Pre-class: </p>
+      <ul>
+	<li>None</li>
+      </ul>	   
+      <p>In-class content</p>
+      <ul>
+	<li>Handout: [<a href="./Handouts/handout.05a.pdf">Proper time
+	and the binomial approximation</a>]</li> 
+	<li>Here are some videos that cover much of what we did in
+	  class:
+	  <ul>
+	    <li><a href="https://youtu.be/PQpk2Et4MtE"
+		   target="blank">Proper Time Example</a> [9:10] </li>
+	    <li>Quiz 1: <a href="https://forms.gle/A37s4ZYhwpiFAxU66"
+			   target="blank">Proper Time</a> </li>
+	    <li><a href="https://youtu.be/lNsCbnUfGWY"
+		   target="blank">Quiz Solution</a> [5:01] </li>
+	    <li><a href="https://youtu.be/IYA859wW56U" target="blank">The
+		Binomial Approximation</a> [10:32] </li> 
+	    <li>Quiz 2: <a href="https://forms.gle/6YUxJfjPmj2F3uda6"
+			   target="blank">Using the Binomial
+			   Approximation</a> </li> 
+	    <li><a href="https://youtu.be/fCNlRCIFdtw"
+		   target="blank">Quiz Solution</a> [9:48] </li> 
+	    <li><a href="https://youtu.be/_Ejm_ccu6uc"
+		   target="blank">Relations among &#916t, &#916s, and
+		   &#916&#964: Part I</a> [4:44] </li>
+	    <li> Figure: [<a href="./times_diagram.png target="blank"">png</a>]
+              [<a href="./times_diagram.pdf" target="blank">pdf</a>] </li>
+	    <li><a href="https://youtu.be/LO5mVTifJ10"
+		   target="blank">Relations among &#916t, &#916s, and
+		&#916&#964: Part II</a> [9:40] </li>  
+	</ul></li>
+      </ul>
+    </dd>
+  </div>      
+</dl>
+
+
+
+<dl>
+  <dt class="expand">Discussion 03 (April 12 and 13, 2022): Einstein,
+  Anti-Semitism, and Racism</dt>  
+  <div class="collapse"><dd>
+     
+      <p>Pre-class:</p>
+      <ul>
+	<li>Read: "Subversive Einstein," Susan Neiman, in Holton,
+	Gerald James, Peter L. Galison, and Silvan
+	S. Schweber. <i>Einstein for the 21st century: His legacy in
+	science, art, and modern culture</i>. Princeton University
+	Press, 2008, pp. 59-71.</i> 
+	<li>Read: <a href="https://www.redalyc.org/journal/5117/511767145003/511767145003.pdf"
+	target="blank">Einstein and Nazi physics: When science meets
+	ideology and prejudice</a>, <i>Me&#768tode Science Studies Journal</i>, 10(2020):147-155 by <a href="https://www.philipball.co.uk/" 
+	target="blank">Philip Ball</a>. </li>  
+	<!--<li>Read:
+	<a href="https://www.scientificamerican.com/article/how-2-pro-nazi-nobelists-attacked-einstein-s-jewish-science-excerpt1/#"
+	target="blank">How 2 Pro-Nazi Nobelists Attacked Einstein's
+	"Jewish Science" [Excerpt]</a> by <a href="https://www.philipball.co.uk/" target="blank">Philip Ball</a>. </li> -->
+	<li>Read: <a href="https://prospect.org/civil-rights/albert-einstein-racist/"
+	target="blank">Was Albert Einstein a
+	Racist?</a>, <i>Prospect</i>, June 19, 2018, by Peter
+	  Dreier.</li>
+	<li>OPTIONAL: Read: "Who was Einstein? Why is he still so
+	Alive," Gerald Holton, in Holton,
+	Gerald James, Peter L. Galison, and Silvan
+	S. Schweber. <i>Einstein for the 21st century: His legacy in
+	science, art, and modern culture</i>. Princeton University
+	Press, 2008, pp. 3-14.</i> 
+      </ul>
+      <p>In-class content:</p>
+      <ul>
+	<li>Handouts: [<a href="./Handouts/">tba</a>]</li>
+      </ul>
+    </dd>
+  </div>      
+</dl>
+
+
+
+<dl>
+  <dt class="expand">Class 06 (April 14, 2022): Twin Paradox,
+  Two-Observer Spacetime Diagrams </dt> 
+  <div class="collapse"><dd>
+      <p>Pre-class: </p>
+      <ul>
+	<li>None</li>
+      </ul>	   
+      <p>In-class content</p>
+      <ul>
+	<li>Handout:
+	[<a href="./Handouts/handout.06a.pdf">Two-observer spacetime diagrams</a>]</li>
+	<li><a href="./Handouts/hypes1.pdf">Hyperbolic Graph Paper!</a></li>
+	<li>Here are some videos that cover much of what we did in
+	  class:
+	  <ul>
+	    <li><a href="https://youtu.be/SAWulv7MJGo"
+		   target="blank">Twin Paradox: Part I</a>
+		   [8:43] </li>  
+	    <li><a href="https://youtu.be/1ycq0ahSiGQ"
+		   target="blank">Twin Paradox: Part 2</a>
+	      [8:54] </li>
+	    <li><a href="https://youtu.be/8_N1sGC3C8k"
+		   target="blank">Two-observer Diagrams in Space</a> 
+	      [13:59] </li> 
+	    <li>Quiz: <a href="https://forms.gle/eHpNXmK2LXKgaPKs8"
+			 target="blank">Circles and
+		Hyperbolas</a> </li>  
+	    <li><a href="https://youtu.be/hXUatMEJea8"
+	target="blank">Constructing the Time Axis: Part 0</a>
+	[5:30] </li> 
+    <li><a href="https://youtu.be/duHXK-spGJo"
+	target="blank">Constructing the Time Axis: Part 1</a>
+	[10:10] </li> 
+    <li><a href="https://youtu.be/ovp2Uyowtrk"
+	target="blank">Constructing the Time Axis: Part 2</a>
+	[10:47] </li> 
+    <li>Quiz: <a href="https://forms.gle/jLD3d6vD2kEuNGc98"
+	target="blank">Constructing the Time Axis</a> </li>  
+    <li><a href="https://youtu.be/ew4_ALUrZiQ" target="blank">Solution
+	to Quiz</a> [5:01]</li> 
+    <li><a href="https://youtu.be/oO-3qokVm1A"
+        target="blank">Constructing the Space Axis: Part 1</a>
+        [9:24] </li> 
+    <li><a href="https://youtu.be/Ch0yZ9VWLg4"
+        target="blank">Constructing the Space Axis: Part 2</a>
+        [7:08] </li> 
+	    <li><a href="https://youtu.be/cu0ZOlovKwU"
+    target="blank">Reading a Two-Observer Spacetime Diagram</a>
+    [11:07] [<a href="./figure_unit06-09.jpg">jpg of diagram</a>]</li> 
+	</ul></li>
+      </ul>
+    </dd>
+  </div>      
+</dl>
+
+
+
+
+
+<dl>
+  <dt class="expand">Homework 03 (Due Friday, April 15, 2022)</dt>
+  <div class="collapse"><dd>
+      <ul>
+	<li><a href="./Homework/homework.03.pdf">Homework 03</a>, due
+	  Friday, April 15. </li>
+      </ul>
+    </dd>
+  </div>
+</dl>
+
+<h3>Week 04</h3>
+
+<dl>
+  <dt class="expand">Class 07 (April 18, 2022): More Two-Observer
+  Spacetime Diagrams, Lorentz Transformations </dt> 
+  <div class="collapse"><dd>
+      <p>Pre-class: </p>
+      <ul>
+	<li>None</li>
+      </ul>	   
+      <p>In-class content</p>
+      <ul>
+	<li>Handout:
+	[<a href="./Handouts/handout.07a.pdf">Two-observer spacetime
+	    diagrams and the Lorentz transformations
+	  </a>]</li>
+	<li><a href="./Handouts/hypes1.pdf">Hyperbolic Graph Paper!</a></li>
+	<li>Here are some videos that cover much of what we did in
+	  class:
+	  <ul>
+    <li><a href="https://youtu.be/pIyWPHrDUFw" target="blank">Deriving
+	the Lorentz Transformations:  Part I</a> [5:44] </li> 
+    <li><a href="https://youtu.be/XIUpSgBnu3A" target="blank">Deriving
+	the Lorentz Transformations:  Part II</a> [14:38] </li> 
+    <li><a href="https://youtu.be/XVdOTMeUzDo" target="blank">Lo rentz
+	Transformation Example</a> [5:28] </li> 
+    <li>Quiz: <a href="https://forms.gle/Vde1icg WTHQicMURA"
+	target="blank">Lorentz Transformation</a></li> 
+	</ul></li> 
+      </ul>
+    </dd>
+  </div>      
+</dl>
+
+
+<dl>
+  <dt class="expand">Discussion 04 (April 19 and 20, 2022): Einstein
+  and the material culture of time </dt>  
+  <div class="collapse"><dd>
+      <p>Pre-class:</p>
+      <ul>
+	<li>Read: <a href="https://www.jstor.org/stable/1344127?seq=1"
+		     target="blank">Einstein's Clocks: The Place of
+		     Time</a> by Peter Galison, <i>Critical
+	    Inquiry</i>, 26:2, pp 355-389, 2000.</li>
+	<li>Optional video:
+	<a href="https://www.youtube.com/watch?v=MHGxszX9WVc"
+	target="blank">Peter Galison on Einstein</a>, a mini-lecture
+	by Galison on Einstein.</li>
+	<li>Optional:
+	  <a href="https://history.aip.org/exhibits/einstein/essay-einsteins-time.htm"
+	     target="blank">Einstein, Poincare, and Modernity: a
+	    Conversation</a>, by Peter Galison and D. Graham Burnett, 
+	  <i>Daedalus</i>, Spring 2003.</li>		     
+      </ul>
+      <p>In-class content:</p>
+      <ul>
+	<li>Handouts: None</li>
+      </ul>
+    </dd>
+  </div>      
+</dl>
+
+
+
+<dl>
+  <dt class="expand">Class 08 (April 21, 2022): Length Contraction</dt>
+  <div class="collapse"><dd>
+      <p>Pre-class: </p>
+      <ul>
+	<li>None</li>
+      </ul>	   
+      <p>In-class content</p>
+      <ul>
+	<li>Handout:
+	[<a href="./Handouts/handout.08a.pdf">Lorentz contraction  </a>]</li>
+	<li>Here are some videos that cover much of what we did in
+	  class:
+	  <ul>
+	    <li><a href="https://youtu.be/zAV0ssaknvQ"
+		   target="blank">Introduction and A Definition of
+		Length</a> [2:54]</li>   
+	    <li><a href="https://youtu.be/Gepwn0L3MnM"
+		   target="blank">Lorentz Contraction Derivation</a>
+	      [13:10] </li>   
+	    <li>Quiz: <a href="https://forms.gle/EyF5UwdeP8YuhKLg9"
+			 target="blank">Lorentz Contraction</a> </li>   
+	    <li><a href="https://youtu.be/oIkOpuyPLok"
+		   target="blank">Quiz Solution</a> [5:56]</li> 
+	    <li><a href="https://youtu.be/48LdZ5BqYl8"
+	target="blank">Lorentz Contraction is Symmetric: Part I</a>
+	      [7:17]</li> 
+	    <li><a href="https://youtu.be/enY1YlrYh9I"
+	target="blank">Lorentz Contraction is Symmetric: Part I</a>
+	      [13:04]</li> 
+	    <li><a href="https://youtu.be/fJjpqJXaoHc"
+	target="blank">Lorentz Contraction?  WTF.  Part I</a>
+	      [9:47]</li> 
+	    <li><a href="https://youtu.be/OWxIxV3VVcQ"
+	target="blank">Lorentz Contraction?  WTF.  Part II</a>
+	      [5:54]</li> 
+	    <li><a href="https://youtu.be/1g16ah9lKI4"
+		   target="blank">Barn and Pole Paradox.  Part I</a>
+	      [4:18]</li>  
+	    <li><a href="https://youtu.be/p3XAjjDMXZU"
+		   target="blank">Barn and Pole Paradox.  Part II</a>
+	      [18:09]</li> 
+	</ul></li> 
+      </ul>
+    </dd>
+  </div>      
+</dl>
+
+
+
+
+<dl>
+  <dt class="expand">Homework 04 (Due Friday, April 22, 2022)</dt>
+  <div class="collapse"><dd>
+      <ul>
+	<li><a href="./Homework/homework.04.pdf">Homework 04</a>, due
+	  Friday, April 22. </li>
+      </ul>
+    </dd>
+  </div>
+</dl>
+
+
+  
+  <h3>Week 05</h3>
+
+
+
+<dl>
+  <dt class="expand">Class 09 (April 25, 2022): The Causal Structure
+  of Spacetime</dt>
+  <div class="collapse"><dd>
+      <p>Pre-class: </p>
+      <ul>
+	<li>None</li>
+      </ul>	   
+      <p>In-class content</p>
+      <ul>
+	<li>Handout:
+	[<a href="./Handouts/handout.09a.pdf">Struture of Spacetime
+	and Velocity Transformations</a>]</li>
+	<li>Here are some videos that cover much of what we did in
+	  class:
+	  <ul>
+	    <li><a href="https://youtu.be/VsNS2c5OgeY"
+		   target="blank">Introduction and Causality</a>
+	      [11:06]</li> 
+	    <li><a href="https://youtu.be/vQMI_RioRHY"
+		   target="blank">Types of Spacetime Intervals:
+		Introduction</a> [4:56] </li>  
+	    <li><a href="https://youtu.be/433Ukw4otUk"
+		   target="blank">Types of Spacetime Intervals:
+		Timelike</a> [8:18] </li>   
+	    <li><a href="https://youtu.be/bv8JIiXnuUM"
+		   target="blank">Types of Spacetime Intervals:
+		Spacelike</a> [9:15] </li>  
+	    <li><a href="https://youtu.be/MF6xm8ltt1s"
+		   target="blank">Types of Spacetime Intervals:
+		Lightlike and Summary</a> [3:49] </li> 
+	    <li>Quiz: <a href="https://forms.gle/HCkDF7Hma63iDsF59"
+			 target="blank">Types of Spacetime
+		Intervals</a> </li>    
+	    <li><a href="https://youtu.be/gW2Y1zi6RXk"
+		   target="blank">The Past, The Future, and
+		Elsewhere</a> [6:50] </li>  
+	    <li>Quiz: <a href="https://forms.gle/XWMHwJ864oco3gjP9"
+			 target="blank">The Past, The Future, and
+		Elsewhere</a> </li> 
+	    <li><a href="https://youtu.be/iBiPC-HZeXU"
+		   target="blank">Velocity Transformations:
+		Graphical</a> [10:43] </li> 
+	    <li>Quiz: <a href="https://forms.gle/gXQmU2n8S62dUtbt9"
+			 target="blank">Graphical Velocity
+		Transformations</a> </li> 
+	    <li><a href="https://youtu.be/AQwv52SWzBE"
+		   target="blank">The Einstein Velocity Transformation
+		Equations</a> [10:09] </li> 
+	    <li>Quiz: <a href="https://forms.gle/TCSQTiQxHw6D5inH7"
+			 target="blank">Using the Velocity
+		Transoformation Equations</a> </li> 
+	    <li><a href="https://youtu.be/Ee-UCfVkzKg"
+		   target="blank">Analyzing the Velocity
+		Transformation Equations</a> [8:06] </li> 
+	</ul></li> 
+      </ul>
+    </dd>
+  </div>      
+</dl>
+
+  
+
+<dl>
+  <dt class="expand">Discussion 05 (April 26 and 27, 2022): Misogyny
+  and sexism in physics</dt> 
+  <div class="collapse"><dd>
+      <p>Pre-class:</p>
+      <ul>
+	<li><b>Read:</b> <a href="https://caltechletters.org/viewpoints/feynman-harassment-science"
+			    target="blank">Feynman, Harassment, and
+	    the Culture of Science</a>,
+	  by <a href="https://www.aidabehmard.com/"
+		target="blank">Aida Behmard</a>, <i>caltech
+	    letters</i>, October 2019.  CW: This article contains
+	  discussion of sexual harassment and mentions sexual
+			    assault.</li> 
+	<li><b>Watch:</b> <a href="https://www.youtube.com/watch?v=wnw0Ma98j5Q" 
+			     target="blank">A fresh perspective for
+	    physics</a>, an interview
+	  with <a href="http://www.cprescodweinstein.com/"
+			     target="blank">Chanda
+	    Prescod-Weinstein</a></li>  
+	<li><b>Read:</b> <a href="https://thebaffler.com/outbursts/surely-youre-a-creep-mr-feynman-mcneill" 
+			    target="blank"> Surely You're a Creep,
+	    Mr. Feynman: On toxic moral license and the mythos of male
+	    scientific genius</a>, by Leila McNeill, <i>The
+	    Baffler</i>, January 2019. CW: This article discussion
+	  sexual harassement and briefly mentions intimate partner
+	  violence. </li> 
+	<li><b>Optionally listen
+	    to:</b> <a href="https://www.ladyscience.com/podcast/bonus-interview-disordered-cosmos-book-chanda-prescod-weinstein-2021" 
+		       target="blank">An interview by Leila McNeill 
+	    with Chanda Prescod-Weinstein</a>.</li> 
+	<li><b>Optionally read:</b>
+	  <a href="https://physicsworld.com/a/taking-responsibility-the-ethics-of-being-black-in-physics/"
+	     target="blank">Taking responsibility: the ethics of being
+	    Black in physics</a> by Chanda Prescod-Weinstein, <i>Physics
+	    World</i>, October 2020.</li>    	     
+      </ul>
+      <p>In-class content:</p>
+      <ul>
+	<li>Handouts: None</li>
+      </ul>
+    </dd>
+  </div>      
+</dl>
+
+
+
+
+<dl>
+  <dt class="expand">Class 10 (April 28, 2022): Introduction to
+  Quantum Mechanics, Stern-Gerlach Experiments</dt> 
+  <div class="collapse"><dd>
+      <p>Pre-class: </p>
+      <ul>
+	<li>None</li>
+      </ul>	   
+      <p>In-class content</p>
+      <ul>
+	<li>Handouts: None </li>
+	<li><a href="https://www.youtube.com/watch?v=BcsfAUTwURI"
+	       target="blank">Video of Class</a></li>
+	<li>We covered the material from Chapters 2, 3, and 4
+	  from <a href="https://www2.oberlin.edu/physics/dstyer/StrangeQ/Textbook/chapters.html"
+		target="blank">The Strange World of Quantum
+	  Mechanics</a> by
+	  <a href="https://www2.oberlin.edu/physics/dstyer/index.html"
+	  target="blank">Dan Styer</a>, (Cambridge University Press,
+	  2000).</li> 
+      </ul>
+    </dd>
+  </div>      
+</dl>
+
+
+
+<dl>
+  <dt class="expand">Homework 05 (Due Friday, April 29, 2022)</dt>
+  <div class="collapse"><dd>
+      <ul>
+	<li><a href="./Homework/homework.05.pdf">Homework 05</a>, due
+	  Friday, April 29. </li>
+      </ul>
+    </dd>
+  </div>
+</dl>
+
+<dl>
+  <dt class="expand">Reflection Assignment 01 (Target Date: Friday, April 29, 2022)</dt> 
+  <div class="collapse"><dd>
+      <ul>
+	<li><a href="./Homework/reflections.01.pdf">Reflection 01 </a>, Target Date:
+	  Friday, April 29. </li>
+      </ul>
+    </dd>
+  </div>
+</dl>
+
+
+  
+<h3>week 06</h3>
+
+<dl>
+  <dt class="expand">Class 11 (May 2, 2022): Introduction to Kets</dt>
+  <div class="collapse"><dd>
+      <p>Pre-class: </p>
+      <ul>
+	<li>None</li>
+      </ul>	   
+      <p>In-class content</p>
+      <ul>
+	<li>Handouts:
+	  [<a href="./Handouts/handout.11a.pdf">Summary of Stern-Gerlach experiments</a>]
+	  [<a href="./Handouts/handout.11b.pdf">Ket Practice</a>]
+	</li>
+	<li><a href="https://youtu.be/5GIKQ9nJTkc"
+	target="blank">Video of Class</a></li> 
+      </ul>
+    </dd>
+  </div>      
+</dl>
+
+<dl>
+  <dt class="expand">Discussion 06 (May 3 and 4, 2022): Positivism
+  and the Philosophy of Science</dt> 
+  <div class="collapse"><dd>
+      <p>Pre-class:</p>
+      <ul>
+	<li>Read: Chapter 1 and 2 of
+	<a href="https://petergodfreysmith.com/" target="blank">Peter
+	Godfrey Smith</a>, <i>Theory and reality: an introduction to
+	the philosophy of science.</i> University of Chicago
+	Press. (2003). </li>
+	<li>This week's reading is a little longer than usual. Here
+	are some thougths on how to prioritize your attention. 
+	  <ul>
+	    <li>Chapter Two is about positivism and empiricism. These
+	      approaches to science and episemology are important since
+	      they form the basis of the Copenhagen interpretation, the
+	      standard interpretation of quantum mechanics, which we
+	      will be learning about soon.</li>
+	    <li>Chapter One is an introduction to the book. In this
+	      chapter the author lays out some general thoughts on the
+	      nature(s) of science and some key questions in the
+	      philosophy of science.  He also gives a short synopsis of
+	      the Scientific Revolution.</li>
+	    <li>Chapter two is the most important in terms of what
+	      we'll learn about later in the course. Chapter one I think
+	      is useful background that (most of) you will find
+	      interesting. If you are pressed for time, it's fine to
+	      skip section 1.5, the historical interlude about the
+	      Scientific Revolution.</li>
+	</ul></li>
+	<li>Here are some goals for our discussion:
+	  <ul>
+	    <li> Get a good sense of logical positivism. What are its
+	      key assumptions or propositions?</li>
+	    <li>Grapple with logical positivism. Do what extent do you
+	      think the ideas of logical positivism are still with us?
+	      What aspects of it do you find interesting or appealing?
+	      What aspects give you pause?</li> 
+	    <li>Discuss other questions that arise in the course of
+	      doing the reading, including thinking about different
+	      definitions of science. (I don't want to start with this,
+	      since this is less important for the course and we might
+	      end up spending a lot of time talking around in
+	      circles.)</li>
+	  </ul>
+	  Of course we can discuss other items, as well. </li>
+	<li>Aim to spend between one and two hours on this
+	reading. Please do not spend more than two hours on the
+	reading (unless you really want to). </li>
+      </ul>
+      <p>In-class content:</p>
+      <ul>
+	<li>Handouts: None</li>
+      </ul>
+    </dd>
+  </div>      
+</dl>
+
+
+<dl>
+  <dt class="expand">Class 12 (May 5, 2022): More with Kets, Different Bases</dt>
+  <div class="collapse"><dd>
+      <p>Pre-class: </p>
+      <ul>
+	<li>None</li>
+      </ul>	   
+      <p>In-class content</p>
+      <ul>
+	<li>Handouts:
+	  [<a href="./Handouts/handout.12a.pdf">More Ket Practice</a>]
+	</li>
+	<li><a href="https://youtu.be/7n0GxUW7WuU"
+	target="blank">Video of Class</a></li> 
+      </ul>
+    </dd>
+  </div>      
+</dl>
+
+
+
+
+<dl>
+  <dt class="expand">Homework 06 (Due Friday, May 6, 2022)</dt>
+  <div class="collapse"><dd>
+      <ul>
+	<li><a href="./Homework/homework.06.pdf">Homework 06</a>, due
+	  Friday, May 6. </li>
+      </ul>
+    </dd>
+  </div>
+</dl>
+
+
+
+
+
+<h3>Week 07</h3>
+
+
+<dl>
+  <dt class="expand">Class 13 (May 9, 2022): Bell's Inequality</dt>
+  <div class="collapse"><dd>
+      <p>Pre-class: </p>
+      <ul>
+	<li>None</li>
+      </ul>	   
+      <p>In-class content</p>
+      <ul>
+	<li>Handouts:
+	  [<a href="./Handouts/handout.13a.pdf">Tilting Analyzers, Bell's Inequality</a>]
+	</li>
+	<li>We covered chapter 4, 5, and 6 of Styer's
+	textbook, <a href="https://www2.oberlin.edu/physics/dstyer/StrangeQ/Textbook/chapters.html"
+	target="blank">The Strange World of Quantum
+	    Mechanics</a>.</li>
+	<li><a href="https://physics.csuchico.edu/kagan/435A/problems/Mermin.pdf"
+	target="blank">Is the Moon there when Nobody Looks? Reality
+	and the Quantum Theory</a>, <i>Physics Today</i>, April 1985,
+	by <a href="https://www.lassp.cornell.edu/mermin/"
+	target="blank">N. David Mermin</a>.  This is the paper that
+	laid out the version of Bell's Inequality that Styer described
+	in his book and which we went over in class.</li>
+	<li><a href="https://coa.zoom.us/rec/share/Q6t8nmg1UJvsDSGFl4ENvQaViBSnPAqfTdrtcbJMX_FkHDX07vkdnMyQJj3xIXay.dIjTlxY2dO-k1zHC"
+	target="blank">Video of Class</a></li> 
+      </ul>
+    </dd>
+  </div>      
+</dl>
+
+
+
+<dl>
+  <dt class="expand">Discussion 07 (May 10 and 11, 2022): The
+  Copenhagen Interpretation</dt>
+  <div class="collapse"><dd>
+      <p>Pre-class:</p>
+      <ul>
+	<li>Read section 3.2 from <a href="http://www.jimbaggott.com/"
+	  target="blank">Jim Baggott</a>, The Meaning of Quantum
+	  Theory, Oxford University Press, 1992.</li>
+	<li>Optionally, if you want another (perhaps simpler and more
+	quantum-focused) synopsis of the positivism of the early
+	1920s, read section 3.1.  This is pages 75-81.</li>
+	<li>Here are some goals for our discussion:
+	  <ul>
+	    <li>The main thing to focus on is the Copenhagen
+	    interpretation, which is the standard interpretation of
+	      quantum mechanics.</li>
+	    <li>We can also discuss the EPR paradox and Bell's 
+	    inequalities, which we'll have covered in class on
+	    Monday. I suspect there'll be a lot to talk about and
+	    ponder.</li>
+	  </ul>
+	<li>I think you should find this reading shorter and more
+	accessible than last week's reading.</li>
+      </ul>
+      <p>In-class content:</p>
+      <ul>
+	<li>Handouts: None</li>
+      </ul>
+    </dd>
+  </div>      
+  </dl>
+
+
+
+  <dl>
+  <dt class="expand">Class 14 (May 12, 2022): Postulates of Quantum Mechanics, Wave/Particle Duality</dt>
+  <div class="collapse"><dd>
+      <p>Pre-class: </p>
+      <ul>
+	<li>None</li>
+      </ul>	   
+      <p>In-class content</p>
+      <ul>
+	<li>Handouts:
+	  [<a href="./Handouts/qm_postulates.pdf">Postulates of Quantum Mechanics</a>]
+	</li>
+	<li><a href="https://www.youtube.com/watch?v=qCmtegdqOOA"
+	       target="blank">Wave/Particle Duality Visualization</li>
+	<li><a href="https://www.youtube.com/watch?v=W7XOQ0Cyefw"
+	       target="blank">Wave/Particle Duality Animated
+	    Comic</a>, by <a href="https://twitter.com/adeliebr"
+			     target="blank">Adelie Braud</a></li> 
+	<li><a href="https://www.youtube.com/watch?v=-v-OyW3nORo"
+	       target="blank">Quantum Jumps Animated Comic</a>, by
+	  Adelie Braud</li> 
+	<li><a href="https://coa.zoom.us/rec/share/LJ8eOIOJzIINHukVstt0tVnU-nukxiOObYjqGgjzUJOT_cmbnIcePffIKnlOw0fK.J05Vm54kPbiepIan"
+	       target="blank">Video of Class</a></li> 
+      </ul>
+    </dd>
+  </div>      
+  </dl>
+
+
+<dl>
+  <dt class="expand">Homework 07 (Due Friday, May 13, 2022)</dt>
+  <div class="collapse"><dd>
+      <ul>
+	<li><a href="./Homework/homework.07.pdf">Homework 07</a>, due
+	  Friday, May 13. </li>
+      </ul>
+    </dd>
+  </div>
+</dl>
+
+
+  
+  
+  <h3>Week 08</h3>
+  
+  <dl>
+  <dt class="expand">Class 15 (May 16, 2022): Some Facts about Waves,
+  Black-Body Radiation, Photons</dt>
+  <div class="collapse"><dd>
+      <p>Pre-class: </p>
+      <ul>
+	<li>None</li>
+      </ul>	   
+      <p>In-class content</p>
+      <ul>
+	<li>Handouts:
+	  [<a href="./Handouts/waves.pdf">Stuff about Waves</a>]
+	  [<a href="./Handouts/blackbody.pdf">Blackbody Radiation</a>]
+	  [<a href="./Handouts/blackbody+waves.practice.pdf">Blackbody and
+	  Wave Exercises</a>]
+	</li>
+	<li>Videos of class: [<a href="https://youtu.be/lU6QmAL0C5g"
+				 target="blank">Part A: Waves</a>]
+	  [<a href="https://youtu.be/lkIkyNF3dIk" target="blank">Part
+	    B: Blackbody Radiation</a>]</li>  
+      </ul>
+    </dd>
+  </div>      
+  </dl>
+  
+  
+  <dl>
+  <dt class="expand">Discussion 08 (May 17 and 18, 2022): Plank,
+  Einstein, and Quanta of Light</dt>
+  <div class="collapse"><dd>
+      <p>Pre-class:</p>
+      <ul>
+	<li>Read "A Revolution with no Revolutionaries: The
+	Planck-Einstein Equation for the Energy of a Quantum," by
+	Graham Farmelo.  This is an essay from <i>It Must be Beautiful:
+	Great Equations of Modern Science</i>, edited by Graham Farmelo
+	(Granta, 2003).  
+	<li>I think you will find this reading fairly accessible and
+	engaging.</li>
+      </ul>
+      <p>In-class content:</p>
+      <ul>
+	<li>Handouts: None</li>
+      </ul>
+    </dd>
+  </div>      
+</dl>
+
+
+
+<dl>
+  <dt class="expand">Homework 08 (Due Friday, May 20, 2022)</dt>
+  <div class="collapse"><dd>
+      <ul>
+	<li><a href="./Homework/homework.08.pdf">Homework 08</a>, due
+	  Friday, May 20.</li>
+      </ul>
+    </dd>
+  </div>
+</dl>
+
+
+  
+  <dl>
+  <dt class="expand">Class 16 (May 19, 2022): The Photoelectric Effect, de Broglie waves</dt>
+  <div class="collapse"><dd>
+      <p>Pre-class: </p>
+      <ul>
+	<li>None</li>
+      </ul>	   
+      <p>In-class content</p>
+      <ul>
+	<li>Handouts:
+	  [<a href="./Handouts/photoelectric.pdf">Photoelectric Effect</a>]
+	  [<a href="./Handouts/debroglie.pdf">deBroglie Waves</a>]
+	  [<a href="./Handouts/debroglie.practice.pdf">deBroglie 
+	  Exercises</a>]
+	</li>
+	<li><a href="https://youtu.be/iaBQqzHTyt0"
+	  target="blank">Video of Class</a></li>
+      </ul>
+    </dd>
+  </div>      
+  </dl>
+  
+ 
+
+  <h3>Week 09</h3>
+
+
+
+  <dl>
+  <dt class="expand">Class 17 (May 23, 2022):  de Broglie waves, Intro to Cryptography</dt>
+  <div class="collapse"><dd>
+      <p>Pre-class: </p>
+      <ul>
+	<li>None</li>
+      </ul>	   
+      <p>In-class content</p>
+      <ul>
+	<li>Handouts:
+	  [<a href="./Handouts/debroglie.practice.2.pdf">More de Broglie Exercises</a>]
+	  [<a href="./Handouts/alpha.pdf">Letters/Numbers</a>]
+	  [<a href="./Handouts/vigenere_square.pdf">Vigenere Square</a>]
+	  [<a href="./Handouts/crypto.0.pdf">Intro to Cryptography</a>] 
+	</li>
+	<li><a href="https://youtu.be/bNjbNrw5R-o"
+	       target="blank">Video of Class</a></li>
+	<li><a href="https://www.youtube.com/watch?v=9Q72dBsNIx8"
+	target="blank">Vigenere Cipher</a>, a video by Satish C
+	J. This video might be helpful for those who missed class,
+	and/or folks who want to see a worked example of encoding and
+	decoding using the Vigenere square.</li>
+      </ul>
+    </dd>
+  </div>      
+  </dl>
+  
+ 
+
+  
+
+  <dl>
+  <dt class="expand">Discussion 09 (May 24 and 25, 2022): Schroedinger</dt>
+  <div class="collapse"><dd>
+      <p>Pre-class:</p>
+      <ul>
+	<li>Read .  This is an essay from <i>It Must be Beautiful:
+	Great Equations of Modern Science</i>, edited by Graham Farmelo
+	(Granta, 2003).  
+	<li>I think you will find this reading fairly accessible and
+	engaging.</li>
+      </ul>
+      <p>In-class content:</p>
+      <ul>
+	<li>Handouts: None</li>
+      </ul>
+    </dd>
+  </div>      
+</dl>
+
+
+
+
+  <dl>
+  <dt class="expand">Class 18 (May 26, 2022):  Classical and Quantum Cryptography</dt>
+  <div class="collapse"><dd>
+      <p>Pre-class: </p>
+      <ul>
+	<li>None</li>
+      </ul>	   
+      <p>In-class content</p>
+      <ul>
+	<li>Handouts:
+	  [<a href="./Handouts/alpha.pdf">Letters/Numbers</a>]
+	  [<a href="./Handouts/vigenere_square.pdf">Vigenere Square</a>]
+	  [<a href="./Handouts/crypto.2.pdf">Intro to Cryptography: One-time pads</a>]
+	  [<a href="./Handouts/quantum_crypto.pdf">Quantum Cryptography!</a>] 
+	</li>
+	<li><a href="https://youtu.be/SyLjtQkCItk"
+	       target="blank">Video of Class</a></li>
+      </ul>
+    </dd>
+  </div>      
+  </dl>
+
+  
+  <dl>
+  <dt class="expand">Homework 09 (Due Friday, May 27, 2022)</dt> 
+  <div class="collapse"><dd>
+      <ul>
+	<li><a href="./Homework/homework.09.pdf">Homework 09</a>, due
+	  Friday, May 27.</li>
+      </ul>
+    </dd>
+  </div>
+</dl>
+
+
+  <h3>Week 10</h3>
+
+  <dl>
+  <dt class="expand">Class 19 (May 30, 2022):  RSA Public-Key Cryptography</dt>
+  <div class="collapse"><dd>
+      <p>Pre-class: </p>
+      <ul>
+	<li>None</li>
+      </ul>	   
+      <p>In-class content</p>
+      <ul>
+	<li>Handouts:
+	  [<a href="./Handouts/RSA.pdf">RSA Cryptography</a>]
+	</li>
+	<li><a href="https://www.youtube.com/watch?v=4zahvcJ9glg"
+	       target="blank">RSA Encryption Algorithm: Computing an
+	    Example</a> by the
+	       amazing <a href="https://misterwootube.com/" 
+		     target="blank">Eddie Woo</a>. </li>
+	<li><a href="https://www.youtube.com/watch?v=oOcTVTpUsPQ"
+	       target="blank">RSA Encryption Algorithm: How it
+	    Works</a> by the amazing Eddie Woo</li>
+	<li><a href="https://www.youtube.com/watch?v=wXB-V_Keiu8"
+	       target="blank">Public Key Encryption: RSA Encryption
+	       Algorithm</a> by Art of the Problem</li>
+	<li><a href="https://youtu.be/zZ1VfhRKGIU"
+	       target="blank">Video of Class</a>/li>
+      </ul>
+    </dd>
+  </div>      
+  </dl>
+  
+
+  <dl>
+  <dt class="expand">Discussion 10 (May 30 and 31, 2022): Entanglement</dt>
+  <div class="collapse"><dd>
+      <p>Pre-class:</p>
+      <ul>
+	<li>Watch: <a href="https://www.youtube.com/watch?v=EtBBDWIfa7o"
+		      target="blank">Einstein's Riddle</a>, a BBC
+	  documentary</li> 
+	<li>Optionally
+	  watch: <a href="https://www.youtube.com/watch?v=dzKWfw68M5U"
+	  target="blank"> The Many Worlds of the Quantum
+	    Multiverse</a> by PBS Digital Studios</li>
+
+      </ul>
+      <p>In-class content:</p>
+      <ul>
+	<li>Handouts: None</li>
+      </ul>
+    </dd>
+  </div>      
+</dl>
+
+
+
+  
+<dl>
+  <dt class="expand">Reflection Assignment 02 (Target Date: Friday, June 3, 2022)</dt> 
+  <div class="collapse"><dd>
+      <ul>
+	<li><a href="./Homework/reflections.02.pdf">Reflection 02</a>, Target Date:
+	  Friday, June 3. </li>
+      </ul>
+    </dd>
+  </div>
+</dl>
+
+
+
+  
+  <dl>
+  <dt class="expand">Homework 10 (Due Friday, June 3, 2022)</dt> 
+  <div class="collapse"><dd>
+      <ul>
+	<li><a href="./Homework/homework.10.pdf">Homework 10</a>, due
+	  Friday, June 3.</li>
+      </ul>
+    </dd>
+  </div>
+</dl>
+
+
+
+</div> <!-- end main content section -->
+</div> 
+<div id="footer"><div class="spacer"></div>
+
+<hr />
+<center>
+<p class="no-box"> <a href="http://www.coa.edu">COA</a>
+  | <a href="http://hornacek.coa.edu/dave">Dave</a>
+  | <a href="./index.html">C+F</a></p> 
+<p>&nbsp;</p>
+</div> <!-- end footer -->
+
+</div> <!-- end container -->
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<html>
+<head>
+<title> Course Title </title>
+</head>
+
+<body>
+
+<center>
+<h1> Course Title</h1>
+</center>
+
+
+asdf<p>
+asdf<p>
+asdf<p>
+sadf<p>
+asdf<p>
+asdf<p>
+
+
+<hr>
+<br>
+<center>
+<h3>
+[<a href="http://hornacek.coa.edu/dave/Teaching/math.coa.shtml">Math at COA</a>]
+[<a href="http://hornacek.coa.edu/dave/index.html">Dave's Home Page</a>]
+[<a href="http://www.coa.edu/">COA Home Page</a>]</h4>
+</h3>
+</center>
+<p>
+<br>
+The current time is  <!--#echo var="DATE_LOCAL"-->.<br>
+This document was last modified on <!--#echo var="LAST_MODIFIED"--><br>
+Page mainted by Dave Feldman,  <a
+href=mailto:dave@hornacek.coa.edu>dave@hornacek.coa.edu</a>  
+
+<!--Questions about the contents of these pages or about math at the
+College of the Atlantic should be sent to Dave Feldman at <a 
+href=mailto:dave@hornacek.coa.edu>dave@hornacek.coa.edu</a>.
+<p>-->
+
+<p>
+</html>
+
+
+
+

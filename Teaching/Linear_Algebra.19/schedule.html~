@@ -1,0 +1,233 @@
+<!DOCTYPE HTML>
+<!--
+	Hielo by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+  <head>
+    <title>Linear Algebra 2019 | College of the Atlantic</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body class="subpage">
+    
+    <!-- Header -->
+    <header id="header">
+      <div class="logo"><a href="index.html">Linear Algebra</a> Winter 2019</div>
+      <a href="#menu">Menu</a>
+    </header>
+    
+    <!-- Nav -->
+    <nav id="menu">
+      <ul class="links">
+	<li><a href="index.html">Home</a></li>
+	<li><a href="about.html">About</a></li>
+	<li><a href="schedule.html">Schedule</a></li>
+	<li><a href="resources.html">Resources</a></li>
+      </ul>
+    </nav>
+    
+    <!-- One -->
+    <section id="One" class="wrapper style3">
+      <div class="inner">
+	<header class="align-center">
+<!--	  <p>introduction to</p>-->
+	  <h2>Linear Algebra</h2>
+	  <h3>Course Schedule</h4>
+</header>
+</div>
+</section>
+
+		<!-- Two -->
+		<section id="two" class="wrapper style2">
+		    <div class="inner">
+		    <div class="box">
+		    <div class="content">
+			<!--<header class="align-center">
+			<p>maecenas sapien feugiat ex purus</p>
+			<h2>Lorem ipsum dolor</h2>
+			</header>-->
+	
+<!--<header class="align-left">
+  <b>Week One</b>
+ <p>it's kinda obvious from the course title, but here's what i hope you 
+     learn in this course</b>
+  <h2>Course Goals</h2>
+</header>
+-->
+
+<p>Numbers refer to chapters from our textbook, <i>Differential
+    Equations and Linear Algebra</a> (third edition), C. Henry Edwards
+    & David Penney. </p>
+
+<b>Week One</b>
+<ul class="sched"> 
+<li>Tuesday, January 8
+  <ul class="sched"><li>1.1 </ul>
+<li>Wednesday, January 9
+  <ul class="sched"><li>1.2 and 1.4</ul>
+<li>Friday, January 11
+  <ul class="sched"><li>1.3 and 1.4</ul>
+<li><b><a href="./pdf/homework.1.pdf">Week One Homework</a></b>  Due
+  Friday, Jan 11.  
+</ul>
+
+<b>Week Two</b>
+<ul class="sched"> 
+<li>Tuesday, January 15
+  <ul class="sched"><li>1.5</ul>
+<li>Wednesday, January 16
+  <ul class="sched"><li>TBD</ul>
+<li>Friday, January 18
+  <ul class="sched"><li>3.1 and 3.2</ul>
+<li><b><a href="./pdf/homework.2.pdf">Week Two Homework</a></b>  Due
+  Friday, Jan 18.  
+</ul>
+
+<b>Week Three</b>
+<ul class="sched"> 
+<li>Tuesday, January 22
+  <ul class="sched"><li>3.2, 3.3, remarks on induction</ul>
+<li>Wednesday, January 23
+  <ul class="sched"><li>3.4</ul>
+<li>Friday, January 25
+  <ul class="sched"><li>3.5</ul>
+<li><b><a href="./pdf/homework.3.pdf">Week Three Homework</a></b>  Due
+  Friday, Jan 25.  
+</ul>
+
+<b>Week Four</b>
+<ul class="sched"> 
+<li>Tuesday, January 29
+  <ul class="sched"><li>3.6</ul>
+<li>Wednesday, January 30
+  <ul class="sched"><li>Snow Day</ul>
+<li>Friday, February 1
+  <ul class="sched"><li>3.6, 3.7</ul>
+<li><b><a href="./pdf/homework.4.pdf">Week Four Homework</a></b>  Due
+  Friday, February 1.  
+</ul>
+
+<b>Week Five</b>
+<ul class="sched"> 
+<li>Tuesday, February 5
+  <ul class="sched"><li>Midterm Test</ul>
+<li>Wednesday, February 6
+  <ul class="sched"><li>No Class</ul>
+<li>Friday, February 8
+  <ul class="sched"><li>4.1</ul>
+<li>No homework this week</li>
+</ul>
+
+
+<b>Week Six</b>
+<ul class="sched"> 
+<li>Tuesday, February 12
+  <ul class="sched"><li>4.2</ul>
+<li>Wednesday, February 13
+  <ul class="sched"><li>snow day</ul>
+<li>Friday, February 15
+  <ul class="sched"><li>4.3 and 4.4</ul>
+<li><b><a href="./pdf/homework.6.pdf">Week Six Homework</a></b>  Due
+  Friday, Jan 25.  
+</ul>
+
+
+<b>Week Seven</b>
+<ul class="sched"> 
+<li>Tuesday, February 19
+  <ul class="sched"><li>4.4 and 4.5</ul>
+<li>Wednesday, February 20
+  <ul class="sched"><li>4.6 and 6.1</ul>
+<li>Friday, February 22
+  <ul class="sched"><li>6.1</ul>
+<li><b><a href="./pdf/homework.7.pdf">Week Seven Homework</a></b>  Due
+  Friday, February 22.  
+</ul>
+
+
+<b>Week Eight</b>
+<ul class="sched"> 
+<li>Tuesday, February 26
+  <ul class="sched"><li>6.2 and 6.3</ul>
+<li>Wednesday, February 27
+  <ul class="sched"><li>6.3 and the google matrix</ul>
+<li>Friday, March 1
+  <ul class="sched"><li>5.1</ul>
+<li><b><a href="./pdf/homework.8.pdf">Week Eight Homework</a></b>  Due
+  Friday, March 1.  
+</ul>
+
+
+<b>Week Nine</b>
+<ul class="sched"> 
+<li>Tuesday, March 5
+  <ul class="sched"><li>5.1, 7.1, 7.2, and 7.3</ul>
+<li>Wednesday, March 6
+  <ul class="sched"><li>7.3</ul>
+<li>Friday, March 8
+  <ul class="sched"><li>7.5</ul>
+<li><b><a href="./pdf/homework.9.pdf">Week Nine Homework</a></b>  Due
+  Friday, March 8.  
+</ul>
+
+<b>Week Nine</b>
+<ul class="sched"> 
+<li>Tuesday, March 12
+  <ul class="sched"><li>7.3</ul>
+<li>Wednesday, March 13
+  <ul class="sched"><li>9.2</ul>
+<li>Friday, March 15
+  <ul class="sched"><li>Summary and Conclusion</ul>
+<li><b><a href="./pdf/homework.10.pdf">Week Ten Homework</a></b>  Due
+  Friday, March 15.  
+</ul>
+
+
+
+
+
+<b><a href="./pdf/cover_sheet.pdf">Cover Sheet for Homework</a></b>
+
+
+
+
+						
+							
+			</div>
+			</div>
+			</div>
+			</section>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="container">
+				<ul class="icons">
+
+				<ul class="icons">
+
+	<li><a href="http://www.twitter.com/DavidFeldman" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+	<li><a href="http://www.di.fm/channels" class="icon fa-headphones"><span class="label">di</span></a></li>
+	<li><a href="http://ohoriscoffee.com" class="icon fa-coffee"><span class="label">Coffee</span></a></li>
+	<li><a href="http://www.coa.edu" class="icon fa-graduation-cap"><span class="label">COA</span></a></li>
+<!--	<li><a href="http://mainebeercompany.com" class="icon fa-beer"><span class="label">MBC</span></a></li>-->
+	<li><a href="http://hornacek.coa.edu/dave" class="icon fa-male"><span class="label">Dave</span></a></li>
+
+				</ul>
+			</div>
+			<div class="copyright">
+				&copy; Untitled. All rights reserved.
+			</div>
+		</footer>
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>dynamical systems</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="container">
+<div id="header">
+<h1 align=right>tutorial</h1>
+<h5 align=right font=+2>dynamical systems</h5>
+<h2 align=right><a href="http://www.coa.edu">college of the
+    atlantic</a></h2>  
+<h2 align=right>david p. feldman</a> </h2>  
+<h2 align=right>winter 2013</h2>
+<br />
+<hr />
+
+</div> <!-- end header -->
+
+<div class="spacer"></div>
+ 
+
+<div id="main">
+<div id="maincontent">
+
+
+<h2>Texts</h2>
+<p class="no-box">
+There are no required texts for this course.  The following books may
+be helpful to supplement lectures and the book draft. 
+<ol>
+  <li>David P. Feldman.  <a href="http://chaos.coa.edu">Chaos and
+  Fractals: An Elementary Introduction</a>. Oxford University Press.
+  2012. 
+
+  <li>Daniel Kaplan and Leon
+  Glass.  <a href="http://books.google.com/books/about/Understanding_Nonlinear_Dynamics.html?id=j2tBxZc7tP4C">Understanding
+  Nonlinear Dynamics</a>. Birkhauser.  1995.  
+
+  <li>Steven
+  Strogatz.  <a href="http://books.google.com/books?id=FIYHiBLWCJMC&source=gbs_similarbooks">Nonlinear
+  Dynamics and Chaos</a>.  Westview Press.  1994. 
+
+ 
+</ol>
+
+
+
+<h2>Assignments</h2>
+<ul>
+<li><a href="./homework.1.pdf">Assignment One</a>
+<li><a href="./homework.2.pdf">Assignment Two</a>
+<li><a href="./homework.3.pdf">Assignment Three</a>
+<li><a href="./homework.4.pdf">Assignment Four</a>
+<li><a href="./homework.5.pdf">Assignment Five</a>
+<li><a href="./homework.6.pdf">Assignment Six</a>
+<li><a href="./homework.7.pdf">Assignment Seven</a>
+<li><a href="./homework.8.pdf">Assignment Eight</a>
+<li><a href="./homework.9.pdf">Assignment Nine</a>
+<li><a href="./homework.10.pdf">Assignment Ten</a>
+<li><a href="./homework.11.pdf">Assignment Eleven</a>
+</ul>
+
+<h2>Code</h2>
+<ul>
+<li><a href="./iterate_test_v2.py">Iterating functions</a>
+<li><a href="./iterate_test_v3.py">Another version of iteration program</a>
+<li><a href="./euler.py">Euler code</a>
+<li><a href="./lotka-volterra.py">Basic Lotka Volterra code</a>
+<li><a href="./tutorial_lokta-voltera_v4.py">Fancy Lotka Volterra 
+code</a>
+<li><a href="./logistic_histo_v2.py">Histograms for the logistic
+    equation</a> 
+
+
+</ul>
+
+
+
+<h2>Lecture Notes/Book Draft</h2>
+<p class="no-box">
+<ul>
+<li>
+</ul>
+
+<h2>Course Structure</h2>
+This tutorial will meet two to three times a week.  Class meetings
+will be a combination of lecture, discussion, group work, and
+programming sessions.  For almost all class meetings I will assign
+exercises that students will do in groups and then discuss in class.
+Students will do a final project in which they look at a particular
+application of dynamical systems to an area of science.  Using this
+analysis as a starting point, students will also consider what general
+lessons from dynamical systems are important for this scientific
+area.  <br><br>
+
+<h2>Outline</h2>
+<ul>
+<li><b>Introduction I: Dynamical Systems</b>  Finite difference
+  equations and differential equations.  Solution methods, focusing
+  almost exclusively on numerical methods.  <!--What solutions mean and
+  how to think about them.  The role of differential equations in
+  science-->
+
+<li><b>Introduction II: Global and Qualitative Analysis of Dynamical
+Systems.</b>  Global analysis of dynamical systems.  Stable and
+  unstable solutions.  Fixed points and periodic behavior.  Phase
+  space. 
+
+<li><b>Small Changes Yield Big Changes.</b> Bifurcations.
+  Catastrophes.  Hystersis.  Multiple equilibria.
+
+<li><b>Disorder from Order.</b>  Chaos.  Sensitive dependence on
+  initial conditions (butterfly effect).  Lyapunov exponents. 
+
+<li><b>Coexistence of Order and Disorder.</b>  Stable chaos.
+  Invariant densities.  Strange attractors.
+
+<li><b>Complex Behavior from Simple Rules.</b>  Strange attractors.
+  Pattern formation.  Self-organization and emergence.
+
+<li><b>Conclusion.</b>
+
+
+</ul>
+
+
+<h2>Links</h2>
+<p class="no-box">
+<ul>
+<li>A particularly good <a href="http://shreevatsa.wordpress.com/2010/03/07/matplotlib-tutorial/">matplotlib tutorial</a>    
+<li>A good <a href="http://bespokeblog.wordpress.com/2011/07/11/basic-data-plotting-with-matplotlib-part-3-histograms/">tutorial on histograms</a>
+<!--<li><a href="./blog.html">Guidelines for blog posts</a>-->
+<!--<li><a href="./bibliography.html">Bibliography</a>-->
+<!--<li><a href="./questions.html">Reading Questions</a>-->
+</ul>
+
+
+<br><br>
+
+<hr><br>
+
+<p class="no-box">
+
+This course is a survey of dynamical systems, the field of applied
+mathematics that studies systems that change over time.   The modern
+study of dynamical systems includes examining particular systems or
+areas of application, as well as looking at systems more broadly and
+abstractly to develop generally applicable tools for studying
+dynamical systems or to classify different sorts of behavior.
+</p>
+
+<p class="no-box">This course is intended for motivated students with
+  strong math 
+backgrounds who wish to gain an overview of dynamical systems and to
+discuss and debate the insights the study of dynamical systems holds
+for the physical, natural, and social sciences.  Using both
+differential equations and difference equations as our main items of
+study, we will cover standard topics in dynamical systems, including
+phase space, bifurcation diagrams, chaotic behavior, sensitive
+dependence on initial conditions, strange attractors, embedding and
+attractor reconstruction, and Lyapunov exponents.  A central theme
+that emerges from the study of dynamical systems is that there is a
+subtle relationship between order and disorder.  Unpredictable
+behavior can arise from deterministic dynamical systems, and complex
+behavior can have simple origins.  We shall see that predictability
+and unpredictability, simplicity and complexity, and order and
+disorder are not opposites, but are often exist simultaneously in the
+same dynamical system.  </p>
+
+<p class="no-box">Evaluation will be based on participation in
+  seminar-style class sessions, problems sets, and a final project and
+  presentation. </p>
+
+<p class="no-box">Intermediate.  No lab fee.  Prerequisites:  Calculus
+  II and permission of instructor.  Experience writing simple computer
+  programs (in any language) will be helpful, but not required.  Class
+  size limited to 5. 
+
+
+
+
+</p><br>
+
+</html>
+

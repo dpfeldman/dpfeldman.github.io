@@ -1,0 +1,123 @@
+\documentclass[11pt]{article}
+\oddsidemargin=0.0in
+\evensidemargin=0.0in
+\textwidth=6.5in
+\topmargin=-0.75in
+\textheight=9.8in
+%\usepackage{doublespace}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=magenta,
+    filecolor=magenta,      
+    urlcolor=blue,
+    %pdftitle={Overleaf Example},
+    %pdfpagemode=FullScreen,
+    }
+
+\begin{document}
+\pagestyle{empty}
+ 
+\begin{center}
+{\LARGE {\bf Homework Seven}}\\
+\smallskip
+{\Large {\bf Chaos and Fractals}}\\
+\smallskip
+{\Large {\bf College of the Atlantic}}\\
+\smallskip
+{ {\bf Due Friday 18 February, 2022\footnote{If you need more time,
+      that's ok. Just let me know. Thanks!}}}\\  
+\end{center}
+%\medskip
+
+
+%{\bf {\LARGE This problem set is not complete. I might add a few
+%    additional problems.}} \\
+
+\noindent There are two parts to this week's homework.\\
+
+
+\noindent {\bf Part 1: WeBWorK}.
+Do Homework 07 which you will find
+on your
+\href{https://webwork.runestone.academy/webwork2/coa-feldman-es1026i-winter-2022}{WeBWorK
+  page}.  I recommend doing the WeBWorK part of the 
+homework first.  This will enable you to benefit from WeBWorK's
+instant, if not necessarily friendly, feedback before you do part two.\\
+
+
+\noindent {\bf Part 2: Problems from the Textbook}.  Here are some
+instructions for how to submit this part of the assignment.
+\begin{itemize}
+\setlength{\itemsep}{0mm}
+\item Do the problems by hand using pencil (or pen) and paper.
+  There is no need to type of this assignment.
+\item Make a pdf scan of your work using genius scan or some
+  similar scanning app.  Please make the homework into a single
+  pdf, not multiple pdfs.
+\item Submit the assignment on google classroom.
+  %Please don't email it to me.  (Between my two classes I will be
+  %receiving around 45 assignments a week.  Keeping track of them all
+  %in email is challenging.)
+\item {\bf If you want, do these problems in pairs.} %Most of these
+%  problems are exploratory in nature, and it might be fun to have a
+  %  co-explorer.
+  If you do work in pairs,
+  please submit only one set of solutions for the two of you.  If you
+  work with a friend and your friend submits the work, please submit
+  an empty assignment and add a comment letting me know who you worked
+  with.  Thanks.
+%\item Do problem 40 in pairs. Work with someone else in the class
+%  and hand in only one solution for the two of you.
+%\item If you want, you can do all the problems in pairs and hand
+%  in only one set of solutions.\\
+\end{itemize}
+
+\noindent Here are some ``textbook'' problems, which aren't actually
+from the textbook.
+
+\begin{enumerate}
+\item Consider the following
+  complex numbers:
+  \begin{equation}
+    z_1 = -4 -2i \;,\;\;\; z_2 = 3i \;,\;\;\; z_3 = 2 + 0.5i \;,
+    \;\;\;   z_4 = -2 +0.5i \;,
+  \end{equation}
+  \begin{equation}
+  z_5 = -2i \;,\;\;\; z_6 = 2 + 0.5i \;, \;\;\;    z_7 = 4 -2i
+  \;,\;\;\; z_8 = -4 -2i \;.
+  \end{equation}
+    \begin{enumerate}
+      \item Plot the above numbers\footnote{Yes, I know
+        that there are two numbers that are there twice.} on the complex plane. 
+      \item Connect the dots.  The pattern should look familiar.
+    \end{enumerate}
+
+  \item Consider the function $f(z) = iz$.
+    \begin{enumerate}
+      \setlength{\itemsep}{0mm}
+    \item Determine first four iterates of $z_0 = 3$.
+    \item Determine first four iterates of $z_0 = 2i$.
+    \item Plot the iterates for each of the seeds in the complex
+      plane.
+    \item How would you describe the behavior of the orbits?
+    \end{enumerate}
+      
+\end{enumerate}
+
+\noindent And here are some textbook problems from the textbook,
+Chapter 21:  
+\begin{enumerate}
+  \setlength{\itemsep}{0mm}
+\item 21.1
+\item 21.2
+\item 21.3
+\item 21.4
+\item 21.5
+\item Optional: 21.8, 21.9, 21.20
+\end{enumerate}
+
+
+
+\end{document}

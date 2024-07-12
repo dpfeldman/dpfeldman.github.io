@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Calculus II</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="container">
+<div id="header">
+<h1>Calculus II</h1>
+<h2>a mathematics course at <a
+href="http://www.coa.edu">college of the atlantic</a></h2> 
+<h2><a href="http://hornacek.coa.edu/dave">david p. feldman</a> |
+winter 2009</h2>  
+<br />
+<hr />
+
+</div> <!-- end header -->
+
+<div class="spacer"></div>
+<div id="left">
+
+<div id="leftcontent">
+
+  <ul>
+    <li><a href="./index.html">Home</a></li>
+    <li><a href="./overview.html">Course Info</a></li>
+    <li><a href="./description.html">Course Description</a></li>
+    <li><a href="./homework.html">Assignments</a></li>
+    <li><a href="./handouts.html">Handouts</a></li>
+    <li><a href="./projects.html">Final Project</a></li>
+    </ul>
+<p>&nbsp;</p>
+
+<!--<h3>News</h3>
+<p class="news">01.03.09 | site contructed<br />01.05.09 | term -->
+<!--starts<br />1/19 | Design completed</p> 
+-->
+
+
+</div> <!-- end left content -->
+</div> <!-- end left division -->
+
+<div id="main">
+<div id="maincontent">
+
+<h3>Informal Description of the Course</h3><br>
+
+
+<ol>
+    <li>   This class is a lot of work, but I think it's less work
+    than Calculus I.  
+    <li> Falling behind in this course is not a good idea. If you're
+    confused about something, it's very important that you seek help
+    sooner rather than later. There are many people around who can
+    offer help. However, we can't offer assistance if we don't know
+    who needs it when. You need to take responsibility to seek help if
+    you need it. On a related note ... 
+    <li> I do not expect all of the homework assignments to be easy; I
+    don't expect you to be able to sit down and do them easily the
+    first time. Don't let yourself get frustrated -- I strongly
+    suggest working with others and seeking help if you need it. 
+    <li> In Calc II Maple will be more integrated into the course than
+    it was in Calculus I. Knowing how to use a computer algebra and
+    graphing system is important and, at times, essential, if you're
+    going to do "real-world" and not text-book math. This may be
+    frustrating for some, but I'm convinced it's worth it. 
+    <li> This class meets three times a week, with the Wednesday time
+    listed as a lab. My plan, however, is to treat the three meeting
+    times pretty much the same. That is, we'll do lab stuff during
+    class, and vice versa. 
+    <li> In many more traditional math classes the textbook has a ton
+    of examples in them. The book we'll be using doesn't. The result
+    is that students sometimes find the homework to be challenging,
+    frustrating, and occasionally even annoying. However, I'm
+    convinced that this style of homework -- where there's not an
+    example just like the problem you're trying to do -- is much
+    better pedagogically. You'll learn a lot more this way. 
+    <li> This course does covers pretty standard Calc II material. The
+    text book we're using is used at many other colleges and
+    universities in the U.S. 
+    <li> Many of you haven't taken Calc I here this year, and might
+    not have taken and Calculus at all for a while. Don't worry. In
+    the past, people who have taken calculus elsewhere have done very
+    well in this course. We will review Calc I material as needed. 
+    <li> This class is a lot of work. However, the workload is steady;
+    you'll be doing approximately the same amount of work each
+    week. We'll hit the ground running and try to get lots of stuff
+    done the next few weeks. The workload will taper off some toward
+    the end of the term.  
+
+</ol>
+
+
+
+</div> <!-- end main content section -->
+</div> 
+<div id="footer"><div class="spacer"></div>
+
+<hr />
+<p class="left">| <a href="http://www.coa.edu">COA</a> | <a href="http://hornacek.coa.edu">Dave</a> |</p>
+<p class="right">Based on a design <a
+href="http://www.oswd.org/design/preview/id/2613">coded by</a> Matt
+Hollis &copy;2006 and <a href="http://www.oswd.org/design/preview/id/1570">
+designed by Adam Particka</a>.</p>
+<p>&nbsp;</p>
+</div> <!-- end footer -->
+
+</div> <!-- end container -->
+</body>
+
+</html>

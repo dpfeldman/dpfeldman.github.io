@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\oddsidemargin=0.0in
+\evensidemargin=0.0in
+\textwidth=6.5in
+%\topmargin=-.75in
+%\textheight=9in
+%\usepackage{doublespace}
+ 
+\begin{document}
+\pagestyle{empty}
+ 
+\begin{center}
+{\large {\bf Scientific Computing}}\\
+\medskip
+{\large {\bf Plotting Exercise}}\\
+\medskip
+\end{center}
+
+\hspace{2mm}\\
+
+\noindent Before class on Friday, Jan 12, please use matplotlib and
+python to make an interesting plot.  Upload the plot to the shared
+google drive: Scientific Computing 2018/MatplotlibImages.
+
+``Interesting-ness'' in this context is purely subjective.  It could
+be some combination of the following:
+
+\begin{enumerate}
+\setlength{\itemsep}{-1mm}
+  \item You like the shape of the function you plotted
+  \item You experimented with additional plot features: colors, marker
+    styles, changing labels, making multiple functions appear on the
+    same plot.
+  \item The plot is amusing or tells a funny story.
+\end{enumerate}
+Don't stress out on the meaning of interesting.
+
+The goal of this assignment is for you to spend around an hour (maybe
+a bit more, but not too much more) experimenting with matplotlib.  Try
+different things out.  If you don't understand what a number of
+parameter does, try changing it and see what happens.  Plot different
+functions and see what they look like.  Explore.
+
+
+
+
+\end{document}

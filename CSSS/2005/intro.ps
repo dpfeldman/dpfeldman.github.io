@@ -1,0 +1,851 @@
+%!PS-Adobe-2.0
+%%Creator: dvips(k) 5.92b Copyright 2002 Radical Eye Software
+%%Title: intro.dvi
+%%Pages: 10
+%%PageOrder: Ascend
+%%BoundingBox: 0 0 596 842
+%%DocumentFonts: Helvetica Helvetica-Bold CMSY9 CMSY7 Courier
+%%+ Helvetica-Oblique CMSY10
+%%EndComments
+%DVIPSWebPage: (www.radicaleye.com)
+%DVIPSCommandLine: dvips -o intro.ps intro.dvi -Ppdf
+%DVIPSParameters: dpi=8000, compressed
+%DVIPSSource:  TeX output 2005.07.06:2220
+%%BeginProcSet: tex.pro
+%!
+/TeXDict 300 dict def TeXDict begin/N{def}def/B{bind def}N/S{exch}N/X{S
+N}B/A{dup}B/TR{translate}N/isls false N/vsize 11 72 mul N/hsize 8.5 72
+mul N/landplus90{false}def/@rigin{isls{[0 landplus90{1 -1}{-1 1}ifelse 0
+0 0]concat}if 72 Resolution div 72 VResolution div neg scale isls{
+landplus90{VResolution 72 div vsize mul 0 exch}{Resolution -72 div hsize
+mul 0}ifelse TR}if Resolution VResolution vsize -72 div 1 add mul TR[
+matrix currentmatrix{A A round sub abs 0.00001 lt{round}if}forall round
+exch round exch]setmatrix}N/@landscape{/isls true N}B/@manualfeed{
+statusdict/manualfeed true put}B/@copies{/#copies X}B/FMat[1 0 0 -1 0 0]
+N/FBB[0 0 0 0]N/nn 0 N/IEn 0 N/ctr 0 N/df-tail{/nn 8 dict N nn begin
+/FontType 3 N/FontMatrix fntrx N/FontBBox FBB N string/base X array
+/BitMaps X/BuildChar{CharBuilder}N/Encoding IEn N end A{/foo setfont}2
+array copy cvx N load 0 nn put/ctr 0 N[}B/sf 0 N/df{/sf 1 N/fntrx FMat N
+df-tail}B/dfs{div/sf X/fntrx[sf 0 0 sf neg 0 0]N df-tail}B/E{pop nn A
+definefont setfont}B/Cw{Cd A length 5 sub get}B/Ch{Cd A length 4 sub get
+}B/Cx{128 Cd A length 3 sub get sub}B/Cy{Cd A length 2 sub get 127 sub}
+B/Cdx{Cd A length 1 sub get}B/Ci{Cd A type/stringtype ne{ctr get/ctr ctr
+1 add N}if}B/CharBuilder{save 3 1 roll S A/base get 2 index get S
+/BitMaps get S get/Cd X pop/ctr 0 N Cdx 0 Cx Cy Ch sub Cx Cw add Cy
+setcachedevice Cw Ch true[1 0 0 -1 -.1 Cx sub Cy .1 sub]{Ci}imagemask
+restore}B/D{/cc X A type/stringtype ne{]}if nn/base get cc ctr put nn
+/BitMaps get S ctr S sf 1 ne{A A length 1 sub A 2 index S get sf div put
+}if put/ctr ctr 1 add N}B/I{cc 1 add D}B/bop{userdict/bop-hook known{
+bop-hook}if/SI save N @rigin 0 0 moveto/V matrix currentmatrix A 1 get A
+mul exch 0 get A mul add .99 lt{/QV}{/RV}ifelse load def pop pop}N/eop{
+SI restore userdict/eop-hook known{eop-hook}if showpage}N/@start{
+userdict/start-hook known{start-hook}if pop/VResolution X/Resolution X
+1000 div/DVImag X/IEn 256 array N 2 string 0 1 255{IEn S A 360 add 36 4
+index cvrs cvn put}for pop 65781.76 div/vsize X 65781.76 div/hsize X}N
+/p{show}N/RMat[1 0 0 -1 0 0]N/BDot 260 string N/Rx 0 N/Ry 0 N/V{}B/RV/v{
+/Ry X/Rx X V}B statusdict begin/product where{pop false[(Display)(NeXT)
+(LaserWriter 16/600)]{A length product length le{A length product exch 0
+exch getinterval eq{pop true exit}if}{pop}ifelse}forall}{false}ifelse
+end{{gsave TR -.1 .1 TR 1 1 scale Rx Ry false RMat{BDot}imagemask
+grestore}}{{gsave TR -.1 .1 TR Rx Ry scale 1 1 false RMat{BDot}
+imagemask grestore}}ifelse B/QV{gsave newpath transform round exch round
+exch itransform moveto Rx 0 rlineto 0 Ry neg rlineto Rx neg 0 rlineto
+fill grestore}B/a{moveto}B/delta 0 N/tail{A/delta X 0 rmoveto}B/M{S p
+delta add tail}B/b{S p tail}B/c{-4 M}B/d{-3 M}B/e{-2 M}B/f{-1 M}B/g{0 M}
+B/h{1 M}B/i{2 M}B/j{3 M}B/k{4 M}B/w{0 rmoveto}B/l{p -4 w}B/m{p -3 w}B/n{
+p -2 w}B/o{p -1 w}B/q{p 1 w}B/r{p 2 w}B/s{p 3 w}B/t{p 4 w}B/x{0 S
+rmoveto}B/y{3 2 roll p a}B/bos{/SS save N}B/eos{SS restore}B end
+
+%%EndProcSet
+%%BeginProcSet: alt-rule.pro
+%!
+% Patch by TVZ
+% Makes dvips files draw rules with stroke rather than fill.
+% Makes narrow rules more predictable at low resolutions
+% after distilling to PDF.
+% May have unknown consequences for very thick rules.
+% Tested only with dvips 5.85(k).
+TeXDict begin
+/QV {
+  gsave newpath /ruleY X /ruleX X
+  Rx Ry gt
+  { ruleX ruleY Ry 2 div sub moveto Rx 0 rlineto Ry }
+  { ruleX Rx 2 div add ruleY moveto 0 Ry neg rlineto Rx }
+  ifelse
+  setlinewidth 0 setlinecap stroke grestore
+} bind def
+end
+
+%%EndProcSet
+%%BeginProcSet: texc.pro
+%!
+/TeXDict 300 dict def TeXDict begin/N{def}def/B{bind def}N/S{exch}N/X{S
+N}B/A{dup}B/TR{translate}N/isls false N/vsize 11 72 mul N/hsize 8.5 72
+mul N/landplus90{false}def/@rigin{isls{[0 landplus90{1 -1}{-1 1}ifelse 0
+0 0]concat}if 72 Resolution div 72 VResolution div neg scale isls{
+landplus90{VResolution 72 div vsize mul 0 exch}{Resolution -72 div hsize
+mul 0}ifelse TR}if Resolution VResolution vsize -72 div 1 add mul TR[
+matrix currentmatrix{A A round sub abs 0.00001 lt{round}if}forall round
+exch round exch]setmatrix}N/@landscape{/isls true N}B/@manualfeed{
+statusdict/manualfeed true put}B/@copies{/#copies X}B/FMat[1 0 0 -1 0 0]
+N/FBB[0 0 0 0]N/nn 0 N/IEn 0 N/ctr 0 N/df-tail{/nn 8 dict N nn begin
+/FontType 3 N/FontMatrix fntrx N/FontBBox FBB N string/base X array
+/BitMaps X/BuildChar{CharBuilder}N/Encoding IEn N end A{/foo setfont}2
+array copy cvx N load 0 nn put/ctr 0 N[}B/sf 0 N/df{/sf 1 N/fntrx FMat N
+df-tail}B/dfs{div/sf X/fntrx[sf 0 0 sf neg 0 0]N df-tail}B/E{pop nn A
+definefont setfont}B/Cw{Cd A length 5 sub get}B/Ch{Cd A length 4 sub get
+}B/Cx{128 Cd A length 3 sub get sub}B/Cy{Cd A length 2 sub get 127 sub}
+B/Cdx{Cd A length 1 sub get}B/Ci{Cd A type/stringtype ne{ctr get/ctr ctr
+1 add N}if}B/id 0 N/rw 0 N/rc 0 N/gp 0 N/cp 0 N/G 0 N/CharBuilder{save 3
+1 roll S A/base get 2 index get S/BitMaps get S get/Cd X pop/ctr 0 N Cdx
+0 Cx Cy Ch sub Cx Cw add Cy setcachedevice Cw Ch true[1 0 0 -1 -.1 Cx
+sub Cy .1 sub]/id Ci N/rw Cw 7 add 8 idiv string N/rc 0 N/gp 0 N/cp 0 N{
+rc 0 ne{rc 1 sub/rc X rw}{G}ifelse}imagemask restore}B/G{{id gp get/gp
+gp 1 add N A 18 mod S 18 idiv pl S get exec}loop}B/adv{cp add/cp X}B
+/chg{rw cp id gp 4 index getinterval putinterval A gp add/gp X adv}B/nd{
+/cp 0 N rw exit}B/lsh{rw cp 2 copy get A 0 eq{pop 1}{A 255 eq{pop 254}{
+A A add 255 and S 1 and or}ifelse}ifelse put 1 adv}B/rsh{rw cp 2 copy
+get A 0 eq{pop 128}{A 255 eq{pop 127}{A 2 idiv S 128 and or}ifelse}
+ifelse put 1 adv}B/clr{rw cp 2 index string putinterval adv}B/set{rw cp
+fillstr 0 4 index getinterval putinterval adv}B/fillstr 18 string 0 1 17
+{2 copy 255 put pop}for N/pl[{adv 1 chg}{adv 1 chg nd}{1 add chg}{1 add
+chg nd}{adv lsh}{adv lsh nd}{adv rsh}{adv rsh nd}{1 add adv}{/rc X nd}{
+1 add set}{1 add clr}{adv 2 chg}{adv 2 chg nd}{pop nd}]A{bind pop}
+forall N/D{/cc X A type/stringtype ne{]}if nn/base get cc ctr put nn
+/BitMaps get S ctr S sf 1 ne{A A length 1 sub A 2 index S get sf div put
+}if put/ctr ctr 1 add N}B/I{cc 1 add D}B/bop{userdict/bop-hook known{
+bop-hook}if/SI save N @rigin 0 0 moveto/V matrix currentmatrix A 1 get A
+mul exch 0 get A mul add .99 lt{/QV}{/RV}ifelse load def pop pop}N/eop{
+SI restore userdict/eop-hook known{eop-hook}if showpage}N/@start{
+userdict/start-hook known{start-hook}if pop/VResolution X/Resolution X
+1000 div/DVImag X/IEn 256 array N 2 string 0 1 255{IEn S A 360 add 36 4
+index cvrs cvn put}for pop 65781.76 div/vsize X 65781.76 div/hsize X}N
+/p{show}N/RMat[1 0 0 -1 0 0]N/BDot 260 string N/Rx 0 N/Ry 0 N/V{}B/RV/v{
+/Ry X/Rx X V}B statusdict begin/product where{pop false[(Display)(NeXT)
+(LaserWriter 16/600)]{A length product length le{A length product exch 0
+exch getinterval eq{pop true exit}if}{pop}ifelse}forall}{false}ifelse
+end{{gsave TR -.1 .1 TR 1 1 scale Rx Ry false RMat{BDot}imagemask
+grestore}}{{gsave TR -.1 .1 TR Rx Ry scale 1 1 false RMat{BDot}
+imagemask grestore}}ifelse B/QV{gsave newpath transform round exch round
+exch itransform moveto Rx 0 rlineto 0 Ry neg rlineto Rx neg 0 rlineto
+fill grestore}B/a{moveto}B/delta 0 N/tail{A/delta X 0 rmoveto}B/M{S p
+delta add tail}B/b{S p tail}B/c{-4 M}B/d{-3 M}B/e{-2 M}B/f{-1 M}B/g{0 M}
+B/h{1 M}B/i{2 M}B/j{3 M}B/k{4 M}B/w{0 rmoveto}B/l{p -4 w}B/m{p -3 w}B/n{
+p -2 w}B/o{p -1 w}B/q{p 1 w}B/r{p 2 w}B/s{p 3 w}B/t{p 4 w}B/x{0 S
+rmoveto}B/y{3 2 roll p a}B/bos{/SS save N}B/eos{SS restore}B end
+
+%%EndProcSet
+%%BeginProcSet: 8r.enc
+% File  8r.enc as of 2002-03-12 for PSNFSS 9
+%
+% This is the encoding vector for Type1 and TrueType fonts to be used
+% with TeX.  This file is part of the PSNFSS bundle, version 9
+% 
+% Authors: S. Rahtz, P. MacKay, Alan Jeffrey, B. Horn, K. Berry, W. Schmidt
+%
+% Idea is to have all the characters normally included in Type 1 fonts
+% available for typesetting. This is effectively the characters in Adobe
+% Standard Encoding + ISO Latin 1 + extra characters from Lucida + Euro.
+% 
+% Character code assignments were made as follows:
+% 
+% (1) the Windows ANSI characters are almost all in their Windows ANSI
+% positions, because some Windows users cannot easily reencode the
+% fonts, and it makes no difference on other systems. The only Windows
+% ANSI characters not available are those that make no sense for
+% typesetting -- rubout (127 decimal), nobreakspace (160), softhyphen
+% (173). quotesingle and grave are moved just because it's such an
+% irritation not having them in TeX positions.
+% 
+% (2) Remaining characters are assigned arbitrarily to the lower part
+% of the range, avoiding 0, 10 and 13 in case we meet dumb software.
+% 
+% (3) Y&Y Lucida Bright includes some extra text characters; in the
+% hopes that other PostScript fonts, perhaps created for public
+% consumption, will include them, they are included starting at 0x12.
+% 
+% (4) Remaining positions left undefined are for use in (hopefully)
+% upward-compatible revisions, if someday more characters are generally
+% available.
+% 
+% (5) hyphen appears twice for compatibility with both ASCII and Windows.
+%
+% (6) /Euro is assigned to 128, as in Windows ANSI
+% 
+/TeXBase1Encoding [
+% 0x00 (encoded characters from Adobe Standard not in Windows 3.1)
+  /.notdef /dotaccent /fi /fl
+  /fraction /hungarumlaut /Lslash /lslash
+  /ogonek /ring /.notdef
+  /breve /minus /.notdef 
+% These are the only two remaining unencoded characters, so may as
+% well include them.
+  /Zcaron /zcaron 
+% 0x10
+ /caron /dotlessi 
+% (unusual TeX characters available in, e.g., Lucida Bright)
+ /dotlessj /ff /ffi /ffl 
+ /.notdef /.notdef /.notdef /.notdef
+ /.notdef /.notdef /.notdef /.notdef
+ % very contentious; it's so painful not having quoteleft and quoteright
+ % at 96 and 145 that we move the things normally found there down to here.
+ /grave /quotesingle 
+% 0x20 (ASCII begins)
+ /space /exclam /quotedbl /numbersign
+ /dollar /percent /ampersand /quoteright
+ /parenleft /parenright /asterisk /plus /comma /hyphen /period /slash
+% 0x30
+ /zero /one /two /three /four /five /six /seven
+ /eight /nine /colon /semicolon /less /equal /greater /question
+% 0x40
+ /at /A /B /C /D /E /F /G /H /I /J /K /L /M /N /O
+% 0x50
+ /P /Q /R /S /T /U /V /W
+ /X /Y /Z /bracketleft /backslash /bracketright /asciicircum /underscore
+% 0x60
+ /quoteleft /a /b /c /d /e /f /g /h /i /j /k /l /m /n /o
+% 0x70
+ /p /q /r /s /t /u /v /w
+ /x /y /z /braceleft /bar /braceright /asciitilde
+ /.notdef % rubout; ASCII ends
+% 0x80
+ /Euro /.notdef /quotesinglbase /florin
+ /quotedblbase /ellipsis /dagger /daggerdbl
+ /circumflex /perthousand /Scaron /guilsinglleft
+ /OE /.notdef /.notdef /.notdef
+% 0x90
+ /.notdef /.notdef /.notdef /quotedblleft
+ /quotedblright /bullet /endash /emdash
+ /tilde /trademark /scaron /guilsinglright
+ /oe /.notdef /.notdef /Ydieresis
+% 0xA0
+ /.notdef % nobreakspace
+ /exclamdown /cent /sterling
+ /currency /yen /brokenbar /section
+ /dieresis /copyright /ordfeminine /guillemotleft
+ /logicalnot
+ /hyphen % Y&Y (also at 45); Windows' softhyphen
+ /registered
+ /macron
+% 0xD0
+ /degree /plusminus /twosuperior /threesuperior
+ /acute /mu /paragraph /periodcentered
+ /cedilla /onesuperior /ordmasculine /guillemotright
+ /onequarter /onehalf /threequarters /questiondown
+% 0xC0
+ /Agrave /Aacute /Acircumflex /Atilde /Adieresis /Aring /AE /Ccedilla
+ /Egrave /Eacute /Ecircumflex /Edieresis
+ /Igrave /Iacute /Icircumflex /Idieresis
+% 0xD0
+ /Eth /Ntilde /Ograve /Oacute
+ /Ocircumflex /Otilde /Odieresis /multiply
+ /Oslash /Ugrave /Uacute /Ucircumflex
+ /Udieresis /Yacute /Thorn /germandbls
+% 0xE0
+ /agrave /aacute /acircumflex /atilde
+ /adieresis /aring /ae /ccedilla
+ /egrave /eacute /ecircumflex /edieresis
+ /igrave /iacute /icircumflex /idieresis
+% 0xF0
+ /eth /ntilde /ograve /oacute
+ /ocircumflex /otilde /odieresis /divide
+ /oslash /ugrave /uacute /ucircumflex
+ /udieresis /yacute /thorn /ydieresis
+] def
+
+%%EndProcSet
+%%BeginProcSet: bbad153f.enc
+% Thomas Esser, Dec 2002. public domain
+%
+% Encoding for:
+%     cmsy10 cmsy5 cmsy6 cmsy7 cmsy8 cmsy9
+%
+/TeXbbad153fEncoding [
+/minus /periodcentered /multiply /asteriskmath /divide /diamondmath
+/plusminus /minusplus /circleplus /circleminus /circlemultiply
+/circledivide /circledot /circlecopyrt /openbullet /bullet
+/equivasymptotic /equivalence /reflexsubset /reflexsuperset /lessequal
+/greaterequal /precedesequal /followsequal /similar /approxequal
+/propersubset /propersuperset /lessmuch /greatermuch /precedes /follows
+/arrowleft /arrowright /arrowup /arrowdown /arrowboth /arrownortheast
+/arrowsoutheast /similarequal /arrowdblleft /arrowdblright /arrowdblup
+/arrowdbldown /arrowdblboth /arrownorthwest /arrowsouthwest /proportional
+/prime /infinity /element /owner /triangle /triangleinv /negationslash
+/mapsto /universal /existential /logicalnot /emptyset /Rfractur /Ifractur
+/latticetop /perpendicular /aleph /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /union /intersection
+/unionmulti /logicaland /logicalor /turnstileleft /turnstileright
+/floorleft /floorright /ceilingleft /ceilingright /braceleft /braceright
+/angbracketleft /angbracketright /bar /bardbl /arrowbothv /arrowdblbothv
+/backslash /wreathproduct /radical /coproduct /nabla /integral
+/unionsq /intersectionsq /subsetsqequal /supersetsqequal /section
+/dagger /daggerdbl /paragraph /club /diamond /heart /spade /arrowleft
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/minus /periodcentered /multiply /asteriskmath /divide /diamondmath
+/plusminus /minusplus /circleplus /circleminus /.notdef /.notdef
+/circlemultiply /circledivide /circledot /circlecopyrt /openbullet
+/bullet /equivasymptotic /equivalence /reflexsubset /reflexsuperset
+/lessequal /greaterequal /precedesequal /followsequal /similar
+/approxequal /propersubset /propersuperset /lessmuch /greatermuch
+/precedes /follows /arrowleft /spade /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+] def
+
+%%EndProcSet
+%%BeginProcSet: texps.pro
+%!
+TeXDict begin/rf{findfont dup length 1 add dict begin{1 index/FID ne 2
+index/UniqueID ne and{def}{pop pop}ifelse}forall[1 index 0 6 -1 roll
+exec 0 exch 5 -1 roll VResolution Resolution div mul neg 0 0]FontType 0
+ne{/Metrics exch def dict begin Encoding{exch dup type/integertype ne{
+pop pop 1 sub dup 0 le{pop}{[}ifelse}{FontMatrix 0 get div Metrics 0 get
+div def}ifelse}forall Metrics/Metrics currentdict end def}{{1 index type
+/nametype eq{exit}if exch pop}loop}ifelse[2 index currentdict end
+definefont 3 -1 roll makefont/setfont cvx]cvx def}def/ObliqueSlant{dup
+sin S cos div neg}B/SlantFont{4 index mul add}def/ExtendFont{3 -1 roll
+mul exch}def/ReEncodeFont{CharStrings rcheck{/Encoding false def dup[
+exch{dup CharStrings exch known not{pop/.notdef/Encoding true def}if}
+forall Encoding{]exch pop}{cleartomark}ifelse}if/Encoding exch def}def
+end
+
+%%EndProcSet
+%%BeginFont: CMSY10
+%!PS-AdobeFont-1.1: CMSY10 1.0
+%%CreationDate: 1991 Aug 15 07:20:57
+% Copyright (C) 1997 American Mathematical Society. All Rights Reserved.
+11 dict begin
+/FontInfo 7 dict dup begin
+/version (1.0) readonly def
+/Notice (Copyright (C) 1997 American Mathematical Society. All Rights Reserved) readonly def
+/FullName (CMSY10) readonly def
+/FamilyName (Computer Modern) readonly def
+/Weight (Medium) readonly def
+/ItalicAngle -14.035 def
+/isFixedPitch false def
+end readonly def
+/FontName /CMSY10 def
+/PaintType 0 def
+/FontType 1 def
+/FontMatrix [0.001 0 0 0.001 0 0] readonly def
+/Encoding 256 array
+0 1 255 {1 index exch /.notdef put} for
+dup 0 /.notdef put
+readonly def
+/FontBBox{-29 -960 1116 775}readonly def
+/UniqueID 5000820 def
+currentdict end
+currentfile eexec
+D9D66F633B846A97B686A97E45A3D0AA052F09F9C8ADE9D907C058B87E9B6964
+7D53359E51216774A4EAA1E2B58EC3176BD1184A633B951372B4198D4E8C5EF4
+A213ACB58AA0A658908035BF2ED8531779838A960DFE2B27EA49C37156989C85
+E21B3ABF72E39A89232CD9F4237FC80C9E64E8425AA3BEF7DED60B122A52922A
+221A37D9A807DD01161779DDE7D31FF2B87F97C73D63EECDDA4C49501773468A
+27D1663E0B62F461F6E40A5D6676D1D12B51E641C1D4E8E2771864FC104F8CBF
+5B78EC1D88228725F1C453A678F58A7E1B7BD7CA700717D288EB8DA1F57C4F09
+0ABF1D42C5DDD0C384C7E22F8F8047BE1D4C1CC8E33368FB1AC82B4E96146730
+DE3302B2E6B819CB6AE455B1AF3187FFE8071AA57EF8A6616B9CB7941D44EC7A
+71A7BB3DF755178D7D2E4BB69859EFA4BBC30BD6BB1531133FD4D9438FF99F09
+4ECC068A324D75B5F696B8688EEB2F17E5ED34CCD6D047A4E3806D000C199D7C
+515DB70A8D4F6146FE068DC1E5DE8BC5703711DA090312BA3FC00A08C453C609
+C627A8BECD6E1FA14A3B02476E90AAD8B4700C400380BC9AFFBF7847EB28661B
+9DC3AA0F44C533F2E07DCC4DE19D367BF223E33DC321D0247A0E6EF6ABC8FA52
+15AE044094EF678A8726CD7C011F02BFF8AB6EAEEE391AD837120823BED0B5D8
+F8B15245377871A64F78378BB4330149D6941F7A86FBFFC49B93C94155F5FA7D
+F22E7214511C0A92693F4CDBF38411651540572F2DD70D924AE0F18E1CD581F3
+C871399127FF5D07A868885B5FF7CDEB50B8323B2533DEF8DC973B1AE84FA0A2
+
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+cleartomark
+%%EndFont 
+%%BeginFont: CMSY7
+%!PS-AdobeFont-1.1: CMSY7 1.0
+%%CreationDate: 1991 Aug 15 07:21:52
+% Copyright (C) 1997 American Mathematical Society. All Rights Reserved.
+11 dict begin
+/FontInfo 7 dict dup begin
+/version (1.0) readonly def
+/Notice (Copyright (C) 1997 American Mathematical Society. All Rights Reserved) readonly def
+/FullName (CMSY7) readonly def
+/FamilyName (Computer Modern) readonly def
+/Weight (Medium) readonly def
+/ItalicAngle -14.035 def
+/isFixedPitch false def
+end readonly def
+/FontName /CMSY7 def
+/PaintType 0 def
+/FontType 1 def
+/FontMatrix [0.001 0 0 0.001 0 0] readonly def
+/Encoding 256 array
+0 1 255 {1 index exch /.notdef put} for
+dup 0 /.notdef put
+readonly def
+/FontBBox{-15 -951 1252 782}readonly def
+/UniqueID 5000817 def
+currentdict end
+currentfile eexec
+D9D66F633B846A97B686A97E45A3D0AA052F09F9C8ADE9D907C058B87E9B6964
+7D53359E51216774A4EAA1E2B58EC3176BD1184A633B951372B4198D4E8C5EF4
+A213ACB58AA0A658908035BF2ED8531779838A960DFE2B27EA49C37156989C85
+E21B3ABF72E39A89232CD9F4237FC80C9E64E8425AA3BEF7DED60B122A52922A
+221A37D9A807DD01161779DDE7D251491EBF65A98C9FE2B1CF8D725A70281949
+8F4AFFE638BBA6B12386C7F32BA350D62EA218D5B24EE612C2C20F43CD3BFD0D
+F02B185B692D7B27BEC7290EEFDCF92F95DDEB507068DE0B0B0351E3ECB8E443
+E611BE0A41A1F8C89C3BC16B352C3443AB6F665EAC5E0CC4229DECFC58E15765
+424C919C273E7FA240BE7B2E951AB789D127625BBCB7033E005050EB2E12B1C8
+E5F3AD1F44A71957AD2CC53D917BFD09235601155886EE36D0C3DD6E7AA2EF9C
+C402C77FF1549E609A711FC3C211E64E8F263D60A57E9F2B47E3480B978AAF63
+868AEA25DA3D5413467B76D2F02F8097D2841EDA6677731A6ACFEC0BABF1016A
+089B2D24FA80E89E381E17A5E49663B60435D79C04AFCB27AF313045D656F461
+93419897889D12DC113AC6F3E770F84030ABB6E0E84822062F22823E15C18EE6
+E524114FBC6B5FE333E2C649670C7EEAB2EE8F98CECBC72B2061A886113BCD86
+34BC89B316AED93C32336F15F2038797FA6AA3B63EF403BEC4F40DCE0B2A1C89
+92BC8F62BF85B2D4418236D4795B16BAB0DC89098B5226FB96544457550AE495
+36ADB1399938FF601079DBCBD45914B5E3EB0D6AC6DD675A093B837B3A42BC37
+528CF6FF82FDD1BFEA6FDC9AC1D7C2B234D3E2CB59258C530CE314F409C10B0C
+6F6AB5C5328407AA1A3A0835D81524219D501B2CA34F839703364431A499320B
+F219D27AE28BC90912E7
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+cleartomark
+%%EndFont 
+%%BeginFont: CMSY9
+%!PS-AdobeFont-1.1: CMSY9 1.0
+%%CreationDate: 1991 Aug 15 07:22:27
+% Copyright (C) 1997 American Mathematical Society. All Rights Reserved.
+11 dict begin
+/FontInfo 7 dict dup begin
+/version (1.0) readonly def
+/Notice (Copyright (C) 1997 American Mathematical Society. All Rights Reserved) readonly def
+/FullName (CMSY9) readonly def
+/FamilyName (Computer Modern) readonly def
+/Weight (Medium) readonly def
+/ItalicAngle -14.035 def
+/isFixedPitch false def
+end readonly def
+/FontName /CMSY9 def
+/PaintType 0 def
+/FontType 1 def
+/FontMatrix [0.001 0 0 0.001 0 0] readonly def
+/Encoding 256 array
+0 1 255 {1 index exch /.notdef put} for
+dup 0 /.notdef put
+readonly def
+/FontBBox{-30 -958 1146 777}readonly def
+/UniqueID 5000819 def
+currentdict end
+currentfile eexec
+D9D66F633B846A97B686A97E45A3D0AA052F09F9C8ADE9D907C058B87E9B6964
+7D53359E51216774A4EAA1E2B58EC3176BD1184A633B951372B4198D4E8C5EF4
+A213ACB58AA0A658908035BF2ED8531779838A960DFE2B27EA49C37156989C85
+E21B3ABF72E39A89232CD9F4237FC80C9E64E8425AA3BEF7DED60B122A52922A
+221A37D9A807DD01161779DDE7D31FF2B87F97C73D63EECDDA4C49501773468A
+27D1663E0B62F461F6E40A5D6676D0037D33F24E2FAC2B0009AD3C8350CDF8CC
+65BCA87979C36D14CB552E9A985E48BE4E88ECA16DF418749AF04FDD2B0E1380
+D281BB2476BB45FF30946B247DFD7F57305FA87E50CA338121C71CDFDF927A9C
+77FF14CB4A1D6D80356FB1171ED38C37702350497B44E42CE31DB2F493807DAA
+15B887C671199A54C4C1294BC520F5538C15556BC43C9F62342B121C6DCD6C5F
+491DA47FF360201EE21C08A781ED0589A6DF91B99FE118B9B29E4F068672E52F
+1A06C514D91C4C937D4E642503392B1CD1BE8C2F499A1AD3753691F4D1DAB520
+BDD769BAB70656DCE98FE5F77BE3D8633BECC0F8296D447419F73D58A556A872
+53D139658EF30FE8E30E472DF06CA631B6F08402039CADB5B46166CEC30C10D0
+0910E22AAA5632CB8F7FCB77BCD3BF38A5DABE2AC0CCABA535B03F338EFAA3E1
+46480A4F905AE2C3E9000CB2F8519BFB4E0957F06C42602C10C0AF760AD41857
+22664E61710936247988451E405A231578D43D8582F0904DAC9CD895E1404B6E
+E70669B1718F693EB4C8C9C610102905DD794D1AD2033F5CC015C5BA25AFC225
+F70E4D61A8006C96CD099554110EBFFD0EE307BE01E75B825E46ADBB3C4702FE
+A3BCC8E48B8DAD4119C5D70579ACB5CA6693F17FA2F46195042088A93515D600
+7EF1023FDE89E22515
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+cleartomark
+%%EndFont 
+TeXDict begin 39158280 55380996 2074 8000 8000 (intro.dvi)
+@start /Fa 240[1148 15[{ TeXbbad153fEncoding ReEncodeFont }1
+2295.84 /CMSY10 rf /Fb 139[523 1[627 1[1047 1047 1047
+1568 4[1047 1047 1[1047 3[1047 97[{ TeXBase1Encoding ReEncodeFont }10
+1882.6 /Helvetica-Oblique rf /Fc 105[1047 28[1047 1047
+1[1047 1150 627 1047 732 1[1150 1150 1150 1674 523 2[523
+1150 1150 627 1047 1150 1047 1150 1047 12[1150 1256 2[1256
+1465 1[1568 3[523 1[1465 3[1359 1[1359 1[1150 4[627 58[{
+ TeXBase1Encoding ReEncodeFont }33 1882.6 /Helvetica-Bold
+rf /Fd 137[950 950 950 1[950 1[950 950 950 2[950 2[950
+2[950 950 950 1[950 38[950 10[950 950 46[{
+ TeXBase1Encoding ReEncodeFont }16 1582.98 /Courier rf
+/Fe 242[1830 13[{ TeXbbad153fEncoding ReEncodeFont }1
+1607.08 /CMSY7 rf /Ff 242[2124 13[{ TeXbbad153fEncoding ReEncodeFont }1
+2066.25 /CMSY9 rf /Fg 137[847 942 471 847 4[942 1411
+376 2[376 942 2[942 942 847 1[942 12[1035 1130 2[1130
+6[471 2[1035 1[1223 21[471 46[{ TeXBase1Encoding ReEncodeFont }20
+1694.34 /Helvetica rf /Fh 104[1883 2[627 627 24[941 941
+941 1359 941 1047 523 941 627 1047 1047 1047 1047 1568
+418 941 418 418 1047 1047 523 1047 1047 941 1047 1047
+7[1256 1[1777 1[1359 1150 1256 1359 1465 1256 1465 1359
+1568 1047 2[523 1359 1[1150 1256 1359 1359 1256 1256
+1[1047 3[523 523 1047 1047 1047 1047 1047 1047 1047 1047
+1047 1047 523 523 627 523 2[627 627 418 5[523 29[941
+941 2[{ TeXBase1Encoding ReEncodeFont }72 1882.6 /Helvetica
+rf /Fi 138[1256 628 1130 2[1256 1256 1256 1[502 2[502
+1256 1256 628 1256 1256 1130 1[1256 12[1380 1507 9[628
+2[1380 2[1631 1[1507 65[{ TeXBase1Encoding ReEncodeFont }21
+2259.12 /Helvetica rf /Fj 134[1256 1256 1[1256 1380 752
+1256 879 1[1380 1380 1380 2008 628 1256 1[628 1380 2[1256
+1380 1256 1[1256 13[1507 2[1507 9[1380 1[1631 1631 2[2203
+5[752 10[628 628 46[{ TeXBase1Encoding ReEncodeFont }28
+2259.12 /Helvetica-Bold rf /Fk 134[659 2[659 733 366
+1[439 2[733 733 1098 293 1[293 293 733 733 1[733 733
+659 1[733 13[879 2[879 5[659 366 2[805 1[951 951 879
+7[366 733 733 733 733 733 733 733 733 733 733 1[366 1[366
+44[{ TeXBase1Encoding ReEncodeFont }38 1317.82 /Helvetica
+rf end
+%%EndProlog
+%%BeginSetup
+%%Feature: *Resolution 8000dpi
+TeXDict begin
+%%PaperSize: A4
+ end
+%%EndSetup
+%%Page: 1 1
+TeXDict begin 1 0 bop -3200 3449 a Fk(SFI)367 b(CSSS)-26
+b(,)367 b(Beijing)d(China,)i(J)-26 b(uly)365 b(2005:)452
+b(Introduction)29138 b(1)p -2043 4722 56085 443 v -2043
+77520 443 72799 v 4111 15445 a Fj(Some)628 b(Foundations)j(in)d(Comple)
+-34 b(x)630 b(Systems:)16090 19238 y Fi(T)-271 b(ools)627
+b(and)h(Concepts)16736 25786 y Fj(Da)-34 b(vid)629 b(P)-271
+b(.)627 b(Feldman)15012 33464 y Fi(College)h(of)g(the)g(Atlantic)24429
+36715 y Fh(and)17180 39966 y Fi(Santa)g(F)-68 b(e)628
+b(Institute)12736 46712 y Fj(da)-34 b(ve@hornacek.coa.edu)10073
+50651 y(http://hornacek.coa.edu/da)g(ve/)8844 59350 y
+Fg(c)8206 59412 y Ff(\260)p Fg(Da)g(vid)472 b(P)-305
+b(.)471 b(F)-51 b(eldman)472 b(and)f(The)g(Santa)h(F)-51
+b(e)471 b(Institute)p 53599 77520 V -2043 77962 56085
+443 v -2248 79479 a Fk(c)-2834 79527 y Fe(\260)q Fk(Da)-26
+b(vid)365 b(P)-237 b(.)367 b(F)-40 b(eldman)365 b(and)g(SFI)14091
+b Fd(http://hornacek.coa.edu/dave)p eop end
+%%Page: 2 2
+TeXDict begin 2 1 bop -3200 3449 a Fk(SFI)367 b(CSSS)-26
+b(,)367 b(Beijing)d(China,)i(J)-26 b(uly)365 b(2005:)452
+b(Introduction)29138 b(2)p -2043 4722 56085 443 v -2043
+77520 443 72799 v 13618 8517 a Fc(CSSS)522 b(Thoughts)j(and)e(Ad)-28
+b(vice)1677 12890 y Fh(1.)942 b(W)-56 b(elcome)522 b(to)i(the)f(summer)
+g(school.)1677 17263 y(2.)942 b(I)523 b(attended)g(the)g(CSSS)f(in)h
+(Santa)g(F)-56 b(e)523 b(in)g(1996)f(and)g(lectured)h(in)4189
+20476 y(Qingdao)e(in)i(2004.)1677 24849 y(3.)942 b(The)523
+b(most)h(interesting)e(and)h(v)-47 b(aluab)-38 b(le)522
+b(par)75 b(ts)524 b(of)f(the)g(summer)4189 28062 y(school)g(will)g
+(probab)-38 b(ly)522 b(be)h(the)g(discussions)h(y)-38
+b(ou)523 b(ha)-38 b(v)-47 b(e)523 b(with)4189 31275 y(other)f(students)
+i(and)e(the)h(w)-19 b(or)28 b(k)524 b(y)-38 b(ou)524
+b(do)f(in)g(w)-19 b(or)28 b(king)523 b(g)-19 b(roups)-28
+b(.)4189 34488 y(The)523 b(lectures)g(are)g(just)g(star)75
+b(ting)524 b(point.)1677 38861 y(4.)942 b(The)523 b(CSSS)f(is)i(an)f
+(amazing)f(oppor)75 b(tunity)523 b(to)g(inter)-19 b(act)524
+b(with)4189 42074 y(people)e(y)-38 b(ou)523 b(might)g(not)g(nor)47
+b(mally)523 b(inter)-19 b(act)524 b(with.)648 b(T)-226
+b(ak)-38 b(e)4189 45287 y(adv)-47 b(antage)522 b(of)h(this)-28
+b(.)1677 49660 y(5.)942 b(Think)523 b(of)g(y)-38 b(our)524
+b(role)e(as)i(both)e(a)i(lear)47 b(ner)522 b(and)g(a)h(teacher)-94
+b(.)1677 54033 y(6.)942 b(Don't)523 b(spend)f(too)i(m)-19
+b(uch)523 b(energy)f(w)-19 b(orr)56 b(ying)524 b(about)e(the)4189
+57246 y(de\002nition)g(of)h(comple)-56 b(xity)524 b(or)f(comple)-56
+b(x)523 b(systems)-28 b(.)649 b(\(Y)-264 b(ou)4189 60460
+y(w)-19 b(ouldn't)522 b(go)h(to)h(a)f(histor)56 b(y)524
+b(conf)-56 b(erence)522 b(and)g(spend)h(a)g(month)4189
+63673 y(debating)f(what)h(histor)56 b(y)524 b(is)-28
+b(.\))1677 68046 y(7.)942 b(W)-56 b(or)28 b(king)522
+b(across)i(disciplines)f(can)g(be)f(challenging.)646
+b(Diff)-56 b(erent)4189 71259 y(disciplines)522 b(ha)-38
+b(v)-47 b(e)524 b(diff)-56 b(erent)522 b(v)-47 b(ocab)-38
+b(ular)28 b(ies)523 b(and)f(under)28 b(lying)4189 74472
+y(assumptions)-28 b(.)647 b(Be)523 b(patient\227it')-94
+b(s)523 b(w)-19 b(or)75 b(th)524 b(it.)p 53599 77520
+V -2043 77962 56085 443 v -2248 79479 a Fk(c)-2834 79527
+y Fe(\260)q Fk(Da)-26 b(vid)365 b(P)-237 b(.)367 b(F)-40
+b(eldman)365 b(and)g(SFI)14091 b Fd(http://hornacek.coa.edu/dave)p
+eop end
+%%Page: 3 3
+TeXDict begin 3 2 bop -3200 3449 a Fk(SFI)367 b(CSSS)-26
+b(,)367 b(Beijing)d(China,)i(J)-26 b(uly)365 b(2005:)452
+b(Introduction)29138 b(3)p -2043 4722 56085 443 v -2043
+77520 443 72799 v 8713 8517 a Fc(Comments)523 b(about)h(m)-56
+b(y)522 b(series)h(of)g(lectures)1677 12926 y Fh(1.)942
+b(I)523 b(am)h(tr)-19 b(ained)522 b(as)i(a)f(theoretical)f(ph)-56
+b(ysicist.)649 b(So)522 b(m)-28 b(y)524 b(approach)4189
+16148 y(will)f(be)g(some)-38 b(what)523 b(ph)-56 b(ysics-centr)28
+b(ic.)1677 20558 y(2.)942 b(There)522 b(is)i(a)f(lot)g(of)h(mater)28
+b(ial)523 b(that)g(I'm)h(tr)56 b(ying)524 b(to)f(co)-28
+b(v)-47 b(er)-94 b(,)523 b(so)h(I'll)4189 23779 y(mo)-28
+b(v)-47 b(e)523 b(quic)-38 b(kly)524 b(and)e(at)h(times)h(will)g(skip)f
+(some)h(topics)f(that)h(I)4189 27001 y(really)e(shouldn't)h(skip)-66
+b(.)1677 31411 y(3.)942 b(I)523 b(will)h(be)e(co)-28
+b(v)-47 b(er)28 b(ing)523 b(some)g(topics)h(that)f(some)h(of)f(y)-38
+b(ou)524 b(kno)-28 b(w)4189 34633 y(v)-47 b(er)56 b(y)493
+b(w)-19 b(ell,)500 b(and)492 b(others)h(topics)h(that)f(y)-38
+b(ou)493 b(don't)g(kno)-28 b(w)493 b(that)g(w)-19 b(ell.)4189
+37855 y(This)523 b(means)g(there)g(will)g(be)g(times)h(when)f(the)g
+(lectures)g(seem)4189 41076 y(too)g(slo)-28 b(w)523 b(or)g(too)g(f)-56
+b(ast.)648 b(I)524 b(don't)f(kno)-28 b(w)523 b(ho)-28
+b(w)523 b(to)g(a)-38 b(v)-47 b(oid)523 b(this)-28 b(.)648
+b(This)4189 44298 y(will)523 b(probab)-38 b(ly)522 b(be)h(the)g(case)h
+(f)-56 b(or)523 b(all)f(the)i(lectures)f(this)g(month.)1677
+48708 y(4.)942 b(Please)-28 b(,)522 b(ask)i(questions)f(dur)28
+b(ing)522 b(\(and)g(after\))i(the)f(lectures!)1677 53117
+y(5.)942 b(I')-94 b(d)523 b(also)g(w)-19 b(elcome)523
+b(comments)-28 b(,)524 b(cr)28 b(itique)-28 b(,)523 b(and)g(con)-38
+b(v)-47 b(ersation.)1677 57527 y(6.)942 b(My)524 b(aim)f(is)g(to)h(giv)
+-47 b(e)523 b(a)g(some)-38 b(what)523 b(selectiv)-47
+b(e)524 b(and)e(opinionated)4189 60749 y(sur)56 b(v)-47
+b(e)-38 b(y)524 b(of)f(tools)-28 b(,)524 b(methods)-28
+b(,)523 b(and)g(ideas)f(from)i(comple)-56 b(x)4189 63971
+y(systems)-28 b(.)1677 68380 y(7.)942 b(W)-56 b(e)522
+b(can't)i(co)-28 b(v)-47 b(er)523 b(an)-28 b(ything,)522
+b(so)i(I'v)-47 b(e)523 b(chosen)g(what)g(I)h(think)f(is)4189
+71602 y(most)h(impor)75 b(tant)523 b(and)f(what)i(y)-38
+b(ou')-94 b(re)522 b(less)i(lik)-38 b(ely)524 b(to)f(get)4189
+74824 y(else)-38 b(where)-28 b(.)p 53599 77520 V -2043
+77962 56085 443 v -2248 79479 a Fk(c)-2834 79527 y Fe(\260)q
+Fk(Da)i(vid)365 b(P)-237 b(.)367 b(F)-40 b(eldman)365
+b(and)g(SFI)14091 b Fd(http://hornacek.coa.edu/dave)p
+eop end
+%%Page: 4 4
+TeXDict begin 4 3 bop -3200 3449 a Fk(SFI)367 b(CSSS)-26
+b(,)367 b(Beijing)d(China,)i(J)-26 b(uly)365 b(2005:)452
+b(Introduction)29138 b(4)p -2043 4722 56085 443 v -2043
+77520 443 72799 v 17330 8517 a Fc(Comple)-28 b(x)523
+b(Systems?)800 13047 y Fh(I'm)h(not)f(interested)g(in)g(a)g(str)28
+b(ict)524 b(de\002nition)f(of)g(comple)-56 b(x)523 b(systems)-28
+b(.)800 16298 y(Ho)g(w)-19 b(e)-56 b(v)-47 b(er)-94 b(,)523
+b(it)g(seems)h(to)f(me)h(that)f(most)h(things)f(w)-19
+b(e')-94 b(d)523 b(think)g(of)h(as)f(a)800 19549 y(comple)-56
+b(x)523 b(system)h(share)f(man)-28 b(y)523 b(of)g(the)g(f)-56
+b(ollo)-28 b(wing)522 b(f)-56 b(eatures:)1677 24080 y(1.)942
+b(Unpredictability)-188 b(.)647 b(A)523 b(perf)-56 b(ectly)523
+b(predictiv)-47 b(e)523 b(theor)56 b(y)523 b(is)h(r)-19
+b(arely)4189 27331 y(possib)-38 b(le)-28 b(.)1677 31862
+y(2.)942 b(Emergence:)646 b(Systems)524 b(gener)-19 b(ate)522
+b(patter)47 b(ns)524 b(that)f(are)g(not)4189 35113 y(par)75
+b(t)523 b(of)g(the)g(equations)g(of)g(motion:)648 b Fb(emergent)522
+b(phenomena)p Fh(.)1677 39644 y(3.)942 b(Inter)-19 b(actions:)648
+b(The)523 b(inter)-19 b(actions)523 b(betw)-19 b(een)523
+b(a)g(system')-94 b(s)4189 42894 y(components)522 b(pla)-56
+b(y)523 b(an)g(impor)75 b(tant)523 b(role)-28 b(.)1677
+47425 y(4.)942 b(Order/Disorder)56 b(:)647 b(Most)524
+b(comple)-56 b(x)522 b(systems)j(are)4189 50676 y(sim)-19
+b(ultaneously)523 b(ordered)e(and)i(disordered.)1677
+55207 y(5.)942 b(Heterogeneity:)647 b(Not)523 b(all)g(the)g(elements)g
+(that)h(mak)-38 b(e)523 b(up)g(the)4189 58458 y(system)h(are)f
+(identical.)p 53599 77520 V -2043 77962 56085 443 v -2248
+79479 a Fk(c)-2834 79527 y Fe(\260)q Fk(Da)-26 b(vid)365
+b(P)-237 b(.)367 b(F)-40 b(eldman)365 b(and)g(SFI)14091
+b Fd(http://hornacek.coa.edu/dave)p eop end
+%%Page: 5 5
+TeXDict begin 5 4 bop -3200 3449 a Fk(SFI)367 b(CSSS)-26
+b(,)367 b(Beijing)d(China,)i(J)-26 b(uly)365 b(2005:)452
+b(Introduction)29138 b(5)p -2043 4722 56085 443 v -2043
+77520 443 72799 v 15509 8495 a Fc(Phenomena)522 b(and)i(T)-151
+b(opics)2099 13026 y Fa(\262)942 b Fh(Another)522 b(w)-28
+b(a)-56 b(y)523 b(to)g(approach)f(a)h(de\002nition)f(of)i(comple)-56
+b(x)4189 16277 y(systems)524 b(is)g(to)f(list)h(the)f(things)g(that)h
+(people)e(think)h(are)4189 19528 y(comple)-56 b(x)522
+b(systems:)4836 23418 y Fc(\226)941 b Fh(Imm)-19 b(une)524
+b(system,)h(ecosystems)-28 b(,)524 b(economies)-28 b(,)523
+b(auction)6824 26669 y(mar)28 b(k)-38 b(ets)-28 b(,)525
+b(e)-56 b(v)-47 b(olutionar)56 b(y)522 b(systems)-28
+b(,)525 b(the)e(br)-19 b(ain)523 b(...)4836 30560 y Fc(\226)941
+b Fh(Cr)28 b(itical)524 b(phenomena/phase)d(tr)-19 b(ansitions)-28
+b(,)523 b(chaotic)6824 33811 y(dynamics)-28 b(,)524 b(fr)-19
+b(actals)524 b(and)e(po)-28 b(w)-19 b(er)523 b(la)-38
+b(ws)-28 b(,)524 b(comple)-56 b(x)6824 37062 y(netw)-19
+b(or)28 b(ks)-28 b(,)524 b(natur)-19 b(al)523 b(computation)g(...)2099
+41593 y Fa(\262)942 b Fh(This)523 b(amounts)g(to)h(sa)-56
+b(ying:)647 b(comple)-56 b(x)523 b(systems)h(are)f(what)4189
+44844 y(comple)-56 b(x)522 b(systems)j(people)d(study)-188
+b(.)2099 49375 y Fa(\262)942 b Fh(This)523 b(does)g(ha)-38
+b(v)-47 b(e)523 b(a)g(nice)g(inter)47 b(nal)523 b(consistency)-188
+b(.)2099 53905 y Fa(\262)942 b Fh(In)523 b(m)-28 b(y)524
+b(opinion,)e(what)h(gets)h(included)e(as)h(par)75 b(t)523
+b(of)h(a)f(discipline)4189 57156 y(is)g(often)g(a)g(froz)-28
+b(en)523 b(accident.)p 53599 77520 V -2043 77962 56085
+443 v -2248 79479 a Fk(c)-2834 79527 y Fe(\260)q Fk(Da)-26
+b(vid)365 b(P)-237 b(.)367 b(F)-40 b(eldman)365 b(and)g(SFI)14091
+b Fd(http://hornacek.coa.edu/dave)p eop end
+%%Page: 6 6
+TeXDict begin 6 5 bop -3200 3449 a Fk(SFI)367 b(CSSS)-26
+b(,)367 b(Beijing)d(China,)i(J)-26 b(uly)365 b(2005:)452
+b(Introduction)29138 b(6)p -2043 4722 56085 443 v -2043
+77520 443 72799 v 23564 8469 a Fc(T)-151 b(ools)800 13000
+y Fh(Most)524 b(tools)f(and)g(techniques)f(f)-56 b(or)523
+b(comple)-56 b(x)523 b(systems)i(will)e(need)f(to:)1677
+17531 y(1.)942 b(Measure)522 b(unpredictability)-188
+b(,)523 b(distinguish)f(betw)-19 b(een)523 b(diff)-56
+b(erent)4189 20782 y(sor)75 b(ts)524 b(of)f(unpredictability)-188
+b(,)523 b(w)-19 b(or)28 b(k)523 b(with)h(probabilities)1677
+25313 y(2.)942 b(Be)522 b(ab)-38 b(le)523 b(to)h(measure)e(and)h(disco)
+-28 b(v)-47 b(er)523 b(patter)47 b(n,)523 b(comple)-56
+b(xity)-188 b(,)4189 28564 y(str)28 b(ucture)-28 b(,)524
+b(emergence)-28 b(,)522 b(etc.)1677 33095 y(3.)942 b(Be)522
+b(inf)-56 b(erential;)523 b(be)f(inductiv)-47 b(e)523
+b(as)h(w)-19 b(ell)523 b(as)g(deductiv)-47 b(e)-28 b(.)647
+b(Must)4189 36346 y(inf)-56 b(er)512 b(from)h(the)f(system)j(itself)e
+(ho)-28 b(w)512 b(it)i(should)e(be)g(represented.)1677
+40876 y(4.)942 b(Be)522 b(interdisciplinar)56 b(y;)524
+b(combine)e(methods)-28 b(,)523 b(techniques)-28 b(,)523
+b(and)4189 44127 y(areas)f(of)i(study)f(from)h(diff)-56
+b(erent)523 b(\002elds)p 53599 77520 V -2043 77962 56085
+443 v -2248 79479 a Fk(c)-2834 79527 y Fe(\260)q Fk(Da)-26
+b(vid)365 b(P)-237 b(.)367 b(F)-40 b(eldman)365 b(and)g(SFI)14091
+b Fd(http://hornacek.coa.edu/dave)p eop end
+%%Page: 7 7
+TeXDict begin 7 6 bop -3200 3449 a Fk(SFI)367 b(CSSS)-26
+b(,)367 b(Beijing)d(China,)i(J)-26 b(uly)365 b(2005:)452
+b(Introduction)29138 b(7)p -2043 4722 56085 443 v -2043
+77520 443 72799 v 22757 8469 a Fc(Models)800 13000 y
+Fh(W)-56 b(e)523 b(will)g(need)f(model)h(systems)i(upon)d(which)h(to)h
+(tr)56 b(y)524 b(out)f(tools)g(and)800 16251 y(techniques:)647
+b(\223fr)28 b(uit)524 b(\003ies\224)f(and)g(\223lab)f(r)-19
+b(ats\224)524 b(f)-56 b(or)523 b(comple)-56 b(x)523 b(systems)-28
+b(.)800 19502 y(Man)g(y)523 b(are)g(commonly)g(used)1677
+24033 y(1.)942 b(Logistic)523 b(equation)1677 26470 y(2.)942
+b(Random)522 b(netw)-19 b(or)28 b(ks)1677 28906 y(3.)942
+b(Ising)523 b(models)1677 31343 y(4.)942 b(Cellular)522
+b(automata)1677 33780 y(5.)942 b(etc.)2099 41562 y Fa(\262)g
+Fh(Also)-75 b(,)523 b(one)f(usually)h(has)g(to)h(b)-38
+b(uild)522 b(a)h(model,)g(or)g(choose)g(a)4189 44813
+y(representation,)f(of)h(a)g(phenomena)f(bef)-56 b(ore)521
+b(one)i(can)g(study)h(it.)2099 49343 y Fa(\262)942 b
+Fh(It)524 b(is)f(impor)75 b(tant)523 b(to)h(choose)f(model)f(classes)i
+(carefully)-188 b(.)2099 53874 y Fa(\262)942 b Fh(W)-56
+b(e)522 b(will)i(also)f(need)f(to)h(think)h(about)e(ho)-28
+b(w)523 b(to)g(inf)-56 b(er)523 b(models)4189 57125 y(from)g(data.)2099
+61656 y Fa(\262)942 b Fh(Models)-28 b(,)523 b(b)-38 b(y)523
+b(de\002nition,)g(ignore)f(man)-28 b(y)523 b(aspects)h(of)f(the)4189
+64907 y(phenomena)e(being)h(modeled.)2099 69438 y Fa(\262)942
+b Fh(There)522 b(are)h(alw)-28 b(a)-56 b(ys)523 b(choices)g
+(\(sometimes)h(hidden\))e(made)4189 72689 y(when)g(b)-38
+b(uilding)522 b(a)i(model.)p 53599 77520 V -2043 77962
+56085 443 v -2248 79479 a Fk(c)-2834 79527 y Fe(\260)q
+Fk(Da)-26 b(vid)365 b(P)-237 b(.)367 b(F)-40 b(eldman)365
+b(and)g(SFI)14091 b Fd(http://hornacek.coa.edu/dave)p
+eop end
+%%Page: 8 8
+TeXDict begin 8 7 bop -3200 3449 a Fk(SFI)367 b(CSSS)-26
+b(,)367 b(Beijing)d(China,)i(J)-26 b(uly)365 b(2005:)452
+b(Introduction)29138 b(8)p -2043 4722 56085 443 v -2043
+77520 443 72799 v 13295 8517 a Fc(Comple)-28 b(xity:)647
+b(Initial)525 b(Thoughts)2099 13047 y Fa(\262)942 b Fh(The)523
+b(comple)-56 b(xity)523 b(of)g(a)g(phenomena)f(is)h(gener)-19
+b(ally)522 b(understood)4189 16298 y(to)h(be)g(a)g(measure)f(of)i(ho)
+-28 b(w)523 b(dif\002cult)h(it)f(to)h(descr)28 b(ibe)522
+b(it.)2099 20829 y Fa(\262)942 b Fh(But,)523 b(this)h(clear)28
+b(ly)523 b(depends)f(on)h(the)g(language)e(or)4189 24080
+y(representation)g(used)i(f)-56 b(or)523 b(the)g(descr)28
+b(iption.)2099 28611 y Fa(\262)942 b Fh(It)524 b(also)f(depends)f(on)g
+(what)i(f)-56 b(eatures)522 b(of)i(the)f(thing)g(y)-38
+b(ou')-94 b(re)4189 31862 y(tr)56 b(ying)523 b(to)h(descr)28
+b(ibe)-28 b(.)2099 36393 y Fa(\262)942 b Fh(There)522
+b(are)h(thus)g(man)-28 b(y)523 b(diff)-56 b(erent)523
+b(w)-28 b(a)-56 b(ys)523 b(of)h(measur)28 b(ing)4189
+39644 y(comple)-56 b(xity)-188 b(.)647 b(I)524 b(will)f(aim)h(to)f
+(discuss)h(a)f(b)-38 b(unch)523 b(of)g(these)g(in)g(m)-28
+b(y)4189 42894 y(lectures)g(.)2099 47425 y Fa(\262)942
+b Fh(Some)522 b(impor)75 b(tant,)524 b(recurr)28 b(ing)522
+b(questions)h(concer)47 b(ning)4189 50676 y(comple)-56
+b(xity)523 b(measures:)4313 54567 y(1.)941 b(What)524
+b(does)e(the)h(measure)g(tell)g(us?)4313 58458 y(2.)941
+b(Wh)-56 b(y)523 b(might)h(w)-19 b(e)523 b(w)-28 b(ant)523
+b(to)h(kno)-28 b(w)523 b(it?)4313 62349 y(3.)941 b(What)524
+b(representational)d(assumptions)i(are)g(behind)f(it?)p
+53599 77520 V -2043 77962 56085 443 v -2248 79479 a Fk(c)-2834
+79527 y Fe(\260)q Fk(Da)-26 b(vid)365 b(P)-237 b(.)367
+b(F)-40 b(eldman)365 b(and)g(SFI)14091 b Fd
+(http://hornacek.coa.edu/dave)p eop end
+%%Page: 9 9
+TeXDict begin 9 8 bop -3200 3449 a Fk(SFI)367 b(CSSS)-26
+b(,)367 b(Beijing)d(China,)i(J)-26 b(uly)365 b(2005:)452
+b(Introduction)29138 b(9)p -2043 4722 56085 443 v -2043
+77520 443 72799 v 22757 8517 a Fc(Outline)1677 13047
+y Fh(1.)942 b(Introductor)56 b(y)523 b(remar)28 b(ks)-28
+b(.)1677 17578 y(2.)942 b(Introduction)522 b(to)i(Dynamical)f(Systems)h
+(and)f(Chaos)-28 b(,)523 b(P)-75 b(ar)75 b(t)523 b(I.)4189
+20829 y(T)-226 b(er)47 b(minology)-188 b(,)522 b(de\002nition)h(of)g
+(chaos)-28 b(.)1677 25360 y(3.)942 b(Introduction)522
+b(to)i(Dynamical)f(Systems)h(and)f(Chaos)-28 b(,)523
+b(P)-75 b(ar)75 b(t)523 b(II)1677 29891 y(4.)942 b(Inf)-56
+b(or)47 b(mation)522 b(Theor)56 b(y)-188 b(,)524 b(P)-75
+b(ar)75 b(t)523 b(I)1677 34422 y(5.)942 b(Inf)-56 b(or)47
+b(mation)522 b(Theor)56 b(y)-188 b(,)524 b(P)-75 b(ar)75
+b(t)523 b(II:)h(Entrop)-56 b(y)522 b(Con)-38 b(v)-47
+b(ergence)523 b(and)4189 37673 y(Comple)-56 b(xity)1677
+42203 y(6.)942 b(Computation)522 b(Theor)56 b(y)-188
+b(,)524 b(P)-75 b(ar)75 b(t)523 b(I:)h(A)-56 b(utomata)522
+b(and)4189 45454 y(Computational)g(Hier)-19 b(arch)-56
+b(y)1677 49985 y(7.)942 b(Computation)522 b(Theor)56
+b(y)-188 b(,)524 b(P)-75 b(ar)75 b(t)523 b(II:)h(Univ)-47
+b(ersal)523 b(T)-226 b(ur)28 b(ing)523 b(Machines)4189
+53236 y(and)f(Computational)g(Comple)-56 b(xity)1677
+57767 y(8.)942 b(Measures)523 b(of)g(Comple)-56 b(xity)-188
+b(,)523 b(P)-75 b(ar)75 b(t)523 b(I:)h(Computational)4189
+61018 y(Mechanics)1677 65549 y(9.)942 b(Measures)523
+b(of)g(Comple)-56 b(xity)-188 b(,)523 b(P)-75 b(ar)75
+b(t)523 b(II:)i(Sur)56 b(v)-47 b(e)-38 b(y)523 b(of)h(other)4189
+68800 y(Comple)-56 b(xity)523 b(Measures)631 73330 y(10.)941
+b(Conclusions)p 53599 77520 V -2043 77962 56085 443 v
+-2248 79479 a Fk(c)-2834 79527 y Fe(\260)q Fk(Da)-26
+b(vid)365 b(P)-237 b(.)367 b(F)-40 b(eldman)365 b(and)g(SFI)14091
+b Fd(http://hornacek.coa.edu/dave)p eop end
+%%Page: 10 10
+TeXDict begin 10 9 bop -3200 3449 a Fk(SFI)367 b(CSSS)-26
+b(,)367 b(Beijing)d(China,)i(J)-26 b(uly)365 b(2005:)452
+b(Introduction)28405 b(10)p -2043 4722 56085 443 v -2043
+77520 443 72799 v 23383 8517 a Fc(Goals)1677 13047 y
+Fh(1.)942 b(Present)522 b(some)i(tools)-28 b(,)523 b(models)-28
+b(,)523 b(par)-19 b(adigms)523 b(that)g(are)g(useful)4189
+16298 y(in)g(comple)-56 b(x)522 b(systems)-28 b(.)1677
+20829 y(2.)942 b(Discuss)524 b(the)f(applicability)g(and)f
+(un-applicability)g(of)h(these)4189 24080 y(v)-47 b(ar)28
+b(ious)523 b(tools)-28 b(.)1677 28611 y(3.)942 b(Pro)-28
+b(vide)522 b(ref)-56 b(erences)522 b(and)g(advice)h(so)h(y)-38
+b(ou)523 b(can)g(lear)47 b(n)523 b(more)4189 31862 y(about)f(these)h
+(topics)h(if)g(y)-38 b(ou)523 b(wish.)1677 36393 y(4.)942
+b(Present)522 b(some)i(thoughts)f(about)f(what)h(mak)-38
+b(es)524 b(the)f(study)h(of)4189 39644 y(comple)-56 b(x)522
+b(systems)j(similar)e(to)-75 b(,)524 b(and)e(diff)-56
+b(erent)523 b(from,)h(other)4189 42894 y(types)f(of)h(science)-28
+b(.)1677 47425 y(5.)942 b(Pro)-28 b(vide)522 b(a)h(f)-56
+b(oundation)521 b(upon)h(which)i(other)e(lecturer)h(ma)-56
+b(y)4189 50676 y(b)-38 b(uild.)1677 55207 y(6.)942 b(Ha)-38
+b(v)-47 b(e)523 b(fun.)p 53599 77520 V -2043 77962 56085
+443 v -2248 79479 a Fk(c)-2834 79527 y Fe(\260)q Fk(Da)-26
+b(vid)365 b(P)-237 b(.)367 b(F)-40 b(eldman)365 b(and)g(SFI)14091
+b Fd(http://hornacek.coa.edu/dave)p eop end
+%%Trailer
+
+userdict /end-hook known{end-hook}if
+%%EOF

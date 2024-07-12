@@ -1,0 +1,243 @@
+:root{
+  --color1:#c6c2b6; /*background */
+  --colortitle:#262216;
+  --color2:#49412c; /* headers and left nav */
+  --color3:#77641a; /* h3 text */
+  --color4:#b0a183; /* h3 background */
+  --colortext:#222222; /* color of text */
+}
+
+body {
+	font-family:arial, verdana, helvetica, sans-serif;
+	font-size:14px;
+	cursor:default;
+	color:var(--colortext);
+	/*background-color:#e3dbdb*/
+	background-color: var(--color1);
+}
+* {
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+}
+html {
+	height:100%;
+	margin-bottom:10px;
+}
+#container {
+	width: 85%;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: left;
+	color:#AAAAAA;
+}
+#header {
+	width:100%;
+	padding-top:15px;
+}
+.spacer {
+	width:100%;
+	height:15px;
+}
+#header a {
+	color:var(--color3);
+	text-decoration:none;
+}
+#header a:hover {
+	color:var(--color4);
+	text-decoration:underline;
+}
+
+hr {
+	border:0px;
+	color:#CCCCCC;
+	background-color:#4E3D42;
+	height: 1px;
+	width: 100%;
+	text-align: left;
+}
+h1 {
+	font-size:44px;
+	color:var(--colortitle);
+	font-family:Arial, Verdana, Helvetica, sans-serif;
+	font-weight:800;
+}
+h2 {
+	font-size:20px;
+	color: var(--color2);
+	font-family:Arial, Verdana, Helvetica, sans-serif;
+	font-weight:900;
+	<!--background-color:#FFFFFF;-->
+}
+
+h3 {
+	color:#669999;
+	color: var(--color3);
+	font-size:20px;
+	background-color: var(--color4);
+	border-width:1px;
+	border-color:#var(--colortext);
+	border-style:solid;
+	text-align:left;
+	margin-left:20px;
+	margin-right:20px;
+	font-weight:600;
+	padding:5px;
+}
+.top_main_heading {
+	margin-top:15px;
+}
+#left {
+	float:left;
+	width:150px;
+	<!--background-color:#FFFFFF;-->
+	color:#AAAAAA;
+}
+#leftcontent p {
+	color:#AAAAAA;
+	<!--background-color:#FFFFFF;-->
+	font-size: 12px;
+	text-align:left;
+	margin-left:20px;
+	margin-right:20px;
+}
+#leftcontent ul {
+	list-style-position:outside;
+	list-style:square;
+	padding-left:20px;
+	color:#AAAAAA;
+	<!--background-color:#FFFFFF;-->
+}
+#leftcontent a {
+	color: var(--color2);
+	text-decoration:none;
+	font-size:16px;
+	font-weight:bold;
+	<!--background-color:#FFFFFF;-->
+}
+.news {
+	color:#999999;
+	border-bottom:1px;
+	border-left:1px;
+	border-right:1px;
+	border-top:0px;
+	border-style:solid;
+	border-color:#AA00AA;
+	<!--background-color:#FFFFFF;-->
+	line-height:20px;
+	padding:5px;
+}
+#leftcontent a:hover {
+	color:#CC6600;
+	<!--background-color:#FFFFFF;-->
+	text-decoration:underline;
+}
+#main {
+	float:left;
+	width:80%;
+	color: var(--colortext);
+	margin-left:0px;
+	padding-bottom:20px;
+}
+#maincontent p {
+	color: var(--colortext);
+	border-bottom:0px;
+	border-left:0px;
+	border-right:0px;
+	border-top:0px;
+	border-style:solid;
+	border-color:#AAAAAA;
+	margin-left:20px;
+	margin-right:20px;
+	margin-bottom:15px;
+	margin-top:15px;
+	/*line-height:20px;*/
+	padding:0px;
+}
+#maincontent p.no-box {
+	color: var(--colortext);
+	border-bottom:0px;
+	border-left:0px;
+	border-right:0px;
+	border-top:0px;
+	border-style:solid;
+	border-color:#AAAAAA;
+	margin-left:20px;
+	margin-right:20px;
+	margin-bottom:15px;
+	/*line-height:20px;*/
+	padding:0px;
+}
+#maincontent a {
+	color:var(--color3);
+	text-decoration:none;
+}
+#maincontent ul  {
+	list-style-type:square;
+	padding-top : 0px;
+	padding-right : 20px;
+	padding-bottom : 0px;
+	padding-left : 40px;
+	border-bottom : 0;
+	border-left : 0;
+	border-right : 0;
+	border-top : 0;
+	border-style : solid;
+	border-color : #9c9c9c;
+}
+
+#maincontent li{
+        padding-bottom:1px;
+        padding-top:1px;
+}
+
+#maincontent ol {
+	padding-top : 0px;
+	padding-right : 20px;
+	padding-bottom : 0px;
+	padding-left : 40px;
+	border-bottom : 0;
+	border-left : 0;
+	border-right : 0;
+	border-top : 0;
+	border-style : solid;
+	border-color : #9c9c9c;
+} 
+
+
+#maincontent a:hover {
+	color:var(--color4);
+	text-decoration:underline;
+}
+#footer {
+	clear:both;
+	width:100%;
+	font-size:12px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+#footer a {
+	color:var(--color3);
+	text-decoration:none;
+}
+#footer a:hover {
+	color:var(--color4);
+	text-decoration:underline;
+}
+.right {
+	color:#AAAAAA;
+	float:right;
+	font-size:100%;
+	margin-top:5px;
+}
+.left {
+	color:#AAAAAA;
+	float:left;
+	font-size:100%;
+	margin-top:5px;
+}
+blockquote {
+	margin:8px 60px 0px 60px;
+	upadding:0px;
+	color:var(--colortext)
+	padding: 0 0px;
+}

@@ -1,0 +1,631 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Calculus II</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="scripts/Functions.js"></script>
+<script type="text/javascript">callScripts();</script>
+
+<!--		<script type="text/javascript">
+			var level = '';			
+			var currentPage = "Lecture Outlines";
+		</script>
+		<script type="text/javascript">makeTitle();</script>
+-->
+</head>
+
+<body>
+<div id="container">
+<div id="header">
+<h1 align=right>calculus ii</h1>
+<h2 align=right>college of the atlantic</h2> 
+<h2 align=right><a href="http://hornacek.coa.edu/dave">david p. feldman</a> |
+winter 2023</h2>  
+<br />
+<hr />
+
+</div> <!-- end header -->
+
+<div class="spacer"></div>
+<div id="left">
+
+<div id="leftcontent">
+
+  <ul>
+    <li><a href="./index.html">home</a></li>
+    <li><a href="./overview.html">info</a></li>
+    <li><a href="./schedule.html">schedule</a></li>
+    </ul>
+<p>&nbsp;</p>
+
+
+
+</div> <!-- end left content -->
+</div> <!-- end left division -->
+
+<div id="main">
+<div id="maincontent">
+
+
+ 
+
+<div id="content">
+<!--  <script type="text/javascript">makeLogo();</script>
+  <script type="text/javascript">makeNavbar();</script>-->
+  <div id="actualcontent">
+
+<p>
+<a href="https://calendar.google.com/calendar/u/0?cid=Y191cjNya3VtMm1ibzBwOWQ5Y29hb2R0NHF2a0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t"
+   target="_blank"><b>Schedule for Help Sessions</b></a> </p>
+    
+
+<h3>week 01</h3>
+    
+<dl>
+  <dt class="expand">Class 01 (January 9, 2023): Logistics,
+    Introductions, Change, Change Accumulation</dt>
+  <div class="collapse"><dd>	
+      <p>In-class content</p>
+      <ul>
+	<li>Topics: Introductions, Course Overview, Change and Change Accumulation</li>
+	<!--<li><a href="./Handouts/names.jpg">Group Names</a></li>-->
+	<li><a href="./Handouts/class.01.a.pdf" target="_blank">Unicorns and Soy Milk</a></li>  
+      </ul>
+    </dd>
+  </div>
+</dl>
+
+<dl>
+  <dt class="expand">Mini-Lab (January 9, 2023): Getting Set up with
+    google colab and WeBWorK</dt>
+  <div class="collapse"><dd>	
+      <p>In-class content</p>
+      <ul>
+	<li>Introduction to WeBWorK</li>
+	<li>Introduction to Google colab</li>
+	<li><a href="./Homework/lab.01.pdf" target="_blank">Handout</a></li> 
+      </ul>
+    </dd>
+  </div>
+</dl>
+
+
+<dl>
+  <dt class="expand">Class 02 (January 12, 2023): More Change Accumulation: Numbers
+  and Graphs</dt>
+  <div class="collapse"><dd>	
+      <p>In-class content</p>
+      <ul>
+	<li>Topics: Introductions, Course Overview, Change and Change Accumulation</li>
+	<li><a href="./Handouts/class.02.a.pdf" target="_blank">Unicorns and Soy Milk, continued</a></li>  
+      </ul>
+    </dd>
+  </div>
+</dl>
+
+
+<dl>
+  <dt class="expand">Class 03 (January 12, 2023): Introduction to Lists, Functions, and Plotting
+  in Python</dt>
+  <div class="collapse"><dd>	
+      <p>In-class content</p>
+      <ul>
+	<li>Google colab notebooks shared via google classroom. Also available here</li>
+	<ul>
+	  <li><a href="https://colab.research.google.com/drive/1RuKCeDIvGUAitbGihkcDnHh0sW32dJcG?usp=sharing"
+	  target="_blank">Notebook 02: Plotting Part 0</a></li> 
+	  <li><a href="https://colab.research.google.com/drive/16xsu1Wx2eRaJHBE2GGQgcLtIKl7qMPvt?usp=sharing"
+	  target="_blank">Notebook 03: Plotting Part I</a></li>
+	  </ul>
+      </ul>
+    </dd>
+  </div>
+</dl>
+
+<dl>
+  <dt class="expand">Homework 01 (due January 13, 2023)</dt>
+  <div class="collapse"><dd>
+      <ul>
+	<li><a href="./Homework/homework.01.pdf" target="_blank">Homework 01</a>, due
+	  Friday, January 13</li>
+      </ul>
+    </dd>
+  </div>
+</dl>
+
+
+<h3>Week 02</h3>
+
+   
+<dl>
+  <dt class="expand">Class 04 (January 16, 2023): Snow day!</dt>
+  <div class="collapse"><dd>	
+      <ul>
+	<li>Actually, it was more of an ice and sleet day than a snow day.</li>
+	<!--<li><a href="./Handouts/class.01.a.pdf" target="_blank">Unicorns and Soy Milk</a></li>  -->
+      </ul>
+https://colab.research.google.com/drive/1CAZ2X5Un3JCo8AXmJGOLlEot2zNLATNK?usp=sharing    </dd>
+  </div>
+</dl>
+
+  
+<dl>
+  <dt class="expand">Class 05 (January 19, 2023): More accumulating changes</dt>
+  <div class="collapse"><dd>
+      <ul>
+	<li>Handout: <a href="./Handouts/class.04.a.pdf" target="_blank">Accumulation changes via a
+	    function</a></li>
+	<li>Google colab notebook available on google classrom and here:
+	  <a href="https://colab.research.google.com/drive/1SG35W1xHHoWDoIgc-_gBItCS2PMESQwa?usp=sharing" target="_blank">Calc II
+	    Notebook 03 Loops</a></li>
+      </ul>
+    </dd>
+  </div>
+</dl>
+
+<dl>
+  <dt class="expand">Class 06 (January 19, 2023): More accumulating changes and python TBA</dt>
+  <div class="collapse"><dd>
+      <ul>
+	<li>Coming soon</li>
+	<!--<li>Handout: <a href="./Handouts/class.04.a.pdf" target="_blank">Accumulation changes via a
+	    function</a></li>-->
+	<!--<li>Google colab notebook available on google classrom and here:
+	  <a href="https://colab.research.google.com/drive/1SG35W1xHHoWDoIgc-_gBItCS2PMESQwa?usp=sharing" target="_blank">Calc II
+	    Notebook 03 Loops</a></li>-->
+      </ul>
+    </dd>
+  </div>
+</dl>
+
+
+<dl>
+  <dt class="expand">Homework 02 (due January 20, 2023)</dt>
+  <div class="collapse"><dd>
+      <ul>
+	<li><a href="./Homework/homework.02.pdf" target="_blank">Homework 02</a>, due
+	  Friday, January 20</li>
+      </ul>
+    </dd>
+  </div>
+</dl>
+
+
+<h3>Week 03</h3>
+
+<dl>
+  <dt class="expand">Class 07 (January 23, 2023): Definite integrals</dt>
+  <div class="collapse"><dd>
+    <ul> 
+      <li><a href="./Handouts/class.07.b.pdf" target="_blank">Summary of Previous 
+         Class</a></li>
+      <li><a href="./Handouts/class.07.a.pdf" target="_blank">Change accumultation 
+        with graphs and functions and apple pie</a></li>
+    </ul>
+  </dd>
+</div>
+</dl>
+
+
+<dl>
+  <dt class="expand">Class 08 (January 26, 2023): Definite integrals
+  as areas and averages</dt>
+  <div class="collapse"><dd>
+    <ul> 
+      <li><a href="./Handouts/class.08.a.pdf" target="_blank">Areas
+        and averages and such</a></li>
+    </ul>
+  </dd>
+</div>
+</dl>
+
+<dl>
+  <dt class="expand">Class 09 (January 26, 2023): The Fundamental
+  Theorem of Calculus</dt>
+  <div class="collapse"><dd>
+    <ul> 
+      <li><a href="./Handouts/class.09.a.pdf" target="_blank">The fundamental
+	  theorem of calculus. Amounts and rates.</a></li>
+    </ul>
+  </dd>
+</div>
+</dl>
+
+
+<dl>
+  <dt class="expand">Homework 03 (due January 27, 2023)</dt>
+  <div class="collapse"><dd>
+      <ul>
+	<li><a href="./Homework/homework.03.pdf" target="_blank">Homework 03</a>, due
+	  Friday, January 27</li>
+      </ul>
+    </dd>
+  </div>
+</dl>
+
+
+<h3>Week 04</h3>
+
+
+<dl>
+  <dt class="expand">Class 10 (January 30, 2023): Using the Fundamental
+  Theorem of Calculus, Anti-derivatives, etc.</dt>
+  <div class="collapse"><dd>
+    <ul> 
+      <li><a href="./Handouts/class.10.a.pdf" target="_blank">Anti-derivatives:
+	  graphically and analytically.</a></li>
+    </ul>
+  </dd>
+</div>
+</dl>
+
+
+<dl>
+  <dt class="expand">Class 11 (February 2, 2023): Using the Fundamental
+  Theorem of Calculus, Second Fundamental Theorem, etc.</dt>
+  <div class="collapse"><dd>
+    <ul> 
+      <li><a href="./Handouts/class.11.a.pdf" target="_blank">Using
+	  the fundamental theorem to evaluate definite integrals</a></li>
+      <li><a href="./Handouts/class.11.b.pdf" target="_blank">Deep
+      exploration of a particular definite integral</a></li>
+    </ul>
+  </dd>
+</div>
+</dl>
+
+
+<dl>
+  <dt class="expand">Class 12 (February 2, 2023): Canceled due to
+  Writing Candidate Presentation </dt>
+  <div class="collapse"><dd>
+    <ul> 
+      <li>nothing</li>
+    </ul>
+  </dd>
+</div>
+</dl>
+
+
+<dl>
+  <dt class="expand">Homework 04 (due February 3, 2023)</dt>
+  <div class="collapse"><dd>
+      <ul>
+	<li><a href="./Homework/homework.04.pdf" target="_blank">Homework 04</a>, due
+	  Friday, February 3</li>
+      </ul>
+    </dd>
+  </div>
+</dl>
+
+
+
+<h3>week 05</h3>
+
+
+<dl>
+  <dt class="expand">Class 13 (February 6, 2023): 
+    Second Fundamental Theorem, Arc Length </dt>
+  <div class="collapse"><dd>
+      <ul>
+	<li><a href="./Handouts/class.13.a.pdf" target="_blank">Second
+	    Fundamental Theorem Practice</a></li>
+	<li><a href="./Handouts/class.13.b.pdf" target="_blank">Arc
+	    Length</a></li>
+      </ul>
+    </dd>
+  </div>
+</dl>
+
+<dl>
+  <dt class="expand">Class 14 (February 9, 2023): 
+  Areas and Volumes! </dt>
+  <div class="collapse"><dd>
+      <ul>
+	<li><a href="./Handouts/class.14.a.pdf" target="_blank">Areas and Volumes</a></li>
+    </ul>
+  </dd>
+</div>
+</dl>
+
+<dl>
+  <dt class="expand">Class 15 (February 9, 2023): Canceled due to
+  Writing Candidate Presentation </dt>
+  <div class="collapse"><dd>
+    <ul> 
+      <li>nothing</li>
+    </ul>
+  </dd>
+</div>
+</dl>
+
+
+<dl>
+  <dt class="expand">Homework 05 (due February 10, 2023)</dt>
+  <div class="collapse"><dd>
+      <ul>
+	<li><a href="./Homework/homework.05.pdf" target="_blank">Homework 05</a>, due
+	  Friday, February 10</li>
+      </ul>
+    </dd>
+  </div>
+</dl>
+
+
+<h3>week 06</h3>
+
+
+<dl>
+  <dt class="expand">Class 16 (February 13, 2023): 
+  Volumes of Revolution </dt>
+  <div class="collapse"><dd>
+      <ul>
+	<li><a href="./Handouts/class.16.a.pdf" target="_blank">Volumes of Revolution</a></li>
+    </ul>
+  </dd>
+</div>
+</dl>
+
+
+<dl>
+  <dt class="expand">Class 17 (February 16, 2023): Density</dt>
+  <div class="collapse"><dd>
+      <ul>
+	<li><a href="./Handouts/class.17.a.pdf" target="_blank">Density</a></li>
+    </ul>
+  </dd>
+</div>
+</dl>
+
+
+<dl>
+  <dt class="expand">Class 18 (February 16, 2023): Probability Density </dt>
+  <div class="collapse"><dd>
+      <ul>
+	<li><a href="./Handouts/class.18.a.pdf" target="_blank">Probability Density</a></li>
+    </ul>
+  </dd>
+</div>
+</dl>
+
+<dl>
+  <dt class="expand">Homework 06 (due February 17, 2023)</dt>
+  <div class="collapse"><dd>
+      <ul>
+	<li><a href="./Homework/homework.06.pdf" target="_blank">Homework 06</a>, due
+	  Friday, February 17</li>
+      </ul>
+    </dd>
+  </div>
+</dl>
+
+
+<h3>week 07</h3>
+
+<dl>
+  <dt class="expand">Class 19 (February 20 2023): More Probability Density: Means and the Normal Distribution. Also
+  Improper Integrals</dt>
+  <div class="collapse"><dd>
+      <ul>
+	<li><a href="./Handouts/class.19.a.pdf" target="_blank">Calculuating Means</a></li>
+	<li><a href="./Handouts/class.19.b.pdf" target="_blank">Improper Integrals</a></li>
+    </ul>
+  </dd>
+</div>
+</dl>
+
+
+<dl>
+  <dt class="expand">Class 20 (February 23 2023): Probability Density: Cumulative Distributions</dt>
+  <div class="collapse"><dd>
+      <ul>
+	<li><a href="./Handouts/class.20.a.pdf" target="_blank">The Cumulative
+	    Distribution</a></li>
+	<li><a href="./Handouts/class.20.b.pdf" target="_blank">The Chain Rule Returns</a></li>
+    </ul>
+  </dd>
+</div>
+</dl>
+
+<dl>
+  <dt class="expand">Class 21 (February 23, 2023): The Central Limit
+  Theorem! Also u substitutions.</dt>
+  <div class="collapse"><dd>
+      <ul>
+	<li><a href="./Handouts/class.21.b.pdf"
+	       target="_blank">Intro to Substitutions</a></li>
+	<li><a href="./Handouts/class.21.a.pdf"
+	       target="_blank">Central Limit Theorem Exploration</a></li>
+	<li><a href="https://colab.research.google.com/drive/1s7FC6lvF_oNSEce2STo4K00_-jZrpJ1Z?usp=sharing"
+	       target="_blank">Colab Notebook Illustrating the Central
+	    Limit Theorem</a></li>
+    </ul>
+  </dd>
+</div>
+</dl>
+
+<dl>
+  <dt class="expand">Homework 07 (due February 24, 2023)</dt>
+  <div class="collapse"><dd>
+      <ul>
+	<li><a href="./Homework/homework.07.pdf" target="_blank">Homework 07</a>, due
+	  Friday, February 24</li>
+      </ul>
+    </dd>
+  </div>
+</dl>
+
+
+
+<h3>week 08</h3>
+
+
+<dl>
+  <dt class="expand">Class 22 (February 27, 2023): More Central Limit
+  Theorem. More u substitutions. z scores and statistics.</dt>
+  <div class="collapse"><dd>
+    <ul>
+      <li><a href="./Handouts/standardnormaltable.pdf"
+	     target="_blank">Table of Z scores</a></li>
+      <li><a href="./Handouts/notes.stats.pdf"
+	     target="_blank">Some Notes on the Central Limit Theorem and its use in Statistics</a></li>
+      <li><a href="./Handouts/class.22.b.pdf"
+	     target="_blank">More Substitutions</a></li>
+      <li><a href="./Handouts/class.22.a.pdf"
+	     target="_blank">Using the Central Limit Theorem</a></li>
+    </ul>
+  </dd>
+</div>
+</dl>
+
+
+<dl>
+  <dt class="expand">Class 23 (March 2, 2023): Sequences and
+    Introduction to Geometric Series.</dt>
+  <div class="collapse"><dd>
+      <ul>
+	<li><a href="https://oeis.org/" target="_blank">On-Line
+	Encyclopedia of Integer Sequences (OEIS)</a></li>
+      <li><a href="./Handouts/class.23.a.pdf"
+	     target="_blank">Sequences</a></li>
+      <li><a href="./Handouts/class.23.b.pdf"
+	     target="_blank">Introduction to Geometric Series</a></li>
+    </ul>
+  </dd>
+</div>
+</dl>
+
+<dl>
+  <dt class="expand">Class 24 (March 2, 2023): Sigma Notation and
+    Series Explorations.</dt>
+  <div class="collapse"><dd>
+      <ul>
+      <li><a href="./Handouts/class.24.a.pdf"
+	     target="_blank">Sigma Notation and Series Explorations</a></li> 
+    </ul>
+  </dd>
+</div>
+</dl>
+
+
+<dl>
+  <dt class="expand">Homework 08 (due March 3, 2023)</dt>
+  <div class="collapse"><dd>
+      <ul>
+	<li><a href="./Homework/homework.08.pdf" target="_blank">Homework 08</a>, due
+	  Friday, March 3</li>
+      </ul>
+    </dd>
+  </div>
+</dl>
+
+<h3>week 09</h3>
+
+
+<dl>
+  <dt class="expand">Class 25 (March 6, 2023): Convergence of Series</dt>
+  <div class="collapse"><dd>
+      <ul>
+      <li><a href="./Handouts/class.25.a.pdf"
+	     target="_blank">Pondering Convergence</a></li> 
+    </ul>
+  </dd>
+</div>
+</dl>
+
+
+<dl>
+  <dt class="expand">Class 26 (March 9, 2023): Power Series</dt>
+  <div class="collapse"><dd>
+      <ul>
+      <li><a href="./Handouts/class.26.a.pdf"
+	     target="_blank">Two Power Series to Explore</a></li> 
+    </ul>
+  </dd>
+</div>
+</dl>
+
+<dl>
+  <dt class="expand">Class 27 (March 9, 2023): Taylor Series</dt>
+  <div class="collapse"><dd>
+      <ul>
+	<li><a href="./Handouts/class.27.a.pdf"
+	     target="_blank">Some Taylor Series</a></li>
+    </ul>
+  </dd>
+</div>
+</dl>
+
+<dl>
+  <dt class="expand">Homework 09 (due March 10, 2023)</dt>
+  <div class="collapse"><dd>
+      <ul>
+	<li><a href="./Homework/homework.09.pdf" target="_blank">Homework 09</a>, due
+	  Friday, March 10</li>
+      </ul>
+    </dd>
+  </div>
+</dl>
+
+<h3>week 10</h3>
+
+
+<dl>
+  <dt class="expand">Class 28 (March 9, 2023): Using Taylor Series</dt>
+  <div class="collapse"><dd>
+      <ul>
+	<li><a href="./Handouts/class.28.a.pdf"
+	     target="_blank">Using Taylor Series</a></li>
+    </ul>
+  </dd>
+</div>
+</dl>
+
+<dl>
+  <dt class="expand">Final Assignment (due March 17, 2023)</dt>
+  <div class="collapse"><dd>
+      <ul>
+	<li><a href="./Homework/final_homework.2023.pdf"
+	  target="_blank">Final Assignment</a>, due Friday, March
+	  17</li> 
+      </ul>
+    </dd>
+  </div>
+</dl>
+
+<!-- ************************************************************ -->    
+
+
+
+<br><br><br></br>
+<h3>Some Useful Links</h3>
+<p>
+<ul>
+  <li><a href="https://www.w3schools.com/python/matplotlib_intro.asp" target="_blank">Matplotlib
+      Tutorial</a> from W3Schools.com.</li>
+  <li><a href="https://colab.research.google.com/github/astg606/py_materials/blob/master/visualization/introduction_matplotlib.ipynb#scrollTo=JVlD3aMNGc2y" target="_blank">Introduction
+  to Matplotlib</a>, a super helpful colab notebook with many
+    examples. Developed by NASA.</li>
+</ul>
+</p>
+
+
+
+
+</div> <!-- end main content section -->
+</div>  
+<div id="footer"><div class="spacer"></div>
+
+<hr />
+<center>
+<p class="no-box"> <a href="http://www.coa.edu">COA</a>
+  | <a href="http://hornacek.coa.edu/dave">Dave</a>
+  | <a href="./index.html">Calc II</a></p> 
+<p>&nbsp;</p>
+</div> <!-- end footer -->
+
+</div> <!-- end container -->
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<html>
+<head>
+<title>Introduction to Computer Science</title>
+</head>
+
+<link rel="stylesheet" href="./1.css" type="text/css" />
+
+<h1 align=center>Thoughts about this Course and How to Learn
+Programming</h1> 
+<h2 align=center><a href="./index.html">Introduction to Computer Science
+</a></h2>
+
+This is the first time I've taught computer programming as a course.
+As such, I'm less certain than usual how the class will go.  For the
+course to be a success, honest feedback will be especially important.
+Here are some initial general thoughts about how to go about learning
+programming and some specific thoughts about the course. 
+
+<ol>
+
+<li> The only way to learn programming is to do it.  A lot.  I suppose
+that this is true about learning just about anything.  But it seems
+somehow more true for programming than some other areas.
+
+<li>I have never taken a programming class.  I learned C++ mostly on
+my own, but had help from some friends and colleagues who are very
+good programmers.  
+
+<li> I will use class time to explain general concepts and some
+particularly tricky or subtle aspects of coding.  I will follow the
+textbook fairly closely.  However, my aim will be to complement the
+text and not duplicate it.  It will be essential for you to spend a
+fair amount of time thoughtfully reading the book.  I think the book
+is well written and is almost always quite clear.  There are
+definitely some sections that you can skim, but I suspect that you'll
+want to read most of it.
+
+<li>Particularly at first, you won't understand everything.  I think
+the best thing to do is to blast ahead anyway.  When learning a spoken
+language, it is inevitable that you'll have to use grammatical
+constructions that at first you don't understand.  Only after you've
+learned quite a few things does the logic of the langauge come into
+view.  I think learning a programming language is similar.  Don't feel
+like you have to be perfectly comfortable with one chapter before
+going on to the next. 
+
+<li>Some of the programming exercises might be a little tedious.  It
+will be a while before you'll be able to code up anything really
+interesting or new.  I don't think there is any way around this.
+However, by the end of the course you should be able to write your
+own, reasonably complex original programs. 
+
+<li>Programming is an art as much as a science.  Effective programming
+involves creativity and originality; it is not simply a technical
+skill.
+
+<li>Programming is also a "state of mind."  To program effectively
+requires patience, focus, and motivation.  This state of mind has been
+likened to that which is gained in practicing certain sorts of martial
+arts. 
+
+</ol>
+<br>
+
+<h4>Others' thoughts</h4>
+
+Here are some essays on how to learn programming, how to learn to
+be a hacker, and generally how to learn.  I don't agree with all
+recommendations, but these make quite interesting reading.
+
+<ol>
+
+<li><a class=underline
+href="http://www.paulgraham.com/college.html">Undergraduation</a> by
+<a class=underline href="http://www.paulgraham.com/index.html">Paul
+Graham</a>.  I think this is an excellent essay.  Highly recommended. 
+
+<li><a class=underline href="http://norvig.com/21-days.html">Teach
+yourself programming in ten years</a> by <a class=underline
+href="http://norvig.com/index.html">Peter Norvig</a>, director of
+research at Google. 
+
+<li><a class=underline
+href="http://catb.org/~esr/faqs/hacker-howto.html">How to become a
+hacker</a>, by <a class=underline href="http://catb.org/~esr/">Eric
+Raymond</a>. 
+
+<li><a class=underline
+href="http://samizdat.mines.edu/howto/">How to
+be a programmer</a> by Robert L. Read. 
+
+
+</ol>
+
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-835270-1";
+urchinTracker();
+</script>
+
+
+</html>

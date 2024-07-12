@@ -1,0 +1,94 @@
+HTTP/1.1 200 OK
+Server: Microsoft-IIS/5.0
+Date: Sun, 19 Mar 2006 18:58:06 GMT
+X-Powered-By: ASP.NET
+Connection: Keep-Alive
+Content-Length: 3526
+Content-Type: text/html
+Cache-control: private
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+<html><head><title>glish.com : CSS layout techniques : 2 columns, ALA style</title>
+
+<style type="text/css">
+	@import "all.css"; /* just some basic formatting, no layout stuff */
+	
+	body {
+		margin:0px 0px 0px 0px;
+		}
+	
+	#leftcontent {
+		float:left;
+		width:67%;
+		background:#fff;
+		border-right:2px solid #000;
+		border-bottom:2px solid #000;
+		margin-right:15px;
+		padding-bottom:20px;
+		}
+
+	#rightcontent {
+		}
+		
+	p,h1,pre {
+		margin:0px 30px 10px 30px;
+		}
+		
+	h1 {
+		font-size:14px;
+		padding-top:10px;
+		}
+	
+	#rightcontent p {
+		font-size:10px;
+		margin-left:0px;
+		}
+	
+</style>
+</head><body>
+
+<div id="leftcontent">
+	<h1><a href="home.asp">LAYOUT TECHNIQUES</a>: 2 columns, ALA style</h1>
+	<h1>leftcontent</h1>
+<pre>#main {
+float:left;
+width:67%;
+background:#fff;
+border-right:2px solid #000;
+border-bottom:2px solid #000;
+margin-right:15px;
+padding-bottom:20px;
+	}</pre>
+	<p>This technique was famously chronicled by Jeffrey Zeldman in his ALA article <a href="http://www.alistapart.com/stories/journey/"> A Web Designer's Journey</a>, and is an extremely easy layout to implement requiring only a simple float:left declaration.</p>
+	<p><strong>Scroll down for the source.</strong></p>
+	<p class="greek">Conceptualizing random endpoints in a access matrix provides reach extentions enterprise wide. Respective divisions historically insignificant, upscale trendlines in a management inventory analysis survivabilty format. </p>
+	<p class="greek">Document-centric projections unfetter traditional auditing practices rivaling central process management. Advanced functionality, easy administration, proclaim the hallmarks of unprecedented opportunity.</p>
+	<p class="greek">Iteration systemwide engenders economies of scale, cross-media technology, presentation action items and life cycle replication.</p>
+	<p class="greek">Enterprise engenderment accelerates initiative platforms, reducing staffing components, integration of technical accessibility, resulting in bottom line pluralisms, benefit-wise. Incidental re-sizing staff requirements through attrition can be accelerated by paridigm shifts and focusing on core suitability and cross-training. </p>
+	<p class="greek">Marketing teams input produce cross purposing in view of goal alignments due to knowlege paucity, necessitating workflow education and orientation. Media sourcing as an acquistion strategy is counterproductive in a internet environment in virtual component methodology. Imaging through ideals rather than real world branding, is a perilous undertaking with negative results. Branding strategies generating motion as activity without reproducible results is a ultimately futile effort if left in place.</p>
+</div>
+
+<div id="rightcontent">
+	<h1>rightcontent</h1>
+		<p>
+	This page is part of <a href="home.asp">CSS Layout Techniques</a>, a resource for web developers and designers.
+	</p>
+	<p>
+	Other Layout Techniques:<br/>
+		<a href="7.asp">3 columns, the holy grail</a><br/>
+	<a href="9.asp">2 columns, ALA style</a><br/>
+	<a href="8.asp">4 columns, all fluid</a><br/>
+	<a href="2.asp">3 columns, all fluid </a><br/>
+	<a href="3.asp">static width and centered</a><br/>
+	<a href="1.asp">nested float</a><br/>
+	</p>
+	<p>
+	Does it <a href="http://validator.w3.org/check?uri=http://www.glish.com/css/9.asp?noSRC=true">validate</a>?
+	</p>
+	
+</div>
+
+</body>
+</html>

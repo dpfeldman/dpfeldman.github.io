@@ -1,0 +1,136 @@
+<html>
+<head>
+<title>example2.html</title>
+<!-- Created by Maple V Release 5, IBM INTEL NT -->
+</head>
+<body bgcolor="FFFFFF">
+<a name="MapleAutoBookmark1">
+<p align=left>
+</p><br>
+<h1 align=center>solve and fsolve</h1>
+<br>
+<p align=left>
+<font color=#000000>First, a word about exponential functions.  Maple doesn't understand e^x, since it</font>
+</p>
+<p align=left>
+<font color=#000000>doesn't know what "e" is.  To indicate an exponential function, you need to type</font>
+</p>
+<p align=left>
+<font color=#000000>exp(x).  For example, here's how you would plot 5e^(2x).  </font>
+</p>
+<p align=left>
+<tt>&gt; </tt>
+<b><font color=#FF0000>plot(5*exp(2*x),x=0..3);</font></b>
+</p>
+<p align=left>
+<font color=#000000>Note the use of the "*" to tell Maple that you want to multiply things together.</font>
+</p>
+<p align=left>
+</p>
+<p align=left>
+<font color=#000000>Ok.  Now let's see how to make Maple solve equations for you.  The general form</font>
+</p>
+<p align=left>
+<font color=#000000>of Maple's solve command is:  solve(equation,x).  This will solve the equation for</font>
+</p>
+<p align=left>
+<font color=#000000>the variable x.  </font>
+</p>
+<p align=left>
+</p>
+<p align=left>
+<font color=#000000>For example, suppose you want to do problem 5 from section 1.7 on p. 44.  Here's how</font>
+</p>
+<p align=left>
+<font color=#000000>to do it:</font>
+</p>
+<p align=left>
+<tt>&gt; </tt>
+<b><font color=#FF0000>solve( 10^(x+3) = 5*exp(7-x), x);</font></b>
+</p>
+<p align=center>
+<img src="images/example21.gif" width=93 height=45 alt="[Maple Math]">
+</p>
+<p align=left>
+<font color=#000000>The "solve" command, shown above, will give you the answer symbolically.  I.e., it'll leave</font>
+</p>
+<p align=left>
+<font color=#000000>ln(200) as ln(200).  If you want to get a number instead of symbols, use the fsolve command.</font>
+</p>
+<p align=left>
+<font color=#000000>The "f" stands for Floating point; a floating point number is a decimal like 1.00 or 3.1415.</font>
+</p>
+<p align=left>
+<font color=#000000>Anyway, the syntax for the fsolve command is the same as for the solve command:</font>
+</p>
+<p align=left>
+<tt>&gt; </tt>
+<b><font color=#FF0000>fsolve( 10^(x+3) = 5*exp(7-x), x);</font></b>
+</p>
+<p align=center>
+<img src="images/example22.gif" width=100 height=20 alt="[Maple Math]">
+</p>
+<p align=left>
+<font color=#000000>Pretty cool, eh?  I bet your little graphing calculator can't do that!</font>
+</p>
+<p align=left>
+</p>
+<p align=left>
+<font color=#000000>Here's one more example.  Maple can solve some pretty yucky equations amazingly quickly.</font>
+</p>
+<p align=left>
+</p>
+<p align=left>
+<tt>&gt; </tt>
+<b><font color=#FF0000>fsolve( 4*x^4 - 13*x^3 + 7*x^2 + 3*x - 2 = 0 , x);</font></b>
+</p>
+<p align=center>
+<img src="images/example23.gif" width=382 height=20 alt="[Maple Math]">
+</p>
+<p align=left>
+<font color=#000000>Note how Maple quickly finds all four solutions to this quartic equation.  (Ever try</font>
+</p>
+<p align=left>
+<font color=#000000>to solve a quartic equation by hand?  It takes a long time -- probably at least 15 minutes.</font>
+</p>
+<p align=left>
+<font color=#000000>And that's assuming that you don't make any mistakes.  Maple can do it in under a</font>
+</p>
+<p align=left>
+<font color=#000000>second.)</font>
+</p>
+<p align=left>
+</p>
+<p align=left>
+<font color=#000000>Here's yet another example:</font>
+</p>
+<p align=left>
+<tt>&gt; </tt>
+<b><font color=#FF0000>solve(A*x^2 + B*x + C = 0 , x );</font></b>
+</p>
+<p align=center>
+<img src="images/example24.gif" width=306 height=57 alt="[Maple Math]">
+</p>
+<p align=left>
+<font color=#000000>This should look familiar; it's just your old friend the quadratic formula.  In addition to</font>
+</p>
+<p align=left>
+<font color=#000000>giving numerical answers, Maple can also do algebra and work symbolically.  For</font>
+</p>
+<p align=left>
+<font color=#000000>example, Maple can also spit out the Cubic Formula.  The output is too long</font>
+</p>
+<p align=left>
+<font color=#000000>to include here -- try it for yourself if you're curious.</font>
+</p>
+<p align=left>
+</p>
+<p align=left>
+<tt>&gt; </tt>
+<b><font color=#FF0000>solve(B*x^3 + C*x^2 + D*x + E, x);</font></b>
+</p>
+<p align=left>
+<tt>&gt; </tt>
+</p>
+</body>
+</html>

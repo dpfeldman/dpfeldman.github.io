@@ -1,0 +1,412 @@
+<html>
+<head>
+<title> Intro to Human Ecology: Readings and Schedule </title>
+</head>
+
+<body background="/icons/dots_1960.gif" text="#000000" bgcolor="#cc99cc">
+
+ 
+<table align=center bgcolor=cc99cc width=90% cellpadding=10>
+ 
+ 
+<tr><td><br>
+
+<br>
+<h3 align=center>Chaos and Complex Systems</h3><p>
+<h4 align=center>Schedule of Readings and Activities</h4>
+<p>
+
+This will change often..<p> 
+
+This document was last modified on <!--#echo var="LAST_MODIFIED"-->.<p> 
+
+Unless otherwise noted, readings are from Flake.<p>
+
+
+<table align=center border = 2 cellpadding=5 width=100% bordercolor=999999>
+<tr bgcolor=bbbbbb>
+  <td align=center width=10%> <b>Class</b> </td>
+  <td align=center width=20%> <b>Date</b> </td>
+  <td align=center width=60%> <b>Reading</b></td>
+  <td align=center width=15%> <b>Comments</b></td>
+</tr>
+
+<tr>
+</tr>
+
+
+<tr>
+<td bgcolor=666699 colspan=4 height=1pt bordercolor=666699> <font
+size=-1><center><b>W e e k  &nbsp; &nbsp;Z e r o</b></center></td>
+</tr>
+
+
+<tr bgcolor=bbbbbb>
+  <td> 1 </td>
+  <td> Friday, September 10 </td> 
+  <td> No reading. </td> 
+  <td> Introductions. Ruminations on salad bowls and egg cartons.</td> 
+</tr>
+
+
+<tr>
+<td bgcolor=666699 colspan=4 height=1pt bordercolor=666699> <font
+size=-1><center><b>W e e k  &nbsp; &nbsp;O n e</b></center></td>
+</tr>
+
+<tr bgcolor=999999>
+  <td> 2 </td>
+  <td> Tuesday, September 14 </td> 
+  <td> <dl>
+    <li>Preface, Introduction.  
+  </dl></td>
+  <td> We obviously won't discuss the "Acknowledgments" section of
+  the preface. I don't think I have much to say about section 1.3, but feel
+  free to skim if if you want.  Also, complete <a
+  href="./exercise.1.html">these experiments</a>.  
+  </td> 
+</tr>
+
+<tr bgcolor=bbbbbb>
+  <td> 3 </td>
+  <td> Friday, September 17</td>
+  <td><dl>
+    <li>Robert May, "The Best Possible Time to be Alive"
+    <li>Reading in Flake from last time.
+    <li>Optional:  Flake, Chapter 10.  I think we've covered most of
+  this in class.  You might want to read this if you want a different
+  take on the material, and/or if you have some questions while doing
+  the homework.  
+ <li>Chaos notes:  Lectures 2 and 3 from my <a
+  href="http://hornacek.coa.edu/dave/CSSS">CSSS lectures</a>.
+  </dl></td>
+  <td> I'd like to spend at least half an hour or so discussing the
+  May essay.  Bring questions and ideas to class.<p>
+  Also, complete <a href="./exercise.2.html">these experiments</a>. 
+  </td>
+</tr>
+
+<tr>
+<td bgcolor=666699 colspan=4 height=1pt bordercolor=666699> <font
+size=-1><center><b>W e e k  &nbsp; &nbsp;T w o</b></center></td>
+</tr>
+
+<tr bgcolor=999999>
+  <td> 4 </td>
+  <td> Tuesday, September 21 </td>
+  <td> <dl>
+    <li>Watch BBC Chaos video.
+    </dl>
+  </td>
+  <td>
+   <br>
+   </td>
+</tr>
+
+<tr bgcolor=bbbbbb>
+  <td> 5 </td>
+  <td> Friday, September 24 </td>
+  <td> <dl>  
+    <li><br>
+   </dl>  
+   </td>
+<td> Finish Dynamical Systems, more dynamical systems, Lyapunov
+exponents.</td> 
+</tr> 
+
+
+<td bgcolor=666699 colspan=4 height=1pt bordercolor=666699> <font
+size=-1><center><b>W e e k  &nbsp; &nbsp;T h r e e</b></center></td>
+</tr>
+
+<tr bgcolor=999999>
+  <td> 6 </td>
+  <td> Tuesday, September 28  </td>
+  <td> <dl>Optional:  Flake, Chapter 5.
+  </dl> </td> 
+  <td>Start Fractals </td>
+</tr>
+
+<tr bgcolor=bbbbbb>
+  <td> 7 </td>
+  <td> Friday, October 1 </td>
+  <td><dl>
+  <li>Optional:  Flake, Chapter 2. 
+ <br>
+  </td>
+  <td><dl><li> <b>Fractal Show and Tell</b>
+          <li> Different types of infinities. 
+      </dl>
+  </td>
+</tr>
+
+
+<tr>
+<td bgcolor=666699 colspan=4 height=1pt bordercolor=666699> <font
+size=-1><center><b>W e e k  &nbsp; &nbsp;F o u r</b></center></td>
+</tr>
+<tr bgcolor=999999>
+  <td> 8 </td>
+  <td> Tuesday, October 5 </td>
+  <td>
+  <dl>
+     <li>Optional:  Flake, Chapter 15.
+  </dl>
+  </td>
+  <td>Cellular Automata </td>
+</tr>
+
+<tr bgcolor=bbbbbb>
+  <td> 9 </td>
+  <td> Friday, October 8 </td>
+  <td>   
+  <dl><li>J.L. Borges, "The Aleph."
+</td>
+  <td> <dl>
+       <li>We will discuss The Aleph in class.
+       <li>Bring a 1D CA pattern to class.  See <a
+       href="http://members.surfeu.at/tim2/caos/caos.html">http://members.surfeu.at/tim2/caos/caos.html</a>. 
+       </dl>
+  </td>
+</tr>
+
+
+
+<tr>
+<td bgcolor=666699 colspan=4 height=1pt bordercolor=666699> <font
+size=-1><center><b>W e e k  &nbsp; &nbsp;F i v e</b></center></td>
+</tr>
+
+<tr bgcolor=999999>
+  <td> 10 </td>
+  <td> Tuesday, October 12  </td>
+  <td> Optional readings on boolean networks:
+<dl>
+    <li><a href="http://arxiv.org/abs/nlin.AO/0408006">Introduction
+    to Random Boolean Networks</a> by <a
+    href="http://homepages.vub.ac.be/~cgershen/">Carlos
+    Gershenson</a>. 
+    <li> S.A. Kauffman, Requirements for Evolvability
+in Complex Systems:  Orderly Dynamics and Frozen Components, in <i>
+Thinking About Biology</i>, W.D. Stein and J.J. Varela, eds.,
+Addison-Wesley, 1993.  On reserve in the library.
+
+  </td>
+<br> 
+  <td><br> </td>
+</tr>
+
+<tr bgcolor=bbbbbb>
+  <td> 11 </td>
+  <td> Friday, October 15  </td>
+  <td> <br> </td>
+  <td> 10-minute project presentations. </td>
+</tr>
+
+<tr>
+<td bgcolor=666699 colspan=4 height=1pt bordercolor=666699> <font
+size=-1><center><b>W e e k  &nbsp; &nbsp;S i x</b></center></td>
+</tr>
+
+<tr bgcolor=999999>
+  <td> 12 </td>
+  <td> Tuesday, October 19  </td>
+  <td> Optional complex networks readings:
+   <dl>
+       <li>Caldarelli, <a
+       href="http://www.cosin.org/lectures/lecture4.pdf">Statistical
+       Mechanics of Networks</a>.
+       <li>Albert and Barabasi, <a
+       href="http://arxiv.org/abs/cond-mat/0106096">Statistical
+       Mechanics of Complex Networks</a>. 
+       <li>M.E.J. Newman, <a
+       href="http://www-personal.umich.edu/~mejn/networks/">Gallery of
+       Network Images</a>
+       <li>M.E.J. Newman, <a
+       href="http://arxiv.org/abs/cond-mat/0303516/">The Structure and
+       Function of Complex Networks</a>.
+       <li>T.S. Evans, <a
+       href="http://xxx.lanl.gov/abs/cond-mat/0405123">Complex
+       Networks</a>. 
+       <li> <a
+       href="http://www.analytictech.com/networks.pdf">Introduction to
+       Social Network Models</a>.
+       <li>M.E.J. Newman, <a
+       href="http://arxiv.org/abs/cond-mat/0001118">Models of the
+       Small World: A Review</a>.
+   </dl> 
+   </td> 
+  <td><dl> <li><b>Class Midterm Evaluation</b>
+           <li>Begin Complex Networks.  Random graphs. 
+  </dl>
+ </td>
+</tr>
+
+<tr bgcolor=bbbbbb>
+  <td> 13 </td>
+  <td> Friday, October 22 </td>
+  <td> <br>
+    
+   </td>
+  <td> Small world and scale-free graphs.
+    
+ </td>
+</tr>
+
+
+<tr>
+<td bgcolor=666699 colspan=4 height=1pt bordercolor=666699> <font
+size=-1><center><b>W e e k  &nbsp; &nbsp;S e v e n</b></center></td>
+</tr>
+
+<tr bgcolor=999999>
+  <td> 14 </td>
+  <td> Tuesday, October 26</td>
+  <td> <br> </td>
+  <td> Scale free networks, power laws. </td>
+</tr>
+
+<tr bgcolor=bbbbbb>
+  <td> 15 </td>
+  <td> Friday, October 29 </td>
+  <td> <br>
+  <!--Thomas Schelling, On the Ecology of Micromotives.  The Public
+  Interest.  25:61-98.  1971. 
+  -->
+  </td>
+  <td> Begin models of behavior and strategy. </td>
+</tr>
+
+<tr>
+<td bgcolor=666699 colspan=4 height=1 bordercolor=666699> <font
+size=-1><center><b>W e e k  &nbsp; &nbsp;E i g h t</b></center></td>
+</tr>
+
+<tr bgcolor=999999>
+  <td> 16 </td>
+  <td>Tuesday, November 2 </td>
+  <td> <br>
+    <!--<dl>
+     <li>William J. Wilson, <a
+  href="http://globetrotter.berkeley.edu/macarthur/inequality/papers/WilsonRacialTension.pdf">The
+  Roots of Racial Tensions: Urban Ethnic Neighborhoods</a>.  Presented
+  at 2002 meeting of the Network on the Effects of Inequality on
+  Economic Performance. 
+<li>Sandra Hays, "Off the Rolls: The Ground-Level Results of Welfare
+  Reform," Dissent, Fall 2003. -->
+   </td>
+  <td> <br> </td>
+</tr>
+
+<tr bgcolor=669966>
+<td><br></td>
+<td>Tuesday, November 2. </td>
+<td>U.S. Election Day</td> 
+<td><br></td>
+</tr>
+
+<tr bgcolor=bbbbbb>
+  <td> 17 </td>
+  <td> Friday, November 5. </td>
+  <td> <b>No class</b>
+<!--
+Readings on Human Ecology:
+<dl>
+<li><a
+href="http://www.coa.edu/publications/chance_change/carpenter2.html">Human
+Ecology</a>, by Bill Carpenter.
+<li><a
+href="http://www.coa.edu/publications/chance_change/mooser.html">Human
+Ecology: On the Cusp</a>, by Etta Kralovec.
+<li><a
+href="http://www.coa.edu/publications/chance_change/visvader.html">The
+Idea of Nature</a>, by John Visvader.
+<li><a
+href="http://www.coa.edu/publications/chance_change/kaelber.html">Human
+Ecology and COA</a>, Ed Kaelber. 
+</dl>
+--> </td>
+  <td> Faculty Retreat </td>
+</tr>
+
+<tr>
+<td bgcolor=666699 colspan=4 height=1pt bordercolor=666699> <font
+size=-1><center><b>W e e k  &nbsp; &nbsp;N i n e</b></center></td>
+</tr>
+
+
+<tr bgcolor=999999>
+  <td> 17 </td>
+  <td> Tuesday, November 9 </td>
+  <td>  <br> 
+        <!--<dl>
+      <li><a href="courtroom_victories.pdf">Courtroom victories</a>.
+  Some of the successful lawsuits filed by the <a
+  href="http://www.splcenter.org">Southern Poverty Law Center</a>. 
+  </dl>
+  -->
+    </td>
+  <td> <br> </td> 
+</tr>
+
+<tr bgcolor=bbbbbb>
+  <td> 18 </td>
+  <td> Friday, November 12 </td>
+  <td> <br>
+    <!--<dl>
+    <li>Erik Olin Wright, <a
+  href="http://www.ssc.wisc.edu/~wright/inc-equal.pdf">Real Utopian
+  Proposals for reducing Income and Wealth Inequality</a>, 1999.</td>
+  <td> Ken Cline and Doreen Stabinsky to visit class and talk about
+  activism, organizing, and social change. 
+-->
+ </td>
+  <td><br></td>
+</tr>
+
+
+<tr>
+<td bgcolor=666699 colspan=4 height=1pt bordercolor=666699> <font
+size=-1><center><b>W e e k  &nbsp; &nbsp;T e n</b></center></td>
+</tr>
+
+<tr bgcolor=999999>
+  <td> 19 </td>
+  <td> Tuesday, November 16 </td>
+  <td><br>
+  <!--<dl>
+    <li>Student Presentations
+  </dl>-->
+ </td>
+  <td><br> </td> 
+</tr>
+
+<tr bgcolor=bbbbbb>
+  <td> 20 </td>
+  <td> Friday, November 19 </td>
+  <td> <br> </td>
+  <td> Conclusions, summary, course evaluations. </td> 
+</tr>
+
+
+
+</table>
+
+<p><br>
+<hr>
+<p>
+<b>
+<center>
+[ <a href="http://hornacek.coa.edu/dave/index.html">Dave</a> ]
+[ <a
+href="./index.html">Chaos+Complex Systems</a> ] 
+[ <a href="http://www.coa.edu">COA</a> ]
+</b>
+</center>
+<p><br>
+
+
+</table>
+
+</html>
+

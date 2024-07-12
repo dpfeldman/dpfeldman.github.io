@@ -1,0 +1,83 @@
+
+
+\documentstyle[12pt]{article}
+
+\oddsidemargin=0in
+\textwidth=6.25in
+
+\begin{document}
+
+\begin{center}
+{\Large Speaker Evaluation}
+\end{center}
+
+\begin{flushleft}
+
+Speaker's Name:
+
+\vspace{4mm}
+Your Name: 
+
+\end{flushleft}
+Please respond briefly to the following questions.  Please hand these forms
+directly to the speaker when you are done.  The speaker is the only person
+besides yourself who will see your response.
+
+
+\begin{itemize}
+
+\item {\bf Use of overheads}
+	\begin{enumerate}
+		\item Were the overheads readable?
+
+		\vspace{5mm}
+
+		\item Was there too much/not enough/just the right amount of
+		information per overhead?
+
+		\vspace{5mm}
+	\end{enumerate}
+
+
+\item {\bf Speaking Mechanics }
+
+	\begin{enumerate}
+		\item  Did the speaker mumble?  Talk too fast?  Too
+		quietly?
+
+		\vspace{5mm}
+
+		\item  Did the speaker make sufficient eye contact with 
+		the audience?
+
+		\vspace{5mm}
+	\end{enumerate}
+
+\item {\bf Overall }
+
+	\begin{enumerate}
+		\item Did you find this talk generally understandable?  Did
+		you leave this talk with a rough sense of what the speaker
+		was talking about?  
+		
+		\vspace{5mm}
+
+		\item What were this talk's strong points?
+
+		\vspace{5mm}
+
+		\item What could the speaker have done differently that would
+		have made this talk better?
+
+		\vspace{10mm}
+	\end{enumerate}
+
+
+\end{itemize}
+
+Please feel free to add additional comments on the back.
+
+\end{document}
+
+
+	

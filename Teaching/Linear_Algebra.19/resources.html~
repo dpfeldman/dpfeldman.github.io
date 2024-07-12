@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<!--
+	Hielo by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+  <head>
+    <title>Linear Algebra 2019 | College of the Atlantic</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body class="subpage">
+    
+    <!-- Header -->
+    <header id="header">
+      <div class="logo"><a href="index.html">Linear Algebra</a> Winter 2019</div>
+      <a href="#menu">Menu</a>
+    </header>
+    
+    <!-- Nav -->
+    <nav id="menu">
+      <ul class="links">
+	<li><a href="index.html">Home</a></li>
+	<li><a href="about.html">About</a></li>
+	<li><a href="schedule.html">Schedule</a></li>
+	<li><a href="resources.html">Resources</a></li>
+      </ul>
+    </nav>
+    
+    <!-- One -->
+    <section id="One" class="wrapper style3">
+      <div class="inner">
+	<header class="align-center">
+	  <p> </p>
+	  <h2>Linear Algebra</h2>
+	  <h3>Resources</h4>
+</header>
+</div>
+</section>
+
+
+<section id="two" class="wrapper style2">
+  <div class="inner">
+    <div class="box">
+      <div class="content">
+	<!--<header class="align-center">
+	    <p>maecenas sapien feugiat ex purus</p>
+	    <h2>Lorem ipsum dolor</h2>-->
+	</header>
+	
+<header class="align-left">
+  <h2>Handouts from Class</h2>
+</header>
+
+<ul class="sched"> 
+  <li><a href="./pdf/notes.1.1.pdf">Chapter 1.1</a>.  Tuesday, Jan 8, 2019.
+  <li><a href="./pdf/notes.1.2.pdf">Chapters 1.1, 1.2, and 1.3</a>.  Wednesday, Jan 9, 2019.
+  <li><a href="./pdf/notes.1.4.pdf">Chapter 1.4</a>. Friday, Jan 11, 2019.
+  <li><a href="./pdf/notes.1.5.pdf">Chapter 1.5</a>. Tuesday, Jan 15, 2019.
+  <li><a href="./pdf/notes.1.5-2.pdf">Chapter 1.5</a>. Wednesday, Jan 16, 2019.
+  <li><a href="./pdf/notes.3.1.pdf">Chapters 3.1 and 3.2</a>. Friday, Jan 18, 2019.
+  <li><a href="./pdf/notes.3.3.pdf">Chapter 3.3</a>. Tuesday, Jan 22, 2019.
+  <li><a href="./pdf/notes.3.3.a.pdf">Chapter 3.3 and 3.4</a>. Wednesday, Jan 23, 2019.
+  <li><a href="./pdf/notes.3.5.pdf">Chapter 3.5</a>. Friday, Jan 25, 2019.
+  <li><a href="./pdf/notes.3.6.pdf">Chapter 3.6</a>. Tuesday, Jan 29, 2019.
+  <li>Snow day. Wednesday, Jan 30, 2019
+  <li><a href="./pdf/notes.3.6.a.pdf">Chapter 3.6</a>. Friday, Feb 1, 2019.
+  <li><a href="./pdf/notes.4.1.pdf">Chapter 4.1</a>. Friday, Feb 8, 2019.
+  <li><a href="./pdf/notes.4.2.pdf">Chapter 4.2</a>. Tuesday, Feb 12, 2019.
+  <li><a href="./pdf/notes.4.3-4.pdf">Chapter 4.3 and 4.4</a>. Friday, Feb 15, 2019.
+  <li><a href="./pdf/notes.4.4-5.pdf">Chapter 4.4 and 4.5</a>. Tuesday, Feb 19, 2019.
+  <li><a href="./pdf/notes.4.6.pdf">Chapter 4.6</a>. Wednesday, Feb 20, 2019.
+  <li><a href="./pdf/notes.6.1.pdf">Chapter 6.1</a>. Friday, Feb 22, 2019.
+  <li><a href="./pdf/notes.6.2.pdf">Chapter 6.2</a>. Tuesday, Feb 26, 2019.
+  <li><a href="./pdf/notes.google.pdf">The Google Matrix</a>. Wednesday, Feb 27, 2019.
+  <li><a href="./pdf/notes.5.1.pdf">Chapter 5.1</a>. Friday, March 1, 2019.
+  <li><a href="./pdf/notes.5.1-7.1.pdf">Chapter 5.1, 7.1, 7.2, and 7.3</a>. Monday, March 5, 2019.
+  <li><a href="./pdf/notes.7.3.pdf">Chapter 7.3</a>. Wednesday, March 6, 2019.
+  <li><a href="./pdf/notes.7.3.2.pdf">Chapter 7.3</a>. Friday, March 8, 2019.
+  <li><a href="./pdf/notes.7.3.3.pdf">Chapter 7.3</a>. Tuesday, March 12, 2019.
+  <li><a href="./pdf/notes.nonlinear.pdf">Chapter 9.2</a>. Wednesday, March 13, 2019.
+</ul>
+
+<header class="align-left">
+  <h2>Plotting Slope Fields</h2>
+</header>
+
+<ul class="sched"> 
+  <li><a href="https://www.geogebra.org/m/W7dAdgqc">GeoGebra</a>
+  <li><a href="https://www.desmos.com/calculator/p7vd3cdmei">Desmos</a>
+</ul>
+
+
+<!--
+<header class="align-left">
+  <h2>Matplotlib</h2>
+</header>
+<ul class="sched">
+  <li>A <a href="https://www.datacamp.com/community/tutorials/matplotlib-tutorial-python">matplotlib
+      tutorial</a> from DataCamp.  This looks pretty good. 
+  <li><a href="https://matplotlib.org/users/pyplot_tutorial.html">Pyplot
+      tutorial</a>.  Looks like a reasonably friendly overview of some
+    basic and slightly-less-than-basic plotting techniques.
+  <li><a href="https://matplotlib.org/gallery.html">Gallery of
+      matplotlib examples</a>. Includes a listing of markers and line
+    styles. 
+</ul>
+-->
+
+						
+
+</div>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer id="footer">
+  <div class="container">
+    <ul class="icons">
+      <li><a href="http://www.twitter.com/DavidFeldman" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+      <li><a href="http://www.di.fm/channels" class="icon fa-headphones"><span class="label">di</span></a></li>
+      <li><a href="http://ohoriscoffee.com" class="icon fa-coffee"><span class="label">Coffee</span></a></li>
+      <li><a href="http://www.coa.edu" class="icon fa-graduation-cap"><span class="label">COA</span></a></li>
+      <!--<li><a href="http://mainebeercompany.com" class="icon fa-beer"><span class="label">MBC</span></a></li>-->
+      <li><a href="http://hornacek.coa.edu/dave" class="icon fa-male"><span class="label">Dave</span></a></li>  
+    </ul>
+  </div>
+  <div class="copyright">
+    &copy; David P. Feldman. All rights reserved.
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

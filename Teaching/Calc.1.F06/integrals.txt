@@ -1,0 +1,65 @@
+
+here's an example showing how to use maple to evaluate large left 
+and right hand sums.  this is problem 10 from section 5.2 on page 235.
+
+> f := x-> sin(x^2);
+
+                                         2
+                          f := x -> sin(x )
+
+
+first, let's do the n=2 case.  
+
+> n := 2;
+
+                                n := 2
+
+
+it's important to type ":=", not "=".  The former command tells Maple
+that n should be 2 for the rest of the session, not for just one line.
+
+next, let's set our delta_t.  the size of delta_t is the length of the interval
+(in this case, 3-2), divided by n:
+
+> delta_t := (3-2)/n;
+
+                            delta_t := 1/2
+
+
+now, we need to evalate the left hand sum.  
+
+> sum( f(2+ (i*delta_t) )*delta_t, i=0..n-1); 
+
+                      1/2 sin(4) + 1/2 sin(25/4)
+
+
+
+I had hoped for a number, not something symbolic.  to force maple to give me a nice
+number, i need to type evalf(%).  The command evalf tells maple to EVALuate the
+expression as a Floating point number.  The "%" is a shorthand for the previous output,
+i.e., the previous line of blue output text.
+
+> evalf(%);
+
+                             -.3949908560
+
+
+so far, so good.  i next need to do the right hand sum.  to do this, all i need
+to do is change the limits on the left hand sum
+
+> sum( f(2+ (i*delta_t) )*delta_t, i=1..n):
+> evalf(%);
+
+                             .1894696343
+
+> 
+
+Thus, for n=2, the left and right hand sums are and -.395 and .189.   
+
+To do this for different n's, you can go back, change the value of n, and then 
+repeatedly hit enter and each next line of Maple will evaluate with the
+new value of n.  For large n's you'll get an impressively long list of terms.
+If you don't want these filling up your screen you can wrap an evalf
+around the sum term.  You could also end the line with a colon instead
+of a semi-colon; ending with a colon supresses blue output.
+

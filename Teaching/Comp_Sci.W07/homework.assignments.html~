@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>Introduction to Computer Science</title>
+</head>
+
+<link rel="stylesheet" href="./1.css" type="text/css" />
+
+<h1 align=center>Homework Assignments</h1>
+
+<h2 align=center><a href="./index.html">Introduction to Computer Science
+</a></h2>
+
+
+<p>Please submit your assignments by sending me email at:
+daveATh0rnacekDOTc0aDOTedu.  Please include your name and the homework
+number in the subject line:  E.g., "Dave's HW1".  Please include each
+file as a plain text attachment.
+</p>
+
+<h4>Assignments</h4>
+
+<p>Unless otherwise noted, all problems are from our textbook.
+
+
+<ol>
+<li><b>One</b>: Due Friday Jan 6, midnight.  Chapter 1, problems 5 and
+8.
+<li><b>Two</b>: Due Friday Jan 12, midnight.  Chapter 2, problems 1, 12, 
+and 14.
+<li><b>Three</b>: Due Friday Jan 19, midnight.  The assignment is 
+<a class=underline a href="./homework.3.pdf">here</a>. 
+<li><b>Four</b>: Due Friday Jan 26, midnight.  Chapter 4, problems 5, and 
+12.
+<li><b>Five</b>: Due Friday Feb 2, midnight.  The assignment is 
+<a class=underline a href="./homework.5.pdf">here</a>. 
+<li><b>Six</b>: Due Friday Feb 9, midnight.  The assignment is 
+<a class=underline a href="./homework.6.pdf">here</a>. 
+<li><b>Seven</b>: Due Friday Feb 16, midnight.  Chapter 7, Problem 13 OR 16. 
+</ol>
+</p>
+
+
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-835270-1";
+urchinTracker();
+</script>
+
+
+</html>

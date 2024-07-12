@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+\oddsidemargin=0.0in
+\evensidemargin=0.0in
+\textwidth=6.5in
+%\topmargin=-.75in
+%\textheight=9in
+%\usepackage{doublespace}
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{center}
+{\large {\bf Calculus II}}\\
+\medskip
+{\large {\bf Homework Eight}}\\
+\medskip
+{ {\bf Due Friday 23 February, 2009}}\\
+\end{center}
+
+\hspace{2mm}\\
+
+\noindent {\bf Chapter 8.8:}
+
+\begin{enumerate}
+\setlength{\itemsep}{-1mm}
+\item 7
+\item 10
+\end{enumerate}
+
+\noindent {\bf Chapter 9.2:}
+
+\begin{enumerate}
+\setlength{\itemsep}{-1mm}
+\item 18-21
+\item 30
+\item 31
+\item Two trains are 100 km apart.  At noon, they start moving
+ directly toward each other at a speed of 10 m/s.  Eventually, they
+ crash.  Initially, a bird is sitting on one of the trains.  At noon,
+ the bird flies directly toward the other train at 20m/s.  As soon as
+ it reaches the train, it turns around and heads to the other train.
+ As soon as it reaches this train, it again turns around and heads
+ toward the other one, and so on, traveling at 20 m/s all the while.
+ The bird zigs and zags back and forth between the two trains.
+ Eventually, when the trains crash, the bird is crushed, too.  How
+ far did the bird travel?
+\begin{enumerate}
+   \item Do this problem the easy way.
+   \item Do this problem the hard way, by expressing the distance
+   traveled as a geometric series and summing the series.
+\end{enumerate}
+
+
+\end{enumerate}
+
+\noindent {\bf Chapter 9.3:}
+
+\begin{enumerate}
+\setlength{\itemsep}{-1mm}
+\item 10-16, even only.  Be sure to explain your reasoning
+\end{enumerate}
+
+
+
+
+\end{document}
+Reply
+		
+Forward
+		
+	

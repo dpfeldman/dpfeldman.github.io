@@ -1,0 +1,97 @@
+<html>
+<head>
+<title>example.html</title>
+<!-- Created by Maple V Release 5, IBM INTEL NT -->
+</head>
+<body bgcolor="FFFFFF">
+<a name="MapleAutoBookmark1">
+<p align=left>
+<font color=#000000>One of the handy things that maple can do is that it will let you define your own</font>
+</p>
+<p align=left>
+<font color=#000000>functions.  Suppose, for example, that I was doing problem 20.  My first step </font>
+</p>
+<p align=left>
+<font color=#000000>would be to define the function f that the problem gives me.  The following</font>
+</p>
+<p align=left>
+<font color=#000000>Maple command will define the function for me:</font>
+</p>
+<p align=left>
+<tt>&gt; </tt>
+<b><font color=#FF0000>f:= x -&gt; ( exp(2*x) - 1 )/x;</font></b>
+</p>
+<p align=center>
+<img src="images/example1.gif" width=145 height=58 alt="[Maple Math]">
+</p>
+<p align=left>
+<font color=#000000>Notice that it's ":=" not plain old "=" that defines a function.  I can then use</font>
+</p>
+<p align=left>
+<font color=#000000>maple to tell me the value of f(x) for lots of different x's.  To get maple to </font>
+</p>
+<p align=left>
+<font color=#000000>evaluate f(x), I need to use the evalf command.  Evalf stands for Floting</font>
+</p>
+<p align=left>
+<font color=#000000>point EVAL.  Floating point means a decimal number, like 3.1415, instead</font>
+</p>
+<p align=left>
+<font color=#000000>of a symbol like Pi.</font>
+</p>
+<p align=left>
+<tt>&gt; </tt>
+<b><font color=#FF0000>evalf( f(1) );</font></b>
+</p>
+<p align=center>
+<img src="images/example2.gif" width=100 height=20 alt="[Maple Math]">
+</p>
+<p align=left>
+<tt>&gt; </tt>
+<b><font color=#FF0000>evalf (f(.1));</font></b>
+</p>
+<p align=center>
+<img src="images/example3.gif" width=100 height=20 alt="[Maple Math]">
+</p>
+<p align=left>
+<tt>&gt; </tt>
+<b><font color=#FF0000>evalf( f(.01) );</font></b>
+</p>
+<p align=center>
+<img src="images/example4.gif" width=100 height=20 alt="[Maple Math]">
+</p>
+<p align=left>
+<tt>&gt; </tt>
+<b><font color=#FF0000>evalf( f(.001) );</font></b>
+</p>
+<p align=center>
+<img src="images/example5.gif" width=100 height=20 alt="[Maple Math]">
+</p>
+<p align=left>
+<tt>&gt; </tt>
+<b><font color=#FF0000>evalf( f(.0001) );</font></b>
+</p>
+<p align=center>
+<img src="images/example6.gif" width=100 height=20 alt="[Maple Math]">
+</p>
+<p align=left>
+<font color=#000000>Etc. etc.  I can also get maple to plot my function for me.</font>
+</p>
+<p align=left>
+<tt>&gt; </tt>
+<b><font color=#FF0000>plot( f(x), x=-.005..(.005), y=1.98..2.02);</font></b>
+</p>
+<p align=center>
+<img src="images/example7.gif" width=388 height=288 alt="[Maple Plot]">
+</p>
+<p align=left>
+<font color=#000000>You could do all of this on a graphing calculator.  But I think Maple is much more fun.</font>
+</p>
+<p align=left>
+<font color=#000000>And I bet it's also faster.  When you're done Maple-ing, you can just print out your</font>
+</p>
+<p align=left>
+<font color=#000000>work -- you don't need to copy stuff over.  </font>
+</p>
+</body>
+</html>

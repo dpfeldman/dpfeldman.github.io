@@ -1,0 +1,72 @@
+<html>
+<head>
+<title> Calculus III </title>
+</head>
+
+<body>
+
+<br>
+<h1> Calculus III: Multivariable Calculus (Tutorial)</h1>
+<h2> Instructor:  Dave Feldman</h2>
+<br>
+
+<b>The 2001 Winter Term home page for this course is located <a
+href="../Calc.3.W01/index.html">here</a>. </b><p><br>
+
+<b>The 2002 Winter Term home page for this course is located <a
+href="../Calc.3.W02/index.html">here</a>. </b><p><br>
+ 
+The functions studied in Calculus I and II all reside on a flat sheet
+of paper.  But the universe of everyday experience is, at minimum,
+three-dimensional.  In this course we explore how Calculus can be
+extended so as to apply to functions of more than one variable, and
+thus apply to the three-dimensional world.  We will begin by reviewing
+vectors and functions of several variables.  We will then discuss
+partial derivatives and gradients, and apply these tools to
+multivariable optimization.  Turning our attention to integral
+calculus, we will next cover double and triple integrals and their
+applications.  As time permits, we will discuss line integrals, flux
+integrals, the divergence and curl of a vector field, and Green's,
+and Stokes's theorems.  Throughout the course, applications of
+vector calculus to electromagnetic theory will be emphasized.  We will
+also discuss how Newton's invention of Calculus enabled him to explain
+Kepler's laws of planetary motion in terms of a universal law of
+gravitation.<p>
+
+Evaluation will be based on class participation and weekly problem
+sets.  Some computer work will be required, but no computer experience
+is necessary.<p>
+ 
+Prerequisites:  Calculus II or the equivalent or permission of
+instructor.  Intermediate/Advanced.  QR.  ES.  Lab fee $10.<p>
+
+<br>
+
+
+<hr>
+
+<center>
+<h3>
+[<a href="http://hornacek.coa.edu/dave/Teaching/math.shtml">Math at COA</a>]
+[<a href="http://hornacek.coa.edu/dave/index.html">Dave's Home Page</a>]
+[<a href="http://www.coa.edu/">COA Home Page</a>]</h4>
+</h3>
+</center>
+<p>
+<br>
+The current time is  <!--#echo var="DATE_LOCAL"-->.<br>
+This document was last modified on <!--#echo var="LAST_MODIFIED"--><br>
+Page maintained by Dave Feldman,  <a
+href=mailto:dave@hornacek.coa.edu>dave@hornacek.coa.edu</a>
+
+<!--Questions about the contents of these pages or about math at the
+College of the Atlantic should be sent to Dave Feldman at <a 
+href=mailto:dave@hornacek.coa.edu>dave@hornacek.coa.edu</a>.
+<p>-->
+
+<p>
+</html>
+
+
+
+

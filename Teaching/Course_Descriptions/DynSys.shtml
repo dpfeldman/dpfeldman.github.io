@@ -1,0 +1,102 @@
+<html>
+<head>
+<title>Chaos and Complex Systems</title>
+</head>
+
+<body>
+
+<h1>Chaos and Complex Systems</h1>
+<h4>formerly known as</h4>
+<h2>Chaotic Dynamical Systems</h2>
+<p><br>
+<h3>Instructor: Dave Feldman</h3>
+
+
+<b>The 1999 Fall Quarter home page for this course is located <a
+href="../Chaotic_Dynamics/index.html">here</a>. </b><p>
+
+<b>The 2001 Fall Quarter home page for this course is located <a
+href="../Chaos+Complex_Systems/index.html">here</a>. </b><p><br>
+ 
+ 
+This course is an advanced survey of a range of modern topics in
+applied mathematics, theoretical physics, and computer science.
+Topics covered may include:  chaos, fractals, cellular automata,
+boolean networks, random networks and graphs, game theory, agent-based
+simulation, and genetic algorithms.  Although Calculus is a
+prerequisite for this course, most of the topics in this class are not
+an extension or application of calculus; this class is designed to
+expose students to an array of non calculus-based mathematics.
+Students will be encouraged to make interdisciplinary connections
+during class discussions, and especially in their final projects.<p>
+ 
+Evaluation will be based on class participation, bi-weekly problem
+sets, a few short writing assignments, and a significant final
+project.  Some computer work will be required, but no computer
+experience is necessary.<p>
+ 
+Prerequisites: Calculus II (or the equivalent). QR. ES. Lab Fee $15.00.
+Advanced/Intermediate.<p>
+
+<br><br><br>
+<b>Description from the 1999 course:</b><p>
+
+
+This course is a survey of a variety of modern topics in nonlinear
+dynamics:  chaotic finite difference equations, fractals,
+multifractals, differential equations, boolean networks, and cellular
+automata.  The survey will be conducted at a fairly advanced
+mathematical level, but the material will be covered with an applied
+emphasis.  Numerical results and applications will be stressed rather
+than proofs.  The text for this course will be <i>Understanding
+Nonlinear Dynamics</i>, by Daniel Kaplan and Leon Glass.  I will
+likely supplement the text with readings from journal articles and
+other books.  <p> 
+
+Evaluation will be based on class participation, weekly problem
+sets and a final project.   Some computer
+work will be required, but no computer experience is necessary. The
+final project will provide students an opportunity to examine a
+particular topic or application in considerable depth.  Projects can
+consist of, but are not limited to:  a more rigorous investigation of
+topics covered in class (i.e., a series of formal proofs); a case
+study of a particular application; extensive numerical investigation
+of a model system; a critical investigation of ``chaos theory's''
+impact on literature, art, philosophy, or the social sciences; the
+development of lesson plans or a curricular material for either a high
+school math course or the introductory course on chaos and fractal
+taught at COA. <p>
+
+Prerequisites:  Calculus II (or the equivalent).  Advanced.  QR.  
+
+
+<p><br>
+
+
+<hr>
+<br>
+<center>
+<h3>
+[<a href="http://hornacek.coa.edu/dave/Teaching/math.coa.shtml">Math at COA</a>]
+[<a href="http://hornacek.coa.edu/dave/index.html">Dave's Home Page</a>]
+[<a href="http://www.coa.edu/">COA Home Page</a>]</h4>
+</h3>
+</center>
+<p>
+<br>
+The current time is  <!--#echo var="DATE_LOCAL"-->.<br>
+This document was last modified on <!--#echo var="LAST_MODIFIED"--><br>
+Page maintained by Dave Feldman,  <a
+href=mailto:dave@hornacek.coa.edu>dave@hornacek.coa.edu</a>  
+
+<!--Questions about the contents of these pages or about math at the
+College of the Atlantic should be sent to Dave Feldman at <a 
+href=mailto:dave@hornacek.coa.edu>dave@hornacek.coa.edu</a>.
+<p>-->
+
+<p>
+</html>
+
+
+
+

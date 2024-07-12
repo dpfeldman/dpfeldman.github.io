@@ -1,0 +1,87 @@
+<html>
+<head>
+<title> Introduction to Chaos and Fractals</title>
+</head>
+
+<body>
+
+<h1>Introduction to Chaos and Fractals</h1>
+<h3>Instructor: Dave Feldman</h3>
+
+<b>The 2000 Winter Term home page for this course is located <a
+href="../Intro_to_Chaos/index.html">here</a>. </b><p>
+
+<b>The 2001 Winter Term home page for this course is located <a
+href="../Chaos+Fractals.W01/index.html">here</a>. </b><p>
+
+<b>The 2002 Winter Term home page for this course is located <a
+href="../Chaos+Fractals.W02/index.html">here</a>. </b><p><br>
+
+
+
+This course presents an elementary introduction to chaos and fractals. 
+Through the study of discrete dynamical system, students will
+encounter examples of deterministic chaos and fractals---specifically
+the Mandelbrot set and Julia sets.  You've probably seen the
+Mandelbrot set and various Julia sets before; they're the pretty,
+multicolored fractals that are on many book covers and posters and
+calendars.<p> 
+
+This class is for students who have had algebra and probably algebra II
+in high school. It is not a remedial math course, but is intended to
+give students significant practice in high school algebra while
+providing an exposure to some recent advances in dynamical systems and
+fractals.  Along the way, we will likely encounter complex
+("imaginary") numbers and some ideas from
+elementary probability and statistics.  This course is not a
+systematic review of algebra.  Students needing such a review are
+strongly encouraged to take College Algebra .  <p>
+
+The text for this course will probably be <i>Chaos,
+Fractals and Dynamics: Computer Experiments in Mathematics</i>, by Bob
+Devaney.  We may also use portions of <i> Fractals and Chaos
+Simplified for the Life Sciences</i>, by Larry Lebovitch, and <i>
+Chaos</i>, by James Gleick. <p>
+
+Evaluation will be based on class participation, weekly problem
+sets and possibly one or more take home exams.   Some computer
+work will be required, but no computer experience is necessary. <p>
+
+Prerequisites:  High school algebra.  Introductory.  QR.  <p>
+
+
+
+
+
+<p><br>
+
+
+<hr>
+<br>
+<center>
+<h3>
+[<a href="http://hornacek.coa.edu/dave/Teaching/math.shtml">Math at COA</a>]
+[<a href="http://hornacek.coa.edu/dave/index.html">Dave's Home Page</a>]
+[<a href="http://www.coa.edu/">COA Home Page</a>]</h4>
+</h3>
+</center>
+<p>
+<br>
+The current time is  <!--#echo var="DATE_LOCAL"-->.<br>
+This document was last modified on <!--#echo var="LAST_MODIFIED"--><br>
+Page maintained by Dave Feldman,  <a
+href=mailto:dave@hornacek.coa.edu>dave@hornacek.coa.edu</a>  
+
+<!--Questions about the contents of these pages or about math at the
+College of the Atlantic should be sent to Dave Feldman at <a 
+href=mailto:dave@hornacek.coa.edu>dave@hornacek.coa.edu</a>.
+<p>-->
+
+<p>
+</html>
+
+
+
+
+<!--  LocalWords:  Devaney Lebovitch Gleick QR COA dave hornacek coa edu
+ -->

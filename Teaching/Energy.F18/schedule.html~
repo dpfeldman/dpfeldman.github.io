@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>physics and mathematics of sustainable energy</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="container">
+<div id="header">
+<h1 align=right>physics and mathematics of</h1>
+<h5 align=right font=+2> sustainable energy</h5>
+<h2 align=right><a href="http://www.coa.edu">college of the
+    atlantic</a></h2>  
+<h2 align=right>david p. feldman</a> </h2>  
+<h2 align=right>fall 2018</h2>
+<br />
+<hr />
+
+</div> <!-- end header -->
+
+<div class="spacer"></div>
+<div id="left">
+
+<div id="leftcontent">
+
+  <ul>
+    <li><a href="./index.html">Home</a></li>
+    <li><a href="./overview.html">Info</a></li>
+    <li><a href="./schedule.html">Schedule</a></li>
+    </ul>
+<p>&nbsp;</p>
+
+
+
+</div> <!-- end left content -->
+</div> <!-- end left division -->
+
+<div id="main">
+<div id="maincontent">
+
+<p class="no-box"><b>This will be updated frequently.</b>  I plan on
+  following a schedule fairly similar
+  to <a href="http://hornacek.coa.edu/dave/Teaching/Energy.F17/schedule.html">last
+  year</a>, although I want to add a unit on hydropower and some
+  topics we'll cover in disucssion section instead of class.
+
+<br>
+
+
+<h3>Week Zero</h3><p class="no-box">
+<ul>
+<li><b>Class 1</b> (Friday, September 7):  Introduction to the course.
+  Introductory discussion of energy, conservation of energy, and
+  power. [<a href="./Handouts/class_01.pdf">class worksheet</a>] 
+</ul>
+<br>
+
+<h3>Week One</h3><p class="no-box">
+<ul>
+<li><b><a href="./Homework/homework.0.pdf">Homework Zero</a></b> due
+  on Monday, September 10 at 8:00pm.   
+  <li><b>Class 2</b>: (Tuesday, September 11): 
+    [<a href="./Handouts/class02.pdf">worksheet</a>]  
+  <li><b>Discussion Section</b>: Kill-a-watt meters
+ <li><b>Class 3</b> (Friday, September 11): Read Chapter 1
+  of <a href="http://withouthotair.com/">SEWTHA</a> (MacKay) and
+  ponder the figure on page 336. 
+  <!--and the Preface
+  of <a href="../Energy.S16//Textbook/energybook.pdf">SEFAS</a>
+  (Feldman). --> Bring questions and comments on the MacKay reading.
+  Focus on pp. 11-16 of MacKay.  Carbon emissions, relation to
+  electricity generation, more energy and power. 
+  <!--[<a href="./Handouts/basic_energy_02.pdf">class worksheet</a>] -->
+
+<li><b><a href="./Homework/homework.1.pdf">Homework One</a></b> due
+  on Friday, September 14.   
+
+<!--<li><b>Class 3</b> (Thursday, September 14):  More energy and power.  
+  Introduction to Windpower.
+<li><b><a href="./Homework/homework.1.pdf">Homework One</a></b> due on
+  Friday, September 15. 
+-->
+</ul>
+<br>
+
+
+<h3>Week Two</h3><p class="no-box">
+<ul>
+<li><b><a href="./Homework/watt_meter_lab.pdf">Kill-A-Watt meter lab</a></b> due
+  on Monday, September 17.   
+<!--<li><b>Class 4</b> (Monday, September 18):  Further discussion of windpower. 
+Areas and proportionality.
+<li><b>Class 5</b> (Thursday, September 21): Finish windpower.  Start
+  solar PV. 
+<li><b><a href="./Homework/homework.2.pdf">Homework Two</a></b> due
+  on Friday, September 22.-->
+</ul>
+<br>
+
+<!--
+<h3>Week Three</h3><p class="no-box">
+<ul>
+<li><b>Class 6</b> (Monday, September 15):  Finish Solar PV.  Start
+  thermal energy.
+<li><b>Class 7</b> (Thursday, September 28): Efficiencies.  Home Heating. 
+  <li><b><a href="./Homework/homework.3.pdf">Homework Three</a></b> due
+  on Friday, September 29.
+</ul>
+<br>
+
+<h3>Week Four</h3><p class="no-box">
+<ul>
+<li><b>Class 8</b> (Monday, October 2): More home insluation.  Efficiencies.
+  Furnaces and heat pumps. 
+<li><b>Class 9</b> (Thursday, October 5): Finish home heating. Time
+  Value of Monday. 
+<li><b><a href="./Homework/homework.4.pdf">Homework Four</a></b> due
+  on Friday, October 6. 
+</ul><br>
+
+<h3>Week Five</h3><p class ="no-box">
+<ul>
+<li><b>Class 10</b> (Monday, October 9): Valuing Investments (payback
+time, ROI, IRR).  Spreadsheets.
+<li><b>Class 11</b> (Thursday, October 12):  Finish valuing
+  investments.  Start transportation: cars. 
+<li><b><a href="./Homework/homework.5.pdf">Homework
+    Five</a></b> due on Friday, October 13.  
+</ul><br>
+
+
+
+<h3>Week Six</h3><p class="no-box">
+<ul>
+  <li><b>Class 12</b> (Monday, October 16) Cars and Trains  
+  <li><b>Class 13</b> (Thursday, October 20)  
+<li><b><a href="./Homework/finance_exercise.pdf">Finance Report</a></b>
+    due on Friday, October 20.
+  <li><b><a href="./Homework/homework.6.pdf">Homework Six</a></b> due on Friday, October 20.
+</ul>
+</p>
+
+<h3>Week Seven</h3><p class="no-box">
+<ul>
+  <li><b>Class 14</b> (Monday, October 23)  Production and
+  Consumption.  Life-cycle assessments.  Meter classes. 
+  <li><b>Class 15</b> (Thursday, October 26)  Solar Thermal.  Nuclear
+  power. 
+</ul>
+</p>
+
+
+<h3>Week Eight</h3><p class="no-box">
+<ul>
+  <li><b>Class 16</b> (Monday, October 30) Nuclear Safety.  Food and
+  Agriculture. 
+  <li><b><a href="./Homework/homework.7.pdf">Homework Seven</a></b> due
+  on Wednesday, November 1.
+</ul>
+</p>
+
+<h3>Week Nine</h3><p class="no-box">
+<ul>
+  <li><b>Class 17</b> (Monday, November 6) Biofuels.
+  <li><b>Class 18</b> (Thursday, November 9) Carbon capture and
+  negative emissions. 
+  <li><b><a href="./Homework/homework.8.pdf">Homework Eight</a></b> due
+  on Friday, November 10.
+</ul>
+</p>
+
+<h3>Week Ten</h3><p class="no-box">
+<ul>
+  <li><b>Class 19</b> (Monday, November 13) Grid fluctuations and
+  storage. 
+  <li><b>Class 20</b> (Thursday, November 16) Conclusions
+  <li><b><a href="./Homework/homework.9.pdf">Homework Nine</a></b> due
+  on Friday, November 17.
+</ul>
+</p>
+-->
+
+<br>
+
+<b>List of assignments</b>
+<p class="no-box">
+<ol>
+<li>1.14, 1.17, 1.18
+<li>A.1, A.3, C.3, 11.1, 11.3
+<li>11.8, 11.9, 11.10, 11.11 (optional)
+<li>12.2, 12.3, 12.4, 5.1, 5.5
+<li>10.4, 10.5, 10.6, 10.7
+<li>Finance exercise (sent via email)
+<li>14.1, 14.4 (optional), 14.7, 14.8 (optional), 14.9 (optional), 14.10
+<li>15.1, 16.1, 16.3
+<li>17.2, 18.2, 18.6, 20.1 (optional)
+</ol>
+
+Most of these problems sets also had some WebWorK exercises as well.
+
+</p>
+
+
+
+<hr>
+<p class="no-box">
+<center>
+<b><a href="../Energy.S16//Textbook/energybook.pdf"><font size=+2>Current
+      Draft of  Textbook</font></a></b><br><br>
+
+  
+<b><a href="https://courses1.webwork.maa.org/webwork2/coa-ES1056I/">
+  <font size=+2>WeBWorK Login Page</font></a><br><br>
+
+<b><a href="./solutions.html">Guidelines</a</b> for homework
+						solutions.
+</center>
+
+</p>
+
+
+
+
+</div> <!-- end main content section -->
+</div> 
+<div id="footer"><div class="spacer"></div>
+
+<hr />
+<center>
+<p class="no-box"> <a href="http://www.coa.edu">COA</a> | <a href="http://hornacek.coa.edu/dave">Dave</a></p>
+<p>&nbsp;</p>
+</div> <!-- end footer -->
+
+</div> <!-- end container -->
+</body>
+
+</html>

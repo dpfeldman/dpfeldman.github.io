@@ -1,0 +1,89 @@
+
+
+\documentclass[12pt]{article}
+\oddsidemargin=0.0in
+\evensidemargin=0.0in
+\textwidth=6.5in
+%\topmargin=-.75in
+\textheight=8.7in
+%\usepackage{doublespace}
+ 
+\begin{document}
+\pagestyle{empty}
+ 
+\begin{center}
+{\large {\bf Calculus III}}\\
+\medskip
+{\large {\bf Homework Nine}}\\
+\medskip
+{ {\bf Due Friday, May 31, 2013}}\\
+\end{center}
+
+\hspace{2mm}\\
+
+
+
+
+\noindent {\bf Chapter 19.1:}
+\begin{enumerate}
+\setlength{\itemsep}{-1mm}
+  \item 38 (Optional.  Recommended for physicists.)
+  \item 36 (Optional.  Recommended for physicists.)
+
+\end{enumerate}
+
+
+
+\noindent {\bf Chapter 20.1:}
+\begin{enumerate}
+\setlength{\itemsep}{-1mm}
+  \item 2-4
+  \item 9
+  \item 14
+  \item 16
+  \item 18
+  \item 29 (Optional.  Recommended for physicists.)
+\end{enumerate}
+
+
+\noindent {\bf Chapter 20.2:}
+\begin{enumerate}
+\setlength{\itemsep}{-1mm}
+  \item 3
+  \item 9
+  \item 14
+  \item 18
+\end{enumerate}
+
+\noindent {\bf Chapter 13.4:}
+\begin{enumerate}
+\setlength{\itemsep}{-1mm}
+  \item 1--4
+\end{enumerate}
+
+
+%\noindent {\bf Chapter 20.3:}
+%\begin{enumerate}
+%\setlength{\itemsep}{-1mm}
+%  \item 1--6
+%  \item 7
+%  \item 8
+%  \item 17
+%\end{enumerate}
+
+
+%\noindent {\bf Chapter 20.4:}
+%\begin{enumerate}
+%\setlength{\itemsep}{-1mm}
+%  \item 3
+%\end{enumerate}
+
+%\noindent {\bf Chapter 20.5:}
+%\begin{enumerate}
+%\setlength{\itemsep}{-1mm}
+%  \item 1--2
+%\end{enumerate}
+
+
+
+\end{document}

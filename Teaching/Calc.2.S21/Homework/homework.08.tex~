@@ -1,0 +1,91 @@
+\documentclass[12pt]{article}
+\oddsidemargin=0.0in
+\evensidemargin=0.0in
+\textwidth=6.5in
+\topmargin=-0.55in
+\textheight=9.5in
+%\usepackage{doublespace}
+ 
+\begin{document}
+\pagestyle{empty}
+ 
+\begin{center}
+{\LARGE {\bf Homework Seven}}\\
+\bigskip
+{\Large {\bf Calculus II}}\\
+\bigskip
+{\Large {\bf College of the Atlantic}}\\
+\bigskip
+{ {\bf Due Friday, May 21-ish, 2021}}\\ 
+\end{center}
+\medskip
+
+
+\noindent There are two parts to this assignment.\\
+
+\noindent {\bf Part 1: Edfinity}. There are no Edfinity problems
+this week.\\
+%Do Homework 03A, and 03B,
+%which you will find on your edfinity account.  I recommend doing the
+%edfinity part of the homework first.  This will enable you to benefit
+%edfinity's instant feedback before you do part two.\\
+
+\noindent {\bf Part 2: Problems from the Textbook}.  Here are some
+instructions for how to submit this part of the assignment.
+\begin{itemize}
+  \setlength{\itemsep}{0mm}
+\item Do the problems by hand using pencil (or pen) and paper.
+  There is no need to type of this assignment.
+\item Make a pdf scan of your work using genius scan or some
+  similar scanning app.  Please make the homework into a single
+  pdf, not multiple pdfs.
+\item Submit the assignment on google classroom.  Please don't
+  email it to me.  (Between my two classes I will be receiving
+  around 30 assignments a week.  Keeping track of them all in email
+  is challenging.)
+%\item Do problem 40 in pairs. Work with someone else in the class
+%  and hand in only one solution for the two of you.
+%\item If you want, you can do all the problems in pairs and hand
+%  in only one set of solutions.\\
+\end{itemize}
+
+\noindent {\bf Chapter 8.2:}
+
+\begin{enumerate}
+\setlength{\itemsep}{-1mm}
+\item 12
+\item 13
+\item 32
+\item 33
+\item 34
+\end{enumerate}
+
+
+\noindent {\bf Chapter 8.4:}
+
+\begin{enumerate}
+\setlength{\itemsep}{-1mm}
+\item 12
+\end{enumerate}
+
+\noindent {\bf Chapter 8.5:}
+
+\begin{enumerate}
+\setlength{\itemsep}{-1mm}
+\item Consider a rectangular water tank that has a length of 4 meters,
+  a width of 5 meters, and a height of 6 meters.  If the tank is half
+  full, how much work does it take to pump all the water out of the
+  tank over the top?
+
+\item You need use a rope to lift a 20 kg box of tofu on top of a
+  building. The rope has a density of 0.5 kg/m.  How much work does
+  it take to lift the  box and the rope to the roof?  
+\end{enumerate}
+
+
+
+
+
+
+
+\end{document}

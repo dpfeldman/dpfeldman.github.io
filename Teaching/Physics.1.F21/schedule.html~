@@ -1,0 +1,517 @@
+<!DOCTYPE HTML>
+<!--
+	Hielo by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+<head>
+  <title>Physics I | Fall 2021 | College of the Atlantic</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <script type="text/javascript" src="scripts/Functions.js"></script>
+  <script type="text/javascript">callScripts();</script> 
+  
+</head>
+<body class="subpage">
+  
+  <!-- Header -->
+  <header id="header">
+    <div class="logo"><a href="index.html">Physics I | Fall 2021 </a></div>
+    <a href="#menu">Menu</a>
+  </header>
+  
+<!-- Nav -->
+<nav id="menu">
+  <ul class="links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="schedule.html">Schedule+Assignments</a></li>
+  </ul>
+</nav>
+
+<!-- One -->
+<section id="One" class="wrapper style3">
+  <div class="inner">
+    <header class="align-center">
+      <!--<p>introduction to</p>-->
+      <h2>Physics I</h2>
+      <h3>Course Schedule and Assignments</h4>
+</header>
+</div>
+</section>
+
+<!-- Two -->
+<section id="two" class="wrapper style2">
+  <div class="inner">
+    <div class="box">
+      <div class="content">
+	<!--<header class="align-center">
+	    <p>maecenas sapien feugiat ex purus</p>
+	    <h2>Lorem ipsum dolor</h2>
+	</header>-->
+	
+	<!--<header class="align-left">
+	    <b>Week One</b>
+	    <p>it's kinda obvious from the course title, but here's what i hope you 
+	      learn in this course</b>
+<h2>Course Goals</h2>
+</header>
+-->
+	
+		
+<h3><b>Week One</b></h3>
+<ul class="sched"> 
+  <li><b>Class 1</b> Monday, September 13
+    <ul class="sched">
+	<li><b>Class Content</b>
+    <ul class="sched">
+      <li>Introductions to course and each other</li>
+      <li><a href="https://youtu.be/FD2QSNl6Lrc">Video of class</a></li>
+      <li><a href="./pdf/notes.C00.pdf">Handout from class</a></li>
+    </ul>
+	</li>
+    </ul><br>
+    
+  
+  <li><b>Class 2</b> Thursday, September 16</li>
+  <ul class="sched">
+    <li><b>Pre-class</b>:
+      <ul class="sched">
+	<li><b>Read</b> the syllabus. (The <a href="./about">about</a>
+	  section in the main menu.)</li>
+	<li><b>Read</b> chapters C1.4 and C1.6.  Skim C1.5 if you wish.  
+	<li><b>Make</b> an account on edfinity if you haven't already done
+	  so. Details were sent to you via email.</li>  
+	<li><b>Watch</b> Video: <a href="https://youtu.be/JfAMg9wusjs" target="blank">Homework
+	    logistics</a>. (<b>optional</b>)</li>
+	<li><b>Watch</b> Video: Do you need a calculator?
+	  Yes. <a href="https://youtu.be/xxv-Sxav1qQ">This video</a> has
+	  the details. (<b>optional</b>)</li>
+      </ul>
+    </li>
+    <li><b>Class Content</b>
+      <ul class="sched">
+	<li>Chapter C1. Interactions [<a href="./pdf/notes.C01.pdf">summary</a>] [<a href="./pdf/practice.C01.pdf">exercises</a>]</li>
+	<li>Chapter C2.  Vectors [<a href="./pdf/notes.C02.pdf">summary</a>] [<a href="./pdf/practice.C02.pdf">exercises</a>]</li>
+	<li><a href="https://coa.zoom.us/rec/share/G9vizJPT7FY_GCZWsih8o-wPrygTiEO5Mf8cIyZodxplxMDlfsgiQ7xIgFUYgNNQ.fNSgIEbbZR4S58RF">Video
+	of class</a></li>  
+      </ul>
+    </li>
+  </ul>
+    <br>
+  </li>
+  <li><b>Week One Lab</b> Thursday, September 16</li>
+  <ul class="sched">
+    <li><b>Class Content</b>
+      <ul class="sched">
+	<li>Vectors: [<a href="./pdf/lab.1.pdf">worksheet</a>]</li>
+	<li><a href="https://coa.zoom.us/rec/share/EsV030iKFVLqjLfJvkbOQ3Je7eYM3-RzWZpHRxcm7FclzDqDqmfGoPNniX3VKfU.RB0IqvfGrYUaMp60">Video
+	of Lab</a></li>
+      </ul>
+  </ul>
+      
+  <br>
+  <li><b><a href="./pdf/homework.01.pdf">Homework 01</a></b>  Due
+    Friday, September 17</li>
+  <br>
+  </ul>
+<hr style="height:8px;background:black">
+
+<!-- ************************************************************ -->	
+<h3><b>Week Two</b></h3>
+<ul class="sched"> 
+  <li><b>Class 3</b> Monday, September 20
+    <ul class="sched">
+      <li><b>Class Content</b>
+	<ul class="sched">
+	  <li>Chapter C02: Adding and subtracting vectors with components</li>
+	  <li>Chapter C03: Velocity, Momentum, Momentum Transfer Principle</li>
+	  <li><a href="https://youtu.be/nm46h446Ic0" target="_blank">Video of class</a></li>
+	  <li><a href="./pdf/practice.C03.pdf">Handout from class</a></li>
+	</ul>
+      </li>
+    </ul><br>
+    
+  <li><b>Class 4</b> Thursday, September 23</li>
+  <ul class="sched">
+
+    <li><b>Class Content</b>
+      <ul class="sched">
+	<li>Chapter C03: Momentum transfer principle</li>
+	<li>Chatper C04: Systems of particles, center of mass</li>
+	<li>Handouts: &#160 <a href="./pdf/practice.C03B.pdf">Momentum</a> &#160
+	  <a href="./pdf/notes.C04.pdf">C04 Summary</a> &#160
+	  <a href="./pdf/practice.C04.pdf">Center of Mass</a>
+	<li><a href="https://youtu.be/JrvQ4yZAhBg" target="_blank">Video of class</a></li>  
+      </ul>
+    </li>
+  </ul>
+    <br>
+  </li>
+
+  <li><b>Week Two Lab</b> Thursday, September 23</li>
+  <ul class="sched">
+    <li><a href="./pdf/lab.2.pdf">Handout</a></li>
+  </ul>
+  
+  <br>
+  <li><b><a href="./pdf/homework.02.pdf">Homework 02</a></b>  Due
+    Friday, September 24</li>
+  <br>
+  </ul>
+<hr style="height:8px;background:black">
+
+
+<!-- ************************************************************ -->	
+<h3><b>Week Three</b></h3>
+<ul class="sched"> 
+  <li><b>Class 5</b> Monday, September 27
+    <ul class="sched">
+      <li><b>Class Content</b>
+	<ul class="sched">
+	  <li>Chapter C05: Applying momentum conservation, strategies
+	    for problem solving</li> 
+	  <li><a href="https://youtu.be/7jEDwwpP1tI"
+	  target="_blank">Video of class</a></li> 
+	  <li>Handouts from class: &#160
+	    [<a href="./pdf/notes.C05.pdf">Summary</a>] &#160
+	    [<a href="./pdf/practice.C05.pdf">Exercises</a>]</li>
+	</ul>
+      </li>
+    </ul><br>
+    
+  <li><b>Class 6</b> Thursday, September 30</li>
+  <ul class="sched">
+
+    <li><b>Class Content</b>
+      <ul class="sched">
+	<li>Chatper C06: Introduction to Energy</li>
+	<li>Handouts: &#160 [<a href="./pdf/notes.C04.pdf">Summary</a>] &#160
+	  [<a href="./pdf/practice.C06.pdf">Exercises</a>]
+	<li>Video of class</li>  
+      </ul>
+    </li>
+  </ul>
+    <br>
+  </li>
+  <li><b>Week Three Lab</b> Thursday, September 30</li>
+  <ul class="sched">
+    <li><!--<a href="./pdf/lab.2.pdf">Handout</a>--></li>
+  </ul>
+  
+  <br>
+  <li><b><a href="./pdf/homework.03.pdf">Homework 03</a></b>  Due
+    Friday, October 30 </li>
+  <br>
+  </ul>
+<hr style="height:8px;background:black">
+
+<!-- ******************************************************************************** -->	
+<h3><b>Week Four</b></h3>
+<ul class="sched"> 
+  <li><b>Class 7</b> Monday, October 4
+    <ul class="sched">
+      <li><b>Class Content</b>
+	<ul class="sched">
+	  <li>Chapter C07: Gravitational potential energy, spring
+	    potential energy</li>
+	  <li><a href="https://youtu.be/2trunAE746c" target="_blank">Video of class</a></li>
+	  <li>Handouts from class: &#160
+	    [<a href="./pdf/notes.C07.pdf">Summary</a>] &#160
+	    [<a href="./pdf/practice.C07.pdf">Exercises</a>]</li>
+	</ul>
+      </li>
+    </ul><br>
+    
+  <li><b>Class 8</b> Thursday, September 30</li>
+  <ul class="sched">
+
+    <li><b>Class Content</b>
+      <ul class="sched">
+	<li>Chatper C08: </li>
+	<li>Handouts: &#160 <a href="./pdf/notes.C08.pdf">C08 Summary</a> &#160
+	  <a href="./pdf/practice.C08.pdf">Exercises</a>
+	<li><a href="https://youtu.be/fIBPQBd0Xek" target="_blank">Video of class</a></li>  
+      </ul>
+    </li>
+  </ul>
+    <br>
+  </li>
+  <li><b>Week Four Lab</b> Thursday, October 7</li>
+  <ul class="sched">
+    <li><!--<a href="./pdf/lab.2.pdf">Handout</a>--></li>
+  </ul>
+  
+  <br>
+  <li><b><a href="./pdf/homework.04.pdf">Homework 04</a></b>  Due
+    Friday, October 08 </li>
+  <br>
+  </ul>
+<hr style="height:8px;background:black">
+
+
+
+<!-- ******************************************************************************** -->	
+<h3><b>Week Five</b></h3>
+<ul class="sched"> 
+  <li><b>Class 9</b> Monday, October 11
+    <ul class="sched">
+      <li><b>Class Content</b>
+	<ul class="sched">
+	  <li>Chapter C09: Radians, Angular Velocity, Rotational Kinetic Energy</li>
+	  <li>Video of class: Unavailable due to technical difficulties. sorry. :(</li>
+	  <li>Handouts from class: &#160
+	    [<a href="./pdf/notes.C09.pdf">Summary</a>] &#160
+	    [<a href="./pdf/practice.C09.pdf">Exercises</a>]</li>
+	</ul>
+      </li>
+    </ul><br>
+    
+  <li><b>Class 10</b> Thursday, October 14</li>
+  <ul class="sched">
+
+    <li><b>Class Content</b>
+      <ul class="sched">
+	<li>Chatper C10: Thermal Energy</li>
+	<li>Handouts: &#160 <a href="./pdf/notes.C10.pdf">C10 Summary</a> &#160
+	  <a href="./pdf/practice.C10.pdf">Exercises</a>
+	<li><a href="https://youtu.be/sH2Kkd1SQyE" target="_blank">Video of class</a></li>  
+      </ul>
+    </li>
+  </ul>
+    <br>
+  </li>
+  <li><b>Week Five Lab</b> Thursday, October 14</li>
+  <ul class="sched">
+    <li><a href="./pdf/lab.5.pdf">Handout</a></li>
+  </ul>
+  
+  <br>
+  <li><b><a href="./pdf/homework.05.pdf">Homework 05</a></b>  Due
+    Friday, October 15 </li>
+  <br>
+  </ul>
+<hr style="height:8px;background:black">
+
+
+<!-- ******************************************************************************** -->	
+<h3><b>Week Six</b></h3>
+<ul class="sched"> 
+  <li><b>Class 11</b> Monday, October 18
+    <ul class="sched">
+      <li><b>Class Content</b>
+	<ul class="sched">
+	  <li>Chapter C11: Chemical Bonds, Latent Heats</li>
+	  <li><a href="https://youtu.be/IKqqUi_549w" target="_blank">Video of class</a></li>
+	  <li>Handouts from class: &#160
+	    [<a href="./pdf/notes.C11.pdf">Summary</a>] &#160
+	    [<a href="./pdf/practice.C11.pdf">Exercises</a>]</li>
+	</ul>
+      </li>
+    </ul><br>
+    
+  <li><b>Class 12</b> Thursday, October 21</li>
+  <ul class="sched">
+
+    <li><b>Class Content</b>
+      <ul class="sched">
+	<li>Chatper C12: Power, Crossproducts (C13.2)</li>
+	<li>Handouts from class: &#160
+	  [<a href="./pdf/notes.C12-13.pdf">Summary</a>] &#160
+	  ]<a href="./pdf/practice.C12.pdf">Exercises</a>] </li>
+	<li><a href="https://youtu.be/5Uv1bZn7WA4" target="_blank">Video of class</a></li>  
+      </ul>
+    </li>
+  </ul>
+    <br>
+  </li>
+  <li><b>Week Six Lab</b> Thursday, October 14</li>
+  <ul class="sched">
+    <li>No lab this week</li>
+  </ul>
+  
+  <br>
+  <li><b><a href="./pdf/exam.1.F21.pdf">Midterm Exam</a></b>  Due Thursday, October 14 </li>
+  <br>
+  </ul>
+<hr style="height:8px;background:black">
+
+
+<!-- ******************************************************************************** -->	
+<h3><b>Week Seven</b></h3>
+<ul class="sched"> 
+  <li><b>Class 13</b> Monday, October 25
+    <ul class="sched">
+      <li>Chapter C13: Introduction to Angular Momentum</li>
+      <li>Video not available.  Sorry.  :( </li>
+      <li>Handouts from class: &#160
+	[<a href="./pdf/notes.C13.pdf">Summary</a>] &#160
+	[<a href="./pdf/practice.C13.pdf">Exercises</a>]</li>
+    </ul><br>
+    
+  <li><b>Class 14</b> Thursday, October 28</li>
+  <ul class="sched">
+    <li>Chatper C14: Conservation of Angular Momentum</li>
+    <li>Handouts from class: &#160
+      [<a href="./pdf/notes.C14.pdf">Summary</a>] &#160
+      [<a href="./pdf/practice.C14.pdf">Exercises</a>] </li>
+    <li><a href="https://youtu.be/ZH13busOtMk" target="_blank">Video of class</a></li>  
+  </ul>
+  <br>
+  </li>
+  <li><b>Week Seven Lab</b> Thursday, October 28</li>
+  <ul class="sched">
+    <li>Angular momentum!</li>
+    <li><a href="./pdf/lab.7.pdf">Handout</a></li>
+  </ul>
+  
+  <br>
+  <li><b><a href="./pdf/homework.06.pdf">Homework 06</a></b>  Due Friday, October 29 </li>
+  <br>
+  </ul>
+<hr style="height:8px;background:black">
+
+
+<!-- ******************************************************************************** -->	
+<h3><b>Week Eight</b></h3>
+<ul class="sched"> 
+  <li><b>Class 15</b> Monday, November 1
+    <ul class="sched">
+      <li>Chapter N01: Introduction to Newton's Laws of Motion</li>
+      <li><a href="https://youtu.be/eW4T08NPuww" target="_blank">Video of class</a></li>
+      <li>Handouts from class: &#160
+	[<a href="./pdf/notes.N01.pdf">Summary</a>] &#160
+	[<a href="./pdf/practice.N01.pdf">Exercises</a>]</li>
+    </ul><br>
+    
+  <li><b>Class 16</b> Thursday, November 4</li>
+  <ul class="sched">
+    <li>Chatper N2: </li>
+    <li>Handouts from class: &#160
+      [<a href="./pdf/notes.N02.pdf">Summary</a>] &#160
+      [<a href="./pdf/practice.N02.pdf">Exercises</a>]</li>
+    <li><a href="https://youtu.be/3lh8ndSaSMc" target="_blank">Video of class</a></li>  
+  </ul>
+  <br>
+  </li>
+  <li><b>Week Eight Lab</b> Thursday, November 4</li>
+  <ul class="sched">
+    <li>Motion Diagrams</li>
+    <!--<li><a href="./pdf/lab.7.pdf">Handout</a></li>-->
+  </ul>
+  
+  <br>
+  <li><b><a href="./pdf/homework.07.pdf">Homework 07</a></b>  Due Friday, November 5 </li>
+  <br>
+  </ul>
+<hr style="height:8px;background:black">
+
+		
+
+<!-- ******************************************************************************** -->	
+<h3><b>Week Nine</b></h3>
+<ul class="sched"> 
+  <li><b>Class 17</b> Monday, November 8
+    <ul class="sched">
+      <li>Chapter N03: Forces from Motion</li>
+      <li><a href="https://youtu.be/j4Ut91_Rml8" target="_blank">Video of class</a></li>
+      <li>Handouts from class: &#160
+	[<a href="./pdf/notes.N03.pdf">Summary</a>] &#160
+	[<a href="./pdf/practice.N03.pdf">Exercises</a>]</li>
+    </ul><br>
+    
+  <li><b>Class 18</b> Thursday, November 11</li>
+  <ul class="sched">
+    <li>Chatper N04: Motion from Forces </li>
+    <li>Handouts from class: &#160
+      [<a href="./pdf/notes.N04.pdf">Summary</a>] &#160
+      [<a href="./pdf/practice.N04.pdf">Exercises</a>]</li>
+    <li><a href="https://www.youtube.com/watch?v=gYGlpjKpGQU" target="_blank">Video of class</a></li>  
+  </ul>
+  <br>
+  </li>
+  <li><b>Week Nine Lab</b> Thursday, November 11</li>
+  <ul class="sched">
+    <li>None</li>
+    <!--<li><a href="./pdf/lab.7.pdf">Handout</a></li>-->
+  </ul>
+  
+  <br>
+  <li><b><a href="./pdf/homework.08.pdf">Homework 08</a></b>  Due Friday, November 19 </li>
+  <br>
+  </ul>
+<hr style="height:8px;background:black">
+
+
+<!-- ******************************************************************************** -->	
+<h3><b>Week Ten</b></h3>
+<ul class="sched"> 
+  <li><b>Class 19</b> Monday, November 15
+    <ul class="sched">
+      <li>Chapter N05: Statics</li>
+      <li><a href="https://youtu.be/3dVsLsOnOd4" target="_blank">Video of class</a></li>
+      <li>Handouts from class: &#160
+	[<a href="./pdf/notes.N05.pdf">Summary</a>] &#160
+	[<a href="./pdf/practice.N05.pdf">Exercises</a>]</li>
+    </ul><br>
+    
+  <li><b>Class 20</b> Thursday, November 18</li>
+  <ul class="sched">
+    <li>Summary and Conclusions </li>
+    <!--<li>Handouts from class: &#160
+      [<a href="./pdf/notes.N04.pdf">Summary</a>] &#160
+      [<a href="./pdf/practice.N04.pdf">Exercises</a>]</li>-->
+    <li><a href="" target="_blank">Video of class (coming soon)</a></li>  
+  </ul>
+  <br>
+  </li>
+  <li><b>Week Ten Lab</b> Thursday, November 18</li>
+  <ul class="sched">
+    <li>None</li>
+    <!--<li><a href="./pdf/lab.7.pdf">Handout</a></li>-->
+  </ul>
+  
+  <br>
+  <li><b><a href="./pdf/homework.09.pdf">Homework 09</a></b>  Due Friday, November 19 </li>
+  <br>
+  </ul>
+<hr style="height:8px;background:black">
+
+							
+			</div>
+			</div>
+			</div>
+			</section>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="container">
+				<ul class="icons">
+
+				<ul class="icons">
+
+	<li><a href="http://www.twitter.com/DavidFeldman" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+	<li><a href="http://www.di.fm/channels" class="icon fa-headphones"><span class="label">di</span></a></li>
+	<li><a href="http://ohoriscoffee.com" class="icon fa-coffee"><span class="label">Coffee</span></a></li>
+	<li><a href="http://www.coa.edu" class="icon fa-graduation-cap"><span class="label">COA</span></a></li>
+<!--	<li><a href="http://mainebeercompany.com" class="icon fa-beer"><span class="label">MBC</span></a></li>-->
+	<li><a href="http://hornacek.coa.edu/dave" class="icon fa-male"><span class="label">Dave</span></a></li>
+
+				</ul>
+			</div>
+			<div class="copyright">
+				&copy; Untitled. All rights reserved.
+			</div>
+		</footer>
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

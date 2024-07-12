@@ -1,0 +1,100 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Calculus I</title>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1" />
+<meta http-equiv="PRAGMA" content="NO-CACHE" />
+<link rel="stylesheet" type="text/css"
+href="2c-hd-lc-static-layout.css" />
+<link rel="stylesheet" type="text/css"
+href="2c-hd-lc-static-presentation.css" />
+</head>
+<body>
+<!-- Header -->
+<div id="hdr">
+<div style="font-weight:bold;font-size:12px;margin:6px 10px;">
+<h2>Calculus I: Fall 2008. <a href="http://www.coa.edu">College of the Atlantic</a></h2></div>
+</div>
+
+<!-- left column -->
+<!-- ************************************************************ -->
+<div id="lh-col"><br />
+
+
+<ul>
+
+<li><a href="./index.html">Calc I Home</a>
+<li><a href="./overview.html">Overview</a>
+<li><a href="./expect.html">Informal Description and Advice</a>
+<li><a href="./homework.html">Homework Assignments</a>
+<li><a href="./handout.html">Handouts from Class</a>
+<li><a href="./textbook.html">Textbook Information</a>
+<li><a href="http://hornacek.coa.edu/dave">Dave's Homepage</a>
+<br><br><br><br>
+<li><a href="./colophon.html">colophon</a>
+</ul>
+
+</div>
+<!-- end of left column -->
+<!-- ************************************************************ -->
+
+<!-- ************************************************************ -->
+<!-- right column -->
+<div id="rh-col">
+
+<!--<h3 align="center">Two Column - Left Column Static with Header
+Bar</h3>-->
+
+
+<h3>Homework Eight</h3>
+Due Friday November 14, 2008<p>
+
+
+<h4>Section 4.3:</h4><ol>
+<li>30
+<li>31
+</ol>
+
+
+<h4>Section 4.4:</h4>
+<ol>
+<li>5
+<li>6
+<li>15
+</ol>
+
+<h4>Section 4.5:</h4>
+<ol>
+<li>8
+<li>15
+<li>22
+<li>31
+</ol>
+
+
+</ol>
+
+
+
+
+</td></tr>
+</table>
+</p>
+
+
+</html>
+
+
+
+
+
+
+<br>
+
+</div>
+<!-- end of right column -->
+
+</body>
+</html>

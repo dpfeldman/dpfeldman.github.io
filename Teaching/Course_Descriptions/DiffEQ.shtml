@@ -1,0 +1,70 @@
+<html>
+<head>
+<title> Applied Ordinary Differential Equations </title>
+</head>
+
+<body>
+
+<br>
+<center>
+<h1> Applied Ordinary Differential Equations</h1>
+</center>
+
+<h3><a href="http://hornacek.coa.edu/dave/Teaching/Odes.01">Web page for Spring 2001 course</a></h3><br>
+
+
+Differential equations are an application of calculus used to model a
+wide variety of physical and natural phenomena.  For example, the rate
+at which a cup of coffee cools, populations of predators and prey in
+ecosystems, the spread of disease, and the rate at which raindrops
+fall, are all examples of systems that have been described with
+differential equations.  This course is a focused introduction to
+differential equations.  Students will learn a variety of modern
+methods for solving differential equations, and will also learn
+techniques for forming models using differential equations.  In so
+doing, we will discuss the benefits and shortcomings of this approach
+to mathematical modeling.<p>
+
+Evaluation will be based on class participation, weekly problem sets
+and a final project.  Some computer work will be required, but no
+computer experience is necessary.  The final project will consist of
+an in-depth study of a differential equation.  This will include: a
+discussion of the phenomena the equation is intended to model; a
+derivation of the equation; a detailed solution to the equation; and a
+critical discussion of the results of the model.  The project will be
+presented both orally and in writing.<p>
+
+Prerequisites:  Calculus II or the equivalent or permission of
+instructor.  Intermediate/Advanced.  QR.  ES.  Lab fee $15.  <p>
+
+
+
+
+<hr>
+<br>
+<center>
+<h3>
+[<a href="http://hornacek.coa.edu/dave/Teaching/Course_Descriptions/index.html">Course List</a>]
+[<a href="http://hornacek.coa.edu/dave/Teaching/math.shtml">Math at COA</a>]
+[<a href="http://hornacek.coa.edu/dave/index.html">Dave's Home Page</a>]
+[<a href="http://www.coa.edu/">COA Home Page</a>]</h4>
+</h3>
+</center>
+<p>
+<br>
+The current time is  <!--#echo var="DATE_LOCAL"-->.<br>
+This document was last modified on <!--#echo var="LAST_MODIFIED"--><br>
+Page mainted by Dave Feldman,  <a
+href=mailto:dave@hornacek.coa.edu>dave@hornacek.coa.edu</a>  
+
+<!--Questions about the contents of these pages or about math at the
+College of the Atlantic should be sent to Dave Feldman at <a 
+href=mailto:dave@hornacek.coa.edu>dave@hornacek.coa.edu</a>.
+<p>-->
+
+<p>
+</html>
+
+
+
+

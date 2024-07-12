@@ -1,0 +1,132 @@
+\documentclass[12pt]{article}
+\oddsidemargin=-0.20in
+\evensidemargin=-0.20in
+\textwidth=6.5in
+\topmargin=-.25in
+\textheight=9in
+%\usepackage{doublespace}
+ 
+\begin{document}
+\pagestyle{empty}
+ 
+\begin{center}
+{\large {\bf Introduction to Computer Science}}\\
+\medskip
+{\large {\bf Homework Four}}\\
+\medskip
+{ {\bf Due Sunday January 30, 2011}}\\ 
+\end{center}
+
+\hspace{2mm}\\
+
+\noindent General Instructions
+
+\begin{itemize}
+\setlength{\itemsep}{-1mm}
+  \item Email me the program as a .py attachment.
+  \item Name your programs with a helpful name.  Include your name
+    somewhere in the file name.
+  \item Your program should be fully commented.  Be sure to include
+    your name and the date and an overall description of what the
+    program does, in addition to any other comments that are needed. 
+  \item My plan is to post the random graphics program on the website,
+    since I thought it might fun to look at each other's creations.
+    If you don't want your program posted, just let me know. \\
+\end{itemize}
+
+
+\begin{enumerate}
+
+\item This is a more complex assignment than the ones we've done thus
+  far.  Give yourself some time to implement it, plan out the
+  structure of the program, and be sure to use ample comments so it is
+  clear to read.
+
+  Your task is to write a program the uses Zelle's graphics package
+  and some random number features to make an interesting or
+  aesthetically appealing picture using random shapes and colors.  You
+  can use circles or triangles or something else or a combination.
+  I would recommend setting colors randomly as in the example program
+  I used in class.  If you restrict the colors so as to not go from
+  $0$ to $255$ you can produce some interesting effects.
+
+  Your program needs to incorporate the following
+\begin{itemize}
+    \item Should use two GraphWin windows.  One window will contain
+      the picture that gets created.  The other window should contain
+      some information about the program and some boxes into which the
+      user can enter some choices, perhaps the total number of shapes
+      or the size range of the shapes or something.
+
+    \item Use the setCoords option for the main graphics window so
+      that the program works for different sizes of the window.
+
+    \item Use the getMouse() method at least once.  Most likely you
+      will want to have the user click when he or she is done entering
+      information and is ready to start drawing.
+
+    \item Use the randrange function at least once to randomize some
+      aspect of the pictures.  (You'll probably want to use it
+      multiple times.)
+\end{itemize}
+After the assignment I've included some tips and advice for writing
+this program. \\
+
+
+\item Write a program that produces the average of a bunch of numbers.
+  The program should print a welcome message and then ask the user how
+  many numbers he or she wants to average.  The user should then enter
+  the numbers.  Then the program should then output the average and
+  print a farewell message.  ({\bf Optional:} Also have the program
+  calculate and output the standard deviation of the numbers.) 
+
+
+\item {\bf Optional:}  The getMouse() method returns the point on the
+  window where the mouse was clicked.  This information can then be
+  used in the program.  To try this out, write a program that makes a
+  window, has a user click on two points, and then draws a rectangle.
+  See section 4.7.2 of Zelle for details.  Alternatively, you could
+  have the user draw a circle by specifying the radius and then a
+  point on the circle.  (This one is a little more challenging.) 
+
+
+\end{enumerate}
+
+
+\noindent {\bf Some Advice for the Random Graphics Program}
+\begin{enumerate}
+
+  \item I would write the GUI---i.e. the window where the user enters
+    options---last.  First set the options by hand in the code, or
+    using simple text prompts.  Don't code up the GUI until you're
+    sure of the options you want to include in the it, since it can be
+    a pain to add an option or some text once you've already gotten
+    the spacing and such to work.
+
+  \item Depending on how you set thing up you may want to get a random
+    number between $0$ and $1$, instead of an integer in a range,
+    which is what randrange gives you.  To get a random floating point
+    number between $0$ and $1$, use the random() function:
+\begin{verbatim}
+    from random import random
+    x = random()
+\end{verbatim}
+$x$ is now a random number between $0$ and $1$. 
+
+  \item You may also want the computer to pause between drawing random
+    circles.  (I did this for my program, since I didn't like it when
+    python drew the circles really quickly.)  Here's how you can get
+    the program to pause:
+\begin{verbatim}
+    from time import sleep
+    sleep(1)
+\end{verbatim}
+The function sleep(1) will make the program go to sleep---i.e. do
+nothing---for 1 second.  In general, sleep(n) will make the program
+sleep for n seconds.  
+
+\end{enumerate}
+
+
+
+\end{document}

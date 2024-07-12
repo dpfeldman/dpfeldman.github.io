@@ -1,0 +1,71 @@
+<html>
+<head>
+<title> Calculus I </title>
+</head>
+
+<body>
+
+<br>
+<h1> Calculus I</h1>
+<h2> Instructor:  Dave Feldman</h2>
+<br>
+<b>The 1999 Winter Term home page for this course is located <a
+href="../Calc.1.W99/index.html">here</a>. </b><p>
+<b>The 2000 Fall Term home page for this course is located <a
+href="../Calc.1.F00/index.html">here</a>. </b><p><br>
+
+The goal of this sequence of courses is to develop the essential ideas
+of single-variable calculus:  the limit, the derivative, and the
+integral.  Understanding concepts is emphasized over intricate
+mathematical maneuverings.  The math learned will be applied to topics
+from the physical, natural, and social sciences.  <p>
+
+Our text will be <i>Calculus, Single Variable,</i> 2nd edition,
+Hughes-Hallet et al, J. Wiley.  I hope to cover most of chapters 1-5.<p>
+
+Computer work, using the numerical, graphical, and symbolic package
+<i>Maple</i> will be required.  No computer experience is necessary;
+there will be a weekly lab which will cover the necessary computer
+skills. <p>
+
+Students entering this course should have a solid background in
+algebra and functions. Students should have taken precalculus in high
+school, or math for human ecologists, or have had an equivalent
+course. Those who have questions about their preparedness should see
+me.  <p>
+
+Evaluation will be based on class participation, weekly homework, and
+two untimed, open-notes exams.  
+Introductory.  *QR*
+
+<br>
+
+
+<hr>
+
+<center>
+<h3>
+[<a href="http://hornacek.coa.edu/dave/Teaching/Course_Descriptions/index.html">Course List</a>]
+[<a href="http://hornacek.coa.edu/dave/Teaching/math.shtml">Math at COA</a>]
+[<a href="http://hornacek.coa.edu/dave/index.html">Dave's Home Page</a>]
+[<a href="http://www.coa.edu/">COA Home Page</a>]</h4>
+</h3>
+</center>
+<p>
+<br>
+The current time is  <!--#echo var="DATE_LOCAL"-->.<br>
+This document was last modified on <!--#echo var="LAST_MODIFIED"--><br>
+Page maintained by Dave Feldman,  <a
+href=mailto:dave@hornacek.coa.edu>dave@hornacek.coa.edu</a>
+
+<!--Questions about the contents of these pages or about math at the
+College of the Atlantic should be sent to Dave Feldman at <a 
+href=mailto:dave@hornacek.coa.edu>dave@hornacek.coa.edu</a>.
+<p>-->
+
+<p>
+</html>
+
+
+
+

@@ -1,0 +1,85 @@
+{VERSION 5 0 "IBM INTEL LINUX" "5.0" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 1 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 
+0 0 1 }{CSTYLE "2D Output" 2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 1 }
+{CSTYLE "" -1 258 "" 1 14 0 0 0 0 0 1 0 0 0 0 0 0 0 0 }{PSTYLE "Normal
+" -1 0 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 
+-1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Maple Output" 0 11 1 {CSTYLE "" 
+-1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 3 0 -1 -1 -1 0 0 0 0 0 0 
+-1 0 }{PSTYLE "" 11 12 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 }1 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 256 1 {CSTYLE "
+" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 
+0 -1 0 }{PSTYLE "" 0 257 1 {CSTYLE "" -1 -1 "" 1 14 0 0 0 0 0 1 0 0 0 
+0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }}
+{SECT 0 {EXCHG {PARA 257 "" 0 "" {TEXT -1 25 "Basic numerics with Mapl
+e" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 37 "Mapl
+e can do calculator-esque things:" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 6 "245/3;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6##\"$X#\"\"$
+" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 63 "Note that every maple command
+ needs to end with a semi-colon.  " }}{PARA 0 "" 0 "" {TEXT -1 81 "To \+
+turn adn expression like this into a decimal, the command you want is \+
+evalf()." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 9 "evalf(%);" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#$\"+nmmm\")!\")" }}}{EXCHG {PARA 0 "" 
+0 "" {TEXT -1 61 "The percent sign is shorthand for the previous line'
+s output." }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 
+98 "Maple has all sorts of built-in functions.  Note that almost alway
+s the function is all lowercase." }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 8 "log(34);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#-%#lnG6#\"
+#M" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 9 "evalf(%);" }}{PARA 11 
+"" 1 "" {XPPMATH 20 "6#$\"+D0OEN!\"*" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 7 "sin(3);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#-%$sinG6#\"
+\"$" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 9 "evalf(%);" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#$\"+\"3+7T\"!#5" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 51 "To do the exponential function, use exp(x), not e^2" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 7 "exp(4);" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#-%$expG6#\"\"%" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 
+0 9 "evalf(%);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#$\"+.]\")fa!\")" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 4 "e^4;" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#*$)%\"eG\"\"%\"\"\"" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 9 "evalf(%);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#*$)%\"eG
+\"\"%\"\"\"" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "
+" {TEXT -1 73 "Maple doesn't know that when you type \"e\" you mean th
+e number 2.7818... ." }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "
+" {TEXT -1 76 "Maple knows about sums.  For example, suppose we want t
+o sum n from 1 to 50." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 16 "su
+m(n, n=1..50);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"%v7" }}}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 38 "Here are some more summation examples:" }
+}{PARA 0 "" 0 "" {TEXT -1 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 
+0 18 "sum(1/n,n=1..345);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6##\"]th/gGr
+***RyS:&)\\2$*4>c))f()GkH?jf')*[+Jxz$=-#ey#G2%)phnkG>Cf'>^#ygbWi`-.Y_7
+@%*\\hE-MRD#\"\\t+!ovH%pX![*y.3#fk2KG'>TD;m$Qp)z6\")o`2oj;^diK&p!GtQFf
+!*RY&[Z\\vjV4SO3J]M(e\">0UhKf4N" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 
+1 0 9 "evalf(%);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#$\"+d'3AU'!\"*" }}
+}{EXCHG {PAGEBK }{PARA 0 "" 0 "" {TEXT -1 36 "Maple can also handle in
+finite sums." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 24 "sum( 1/n,n=
+1..infinity);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%)infinityG" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 26 "sum(1/n^2, n=1..infinity);" 
+}}{PARA 11 "" 1 "" {XPPMATH 20 "6#,$*&\"\"'!\"\"%#PiG\"\"#\"\"\"" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 26 "sum(1/n^3, n=1..infinity);" 
+}}{PARA 11 "" 1 "" {XPPMATH 20 "6#-%%ZetaG6#\"\"$" }}}{EXCHG {PARA 0 "
+> " 0 "" {MPLTEXT 1 0 9 "evalf(%);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#
+$\"+.p0-7!\"*" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 32 "sum( 3*n/(
+n^3+4),n=1..infinity);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,$-%$SumG6$,
+$*&#\"\"\"\"\"%F**&)%'_alphaG\"\"#F*-%$PsiG6#,&F*F*F.!\"\"F*F*F4/F.-%'
+RootOfG6#,&*$)%#_ZG\"\"$F*F*F+F*F4" }}}{EXCHG {PARA 0 "" 0 "" {TEXT 
+-1 40 "Somehow, maple found a value for this!  " }}}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 9 "evalf(%);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#^$
+$\"+,2*QA#!\"*$!\"!\"\"!" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 0 "" }}
+{PARA 256 "" 0 "" {TEXT 258 18 "Maple and function" }{TEXT -1 1 "s" }}
+{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 126 "You can \+
+define your own functions in maple.  It's a little awkward at first.  \+
+Suppose we want a function f(x) = sin(2x) + x^4." }}{PARA 0 "" 0 "" 
+{TEXT -1 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 24 "f := x-> si
+n(2*x) + x^4;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%\"fGf*6#%\"xG6\"6$%
+)operatorG%&arrowGF(,&-%$sinG6#,$*&\"\"#\"\"\"9$F3F3F3*$)F4\"\"%F3F3F(
+F(F(" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 5 "f(4);" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6#,&-%$sinG6#\"\")\"\"\"\"$c#F(" }}}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 9 "evalf(%);" }}{PARA 11 "" 1 "" {XPPMATH 20 
+"6#$\"+#e$*)pD!\"(" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 6 "f(-1);
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,&-%$sinG6#\"\"#!\"\"\"\"\"F)" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 9 "evalf(%);" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6#$\"*Kd-2*!#5" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 
+0 5 "f(z);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,&-%$sinG6#,$*&\"\"#\"\"
+\"%\"zGF*F*F**$)F+\"\"%F*F*" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+0 "" }}}}{MARK "0 2 0" 37 }{VIEWOPTS 1 1 0 1 1 1803 1 1 1 1 }
+{PAGENUMBERS 0 1 2 33 1 1 }

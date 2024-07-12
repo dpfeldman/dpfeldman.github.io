@@ -1,0 +1,702 @@
+%!PS-Adobe-2.0
+%%Creator: dvipsk 5.86 p1.5d Copyright 1996-2001 ASCII Corp.(www-ptex@ascii.co.jp)
+%%based on dvipsk 5.86 Copyright 1999 Radical Eye Software (www.radicaleye.com)
+%%Title: intro.dvi
+%%Pages: 10
+%%PageOrder: Ascend
+%%BoundingBox: 0 0 596 842
+%%DocumentFonts: Helvetica-Bold Helvetica Courier Helvetica-Oblique
+%%+ CMSY10
+%%EndComments
+%DVIPSWebPage: (www.radicaleye.com)
+%DVIPSCommandLine: dvips -o intro.ps intro.dvi -Ppdf
+%DVIPSParameters: dpi=8000, compressed
+%DVIPSSource:  TeX output 2004.06.28:1641
+%%BeginProcSet: tex.pro
+%!
+/TeXDict 300 dict def TeXDict begin/N{def}def/B{bind def}N/S{exch}N/X{S
+N}B/A{dup}B/TR{translate}N/isls false N/vsize 11 72 mul N/hsize 8.5 72
+mul N/landplus90{false}def/@rigin{isls{[0 landplus90{1 -1}{-1 1}ifelse 0
+0 0]concat}if 72 Resolution div 72 VResolution div neg scale isls{
+landplus90{VResolution 72 div vsize mul 0 exch}{Resolution -72 div hsize
+mul 0}ifelse TR}if Resolution VResolution vsize -72 div 1 add mul TR[
+matrix currentmatrix{A A round sub abs 0.00001 lt{round}if}forall round
+exch round exch]setmatrix}N/@landscape{/isls true N}B/@manualfeed{
+statusdict/manualfeed true put}B/@copies{/#copies X}B/FMat[1 0 0 -1 0 0]
+N/FBB[0 0 0 0]N/nn 0 N/IEn 0 N/ctr 0 N/df-tail{/nn 8 dict N nn begin
+/FontType 3 N/FontMatrix fntrx N/FontBBox FBB N string/base X array
+/BitMaps X/BuildChar{CharBuilder}N/Encoding IEn N end A{/foo setfont}2
+array copy cvx N load 0 nn put/ctr 0 N[}B/sf 0 N/df{/sf 1 N/fntrx FMat N
+df-tail}B/dfs{div/sf X/fntrx[sf 0 0 sf neg 0 0]N df-tail}B/E{pop nn A
+definefont setfont}B/Cw{Cd A length 5 sub get}B/Ch{Cd A length 4 sub get
+}B/Cx{128 Cd A length 3 sub get sub}B/Cy{Cd A length 2 sub get 127 sub}
+B/Cdx{Cd A length 1 sub get}B/Ci{Cd A type/stringtype ne{ctr get/ctr ctr
+1 add N}if}B/CharBuilder{save 3 1 roll S A/base get 2 index get S
+/BitMaps get S get/Cd X pop/ctr 0 N Cdx 0 Cx Cy Ch sub Cx Cw add Cy
+setcachedevice Cw Ch true[1 0 0 -1 -.1 Cx sub Cy .1 sub]{Ci}imagemask
+restore}B/D{/cc X A type/stringtype ne{]}if nn/base get cc ctr put nn
+/BitMaps get S ctr S sf 1 ne{A A length 1 sub A 2 index S get sf div put
+}if put/ctr ctr 1 add N}B/I{cc 1 add D}B/bop{userdict/bop-hook known{
+bop-hook}if/SI save N @rigin 0 0 moveto/V matrix currentmatrix A 1 get A
+mul exch 0 get A mul add .99 lt{/QV}{/RV}ifelse load def pop pop}N/eop{
+SI restore userdict/eop-hook known{eop-hook}if showpage}N/@start{
+userdict/start-hook known{start-hook}if pop/VResolution X/Resolution X
+1000 div/DVImag X/IEn 256 array N 2 string 0 1 255{IEn S A 360 add 36 4
+index cvrs cvn put}for pop 65781.76 div/vsize X 65781.76 div/hsize X}N
+/dir 0 def/dyy{/dir 0 def}B/dyt{/dir 1 def}B/dty{/dir 2 def}B/dtt{/dir 3
+def}B/p{dir 2 eq{-90 rotate show 90 rotate}{dir 3 eq{-90 rotate show 90
+rotate}{show}ifelse}ifelse}N/RMat[1 0 0 -1 0 0]N/BDot 260 string N/Rx 0
+N/Ry 0 N/V{}B/RV/v{/Ry X/Rx X V}B statusdict begin/product where{pop
+false[(Display)(NeXT)(LaserWriter 16/600)]{A length product length le{A
+length product exch 0 exch getinterval eq{pop true exit}if}{pop}ifelse}
+forall}{false}ifelse end{{gsave TR -.1 .1 TR 1 1 scale Rx Ry false RMat{
+BDot}imagemask grestore}}{{gsave TR -.1 .1 TR Rx Ry scale 1 1 false RMat
+{BDot}imagemask grestore}}ifelse B/QV{gsave newpath transform round exch
+round exch itransform moveto Rx 0 rlineto 0 Ry neg rlineto Rx neg 0
+rlineto fill grestore}B/a{moveto}B/delta 0 N/tail{A/delta X 0 rmoveto}B
+/M{S p delta add tail}B/b{S p tail}B/c{-4 M}B/d{-3 M}B/e{-2 M}B/f{-1 M}
+B/g{0 M}B/h{1 M}B/i{2 M}B/j{3 M}B/k{4 M}B/w{0 rmoveto}B/l{p -4 w}B/m{p
+-3 w}B/n{p -2 w}B/o{p -1 w}B/q{p 1 w}B/r{p 2 w}B/s{p 3 w}B/t{p 4 w}B/x{
+0 S rmoveto}B/y{3 2 roll p a}B/bos{/SS save N}B/eos{SS restore}B end
+
+%%EndProcSet
+%%BeginProcSet: alt-rule.pro
+%!
+% Patch by TVZ
+% Makes dvips files draw rules with stroke rather than fill.
+% Makes narrow rules more predictable at low resolutions
+% after distilling to PDF.
+% May have unknown consequences for very thick rules.
+% Tested only with dvips 5.85(k).
+TeXDict begin
+/QV {
+  gsave newpath /ruleY X /ruleX X
+  Rx Ry gt
+  { ruleX ruleY Ry 2 div sub moveto Rx 0 rlineto Ry }
+  { ruleX Rx 2 div add ruleY moveto 0 Ry neg rlineto Rx }
+  ifelse
+  setlinewidth 0 setlinecap stroke grestore
+} bind def
+end
+
+%%EndProcSet
+%%BeginProcSet: texc.pro
+%!
+/TeXDict 300 dict def TeXDict begin/N{def}def/B{bind def}N/S{exch}N/X{S
+N}B/A{dup}B/TR{translate}N/isls false N/vsize 11 72 mul N/hsize 8.5 72
+mul N/landplus90{false}def/@rigin{isls{[0 landplus90{1 -1}{-1 1}ifelse 0
+0 0]concat}if 72 Resolution div 72 VResolution div neg scale isls{
+landplus90{VResolution 72 div vsize mul 0 exch}{Resolution -72 div hsize
+mul 0}ifelse TR}if Resolution VResolution vsize -72 div 1 add mul TR[
+matrix currentmatrix{A A round sub abs 0.00001 lt{round}if}forall round
+exch round exch]setmatrix}N/@landscape{/isls true N}B/@manualfeed{
+statusdict/manualfeed true put}B/@copies{/#copies X}B/FMat[1 0 0 -1 0 0]
+N/FBB[0 0 0 0]N/nn 0 N/IEn 0 N/ctr 0 N/df-tail{/nn 8 dict N nn begin
+/FontType 3 N/FontMatrix fntrx N/FontBBox FBB N string/base X array
+/BitMaps X/BuildChar{CharBuilder}N/Encoding IEn N end A{/foo setfont}2
+array copy cvx N load 0 nn put/ctr 0 N[}B/sf 0 N/df{/sf 1 N/fntrx FMat N
+df-tail}B/dfs{div/sf X/fntrx[sf 0 0 sf neg 0 0]N df-tail}B/E{pop nn A
+definefont setfont}B/Cw{Cd A length 5 sub get}B/Ch{Cd A length 4 sub get
+}B/Cx{128 Cd A length 3 sub get sub}B/Cy{Cd A length 2 sub get 127 sub}
+B/Cdx{Cd A length 1 sub get}B/Ci{Cd A type/stringtype ne{ctr get/ctr ctr
+1 add N}if}B/id 0 N/rw 0 N/rc 0 N/gp 0 N/cp 0 N/G 0 N/CharBuilder{save 3
+1 roll S A/base get 2 index get S/BitMaps get S get/Cd X pop/ctr 0 N Cdx
+0 Cx Cy Ch sub Cx Cw add Cy setcachedevice Cw Ch true[1 0 0 -1 -.1 Cx
+sub Cy .1 sub]/id Ci N/rw Cw 7 add 8 idiv string N/rc 0 N/gp 0 N/cp 0 N{
+rc 0 ne{rc 1 sub/rc X rw}{G}ifelse}imagemask restore}B/G{{id gp get/gp
+gp 1 add N A 18 mod S 18 idiv pl S get exec}loop}B/adv{cp add/cp X}B
+/chg{rw cp id gp 4 index getinterval putinterval A gp add/gp X adv}B/nd{
+/cp 0 N rw exit}B/lsh{rw cp 2 copy get A 0 eq{pop 1}{A 255 eq{pop 254}{
+A A add 255 and S 1 and or}ifelse}ifelse put 1 adv}B/rsh{rw cp 2 copy
+get A 0 eq{pop 128}{A 255 eq{pop 127}{A 2 idiv S 128 and or}ifelse}
+ifelse put 1 adv}B/clr{rw cp 2 index string putinterval adv}B/set{rw cp
+fillstr 0 4 index getinterval putinterval adv}B/fillstr 18 string 0 1 17
+{2 copy 255 put pop}for N/pl[{adv 1 chg}{adv 1 chg nd}{1 add chg}{1 add
+chg nd}{adv lsh}{adv lsh nd}{adv rsh}{adv rsh nd}{1 add adv}{/rc X nd}{
+1 add set}{1 add clr}{adv 2 chg}{adv 2 chg nd}{pop nd}]A{bind pop}
+forall N/D{/cc X A type/stringtype ne{]}if nn/base get cc ctr put nn
+/BitMaps get S ctr S sf 1 ne{A A length 1 sub A 2 index S get sf div put
+}if put/ctr ctr 1 add N}B/I{cc 1 add D}B/bop{userdict/bop-hook known{
+bop-hook}if/SI save N @rigin 0 0 moveto/V matrix currentmatrix A 1 get A
+mul exch 0 get A mul add .99 lt{/QV}{/RV}ifelse load def pop pop}N/eop{
+SI restore userdict/eop-hook known{eop-hook}if showpage}N/@start{
+userdict/start-hook known{start-hook}if pop/VResolution X/Resolution X
+1000 div/DVImag X/IEn 256 array N 2 string 0 1 255{IEn S A 360 add 36 4
+index cvrs cvn put}for pop 65781.76 div/vsize X 65781.76 div/hsize X}N
+/dir 0 def/dyy{/dir 0 def}B/dyt{/dir 1 def}B/dty{/dir 2 def}B/dtt{/dir 3
+def}B/p{dir 2 eq{-90 rotate show 90 rotate}{dir 3 eq{-90 rotate show 90
+rotate}{show}ifelse}ifelse}N/RMat[1 0 0 -1 0 0]N/BDot 260 string N/Rx 0
+N/Ry 0 N/V{}B/RV/v{/Ry X/Rx X V}B statusdict begin/product where{pop
+false[(Display)(NeXT)(LaserWriter 16/600)]{A length product length le{A
+length product exch 0 exch getinterval eq{pop true exit}if}{pop}ifelse}
+forall}{false}ifelse end{{gsave TR -.1 .1 TR 1 1 scale Rx Ry false RMat{
+BDot}imagemask grestore}}{{gsave TR -.1 .1 TR Rx Ry scale 1 1 false RMat
+{BDot}imagemask grestore}}ifelse B/QV{gsave newpath transform round exch
+round exch itransform moveto Rx 0 rlineto 0 Ry neg rlineto Rx neg 0
+rlineto fill grestore}B/a{moveto}B/delta 0 N/tail{A/delta X 0 rmoveto}B
+/M{S p delta add tail}B/b{S p tail}B/c{-4 M}B/d{-3 M}B/e{-2 M}B/f{-1 M}
+B/g{0 M}B/h{1 M}B/i{2 M}B/j{3 M}B/k{4 M}B/w{0 rmoveto}B/l{p -4 w}B/m{p
+-3 w}B/n{p -2 w}B/o{p -1 w}B/q{p 1 w}B/r{p 2 w}B/s{p 3 w}B/t{p 4 w}B/x{
+0 S rmoveto}B/y{3 2 roll p a}B/bos{/SS save N}B/eos{SS restore}B end
+
+%%EndProcSet
+%%BeginProcSet: 8r.enc
+% @@psencodingfile@{
+%   author = "S. Rahtz, P. MacKay, Alan Jeffrey, B. Horn, K. Berry",
+%   version = "0.6",
+%   date = "1 July 1998",
+%   filename = "8r.enc",
+%   email = "tex-fonts@@tug.org",
+%   docstring = "Encoding for TrueType or Type 1 fonts
+%                to be used with TeX."
+% @}
+% 
+% Idea is to have all the characters normally included in Type 1 fonts
+% available for typesetting. This is effectively the characters in Adobe
+% Standard Encoding + ISO Latin 1 + extra characters from Lucida.
+% 
+% Character code assignments were made as follows:
+% 
+% (1) the Windows ANSI characters are almost all in their Windows ANSI
+% positions, because some Windows users cannot easily reencode the
+% fonts, and it makes no difference on other systems. The only Windows
+% ANSI characters not available are those that make no sense for
+% typesetting -- rubout (127 decimal), nobreakspace (160), softhyphen
+% (173). quotesingle and grave are moved just because it's such an
+% irritation not having them in TeX positions.
+% 
+% (2) Remaining characters are assigned arbitrarily to the lower part
+% of the range, avoiding 0, 10 and 13 in case we meet dumb software.
+% 
+% (3) Y&Y Lucida Bright includes some extra text characters; in the
+% hopes that other PostScript fonts, perhaps created for public
+% consumption, will include them, they are included starting at 0x12.
+% 
+% (4) Remaining positions left undefined are for use in (hopefully)
+% upward-compatible revisions, if someday more characters are generally
+% available.
+% 
+% (5) hyphen appears twice for compatibility with both 
+% ASCII and Windows.
+% 
+/TeXBase1Encoding [
+% 0x00 (encoded characters from Adobe Standard not in Windows 3.1)
+  /.notdef /dotaccent /fi /fl
+  /fraction /hungarumlaut /Lslash /lslash
+  /ogonek /ring /.notdef
+  /breve /minus /.notdef 
+% These are the only two remaining unencoded characters, so may as
+% well include them.
+  /Zcaron /zcaron 
+% 0x10
+ /caron /dotlessi 
+% (unusual TeX characters available in, e.g., Lucida Bright)
+ /dotlessj /ff /ffi /ffl 
+ /.notdef /.notdef /.notdef /.notdef
+ /.notdef /.notdef /.notdef /.notdef
+ % very contentious; it's so painful not having quoteleft and quoteright
+ % at 96 and 145 that we move the things normally found there to here.
+ /grave /quotesingle 
+% 0x20 (ASCII begins)
+ /space /exclam /quotedbl /numbersign
+ /dollar /percent /ampersand /quoteright
+ /parenleft /parenright /asterisk /plus /comma /hyphen /period /slash
+% 0x30
+ /zero /one /two /three /four /five /six /seven
+ /eight /nine /colon /semicolon /less /equal /greater /question
+% 0x40
+ /at /A /B /C /D /E /F /G /H /I /J /K /L /M /N /O
+% 0x50
+ /P /Q /R /S /T /U /V /W
+ /X /Y /Z /bracketleft /backslash /bracketright /asciicircum /underscore
+% 0x60
+ /quoteleft /a /b /c /d /e /f /g /h /i /j /k /l /m /n /o
+% 0x70
+ /p /q /r /s /t /u /v /w
+ /x /y /z /braceleft /bar /braceright /asciitilde
+ /.notdef % rubout; ASCII ends
+% 0x80
+ /.notdef /.notdef /quotesinglbase /florin
+ /quotedblbase /ellipsis /dagger /daggerdbl
+ /circumflex /perthousand /Scaron /guilsinglleft
+ /OE /.notdef /.notdef /.notdef
+% 0x90
+ /.notdef /.notdef /.notdef /quotedblleft
+ /quotedblright /bullet /endash /emdash
+ /tilde /trademark /scaron /guilsinglright
+ /oe /.notdef /.notdef /Ydieresis
+% 0xA0
+ /.notdef % nobreakspace
+ /exclamdown /cent /sterling
+ /currency /yen /brokenbar /section
+ /dieresis /copyright /ordfeminine /guillemotleft
+ /logicalnot
+ /hyphen % Y&Y (also at 45); Windows' softhyphen
+ /registered
+ /macron
+% 0xD0
+ /degree /plusminus /twosuperior /threesuperior
+ /acute /mu /paragraph /periodcentered
+ /cedilla /onesuperior /ordmasculine /guillemotright
+ /onequarter /onehalf /threequarters /questiondown
+% 0xC0
+ /Agrave /Aacute /Acircumflex /Atilde /Adieresis /Aring /AE /Ccedilla
+ /Egrave /Eacute /Ecircumflex /Edieresis
+ /Igrave /Iacute /Icircumflex /Idieresis
+% 0xD0
+ /Eth /Ntilde /Ograve /Oacute
+ /Ocircumflex /Otilde /Odieresis /multiply
+ /Oslash /Ugrave /Uacute /Ucircumflex
+ /Udieresis /Yacute /Thorn /germandbls
+% 0xE0
+ /agrave /aacute /acircumflex /atilde
+ /adieresis /aring /ae /ccedilla
+ /egrave /eacute /ecircumflex /edieresis
+ /igrave /iacute /icircumflex /idieresis
+% 0xF0
+ /eth /ntilde /ograve /oacute
+ /ocircumflex /otilde /odieresis /divide
+ /oslash /ugrave /uacute /ucircumflex
+ /udieresis /yacute /thorn /ydieresis
+] def
+
+%%EndProcSet
+%%BeginProcSet: texps.pro
+%!
+TeXDict begin/rf{findfont dup length 1 add dict begin{1 index/FID ne 2
+index/UniqueID ne and{def}{pop pop}ifelse}forall[1 index 0 6 -1 roll
+exec 0 exch 5 -1 roll VResolution Resolution div mul neg 0 0]/Metrics
+exch def dict begin 0 1 255{exch dup type/integertype ne{pop pop 1 sub
+dup 0 le{pop}{[}ifelse}{FontMatrix 0 get div Metrics 0 get div def}
+ifelse}for Metrics/Metrics currentdict end def[2 index currentdict end
+definefont 3 -1 roll makefont/setfont cvx]cvx def}def/ObliqueSlant{dup
+sin S cos div neg}B/SlantFont{4 index mul add}def/ExtendFont{3 -1 roll
+mul exch}def/ReEncodeFont{CharStrings rcheck{/Encoding false def dup[
+exch{dup CharStrings exch known not{pop/.notdef/Encoding true def}if}
+forall Encoding{]exch pop}{cleartomark}ifelse}if/Encoding exch def}def
+end
+
+%%EndProcSet
+%%BeginFont: CMSY10
+%!PS-AdobeFont-1.1: CMSY10 1.0
+%%CreationDate: 1991 Aug 15 07:20:57
+
+% Copyright (C) 1997 American Mathematical Society.  All Rights Reserved.
+
+11 dict begin
+/FontInfo 7 dict dup begin
+/version (1.0) readonly def
+/Notice (Copyright (C) 1997 American Mathematical Society. All Rights Reserved) readonly def
+/FullName (CMSY10) readonly def
+/FamilyName (Computer Modern) readonly def
+/Weight (Medium) readonly def
+/ItalicAngle -14.035 def
+/isFixedPitch false def
+end readonly def
+/FontName /CMSY10 def
+/PaintType 0 def
+/FontType 1 def
+/FontMatrix [0.001 0 0 0.001 0 0] readonly def
+/Encoding 256 array
+0 1 255 {1 index exch /.notdef put} for
+dup 178 /bullet put
+readonly def
+/FontBBox{-29 -960 1116 775}readonly def
+/UniqueXX 5000820 def
+currentdict end
+currentfile eexec
+9b9c1569015f2c1d2bf560f4c0d52257bac8ced9b09a275ab231194ecf829352
+05826f4e975dcecec72b2cf3a18899ccde1fd935d09d813b096cc6b83cdf4f23
+b9a60db41f9976ac333263c908dcefcdbd4c8402ed00a36e7487634d089fd45a
+f4a38a56a4412c3b0baffaeb717bf0de9ffb7a8460bf475a6718b0c73c571145
+d026957276530530a2fbefc6c8f67052788e6703bb5ee49533870bca1f113ad8
+3750d597b842d8d96c423ba1273ddd32f3a54a912a443fcd44f7c3a6fe3956b0
+aa1e784aaec6fce08dae0c76da9d0a3eba57b98a6233d9e9f0c3f00fcc6b2c6a
+9ba23af389e6dfff4efec3de05d6276c6be417703ce508377f25960ef4ed83b4
+9b01b873f3a639ce00f356229b6477a081933fef3bb80e2b9dffa7f75567b1fa
+4d739b772f8d674e567534c6c5bbf1cf615372be20b18472f7aa58be8c216dbd
+df81cc0a86b6d8318ca68fe22c8af13b54d7576fe4ca5a7af9005ea5cc4edb79
+c0ab668e4fec4b7f5a9eb5f0e4c088cd818ecc4feb4b40ec8bd2981bf2336074
+b64c4301c39221774c4482ad2518015bc80e2e96dabb4bdf5fbde00562af1aa6
+90336bfc814e8312dd70402bf02d57a3ffe05e732cdfddafc00d318f83a79439
+5eb8460eed2f5f1e7a2726c02f81b69917baaf163033a49dc10f61f35c72d3c9
+33039c21bc71a9b4b25bc7573429924340b16d1cdfe6a6b93450c50f15b6229f
+be901e24b3d21bf434b7f60802dfa0bb3462a12bff97ca01cf591cba483a1699
+da979b8e79d363c1849565820b5d62eb82d4e481b26944bdb6f0f02642252a86
+35e29f2f3f5faa4444aa607bfd3bf4ac98653fed
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+cleartomark
+
+%%EndFont 
+TeXDict begin 39158280 55380996 2074 8000 8000 (intro.dvi)
+@start /Fa 240[ 1148 15[{ } 1 2295.84 /CMSY10 rf /Fb
+139[ 523 1[ 627 1[ 1047 1047 1047 1568 4[ 1047 1047 1[ 1047
+3[ 1047 97[{ TeXBase1Encoding ReEncodeFont} 10 1882.6
+/Helvetica-Oblique rf /Fc 137[ 950 950 950 1[ 950 1[ 950
+950 950 2[ 950 2[ 950 2[ 950 950 950 1[ 950 38[ 950 10[ 950
+950 46[{ TeXBase1Encoding ReEncodeFont} 16 1582.98 /Courier
+rf /Fd 105[ 1047 28[ 1047 1047 1[ 1047 1150 627 1047
+732 1[ 1150 1150 1150 1674 523 2[ 523 1150 1150 627 1047
+1150 1047 1150 1047 12[ 1150 1256 2[ 1256 1465 1[ 1568
+3[ 523 1[ 1465 3[ 1359 1[ 1359 1[ 1150 4[ 627 58[{
+TeXBase1Encoding ReEncodeFont} 33 1882.6 /Helvetica-Bold
+rf /Fe 134[ 659 2[ 659 733 2[ 439 2[ 733 733 1098 293
+2[ 293 733 733 1[ 733 733 659 1[ 733 13[ 879 1[ 1025
+6[ 659 366 2[ 805 1[ 951 951 9[ 733 733 733 733 733 733
+733 733 733 733 3[ 366 44[{ TeXBase1Encoding ReEncodeFont} 33
+1317.82 /Helvetica rf /Ff 104[ 1883 2[ 627 627 24[ 941
+941 941 1359 941 1047 523 941 627 1047 1047 1047 1047
+1568 418 941 418 418 1047 1047 523 1047 1047 941 1047
+1047 7[ 1256 1[ 1777 1[ 1359 1150 1256 1359 1[ 1256 1465
+1359 1568 1047 2[ 523 1359 1[ 1150 1256 1359 1359 1256
+1256 1[ 1047 3[ 523 523 1047 1047 1047 1047 1047 1047
+1047 1047 1047 1047 523 523 627 523 2[ 627 627 418 5[ 523
+29[ 941 941 2[{ TeXBase1Encoding ReEncodeFont} 71 1882.6
+/Helvetica rf /Fg 105[ 1256 28[ 1130 3[ 1256 628 1130
+3[ 1256 1256 1[ 502 2[ 502 1256 1256 628 1256 1256 1130
+1[ 1256 13[ 1507 8[ 1130 628 2[ 1380 2[ 1631 1[ 1507
+11[ 1256 1256 1[ 1256 1256 1256 3[ 628 44[{
+TeXBase1Encoding ReEncodeFont} 28 2259.12 /Helvetica
+rf /Fh 137[ 1256 1380 752 1[ 879 1[ 1380 1380 1380 2008
+628 1256 1[ 628 1380 2[ 1256 1380 1256 1[ 1256 16[ 1507
+9[ 1380 1[ 1631 3[ 2203 5[ 752 10[ 628 628 46[{
+TeXBase1Encoding ReEncodeFont} 23 2259.12 /Helvetica-Bold
+rf /Fi 139[ 904 1627 2[ 1809 1809 1809 1[ 722 6[ 1809
+1809 1627 1[ 1809 12[ 1988 16[ 2349 67[{ TeXBase1Encoding ReEncodeFont}
+12 3253.13 /Helvetica rf /Fj 134[ 1809 1809 2[ 1988 1083
+1809 2[ 1988 1988 1988 2892 904 2[ 904 3[ 1809 1988 2[ 1809
+13[ 2170 12[ 1988 2[ 2349 67[{ TeXBase1Encoding ReEncodeFont} 17
+3253.13 /Helvetica-Bold rf end
+%%EndProlog
+%%BeginSetup
+%%Feature: *Resolution 8000dpi
+TeXDict begin
+%%PaperSize: A4
+
+%%EndSetup
+%%Page: 0 1
+0 0 bop Fj 2164 9923 a(Some) 903 b(Founda) n(tions) h(in) h(Comple) -49
+b(x) 19309 14974 y(Systems) p Fi 11730 20025 a(T) -390
+b(oo) n(ls) 904 b(and) g(Conce) n(pts) p Fh 16736 26063
+a(Da) -34 b(vid) 629 b(P) -271 b(.) 627 b(Feldman) p
+Fg 18047 30700 a(J) -45 b(uly) 627 b(5\22611,) h(2004) 15012
+39034 y(College) g(of) g(the) g(Atlantic) 24115 42248
+y(and) 17180 45003 y(Santa) g(F) -68 b(e) 628 b(Institute) p
+Fh 12736 50513 a(da) -34 b(ve@hornacek.co) r(a.edu) 10073
+53957 y(http://ho) r(rnacek.coa.edu/d) r(a) g(ve/) p
+Ff 24639 77998 a(0-0) p 90 rotate dyy eop
+%%Page: 1 2
+1 1 bop Fe -3200 5049 a(SFI) 367 b(Summer) e(School,) g(Qingdao) g
+(China,) h(J) -26 b(ul) n(y) 367 b(2004) 30005 b(1) p
+-2043 6322 56085 443 v -2043 79120 443 72799 v Fd 13618
+10116 a(CSSS) 522 b(Though) r(ts) h(and) g(Ad) -28 b(vice) p
+Ff 1677 14647 a(1.) 942 b(I) 523 b(attended) g(the) g(CSSS) f(in) h
+(Santa) g(F) -56 b(e) 523 b(in) g(1996.) 1677 19178 y(2.) 942
+b(The) 523 b(most) h(interesting) e(and) h(v) -47 b(aluab) -38
+b(le) 522 b(par) 75 b(ts) 524 b(of) f(the) g(summer) 4189
+22429 y(school) g(will) g(probab) -38 b(ly) 522 b(be) h(the) g
+(discussions) h(y) -38 b(ou) 523 b(ha) -38 b(v) -47 b(e) 523
+b(with) 4189 25680 y(other) f(students) i(and) e(the) h(w) -19
+b(or) 28 b(k) 524 b(y) -38 b(ou) 524 b(do) f(in) g(w) -19
+b(or) 28 b(king) 523 b(g) -19 b(roups) -28 b(.) 4189
+28931 y(The) 523 b(lectures) g(are) g(just) g(star) 75
+b(ting) 524 b(point.) 1677 33462 y(3.) 942 b(The) 523
+b(CSSS) f(is) i(an) f(amazing) f(oppor) 75 b(tunity) 523
+b(to) g(inter) -19 b(act) 524 b(with) 4189 36713 y(peopl) n(e) g(y) -38
+b(ou) 523 b(might) g(not) g(nor) 47 b(mally) 523 b(inter) -19
+b(act) 524 b(with.) 648 b(T) -226 b(ak) -38 b(e) 4189
+39963 y(adv) -47 b(antage) 522 b(of) h(this) -28 b(.) 1677
+44494 y(4.) 942 b(Think) 523 b(of) g(y) -38 b(our) 524
+b(role) e(as) i(both) e(a) i(lear) 47 b(ne) n(r) 524
+b(and) e(a) h(teacher) -94 b(.) 1677 49025 y(5.) 942
+b(Don't) 523 b(spend) f(too) i(m) -19 b(uch) 523 b(energy) f(w) -19
+b(orr) 56 b(ying) 524 b(about) e(the) 4189 52276 y(de\002nition) g(of) h
+(comple) -56 b(xity) 524 b(or) f(comple) -56 b(x) 523
+b(systems) -28 b(.) 649 b(\(Y) -264 b(ou) 4189 55527
+y(w) -19 b(ouldn't) 522 b(go) h(to) h(a) f(histor) 56
+b(y) 524 b(conf) -56 b(eren) n(ce) 524 b(and) e(spend) h(a) g(month)
+4189 58778 y(debating) f(what) h(histor) 56 b(y) 524
+b(is) -28 b(.\)) 1677 63309 y(6.) 942 b(W) -56 b(or) 28
+b(king) 522 b(across) i(disciplines) f(can) g(be) f(challenging.) 646
+b(Diff) -56 b(erent) 4189 66560 y(disciplines) 522 b(ha) -38
+b(v) -47 b(e) 524 b(diff) -56 b(erent) 522 b(v) -47 b(ocab) -38
+b(ular) 28 b(ies) 523 b(and) f(under) 28 b(lying) 4189
+69810 y(assumptions) -28 b(.) 647 b(Be) 523 b(patient\227it') -94
+b(s) 523 b(w) -19 b(or) 75 b(th) 524 b(it.) p 53599 79120
+V -2043 79562 56085 443 v Fe -3200 81127 a(Da) -26 b(v) -33
+b(e) 366 b(F) -40 b(eldman) p Fc 21635 w(http:/) n(/hornacek) n
+(.coa.edu/) n(dave) p 90 rotate dyy eop
+%%Page: 2 3
+2 2 bop Fe -3200 5049 a(SFI) 367 b(Summer) e(School,) g(Qingdao) g
+(China,) h(J) -26 b(ul) n(y) 367 b(2004) 30005 b(2) p
+-2043 6322 56085 443 v -2043 79120 443 72799 v Fd 8713
+10116 a(Comments) 523 b(about) h(m) -56 b(y) 522 b(series) h(of) g
+(lectures) p Ff 1677 14415 a(1.) 942 b(I) 523 b(am) h(tr) -19
+b(ained) 522 b(as) i(a) f(theoretical) f(ph) -56 b(ysicist.) 649
+b(So) 522 b(m) -28 b(y) 524 b(approa) n(ch) 4189 17610
+y(will) f(be) g(some) -38 b(what) 523 b(ph) -56 b(ysics-centr) 28
+b(ic.) 1677 21908 y(2.) 942 b(There) 522 b(is) i(a) f(lot) g(of) h
+(mater) 28 b(ial) 523 b(that) g(I'm) h(tr) 56 b(ying) 524
+b(to) f(co) -28 b(v) -47 b(er) -94 b(,) 523 b(so) h(I'll) 4189
+25103 y(mo) -28 b(v) -47 b(e) 523 b(quic) -38 b(kly) 524
+b(and) e(at) h(times) h(will) g(skip) f(some) h(topics) f(that) h(I)
+4189 28298 y(really) e(shouldn't) h(skip) -66 b(.) 1677
+32596 y(3.) 942 b(I) 523 b(will) h(be) e(co) -28 b(v) -47
+b(er) 28 b(ing) 523 b(some) g(topics) h(that) f(some) h(of) f(y) -38
+b(ou) 524 b(kno) -28 b(w) 4189 35791 y(v) -47 b(er) 56
+b(y) 493 b(w) -19 b(ell,) 500 b(and) 492 b(others) h(topics) h(that) f
+(y) -38 b(ou) 493 b(don't) g(kno) -28 b(w) 493 b(that) g(w) -19
+b(ell.) 4189 38986 y(This) 523 b(means) g(there) g(will) g(be) g(times)
+h(when) f(the) g(lectures) g(seem) 4189 42181 y(too) g(slo) -28
+b(w) 523 b(or) g(too) g(f) -56 b(ast.) 648 b(I) 524 b(don't) f(kno) -28
+b(w) 523 b(ho) -28 b(w) 523 b(to) g(a) -38 b(v) -47 b(oid) 523
+b(this) -28 b(.) 648 b(This) 4189 45377 y(will) 523 b(probab) -40
+b(ly) 524 b(be) f(the) g(case) h(f) -56 b(or) 523 b(all) f(the) i
+(lectures) f(this) g(month.) 1677 49675 y(4.) 942 b(Please) -28
+b(,) 522 b(ask) i(questions) f(dur) 28 b(ing) 522 b(the) h(lectures!)
+1677 53973 y(5.) 942 b(Please) -28 b(,) 522 b(ask) i(questions) f
+(after) g(the) g(lectures!) 1677 58271 y(6.) 942 b(I') -94
+b(d) 523 b(also) g(w) -19 b(elcome) 523 b(comments) -28
+b(,) 524 b(cr) 28 b(itique) -28 b(,) 523 b(and) g(con) -38
+b(v) -47 b(ersation.) 1677 62569 y(7.) 942 b(My) 524
+b(aim) f(is) g(to) h(giv) -47 b(e) 523 b(a) g(some) -38
+b(what) 523 b(opiniona) n(ted) h(sur) 56 b(v) -47 b(e) -38
+b(y) 524 b(of) 4189 65764 y(tools) -28 b(,) 523 b(methods) -28
+b(,) 523 b(and) g(ideas) g(from) g(comple) -56 b(x) 523
+b(systems) -28 b(.) 1677 70062 y(8.) 942 b(W) -56 b(e) 522
+b(can't) i(co) -28 b(v) -47 b(er) 523 b(an) -28 b(ything,) 522
+b(so) i(I'v) -47 b(e) 523 b(chosen) g(what) g(I) h(think) f(is) 4189
+73257 y(most) h(impor) 75 b(tant) 523 b(and) f(what) i(y) -38
+b(ou') -94 b(re) 522 b(less) i(lik) -38 b(ely) 524 b(to) f(get) 4189
+76452 y(else) -38 b(where) -28 b(.) p 53599 79120 V -2043
+79562 56085 443 v Fe -3200 81127 a(Da) i(v) -33 b(e) 366
+b(F) -40 b(eldman) p Fc 21635 w(http:/) n(/hornacek) n(.coa.edu/) n
+(dave) p 90 rotate dyy eop
+%%Page: 3 4
+3 3 bop Fe -3200 5049 a(SFI) 367 b(Summer) e(School,) g(Qingdao) g
+(China,) h(J) -26 b(ul) n(y) 367 b(2004) 30005 b(3) p
+-2043 6322 56085 443 v -2043 79120 443 72799 v Fd 17330
+10116 a(Comple) -28 b(x) 523 b(Systems) n(?) p Ff 800
+14647 a(I'm) h(not) f(interested) g(in) g(a) g(str) 28
+b(ict) 524 b(de\002nition) f(of) g(comple) -56 b(x) 523
+b(systems) -28 b(.) 800 17898 y(Ho) g(w) -19 b(e) -56
+b(v) -47 b(er) -94 b(,) 523 b(it) g(seems) h(to) f(me) h(that) f(most) h
+(things) f(w) -19 b(e') -94 b(d) 523 b(think) g(of) h(as) f(a) 800
+21149 y(comple) -56 b(x) 523 b(system) h(share) f(man) -28
+b(y) 523 b(of) g(the) g(f) -56 b(ollo) -28 b(wing) 522
+b(f) -56 b(eatures:) 1677 25680 y(1.) 942 b(Unpredictabili) n(ty) -188
+b(.) 649 b(A) 523 b(perf) -56 b(ectly) 523 b(predictiv) -47
+b(e) 523 b(theor) 56 b(y) 523 b(is) h(r) -19 b(arely) 4189
+28931 y(possib) -38 b(le) -28 b(.) 1677 33462 y(2.) 942
+b(Emergen) n(ce:) 648 b(Systems) 524 b(gener) -19 b(ate) 522
+b(patter) 47 b(ns) 524 b(that) f(are) g(not) 4189 36713
+y(par) 75 b(t) 523 b(of) g(the) g(equations) g(of) g(motion:) p
+Fb 648 w(emergen) n(t) h(phenome) n(na) p Ff(.) 1677
+41243 y(3.) 942 b(Inter) -19 b(actions:) 648 b(The) 523
+b(inter) -19 b(actions) 523 b(betw) -19 b(een) 523 b(a) g(system') -94
+b(s) 4189 44494 y(componen) n(ts) 524 b(pla) -56 b(y) 523
+b(an) g(impor) 75 b(tant) 523 b(role) -28 b(.) 1677 49025
+y(4.) 942 b(Order/Disorde) n(r) 56 b(:) 649 b(Most) 524
+b(comple) -56 b(x) 522 b(syst) r(ems) h(are) 4189 52276
+y(sim) -19 b(ultaneously) 523 b(ordere) n(d) g(and) g(disordered) n(.)
+1677 56807 y(5.) 942 b(Heterogen) n(eity:) 649 b(Not) 523
+b(all) g(the) g(elements) g(that) h(mak) -38 b(e) 523
+b(up) g(the) 4189 60058 y(system) h(are) f(identical.) p
+53599 79120 V -2043 79562 56085 443 v Fe -3200 81127
+a(Da) -26 b(v) -33 b(e) 366 b(F) -40 b(eldman) p Fc 21635
+w(http:/) n(/hornacek) n(.coa.edu/) n(dave) p 90 rotate
+dyy eop
+%%Page: 4 5
+4 4 bop Fe -3200 5049 a(SFI) 367 b(Summer) e(School,) g(Qingdao) g
+(China,) h(J) -26 b(ul) n(y) 367 b(2004) 30005 b(4) p
+-2043 6322 56085 443 v -2043 79120 443 72799 v Fd 15509
+10095 a(Phenomena) 522 b(and) i(T) -151 b(opi) r(cs) p
+Fa 2099 14626 a(\262) p Ff 942 w(Another) 522 b(w) -28
+b(a) -56 b(y) 523 b(to) g(approach) f(a) h(de\002nition) f(of) i
+(comple) -56 b(x) 4189 17877 y(systems) 524 b(is) g(to) f(list) h(the) f
+(things) g(that) h(people) e(think) h(are) 4189 21127
+y(comple) -56 b(x) 522 b(syst) r(ems:) p Fd 4836 25018
+a(\226) p Ff 941 w(Imm) -19 b(une) 524 b(system,) h(ecosystems) -28
+b(,) 524 b(economies) -28 b(,) 523 b(auction) 6824 28269
+y(mar) 28 b(k) -38 b(ets) -28 b(,) 525 b(e) -56 b(v) -47
+b(olution) n(ar) 56 b(y) 524 b(systems) -26 b(,) 523
+b(the) g(br) -19 b(ain) 523 b(...) p Fd 4836 32160 a(\226) p
+Ff 941 w(Cr) 28 b(itical) 524 b(phenomen) n(a/phase) f(tr) -19
+b(ansitions) -28 b(,) 523 b(chaotic) 6824 35411 y(dynamics) -28
+b(,) 524 b(fr) -19 b(actals) 524 b(and) e(po) -28 b(w) -19
+b(er) 523 b(la) -38 b(ws) -28 b(,) 524 b(natur) -19 b(al) 6824
+38662 y(computation) 523 b(...) p Fa 2099 43193 a(\262) p
+Ff 942 w(This) g(amounts) g(to) h(sa) -56 b(ying:) 647
+b(comple) -56 b(x) 523 b(systems) h(are) f(what) 4189
+46444 y(comple) -56 b(x) 522 b(syst) r(ems) h(people) f(study) -188
+b(.) p Fa 2099 50974 a(\262) p Ff 942 w(This) 523 b(does) g(ha) -38
+b(v) -47 b(e) 523 b(a) g(nice) g(inter) 47 b(nal) 523
+b(consistency) -188 b(.) p Fa 2099 55505 a(\262) p Ff
+942 w(In) 523 b(m) -28 b(y) 524 b(opinio) n(n,) g(what) f(gets) h
+(included) e(as) h(par) 75 b(t) 523 b(of) h(a) f(discipline) 4189
+58756 y(is) g(often) g(a) g(froz) -28 b(en) 523 b(accident.) p
+53599 79120 V -2043 79562 56085 443 v Fe -3200 81127
+a(Da) -26 b(v) -33 b(e) 366 b(F) -40 b(eldman) p Fc 21635
+w(http:/) n(/hornacek) n(.coa.edu/) n(dave) p 90 rotate
+dyy eop
+%%Page: 5 6
+5 5 bop Fe -3200 5049 a(SFI) 367 b(Summer) e(School,) g(Qingdao) g
+(China,) h(J) -26 b(ul) n(y) 367 b(2004) 30005 b(5) p
+-2043 6322 56085 443 v -2043 79120 443 72799 v Fd 23564
+10069 a(T) -151 b(ool) r(s) p Ff 800 14600 a(Most) 524
+b(tools) f(and) g(techniques) f(f) -56 b(or) 523 b(comple) -56
+b(x) 523 b(systems) i(will) e(need) f(to:) 1677 19131
+y(1.) 942 b(Measure) 522 b(unpredictability) -188 b(,) 523
+b(distinguish) f(betw) -19 b(een) 523 b(diff) -56 b(erent) 4189
+22382 y(sor) 75 b(ts) 524 b(of) f(unpredictability) -188
+b(,) 523 b(w) -19 b(or) 28 b(k) 523 b(with) h(probabi) n(lities) 1677
+26913 y(2.) 942 b(Be) 522 b(ab) -38 b(le) 523 b(to) h(measure) e(and) h
+(disco) -28 b(v) -47 b(er) 523 b(patter) 47 b(n,) 523
+b(comple) -56 b(xity) -188 b(,) 4189 30164 y(str) 28
+b(ucture) -28 b(,) 524 b(emergen) n(ce) -28 b(,) 524
+b(etc.) 1677 34695 y(3.) 942 b(Be) 522 b(inf) -56 b(erential;) 523
+b(be) f(inductiv) -47 b(e) 523 b(as) h(w) -19 b(ell) 523
+b(as) g(deductiv) -47 b(e) -28 b(.) 647 b(Must) 4189
+37946 y(inf) -56 b(er) 512 b(from) h(the) f(syst) r(em) h(itself) g(ho)
+-28 b(w) 512 b(it) i(should) e(be) g(represented) n(.) 1677
+42476 y(4.) 942 b(Be) 522 b(interdisciplinar) 56 b(y;) 524
+b(combine) e(methods) -28 b(,) 523 b(techniques) -28
+b(,) 523 b(and) 4189 45727 y(areas) f(of) i(study) f(from) h(diff) -56
+b(erent) 523 b(\002elds) p 53599 79120 V -2043 79562
+56085 443 v Fe -3200 81127 a(Da) -26 b(v) -33 b(e) 366
+b(F) -40 b(eldman) p Fc 21635 w(http:/) n(/hornacek) n(.coa.edu/) n
+(dave) p 90 rotate dyy eop
+%%Page: 6 7
+6 6 bop Fe -3200 5049 a(SFI) 367 b(Summer) e(School,) g(Qingdao) g
+(China,) h(J) -26 b(ul) n(y) 367 b(2004) 30005 b(6) p
+-2043 6322 56085 443 v -2043 79120 443 72799 v Fd 22757
+10069 a(Models) p Ff 800 14600 a(W) -56 b(e) 523 b(will) g(need) f
+(model) h(systems) i(upon) d(which) h(to) h(tr) 56 b(y) 524
+b(out) f(tools) g(and) 800 17851 y(techniques:) 647 b(\223fr) 28
+b(uit) 524 b(\003ies\224) f(and) g(\223lab) f(r) -19
+b(ats\224) 524 b(f) -56 b(or) 523 b(comple) -56 b(x) 523
+b(systems) -28 b(.) 800 21102 y(Man) g(y) 523 b(are) g(commonly) g
+(used) 1677 25633 y(1.) 942 b(Logistic) 523 b(equation) 1677
+28070 y(2.) 942 b(Random) 522 b(netw) -19 b(or) 28 b(ks) 1677
+30506 y(3.) 942 b(Ising) 523 b(models) 1677 32943 y(4.) 942
+b(Cellular) 522 b(automata) 1677 35380 y(5.) 942 b(etc.) p
+Fa 2099 43162 a(\262) p Ff 942 w(Also) -75 b(,) 523 b(one) f(usually) h
+(has) g(to) h(b) -38 b(uild) 522 b(a) h(model,) g(or) g(choose) g(a)
+4189 46412 y(represen) n(tation,) h(of) f(a) g(phenomen) n(a) h(bef) -56
+b(or) n(e) 523 b(one) g(can) g(study) h(it.) p Fa 2099
+50943 a(\262) p Ff 942 w(It) g(is) f(impor) 75 b(tant) 523
+b(to) h(choose) f(model) f(classes) i(carefully) -188
+b(.) p Fa 2099 55474 a(\262) p Ff 942 w(W) -56 b(e) 522
+b(will) i(also) f(need) f(to) h(think) h(about) e(ho) -28
+b(w) 523 b(to) g(inf) -56 b(er) 523 b(models) 4189 58725
+y(from) g(data.) p Fa 2099 63256 a(\262) p Ff 942 w(Models) -28
+b(,) 523 b(b) -38 b(y) 523 b(de\002nition,) g(ignore) f(man) -28
+b(y) 523 b(aspects) h(of) f(the) 4189 66507 y(pheno) n(mena) g(being) f
+(modeled.) p Fa 2099 71038 a(\262) p Ff 942 w(There) g(are) h(alw) -28
+b(a) -56 b(ys) 523 b(choices) g(\(sometimes) h(hidden) n(\)) g(made)
+4189 74289 y(when) e(b) -38 b(uilding) 522 b(a) i(model.) p
+53599 79120 V -2043 79562 56085 443 v Fe -3200 81127
+a(Da) -26 b(v) -33 b(e) 366 b(F) -40 b(eldman) p Fc 21635
+w(http:/) n(/hornacek) n(.coa.edu/) n(dave) p 90 rotate
+dyy eop
+%%Page: 7 8
+7 7 bop Fe -3200 5049 a(SFI) 367 b(Summer) e(School,) g(Qingdao) g
+(China,) h(J) -26 b(ul) n(y) 367 b(2004) 30005 b(7) p
+-2043 6322 56085 443 v -2043 79120 443 72799 v Fd 13295
+10116 a(Comple) -28 b(xity:) 647 b(Initial) 525 b(Thoughts) p
+Fa 2099 14647 a(\262) p Ff 942 w(The) e(comple) -56 b(xity) 523
+b(of) g(a) g(phenomena) f(is) h(gener) -19 b(ally) 522
+b(understood) 4189 17898 y(to) h(be) g(a) g(measure) f(of) i(ho) -28
+b(w) 523 b(dif\002cult) h(it) f(to) h(descr) 28 b(ibe) 522
+b(it.) p Fa 2099 22429 a(\262) p Ff 942 w(But,) h(this) h(clear) 28
+b(ly) 523 b(depend) n(s) h(on) f(the) g(langua) n(ge) g(or) 4189
+25680 y(represen) n(tation) g(used) g(f) -56 b(or) 523
+b(the) g(descr) 28 b(iption.) p Fa 2099 30211 a(\262) p
+Ff 942 w(It) 524 b(also) f(depen) n(ds) h(on) e(what) i(f) -56
+b(eatures) 522 b(of) i(the) f(thing) g(y) -38 b(ou') -94
+b(re) 4189 33462 y(tr) 56 b(ying) 523 b(to) h(descr) 28
+b(ibe) -28 b(.) p Fa 2099 37993 a(\262) p Ff 942 w(There) 522
+b(are) h(thus) g(man) -28 b(y) 523 b(diff) -56 b(erent) 523
+b(w) -28 b(a) -56 b(ys) 523 b(of) h(measur) 28 b(ing) 4189
+41243 y(comple) -56 b(xity) -188 b(.) 647 b(I) 524 b(will) f(aim) h(to)
+f(discuss) h(a) f(b) -38 b(unch) 523 b(of) g(these) g(in) g(m) -28
+b(y) 4189 44494 y(lectures) g(.) p Fa 2099 49025 a(\262) p
+Ff 942 w(Some) 522 b(impor) 75 b(tant,) 524 b(recurr) 28
+b(ing) 522 b(questions) h(concer) 47 b(ning) 4189 52276
+y(comple) -56 b(xity) 523 b(measures:) 4313 56167 y(1.) 941
+b(What) 524 b(does) e(the) h(measure) g(tell) g(us?) 4313
+60058 y(2.) 941 b(Wh) -56 b(y) 523 b(might) h(w) -19
+b(e) 523 b(w) -28 b(ant) 523 b(to) h(kno) -28 b(w) 523
+b(it?) 4313 63949 y(3.) 941 b(What) 524 b(represen) n(tational) f
+(assumptions) g(are) g(behind) f(it?) p 53599 79120 V
+-2043 79562 56085 443 v Fe -3200 81127 a(Da) -26 b(v) -33
+b(e) 366 b(F) -40 b(eldman) p Fc 21635 w(http:/) n(/hornacek) n
+(.coa.edu/) n(dave) p 90 rotate dyy eop
+%%Page: 8 9
+8 8 bop Fe -3200 5049 a(SFI) 367 b(Summer) e(School,) g(Qingdao) g
+(China,) h(J) -26 b(ul) n(y) 367 b(2004) 30005 b(8) p
+-2043 6322 56085 443 v -2043 79120 443 72799 v Fd 22757
+10116 a(Outline) p Ff 1677 14647 a(1.) 942 b(Introductor) 56
+b(y) 523 b(remar) 28 b(ks) -28 b(.) 1677 19178 y(2.) 942
+b(Introduction) 522 b(to) i(Dynamical) f(Systems) h(and) f(Chaos) -28
+b(,) 523 b(P) -75 b(ar) 75 b(t) 523 b(I.) 4189 22429
+y(T) -226 b(er) 47 b(minology) -188 b(,) 522 b(de\002nition) h(of) g
+(chaos) -28 b(.) 1677 26960 y(3.) 942 b(Introduction) 522
+b(to) i(Dynamical) f(Systems) h(and) f(Chaos) -28 b(,) 523
+b(P) -75 b(ar) 75 b(t) 523 b(II) 1677 31491 y(4.) 942
+b(Inf) -56 b(or) 47 b(mation) 522 b(Theor) 56 b(y) -188
+b(,) 524 b(P) -75 b(ar) 75 b(t) 523 b(I) 1677 36022 y(5.) 942
+b(Inf) -56 b(or) 47 b(mation) 522 b(Theor) 56 b(y) -188
+b(,) 524 b(P) -75 b(ar) 75 b(t) 523 b(II) 1677 40553
+y(6.) 942 b(Computation) 522 b(Theor) 56 b(y) -188 b(,) 524
+b(P) -75 b(ar) 75 b(t) 523 b(I:) h(A) -56 b(utomata) 522
+b(and) 4189 43803 y(Computational) g(Hier) -19 b(arch) -56
+b(y) 1677 48334 y(7.) 942 b(Computation) 522 b(Theor) 56
+b(y) -188 b(,) 524 b(P) -75 b(ar) 75 b(t) 523 b(II:) h(Univ) -47
+b(ersal) 523 b(T) -226 b(ur) 28 b(ing) 523 b(Machines) 4189
+51585 y(and) f(Computational) g(Comple) -56 b(xity) 1677
+56116 y(8.) 942 b(Measures) 523 b(of) g(Comple) -56 b(xity) -188
+b(,) 523 b(P) -75 b(ar) 75 b(t) 523 b(I:) h(Computational) 4189
+59367 y(Mechanics) 1677 63898 y(9.) 942 b(Measures) 523
+b(of) g(Comple) -56 b(xity) -188 b(,) 523 b(P) -75 b(ar) 75
+b(t) 523 b(II:) i(Sur) 56 b(v) -47 b(e) -38 b(y) 523
+b(of) h(other) 4189 67149 y(Comple) -56 b(xity) 523 b(Measures) 631
+71679 y(10.) 941 b(Conclusions) p 53599 79120 V -2043
+79562 56085 443 v Fe -3200 81127 a(Da) -26 b(v) -33 b(e) 366
+b(F) -40 b(eldman) p Fc 21635 w(http:/) n(/hornacek) n(.coa.edu/) n
+(dave) p 90 rotate dyy eop
+%%Page: 9 10
+9 9 bop Fe -3200 5049 a(SFI) 367 b(Summer) e(School,) g(Qingdao) g
+(China,) h(J) -26 b(ul) n(y) 367 b(2004) 30005 b(9) p
+-2043 6322 56085 443 v -2043 79120 443 72799 v Fd 23383
+10116 a(Goals) p Ff 1677 14647 a(1.) 942 b(Present) 522
+b(some) i(tools) -28 b(,) 523 b(models) -28 b(,) 523
+b(par) -19 b(adigms) 523 b(that) g(are) g(useful) 4189
+17898 y(in) g(comple) -56 b(x) 522 b(syst) r(ems) -28
+b(.) 1677 22429 y(2.) 942 b(Discuss) 524 b(the) f(applicability) g(and)
+f(un-applicab) n(ility) i(of) f(these) 4189 25680 y(v) -47
+b(ar) 28 b(ious) 523 b(tools) -28 b(.) 1677 30211 y(3.) 942
+b(Pro) -28 b(vide) 522 b(ref) -56 b(eren) n(ces) 524
+b(and) e(advice) h(so) h(y) -38 b(ou) 523 b(can) g(lear) 47
+b(n) 523 b(more) 4189 33462 y(about) f(these) h(topics) h(if) g(y) -38
+b(ou) 523 b(wish.) 1677 37993 y(4.) 942 b(Present) 522
+b(some) i(thoughts) f(abou) n(t) h(what) f(mak) -38 b(es) 524
+b(the) f(study) h(of) 4189 41243 y(comple) -56 b(x) 522
+b(syst) r(ems) h(similar) g(to) -75 b(,) 524 b(and) e(diff) -56
+b(erent) 523 b(from,) h(other) 4189 44494 y(types) f(of) h(science) -28
+b(.) 1677 49025 y(5.) 942 b(Ha) -38 b(v) -47 b(e) 523
+b(fun.) p 53599 79120 V -2043 79562 56085 443 v Fe -3200
+81127 a(Da) -26 b(v) -33 b(e) 366 b(F) -40 b(eldman) p
+Fc 21635 w(http:/) n(/hornacek) n(.coa.edu/) n(dave) p
+90 rotate dyy eop
+%%Trailer
+end
+userdict /end-hook known{end-hook}if
+%%EOF

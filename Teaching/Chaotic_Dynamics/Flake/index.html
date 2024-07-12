@@ -1,0 +1,318 @@
+
+
+<html>
+
+<head>
+<title>The Computational Beauty of Nature - Code Overview &amp; Documentation</title>
+</head>
+
+
+<center>
+<h2>Documentation for the Programs Found in</h2>
+<h1>The Computational Beauty of Nature</h1>
+by
+<h2>Gary Flake</h2>
+</center>
+
+<p><hr width="100%" size="3" noshade>
+<br>
+The programs below are listed in the order in which they appear
+in the text.<p>
+
+<p><b><a
+href="stutter.html">stutter</a></b></font>&nbsp;&nbsp;&nbsp;
+interprets simple lisp and only understands <font
+face="fixed">car</font>, <font face="fixed">cdr</font>, <font
+face="fixed">cons</font>, <font face="fixed">if</font>, <font
+face="fixed">set</font>, <font face="fixed">equal</font>, <font
+face="fixed">quote</font>, and <font face="fixed">lambda</font>, but
+is still Turing-complete.  Uses stop-and-copy garbage collection and
+has an adjustable heap size.  Examples that implement integer and
+floating-point arithmetic are provided.  There is even an example
+<b>stutter</b> function to compute the square root of a floating-point
+argument with nothing but the primitives listed above.
+
+<p><b><a
+href="diffuse.html">diffuse</a></b></font>&nbsp;&nbsp;&nbsp;
+Generates diffusion limited aggregate growth that looks like coral.
+
+<p><b><a
+href="lsys.html">lsys</a></b></font>&nbsp;&nbsp;&nbsp; Builds
+L-system fractals.  Accepts multiple rules so that complicated
+fractals (such as a Penrose tiling) can be expressed.  Great for
+generating plantlike fractals.
+
+<p><b><a
+href="mrcm.html">mrcm</a></b></font>&nbsp;&nbsp;&nbsp; Uses the
+Multiple Reduction Copy Machine algorithm to generate affine fractals.
+Accepts an arbitrary number of transformations.  Good for making
+snowflakes and mosaic patterns.
+
+<p><b><a
+href="ifs.html">ifs</a></b></font>&nbsp;&nbsp;&nbsp; Similar to
+<b>mrcm</b> but uses Iterated Functional Systems for finer
+granularity.
+
+<p><b><a
+href="mandel.html">mandel</a></b></font>&nbsp;&nbsp;&nbsp; Plots
+the famous Mandelbrot set.  There are options for the displayed
+coordinates, zoom level, coloring schemes, etc.
+
+<p><b><a
+href="julia.html">julia</a></b></font>&nbsp;&nbsp;&nbsp;
+Generates Julia sets, which are related to the Mandelbrot set. Has
+options similar to <b>mandel</b>.
+
+<p><b><a
+href="gen1d.html">gen1d</a></b></font>&nbsp;&nbsp;&nbsp;
+Generates a time series from a one-dimensional map.  Nothing fancy; it
+just shows how chaos can be seen in simple systems.
+
+<p><b><a
+href="bifur1d.html">bifur1d</a></b></font>&nbsp;&nbsp;&nbsp;
+Plots a bifurcation diagram for a one-dimensional map to illustrate
+how a change in a single parameter can move a system from fixed-point
+behavior, to periodic, and finally to chaos.  Different regions can be
+zoomed in on.
+
+<p><b><a
+href="phase1d.html">phase1d</a></b></font>&nbsp;&nbsp;&nbsp;
+Plots the phase space and trajectories of a one-dimensional map.
+Showing trajectories in the phase space more clearly illustrates why
+fixed-points and limit cycles occur.  This can also be used to show
+the exponential divergence of nearby trajectories.
+
+<p><b><a
+href="henon.html">henon</a></b></font>&nbsp;&nbsp;&nbsp; Plots
+the phase space of the Hénon map, a two-dimensional system with a
+fractal shape.  Different regions can be zoomed in on.
+
+<p><b><a
+href="henbif.html">henbif</a></b></font>&nbsp;&nbsp;&nbsp; Plots
+a bifurcation diagram for the Hénon system.  This is similar to
+<b>bifur1d</b> but shows that bifurcations apply to multidimensional
+systems as well.
+
+<p><b><a
+href="henwarp.html">henwarp</a></b></font>&nbsp;&nbsp;&nbsp;
+Takes a square of a specified area and ``warps'' it a fixed number of
+times by the Hénon system.  This illustrates the stretching and
+folding motion of chaotic systems as well as shows how points within
+an attractor's basin of attraction are eventually forced into a
+strange attractor.
+
+<p><b><a
+href="lorenz.html">lorenz</a></b></font>&nbsp;&nbsp;&nbsp; Plots
+the phase space of the Lorenz system, a three-dimensional system
+described by differential equations with a fractal shape.  Both plain
+phase-space plots and delayed state-space plots are possible.
+
+<p><b><a
+href="rossler.html">rossler</a></b></font>&nbsp;&nbsp;&nbsp;
+Similar to <b>lorenz</b>, but uses the Rossler system.
+
+<p><b><a
+href="mg.html">mg</a></b></font>&nbsp;&nbsp;&nbsp; Plots a
+two-dimensional embedding of the phase space of the Mackey-Glass
+system, a delay-differential system, with arbitrary parameters.
+
+<p><b><a
+href="gsw.html">gsw</a></b></font>&nbsp;&nbsp;&nbsp; Simulates an
+individual-based three-species predator-prey ecosystem according to
+the specified parameters.  The three species consist of plants,
+herbivores, and carnivores (grass, sheep, and wolves; hence the name,
+<b>gsw</b>).  Updates are done synchronously, and each species has
+several parameters which can control their life cycles, from the
+ability to give birth, to the likelihood of starvation.  Population
+statistics of the three species can be calculated over a subset of the
+entire grid.
+
+<p><b><a
+href="predprey.html">predprey</a></b></font>&nbsp;&nbsp;&nbsp;
+Plots the phase space of a three-species predator-prey system
+(described by differential equations) which may be fractal in shape.
+Both plain phase-space plots and delayed state-space plots are
+possible.
+
+<p><b><a
+href="lotka.html">lotka</a></b></font>&nbsp;&nbsp;&nbsp;
+Simulates the two-species Lotka-Volterra predator-prey system with a
+second-order Euler's method.  This program serves as a simple
+introduction to differential equations.
+
+<p><b><a
+href="hencon.html">hencon</a></b></font>&nbsp;&nbsp;&nbsp;
+Controls the Hénon system with the OGY control law for arbitrary
+choices of the system parameters.  The control law is analytically
+calculated based on the system parameters.  The user can select times
+in which control is turned on and off so that time-to-control and
+transients can be observed.  Gaussian noise can be injected into the
+system.
+
+<p><b><a
+href="ca.html">ca</a></b></font>&nbsp;&nbsp;&nbsp; Simulates
+arbitrary one-dimensional cellular automata with an arbitrary choice
+of simulation parameters.  Random rules can be generated and used with
+a desired lambda value.
+
+<p><b><a
+href="life.html">life</a></b></font>&nbsp;&nbsp;&nbsp; Simulates
+Conway's Game of Life with an arbitrary set of initial conditions.
+Input files need to be in the PBM file format.
+
+<p><b><a
+href="hp.html">hp</a></b></font>&nbsp;&nbsp;&nbsp; Simulates and
+plots the time evolution of the hodgepodge machine according to
+specified parameters.  With a proper choice of parameters, this system
+resembles the Belousov-Zhabotinsky reaction which forms
+self-perpetuating spirals in a lattice.
+
+<p><b><a
+href="termites.html">termites</a></b></font>&nbsp;&nbsp;&nbsp;
+Simulates a population of termites which do a random walk while
+possibly carrying a wood chip.  Under normal circumstances, the
+termites will self-organize and move the wood chips into piles without
+a global leader.  The termites' behavior is dictated by the following
+set of rules: If a termite is not carrying anything and it bumps into
+a chip, then it picks it up, reverses direction, and continues with
+the random walk.  If it is carrying a chip and bumps into another, it
+drops the chip, turns around, and starts walking again.  Otherwise, it
+just does a random walk whether it is carrying a chip or not.
+
+<p><b><a
+href="vants.html">vants</a></b></font>&nbsp;&nbsp;&nbsp;
+Simulates and plots a population of generalized virtual ants (vants).
+The behavior of the vants is determined by a bit string with length
+equal to the number of states that each cell in the vants' grid world
+can take.  If a vant walks on a cell in state <i>s</i>, then the vant
+turns right if the <i>s</i>'th bit of the rule string is 1 and left if
+it is 0.  As it leaves the cell the vant changes the state of the old
+cell to <i>(s + 1)</i> modulo the number of states.
+
+<p><b><a
+href="boids.html">boids</a></b></font>&nbsp;&nbsp;&nbsp;
+Simulates a flock of boids according to rules that determine their
+individual behaviors as well as the ``physics'' of their universe.  A
+boid greedily attempts to apply four rules with respect to its
+neighbors: It wants to fly in the same direction, be in the center of
+the local cluster of boids, avoid collisions with boids too close, and
+maintain a clear view ahead by skirting around others that block its
+view.  Changing these rules can make the boids behave like birds,
+gnats, bees, fish, or magnetic particles.
+
+<p><b><a
+href="sipd.html">sipd</a></b></font>&nbsp;&nbsp;&nbsp; Simulates
+and plots the spatial iterated Prisoner's Dilemma over time according
+to the specified parameters.  Each cell in a grid plays a specific
+strategy against its eight neighbors for several rounds.  At the end
+of the last round, each cell copies the strategy of its most
+successful neighbor, which is then used for the next time step.
+Possible strategies include ``Always-Cooperate,'' ``Always-Defect'',
+``Random,'' ``Pavlov,'' and ``Tit-for-Tat.''
+
+<p><b><a
+href="eipd.html">eipd</a></b></font>&nbsp;&nbsp;&nbsp; Simulates
+the ecological iterated Prisoner's Dilemma over time according to the
+specified parameters.  At every time step the population of each
+strategy is calculated as a function of the expected scores earned
+against all strategies weighted by the populations of the opponents.
+Possible strategies include ``Always-Cooperate,'' ``Always-Defect,''
+``Random,'' ``Pavlov,'' and ``Tit-for-Tat.''
+
+<p><b><a
+href="assoc.html">assoc</a></b></font>&nbsp;&nbsp;&nbsp; Attempts
+to reconstruct a corrupted image with a McCulloch-Pitts feedback
+neural network that acts as an associative memory.  The weights of the
+network are determined via Hebb's rule after reading in multiple
+patterns.  Weights can be pruned either by size, by locality, or
+randomly.
+
+<p><b><a
+href="hopfield.html">hopfield</a></b></font>&nbsp;&nbsp;&nbsp;
+Solves a task assignment problem via a Hopfield neural network while
+plotting the activations of the neurons over time.  The program uses
+the <i>k</i>-out-of-<i>n</i> rule for setting the external inputs and
+synapse strength of the neurons.
+
+<p><b><a
+href="gastring.html">gastring</a></b></font>&nbsp;&nbsp;&nbsp;
+Uses a genetic algorithm to breed strings that match a user-specified
+target string.  This program illustrates how GAs can perform a type of
+stochastic search in a space of discrete objects.  Reproduction of
+strings entails crossover and mutation with strings being selected
+based on fitness.
+
+<p><b><a
+href="gabump.html">gabump</a></b></font>&nbsp;&nbsp;&nbsp; Uses a
+genetic algorithm to find the maximum of a single-humped function that
+is centered at a user-specified location.  This program serves as an
+example of how GAs can be used to optimize functions which take a
+floating-point argument.
+
+<p><b><a
+href="gasurf.html">gasurf</a></b></font>&nbsp;&nbsp;&nbsp; Uses a
+genetic algorithm to find the maximum of a multi-humped function.
+This program serves as an example of how GAs can be used to optimize
+functions which take multiple floating-point arguments.
+
+<p><b><a
+href="gatask.html">gatask</a></b></font>&nbsp;&nbsp;&nbsp; Uses a
+genetic algorithm to solve a task assignment problem with
+user-specified costs.  This program illustrates how GAs can perform
+combinatorial optimization.  Reproduction of strings entails special
+crossover and mutation operations which preserve constraints on the
+form of feasible solutions.
+
+<p><b><a
+href="gaipd.html">gaipd</a></b></font>&nbsp;&nbsp;&nbsp; Uses a
+genetic algorithm to evolve iterated Prisoner's Dilemma (IPD)
+strategies according to user-specified constraints.  This program
+illustrates how GAs can demonstrate coevolution since IPD strategies
+can only be successful within the context of their likely opponents.
+
+<p><b><a
+href="zcs.html">zcs</a></b></font>&nbsp;&nbsp;&nbsp; Adapts a
+zeroth level classifier system (ZCS) with the implicit bucket brigade
+algorithm and a genetic algorithm so that the ZCS can traverse a
+two-dimensional terrain, avoid obstacles, and find food.  At the
+beginning of each step the ZCS is placed at a random location of its
+world.  It interacts with its environment until it finds food, which
+yields a reward.  The simulation then restarts with the ZCS placed at
+a new random location.  The progress of the ZCS is continuously
+plotted, while the statistics on the time to find food are calculated
+and displayed.  At the end of the simulation the classifiers that make
+up the final ZCS are saved to a log file.
+
+<p><b><a
+href="zcscup.html">zcscup</a></b></font>&nbsp;&nbsp;&nbsp; Trains
+a zeroth level classifier system (ZCS) to solve the cups problem with
+the implicit bucket brigade algorithm and a genetic algorithm.
+Solving this problem requires the ZCS to learn to remember important
+features from previous states, which makes this problem very
+challenging.  The ZCS always starts in the same initial position. It
+interacts with its environment until it finds both cups, which (only
+at that point) yields a reward.  The simulation then restarts with the
+ZCS placed at the original location.  The progress of the ZCS is
+continuously plotted, while the statistics on the time to find both
+cups are calculated and displayed.  At the end of the simulation the
+classifiers that make up the final ZCS are saved to a log file.
+
+<p><b><a
+href="mlp.html">mlp</a></b></font>&nbsp;&nbsp;&nbsp; Trains a
+multilayer perceptron with a single hidden layer of neurons on a set
+of data contained in a file using the backpropagation learning
+algorithm with momentum.  Output units can be linear or sigmoidal,
+allowing you to model both discrete and continuous output target
+values.
+      </p><hr width="100%" size="3" noshade>
+
+
+
+
+</tr>
+</table>
+
+
+
+</body>
+</html>

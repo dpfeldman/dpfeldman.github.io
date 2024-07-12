@@ -1,0 +1,48 @@
+
+<html>
+<head>
+<title>Differential Equations</title>
+</head>
+<link rel="stylesheet" href="1.css" type="text/css" />
+
+<body text=ffffff link=#99ccff bgcolor="#333366" vlink="#ccccff">
+<br>
+
+<center><h1> Differential Equations</h1>
+</h3>
+<br>
+<h4>Spring 2008</h4>
+<h4><a href="http://hornacek.coa.edu/dave">David Feldman</a></h4>
+<h4><a href="http://www.coa.edu">College of the Atlantic</a></h4>
+</center> 
+<p>
+<br>
+<br>
+<h3>course info</h3>
+<p><br>
+
+<b><a href="overview.html">Overview</a></b><br>
+<b><a href="schedule.html">Schedule</a></b><br>
+<b><a href="expectations.html">What to Expect</a></b><br>
+<b><a href="projects.html">Final Project Guidelines</a></b><br>
+<b><a href="solutions.html">Homework Guidelines</a></b><br>
+<!--<b><a href="links.html">Links</a></b><br>-->
+<!--<b><a href="http://hornacek.coa.edu/dave/Maple">Maple Help</a></b><br>--> 
+<!--<b><a href="../Odes.01/Projects/">Final Projects from the
+Previous Course</a></b><br>-->
+<p>
+
+
+<br>
+<h3>homework  assignments</h3>
+
+<ol>
+<li><a href="homework.1.html">Homework One</a>
+<li><a href="hw.2.pdf">Homework Two</a>
+<li><a href="hw.3.pdf">Homework Three</a>
+<li><a href="hw.4.pdf">Homework Four</a>
+</ol>
+
+
+</html>
+

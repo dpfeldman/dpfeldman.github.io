@@ -1,0 +1,99 @@
+<html>
+<head>
+<title> Introduction to Scientific Programming in C++</title>
+</head>
+
+<body>
+
+<h1>Introduction to Scientific Programming in C++</h1>
+<h3>Instructor: Dave Feldman</h3>
+
+<b>The home page for the Fall 2001 version of this course can be
+found <a href="../c++">here</a>.</b><p>
+
+
+This course will certainly not be a typical computer science course 
+that emphasizes complicated data structures, efficient sorting 
+algorithms, and the like.  The main goal of this course is to bring
+students up to a level where they can write some simple programs, and,
+more importantly, gain the necessary confidence and vocabulary to
+continue to learn programming on their own as needed.  Most scientific
+programmers, including myself, are mostly self-taught.  Almost all of
+the programming know-how I've obtained has been by reading a
+how-to-program book, trying things out, asking questions, and then  
+making a series of spectacular errors until finally the program
+works.  So my main goal in this course is to teach students enough so
+they can continue to learn on their own, and that they know how to
+seek help (either via the Internet or in ``real life'') should they get
+stuck.  <p>
+
+The language used will be C/C++.  This is by far the language most 
+commonly used for scientific programming.  (Fortran still has its 
+disciples, but they're starting to die off.)  With my help, the students 
+will work through a programming book---most likely we'll use <i>
+Practical C++ Programming</i> by Steve Oualline.  Roughly the first half 
+of the course will be spent learning programming basics:  simple 
+input and output, iterative loops, and arithmetical operations, etc. 
+<p>
+
+During the second half of the course students will work on 
+programming projects.  The project could entail solving a system of 
+differential equations of interest in ecology or physics, simulating a 
+model of an economic market or a spatially-extended ecosystem, or 
+exploring a chaotic dynamical system.  (Ideally, students will enter 
+the course with a programming project in mind.)  I'll help students 
+learn the numerical techniques needed for the problems at hand.  There
+are existing, well-documented packages in C and C++ that can handle
+many tasks:  linear algebra, complex numbers, differential equations,
+etc.  Rather than reinventing the wheel, I'll help students figure out
+how to use the packages, and where to find them and how to download
+them from the Internet.  Excellent packages for almost any need, as
+well as compilers and graphics utilities, are easily available and in
+the public domain.  <p>
+
+An essential part of each programming project will be a discussion of 
+techniques for telling if the program is working.  We'll cover
+different ways to check programs to make sure they're producing 
+sensible results.  If the project involves approximation techniques, 
+we'll discuss how to estimate the resulting error. <p>
+
+Prerequisites:  A desire to learn programming and the willingness to
+work hard toward that goal.  No programming experience is necessary.
+Evaluation will be based on class participation, several short
+assignments, and a final project of the student's choosing.
+Introductory.  QR. 
+
+
+
+
+
+<p><br>
+
+
+<hr>
+<br>
+<center>
+<h3>
+[<a href="http://hornacek.coa.edu/dave/Teaching/math.coa.shtml">Math at COA</a>]
+[<a href="http://hornacek.coa.edu/dave/index.html">Dave's Home Page</a>]
+[<a href="http://www.coa.edu/">COA Home Page</a>]</h4>
+</h3>
+</center>
+<p>
+<br>
+The current time is  <!--#echo var="DATE_LOCAL"-->.<br>
+This document was last modified on <!--#echo var="LAST_MODIFIED"--><br>
+Page maintained by Dave Feldman,  <a
+href=mailto:dave@hornacek.coa.edu>dave@hornacek.coa.edu</a>  
+
+<!--Questions about the contents of these pages or about math at the
+College of the Atlantic should be sent to Dave Feldman at <a 
+href=mailto:dave@hornacek.coa.edu>dave@hornacek.coa.edu</a>.
+<p>-->
+
+<p>
+</html>
+
+
+
+

@@ -1,0 +1,74 @@
+<html>
+<head>
+<title> Introduction to Quantum Mechanics</title>
+</head>
+
+<body>
+
+<h1>Quantum Mechanics</h1>
+<h3>Instructor: Dave Feldman</h3>
+
+
+This course is a focused, highly mathematical introduction to quantum
+mechanics.  The goal is to cover about one-third of a junior/senior
+level quantum mechanics textbook such as David Griffiths' <i>
+Introduction to Quantum Mechanics</i>. 
+We will begin by learning the basic structure of quantum mechanics:
+The Schrodinger equation, the statistical interpretation of the
+wavefunction, and the uncertainty relation.  We will then focus on the
+one-dimensional time-independent Schrodinger equation, and study a
+number of model systems:  the harmonic oscillator, the delta-function
+potential, and the "particle in a box".  Next, we will turn our
+attention to some of the mathematical formalism behind quantum
+mechanics, including linear algebra and function spaces.  Finally, if
+time permits, we will begin a study of quantum mechanics in three
+dimensions.   <p>
+
+
+Along the way, students will encounter a variety of new mathematics,
+including ordinary and partial differential equations, linear algebra,
+linear vector spaces, and Hilbert spaces.  Knowledge of these topics
+is not a prerequisite for the course, however.  <p>
+
+The class will be taught entirely in a discussion format.  Students
+and the instructor will choose several problems to work out based on
+each week's reading.  Some of these problems may be quite
+challenging and require a considerable amount of work.   Evaluation
+will be based on class participation and final portfolio of worked
+problems. <p> 
+
+Prerequisites:  Calculus II (or the equivalent), Physics I and II (or
+the equivalent) and permission of instructor.  Advanced.  QR.  <p>
+
+
+
+<p><br>
+
+
+<hr>
+<br>
+<center>
+<h3>
+[<a href="http://hornacek.coa.edu/dave/Teaching/math.shtml">Math at COA</a>]
+[<a href="http://hornacek.coa.edu/dave/index.html">Dave's Home Page</a>]
+[<a href="http://www.coa.edu/">COA Home Page</a>]</h4>
+</h3>
+</center>
+<p>
+<br>
+The current time is  <!--#echo var="DATE_LOCAL"-->.<br>
+This document was last modified on <!--#echo var="LAST_MODIFIED"--><br>
+Page maintained by Dave Feldman,  <a
+href=mailto:dave@hornacek.coa.edu>dave@hornacek.coa.edu</a>  
+
+<!--Questions about the contents of these pages or about math at the
+College of the Atlantic should be sent to Dave Feldman at <a 
+href=mailto:dave@hornacek.coa.edu>dave@hornacek.coa.edu</a>.
+<p>-->
+
+<p>
+</html>
+
+
+
+

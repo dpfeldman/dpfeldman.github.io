@@ -1,0 +1,120 @@
+<html>
+<head>
+<title> Information Theory, Excess Entropy and Statistical Complexity </title>
+</head>
+
+<center>
+<h2>  A Brief Tutorial on:</h2>
+<h1>  Information Theory, Excess Entropy and Statistical Complexity: </h1>
+<h3> Discovering and Quantifying Statistical Structure </h3>
+</center>
+<br>
+<br>
+<center>
+<h3> Course Materials </h3>
+</center>
+
+I produced these lecture notes during July of 1997 for use in
+conjunction with a series of three lectures I gave at the <a
+href="http://www.santafe.edu">Santa Fe Institute</a>.  I did a light
+edit of these notes in April of 1998.  These notes are still a little
+rough in some places and aren't as thorough as they should be.
+Nevertheless, they are (I believe) mostly error-free and could be of
+some use to others.<p>
+
+If you're looking for an introduction to computational mechanics, I
+also recommend a recent paper of mine, <a
+href="../Publications/DNCO.html">Discovering Non-Critical Organization:
+Statistical Mechanical, Information Theoretic, and Computational Views
+of Patterns in One-Dimensional Spin Systems</a>.  This paper has fairly
+lengthy review of information theory and computational mechanics.
+It's written at a slightly higher level than these lecture notes, but
+nevertheless should be quite readable.
+<p>
+
+For more on Shannon entropy convergence and how this leads to a 
+variety of measures of structure and memory, you might want to see
+<a href="http://hornacek.coa.edu/dave/Publications/RURO.html">Regularities 
+Unseen, Randomness Observed: Levels of Entropy Convergence</a>, another
+recent paper.  <P>
+
+
+
+<b> The Lecture Notes </b><p>
+<ul>
+<li><a href="notes.ps"> PostScript</a> [852 kB]
+<li><a href="notes.ps.Z"> Compressed PostScript</a>  [226 kB]
+<li><a href="notes.ps.gz"> Gzipped PostScript</a>  [163 kB]
+</ul>
+
+
+<!--
+<li>  Two pages of text per page of paper. (25 pages.)
+<ul>
+<li><a href="notes.2pages.ps"> PostScript</a> [427kB]
+<li><a href="notes.2pages.ps.Z"> Compressed PostScript</a>  [205 kB]
+<li><a href="notes.2pages.ps.gz"> Gzipped PostScript</a> [150 kB]
+</ul>-->
+
+
+<b> Exercises </b><p>
+<ul>
+<li> <a href="ps.1.ps"> Problem Set 1</a>:  Information Theory
+<li> <a href="sol.1.ps"> Solutions to Problem Set 1 </a>  (Please let me 
+know if you catch any errors!)
+<li> <a href="ps.2.ps"> Problem Set 2</a>:  Entropy Convergence
+<li> <a href="graph.ps"> Graph Paper</a> for problem set 2
+</ul>
+<p>
+<br>
+<hr>
+<br>
+<center>
+<h3> Links to Helpful Places </h3>
+</center>
+<br>
+<ul>
+<li> <a href = "http://www.math.psu.edu/gunesch/entropy.html">
+Entropy on the World Wide Web</a>.  A very, very thorough and
+well-organized site maintained by Chris Hillman of the University of
+Washington.  There's lots of interesting and useful information here
+and many links.  <i>Highly recommended!</i>
+<li><a href
+="http://131.111.48.24/pub/mackay/info-theory/course.html"> A Short
+Course in Information Theory</a>.  A set of lecture notes by David
+J.C. MacKay.  These are a nice, crisp summary of some of the main
+ideas in information theory.     
+<li> <a href = "http://www-lmmb.ncifcrf.gov/~toms/paper/primer/index.html">Primer on
+Information Theory</a> by <a href =
+"http://www-lmmb.ncifcrf.gov/~toms/">
+Thomas D. Schneider</a>.  Written for molecular
+biologists, this piece is a nice, gentle, straightforward
+introduction.  Includes an appendix reviewing the properties of
+logarithms.
+<li> <a href ="http://www.santafe.edu/projects/CompMech/">
+Computational Mechanics Home Page</a>.  Here you will find lots of
+research papers about computational mechanics.  <a
+href="http://www.santafe.edu/projects/CompMech/papers/CalcEmergTitlePage.html">
+The Calculi of Emergence</a> might be the best place to start.
+<!--<li> A groovy <a href =
+"http://www-groups.dcs.st-and.ac.uk/~history/index.html"> History of
+Mathematics</a> page.  I found the picture of Shannon here.  You can
+find lots of pictures of famous mathematicians and physicists here.
+I used these pictures to illustrate many of my problem sets during my
+first two years of grad school.-->
+</ul>
+<br>
+(Last Updated 10 October 2001.)
+<br>
+<hr>
+<br>
+<br>
+Page maintained by <a href="../index.html">David Feldman</a><br>
+College of the Atlantic<br>
+105 Eden St.<br>
+Bar Harbor, Maine   04609<br>
+<a href="mailto:dave@hornacek.coa.edu">dave@hornacek.coa.edu</a>
+<p>
+
+
+</html>

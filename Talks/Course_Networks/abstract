@@ -1,0 +1,69 @@
+
+
+Hi Sam,
+
+Below is a title and abstract.  Sorry that I'm late getting this to
+you.  
+
+dave
+
+
+
+
+
+______________________________________________________________________
+
+
+                       Emergent (Non)Majors:
+   Communities and Connections in an Interdisciplinary College
+
+
+Sam Heller
+David Feldman
+4:10 pm
+Monday June 2, 2008
+McCormick Lecture Hall
+
+
+
+Over the years there has been much discussion of and concern about
+the structure, or lack thereof, of a College of the Atlantic (COA)
+education.  Some maintain that since all COA students design their
+own majors, all students have a unique course of study.  These voices
+typically praise students for taking a diverse set of courses and
+charting an individualized and special, if not unique, path through
+the curriculum.  Others suggest that COA has de facto majors.
+People with this point of view suggest that students form clusters or
+cohorts that concentrate in a relatively a focused area, re-creating
+the disciplinary majors that the college has sought to avoid.  Those
+with this view may criticize students for taking a narrow set of
+courses and criticize faculty for offering classes which are only of
+interest to this narrow set of de-facto majors.   
+
+The mathematical tools in the emerging area of complex network
+analysis make possible an empirical examination of these concerns.
+In this talk we will present results from such an analysis.  We have
+implemented and applied a standard algorithm for discovering clusters
+or communities in networks.  We consider a network of courses formed
+by students' course selections.  Two classes are linked together 
+if there were students who took both classes.  The strength of the
+link is related to the relative number of students in both classes.
+The algorithm we use for discovering clusters is non-parametric, in
+the sense that we do not specify the number of clusters for the
+algorithm to seek, nor do we use any information beyond the collective
+course choices of students. 
+
+Our results reveal five distinct groupings or clusters of classes.
+While the clusters consist of a fairly diverse set of courses, they
+nevertheless seem to each have a particular academic flavor.  Our
+results are statistically significant in so far as it is
+astronomically unlikely that such clustering could occur if students
+were selecting classes at random.  Nevertheless, the overall
+clustering effect is not extremely strong at the level of individual
+courses and students, and we caution against over-interpreting our
+results.   
+
+Although there will be some technical components in our presentation,
+it is intended to be accessible to all community members.  There will
+be ample opportunity for discussion and critique. 
+

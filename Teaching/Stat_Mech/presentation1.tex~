@@ -1,0 +1,63 @@
+
+\documentstyle[12pt,url,epsf]{article}
+\oddsidemargin=0in
+\textwidth=6.5in
+%\topmargin=-.25in
+%\textheight=9in
+%\usepackage{doublespace}
+
+\renewcommand{\arraystretch}{1.3}
+
+\begin{document}
+
+\pagestyle{empty}
+
+\begin{center}
+{\large {\bf Homework assignment two}}\\
+\end{center}
+\bigskip
+\hspace{1cm}\\
+
+
+{\bf Due Friday September 27, 2002, 4:00 PM} \\
+
+\begin{enumerate}
+
+\item Yeomans, problem 2.1.
+
+\item Yeomans, problem 2.2.
+
+\item Yeomans, problem 2.3.
+
+\item Yeomans, problem 2.4.
+
+\item Estimate the susceptibility critical exponent $\gamma$ for the
+two-dimensioal ferromagnetic Ising model as follows.
+
+\begin{enumerate}
+
+\item Using one of your existing Monte Carlo codes, do a run at a
+bunch of temperatures near the critical temperature, calculating
+$\chi$ at each temperature.  A lattice size of around $100$ by $100$
+should be sufficient. 
+
+\item Then, make a log-log plot of the susceptibility $\chi$ versus
+the reduced temperature $T-T_c$.  The slope of line is the critical
+exponent.  Be sure to determine error bars to go along with your
+estimated slope.
+
+\item Compare your result with the known, exact critical exponent.
+Also compare you results with each other.  Discuss briefly.
+
+\item Comment on sources of error in your calculation.  You may wish
+to consult section 8.3.1 of Newman and Barkema.
+
+\end{enumerate}
+
+\end{enumerate}
+
+
+
+\end{document}
+
+

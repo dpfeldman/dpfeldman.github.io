@@ -1,0 +1,116 @@
+\documentclass[12pt]{article}
+\oddsidemargin=0.0in
+\evensidemargin=0.0in
+\textwidth=6.5in
+\topmargin=-.35in
+\textheight=8.8in
+%\usepackage{doublespace}
+ 
+\begin{document}
+\pagestyle{empty}
+ 
+\begin{center}
+{\large {\bf Calculus II}}\\
+\medskip
+{\large {\bf Spreadsheets, Definite Integrals, and Left- and
+    Right-hand Sums}}\\ 
+\medskip
+{ {\bf Due Monday January 16, 2011}}\\ 
+\end{center}
+
+\hspace{2mm}\\
+
+\noindent {\bf Purpose}
+\begin{enumerate}
+  \item To gain a deeper understanding of left- and right-hand sums
+    and to learn how to approximate a definite integral using a
+    spreadsheet.  (It is not unusual to have to use a computer to
+    evaluate an integral, so this is more than just an idle exercise.)
+  \item To gain experience working with spreadsheets, especially
+    entering formulas.  Using spreadsheets is an incredibly valuable
+    skill in science, math, and in life in general.\\
+\end{enumerate}
+
+
+\noindent {\bf General Instructions}
+
+\begin{itemize}
+\setlength{\itemsep}{-1mm}
+  \item You can do this exercise in pairs if you want.  If you do, you
+    should be sure to take turns typing, so you each gain direct
+    experience working with the spreadsheet.  
+  \item Only hand in one assignment per duo.
+  \item This is not meant to be an ordeal.  If it takes much longer
+    than an hour, stop.  We can go over it when I get back if needed. 
+  \item I assume you have access to a spreadsheet program of some
+    sort.  Openoffice Calc is a good free option, as is google
+    spreadsheets.  (To find google spreadsheets, go to google docs and
+    choose spreadsheet.  You'll need a google account.)\\
+\end{itemize}
+
+
+
+
+\noindent {\bf Formulas and Spreadsheets}
+\begin{itemize}
+  \item In addition to entering numbers into spreadsheets, it is
+    possible to enter formulas.  This is incredibly useful and handy.
+  \item It is not hard.  To indicate that what you're typing into the
+    cell is a formula, begin with an ``=''.
+  \item Refer to the values in other cells by typing \$ followed by
+    the cell name.
+  \item For example, a formula that takes the value in cell A2 and
+    adds it to the value of the cell in B3 would be: {\tt =\$A2+\$B3}.
+  \item If this isn't clear, ask someone who has experience with
+    formulas and spreadsheets to show you.
+\end{itemize}
+
+\noindent {\bf Initial Example}\\
+
+\noindent We will approximate the definite integral we looked at in
+class on Friday: 
+\begin{equation}
+  \int_1^3 x^2 \, dx \; .
+\end{equation}
+Let's use $\Delta t = 0.5$.  The LH sum is:
+\begin{equation}
+  {\rm LH\;sum} \, = \, (1)^2\Delta t + (1.5)^2\Delta t + 
+    (2.0)^2\Delta t + (2.5)^2\Delta t \;.
+\end{equation}
+Evaluating this one gets $6.75$.  Similarly, the RH sum is:
+\begin{equation}
+  {\rm RH\;sum} \, = \, (1.5)^2\Delta t + (2.0)^2\Delta t + 
+    (2.5)^2\Delta t + (3.0)^2\Delta t \;.
+\end{equation}
+The RH sum evaluates to $10.75$.
+
+I have prepared a sample spreadsheet that does this calculation for
+you.  Take a look at the spreadsheet and see how it works.  (There are
+many ways to accomplish this task.  If another way seems easier to
+you, go for it.)  You can download the 
+sample spreadsheet from the homework page on the course website.  You
+can upload the excel document to google docs if you want.\\
+
+\noindent {\bf Stuff to do:}
+
+\begin{enumerate}
+\setlength{\itemsep}{-1mm}
+  \item Modify the spreadsheet I sent you to compute left and right
+    hand sums for $\Delta t = 0.25$.
+  \item Modify the spreadsheet I sent you to compute left and right
+    hand sums for $\Delta t = 0.1$.
+  \item Use a spreadsheet to estimate:
+\begin{equation}
+  \int_2^{10}e^{-x} \, dx \;.
+\end{equation}
+  \item Use a spreadsheet to estimate:
+\begin{equation}
+  \int_{-2}^2\sin(x) \, dx \;.
+\end{equation}
+
+\end{enumerate}
+
+
+
+ 
+\end{document}

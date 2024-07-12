@@ -1,0 +1,171 @@
+
+\documentstyle[12pt,url,epsf]{article}
+\oddsidemargin=0in
+\textwidth=6.5in
+%\topmargin=-.25in
+%\textheight=9in
+%\usepackage{doublespace}
+
+\renewcommand{\arraystretch}{1.3}
+
+\begin{document}
+
+\pagestyle{empty}
+
+\begin{center}
+{\large {\bf Homework assignment one}}\\
+\end{center}
+\bigskip
+\hspace{1cm}\\
+
+
+{\bf Due Friday September 13, 2002, 4:00 PM} \\
+
+\begin{enumerate}
+
+\item Shannon Entropy.
+  
+\begin{enumerate}
+    \item Consider two random variables, $X$ and $Y$.  Suppose
+that they are independent.  I.e., ${\rm Pr}(X,Y) = {\rm Pr}(X){\rm
+Pr}(y)$.  Show that $H[X,Y] = H[X]H[Y]$. 
+
+    \item Consider the following distribution of a random variable $X$
+    that can take one of three values, $a, b$, or $c$:  ${\rm Pr}(X=a)
+    = p_a = 1/4$, ${\rm Pr}(X=b) = p_b = 1/4$, and ${\rm Pr}(X=c) =
+    p_c = 1/2$.  Show that the grouping property of $H$ holds:
+\begin{equation}
+   H [ \{ p_a, p_b, p_c\} ] \, = \, H[ \{ p_a + p_b , p_c \}] \,+\,
+   (p_a + p_b) \,H \left[ \{ \frac{ p_a}{p_a + p_b} , \frac{ p_b}{p_a
+   + p_b} \} \right] \;.   
+\end{equation}
+
+    \item A fair coin is flipped until the first head occurs.  Let $X$
+denote the number of flips required.  Find the entropy $H[X]$ in
+bits.  Do do so, you'll need to recall a few standard facts about
+geometric series.  (Cover and Thomas, Chapter 2, problem 1(a))
+
+
+\end{enumerate}
+
+\item  In this problem you will calculate the entropy per spin of a
+paramagnet several different ways.  Consider a square $N \times N$
+lattice.  The spins don't interact with each other, but they do
+interact with an external field, $B$.  The Hamiltonian of the system
+is:
+\begin{equation}
+ {\cal H} = \sum_{i=1}^N \sum_{j=1}^N -BS_{ij} \;,
+\end{equation}
+where $S_{ij} \in \{-1,+1\}$. 
+\begin{enumerate}
+
+  \item \label{canonical}
+  First, calculate the entropy by using the canonical ensemble.
+  Find the free energy $F$ and the energy $E$, and then determine the
+  entropy $S$ via $F = E - TS$.
+
+  \item \label{Shannon}
+  Now, use the canonical ensemble to write down the probability
+  that a single spin is up.  Then determine the Shannon-Gibbs entropy
+  of a single spin, being sure that you use a normalized
+  distribution.  Then use this to infer the entropy of the entire system.
+
+  \item \label{microcanonical}
+  Determine $S$ as a function of $T$ by direct counting and
+  using the microcanonical ensemble as we did in class.  
+
+  \item Show that, in the $N  \rightarrow \infty$ limit, your answers
+  for questions \ref{canonical}, \ref{Shannon}, and
+  \ref{microcanonical} agree.  
+
+
+\end{enumerate}
+
+
+\item Show that the canonical distribution
+\begin{equation}
+ p_i \, \propto \, e^{-\beta E_i} 
+\end{equation}
+minimizes the free energy $F = E - TS$.  To show this, use the Shannon
+form of the entropy, and use
+\begin{equation}
+  E \, = \, \sum_i p_i E_i \;. 
+\end{equation}
+
+
+\item Fun with counting and binomial coefficients.
+\begin{enumerate}
+
+\item Five spin variables, $s_1, s_2, \ldots, s_5$, in a magnetic
+field are statistically independent.  Each can take the values $\pm
+\hbar/2$ with the probabilities:
+\begin{equation}
+{\rm Pr}(s = \hbar/2) \, = \, p \,,\\\; {\rm and} \;\; 
+{\rm Pr}(s = -\hbar/2) \, = \, 1-p \;.
+\end{equation}
+What is the probability that exactly three spins are up ($+\hbar/2$)?
+(Garrod, problem 1.2)
+
+\item Twelve books, containing a 4-volume series, are placed in random
+order on a shelf.  What is the probability that the series is placed
+together and in order from left to right?  (Garrod, problem 1.5)
+
+\end{enumerate}
+
+\item A harmonic oscillator oscillates with amplitude $A$.  If the
+time $t$ is chosen at random, what is the probability that $a \leq
+x(t) \leq a + da$?  (Garrod, problem 1.22)
+
+\item Each second a particle, which was initially at $x=0$, jumps
+either left or right a distance $a$, each with a probability of
+$\frac{1}{2}$.  At time $t_n = n$ the particle is at location $x_k =
+ka$ with probability ${\rm Pr}(n,k)$.  Calculate ${\rm Pr}(n,k)$ and
+show that, as $n$ and $k$ approach infinity, your result agrees with
+the central limit theorem.  (I.e., show that ${\rm Pr}(n,k)$ is a
+Gaussian distribution.)  (Garrod, problem 1.27)  This problem is a
+little tricky.  It's a standard illustration of the central limit
+theorem.  As such, you should be able to find textbook references that
+will help.
+
+\item The probability $W(n)$ that an event characterized by a
+probability $p$ occurs $n$ times in $N$ trials was shown to be given
+by the binomial distribution:
+\begin{equation}
+  W(n) \, = \, \frac{N!}{n!(N-n)!}\, p^n(1-p)^{N-n} \;.
+\label{binomial}
+\end{equation}
+Consider a situation where the probability $p$ is small ($p \ll 1$)
+and where one is interested in the case $n \ll N$.  (Note that if $N$
+is large, $W(n)$ becomes very small if $n \rightarrow N$ because of
+the smallness of the factor $p^n$ when $p \ll 1$.  Hence $W(n)$ is
+indeed only appreciable when $n \ll N$.) several approximations can
+then be made to reduce Eq.~(\ref{binomial}) to simpler form.
+\begin{enumerate}
+
+\item Taylor expanding $\ln(1-p)$ for small $p$, show that
+$(1-p)^{N-n} \approx e^{-Np} $. 
+
+\item Show that $N!/(N-n)! \approx N^n $. 
+
+\item Finally, show that
+\begin{equation}
+  W(n) \, = \, \frac{ \lambda^n}{n!} e^{-\lambda} \;,
+\end{equation}
+where $\lambda \equiv Np$ is the mean number of events.  
+(Reif, problem 1.9)
+\end{enumerate}
+
+
+\item Problem 5.24 from Chandler.  This problem involves a figure
+which I'm not going to try and reproduce.  Find a copy of Chandler and
+photocopy pp.155-6.    
+
+
+
+\end{enumerate}
+
+
+
+\end{document}
+
+

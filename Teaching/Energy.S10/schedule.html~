@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>physics and mathematics of sustainable energy</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="container">
+<div id="header">
+<h1 align=right>physics and mathematics of</h1>
+<h5 align=right font=+2> sustainable energy</h5>
+<h2 align=right><a href="http://www.coa.edu">college of the
+    atlantic</a></h2>  
+<h2 align=right>anna e. demeo & david p. feldman</a> </h2>  
+<h2 align=right>spring 2010</h2>
+<br />
+<hr />
+
+</div> <!-- end header -->
+
+<div class="spacer"></div>
+<div id="left">
+
+<div id="leftcontent">
+
+  <ul>
+    <li><a href="./index.html">Home</a></li>
+    <li><a href="./overview.html">Course Info</a></li>
+<!--<li><a href="./description.html">Course Description</a></li>-->
+    <li><a href="./homework.html">Assignments</a></li>
+    <li><a href="./schedule.html">Schedule</a></li>
+    <li><a href="./labs.html">Labs</a></li>
+    <li><a href="./notes.html">Lecture Notes</a></li>
+    <li><a href="./links">Links</a></li>
+    <li><a href="./enrollment.html">Enrollment</a></li>
+    </ul>
+<p>&nbsp;</p>
+
+
+
+</div> <!-- end left content -->
+</div> <!-- end left division -->
+
+<div id="main">
+<div id="maincontent">
+
+<p class="no-box"><b>This will be updated frequently.</b><br>
+
+<h3>Week One</h3><p class="no-box">March 29-April 2.
+<ul>
+<li><b>Class 1</b>:  Introduction to the course.  Introductory discussion of
+  energy, conservation of energy, and power. 
+<li><b>Lab 1</b>:  Measurement and watt meters.  Before lab sign up for a
+  google account if you don't already have one.  You'll need this to
+  use google docs. We'll be using google spreadsheets throughout the
+  class. 
+<li><b>Class 2</b>: Read Chapter 1 of SEWTHA.  Bring to class a few
+  benchmarks about population and greenhouse gas emissions.  
+</ul>
+<br>
+
+
+
+<h3>Week Two</h3><p class="no-box">April 5-9.
+<ul>
+<li><b>Class 3</b>: Different types of energy.  Electric current.
+  Generating electricity.  
+<li><b>Lab 2</b>: Build your own electric generator.
+  class. 
+<li><b>Class 4</b>: More units.  Estimation.  Different types of
+  energy. 
+</ul>
+<br>
+
+
+
+<h3>Week Three</h3><p class="no-box">April 12-15.
+<ul>
+<li><b>Class 5</b>: Solar energy basics.
+<li><b>Lab 3</b>: Initial solar energy lab. 
+  class. 
+<li><b>Class 6</b>: Solar energy.
+</ul>
+<br>
+
+
+
+<h3>Week Four</h3><p class="no-box">April 19-23.
+<ul>
+<li><b>Class 7</b>:  Wind power
+<li><b>Lab 4</b>:  Wind power.
+<li><b>Class 8</b>: Wind power
+</ul>
+<br>
+
+
+
+<h3>Week Five</h3><p class="no-box">April 26-30.
+<ul>
+<li><b>Class 7</b>:  
+<li><b>Lab 4</b>:  Freezers --> Refrigerators.
+<li><b>Class 8</b>: 
+</ul>
+<br>
+
+
+
+
+</p>
+
+</div> <!-- end main content section -->
+</div> 
+<div id="footer"><div class="spacer"></div>
+
+<hr />
+<center>
+<p class="no-box">| <a href="http://www.coa.edu">COA</a> | <a href="http://hornacek.coa.edu/dave">Dave</a></p>
+<p>&nbsp;</p>
+</div> <!-- end footer -->
+
+</div> <!-- end container -->
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Applied and Mathematical Statistics</h2>  </title>
+</head>
+
+<body text=303030 link=#303030 vlink="#303030" alink=#ffffff bgcolor=#DB308B>
+
+<!--<body background="/icons/dots_grey.gif">-->
+
+
+<table align=center bgcolor=cccccc width=90% cellpadding=10>
+
+<tr><td>
+<h2 align=center>Applied and Mathematical Statistics</h2>  
+
+<h3 align=center><a href="http://hornacek.coa.edu">David Feldman</a><br>
+<a href="http://home.coa.edu/faculty/webpages/cpetersen/">Chris
+Petersen</a></h3> 
+<h3 align=center><a href="http://www.coa.edu">College of the
+Atlantic</a></h3>   
+<h3 align=center>Winter 2008</h3> 
+<p>
+<br>
+<p>
+<b><a href="overview.html">Course Overview</a><b><br>
+<b><a href="links.html">Links</a></b><p>
+<b>Homework Assignments</b><br>
+<ol>
+  <li><a href="./homework.1.html">One</a>
+</ol>
+
+<p>
+
+</td></tr>
+</table>
+
+</html>
+

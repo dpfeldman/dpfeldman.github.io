@@ -1,0 +1,129 @@
+<html>
+<head>
+<title> Mathematics at COA </title>
+</head>
+
+<body background="data.2.jpg" link=003300 vlink=330066>
+
+<br><br>
+
+<center>
+<table align=center width=85% bgcolor=cccccc cellpadding=10>
+
+<tr>
+<td><br>
+<center>
+
+<table CELLPADDING=10>
+<tr>
+<td align=center>
+<h1>Mathematics and Related Courses</h1><h4> at
+ the </h4><h1>College of the Atlantic </h1>
+</td>
+</table>
+</center>
+<p>
+
+
+<ul>
+<li> <b><a href="faq.html">Frequently Asked Questions</a></b> (Updated 3 September 
+2002)<p>
+<li> <b><a href="Course_Descriptions/index.html">Complete List of Courses</a></b><p>
+<li> <b><a href="assessment.html">Math Assessment Test Information</a></b> (No longer administered)<p>
+
+</ul>
+<br>
+
+<h3>2002-03 Schedule</h3>
+<dl>
+
+<dd><b>Fall 2002:</b></dd>
+<dl>
+<dd><a href="Course_Descriptions/BioMechanics.shtml">Biomechanics</a> 
+<dd><a href="Course_Descriptions/StatsII.shtml">Advanced Analysis in Biology</a> 
+</dl>
+
+<dd><b>Winter 2003:</b></dd>
+<dl>
+<dd><a href="Course_Descriptions/CalcI.shtml">Calculus I</a>
+<dd><a href="Course_Descriptions/PhysicsIII.shtml">Physics III:
+Introduction to Quantum Mechanics</a>
+
+
+</dl>
+
+<dd><b>Spring 2003:</b></dd>
+<dl>
+<dd><a href="Course_Descriptions/CalcII.shtml">Calculus II</a>
+<dd>Linear Algebra (New Tutorial)
+</dl>
+</dl>
+
+<h3><i>Tentative</i> 2003-04 Schedule </h3>
+<dl>
+
+<dd>Physics I
+<dd>Physics II
+<dd>Calculus III (Tutorial)
+<dd>Intro to Chaos and Fractals
+<dd>Chemistry II
+<dd>Intro to Statistics
+<dd><a
+href="http://hornacek.coa.edu/dave/Teaching/Course_Descriptions/Data.Analysis.shtml">Field
+Ecology and Data Analysis</a> 
+<dd>Ordinary Differential Equations (or something similar)
+<dd><b>Not</b> Calculus I
+<dd><b>Not</b> Calculus II
+</dl>
+
+<h3><i>Even More Tentative</i> 2004-05 Schedule </h3>
+<dl>
+<dd>Calculus I
+<dd>Calculus II
+<dd><a href="Course_Descriptions/BioMechanics.shtml">Biomechanics</a> 
+<dd>Chemistry II
+
+
+<dd>Intro to Chaos and Fractals
+<dd>Intro to Statistics
+
+
+</dl>
+
+</td>
+</tr>
+
+</table>
+</center>
+
+
+
+<br>
+<center>
+<table align=center width=85% bgcolor=cccccc cellpadding=10 border=0>
+<tr>
+<td><br>
+<center><b>
+[<a href="http://hornacek.coa.edu/dave/index.html">Dave's Home
+Page</a>] [<a href="http://www.coa.edu">College of the Atlantic Home Page</a>]</h3>
+</b>
+<br>
+</center>
+
+These pages are maintained by <a href="http://hornacek.coa.edu/dave">Dave Feldman</a>, <a 
+href=mailto:dave@hornacek.coa.edu>dave@hornacek.coa.edu</a>.<br>
+This page has been accessed <!--#exec cgi="/cgi-bin/counter.pl"-->
+times since 1 November 1998.<br>
+The current time is  <!--#echo var="DATE_LOCAL"-->.<br>
+This document was last modified on <!--#echo var="LAST_MODIFIED"-->
+
+
+</td>
+</tr>
+</table>
+</center>
+
+<p>
+</html>
+
+

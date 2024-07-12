@@ -1,0 +1,61 @@
+<HTML>
+<HEAD>
+   <TITLE>Evaluation Writer</TITLE>
+</HEAD>
+
+
+
+<P>
+<center>
+<h1>Automatic Narrative Evaluation Writer </h1>
+</center>
+<HR>
+<br>
+<form action="/cgi-bin/fogcode.pl" METHOD="POST">
+
+<b>First, fill out this form</b>
+
+<table>
+<td>Enter the student's first name: </td>
+<td><input type="text" NAME="first_name" size = 15><br></td>
+<tr>
+<td>Enter the student's last name: </td>
+<td><input type="text" NAME="last_name" size = 15><br></td>
+<tr>
+<td>Enter the sex of the student:<br> [Female=0, Male=1] </td>
+<td><input type="text" NAME="sex" size = 3><br></td>
+<tr>
+<td>Enter the title of the course: </td>
+<td><input type="text" NAME="course_name" size = 15><br></td>
+<tr>
+<td>Enter the term the course was offered<br> [Fall, Winter, Spring]: </td>
+<td><input type="text" NAME="term" size = 15><br></td>
+<tr>
+<td>Enter the year the course was offered<br> [e.g., 2004]: </td>
+<td><input type="text" NAME="year" size = 10><br></td>
+<tr>
+<td>Enter the number of sentences you want in your evaluation: </td>
+<td><input type="text" NAME="num_of_sentences" size = 5 value=10><br></td>
+
+</table>
+
+<p>
+
+<b>Then request your evaluation.</b> <p>
+
+<input type="submit" value="Request an Evaluation">
+
+<!--<input type="reset"  value="Reset the form">-->
+
+</form>
+<p>
+<br>
+<center>
+<h4>
+[<a href="http://www.coa.edu">COA</a>] 
+[<a href="./index.html">Faculty Home Page</a>] 
+[<a href="../index.html">Dave's Home Page</a>]
+</h4>
+
+
+</HTML>

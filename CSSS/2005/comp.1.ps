@@ -1,0 +1,2204 @@
+%!PS-Adobe-2.0
+%%Creator: dvips(k) 5.92b Copyright 2002 Radical Eye Software
+%%Title: comp.theory.1.dvi
+%%Pages: 17
+%%PageOrder: Ascend
+%%BoundingBox: 0 0 596 842
+%%DocumentFonts: Helvetica Helvetica-Bold CMSY10 CMSY7 Courier CMR10
+%%+ CMR17 CMEX10 CMMI10 CMSY8 Helvetica-Oblique
+%%EndComments
+%DVIPSWebPage: (www.radicaleye.com)
+%DVIPSCommandLine: dvips -o comp.1.ps -Ppdf comp.theory.1.dvi
+%DVIPSParameters: dpi=8000, compressed
+%DVIPSSource:  TeX output 2006.01.27:0218
+%%BeginProcSet: tex.pro
+%!
+/TeXDict 300 dict def TeXDict begin/N{def}def/B{bind def}N/S{exch}N/X{S
+N}B/A{dup}B/TR{translate}N/isls false N/vsize 11 72 mul N/hsize 8.5 72
+mul N/landplus90{false}def/@rigin{isls{[0 landplus90{1 -1}{-1 1}ifelse 0
+0 0]concat}if 72 Resolution div 72 VResolution div neg scale isls{
+landplus90{VResolution 72 div vsize mul 0 exch}{Resolution -72 div hsize
+mul 0}ifelse TR}if Resolution VResolution vsize -72 div 1 add mul TR[
+matrix currentmatrix{A A round sub abs 0.00001 lt{round}if}forall round
+exch round exch]setmatrix}N/@landscape{/isls true N}B/@manualfeed{
+statusdict/manualfeed true put}B/@copies{/#copies X}B/FMat[1 0 0 -1 0 0]
+N/FBB[0 0 0 0]N/nn 0 N/IEn 0 N/ctr 0 N/df-tail{/nn 8 dict N nn begin
+/FontType 3 N/FontMatrix fntrx N/FontBBox FBB N string/base X array
+/BitMaps X/BuildChar{CharBuilder}N/Encoding IEn N end A{/foo setfont}2
+array copy cvx N load 0 nn put/ctr 0 N[}B/sf 0 N/df{/sf 1 N/fntrx FMat N
+df-tail}B/dfs{div/sf X/fntrx[sf 0 0 sf neg 0 0]N df-tail}B/E{pop nn A
+definefont setfont}B/Cw{Cd A length 5 sub get}B/Ch{Cd A length 4 sub get
+}B/Cx{128 Cd A length 3 sub get sub}B/Cy{Cd A length 2 sub get 127 sub}
+B/Cdx{Cd A length 1 sub get}B/Ci{Cd A type/stringtype ne{ctr get/ctr ctr
+1 add N}if}B/CharBuilder{save 3 1 roll S A/base get 2 index get S
+/BitMaps get S get/Cd X pop/ctr 0 N Cdx 0 Cx Cy Ch sub Cx Cw add Cy
+setcachedevice Cw Ch true[1 0 0 -1 -.1 Cx sub Cy .1 sub]{Ci}imagemask
+restore}B/D{/cc X A type/stringtype ne{]}if nn/base get cc ctr put nn
+/BitMaps get S ctr S sf 1 ne{A A length 1 sub A 2 index S get sf div put
+}if put/ctr ctr 1 add N}B/I{cc 1 add D}B/bop{userdict/bop-hook known{
+bop-hook}if/SI save N @rigin 0 0 moveto/V matrix currentmatrix A 1 get A
+mul exch 0 get A mul add .99 lt{/QV}{/RV}ifelse load def pop pop}N/eop{
+SI restore userdict/eop-hook known{eop-hook}if showpage}N/@start{
+userdict/start-hook known{start-hook}if pop/VResolution X/Resolution X
+1000 div/DVImag X/IEn 256 array N 2 string 0 1 255{IEn S A 360 add 36 4
+index cvrs cvn put}for pop 65781.76 div/vsize X 65781.76 div/hsize X}N
+/p{show}N/RMat[1 0 0 -1 0 0]N/BDot 260 string N/Rx 0 N/Ry 0 N/V{}B/RV/v{
+/Ry X/Rx X V}B statusdict begin/product where{pop false[(Display)(NeXT)
+(LaserWriter 16/600)]{A length product length le{A length product exch 0
+exch getinterval eq{pop true exit}if}{pop}ifelse}forall}{false}ifelse
+end{{gsave TR -.1 .1 TR 1 1 scale Rx Ry false RMat{BDot}imagemask
+grestore}}{{gsave TR -.1 .1 TR Rx Ry scale 1 1 false RMat{BDot}
+imagemask grestore}}ifelse B/QV{gsave newpath transform round exch round
+exch itransform moveto Rx 0 rlineto 0 Ry neg rlineto Rx neg 0 rlineto
+fill grestore}B/a{moveto}B/delta 0 N/tail{A/delta X 0 rmoveto}B/M{S p
+delta add tail}B/b{S p tail}B/c{-4 M}B/d{-3 M}B/e{-2 M}B/f{-1 M}B/g{0 M}
+B/h{1 M}B/i{2 M}B/j{3 M}B/k{4 M}B/w{0 rmoveto}B/l{p -4 w}B/m{p -3 w}B/n{
+p -2 w}B/o{p -1 w}B/q{p 1 w}B/r{p 2 w}B/s{p 3 w}B/t{p 4 w}B/x{0 S
+rmoveto}B/y{3 2 roll p a}B/bos{/SS save N}B/eos{SS restore}B end
+
+%%EndProcSet
+%%BeginProcSet: alt-rule.pro
+%!
+% Patch by TVZ
+% Makes dvips files draw rules with stroke rather than fill.
+% Makes narrow rules more predictable at low resolutions
+% after distilling to PDF.
+% May have unknown consequences for very thick rules.
+% Tested only with dvips 5.85(k).
+TeXDict begin
+/QV {
+  gsave newpath /ruleY X /ruleX X
+  Rx Ry gt
+  { ruleX ruleY Ry 2 div sub moveto Rx 0 rlineto Ry }
+  { ruleX Rx 2 div add ruleY moveto 0 Ry neg rlineto Rx }
+  ifelse
+  setlinewidth 0 setlinecap stroke grestore
+} bind def
+end
+
+%%EndProcSet
+%%BeginProcSet: texc.pro
+%!
+/TeXDict 300 dict def TeXDict begin/N{def}def/B{bind def}N/S{exch}N/X{S
+N}B/A{dup}B/TR{translate}N/isls false N/vsize 11 72 mul N/hsize 8.5 72
+mul N/landplus90{false}def/@rigin{isls{[0 landplus90{1 -1}{-1 1}ifelse 0
+0 0]concat}if 72 Resolution div 72 VResolution div neg scale isls{
+landplus90{VResolution 72 div vsize mul 0 exch}{Resolution -72 div hsize
+mul 0}ifelse TR}if Resolution VResolution vsize -72 div 1 add mul TR[
+matrix currentmatrix{A A round sub abs 0.00001 lt{round}if}forall round
+exch round exch]setmatrix}N/@landscape{/isls true N}B/@manualfeed{
+statusdict/manualfeed true put}B/@copies{/#copies X}B/FMat[1 0 0 -1 0 0]
+N/FBB[0 0 0 0]N/nn 0 N/IEn 0 N/ctr 0 N/df-tail{/nn 8 dict N nn begin
+/FontType 3 N/FontMatrix fntrx N/FontBBox FBB N string/base X array
+/BitMaps X/BuildChar{CharBuilder}N/Encoding IEn N end A{/foo setfont}2
+array copy cvx N load 0 nn put/ctr 0 N[}B/sf 0 N/df{/sf 1 N/fntrx FMat N
+df-tail}B/dfs{div/sf X/fntrx[sf 0 0 sf neg 0 0]N df-tail}B/E{pop nn A
+definefont setfont}B/Cw{Cd A length 5 sub get}B/Ch{Cd A length 4 sub get
+}B/Cx{128 Cd A length 3 sub get sub}B/Cy{Cd A length 2 sub get 127 sub}
+B/Cdx{Cd A length 1 sub get}B/Ci{Cd A type/stringtype ne{ctr get/ctr ctr
+1 add N}if}B/id 0 N/rw 0 N/rc 0 N/gp 0 N/cp 0 N/G 0 N/CharBuilder{save 3
+1 roll S A/base get 2 index get S/BitMaps get S get/Cd X pop/ctr 0 N Cdx
+0 Cx Cy Ch sub Cx Cw add Cy setcachedevice Cw Ch true[1 0 0 -1 -.1 Cx
+sub Cy .1 sub]/id Ci N/rw Cw 7 add 8 idiv string N/rc 0 N/gp 0 N/cp 0 N{
+rc 0 ne{rc 1 sub/rc X rw}{G}ifelse}imagemask restore}B/G{{id gp get/gp
+gp 1 add N A 18 mod S 18 idiv pl S get exec}loop}B/adv{cp add/cp X}B
+/chg{rw cp id gp 4 index getinterval putinterval A gp add/gp X adv}B/nd{
+/cp 0 N rw exit}B/lsh{rw cp 2 copy get A 0 eq{pop 1}{A 255 eq{pop 254}{
+A A add 255 and S 1 and or}ifelse}ifelse put 1 adv}B/rsh{rw cp 2 copy
+get A 0 eq{pop 128}{A 255 eq{pop 127}{A 2 idiv S 128 and or}ifelse}
+ifelse put 1 adv}B/clr{rw cp 2 index string putinterval adv}B/set{rw cp
+fillstr 0 4 index getinterval putinterval adv}B/fillstr 18 string 0 1 17
+{2 copy 255 put pop}for N/pl[{adv 1 chg}{adv 1 chg nd}{1 add chg}{1 add
+chg nd}{adv lsh}{adv lsh nd}{adv rsh}{adv rsh nd}{1 add adv}{/rc X nd}{
+1 add set}{1 add clr}{adv 2 chg}{adv 2 chg nd}{pop nd}]A{bind pop}
+forall N/D{/cc X A type/stringtype ne{]}if nn/base get cc ctr put nn
+/BitMaps get S ctr S sf 1 ne{A A length 1 sub A 2 index S get sf div put
+}if put/ctr ctr 1 add N}B/I{cc 1 add D}B/bop{userdict/bop-hook known{
+bop-hook}if/SI save N @rigin 0 0 moveto/V matrix currentmatrix A 1 get A
+mul exch 0 get A mul add .99 lt{/QV}{/RV}ifelse load def pop pop}N/eop{
+SI restore userdict/eop-hook known{eop-hook}if showpage}N/@start{
+userdict/start-hook known{start-hook}if pop/VResolution X/Resolution X
+1000 div/DVImag X/IEn 256 array N 2 string 0 1 255{IEn S A 360 add 36 4
+index cvrs cvn put}for pop 65781.76 div/vsize X 65781.76 div/hsize X}N
+/p{show}N/RMat[1 0 0 -1 0 0]N/BDot 260 string N/Rx 0 N/Ry 0 N/V{}B/RV/v{
+/Ry X/Rx X V}B statusdict begin/product where{pop false[(Display)(NeXT)
+(LaserWriter 16/600)]{A length product length le{A length product exch 0
+exch getinterval eq{pop true exit}if}{pop}ifelse}forall}{false}ifelse
+end{{gsave TR -.1 .1 TR 1 1 scale Rx Ry false RMat{BDot}imagemask
+grestore}}{{gsave TR -.1 .1 TR Rx Ry scale 1 1 false RMat{BDot}
+imagemask grestore}}ifelse B/QV{gsave newpath transform round exch round
+exch itransform moveto Rx 0 rlineto 0 Ry neg rlineto Rx neg 0 rlineto
+fill grestore}B/a{moveto}B/delta 0 N/tail{A/delta X 0 rmoveto}B/M{S p
+delta add tail}B/b{S p tail}B/c{-4 M}B/d{-3 M}B/e{-2 M}B/f{-1 M}B/g{0 M}
+B/h{1 M}B/i{2 M}B/j{3 M}B/k{4 M}B/w{0 rmoveto}B/l{p -4 w}B/m{p -3 w}B/n{
+p -2 w}B/o{p -1 w}B/q{p 1 w}B/r{p 2 w}B/s{p 3 w}B/t{p 4 w}B/x{0 S
+rmoveto}B/y{3 2 roll p a}B/bos{/SS save N}B/eos{SS restore}B end
+
+%%EndProcSet
+%%BeginProcSet: 8r.enc
+% File  8r.enc as of 2002-03-12 for PSNFSS 9
+%
+% This is the encoding vector for Type1 and TrueType fonts to be used
+% with TeX.  This file is part of the PSNFSS bundle, version 9
+% 
+% Authors: S. Rahtz, P. MacKay, Alan Jeffrey, B. Horn, K. Berry, W. Schmidt
+%
+% Idea is to have all the characters normally included in Type 1 fonts
+% available for typesetting. This is effectively the characters in Adobe
+% Standard Encoding + ISO Latin 1 + extra characters from Lucida + Euro.
+% 
+% Character code assignments were made as follows:
+% 
+% (1) the Windows ANSI characters are almost all in their Windows ANSI
+% positions, because some Windows users cannot easily reencode the
+% fonts, and it makes no difference on other systems. The only Windows
+% ANSI characters not available are those that make no sense for
+% typesetting -- rubout (127 decimal), nobreakspace (160), softhyphen
+% (173). quotesingle and grave are moved just because it's such an
+% irritation not having them in TeX positions.
+% 
+% (2) Remaining characters are assigned arbitrarily to the lower part
+% of the range, avoiding 0, 10 and 13 in case we meet dumb software.
+% 
+% (3) Y&Y Lucida Bright includes some extra text characters; in the
+% hopes that other PostScript fonts, perhaps created for public
+% consumption, will include them, they are included starting at 0x12.
+% 
+% (4) Remaining positions left undefined are for use in (hopefully)
+% upward-compatible revisions, if someday more characters are generally
+% available.
+% 
+% (5) hyphen appears twice for compatibility with both ASCII and Windows.
+%
+% (6) /Euro is assigned to 128, as in Windows ANSI
+% 
+/TeXBase1Encoding [
+% 0x00 (encoded characters from Adobe Standard not in Windows 3.1)
+  /.notdef /dotaccent /fi /fl
+  /fraction /hungarumlaut /Lslash /lslash
+  /ogonek /ring /.notdef
+  /breve /minus /.notdef 
+% These are the only two remaining unencoded characters, so may as
+% well include them.
+  /Zcaron /zcaron 
+% 0x10
+ /caron /dotlessi 
+% (unusual TeX characters available in, e.g., Lucida Bright)
+ /dotlessj /ff /ffi /ffl 
+ /.notdef /.notdef /.notdef /.notdef
+ /.notdef /.notdef /.notdef /.notdef
+ % very contentious; it's so painful not having quoteleft and quoteright
+ % at 96 and 145 that we move the things normally found there down to here.
+ /grave /quotesingle 
+% 0x20 (ASCII begins)
+ /space /exclam /quotedbl /numbersign
+ /dollar /percent /ampersand /quoteright
+ /parenleft /parenright /asterisk /plus /comma /hyphen /period /slash
+% 0x30
+ /zero /one /two /three /four /five /six /seven
+ /eight /nine /colon /semicolon /less /equal /greater /question
+% 0x40
+ /at /A /B /C /D /E /F /G /H /I /J /K /L /M /N /O
+% 0x50
+ /P /Q /R /S /T /U /V /W
+ /X /Y /Z /bracketleft /backslash /bracketright /asciicircum /underscore
+% 0x60
+ /quoteleft /a /b /c /d /e /f /g /h /i /j /k /l /m /n /o
+% 0x70
+ /p /q /r /s /t /u /v /w
+ /x /y /z /braceleft /bar /braceright /asciitilde
+ /.notdef % rubout; ASCII ends
+% 0x80
+ /Euro /.notdef /quotesinglbase /florin
+ /quotedblbase /ellipsis /dagger /daggerdbl
+ /circumflex /perthousand /Scaron /guilsinglleft
+ /OE /.notdef /.notdef /.notdef
+% 0x90
+ /.notdef /.notdef /.notdef /quotedblleft
+ /quotedblright /bullet /endash /emdash
+ /tilde /trademark /scaron /guilsinglright
+ /oe /.notdef /.notdef /Ydieresis
+% 0xA0
+ /.notdef % nobreakspace
+ /exclamdown /cent /sterling
+ /currency /yen /brokenbar /section
+ /dieresis /copyright /ordfeminine /guillemotleft
+ /logicalnot
+ /hyphen % Y&Y (also at 45); Windows' softhyphen
+ /registered
+ /macron
+% 0xD0
+ /degree /plusminus /twosuperior /threesuperior
+ /acute /mu /paragraph /periodcentered
+ /cedilla /onesuperior /ordmasculine /guillemotright
+ /onequarter /onehalf /threequarters /questiondown
+% 0xC0
+ /Agrave /Aacute /Acircumflex /Atilde /Adieresis /Aring /AE /Ccedilla
+ /Egrave /Eacute /Ecircumflex /Edieresis
+ /Igrave /Iacute /Icircumflex /Idieresis
+% 0xD0
+ /Eth /Ntilde /Ograve /Oacute
+ /Ocircumflex /Otilde /Odieresis /multiply
+ /Oslash /Ugrave /Uacute /Ucircumflex
+ /Udieresis /Yacute /Thorn /germandbls
+% 0xE0
+ /agrave /aacute /acircumflex /atilde
+ /adieresis /aring /ae /ccedilla
+ /egrave /eacute /ecircumflex /edieresis
+ /igrave /iacute /icircumflex /idieresis
+% 0xF0
+ /eth /ntilde /ograve /oacute
+ /ocircumflex /otilde /odieresis /divide
+ /oslash /ugrave /uacute /ucircumflex
+ /udieresis /yacute /thorn /ydieresis
+] def
+
+%%EndProcSet
+%%BeginProcSet: bbad153f.enc
+% Thomas Esser, Dec 2002. public domain
+%
+% Encoding for:
+%     cmsy10 cmsy5 cmsy6 cmsy7 cmsy8 cmsy9
+%
+/TeXbbad153fEncoding [
+/minus /periodcentered /multiply /asteriskmath /divide /diamondmath
+/plusminus /minusplus /circleplus /circleminus /circlemultiply
+/circledivide /circledot /circlecopyrt /openbullet /bullet
+/equivasymptotic /equivalence /reflexsubset /reflexsuperset /lessequal
+/greaterequal /precedesequal /followsequal /similar /approxequal
+/propersubset /propersuperset /lessmuch /greatermuch /precedes /follows
+/arrowleft /arrowright /arrowup /arrowdown /arrowboth /arrownortheast
+/arrowsoutheast /similarequal /arrowdblleft /arrowdblright /arrowdblup
+/arrowdbldown /arrowdblboth /arrownorthwest /arrowsouthwest /proportional
+/prime /infinity /element /owner /triangle /triangleinv /negationslash
+/mapsto /universal /existential /logicalnot /emptyset /Rfractur /Ifractur
+/latticetop /perpendicular /aleph /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /union /intersection
+/unionmulti /logicaland /logicalor /turnstileleft /turnstileright
+/floorleft /floorright /ceilingleft /ceilingright /braceleft /braceright
+/angbracketleft /angbracketright /bar /bardbl /arrowbothv /arrowdblbothv
+/backslash /wreathproduct /radical /coproduct /nabla /integral
+/unionsq /intersectionsq /subsetsqequal /supersetsqequal /section
+/dagger /daggerdbl /paragraph /club /diamond /heart /spade /arrowleft
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/minus /periodcentered /multiply /asteriskmath /divide /diamondmath
+/plusminus /minusplus /circleplus /circleminus /.notdef /.notdef
+/circlemultiply /circledivide /circledot /circlecopyrt /openbullet
+/bullet /equivasymptotic /equivalence /reflexsubset /reflexsuperset
+/lessequal /greaterequal /precedesequal /followsequal /similar
+/approxequal /propersubset /propersuperset /lessmuch /greatermuch
+/precedes /follows /arrowleft /spade /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+] def
+
+%%EndProcSet
+%%BeginProcSet: f7b6d320.enc
+% Thomas Esser, Dec 2002. public domain
+%
+% Encoding for:
+%     cmb10 cmbx10 cmbx12 cmbx5 cmbx6 cmbx7 cmbx8 cmbx9 cmbxsl10
+%     cmdunh10 cmr10 cmr12 cmr17cmr6 cmr7 cmr8 cmr9 cmsl10 cmsl12 cmsl8
+%     cmsl9 cmss10cmss12 cmss17 cmss8 cmss9 cmssbx10 cmssdc10 cmssi10
+%     cmssi12 cmssi17 cmssi8cmssi9 cmssq8 cmssqi8 cmvtt10
+%
+/TeXf7b6d320Encoding [
+/Gamma /Delta /Theta /Lambda /Xi /Pi /Sigma /Upsilon /Phi /Psi /Omega
+/ff /fi /fl /ffi /ffl /dotlessi /dotlessj /grave /acute /caron /breve
+/macron /ring /cedilla /germandbls /ae /oe /oslash /AE /OE /Oslash
+/suppress /exclam /quotedblright /numbersign /dollar /percent /ampersand
+/quoteright /parenleft /parenright /asterisk /plus /comma /hyphen
+/period /slash /zero /one /two /three /four /five /six /seven /eight
+/nine /colon /semicolon /exclamdown /equal /questiondown /question /at
+/A /B /C /D /E /F /G /H /I /J /K /L /M /N /O /P /Q /R /S /T /U /V /W /X
+/Y /Z /bracketleft /quotedblleft /bracketright /circumflex /dotaccent
+/quoteleft /a /b /c /d /e /f /g /h /i /j /k /l /m /n /o /p /q /r /s /t /u
+/v /w /x /y /z /endash /emdash /hungarumlaut /tilde /dieresis /suppress
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /space
+/Gamma /Delta /Theta /Lambda /Xi /Pi /Sigma /Upsilon /Phi /Psi /.notdef
+/.notdef /Omega /ff /fi /fl /ffi /ffl /dotlessi /dotlessj /grave /acute
+/caron /breve /macron /ring /cedilla /germandbls /ae /oe /oslash /AE
+/OE /Oslash /suppress /dieresis /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+] def
+
+%%EndProcSet
+%%BeginProcSet: aae443f0.enc
+% Thomas Esser, Dec 2002. public domain
+%
+% Encoding for:
+%     cmmi10 cmmi12 cmmi5 cmmi6 cmmi7 cmmi8 cmmi9 cmmib10
+%
+/TeXaae443f0Encoding [
+/Gamma /Delta /Theta /Lambda /Xi /Pi /Sigma /Upsilon /Phi /Psi /Omega
+/alpha /beta /gamma /delta /epsilon1 /zeta /eta /theta /iota /kappa
+/lambda /mu /nu /xi /pi /rho /sigma /tau /upsilon /phi /chi /psi
+/omega /epsilon /theta1 /pi1 /rho1 /sigma1 /phi1 /arrowlefttophalf
+/arrowleftbothalf /arrowrighttophalf /arrowrightbothalf /arrowhookleft
+/arrowhookright /triangleright /triangleleft /zerooldstyle /oneoldstyle
+/twooldstyle /threeoldstyle /fouroldstyle /fiveoldstyle /sixoldstyle
+/sevenoldstyle /eightoldstyle /nineoldstyle /period /comma /less /slash
+/greater /star /partialdiff /A /B /C /D /E /F /G /H /I /J /K /L /M /N
+/O /P /Q /R /S /T /U /V /W /X /Y /Z /flat /natural /sharp /slurbelow
+/slurabove /lscript /a /b /c /d /e /f /g /h /i /j /k /l /m /n /o /p
+/q /r /s /t /u /v /w /x /y /z /dotlessi /dotlessj /weierstrass /vector
+/tie /psi /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/space /Gamma /Delta /Theta /Lambda /Xi /Pi /Sigma /Upsilon /Phi /Psi
+/.notdef /.notdef /Omega /alpha /beta /gamma /delta /epsilon1 /zeta /eta
+/theta /iota /kappa /lambda /mu /nu /xi /pi /rho /sigma /tau /upsilon
+/phi /chi /psi /tie /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef
+] def
+
+%%EndProcSet
+%%BeginProcSet: texps.pro
+%!
+TeXDict begin/rf{findfont dup length 1 add dict begin{1 index/FID ne 2
+index/UniqueID ne and{def}{pop pop}ifelse}forall[1 index 0 6 -1 roll
+exec 0 exch 5 -1 roll VResolution Resolution div mul neg 0 0]FontType 0
+ne{/Metrics exch def dict begin Encoding{exch dup type/integertype ne{
+pop pop 1 sub dup 0 le{pop}{[}ifelse}{FontMatrix 0 get div Metrics 0 get
+div def}ifelse}forall Metrics/Metrics currentdict end def}{{1 index type
+/nametype eq{exit}if exch pop}loop}ifelse[2 index currentdict end
+definefont 3 -1 roll makefont/setfont cvx]cvx def}def/ObliqueSlant{dup
+sin S cos div neg}B/SlantFont{4 index mul add}def/ExtendFont{3 -1 roll
+mul exch}def/ReEncodeFont{CharStrings rcheck{/Encoding false def dup[
+exch{dup CharStrings exch known not{pop/.notdef/Encoding true def}if}
+forall Encoding{]exch pop}{cleartomark}ifelse}if/Encoding exch def}def
+end
+
+%%EndProcSet
+%%BeginProcSet: special.pro
+%!
+TeXDict begin/SDict 200 dict N SDict begin/@SpecialDefaults{/hs 612 N
+/vs 792 N/ho 0 N/vo 0 N/hsc 1 N/vsc 1 N/ang 0 N/CLIP 0 N/rwiSeen false N
+/rhiSeen false N/letter{}N/note{}N/a4{}N/legal{}N}B/@scaleunit 100 N
+/@hscale{@scaleunit div/hsc X}B/@vscale{@scaleunit div/vsc X}B/@hsize{
+/hs X/CLIP 1 N}B/@vsize{/vs X/CLIP 1 N}B/@clip{/CLIP 2 N}B/@hoffset{/ho
+X}B/@voffset{/vo X}B/@angle{/ang X}B/@rwi{10 div/rwi X/rwiSeen true N}B
+/@rhi{10 div/rhi X/rhiSeen true N}B/@llx{/llx X}B/@lly{/lly X}B/@urx{
+/urx X}B/@ury{/ury X}B/magscale true def end/@MacSetUp{userdict/md known
+{userdict/md get type/dicttype eq{userdict begin md length 10 add md
+maxlength ge{/md md dup length 20 add dict copy def}if end md begin
+/letter{}N/note{}N/legal{}N/od{txpose 1 0 mtx defaultmatrix dtransform S
+atan/pa X newpath clippath mark{transform{itransform moveto}}{transform{
+itransform lineto}}{6 -2 roll transform 6 -2 roll transform 6 -2 roll
+transform{itransform 6 2 roll itransform 6 2 roll itransform 6 2 roll
+curveto}}{{closepath}}pathforall newpath counttomark array astore/gc xdf
+pop ct 39 0 put 10 fz 0 fs 2 F/|______Courier fnt invertflag{PaintBlack}
+if}N/txpose{pxs pys scale ppr aload pop por{noflips{pop S neg S TR pop 1
+-1 scale}if xflip yflip and{pop S neg S TR 180 rotate 1 -1 scale ppr 3
+get ppr 1 get neg sub neg ppr 2 get ppr 0 get neg sub neg TR}if xflip
+yflip not and{pop S neg S TR pop 180 rotate ppr 3 get ppr 1 get neg sub
+neg 0 TR}if yflip xflip not and{ppr 1 get neg ppr 0 get neg TR}if}{
+noflips{TR pop pop 270 rotate 1 -1 scale}if xflip yflip and{TR pop pop
+90 rotate 1 -1 scale ppr 3 get ppr 1 get neg sub neg ppr 2 get ppr 0 get
+neg sub neg TR}if xflip yflip not and{TR pop pop 90 rotate ppr 3 get ppr
+1 get neg sub neg 0 TR}if yflip xflip not and{TR pop pop 270 rotate ppr
+2 get ppr 0 get neg sub neg 0 S TR}if}ifelse scaleby96{ppr aload pop 4
+-1 roll add 2 div 3 1 roll add 2 div 2 copy TR .96 dup scale neg S neg S
+TR}if}N/cp{pop pop showpage pm restore}N end}if}if}N/normalscale{
+Resolution 72 div VResolution 72 div neg scale magscale{DVImag dup scale
+}if 0 setgray}N/psfts{S 65781.76 div N}N/startTexFig{/psf$SavedState
+save N userdict maxlength dict begin/magscale true def normalscale
+currentpoint TR/psf$ury psfts/psf$urx psfts/psf$lly psfts/psf$llx psfts
+/psf$y psfts/psf$x psfts currentpoint/psf$cy X/psf$cx X/psf$sx psf$x
+psf$urx psf$llx sub div N/psf$sy psf$y psf$ury psf$lly sub div N psf$sx
+psf$sy scale psf$cx psf$sx div psf$llx sub psf$cy psf$sy div psf$ury sub
+TR/showpage{}N/erasepage{}N/setpagedevice{pop}N/copypage{}N/p 3 def
+@MacSetUp}N/doclip{psf$llx psf$lly psf$urx psf$ury currentpoint 6 2 roll
+newpath 4 copy 4 2 roll moveto 6 -1 roll S lineto S lineto S lineto
+closepath clip newpath moveto}N/endTexFig{end psf$SavedState restore}N
+/@beginspecial{SDict begin/SpecialSave save N gsave normalscale
+currentpoint TR @SpecialDefaults count/ocount X/dcount countdictstack N}
+N/@setspecial{CLIP 1 eq{newpath 0 0 moveto hs 0 rlineto 0 vs rlineto hs
+neg 0 rlineto closepath clip}if ho vo TR hsc vsc scale ang rotate
+rwiSeen{rwi urx llx sub div rhiSeen{rhi ury lly sub div}{dup}ifelse
+scale llx neg lly neg TR}{rhiSeen{rhi ury lly sub div dup scale llx neg
+lly neg TR}if}ifelse CLIP 2 eq{newpath llx lly moveto urx lly lineto urx
+ury lineto llx ury lineto closepath clip}if/showpage{}N/erasepage{}N
+/setpagedevice{pop}N/copypage{}N newpath}N/@endspecial{count ocount sub{
+pop}repeat countdictstack dcount sub{end}repeat grestore SpecialSave
+restore end}N/@defspecial{SDict begin}N/@fedspecial{end}B/li{lineto}B
+/rl{rlineto}B/rc{rcurveto}B/np{/SaveX currentpoint/SaveY X N 1
+setlinecap newpath}N/st{stroke SaveX SaveY moveto}N/fil{fill SaveX SaveY
+moveto}N/ellipse{/endangle X/startangle X/yrad X/xrad X/savematrix
+matrix currentmatrix N TR xrad yrad scale 0 0 1 startangle endangle arc
+savematrix setmatrix}N end
+
+%%EndProcSet
+%%BeginFont: CMSY8
+%!PS-AdobeFont-1.1: CMSY8 1.0
+%%CreationDate: 1991 Aug 15 07:22:10
+% Copyright (C) 1997 American Mathematical Society. All Rights Reserved.
+11 dict begin
+/FontInfo 7 dict dup begin
+/version (1.0) readonly def
+/Notice (Copyright (C) 1997 American Mathematical Society. All Rights Reserved) readonly def
+/FullName (CMSY8) readonly def
+/FamilyName (Computer Modern) readonly def
+/Weight (Medium) readonly def
+/ItalicAngle -14.035 def
+/isFixedPitch false def
+end readonly def
+/FontName /CMSY8 def
+/PaintType 0 def
+/FontType 1 def
+/FontMatrix [0.001 0 0 0.001 0 0] readonly def
+/Encoding 256 array
+0 1 255 {1 index exch /.notdef put} for
+dup 0 /.notdef put
+readonly def
+/FontBBox{-30 -955 1185 779}readonly def
+/UniqueID 5000818 def
+currentdict end
+currentfile eexec
+D9D66F633B846A97B686A97E45A3D0AA052F09F9C8ADE9D907C058B87E9B6964
+7D53359E51216774A4EAA1E2B58EC3176BD1184A633B951372B4198D4E8C5EF4
+A213ACB58AA0A658908035BF2ED8531779838A960DFE2B27EA49C37156989C85
+E21B3ABF72E39A89232CD9F4237FC80C9E64E8425AA3BEF7DED60B122A52922A
+221A37D9A807DD01161779DDE7D5FC1B2109839E5B52DFBB2A7C1B5D8E7E8AA0
+5B10EA43D6A8ED61AF5B23D49920D8F79DAB6A59062134D84AC0100187A6CD1F
+80F5DDD9D222ACB1C23326A7656A635C4A241CCD32CBFDF8363206B8AA36E107
+1477F5496111E055C7491002AFF272E46ECC46422F0380D093284870022523FB
+DA1716CC4F2E2CCAD5F173FCBE6EDDB874AD255CD5E5C0F86214393FCB5F5C20
+9C3C2BB5886E36FC3CCC21483C3AC193485A46E9D22BD7201894E4D45ADD9BF1
+CC5CF6A5010B5654AC0BE0DA903DB563B13840BA3015F72E51E3BC80156388BA
+F83C7D393392BCBC227771CDCB976E93302531886DDA73EBC9178917EFD0C20B
+133F1E59A96CCE77DD2377C743046EEF2A8D0CD09C6191F4752EDC959FBF4442
+D681C98FCC499BD1EC5B489A1EE151FDEC267D9919558FB025850740FC02D670
+E76A2765AC8E4D15749D085C2C088F2A1145FD41150B3201F8FDE3977923FC92
+E422DD1D4A2D8CF2D9B7EA537CC5D472842C36987968434EF5BE5C820EADA040
+82CCD992468CB8DDD05AACF9DBF476F35E96F651DF9A01291E46E85F0E18F0CF
+89461FE8C45C00F78A7541F460E704E05351AD72C24613C5C5B8D08AAE153F79
+6E8C44B4485EF8BBF1C258DB26
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+cleartomark
+%%EndFont 
+%%BeginFont: CMMI10
+%!PS-AdobeFont-1.1: CMMI10 1.100
+%%CreationDate: 1996 Jul 23 07:53:57
+% Copyright (C) 1997 American Mathematical Society. All Rights Reserved.
+11 dict begin
+/FontInfo 7 dict dup begin
+/version (1.100) readonly def
+/Notice (Copyright (C) 1997 American Mathematical Society. All Rights Reserved) readonly def
+/FullName (CMMI10) readonly def
+/FamilyName (Computer Modern) readonly def
+/Weight (Medium) readonly def
+/ItalicAngle -14.04 def
+/isFixedPitch false def
+end readonly def
+/FontName /CMMI10 def
+/PaintType 0 def
+/FontType 1 def
+/FontMatrix [0.001 0 0 0.001 0 0] readonly def
+/Encoding 256 array
+0 1 255 {1 index exch /.notdef put} for
+dup 0 /.notdef put
+readonly def
+/FontBBox{-32 -250 1048 750}readonly def
+/UniqueID 5087385 def
+currentdict end
+currentfile eexec
+D9D66F633B846A97B686A97E45A3D0AA0529731C99A784CCBE85B4993B2EEBDE
+3B12D472B7CF54651EF21185116A69AB1096ED4BAD2F646635E019B6417CC77B
+532F85D811C70D1429A19A5307EF63EB5C5E02C89FC6C20F6D9D89E7D91FE470
+B72BEFDA23F5DF76BE05AF4CE93137A219ED8A04A9D7D6FDF37E6B7FCDE0D90B
+986423E5960A5D9FBB4C956556E8DF90CBFAEC476FA36FD9A5C8175C9AF513FE
+D919C2DDD26BDC0D99398B9F4D03D5993DFC0930297866E1CD0A319B6B1FD958
+9E394A533A081C36D456A09920001A3D2199583EB9B84B4DEE08E3D12939E321
+990CD249827D9648574955F61BAAA11263A91B6C3D47A5190165B0C25ABF6D3E
+6EC187E4B05182126BB0D0323D943170B795255260F9FD25F2248D04F45DFBFB
+DEF7FF8B19BFEF637B210018AE02572B389B3F76282BEB29CC301905D388C721
+59616893E774413F48DE0B408BC66DCE3FE17CB9F84D205839D58014D6A88823
+D9320AE93AF96D97A02C4D5A2BB2B8C7925C4578003959C46E3CE1A2F0EAC4BF
+8B9B325E46435BDE60BC54D72BC8ACB5C0A34413AC87045DC7B84646A324B808
+6FD8E34217213E131C3B1510415CE45420688ED9C1D27890EC68BD7C1235FAF9
+1DAB3A369DD2FC3BE5CF9655C7B7EDA7361D7E05E5831B6B8E2EEC542A7B38EE
+03BE4BAC6079D038ACB3C7C916279764547C2D51976BABA94BA9866D79F13909
+95AA39B0F03103A07CBDF441B8C5669F729020AF284B7FF52A29C6255FCAACF1
+74109050FBA2602E72593FBCBFC26E726EE4AEF97B7632BC4F5F353B5C67FED2
+3EA752A4A57B8F7FEFF1D7341D895F0A3A0BE1D8E3391970457A967EFF84F6D8
+47750B1145B8CC5BD96EE7AA99DDC9E06939E383BDA41175233D58AD263EBF19
+AFC0E2F840512D321166547B306C592B8A01E1FA2564B9A26DAC14256414E4C8
+42616728D918C74D13C349F4186EC7B9708B86467425A6FDB3A396562F7EE4D8
+40B43621744CF8A23A6E532649B66C2A0002DD04F8F39618E4F572819DD34837
+B5A08E643FDCA1505AF6A1FA3DDFD1FA758013CAED8ACDDBBB334D664DFF5B53
+956017667271C1FD06DBA26AC7504FCD81979D968F25EE6B725D5262E6406E54
+1A3FACD23081461263FFAF49B4A52311360A311009D6C95D3A45D1DDDA3E00E2
+DAA3F5434D4B25503F35BB427BCB9523A3364BEBB735A5F45B93013E9BE4D739
+DABCC73EE882879B1820E0B9736F5E59B1EDF65D168F7C8606494564BFB9284C
+51B1ED723D193B59B1B8CB705386704B3402ED41AFB92AECA5D94511A6AE72F0
+2077AD5BAA955C416DD0B72BE20934524CB189C34C75012312BFE9E4D18D9F03
+3960517DD0CC07CDB837F09FD7C1A189546DDA2CDF0ADE2318EF6F24F6A0B631
+FE6010893F1CE0D0B99E94326290E9BC9CA7D4F535037778D9F5DC33B9F7BECA
+002926D16400C1EF76A0370058D445F56178C4EF07383A79683D367F47FE71D5
+370EDC0FBBE41CA5073035A8F72C570D8A53A1B2E1428A0BBEBAC07C20BE18F8
+3811460E6F74DC85DE3FA6D17E6FA330D6C69771505B986D7BFBDDD2D737E80C
+43DB699E641B3541ADCF2D4950D059530AEA6947B3BAD1EA1FACAA72F9E140E5
+150BD07B19BAAA029FEF39B9EF5B2647FFF08F03A22A2FFEE5794D9428E43416
+AC5C50D623AEAA1AA4E5661A2DA95023BF10E8B72566802AEE508689C08BF6BC
+226B8356FFEE027C1792D838956C8C380C7C69960638CF47432B9BC160399677
+D2294433FFB827D19B04F630C8DDB32A754157E2B8B44DCFD0D95D762C843BFE
+074966A473A75708A61676F448ACC8D11B8CFAC571F4A76450741766BBD91887
+66B85F8814FBC8D6C638F462D9BF363B4E193C524B5EB02245311636D8663DDF
+029598115C6DA28A5D7779795CDB7D86F7B7D844E27AD327963389B118B5E262
+1C0BCAD1E8A08162D525EF3ADC634FBCDDD3DEB44C006B7C7614C34397130CB4
+C4BCB998C76D33135054B53F79BB6682F8AC72C084B97F464C1AD07E31D1F641
+8F2961855022779B09BA0BC523822577F1F984577A3941BD5CCDF33126E653C0
+5C4E27AE50605B7758C57FAE92A344AA41813FC6DF298DB74DECDDC36E682555
+BD391F66B65F3A525BE606B59D91FEDBAD8B7716F26A565809CC7A8BC99900A0
+4824F8C58E37026A6D5F786484972A1E37F571D4EC64F5D056BB1CB865D9ECD2
+A888526E45E13DD9F36236FC4680E4DB40B1173894940D7777762A65BFDA9593
+A037F937C6CB17A34068386AAB386389B1ED220A4C79565B42DD696F1888A7CF
+45A164AD38194F50C755749DBC77240E5BBA2C52CD204DE70F013EB877620635
+59A008
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+cleartomark
+%%EndFont 
+%%BeginFont: CMSY10
+%!PS-AdobeFont-1.1: CMSY10 1.0
+%%CreationDate: 1991 Aug 15 07:20:57
+% Copyright (C) 1997 American Mathematical Society. All Rights Reserved.
+11 dict begin
+/FontInfo 7 dict dup begin
+/version (1.0) readonly def
+/Notice (Copyright (C) 1997 American Mathematical Society. All Rights Reserved) readonly def
+/FullName (CMSY10) readonly def
+/FamilyName (Computer Modern) readonly def
+/Weight (Medium) readonly def
+/ItalicAngle -14.035 def
+/isFixedPitch false def
+end readonly def
+/FontName /CMSY10 def
+/PaintType 0 def
+/FontType 1 def
+/FontMatrix [0.001 0 0 0.001 0 0] readonly def
+/Encoding 256 array
+0 1 255 {1 index exch /.notdef put} for
+dup 0 /.notdef put
+readonly def
+/FontBBox{-29 -960 1116 775}readonly def
+/UniqueID 5000820 def
+currentdict end
+currentfile eexec
+D9D66F633B846A97B686A97E45A3D0AA052F09F9C8ADE9D907C058B87E9B6964
+7D53359E51216774A4EAA1E2B58EC3176BD1184A633B951372B4198D4E8C5EF4
+A213ACB58AA0A658908035BF2ED8531779838A960DFE2B27EA49C37156989C85
+E21B3ABF72E39A89232CD9F4237FC80C9E64E8425AA3BEF7DED60B122A52922A
+221A37D9A807DD01161779DDE7D31FF2B87F97C73D63EECDDA4C49501773468A
+27D1663E0B62F461F6E40A5D6676D1D12B51E641C1D4E8E2771864FC104F8CBF
+5B78EC1D88228725F1C453A678F58A7E1B7BD7CA700717D288EB8DA1F57C4F09
+0ABF1D42C5DDD0C384C7E22F8F8047BE1D4C1CC8E33368FB1AC82B4E96146730
+DE3302B2E6B819CB6AE455B1AF3187FFE8071AA57EF8A6616B9CB7941D44EC7A
+71A7BB3DF755178D7D2E4BB69859EFA4BBC30BD6BB1531133FD4D9438FF99F09
+4ECC068A324D75B5F696B8688EEB2F17E5ED34CCD6D047A4E3806D000C199D7C
+515DB70A8D4F6146FE068DC1E5DE8BC57034F6B6A67AB666E15104577F342F68
+CDE6AB4EE8B9CF06DF67425F9573D326EA1930EDC7DDB7D58998F6CEF6494355
+CBDEB0981EE246728B1423D05CB752B0929B3A2B219A84D2CE7E3BD673810937
+68F03773A126CC5B185B7C1DFB78DD73FBA409C5A75B1B70985A5945EB4E7876
+0FBB508D168EB2CF3288180EE32D5D50DBE9E2E630D8EAB4352A271A6FB946D0
+231B2663FB092AB3D924C859DA987A3C2B6835B6F51D6E8B222355C1A5D3F285
+CA521600822CE5FC54C9FECDE17451FD7DA071316345D6F466643611663D1E60
+190A2E6A8F4F30E06A9A24080A56ECC6EDDC938F96B0CC8650B1035AA4B63E02
+85227C970414A602F0573B87B4C42D48774D44379C452EBD263D9EC78798181D
+7582BBE578CA212789B7811513CFD65D4C9DD4C786F8CABC255AABA5CF43307E
+35F742E8951AED113FD2271AB39B5FF2EED570AFD850A25DEFBF4096847CA493
+B55961D24CAB559F8E9457449D14F3FF45AF23EC98BFAECDFE00769CB576C820
+74F366FA1E2E00101332D17167F4134D4D668BA2746ABBF5481A8ED5E1220CDB
+01ECB95F6EFC99FA09DC16B67FAB89A6C588F725EC8474F2FCBD6DF41711A68C
+97B3E1B260A33E3FE923A9EA7F2F1A8707C3BAFA91311C253BEA179DFF34129F
+58D1744A383CBBFB5458D6AB0F40DB4B03296448AEC668E311872152CE64F2D5
+86223856BD7B47EAAABE35B069A5792A4B5369249FE1B03D18D9D61072E65105
+37C32F395804CF87734F02E5FAE7ABBB7597593A3474516B4BAAD5FAC8BE75FC
+D9D1BFB0F57376038A908EB6252956E5A90720A522D91C67F526F425D9709F7F
+85BCBD46818AA8A04AD64806D3298A70A28D2A8E4A09F98E81ED5D78083EA891
+6E19EFA89017BA730CE7BC4CBBD7857AE7D89940C37949D181E1F9ABEDA751FD
+DBA22C98805B56484A6BBCC807F08DC4BDED6CC4BD041A32478906E9A6E3E2C1
+2BAE538B959509A574CAE9B946B254472CF645C1CA53FC04EDBE9BC73DD74F70
+DF58B337AD019BBAC6B75F82988645AA498972EEA3C8093BEB28C7DCBA934739
+4E3360E8788A51FE0F093C08231F1CB37AC76903BBFF91C65A2D8DE9F23ABF34
+B6F880CF94268EB2CC9BAFDD34ED82ED0C777D32563390CF86A5E62C73C51FBA
+E08D8ED354B895B9240C6505737A8649FAA3947BB13CE8FF0002BBF9C224C624
+669115F4C33CD192C5057C6A30F4F2D9FA78C0AC60369A167A8B5631A8E51562
+3883DC8692454386F55C084C0883D3E16AF663E28C39E75E1E38DDEA860830CE
+56B820BC12B2E0D42459AADB974FC074DBE48AACB8B334BC04847BAD0E0CBBDE
+D4EC10FF1EB604E02824E6D77E622CB0C9ADFE3DD6929491EF3C77E67C9D6C17
+FF51D63E2B1167E889CDADC040A26B2360E1985CE69A4F6A2B8AC389341FCD63
+3BD740BEE6EC0D67675558FDB02CC22F2F4D1233CBB1EFD20C9216E9173A859A
+0A388FBC660D1230873431DEEFF905AB68E29FDF6EE37230B59A91AA1094EC41
+7921F671B2AB1A5362ECCBF96BE1FE98210FA37C07EEF90E2597DCCA7EF93B0B
+EA28D339C6C1FF600EA33D8F4A71B72FFEB8320BAA6D3962D2F6D022D37E72CA
+BBFF40F2A87DF0B4CC975A7C4F97E7F63DCA255CAD940B55158C7E8A987923E6
+1199F64B82F599F0AC737AE24C7E0119B13A2C475678B2D50476032FFD40739D
+4170510271BB3F7DCADF0797377716155C0316DD57E04993FDD1C10EC06F8D6F
+87DA2C7B6D6704A3444D59EB85FBD63097233EF369328621D9CFAF2B16111811
+178801D2380D87A2397F56A26A974FCB08A0E9C506C71311B723244CF54B62A6
+BB29F5BBB9DD54AB5DE306C6E85C7E54B84B8F9C8306D06E7FE97B6F6E04CE70
+71DB4DB2CAD61746494B28557C93F1856A7B3FC1B4DB8F7380F40862C7C87E4F
+343DAF7483826AC208FEED8D1CCEF6C428F88FEC1CE12AA93146D9F68ADB44B3
+870885FB24206C88971A87167E70676C2ADDB3635ABA5EE87BEA1B697B241C43
+81B0A0396791AE5A2E7AAF5C77056D0F359C5877C28C8136A5A93FA4CB88C70C
+F62B9C27E75BE34CEBD26E20E33176813E8C099B4E93AE67B885AA96B8DAB243
+EC1B32B1955639869432BBBF8016143A15323C2B06CCC3D9C2B379D68D237A87
+03A730CD9B014FAF695447491D3B040152CC72FD865D0C46E4936E292C243741
+B945E7374F4D34EBF74F58825D16A969D1A82B9D1C85A1D790204105D3D2BAB2
+7C2276C0A8539EDEC258B5009509E53935EFBD24F2B513682AD99366B556B73A
+C1FC32553E5787D6B5ED4ED519CF2DAB
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+cleartomark
+%%EndFont 
+%%BeginFont: CMEX10
+%!PS-AdobeFont-1.1: CMEX10 1.00
+%%CreationDate: 1992 Jul 23 21:22:48
+% Copyright (C) 1997 American Mathematical Society. All Rights Reserved.
+11 dict begin
+/FontInfo 7 dict dup begin
+/version (1.00) readonly def
+/Notice (Copyright (C) 1997 American Mathematical Society. All Rights Reserved) readonly def
+/FullName (CMEX10) readonly def
+/FamilyName (Computer Modern) readonly def
+/Weight (Medium) readonly def
+/ItalicAngle 0 def
+/isFixedPitch false def
+end readonly def
+/FontName /CMEX10 def
+/PaintType 0 def
+/FontType 1 def
+/FontMatrix [0.001 0 0 0.001 0 0] readonly def
+/Encoding 256 array
+0 1 255 {1 index exch /.notdef put} for
+dup 122 /bracehtipdownleft put
+dup 123 /bracehtipdownright put
+dup 124 /bracehtipupleft put
+dup 125 /bracehtipupright put
+readonly def
+/FontBBox{-24 -2960 1454 772}readonly def
+/UniqueID 5000774 def
+currentdict end
+currentfile eexec
+D9D66F633B846A97B686A97E45A3D0AA052A014267B7904EB3C0D3BD0B83D891
+016CA6CA4B712ADEB258FAAB9A130EE605E61F77FC1B738ABC7C51CD46EF8171
+9098D5FEE67660E69A7AB91B58F29A4D79E57022F783EB0FBBB6D4F4EC35014F
+D2DECBA99459A4C59DF0C6EBA150284454E707DC2100C15B76B4C19B84363758
+469A6C558785B226332152109871A9883487DD7710949204DDCF837E6A8708B8
+2BDBF16FBC7512FAA308A093FE5CF5B8CAC6A7BEB5D02276E511FFAF2AE11910
+DE076F24311D94D07CACC323F360887F1EA11BDDA7927FF3325986FDB0ABDFC8
+8E4B40E7988921D551EC0867EBCA44C05657F0DC913E7B3004A5F3E1337B6987
+FEBC45F989C8DC6DC0AD577E903F05D0D54208A0AE7F28C734F130C133B48422
+BED48639A2B74E4C08F2E710E24A99F347E0F4394CE64EACB549576E89044E52
+EABE595BC964156D9D8C2BAB0F49664E951D7C1A3D1789C47F03C7051A63D5E8
+DF04FAAC47351E82CAE0794AA9692C6452688A74A7A6A7AD09B8A9783C235EC1
+EA2156261B8FB331827145DE315B6EC1B3D8B67B3323F761EAF4C223BB214C4C
+6B062D1B281F5041D068319F4911058376D8EFBA59884BA3318C5BC95684F281
+E0591BC0D1B2A4592A137FF301610019B8AC46AE6E48BC091E888E4487688350
+E9AD5074EE4848271CE4ACC38D8CBC8F3DB32813DDD5B341AF9A6601281ABA38
+4A978B98483A63FCC458D0E3BCE6FD830E7E09B0DB987A6B63B74638FC9F21A5
+8C68479E1A85225670D79CDDE5AC0B77F5A994CA700B5F0FF1F97FC63EFDE023
+8135F04A9D20C31998B12AE06676C362141AAAA395CDEF0A49E0141D335965F2
+FB4198499799CECCC8AA5D255264784CD30A3E8295888EFBC2060ADDD7BAC45A
+EEEECDFF7A47A88E69D84C9E572616C1AC69A34B5F0D0DE8EE4EDF9F4ADE0387
+680924D8D5B73EF04EAD7F45977CA8AD73D4DD45DE1966A3B8251C0386164C35
+5880DD2609C80E96D1AB861C9259748E98F6711D4E241A269ED51FF328344664
+3AF9F18DCE671611DB2F5D3EA77EE734D2BED623F973E6840B8DAD1E2C3C2666
+DD4DD1C1CF9DB1FD1568F84892C602408AFD8174118B9E1476C880193A1E332C
+DEB81FA1F4C64D240C929C16D8516C4470EE50795719FA0A3BCA33A6F427B59A
+A24BF1A2AE1CCC869AC90F3B25A2718F821C4A0969E30E899891212ABB5B17D2
+2760A1041FD13462BE5E0FA2C711F045E90A6371B9C9025F7B26C05D4FC8BF68
+9316D0D0B6AC3EF95246D0D89FDFFDA1CF32EA6ABFFFD9CC1846B899F84ABADD
+2F259FCD3B2CB623D2DE602A812F94E98423DFAA48A3A4C3BE5A31C13D7DC2CA
+5C51DAB16D09C77417EC161DB6665AA975F535AC3ED0D3B2A5C19602E5FD9D87
+6BF3A202D8F9C95BA18B95E7D53DCBEBA2B2750F9562163602DD6E8955EAF300
+4476D27FECBADDEF681E3E57664681CC7B8ED53F7251ACCDD7398588C8868773
+DED6D252BF748DACDC141B0ECAE13512A7D95E58146CA68A161836549DCDEFD3
+72FC900E907194E634A84FE49DADCDCFAE796215EC46A6CFE5F4DC5CA1D5AED1
+3211A833BA13440974E86A73A1521DFC4217198E4FD86CCC9F03519316ABBBE6
+7A92CE75E20B649630DF0BC37331D0D9A8C25A5A1C35E10C3EB901EDB389D4E8
+DE097A4D8F1205F13DD3A6C102EEF7DF2DF96CF42744FBA1C9F61140EB44D623
+A39E84DD17D9C3C2CDB72AC6B72039C0A616F657C5ADA4B991ED610D389F63CA
+B1BD3C54C708BF01606E811E6606EC8B929D65801E343969C9274AA341B8B2BC
+05DDA4C86F6925B3D59789C6800DD145197789C6EC18910B4784B1D9C1DD0590
+38EDE27876BFD72836B22715
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+cleartomark
+%%EndFont 
+%%BeginFont: CMR17
+%!PS-AdobeFont-1.1: CMR17 1.0
+%%CreationDate: 1991 Aug 20 16:38:24
+% Copyright (C) 1997 American Mathematical Society. All Rights Reserved.
+11 dict begin
+/FontInfo 7 dict dup begin
+/version (1.0) readonly def
+/Notice (Copyright (C) 1997 American Mathematical Society. All Rights Reserved) readonly def
+/FullName (CMR17) readonly def
+/FamilyName (Computer Modern) readonly def
+/Weight (Medium) readonly def
+/ItalicAngle 0 def
+/isFixedPitch false def
+end readonly def
+/FontName /CMR17 def
+/PaintType 0 def
+/FontType 1 def
+/FontMatrix [0.001 0 0 0.001 0 0] readonly def
+/Encoding 256 array
+0 1 255 {1 index exch /.notdef put} for
+dup 0 /.notdef put
+readonly def
+/FontBBox{-33 -250 945 749}readonly def
+/UniqueID 5000795 def
+currentdict end
+currentfile eexec
+D9D66F633B846A97B686A97E45A3D0AA052A014267B7904EB3C0D3BD0B83D891
+016CA6CA4B712ADEB258FAAB9A130EE605E61F77FC1B738ABC7C51CD46EF8171
+9098D5FEE67660E69A7AB91B58F29A4D79E57022F783EB0FBBB6D4F4EC35014F
+D2DECBA99459A4C59DF0C6EBA150284454E707DC2100C15B76B4C19B84363758
+469A6C558785B226332152109871A9883487DD7710949204DDCF837E6A8708B8
+2BDBF16FBC7512FAA308A093FE5F075EA0A10A15B0ED05D5039DA41B32B16E95
+A3CE9725A429B35BAD796912FC328E3A28F96FCADA20A598E247755E7E7FF801
+BDB00E9B9B086BDBE6EDCF841A3EAFC6F5284FED3C634085BA4EE0FC6A026E96
+96D55575481B007BF93CA452EE3F71D83FAAB3D9DEDD2A8F96C5840EAE5BE5DC
+9322E81DFF5E250DEB386E12A49FC9FBF9B4C25C3283F3CEA74B8278A1B09DA7
+E9AE4FBAAF23EDF5A3E07D39385D521547C3AAAB8EB70549756EBA8EF445AF4A
+497CA924ACCC3DD5456F8E2C7E36946A5BF14E2E959895F7C94F49137256BE46
+4A238684D52792234869EAE1A6D8ADF4E138B79472D2A90A6CA99E2394CC20CD
+3841733046175B20CEBE372327BF13428EED6A3E2FDF84C2DBA4B0AD584EE9DF
+B51828D3B8F385846158C29C9AC3496CB9692DD10219697B2ED4D425C3957FD8
+C4600D76E045C561216EF05D38177243C314877A69A1C22E3BEC611A2EE5A216
+9B7C264CF6D1839DBBD78A40610F2C0D7C2FE09FFA9822FF55035AD52546970F
+83EED2D30EABB1F303091EBC11A5379B12BB3F405E371519A53EA9D66174ED25
+A2E55463EC71A97BE4C04B39E68112956117C8252DB6FB14AB64534B4BCD568B
+246DB833982B38CDE7268BBF74B6B0C18091E1B1F87D32D66F4DD023D1F10D2A
+7736A960F72AC01F733A11023832CD68FB6288A5977743F781214D8FA9C0C3F7
+80001321D4397771F728FD9EE57CFE7D9192B887EC883EB1505068261DC40089
+7B7D2820F06515CD74513521F6397FEAB3AD3572D9A8269430E407E357422461
+1785FC2782047F4C0339D79B16862D939F3A37F78E4E2174E4FBF132539CB760
+207999FF86F6A3EBE48EB0A1CA635450FDEEF79EB16D853F3BF4B41F7F62EF09
+F8C97D7BE8E8040BCF71C61854E4BB622B5216CF3827BB2FD21C8F9F26265284
+647B272279CFA2406D98386E9A7032026A9A3D0A502FBA7C2984F6604B5E6F0D
+AD8D938DC35C87F0A9CCFF0BCD6F43108F5312BBD217CB60D9AFED077CAEB882
+7743DA196354D28B9C5112EDD418C963DC8FD65EBBB8594FAFBD993846A4041D
+EA7CFDE29AE69D37DF10645759E7EA412DD9A40DC98BB415DCBE09B89CFEB8F5
+C0594D1BB4793C542D5B2E9C13E6118D5D50719ECE8FC9B73EEAECD8E9B5207C
+BE9DCDF14C93CA55161879B08414CF2C1E66CADE0446FDEB3BA3B1FB46C024E3
+4C1D8A1DD3B5C489CE527F7A5C54E806FD15ABBA751BCD795A55B55C19EA032D
+73575E52DE6E8BC9D3D0807CBE6B1648E232EA5D5FD96E1F67F3CD9E343DAD68
+39DE48115EBFC8C52E5A7B3A4339B86AA4168A36838A370D7735E398791DC308
+9A8DD2157F134770213C662952EDFB1A2705B7B5C705B738D8334A7A9E08044A
+80B872E96EE2EC325CC91CEEE0ACDA2CB14B304C27827A1244265F1665DE1EB3
+59E44A1DF22EC059A00B5815A2B3394F5E8C3BE0570DC23B5D37A7628607E5CE
+7E90EBAA96D26816D91D8082BAD53852ECFD14FBB722445160B8A9A1FB36E686
+DF1D7138B16C702B114BB42261DC19BEF1E3CFAEA8F072EB38ED7F93FF381234
+B392F47F5727E39634E11BDE877556FE5724BFDDC30FD943A26FD3651E18D68A
+4FEDA5EB3BB4B5E53E5E91B2FC6B9E09B0FD1BF5B3A0BE6A2E07864AF444B701
+58A113AAE732F028F81F0EBF3589AEFC55F76A66F944A42656CC619054492790
+B034A074CB31DD953F8ED1C14ABDCA310984BE787FE74E8CFC983BEC2D934032
+C166B128B15B0440D0971DF6E5A45CD42E8331E765A6DF45E59C81854B62B06E
+0EAFCE835CF06B10803B8533E7DCC62ADF878919FA2DB8CBB0D6A82AECEA1C9E
+056B44BEB3A02938E875BBC127AA3453F9B6591DDCF3169E55F3F0B76420B007
+140DA9FE0C169E55246EA24FE59C845950D76825037077A8CF542B02D572AA52
+2190A3C8B92548D4BF33D77BDE79B06C81D7202ACAB58772E746DD9DCEE1B15E
+9EE14D8CFDF7E01910FE8F451489AD6EA154E48928AC234B6A630F567CC0B74C
+0672F326A8341D0EACA6FEA1C6830F01A8E536DE65AFFDB7986CBFCF8BA1016D
+39B54240214395A90E594CB8F2B2E5D847F1A9BDB14FDD51CE24FA85466E9EB8
+2E121AE293601A804E4EB5359AEFBC5E37F7815FD03A43AE69DB633A6DC4006E
+1918E6FAE0C9A9CA60F212CAA44649A5DC70605A118CCF9BA7406F8B27436AAD
+2E5EDAD867E98C671581185F470C015F20C574FD1C7994433949D287177AFE86
+596FAED754EED3979C78611A7DBF3D7BE43A2FC9CF6091EF565B588FF069C818
+DC744D400548C175030C3216B670F76FFB305BD2FC2BF01860F12D97850B52D5
+0F41A925B67A29C64F337CAD877CCEFD78643CF6509F3BA302937A6188670F49
+AA405557697D4E63281A9C3D3BD923AD9A48C4107A7724E61A4CAB6D32600BDA
+819A4E61F31C11A8847329B21BB713B0C2264F691D0DC9847A57B3B386E884AC
+8F387DF30439C085BF2ED956EECEADD1A83AA111B5A7213AD45455A24EC09FEB
+CA9ED85016C78995380CFE3A4A6D600872213989682B8137E63F7BAF082EAD3E
+5BE794705FA819DFE44F72368EE3F6A9CD2300646E1241F5F105ECCCBC0A6FE6
+2D3A781A7CFA54A26F0769E6DBA2F6CF97B28D618B849F651BF879A812B0B024
+B7F2C28125FEBF3AC7C71A600BEC2D062EFCA2C55DBEB33C6CA96D7D159D0AAA
+851490BE1C39675C5EE14B6A67915CF618A2599DF27416B9F682CF289A124166
+BBADFB870B8D0968AD755630DF57F18EBF4D248EBBC7F414C81F0E03B0130E7F
+F14DE477659B75DAF15D41842601F9AC655BD109B4C221256AB9B17DFA0E4379
+6416D01C2CE3AB376C8290E193B099DA8D807C1F6A201BBDD464DD26EBED8504
+F7545BBB2248B7293C537C5E715BE817D81EFF3DA72A36F077C0AB04CC793885
+15F9C1F8949C13E9C3800414231F324D5F8CC93A4208A79026CE95713F76190D
+82D824ABC156D22032817741382D434395DDB0A954AC85D7E23B07738E85EA90
+4428FDD1BFFD6BCDCB5403335B5FCC2582330376200BB4E35107D4CC8AADD871
+416A16BADC75651DC15C87AF5D1628298914C4E6C92164B1B5CAF548D474871B
+48CE710A5B01EBB78AED3E86A0134C7863D377DE6AA1A7FDBE9F2D1830C4C6E1
+35ACA9CD58AB3283A1A8E277E35B54861110A5E414D683B28D1D9D216C6C47AC
+96505F340F321FB7E213E54E83F657C262A9C31AA9072D3CAA9C5D6810C5BC83
+A5D02A924BAB6F5B2A8703D676BD0BD7EEA7BA45F9C75293A63A3914C55FB7C0
+E6EDBF3DD378BF83B057D22F240BF58D2882EF1993AFEE348BCF1931565ED7C2
+B4BD61831A9EEAFF6537D116047B7893BE5FA7C482042ED9AB7D2BF3EC449B7D
+7E5342C04AF7A49FC63FFB286A65C088758915012C745D390E2917384C4D9A2F
+3CFEF8A7532748C078C3C9841F9A98FA
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+cleartomark
+%%EndFont 
+%%BeginFont: CMR10
+%!PS-AdobeFont-1.1: CMR10 1.00B
+%%CreationDate: 1992 Feb 19 19:54:52
+% Copyright (C) 1997 American Mathematical Society. All Rights Reserved.
+11 dict begin
+/FontInfo 7 dict dup begin
+/version (1.00B) readonly def
+/Notice (Copyright (C) 1997 American Mathematical Society. All Rights Reserved) readonly def
+/FullName (CMR10) readonly def
+/FamilyName (Computer Modern) readonly def
+/Weight (Medium) readonly def
+/ItalicAngle 0 def
+/isFixedPitch false def
+end readonly def
+/FontName /CMR10 def
+/PaintType 0 def
+/FontType 1 def
+/FontMatrix [0.001 0 0 0.001 0 0] readonly def
+/Encoding 256 array
+0 1 255 {1 index exch /.notdef put} for
+dup 0 /.notdef put
+readonly def
+/FontBBox{-251 -250 1009 969}readonly def
+/UniqueID 5000793 def
+currentdict end
+currentfile eexec
+D9D66F633B846A97B686A97E45A3D0AA052A014267B7904EB3C0D3BD0B83D891
+016CA6CA4B712ADEB258FAAB9A130EE605E61F77FC1B738ABC7C51CD46EF8171
+9098D5FEE67660E69A7AB91B58F29A4D79E57022F783EB0FBBB6D4F4EC35014F
+D2DECBA99459A4C59DF0C6EBA150284454E707DC2100C15B76B4C19B84363758
+469A6C558785B226332152109871A9883487DD7710949204DDCF837E6A8708B8
+2BDBF16FBC7512FAA308A093FE5CF7158F1163BC1F3352E22A1452E73FECA8A4
+87100FB1FFC4C8AF409B2067537220E605DA0852CA49839E1386AF9D7A1A455F
+D1F017CE45884D76EF2CB9BC5821FD25365DDEA6E45F332B5F68A44AD8A530F0
+92A36FAC8D27F9087AFEEA2096F839A2BC4B937F24E080EF7C0F9374A18D565C
+295A05210DB96A23175AC59A9BD0147A310EF49C551A417E0A22703F94FF7B75
+409A5D417DA6730A69E310FA6A4229FC7E4F620B0FC4C63C50E99E179EB51E4C
+4BC45217722F1E8E40F1E1428E792EAFE05C5A50D38C52114DFCD24D54027CBF
+2512DD116F0463DE4052A7AD53B641A27E81E481947884CE35661B49153FA19E
+0A2A860C7B61558671303DE6AE06A80E4E450E17067676E6BBB42A9A24ACBC3E
+B0CA7B7A3BFEA84FED39CCFB6D545BB2BCC49E5E16976407AB9D94556CD4F008
+24EF579B6800B6DC3AAF840B3FC6822872368E3B4274DD06CA36AF8F6346C11B
+43C772CC242F3B212C4BD7018D71A1A74C9A94ED0093A5FB6557F4E0751047AF
+D72098ECA301B8AE68110F983796E581F106144951DF5B750432A230FDA3B575
+5A38B5E7972AABC12306A01A99FCF8189D71B8DBF49550BAEA9CF1B97CBFC7CC
+96498ECC938B1A1710B670657DE923A659DB8757147B140A48067328E7E3F9C3
+7D1888B284904301450CE0BC15EEEA00E48CCD6388F3FC3BE18EFA2C389E5E30
+A01122D4441EBDC07E8FF810DAC4B013B1B89F5E18548EFFA31C3777BB187362
+FBBE6623184ECD991A057D130019D498D2ED4D2564124D648B1E0956E861DE83
+22DE4B89AD33CEC6DD6BC2744D542521314697AC87F8582E18ACD9233CB483DE
+3038D43DEE9C4101EC3001E16A8AB4DBF57849C544A743267A6C9B510BA2D4BA
+A94F5957E3FA951B817B69BEDF51BE484A6FA1B22079BB32D468F393A6187502
+C4D904A26BA22D3EA5867045C5621797FB5B6216077AF948D21F19461C01EB6D
+54A084D3DCC5ABC5DF3CADC870236751D9EF221AC1E7BD29FDC20E11094E2852
+779FC5C0D5DB9D3C8E4443F64E4037AC19B46A1050451ECEB053DC8EB7B1FC8E
+4B8175703FEC53549A80FA0B8B14AD07A99A7BEF99111BABBBEDB83B50CB2D6E
+44036DA3DE4A6BB700EFA22290B3DC8113DB1B383EC98F8367ECA284490AEE8D
+2E2DBB374BA8B0C30D5E782C9B7DB4551E2BFB4BE67A1833D36D09829FA03EE7
+D559D5AA9876BCCBAA3972BCABAB06157DBFB18A3A746FA3102EAD32D37460CE
+2099273F1622C089AB3CB216A5C27D66D2C8170187CDF780CAF45A8E0C2D394A
+26B50F8BE2ED926D812092E92DA4D04D0895B07B66D5344986A0FC7A8B2F7B9B
+62EE1105F37A99A308E7DA80A3018D0ABC05D3F178B531BA4517B18300254453
+0CED9C755ED7FB6640DEBDACC45D477D8788EFC79A0297F6D5CBB83FAEE7B897
+F107662E8467FAC8D9E2AA0F906F3B47E80DCC1112B17D53D40A2B6069113FFA
+623E46BE165E6F804BE8F048CBABB1F17C135472030108CBA8AC573D7380FC35
+63D88AEDC9A339CF931828B48D80B932FDFEBB8A80ABD3372BF7B61D458BBC8C
+B555C4BB928EDBF84BC2F29B7ECECE6266769BB9A4F91C3F1DC4203744C86A1F
+E55F5369B12A05851331961CDC0F04859B03FCEDCC76505876A049DA9D644D23
+2ED48ABC9F8E875DB7725A36C427C50C33943B6F21D2E0D83D5A2230B4673692
+A3A3E95A52591D7947341FA64091CEA8B1E529DD5575C2362EA9F95EB9E16E28
+0B3297414ECD1FEF73532047FB1478F8554CC724500B0C908B6A3308B89B8E77
+CAA452289A98F10329E269F5C6D12F6CDB3507F898D270758D34AECC999FED40
+128AABE2A1E99A48A7AC47BA6C1D0F15E83836C4FB15102029657914183790F1
+FC83D2A46B0A9E74E7FE0A323DA30D5A3B4B7C6F9F375BC78CFB423B5C21F0AE
+9B2B376BF49E154A417CDAF11C77B02853275DFD103291BCCF501E8A80B6A036
+A6324838FB2E1380B95486A4FD96E983674CC19DB0161B85543A0E1A247CBB53
+8CD0BFE685321C146A5BACA57687EAD9759DE749CEE7FF7A4D712CD2DDCF7227
+1D793A8F880E3ED7AC2212942EDBA76BCE92634E4A688809743212C46F94A9C2
+3509599D0397A8D7B363AA9B34EC77C1A50A4905E5ED5F1DE344D726BD1F4299
+36F2BD0E19EBCA63A5DBB04319D66CB9CFBA1DB64E098BA485585064517E2826
+CCBC207F04D9F91FE6FAF20B97DD664E0FD6A2591DCA098479AEA91F62189B78
+DE7A9DB70D665DAFC1A2B8269B4CCA0BE237F43B3630BB1E675FF0029C052A3A
+4B758EACEAA6496B3182C19E35AEA31B7CF6FD4FDDEB1A1A6E3F8E898337054F
+257C9E30CBC523F348BA3328CFE51587353BEB7467099FC04288EF5CFDAB8F01
+968F20BDD341C79BC0F68D35C0F773DF4188A839236C6D88EE3B049BF8FAE1A0
+083D40D899C8AE38743509B5AD8D611512AA7C904DF03A532D8DB7DA12CF136E
+7EDDBD3B47230DCA9BADCCAA42973D1BFFCBB9B00A02824100C1B99C88CA7FD3
+22257CB094F7257449B932466940823978C0EE13508C558E82609B863EEDE75E
+AB7F798E482E9E9354D146FACDE56D836B3C22302D25F730F4D78E40AA413F61
+266DDC70857C844DE52632CB247FBD5D77296B4F2F0C5464385A8F51CF834914
+98C0405339C1DF2779370095116B047A78F4C203AA44F40656110E5073CE2A36
+F6415AC62A59C3CE458131B3622A944368EE7843763482E3D6620F3BB0CA5350
+6FA5C21AD13D8861AE811E9D24BAD8A66D7D61701444066830AE70352CB6C2A2
+36399B1CB0C0B639EF03A2F8EABBDFCC90F3B08A79BF724B924075A3AE2E8A8A
+03AAC24515357F166E38427D9D7C613EE812FB49AF2EDB6AB787E84E74A662AE
+115C5D02C87036333BA5B845EB58E9EB95988074D73590264D1EE4460E5A07FD
+3DA416BE8DE67A9F49DC27600198CF88246889CA522A0DF9FB306F47C0EF89AC
+6508EBC4CB082C9B9A0335D77ED22A92FFFE07C32E694F08FBDC50B19055A030
+3E25B55102EA2ABF284DD0533117D4D1BA87F7CB7A7FF84CCF69DA88850A9BD9
+BAA2F24351B6FCA44F5EBC919DE9954B172A500B4661277CFB8CFC214E3BD60A
+D653B7D319FEAD369AF4B11B014E7421DE8D05F601D3893967F6FC0A0D4BC6C2
+F0FD8D16B297B66A13385739906AC2A345853B15F28348F98CD034553AE33417
+49FCA85E7F7780C5117DB0998827EACCFA0FF597DE3AEEEB9E7E4987E59AFA6D
+FB6CD65AA5B0C9B060166E4C4ACA9CC9A0B95FE39F0E8DABAED24D7EC3DF827D
+D9BF156BAC66CB79D445F3B3F18FAC29118AC44AB92BC87EAB815536E95F181F
+0F533FA9596DEAF86CE0C0DDC8EED3872837F94A89C2B2CAD7E98C16EDB8C37A
+265A91570DFCBAC1D77BB5BF25EF962B7E1DE3A55F8E68149FD84D55659CD8F4
+8AB8312E1756133A719E71617ABB8138BB5E8EB33A39182FBE4B3C0A9978C06F
+BA8F01A5D0F42C9C5ED5ED3F680D5F71CA711A643ACA819D49125AC3C7B180BA
+6C5393FAB586EA174BE8F4607D7F5E08419DE696
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+cleartomark
+%%EndFont 
+%%BeginFont: CMSY7
+%!PS-AdobeFont-1.1: CMSY7 1.0
+%%CreationDate: 1991 Aug 15 07:21:52
+% Copyright (C) 1997 American Mathematical Society. All Rights Reserved.
+11 dict begin
+/FontInfo 7 dict dup begin
+/version (1.0) readonly def
+/Notice (Copyright (C) 1997 American Mathematical Society. All Rights Reserved) readonly def
+/FullName (CMSY7) readonly def
+/FamilyName (Computer Modern) readonly def
+/Weight (Medium) readonly def
+/ItalicAngle -14.035 def
+/isFixedPitch false def
+end readonly def
+/FontName /CMSY7 def
+/PaintType 0 def
+/FontType 1 def
+/FontMatrix [0.001 0 0 0.001 0 0] readonly def
+/Encoding 256 array
+0 1 255 {1 index exch /.notdef put} for
+dup 0 /.notdef put
+readonly def
+/FontBBox{-15 -951 1252 782}readonly def
+/UniqueID 5000817 def
+currentdict end
+currentfile eexec
+D9D66F633B846A97B686A97E45A3D0AA052F09F9C8ADE9D907C058B87E9B6964
+7D53359E51216774A4EAA1E2B58EC3176BD1184A633B951372B4198D4E8C5EF4
+A213ACB58AA0A658908035BF2ED8531779838A960DFE2B27EA49C37156989C85
+E21B3ABF72E39A89232CD9F4237FC80C9E64E8425AA3BEF7DED60B122A52922A
+221A37D9A807DD01161779DDE7D251491EBF65A98C9FE2B1CF8D725A70281949
+8F4AFFE638BBA6B12386C7F32BA350D62EA218D5B24EE612C2C20F43CD3BFD0D
+F02B185B692D7B27BEC7290EEFDCF92F95DDEB507068DE0B0B0351E3ECB8E443
+E611BE0A41A1F8C89C3BC16B352C3443AB6F665EAC5E0CC4229DECFC58E15765
+424C919C273E7FA240BE7B2E951AB789D127625BBCB7033E005050EB2E12B1C8
+E5F3AD1F44A71957AD2CC53D917BFD09235601155886EE36D0C3DD6E7AA2EF9C
+C402C77FF1549E609A711FC3C211E64E8F263D60A57E9F2B47E3480B978AAF63
+868AEA25DA3D5413467B76D2F02F8097D2841FE9D089F27B314C2B7095381853
+3E28E2A3E68DE7B53C5E2B54C6CD18CD68055B1AAA0DCFC1822C92B3E7D8515A
+7074BB2C9C9A58EEAD4ECA2AD0A1E39ED3366B4883116847B50F8FB5205C1C4E
+874D6FBFD2BD12BC8B8F2FFB78FBE95A9042C06401232192FCBA5246575850E1
+5E449795320455BCA50E249F3A6B3E05DBFE7A4EE90063B3B2E4DD3AF796E1D0
+C67E0BF8E170DC2F6951AA2AF03C420C5540CE6C3E9B398C77E8EC78C56E2484
+03750C67A3A56FAD339582374FC9761497AE621CB4BCC32CA03519AF4F6B8E8A
+CFBC4294B4C29FDBF70E8E7C85AB8C4023F5BC4DF5CD7B1F71A2601090D6EB88
+7D6AD1F46278F6EB96BB7524F66BC302D5FCADA9C9F04D8AB816319BD07FF900
+5173AF46E7D91B48A56CD96748581247A0B45CDFEB4A7B62207731F8AC71F2C5
+31B3FAD3531B047397D405E0E53F7609A2D6B1DAABBB5034EDFE3A3F8C5F18D3
+2E93E03F1BBB726F90209C366C0DDF8166BF706D1C954597A1AFCFB2C7E253D0
+F989474F6E34A1ECE832044D70B5032193F804630E68D7692F07ED78CBD811D8
+4D59ACA5A4A481876FD975A3311F2693C7460AFE73C20B8C83887835F06D664F
+D3D796BD64E4C822545FBCA53D881EA8989B963808F984A4C7DB63A430EE6814
+2228E86821290ED7508EC2EB07929B488E718188CBA54E14C6525209
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+cleartomark
+%%EndFont 
+TeXDict begin 39158280 55380996 2074 8000 8000 (comp.theory.1.dvi)
+@start /Fa 134[753 753 1087 753 837 419 753 502 1[837
+837 837 1255 334 753 1[334 837 837 419 837 837 753 837
+837 11[1087 6[1087 4[419 1087 2[1005 1[1087 1[1005 18[419
+1[419 4[334 36[753 2[{ TeXBase1Encoding ReEncodeFont }34
+1506.08 /Helvetica-Oblique rf /Fb 134[753 753 2[837 419
+753 502 1[837 837 837 1255 334 753 334 334 837 837 419
+837 837 753 837 837 9[1422 1[1087 920 1005 2[1005 3[837
+2[419 1087 1[920 2[1087 1005 1005 1[837 4[419 837 837
+837 5[837 1[419 419 502 419 44[{ TeXBase1Encoding ReEncodeFont }44
+1506.08 /Helvetica rf /Fc 240[976 15[{
+ TeXbbad153fEncoding ReEncodeFont }1 1836.67 /CMSY8 rf
+/Fd 168[2168 1339 26[638 638 42[932 15[{
+ TeXaae443f0Encoding ReEncodeFont }5 2295.84 /CMMI10
+rf /Fe 254[1587 1[{ TeXbbad153fEncoding ReEncodeFont }1
+5712.04 /CMSY10 rf /Ff 130[1033 1033 1033 1033 122[{}4
+2295.84 /CMEX10 rf /Fg 139[1686 1711 4[2433 3676 1189
+6[1935 49[2184 1[2184 2184 48[{ TeXf7b6d320Encoding ReEncodeFont }9
+4761.56 /CMR17 rf /Fh 206[2620 2620 6[2023 2023 40[{
+ TeXf7b6d320Encoding ReEncodeFont }4 5712.04 /CMR17 rf
+/Fi 141[899 2[1148 49[1786 11[1148 1148 4[1786 1[893
+893 40[{ TeXf7b6d320Encoding ReEncodeFont }8 2295.84
+/CMR10 rf /Fj 137[950 950 950 1[950 1[950 950 950 2[950
+2[950 2[950 950 950 1[950 38[950 10[950 950 46[{
+ TeXBase1Encoding ReEncodeFont }16 1582.98 /Courier rf
+/Fk 242[1830 9[941 3[{ TeXbbad153fEncoding ReEncodeFont }2
+1607.08 /CMSY7 rf /Fl 104[1883 2[627 627 24[941 941 941
+1359 941 1047 523 941 627 1047 1047 1047 1047 1568 418
+941 418 418 1047 1047 523 1047 1047 941 1047 1047 7[1256
+1[1777 2[1150 1256 1359 1[1256 1465 1359 1568 1047 1256
+1[523 1359 1[1150 1256 1359 1359 1256 1256 1[1047 1[1099
+2[523 6[1047 1047 1047 1[523 523 627 523 2[627 627 418
+5[523 30[941 2[{ TeXBase1Encoding ReEncodeFont }63 1882.6
+/Helvetica rf /Fm 152[1148 1148 25[1583 10[1833 28[2296
+2[2296 17[1148 11[1148 3[{ TeXbbad153fEncoding ReEncodeFont }8
+2295.84 /CMSY10 rf /Fn 105[1047 28[1047 1047 1465 1047
+1150 627 1047 732 1[1150 1150 1150 1674 523 1047 1[523
+1150 1150 627 1047 1150 1047 1150 1047 9[1777 1[1359
+1150 1256 1359 1[1256 1465 1[1568 1150 2[523 1359 1465
+1150 1256 1[1359 1359 1359 6[627 6[1047 1047 1047 2[523
+627 523 2[627 627 37[1150 2[{ TeXBase1Encoding ReEncodeFont }51
+1882.6 /Helvetica-Bold rf /Fo 134[659 2[659 733 366 1[439
+1[733 733 733 1098 293 1[293 293 733 733 1[733 733 659
+1[733 12[805 879 2[879 5[659 366 2[805 1[951 951 879
+879 6[366 733 733 733 733 733 733 733 733 733 733 1[366
+1[366 44[{ TeXBase1Encoding ReEncodeFont }41 1317.82
+/Helvetica rf end
+%%EndProlog
+%%BeginSetup
+%%Feature: *Resolution 8000dpi
+TeXDict begin
+%%PaperSize: A4
+ end
+%%EndSetup
+%%Page: 1 1
+TeXDict begin 1 0 bop -3200 3449 a Fo(SFI)367 b(CSSS)-26
+b(,)367 b(Beijing)d(China,)i(J)-26 b(uly)365 b(2005:)452
+b(A)-40 b(utomata)366 b(and)f(Computation)g(Theor)40
+b(y)15515 b(1)p -2043 4768 56085 443 v -2043 77566 443
+72799 v 1149 8563 a Fn(A)524 b(\(Mostl)-28 b(y\))523
+b(Inf)-38 b(ormal)524 b(Intr)-38 b(oduction)526 b(to)e(Computation)g
+(Theor)19 b(y)2099 16308 y Fm(\262)942 b Fl(Computation)522
+b(theor)56 b(y)524 b(is)f(a)g(diff)-56 b(erent,)523 b(more)g(str)28
+b(uctur)-19 b(al)524 b(and)4189 19559 y(less)f(statistical)i(approach)d
+(to)h(comple)-56 b(xity)-188 b(,)523 b(emergence)-28
+b(,)4189 22810 y(organization.)2099 27897 y Fm(\262)942
+b Fl(Computation)522 b(theor)56 b(y)524 b(can)f(be)g(v)-47
+b(er)56 b(y)524 b(elegant,)e(r)28 b(igorous)-28 b(,)523
+b(and)4189 31148 y(mathematical.)2099 36236 y Fm(\262)942
+b Fl(But)523 b(I'll)g(present)g(little)h(of)f(the)g(f)-56
+b(or)47 b(malism.)648 b(I)523 b(think)h(the)f(math)4189
+39487 y(can)g(obscure)f(some)i(of)f(the)g(basic)h(ideas)-28
+b(,)522 b(which)i(are)e(really)4189 42738 y(quite)g(simple)-28
+b(.)800 51565 y(W)-56 b(e'll)523 b(begin)f(with)h(some)g(e)-56
+b(xamples)523 b(in)g(the)g(f)-56 b(or)47 b(m)523 b(of)h(a)f(game:)2099
+57637 y Fm(\262)942 b Fl(I'll)523 b(giv)-47 b(e)523 b(y)-38
+b(ou)524 b(the)f(speci\002cation)g(f)-56 b(or)523 b(a)g(set)2099
+62724 y Fm(\262)942 b Fl(I'll)523 b(then)g(sho)-28 b(w)523
+b(y)-38 b(ou)523 b(an)g(object,)h(and)e(y)-38 b(ou)524
+b(need)e(to)h(tell)g(me)h(if)4189 65975 y(it')-94 b(s)523
+b(in)g(the)g(set)h(or)f(not)p 53599 77566 V -2043 78009
+56085 443 v -2614 79572 a Fo(c)-3200 79620 y Fk(\260)p
+Fo(Da)-26 b(vid)366 b(P)-237 b(.)366 b(F)-40 b(eldman)365
+b(and)h(SFI)14457 b Fj(http://hornacek.coa.edu/dave)p
+eop end
+%%Page: 2 2
+TeXDict begin 2 1 bop -3200 3449 a Fo(SFI)367 b(CSSS)-26
+b(,)367 b(Beijing)d(China,)i(J)-26 b(uly)365 b(2005:)452
+b(A)-40 b(utomata)366 b(and)f(Computation)g(Theor)40
+b(y)15515 b(2)p -2043 4768 56085 443 v -2043 77566 443
+72799 v 21343 8516 a Fn(Example)522 b(1)800 13047 y Fl(The)h(set)h
+Fm(L)g Fl(consists)g(of)f(all)g(sequences)g(of)g Fi(0)p
+Fl(')-94 b(s)523 b(and)g Fi(1)p Fl(')-94 b(s)523 b(of)h(an)-28
+b(y)800 16298 y(length,)523 b(e)-56 b(xcept)523 b(f)-56
+b(or)523 b(those)g(that)g(ha)-38 b(v)-47 b(e)523 b(tw)-19
+b(o)524 b Fi(00)p Fl(')-94 b(s)523 b(in)g(a)g(ro)-28
+b(w)-113 b(.)800 20533 y(Accept)523 b(all)g(sequences)g(of)g
+Fi(1)p Fl(')-94 b(s)524 b(and)e Fi(0)p Fl(')-94 b(s)523
+b(e)-56 b(xcept)523 b(f)-56 b(or)523 b(those)g(which)800
+23784 y(ha)-38 b(v)-47 b(e)523 b(tw)-19 b(o)524 b(or)f(more)g
+Fi(0)p Fl(')-94 b(s)523 b(in)g(a)g(ro)-28 b(w)-113 b(.)10521
+41023 y Fh(1110101101)10521 50528 y(1101101001)7901 60033
+y(110110101011)p 53599 77566 V -2043 78009 56085 443
+v -2614 79572 a Fo(c)-3200 79620 y Fk(\260)p Fo(Da)-26
+b(vid)366 b(P)-237 b(.)366 b(F)-40 b(eldman)365 b(and)h(SFI)14457
+b Fj(http://hornacek.coa.edu/dave)p eop end
+%%Page: 3 3
+TeXDict begin 3 2 bop -3200 3449 a Fo(SFI)367 b(CSSS)-26
+b(,)367 b(Beijing)d(China,)i(J)-26 b(uly)365 b(2005:)452
+b(A)-40 b(utomata)366 b(and)f(Computation)g(Theor)40
+b(y)15515 b(3)p -2043 4768 56085 443 v -2043 77566 443
+72799 v 21029 8516 a Fn(Example)523 b(2:)800 13047 y
+Fl(The)g(set)h Fm(L)g Fl(consists)g(of)f(all)g(sequences)g(of)g
+(correctly)h(balanced)800 16298 y(parentheses)-28 b(.)17551
+33537 y Fh(\()952 b(\()g(\))g(\()g(\))g(\))8150 43041
+y(\()g(\()g(\))g(\()g(\))g(\()g(\))g(\))g(\()g(\()g(\))g(\))8626
+52546 y(\()g(\()g(\))g(\()g(\()g(\))g(\()g(\))g(\()g(\))g(\()g(\))800
+61410 y Fl(This)524 b(e)-56 b(xample)522 b(is)h(harder)-94
+b(.)p 53599 77566 V -2043 78009 56085 443 v -2614 79572
+a Fo(c)-3200 79620 y Fk(\260)p Fo(Da)-26 b(vid)366 b(P)-237
+b(.)366 b(F)-40 b(eldman)365 b(and)h(SFI)14457 b Fj
+(http://hornacek.coa.edu/dave)p eop end
+%%Page: 4 4
+TeXDict begin 4 3 bop -3200 3449 a Fo(SFI)367 b(CSSS)-26
+b(,)367 b(Beijing)d(China,)i(J)-26 b(uly)365 b(2005:)452
+b(A)-40 b(utomata)366 b(and)f(Computation)g(Theor)40
+b(y)15515 b(4)p -2043 4768 56085 443 v -2043 77566 443
+72799 v 21029 8516 a Fn(Example)523 b(3:)800 12751 y
+Fl(The)503 b(set)g Fm(L)h Fl(consists)g(of)f(all)g(sequences)f(of)i
+Fi(0)p Fl(')-94 b(s)503 b(and)f Fi(1)p Fl(')-94 b(s)-28
+b(,)507 b(e)-56 b(xcept)503 b(f)-56 b(or)800 16002 y(those)523
+b(that)h(contain)e(a)h Fn(prime)h Fl(n)-19 b(umber)522
+b(of)i(consecutiv)-47 b(e)523 b Fi(0)p Fl(')-94 b(s!)8972
+33727 y Fh(1100011000001)15521 42770 y(11000011)6352
+51354 y(111000000000001)6592 62070 y(11)12784 56276 y
+Fg(1031)1320 b(elemen)-124 b(ts)16476 57699 y Ff(z)p
+17509 57699 7458 276 v 7458 w(}|)p 27033 57699 V 7458
+w({)16476 62070 y Fh(00)952 b Fe(\242)g(\242)g(\242)e
+Fh(00)4645 b(11)p 53599 77566 443 72799 v -2043 78009
+56085 443 v -2614 79572 a Fo(c)-3200 79620 y Fk(\260)p
+Fo(Da)-26 b(vid)366 b(P)-237 b(.)366 b(F)-40 b(eldman)365
+b(and)h(SFI)14457 b Fj(http://hornacek.coa.edu/dave)p
+eop end
+%%Page: 5 5
+TeXDict begin 5 4 bop -3200 3449 a Fo(SFI)367 b(CSSS)-26
+b(,)367 b(Beijing)d(China,)i(J)-26 b(uly)365 b(2005:)452
+b(A)-40 b(utomata)366 b(and)f(Computation)g(Theor)40
+b(y)15515 b(5)p -2043 4768 56085 443 v -2043 77566 443
+72799 v 11491 8541 a Fn(What)524 b(to)f(learn)h(fr)-38
+b(om)524 b(the)f(e)-28 b(xamples)2099 13752 y Fm(\262)942
+b Fl(There)522 b(are)h(qualitativ)-47 b(e)523 b(diff)-56
+b(erences)522 b(betw)-19 b(een)523 b(the)4189 17003 y(procedures)f(y)
+-38 b(ou)523 b(just)h(used)f(to)g(identify)g(the)g(str)28
+b(ings)524 b(on)f(the)4189 20254 y(pre)-56 b(vious)522
+b(slides)-28 b(.)2099 24987 y Fm(\262)942 b Fl(These)523
+b(distinctions)g(lie)g(at)h(the)f(hear)75 b(t)523 b(of)g(computation)g
+(theor)56 b(y)-188 b(.)2099 29720 y Fm(\262)942 b Fl(W)-56
+b(e'll)522 b(star)75 b(t)524 b(b)-38 b(y)524 b(f)-56
+b(ocusing)523 b(on)g(e)-56 b(xample)522 b(1.)2099 34453
+y Fm(\262)942 b Fl(Y)-264 b(our)522 b(task)i(w)-28 b(as)524
+b(to)f(accept)h(all)f(sequences)f(of)i Fi(1)p Fl(')-94
+b(s)523 b(and)f Fi(0)p Fl(')-94 b(s)4189 37704 y(e)-56
+b(xcept)523 b(f)-56 b(or)522 b(those)i(which)f(ha)-38
+b(v)-47 b(e)523 b(tw)-19 b(o)524 b(or)f(more)g Fi(0)p
+Fl(')-94 b(s)523 b(in)g(a)g(ro)-28 b(w)-113 b(.)9407
+58070 y @beginspecial 0 @llx 0 @lly 349 @urx 201 @ury
+1440 @rwi @setspecial
+%%BeginDocument: dfa.eps
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: dfa.eps
+%%Creator: fig2dev Version 3.2 Patchlevel 0-beta3
+%%CreationDate: Wed Jun 10 23:43:03 1998
+%%For: dpf@ultra04 (David Feldman)
+%%Orientation: Portrait
+%%BoundingBox: 0 0 349 201
+%%Pages: 0
+%%BeginSetup
+%%EndSetup
+%%Magnification: 1.0000
+%%EndComments
+/$F2psDict 200 dict def
+$F2psDict begin
+$F2psDict /mtrx matrix put
+/col-1 {0 setgray} bind def
+/col0 {0.000 0.000 0.000 srgb} bind def
+/col1 {0.000 0.000 1.000 srgb} bind def
+/col2 {0.000 1.000 0.000 srgb} bind def
+/col3 {0.000 1.000 1.000 srgb} bind def
+/col4 {1.000 0.000 0.000 srgb} bind def
+/col5 {1.000 0.000 1.000 srgb} bind def
+/col6 {1.000 1.000 0.000 srgb} bind def
+/col7 {1.000 1.000 1.000 srgb} bind def
+/col8 {0.000 0.000 0.560 srgb} bind def
+/col9 {0.000 0.000 0.690 srgb} bind def
+/col10 {0.000 0.000 0.820 srgb} bind def
+/col11 {0.530 0.810 1.000 srgb} bind def
+/col12 {0.000 0.560 0.000 srgb} bind def
+/col13 {0.000 0.690 0.000 srgb} bind def
+/col14 {0.000 0.820 0.000 srgb} bind def
+/col15 {0.000 0.560 0.560 srgb} bind def
+/col16 {0.000 0.690 0.690 srgb} bind def
+/col17 {0.000 0.820 0.820 srgb} bind def
+/col18 {0.560 0.000 0.000 srgb} bind def
+/col19 {0.690 0.000 0.000 srgb} bind def
+/col20 {0.820 0.000 0.000 srgb} bind def
+/col21 {0.560 0.000 0.560 srgb} bind def
+/col22 {0.690 0.000 0.690 srgb} bind def
+/col23 {0.820 0.000 0.820 srgb} bind def
+/col24 {0.500 0.190 0.000 srgb} bind def
+/col25 {0.630 0.250 0.000 srgb} bind def
+/col26 {0.750 0.380 0.000 srgb} bind def
+/col27 {1.000 0.500 0.500 srgb} bind def
+/col28 {1.000 0.630 0.630 srgb} bind def
+/col29 {1.000 0.750 0.750 srgb} bind def
+/col30 {1.000 0.880 0.880 srgb} bind def
+/col31 {1.000 0.840 0.000 srgb} bind def
+
+end
+save
+-103.0 297.0 translate
+1 -1 scale
+
+/cp {closepath} bind def
+/ef {eofill} bind def
+/gr {grestore} bind def
+/gs {gsave} bind def
+/sa {save} bind def
+/rs {restore} bind def
+/l {lineto} bind def
+/m {moveto} bind def
+/rm {rmoveto} bind def
+/n {newpath} bind def
+/s {stroke} bind def
+/sh {show} bind def
+/slc {setlinecap} bind def
+/slj {setlinejoin} bind def
+/slw {setlinewidth} bind def
+/srgb {setrgbcolor} bind def
+/rot {rotate} bind def
+/sc {scale} bind def
+/sd {setdash} bind def
+/ff {findfont} bind def
+/sf {setfont} bind def
+/scf {scalefont} bind def
+/sw {stringwidth} bind def
+/tr {translate} bind def
+/tnt {dup dup currentrgbcolor
+  4 -2 roll dup 1 exch sub 3 -1 roll mul add
+  4 -2 roll dup 1 exch sub 3 -1 roll mul add
+  4 -2 roll dup 1 exch sub 3 -1 roll mul add srgb}
+  bind def
+/shd {dup dup currentrgbcolor 4 -2 roll mul 4 -2 roll mul
+  4 -2 roll mul srgb} bind def
+ /DrawEllipse {
+	/endangle exch def
+	/startangle exch def
+	/yrad exch def
+	/xrad exch def
+	/y exch def
+	/x exch def
+	/savematrix mtrx currentmatrix def
+	x y tr xrad yrad sc 0 0 1 startangle endangle arc
+	closepath
+	savematrix setmatrix
+	} def
+
+/$F2psBegin {$F2psDict begin /$F2psEnteredState save def} def
+/$F2psEnd {$F2psEnteredState restore end} def
+%%EndProlog
+
+$F2psBegin
+10 setmiterlimit
+n -1000 5950 m -1000 -1000 l 8523 -1000 l 8523 5950 l cp clip
+ 0.06000 0.06000 sc
+% Polyline
+30.000 slw
+gs  clippath
+6301 2438 m 6535 2726 l 6193 2582 l 6582 2874 l 6690 2730 l cp
+clip
+n 4200 2775 m 4201 2774 l 4204 2772 l 4209 2769 l 4216 2763 l 4227 2755 l
+ 4242 2744 l 4260 2730 l 4283 2714 l 4309 2694 l 4340 2672 l
+ 4374 2647 l 4412 2620 l 4453 2590 l 4497 2559 l 4543 2527 l
+ 4591 2494 l 4640 2460 l 4690 2426 l 4740 2393 l 4790 2360 l
+ 4839 2328 l 4888 2298 l 4935 2269 l 4982 2243 l 5026 2218 l
+ 5070 2195 l 5111 2175 l 5151 2157 l 5190 2142 l 5227 2129 l
+ 5264 2118 l 5299 2110 l 5333 2104 l 5367 2101 l 5400 2100 l
+ 5433 2101 l 5467 2104 l 5501 2110 l 5536 2118 l 5573 2129 l
+ 5610 2142 l 5649 2157 l 5689 2175 l 5730 2195 l 5774 2218 l
+ 5818 2243 l 5865 2269 l 5912 2298 l 5961 2328 l 6010 2360 l
+ 6060 2393 l 6110 2426 l 6160 2460 l 6209 2494 l 6257 2527 l
+ 6303 2559 l 6347 2590 l 6388 2620 l 6426 2647 l 6460 2672 l
+ 6491 2694 l 6517 2714 l 6540 2730 l 6558 2744 l 6573 2755 l
+ 6584 2763 l 6600 2775 l gs col0 s gr gr
+
+% arrowhead
+n 6301 2438 m 6535 2726 l 6193 2582 l 6247 2510 l 6301 2438 l  cp gs 0.00 setgray ef gr  col0 s
+% Polyline
+gs  clippath
+4499 4162 m 4264 3873 l 4607 4018 l 4218 3726 l 4110 3870 l cp
+clip
+n 6600 3825 m 6599 3826 l 6596 3828 l 6591 3831 l 6584 3837 l 6573 3845 l
+ 6558 3856 l 6540 3870 l 6517 3886 l 6491 3906 l 6460 3928 l
+ 6426 3953 l 6388 3980 l 6347 4010 l 6303 4041 l 6257 4073 l
+ 6209 4106 l 6160 4140 l 6110 4174 l 6060 4207 l 6010 4240 l
+ 5961 4272 l 5912 4302 l 5865 4331 l 5818 4357 l 5774 4382 l
+ 5730 4405 l 5689 4425 l 5649 4443 l 5610 4458 l 5573 4471 l
+ 5536 4482 l 5501 4490 l 5467 4496 l 5433 4499 l 5400 4500 l
+ 5367 4499 l 5333 4496 l 5299 4490 l 5264 4482 l 5227 4471 l
+ 5190 4458 l 5151 4443 l 5111 4425 l 5070 4405 l 5026 4382 l
+ 4982 4357 l 4935 4331 l 4888 4302 l 4839 4272 l 4790 4240 l
+ 4740 4207 l 4690 4174 l 4640 4140 l 4591 4106 l 4543 4073 l
+ 4497 4041 l 4453 4010 l 4412 3980 l 4374 3953 l 4340 3928 l
+ 4309 3906 l 4283 3886 l 4260 3870 l 4242 3856 l 4227 3845 l
+ 4216 3837 l 4200 3825 l gs col0 s gr gr
+
+% arrowhead
+n 4499 4162 m 4264 3873 l 4607 4018 l 4553 4090 l 4499 4162 l  cp gs 0.00 setgray ef gr  col0 s
+% Ellipse
+n 3900 3300 600 600 0 360 DrawEllipse gs col0 s gr
+
+% Ellipse
+n 6900 3300 600 600 0 360 DrawEllipse gs col0 s gr
+
+% Polyline
+gs  clippath
+3199 4030 m 3536 3875 l 3312 4171 l 3691 3867 l 3579 3727 l cp
+clip
+n 3600 2775 m 3599 2774 l 3595 2771 l 3589 2766 l 3580 2759 l 3567 2748 l
+ 3551 2735 l 3530 2718 l 3506 2699 l 3479 2677 l 3449 2654 l
+ 3417 2629 l 3384 2604 l 3350 2578 l 3315 2553 l 3281 2529 l
+ 3248 2506 l 3216 2486 l 3185 2467 l 3156 2450 l 3127 2436 l
+ 3100 2424 l 3074 2414 l 3049 2407 l 3024 2402 l 3000 2400 l
+ 2975 2400 l 2950 2401 l 2925 2404 l 2899 2409 l 2872 2415 l
+ 2845 2423 l 2818 2432 l 2790 2442 l 2761 2453 l 2732 2465 l
+ 2703 2478 l 2674 2491 l 2645 2504 l 2616 2518 l 2587 2532 l
+ 2559 2547 l 2531 2561 l 2504 2576 l 2478 2591 l 2452 2606 l
+ 2428 2621 l 2405 2636 l 2383 2651 l 2362 2667 l 2343 2683 l
+ 2325 2700 l 2307 2719 l 2290 2740 l 2275 2761 l 2260 2783 l
+ 2247 2806 l 2234 2830 l 2221 2855 l 2210 2880 l 2198 2906 l
+ 2187 2932 l 2177 2959 l 2167 2986 l 2157 3013 l 2148 3040 l
+ 2139 3067 l 2131 3094 l 2124 3120 l 2117 3147 l 2111 3173 l
+ 2106 3199 l 2103 3225 l 2100 3250 l 2099 3275 l 2100 3300 l
+ 2102 3325 l 2107 3350 l 2112 3375 l 2119 3401 l 2128 3427 l
+ 2137 3453 l 2148 3480 l 2159 3506 l 2171 3533 l 2184 3560 l
+ 2198 3587 l 2211 3614 l 2225 3641 l 2240 3668 l 2255 3694 l
+ 2269 3720 l 2285 3745 l 2300 3770 l 2315 3794 l 2331 3817 l
+ 2348 3839 l 2364 3860 l 2382 3881 l 2400 3900 l 2419 3918 l
+ 2440 3936 l 2461 3953 l 2483 3969 l 2506 3986 l 2530 4002 l
+ 2555 4018 l 2580 4034 l 2606 4049 l 2632 4065 l 2659 4081 l
+ 2686 4096 l 2713 4110 l 2740 4125 l 2767 4138 l 2794 4151 l
+ 2820 4162 l 2847 4173 l 2873 4182 l 2899 4189 l 2925 4195 l
+ 2950 4199 l 2975 4200 l 3000 4200 l 3023 4198 l 3047 4193 l
+ 3071 4186 l 3096 4176 l 3123 4164 l 3151 4150 l 3180 4133 l
+ 3211 4114 l 3243 4094 l 3277 4071 l 3311 4047 l 3345 4022 l
+ 3380 3996 l 3414 3971 l 3446 3946 l 3477 3923 l 3504 3901 l
+ 3529 3882 l 3550 3865 l 3567 3852 l 3580 3841 l 3600 3825 l gs col0 s gr gr
+
+% arrowhead
+n 3199 4030 m 3536 3875 l 3312 4171 l 3256 4100 l 3199 4030 l  cp gs 0.00 setgray ef gr  col0 s
+/Times-Roman ff 390.00 scf sf
+1725 3450 m
+gs 1 -1 sc (1) col0 sh gr
+/Times-Roman ff 390.00 scf sf
+5325 4950 m
+gs 1 -1 sc (1) col0 sh gr
+/Times-Roman ff 390.00 scf sf
+5325 1875 m
+gs 1 -1 sc (0) col0 sh gr
+/Times-Roman ff 480.00 scf sf
+6750 3450 m
+gs 1 -1 sc (B) col0 sh gr
+/Times-Roman ff 480.00 scf sf
+3750 3450 m
+gs 1 -1 sc (A) col0 sh gr
+$F2psEnd
+rs
+
+%%EndDocument
+ @endspecial 2099 65662 a Fm(\262)942 b Fl(Sequence)521
+b(is)j(OK)f(if)g(there)g(e)-56 b(xists)524 b(a)f(path)g(through)f(this)
+4189 68913 y(machine)g(as)i(one)e(scans)i(left)f(to)h(r)28
+b(ight.)2099 73646 y Fm(\262)942 b Fl(Example:)647 b
+Fi(1011001)523 b Fl(is)g(not)g(in)g(the)g(set.)p 53599
+77566 V -2043 78009 56085 443 v -2614 79572 a Fo(c)-3200
+79620 y Fk(\260)p Fo(Da)-26 b(vid)366 b(P)-237 b(.)366
+b(F)-40 b(eldman)365 b(and)h(SFI)14457 b Fj
+(http://hornacek.coa.edu/dave)p eop end
+%%Page: 6 6
+TeXDict begin 6 5 bop -3200 3449 a Fo(SFI)367 b(CSSS)-26
+b(,)367 b(Beijing)d(China,)i(J)-26 b(uly)365 b(2005:)452
+b(A)-40 b(utomata)366 b(and)f(Computation)g(Theor)40
+b(y)15515 b(6)p -2043 4768 56085 443 v -2043 77566 443
+72799 v 16384 8563 a Fn(Finite)524 b(State)e(Mac)-19
+b(hines)2099 14635 y Fm(\262)942 b Fl(The)523 b(mathematical)g(object)g
+(on)g(the)g(pre)-56 b(vious)522 b(page)g(is)i(kno)-28
+b(wn)4189 17886 y(as)523 b(a)g Fn(Finite)h(State)f(Mac)-19
+b(hine)523 b Fl(or)g(a)g Fn(Finite)h(A)-56 b(utomaton)p
+Fl(.)2099 22974 y Fm(\262)942 b Fl(Note)523 b(that)g(this)h(tw)-19
+b(o-state)524 b(machine)f(can)g(correctly)h(identify)4189
+26225 y(arbitr)-19 b(ar)28 b(ily)523 b(long)f(sequences)-28
+b(.)2099 31312 y Fm(\262)942 b Fl(The)523 b(machine)f(is)i(a)f
+(\002nite)g(representation)f(of)i(the)f(in\002nite)g(set)4189
+34563 y Fm(L)p Fl(.)12526 40569 y Fn(Some)f(terminology)j(and)e
+(de\002nitions)4836 45656 y(\226)941 b Fl(A)523 b Fn(Langua)-19
+b(g)19 b(e)524 b Fm(L)g Fl(is)g(a)f(set)g(of)h(w)-19
+b(ords)523 b(\(symbol)g(str)28 b(ings\))6824 48907 y(f)-56
+b(or)47 b(med)523 b(from)g(an)g Fn(Alphabet)h Fm(A)p
+Fl(.)4836 53076 y Fn(\226)941 b Fl(W)-56 b(e'll)514 b(alw)-28
+b(a)-56 b(ys)514 b(assume)h(a)f(binar)56 b(y)515 b(alphabet,)g
+Fm(A)638 b Fi(=)f Fm(f)p Fi(0)p Fd(;)383 b Fi(1)p Fm(g)p
+Fl(.)4189 60919 y Fn(Big)524 b(Idea:)647 b Fl(There)523
+b(is)h(a)f(correspondence)e(betw)-19 b(een)523 b(the)g(r)28
+b(ules)4189 64170 y(needed)521 b(to)j(gener)-19 b(ate)522
+b(or)h(descr)28 b(ibe)523 b(a)g(language)-28 b(,)521
+b(and)i(the)4189 67421 y(type)g(of)g(machine)g(needed)f(to)h(recogniz)
+-28 b(e)522 b(it.)p 53599 77566 V -2043 78009 56085 443
+v -2614 79572 a Fo(c)-3200 79620 y Fk(\260)p Fo(Da)-26
+b(vid)366 b(P)-237 b(.)366 b(F)-40 b(eldman)365 b(and)h(SFI)14457
+b Fj(http://hornacek.coa.edu/dave)p eop end
+%%Page: 7 7
+TeXDict begin 7 6 bop -3200 3449 a Fo(SFI)367 b(CSSS)-26
+b(,)367 b(Beijing)d(China,)i(J)-26 b(uly)365 b(2005:)452
+b(A)-40 b(utomata)366 b(and)f(Computation)g(Theor)40
+b(y)15515 b(7)p -2043 4768 56085 443 v -2043 77566 443
+72799 v 16635 8541 a Fn(Regular)525 b(Expressions)2099
+14614 y Fm(\262)942 b Fl(A)523 b Fn(Regular)h(Expression)f
+Fl(is)h(a)f(w)-28 b(a)-56 b(y)523 b(of)g(wr)28 b(iting)523
+b(do)-28 b(wn)523 b(r)28 b(ules)4189 17864 y(that)523
+b(gener)-19 b(ate)522 b(a)h(language)-28 b(.)2099 22952
+y Fm(\262)942 b Fl(T)-226 b(o)523 b(gener)-19 b(ate)522
+b(a)h(rege)-56 b(xp)-66 b(,)523 b(star)75 b(t)524 b(with)f(the)g
+(symbols)h(in)f Fm(A)p Fl(.)2099 28040 y Fm(\262)942
+b Fl(Y)-264 b(ou)523 b(can)g(mak)-38 b(e)523 b(ne)-38
+b(w)524 b(e)-56 b(xpressions)522 b(via)h(the)h(f)-56
+b(ollo)-28 b(wing)4189 31290 y(oper)-19 b(ations:)647
+b(g)-19 b(rouping,)521 b(concatenating,)i(logical)g(OR)4189
+34541 y(\(denoted)f Fi(+)p Fl(\),)h(and)f(closure)h Fm(\244)p
+Fl(.)2099 39629 y Fm(\262)942 b Fl(Closure)523 b(means)f
+Fi(0)i Fl(or)f(more)g(concatenations)-28 b(.)2099 44716
+y Fm(\262)942 b Fl(Examples:)4313 49804 y(1.)f Fi(\(0)510
+b(+)g(1\))637 b(=)h Fm(f)p Fi(0)p Fd(;)383 b Fi(1)p Fm(g)4313
+53973 y Fl(2.)941 b Fi(\(0)467 b(+)g(1\))13626 53140
+y Fk(\244)15319 53973 y Fi(=)637 b Fm(f)p Fd(\262;)383
+b Fi(0)p Fd(;)g Fi(1)p Fd(;)g Fi(00)p Fd(;)g Fi(01)p
+Fd(;)g Fi(10)p Fd(;)g Fi(11)p Fd(;)g Fi(000)p Fd(;)g
+Fi(001)p Fd(;)g(:)g(:)g(:)-8 b Fm(g)4313 58142 y Fl(3.)941
+b Fi(\(01\))10906 57309 y Fk(\244)12599 58142 y Fi(=)637
+b Fm(f)p Fd(\262;)383 b Fi(01)p Fd(;)g Fi(0101)p Fd(;)g
+Fi(010101)p Fd(;)g(:)g(:)g(:)-5 b Fm(g)2099 63230 y(\262)942
+b Fl(\()p Fd(\262)523 b Fl(is)g(the)g(empty)h(symbol.)648
+b(\))p 53599 77566 V -2043 78009 56085 443 v -2614 79572
+a Fo(c)-3200 79620 y Fk(\260)p Fo(Da)-26 b(vid)366 b(P)-237
+b(.)366 b(F)-40 b(eldman)365 b(and)h(SFI)14457 b Fj
+(http://hornacek.coa.edu/dave)p eop end
+%%Page: 8 8
+TeXDict begin 8 7 bop -3200 3449 a Fo(SFI)367 b(CSSS)-26
+b(,)367 b(Beijing)d(China,)i(J)-26 b(uly)365 b(2005:)452
+b(A)-40 b(utomata)366 b(and)f(Computation)g(Theor)40
+b(y)15515 b(8)p -2043 4768 56085 443 v -2043 77566 443
+72799 v 13080 8563 a Fn(Regular)524 b(Langua)-19 b(g)19
+b(es)524 b(and)f(FSM)2099 13739 y Fm(\262)942 b Fl(A)523
+b(language)e Fm(L)j Fl(is)f(a)g Fn(Regular)i(Langua)-19
+b(g)19 b(e)523 b Fl(if)h(and)f(only)g(if)g(it)4189 16990
+y(can)g(be)g(gener)-19 b(ated)521 b(b)-38 b(y)524 b(a)f(regular)f(e)-56
+b(xpression.)2099 21708 y Fm(\262)942 b Fl(A)523 b(puzzle:)647
+b(what)524 b(is)f(the)g(regular)f(e)-56 b(xpression)522
+b(that)i(gener)-19 b(ates)4189 24959 y(the)523 b(language)e(of)i(e)-56
+b(xample)523 b(1?)800 30135 y(T)-226 b(w)-19 b(o)524
+b(impor)75 b(tant)523 b(results:)1677 35311 y(1.)942
+b(F)-56 b(or)522 b(an)-28 b(y)523 b(regular)f(language)-28
+b(,)522 b(there)g(is)i(an)f(FSM)g(that)4189 38562 y(recogniz)-28
+b(es)522 b(it.)1677 43281 y(2.)942 b(An)-28 b(y)522 b(language)g(gener)
+-19 b(ated)522 b(b)-38 b(y)523 b(an)g(FSM)g(is)h(regular)-94
+b(.)800 48457 y(Notes)524 b(on)e(ter)47 b(minology:)2099
+53633 y Fm(\262)942 b Fl(A)523 b(regular)f(e)-56 b(xpression)522
+b(is)h(a)g Fn(rule)p Fl(.)2099 58351 y Fm(\262)942 b
+Fl(A)523 b(regular)f(language)f(is)i(a)h Fn(set)p Fl(.)2099
+63070 y Fm(\262)942 b Fl(A)523 b(FSM)g(is)h(a)f Fn(mac)-19
+b(hine)p Fl(.)800 68246 y(Regular)522 b(languages)g Fm($)h
+Fl(FSM')-94 b(s)524 b(is)f(the)g(\002rst)h(e)-56 b(xample)523
+b(of)g(the)800 71496 y(correspondence)e(betw)-19 b(een)523
+b(sets)h(and)f(the)g(procedures)f(or)800 74747 y(machines)h(needed)f
+(to)h(recogniz)-28 b(e)522 b(them.)p 53599 77566 V -2043
+78009 56085 443 v -2614 79572 a Fo(c)-3200 79620 y Fk(\260)p
+Fo(Da)-26 b(vid)366 b(P)-237 b(.)366 b(F)-40 b(eldman)365
+b(and)h(SFI)14457 b Fj(http://hornacek.coa.edu/dave)p
+eop end
+%%Page: 9 9
+TeXDict begin 9 8 bop -3200 3449 a Fo(SFI)367 b(CSSS)-26
+b(,)367 b(Beijing)d(China,)i(J)-26 b(uly)365 b(2005:)452
+b(A)-40 b(utomata)366 b(and)f(Computation)g(Theor)40
+b(y)15515 b(9)p -2043 4768 56085 443 v -2043 77566 443
+72799 v 15684 8541 a Fn(Re)-28 b(visiting)524 b(P)-56
+b(arentheses)2099 14614 y Fm(\262)942 b Fl(This)523 b(e)-56
+b(xample)522 b(is)i(diff)-56 b(erent)523 b(than)f(the)i(last\227y)-38
+b(ou)523 b(can't)g(scan)4189 17864 y(left)g(to)h(r)28
+b(ight)523 b(unless)g(y)-38 b(ou)523 b(remember)g(stuff)-56
+b(.)2099 22952 y Fm(\262)942 b Fl(There)522 b(is)i(no)f(FSM)g(that)h
+(can)f(recogniz)-28 b(e)522 b(this)h(language)-28 b(.)646
+b(The)4189 26203 y(prob)-38 b(lem)522 b(is)i(that)f(as)h(the)f(strong)g
+(g)-19 b(ro)-28 b(ws)523 b(in)g(length,)g(the)4189 29454
+y(n)-19 b(umber)522 b(of)i(states)g(necessar)56 b(y)523
+b(also)g(g)-19 b(ro)-28 b(ws)g(.)2099 34541 y Fm(\262)942
+b Fl(This)523 b(task)h(requires)e(in\002nite)h(memor)56
+b(y)-188 b(.)649 b(Ho)-28 b(w)-19 b(e)-56 b(v)-47 b(er)-94
+b(,)522 b(the)4189 37792 y(memor)56 b(y)523 b(only)g(needs)g(to)g(be)g
+(organiz)-28 b(ed)522 b(in)h(a)g(simple)g(w)-28 b(a)-56
+b(y)-188 b(.)2099 42880 y Fm(\262)942 b Fl(The)523 b(parentheses)f
+(language)f(can)i(be)g(recogniz)-28 b(ed)522 b(b)-38
+b(y)524 b(a)4189 46131 y(de)-56 b(vice)522 b(kno)-28
+b(wn)523 b(as)g(a)g Fn(Pushdo)-28 b(wn)524 b(A)-56 b(utomata)p
+Fl(.)2099 51218 y Fm(\262)942 b Fl(Put)523 b(an)g(object)g(on)f(the)h
+(stac)-38 b(k)525 b(if)f(y)-38 b(ou)523 b(see)g(a)g(left)h(paren)e
+Fi(\()h Fl(and)4189 54469 y(tak)-38 b(e)523 b(it)h(off)g(if)f(y)-38
+b(ou)524 b(see)f(a)g(r)28 b(ight)523 b(paren)f Fi(\))p
+Fl(.)2099 59557 y Fm(\262)942 b Fl(If)524 b(the)f(stac)-38
+b(k)524 b(is)g(empty)g(after)f(scanning)f(the)i(sequence)-28
+b(,)522 b(then)h(it)4189 62807 y(is)g(ok.)p 53599 77566
+V -2043 78009 56085 443 v -2614 79572 a Fo(c)-3200 79620
+y Fk(\260)p Fo(Da)-26 b(vid)366 b(P)-237 b(.)366 b(F)-40
+b(eldman)365 b(and)h(SFI)14457 b Fj(http://hornacek.coa.edu/dave)p
+eop end
+%%Page: 10 10
+TeXDict begin 10 9 bop -3200 3449 a Fo(SFI)367 b(CSSS)-26
+b(,)367 b(Beijing)d(China,)i(J)-26 b(uly)365 b(2005:)452
+b(A)-40 b(utomata)366 b(and)f(Computation)g(Theor)40
+b(y)14782 b(10)p -2043 4768 56085 443 v -2043 77566 443
+72799 v 16680 8516 a Fn(Pushdo)-28 b(wn)524 b(A)-56 b(utomata)9407
+28194 y @beginspecial 0 @llx 0 @lly 208 @urx 102 @ury
+1440 @rwi @setspecial
+%%BeginDocument: pda.eps
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: pda
+%%Creator: fig2dev Version 3.2 Patchlevel 4
+%%CreationDate: Tue Jul  5 21:30:22 2005
+%%For: dave@hornacek.coa.edu (Dave Feldman,Second Floor Turrets Annex,x249)
+%%BoundingBox: 0 0 208 102
+%%Magnification: 1.0000
+%%EndComments
+/$F2psDict 200 dict def
+$F2psDict begin
+$F2psDict /mtrx matrix put
+/col-1 {0 setgray} bind def
+/col0 {0.000 0.000 0.000 srgb} bind def
+/col1 {0.000 0.000 1.000 srgb} bind def
+/col2 {0.000 1.000 0.000 srgb} bind def
+/col3 {0.000 1.000 1.000 srgb} bind def
+/col4 {1.000 0.000 0.000 srgb} bind def
+/col5 {1.000 0.000 1.000 srgb} bind def
+/col6 {1.000 1.000 0.000 srgb} bind def
+/col7 {1.000 1.000 1.000 srgb} bind def
+/col8 {0.000 0.000 0.560 srgb} bind def
+/col9 {0.000 0.000 0.690 srgb} bind def
+/col10 {0.000 0.000 0.820 srgb} bind def
+/col11 {0.530 0.810 1.000 srgb} bind def
+/col12 {0.000 0.560 0.000 srgb} bind def
+/col13 {0.000 0.690 0.000 srgb} bind def
+/col14 {0.000 0.820 0.000 srgb} bind def
+/col15 {0.000 0.560 0.560 srgb} bind def
+/col16 {0.000 0.690 0.690 srgb} bind def
+/col17 {0.000 0.820 0.820 srgb} bind def
+/col18 {0.560 0.000 0.000 srgb} bind def
+/col19 {0.690 0.000 0.000 srgb} bind def
+/col20 {0.820 0.000 0.000 srgb} bind def
+/col21 {0.560 0.000 0.560 srgb} bind def
+/col22 {0.690 0.000 0.690 srgb} bind def
+/col23 {0.820 0.000 0.820 srgb} bind def
+/col24 {0.500 0.190 0.000 srgb} bind def
+/col25 {0.630 0.250 0.000 srgb} bind def
+/col26 {0.750 0.380 0.000 srgb} bind def
+/col27 {1.000 0.500 0.500 srgb} bind def
+/col28 {1.000 0.630 0.630 srgb} bind def
+/col29 {1.000 0.750 0.750 srgb} bind def
+/col30 {1.000 0.880 0.880 srgb} bind def
+/col31 {1.000 0.840 0.000 srgb} bind def
+
+end
+save
+newpath 0 102 moveto 0 0 lineto 208 0 lineto 208 102 lineto closepath clip newpath
+-17.9 135.7 translate
+1 -1 scale
+
+/cp {closepath} bind def
+/ef {eofill} bind def
+/gr {grestore} bind def
+/gs {gsave} bind def
+/sa {save} bind def
+/rs {restore} bind def
+/l {lineto} bind def
+/m {moveto} bind def
+/rm {rmoveto} bind def
+/n {newpath} bind def
+/s {stroke} bind def
+/sh {show} bind def
+/slc {setlinecap} bind def
+/slj {setlinejoin} bind def
+/slw {setlinewidth} bind def
+/srgb {setrgbcolor} bind def
+/rot {rotate} bind def
+/sc {scale} bind def
+/sd {setdash} bind def
+/ff {findfont} bind def
+/sf {setfont} bind def
+/scf {scalefont} bind def
+/sw {stringwidth} bind def
+/tr {translate} bind def
+/tnt {dup dup currentrgbcolor
+  4 -2 roll dup 1 exch sub 3 -1 roll mul add
+  4 -2 roll dup 1 exch sub 3 -1 roll mul add
+  4 -2 roll dup 1 exch sub 3 -1 roll mul add srgb}
+  bind def
+/shd {dup dup currentrgbcolor 4 -2 roll mul 4 -2 roll mul
+  4 -2 roll mul srgb} bind def
+ /DrawEllipse {
+	/endangle exch def
+	/startangle exch def
+	/yrad exch def
+	/xrad exch def
+	/y exch def
+	/x exch def
+	/savematrix mtrx currentmatrix def
+	x y tr xrad yrad sc 0 0 1 startangle endangle arc
+	closepath
+	savematrix setmatrix
+	} def
+
+/$F2psBegin {$F2psDict begin /$F2psEnteredState save def} def
+/$F2psEnd {$F2psEnteredState restore end} def
+
+$F2psBegin
+10 setmiterlimit
+0 slj 0 slc
+ 0.06000 0.06000 sc
+%
+% Fig objects follow
+%
+% 
+% here starts figure with depth 50
+% Ellipse
+15.000 slw
+n 1500 1200 318 318 0 360 DrawEllipse gs col0 s gr
+
+% Ellipse
+n 1500 1200 375 375 0 360 DrawEllipse gs col0 s gr
+
+% Polyline
+7.500 slw
+n 3450 1950 m 3750 1950 l 3750 2250 l 3450 2250 l
+ cp gs col0 s gr 
+% Polyline
+n 3450 1650 m 3750 1650 l 3750 1950 l 3450 1950 l
+ cp gs col0 s gr 
+% Polyline
+n 3450 1350 m 3750 1350 l 3750 1650 l 3450 1650 l
+ cp gs col0 s gr 
+% Polyline
+n 3450 1050 m 3750 1050 l 3750 1350 l 3450 1350 l
+ cp gs col0 s gr 
+% Polyline
+n 3450 750 m 3750 750 l 3750 1050 l 3450 1050 l
+ cp gs col0 s gr 
+% Polyline
+2 slj
+15.000 slw
+gs  clippath
+1309 1532 m 1266 1453 l 1048 1571 l 1175 1554 l 1090 1650 l cp
+eoclip
+n 1200 900 m 1197 899 l 1189 897 l 1176 893 l 1157 888 l 1133 881 l
+ 1103 873 l 1071 864 l 1038 856 l 1004 848 l 971 840 l
+ 940 834 l 911 829 l 884 825 l 859 822 l 835 820 l
+ 813 820 l 792 820 l 771 822 l 750 825 l 729 829 l
+ 709 834 l 687 840 l 666 847 l 644 856 l 622 866 l
+ 600 877 l 579 889 l 557 903 l 535 917 l 515 933 l
+ 495 949 l 476 967 l 458 984 l 441 1003 l 425 1021 l
+ 411 1040 l 398 1060 l 386 1080 l 375 1100 l 365 1121 l
+ 356 1143 l 348 1166 l 341 1189 l 335 1214 l 330 1239 l
+ 326 1266 l 323 1292 l 321 1319 l 321 1347 l 321 1373 l
+ 323 1400 l 326 1426 l 330 1451 l 335 1474 l 341 1497 l
+ 348 1518 l 356 1538 l 365 1557 l 375 1575 l 385 1590 l
+ 396 1605 l 407 1619 l 420 1632 l 434 1644 l 449 1656 l
+ 464 1668 l 481 1678 l 499 1688 l 518 1696 l 537 1704 l
+ 557 1711 l 577 1717 l 598 1722 l 619 1725 l 640 1728 l
+ 660 1730 l 681 1731 l 702 1731 l 722 1730 l 742 1728 l
+ 763 1725 l 783 1721 l 804 1717 l 825 1711 l 847 1705 l
+ 871 1697 l 896 1687 l 922 1676 l 951 1664 l 982 1650 l
+ 1014 1634 l 1048 1618 l 1084 1600 l 1119 1582 l 1153 1565 l
+ 1185 1548 l 1213 1533 l 1236 1521 l
+ 1275 1500 l gs col0 s gr gr
+
+% arrowhead
+0 slj
+75.000 slw
+n 1090 1650 m 1175 1554 l 1048 1571 l  col0 s
+% Polyline
+2 slj
+15.000 slw
+gs  clippath
+1733 1453 m 1690 1532 l 1909 1650 l 1825 1554 l 1951 1571 l cp
+eoclip
+n 1800 900 m 1803 899 l 1811 897 l 1824 893 l 1843 888 l 1867 881 l
+ 1897 873 l 1929 864 l 1962 856 l 1996 848 l 2029 840 l
+ 2060 834 l 2089 829 l 2116 825 l 2141 822 l 2165 820 l
+ 2187 820 l 2208 820 l 2229 822 l 2250 825 l 2271 829 l
+ 2291 834 l 2313 840 l 2334 847 l 2356 856 l 2378 866 l
+ 2400 877 l 2421 889 l 2443 903 l 2465 917 l 2485 933 l
+ 2505 949 l 2524 967 l 2542 984 l 2559 1003 l 2575 1021 l
+ 2589 1040 l 2602 1060 l 2614 1080 l 2625 1100 l 2635 1121 l
+ 2644 1143 l 2652 1166 l 2659 1189 l 2665 1214 l 2670 1239 l
+ 2674 1266 l 2677 1292 l 2679 1319 l 2679 1347 l 2679 1373 l
+ 2677 1400 l 2674 1426 l 2670 1451 l 2665 1474 l 2659 1497 l
+ 2652 1518 l 2644 1538 l 2635 1557 l 2625 1575 l 2615 1590 l
+ 2604 1605 l 2593 1619 l 2580 1632 l 2566 1644 l 2551 1656 l
+ 2536 1668 l 2519 1678 l 2501 1688 l 2482 1696 l 2463 1704 l
+ 2443 1711 l 2423 1717 l 2402 1722 l 2381 1725 l 2360 1728 l
+ 2340 1730 l 2319 1731 l 2298 1731 l 2278 1730 l 2258 1728 l
+ 2238 1725 l 2217 1721 l 2196 1717 l 2175 1711 l 2153 1705 l
+ 2129 1697 l 2104 1687 l 2078 1676 l 2049 1664 l 2018 1650 l
+ 1986 1634 l 1952 1618 l 1916 1600 l 1881 1582 l 1847 1565 l
+ 1815 1548 l 1787 1533 l 1764 1521 l
+ 1725 1500 l gs col0 s gr gr
+
+% arrowhead
+0 slj
+75.000 slw
+n 1951 1571 m 1825 1554 l 1909 1650 l  col0 s
+/Times-Roman ff 285.00 scf sf
+1425 1275 m
+gs 1 -1 sc (A) col0 sh gr
+/Times-Roman ff 255.00 scf sf
+1950 750 m
+gs 1 -1 sc (\( | Push a) col0 sh gr
+/Times-Roman ff 255.00 scf sf
+375 750 m
+gs 1 -1 sc (\) | Pop a) col0 sh gr
+% here ends figure;
+$F2psEnd
+rs
+showpage
+
+%%EndDocument
+ @endspecial 2099 32621 a Fm(\262)942 b Fl(This)523 b(is)h(the)f(PD)-75
+b(A)523 b(f)-56 b(or)522 b(the)i(parentheses)e(e)-56
+b(xample)2099 37709 y Fm(\262)942 b Fl(If)524 b(y)-38
+b(ou)523 b(see)g(a)g(\223\(\223,)h(wr)28 b(ite)523 b(\(push\))g(a)g
+(symbol)g(to)h(the)f(stac)-38 b(k.)2099 42796 y Fm(\262)942
+b Fl(If)524 b(y)-38 b(ou)523 b(see)g(a)g(\223\)\223,)h(er)-19
+b(ase)523 b(\(pop\))f(a)h(symbol)g(from)h(the)f(stac)-38
+b(k.)2099 47884 y Fm(\262)942 b Fl(The)523 b(machine)f(can)h(only)g(wr)
+28 b(ite)524 b(to)f(the)h(top)f(of)g(the)g(stac)-38 b(k.)2099
+52971 y Fm(\262)942 b Fl(This)523 b(PD)-75 b(A)523 b(can)g(recogniz)-28
+b(e)522 b(balanced)g(parentheses)g(of)i(an)-28 b(y)4189
+56222 y(length.)p 53599 77566 V -2043 78009 56085 443
+v -2614 79572 a Fo(c)-3200 79620 y Fk(\260)p Fo(Da)i(vid)366
+b(P)-237 b(.)366 b(F)-40 b(eldman)365 b(and)h(SFI)14457
+b Fj(http://hornacek.coa.edu/dave)p eop end
+%%Page: 11 11
+TeXDict begin 11 10 bop -3200 3449 a Fo(SFI)367 b(CSSS)-26
+b(,)367 b(Beijing)d(China,)i(J)-26 b(uly)365 b(2005:)452
+b(A)-40 b(utomata)366 b(and)f(Computation)g(Theor)40
+b(y)14782 b(11)p -2043 4768 56085 443 v -2043 77566 443
+72799 v 14978 8563 a Fn(Conte)-28 b(xt-Free)523 b(Langua)-19
+b(g)19 b(es)2099 14582 y Fm(\262)942 b Fl(The)523 b(languages)e
+(recogniz)-28 b(ed)522 b(b)-38 b(y)524 b(PD)-75 b(A)522
+b(are)h Fn(conte)-28 b(xt-free)4189 17832 y(langua)-19
+b(g)19 b(es.)2099 22898 y Fm(\262)942 b Fl(Regular)522
+b(languages)f(are)i(gener)-19 b(ated)522 b(sequentiality\227one)4189
+26149 y(symbol)h(after)h(the)f(ne)-56 b(xt.)2099 31214
+y Fm(\262)942 b Fl(CFL)-301 b(')-94 b(s)523 b(are)g(gener)-19
+b(ated)522 b(b)-38 b(y)523 b(wr)28 b(iting)524 b(r)28
+b(ules)523 b(applied)e(in)i(par)-19 b(allel.)2099 36280
+y Fm(\262)942 b Fl(F)-56 b(or)522 b(e)-56 b(xample)-28
+b(,)523 b(to)g(gener)-19 b(ate)522 b(the)h(parentheses)f(language)-28
+b(,)4189 39531 y(apply)522 b(the)h(f)-56 b(ollo)-28 b(wing:)17965
+45022 y Fd(W)2615 b Fm(!)2296 b Fi(\()p Fd(V)18603 48962
+y(V)2806 b Fm(!)2296 b Fi(\()p Fd(V)510 b(V)1786 b Fi(or)1275
+b(\))2099 55361 y Fm(\262)942 b Fl(Star)75 b(t)523 b(with)h
+Fd(W)319 b Fl(.)648 b(The)523 b(set)h(of)f(all)g(possib)-38
+b(le)523 b(applications)f(of)i(the)4189 58612 y(abo)-28
+b(v)-47 b(e)522 b(r)28 b(ules)523 b(giv)-47 b(e)523 b(y)-38
+b(ou)523 b(the)g(set)h(of)g(all)f(possib)-38 b(le)523
+b(balanced)4189 61862 y(parentheses)-28 b(.)2099 66928
+y Fm(\262)942 b Fl(F)-56 b(or)522 b(e)-56 b(xample:)5820
+72419 y Fd(W)-64 b(;)1658 b Fi(\()p Fd(V)128 b(;)1657
+b Fi(\(\()p Fd(V)510 b(V)128 b(;)1658 b Fi(\(\(\))p Fd(V)1785
+b Fi(\(\(\)\()p Fd(V)510 b(V)1786 b Fi(\(\(\)\(\))p Fd(V)f
+Fi(\(\(\)\(\)\))p 53599 77566 V -2043 78009 56085 443
+v -2614 79572 a Fo(c)-3200 79620 y Fk(\260)p Fo(Da)-26
+b(vid)366 b(P)-237 b(.)366 b(F)-40 b(eldman)365 b(and)h(SFI)14457
+b Fj(http://hornacek.coa.edu/dave)p eop end
+%%Page: 12 12
+TeXDict begin 12 11 bop -3200 3449 a Fo(SFI)367 b(CSSS)-26
+b(,)367 b(Beijing)d(China,)i(J)-26 b(uly)365 b(2005:)452
+b(A)-40 b(utomata)366 b(and)f(Computation)g(Theor)40
+b(y)14782 b(12)p -2043 4768 56085 443 v -2043 77566 443
+72799 v 18316 8563 a Fn(CFL)524 b(T)-113 b(erminology)2099
+14635 y Fm(\262)942 b Fi(\()p Fd(;)383 b Fi(\))522 b
+Fl(are)h Fn(terminals)p Fl(,)g(symbols)h(in)f(the)g(alphabet)f
+Fm(A)p Fl(.)2099 19723 y Fm(\262)942 b Fd(W)-64 b(;)383
+b(V)1033 b Fl(are)523 b Fn(v)-38 b(ariab)-19 b(les)p
+Fl(,)524 b(symbols)g(not)f(in)g Fm(A)p Fl(,)h(to)f(be)g(e)-56
+b(v)-47 b(entually)4189 22974 y(replaced)522 b(b)-38
+b(y)523 b(ter)47 b(minals)-28 b(.)2099 28061 y Fm(\262)942
+b Fl(CFL)-301 b(')-94 b(s)523 b(are)g(conte)-56 b(xt)523
+b(free)g(in)g(the)g(sense)g(that)h(the)f(production)4189
+31312 y(r)28 b(ule)522 b(depends)g(only)h(on)g(the)g(v)-47
+b(ar)28 b(iab)-38 b(le)-28 b(,)523 b(not)g(on)g(where)g(the)4189
+34563 y(v)-47 b(ar)28 b(iab)-38 b(le)522 b(is)i(in)f(the)g(str)28
+b(ing.)19609 39650 y Fn(CFL)524 b(Summar)19 b(y)2099
+45723 y Fm(\262)942 b Fl(Ev)-47 b(er)56 b(y)523 b(CFL)h(can)f(be)g
+(recogniz)-28 b(ed)522 b(b)-38 b(y)523 b(a)g(PD)-75 b(A,)523
+b(and)g(e)-56 b(v)-47 b(er)56 b(y)523 b(PD)-75 b(A)4189
+48974 y(produces)522 b(a)h(CFL.)2099 54061 y Fm(\262)942
+b Fl(Also)-75 b(,)523 b(FSM')-94 b(s)523 b(are)g(a)g(proper)f(subset)h
+(of)h(PD)-75 b(As)-28 b(,)523 b(and)2099 59149 y Fm(\262)942
+b Fl(Regular)522 b(Languages)f(are)i(a)g(proper)f(subset)h(of)h(CFL)
+-301 b(')-94 b(s)2099 64236 y Fm(\262)942 b Fl(W)-56
+b(e)522 b(can)h(thus)h(divide)f(languages)e(into)i(tw)-19
+b(o)524 b(classes)-28 b(,)524 b(one)f(of)4189 67487 y(which)g(is)g(str)
+28 b(ictly)525 b(more)e(comple)-56 b(x)523 b(than)g(the)g(other)-94
+b(.)2099 72575 y Fm(\262)942 b Fl(Are)522 b(there)h(e)-56
+b(v)-47 b(en)522 b(more)h(comple)-56 b(x)523 b(languages?)645
+b(Y)-264 b(es)524 b(...)p 53599 77566 V -2043 78009 56085
+443 v -2614 79572 a Fo(c)-3200 79620 y Fk(\260)p Fo(Da)-26
+b(vid)366 b(P)-237 b(.)366 b(F)-40 b(eldman)365 b(and)h(SFI)14457
+b Fj(http://hornacek.coa.edu/dave)p eop end
+%%Page: 13 13
+TeXDict begin 13 12 bop -3200 3449 a Fo(SFI)367 b(CSSS)-26
+b(,)367 b(Beijing)d(China,)i(J)-26 b(uly)365 b(2005:)452
+b(A)-40 b(utomata)366 b(and)f(Computation)g(Theor)40
+b(y)14782 b(13)p -2043 4768 56085 443 v -2043 77566 443
+72799 v 17206 8563 a Fn(Chomsky)523 b(Hierar)-38 b(c)-19
+b(h)-38 b(y)2099 14635 y Fm(\262)942 b Fl(The)523 b(hier)-19
+b(arch)-56 b(y)522 b(contin)-19 b(ues:)5259 40598 y @beginspecial
+0 @llx 0 @lly 245 @urx 124 @ury 1800 @rwi @setspecial
+%%BeginDocument: chomsky.eps
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: chomsky.eps
+%%Creator: fig2dev Version 3.2 Patchlevel 3d
+%%CreationDate: Tue Jul  6 16:40:09 2004
+%%For: feldman@A02 ()
+%%BoundingBox: 0 0 245 124
+%%Magnification: 1.0000
+%%EndComments
+/$F2psDict 200 dict def
+$F2psDict begin
+$F2psDict /mtrx matrix put
+/col-1 {0 setgray} bind def
+/col0 {0.000 0.000 0.000 srgb} bind def
+/col1 {0.000 0.000 1.000 srgb} bind def
+/col2 {0.000 1.000 0.000 srgb} bind def
+/col3 {0.000 1.000 1.000 srgb} bind def
+/col4 {1.000 0.000 0.000 srgb} bind def
+/col5 {1.000 0.000 1.000 srgb} bind def
+/col6 {1.000 1.000 0.000 srgb} bind def
+/col7 {1.000 1.000 1.000 srgb} bind def
+/col8 {0.000 0.000 0.560 srgb} bind def
+/col9 {0.000 0.000 0.690 srgb} bind def
+/col10 {0.000 0.000 0.820 srgb} bind def
+/col11 {0.530 0.810 1.000 srgb} bind def
+/col12 {0.000 0.560 0.000 srgb} bind def
+/col13 {0.000 0.690 0.000 srgb} bind def
+/col14 {0.000 0.820 0.000 srgb} bind def
+/col15 {0.000 0.560 0.560 srgb} bind def
+/col16 {0.000 0.690 0.690 srgb} bind def
+/col17 {0.000 0.820 0.820 srgb} bind def
+/col18 {0.560 0.000 0.000 srgb} bind def
+/col19 {0.690 0.000 0.000 srgb} bind def
+/col20 {0.820 0.000 0.000 srgb} bind def
+/col21 {0.560 0.000 0.560 srgb} bind def
+/col22 {0.690 0.000 0.690 srgb} bind def
+/col23 {0.820 0.000 0.820 srgb} bind def
+/col24 {0.500 0.190 0.000 srgb} bind def
+/col25 {0.630 0.250 0.000 srgb} bind def
+/col26 {0.750 0.380 0.000 srgb} bind def
+/col27 {1.000 0.500 0.500 srgb} bind def
+/col28 {1.000 0.630 0.630 srgb} bind def
+/col29 {1.000 0.750 0.750 srgb} bind def
+/col30 {1.000 0.880 0.880 srgb} bind def
+/col31 {1.000 0.840 0.000 srgb} bind def
+
+end
+save
+newpath 0 124 moveto 0 0 lineto 245 0 lineto 245 124 lineto closepath clip newpath
+-21.6 142.6 translate
+1 -1 scale
+
+/cp {closepath} bind def
+/ef {eofill} bind def
+/gr {grestore} bind def
+/gs {gsave} bind def
+/sa {save} bind def
+/rs {restore} bind def
+/l {lineto} bind def
+/m {moveto} bind def
+/rm {rmoveto} bind def
+/n {newpath} bind def
+/s {stroke} bind def
+/sh {show} bind def
+/slc {setlinecap} bind def
+/slj {setlinejoin} bind def
+/slw {setlinewidth} bind def
+/srgb {setrgbcolor} bind def
+/rot {rotate} bind def
+/sc {scale} bind def
+/sd {setdash} bind def
+/ff {findfont} bind def
+/sf {setfont} bind def
+/scf {scalefont} bind def
+/sw {stringwidth} bind def
+/tr {translate} bind def
+/tnt {dup dup currentrgbcolor
+  4 -2 roll dup 1 exch sub 3 -1 roll mul add
+  4 -2 roll dup 1 exch sub 3 -1 roll mul add
+  4 -2 roll dup 1 exch sub 3 -1 roll mul add srgb}
+  bind def
+/shd {dup dup currentrgbcolor 4 -2 roll mul 4 -2 roll mul
+  4 -2 roll mul srgb} bind def
+ /DrawEllipse {
+	/endangle exch def
+	/startangle exch def
+	/yrad exch def
+	/xrad exch def
+	/y exch def
+	/x exch def
+	/savematrix mtrx currentmatrix def
+	x y tr xrad yrad sc 0 0 1 startangle endangle arc
+	closepath
+	savematrix setmatrix
+	} def
+
+/$F2psBegin {$F2psDict begin /$F2psEnteredState save def} def
+/$F2psEnd {$F2psEnteredState restore end} def
+
+$F2psBegin
+10 setmiterlimit
+ 0.06000 0.06000 sc
+%
+% Fig objects follow
+%
+15.000 slw
+% Ellipse
+n 2400 1350 2025 1012 0 360 DrawEllipse gs col0 s gr
+
+% Ellipse
+n 2449 1511 1575 787 0 360 DrawEllipse gs col0 s gr
+
+% Ellipse
+n 2400 1650 1125 563 0 360 DrawEllipse gs col0 s gr
+
+% Ellipse
+n 2400 1800 750 375 0 360 DrawEllipse gs col0 s gr
+
+/Times-Roman ff 240.00 scf sf
+1875 1875 m
+gs 1 -1 sc (RL      FSM) col0 sh gr
+/Times-Roman ff 240.00 scf sf
+1875 1425 m
+gs 1 -1 sc (CFL     PDA) col0 sh gr
+/Times-Roman ff 240.00 scf sf
+1875 1050 m
+gs 1 -1 sc (CSL     LBA) col0 sh gr
+/Times-Roman ff 240.00 scf sf
+1875 675 m
+gs 1 -1 sc (REL     TM) col0 sh gr
+$F2psEnd
+rs
+
+%%EndDocument
+ @endspecial 2099 45582 a Fm(\262)942 b Fl(This)523 b(hier)-19
+b(arch)-56 b(y)522 b(of)i(languages/machines)d(is)j(kno)-28
+b(wn)523 b(as)g(the)4189 48833 y Fn(Chomsky)g(Hierar)-38
+b(c)-19 b(h)-38 b(y)p Fl(.)2099 53920 y Fm(\262)942 b
+Fl(Each)522 b(le)-56 b(v)-47 b(el)523 b(in)g(the)g(hier)-19
+b(arch)-56 b(y)522 b(contains)h(something)g(ne)-38 b(w)-113
+b(,)524 b(and)4189 57171 y(also)f(contains)g(all)g(the)g(languages)e
+(at)j(lo)-28 b(w)-19 b(er)523 b(le)-56 b(v)-47 b(els)522
+b(of)i(the)4189 60422 y(hier)-19 b(arch)-56 b(y)-188
+b(.)p 53599 77566 V -2043 78009 56085 443 v -2614 79572
+a Fo(c)-3200 79620 y Fk(\260)p Fo(Da)-26 b(vid)366 b(P)-237
+b(.)366 b(F)-40 b(eldman)365 b(and)h(SFI)14457 b Fj
+(http://hornacek.coa.edu/dave)p eop end
+%%Page: 14 14
+TeXDict begin 14 13 bop -3200 3449 a Fo(SFI)367 b(CSSS)-26
+b(,)367 b(Beijing)d(China,)i(J)-26 b(uly)365 b(2005:)452
+b(A)-40 b(utomata)366 b(and)f(Computation)g(Theor)40
+b(y)14782 b(14)p -2043 4768 56085 443 v -2043 77566 443
+72799 v 11371 8563 a Fn(Chomsky)523 b(Hierar)-38 b(c)-19
+b(h)-38 b(y)-151 b(,)525 b(terminology)2099 14635 y Fm(\262)942
+b Fl(CSL)523 b(=)g Fn(Conte)-28 b(xt)524 b(Sensitive)e(Langua)-19
+b(g)19 b(e)p Fl(.)649 b(These)523 b(are)f(lik)-38 b(e)4189
+17886 y(CFL)-301 b(')-94 b(s)-28 b(,)523 b(b)-38 b(ut)524
+b(allo)-28 b(w)522 b(tr)-19 b(ansitions)524 b(that)f(depend)f(on)h(the)
+g(position)4189 21137 y(of)g(the)g(v)-47 b(ar)28 b(iab)-38
+b(le)523 b(in)g(the)g(str)28 b(ings)-28 b(.)2099 26225
+y Fm(\262)942 b Fl(LBA)522 b(=)i Fn(Linear)g(Bounded)g(A)-56
+b(utomata)p Fl(.)647 b(These)524 b(are)e(lik)-38 b(e)4189
+29475 y(PD)-75 b(A')-94 b(s)-28 b(,)523 b(e)-56 b(xcept:)4313
+34563 y(1.)941 b(Controller)523 b(can)g(wr)28 b(ite)523
+b(an)-28 b(ywhere)523 b(on)f(w)-19 b(or)28 b(k)524 b(tape)-28
+b(.)4313 38732 y(2.)941 b(W)-56 b(or)28 b(k)523 b(tape)g(restr)28
+b(icted)524 b(to)f(be)g(a)g(linear)g(function)g(of)g(input.)2099
+43820 y Fm(\262)942 b Fn(Recur)-28 b(sivel)g(y)522 b(En)-19
+b(umerab)g(le)524 b(Langua)-19 b(g)19 b(es)523 b Fl(are)g(those)4189
+47071 y(languages)e(produced)h(b)-38 b(y)524 b(an)f(unrestr)28
+b(icted)523 b(g)-19 b(r)g(ammar)-94 b(.)2099 52158 y
+Fm(\262)942 b Fl(An)522 b Fn(Unrestricted)i(Grammar)e
+Fl(is)i(lik)-38 b(e)524 b(a)f(CSL,)g(b)-38 b(ut)523 b(allo)-28
+b(ws)4189 55409 y(substitutions)523 b(that)h(shr)28 b(ink)523
+b(the)g(length)g(of)g(the)g(str)28 b(ing.)2099 60497
+y Fm(\262)942 b Fl(TM)523 b(=)h Fn(T)-169 b(uring)525
+b(Mac)-19 b(hines)p Fl(.)648 b(These)523 b(are)g(LBA')-94
+b(s)522 b(with)i(linear)4189 63747 y(tape)e(restr)28
+b(iction)524 b(remo)-28 b(v)-47 b(ed.)647 b(These)523
+b(are)g(the)g(most)h(po)-28 b(w)-19 b(erful)4189 66998
+y(model)510 b(of)h(computation.)643 b(\(Example)511 b(3)f(requires)g(a)
+h(TM.\))h(Much)4189 70249 y(more)523 b(on)f(these)h(later!)p
+53599 77566 V -2043 78009 56085 443 v -2614 79572 a Fo(c)-3200
+79620 y Fk(\260)p Fo(Da)-26 b(vid)366 b(P)-237 b(.)366
+b(F)-40 b(eldman)365 b(and)h(SFI)14457 b Fj
+(http://hornacek.coa.edu/dave)p eop end
+%%Page: 15 15
+TeXDict begin 15 14 bop -3200 3449 a Fo(SFI)367 b(CSSS)-26
+b(,)367 b(Beijing)d(China,)i(J)-26 b(uly)365 b(2005:)452
+b(A)-40 b(utomata)366 b(and)f(Computation)g(Theor)40
+b(y)14782 b(15)p -2043 4768 56085 443 v -2043 77566 443
+72799 v 11128 8563 a Fn(Chomsky)523 b(Hierar)-38 b(c)-19
+b(h)-38 b(y)-151 b(,)525 b(Conc)-38 b(lusions)2099 14635
+y Fm(\262)942 b Fl(Order)522 b(languages)f(\(sets\))j(b)-38
+b(y)524 b(the)f(type)h(of)f(machine)g(needed)4189 17886
+y(to)g(recogniz)-28 b(e)522 b(elements)h(of)h(the)f(language)-28
+b(.)2099 22974 y Fm(\262)942 b Fl(There)522 b(are)h(qualitativ)-47
+b(e)523 b(diff)-56 b(erence)522 b(betw)-19 b(een)523
+b(machines)g(at)4189 26225 y(diff)-56 b(erent)522 b(le)-56
+b(v)-47 b(els)523 b(of)g(the)h(hier)-19 b(arch)-56 b(y)-188
+b(.)2099 31312 y Fm(\262)942 b Fl(At)523 b(lo)-28 b(w)-19
+b(er)523 b(le)-56 b(v)-47 b(els)523 b(of)g(the)g(hier)-19
+b(arch)-56 b(y)-188 b(,)522 b(there)h(are)g(algor)28
+b(ithms)523 b(f)-56 b(or)4189 34563 y(minimizing)523
+b(machines)-28 b(.)647 b(\(I.e)-28 b(.,)524 b(remo)-28
+b(v)-47 b(e)523 b(duplicate)f(nodes)-28 b(.\))2099 39650
+y Fm(\262)942 b Fl(The)523 b(minim)-19 b(um)523 b(machine)g(can)g(be)g
+(vie)-38 b(w)-19 b(ed)523 b(as)g(a)4189 42901 y(representation)e(of)j
+(the)f(patter)47 b(n)523 b(contained)f(in)h(the)g(language)-28
+b(.)4189 46152 y(The)523 b(machine)f(is)i(a)f(descr)28
+b(iption)523 b(of)g(all)g(the)g(regular)28 b(ities)-28
+b(.)2099 51240 y Fm(\262)942 b Fl(The)523 b(siz)-28 b(e)523
+b(of)g(the)h(machine)e(ma)-56 b(y)523 b(be)g(vie)-38
+b(w)-19 b(ed)524 b(as)f(a)g(measure)g(of)4189 54491 y(comple)-56
+b(xity)-188 b(.)2099 59578 y Fm(\262)942 b Fl(The)523
+b(machine)f(itself)i(re)-56 b(v)-47 b(eals)523 b(the)g
+(\223architecture\224)f(of)i(the)4189 62829 y(inf)-56
+b(or)47 b(mation)522 b(processing.)p 53599 77566 V -2043
+78009 56085 443 v -2614 79572 a Fo(c)-3200 79620 y Fk(\260)p
+Fo(Da)-26 b(vid)366 b(P)-237 b(.)366 b(F)-40 b(eldman)365
+b(and)h(SFI)14457 b Fj(http://hornacek.coa.edu/dave)p
+eop end
+%%Page: 16 16
+TeXDict begin 16 15 bop -3200 3449 a Fo(SFI)367 b(CSSS)-26
+b(,)367 b(Beijing)d(China,)i(J)-26 b(uly)365 b(2005:)452
+b(A)-40 b(utomata)366 b(and)f(Computation)g(Theor)40
+b(y)14782 b(16)p -2043 4768 56085 443 v -2043 77566 443
+72799 v 11660 8563 a Fn(Other)523 b(computation)h(theor)19
+b(y)523 b(notes)2099 14635 y Fm(\262)942 b Fl(It)524
+b(is)f(possib)-38 b(le)523 b(to)h(re\002ne)e(the)i(Chomsky)g(hier)-19
+b(arch)-56 b(y)522 b(with)4189 17886 y(diff)-56 b(erent)522
+b(sor)75 b(ts)524 b(of)g(machines)-28 b(.)647 b(The)523
+b(result)g(is)h(a)f(r)28 b(ich)523 b(par)75 b(tial)4189
+21137 y(order)28 b(ing)522 b(of)h(languages)-28 b(.)2099
+26225 y Fm(\262)942 b Fl(T)-226 b(o)523 b(use)g(computation)g(theor)56
+b(y)523 b(as)h(a)f(basis)g(f)-56 b(or)523 b(measur)28
+b(ing)4189 29475 y(comple)-56 b(xity)523 b(or)g(str)28
+b(ucture)-28 b(,)524 b(I)g(think)f(it')-94 b(s)524 b(impor)75
+b(tant)523 b(to)g(star)75 b(t)524 b(at)4189 32726 y(the)f(bottom)g(of)h
+(the)f(hier)-19 b(arch)-56 b(y)522 b(and)g(w)-19 b(or)28
+b(k)524 b(y)-38 b(our)524 b(w)-28 b(a)-56 b(y)523 b(up)-66
+b(.)p 53599 77566 V -2043 78009 56085 443 v -2614 79572
+a Fo(c)-3200 79620 y Fk(\260)p Fo(Da)-26 b(vid)366 b(P)-237
+b(.)366 b(F)-40 b(eldman)365 b(and)h(SFI)14457 b Fj
+(http://hornacek.coa.edu/dave)p eop end
+%%Page: 17 17
+TeXDict begin 17 16 bop -3200 3449 a Fo(SFI)367 b(CSSS)-26
+b(,)367 b(Beijing)d(China,)i(J)-26 b(uly)365 b(2005:)452
+b(A)-40 b(utomata)366 b(and)f(Computation)g(Theor)40
+b(y)14782 b(17)p -2043 4768 56085 443 v -2043 77566 443
+72799 v 11459 8563 a Fn(Computation)525 b(Theor)19 b(y)523
+b(Ref)-19 b(erences)800 13094 y Fl(The)523 b(basic)g(mater)28
+b(ial)523 b(presented)g(is)g(quite)g(standard)f(and)h(there)g(are)800
+16345 y(man)-28 b(y)523 b(ref)-56 b(erences)522 b(on)h(it.)648
+b(Here)523 b(are)g(a)g(f)-56 b(e)-38 b(w:)2272 21740
+y Fc(\262)941 b Fb(Hopcroft)419 b(and)h(Ullman.)519 b(Introduction)419
+b(to)g(A)-45 b(utomata)419 b(Theor)45 b(y)-151 b(,)419
+b(Languages)4189 24313 y(and)g(Computation.)520 b(Addison-W)-45
+b(esle)-30 b(y)-151 b(.)520 b(1979.)f Fa(A)418 b(standard)i(ref)-45
+b(erence)-23 b(.)518 b(Not)4189 26887 y(m)-23 b(y)418
+b(f)-45 b(a)-30 b(v)-38 b(or)23 b(ite)-23 b(,)419 b(though.)519
+b(It')-75 b(s)418 b(thorough)j(and)e(clear)-75 b(,)419
+b(b)-30 b(ut)419 b(r)-15 b(ather)418 b(dense)-23 b(.)2272
+31974 y Fc(\262)941 b Fb(Brookshear)-75 b(.)518 b(Theor)45
+b(y)419 b(of)g(Computation:)520 b(F)-45 b(or)38 b(mal)418
+b(Languages)-23 b(,)422 b(A)-45 b(utomata,)4189 35225
+y(and)419 b(Comple)-45 b(xity)-151 b(.)520 b(Benjamin/Cummings)-23
+b(.)520 b(1989.)f Fa(I)419 b(lik)-30 b(e)419 b(this)g(book.)519
+b(I)419 b(\002nd)g(it)4189 38476 y(m)-15 b(uch)419 b(clearer)g(than)g
+(Hopcroft)g(and)h(Ullman.)800 44548 y Fl(Computation)523
+b(theor)56 b(y)523 b(applied)f(to)h(ph)-56 b(ysical)523
+b(sequences)2272 49943 y Fc(\262)941 b Fb(Badii)419 b(and)h(P)-75
+b(oliti.)518 b(Comple)-45 b(xity:)519 b(Hier)-15 b(archical)421
+b(Str)23 b(uctures)417 b(and)j(Scaling)g(in)4189 52517
+y(Ph)-45 b(ysics)-23 b(.)518 b(Cambr)23 b(idge)-23 b(.)519
+b(1997.)h Fa(Excellent)419 b(book,)h(geared)g(to)-23
+b(w)g(ard)420 b(ph)-45 b(ysics)4189 55090 y(g)-15 b(r)g(ad)419
+b(students)-23 b(.)519 b(Closest)420 b(thing)g(to)e(a)h(te)-45
+b(xtbook)420 b(that)f(co)-23 b(v)-38 b(ers)419 b(topics)h(similar)f(to)
+4189 57664 y(those)g(I'v)-38 b(e)420 b(co)-23 b(v)-38
+b(ered)420 b(throughout)g(these)g(lectures)-23 b(.)2272
+62074 y Fc(\262)941 b Fb(Bioinf)-45 b(or)38 b(matics)418
+b(te)-45 b(xtbooks?)p 53599 77566 V -2043 78009 56085
+443 v -2614 79572 a Fo(c)-3200 79620 y Fk(\260)p Fo(Da)-26
+b(vid)366 b(P)-237 b(.)366 b(F)-40 b(eldman)365 b(and)h(SFI)14457
+b Fj(http://hornacek.coa.edu/dave)p eop end
+%%Trailer
+
+userdict /end-hook known{end-hook}if
+%%EOF

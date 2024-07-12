@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Calculus III</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="container">
+<div id="header">
+<h1 align=right>calculus III</h1>
+<h2 align=right>college of the atlantic</h2> 
+<h2 align=right><a href="http://hornacek.coa.edu/dave">david p. feldman</a> |
+fall 2017</h2>  
+<br />
+<hr />
+
+</div> <!-- end header -->
+
+<div class="spacer"></div>
+<div id="left">
+
+<div id="leftcontent">
+
+  <ul>
+    <li><a href="./index.html">Home</a></li>
+    <li><a href="./overview.html">Info</a></li>
+    <li><a href="./description.html">Description</a></li>
+    <li><a href="./homework.html">Assignments</a></li>
+    <li><a href="./handouts.html">Handouts</a></li>
+<!--    <li><a href="./labs.html">Labs</a></li>-->
+    </ul>
+<p>&nbsp;</p>
+
+
+
+</div> <!-- end left content -->
+</div> <!-- end left division -->
+
+<div id="main">
+<div id="maincontent">
+
+
+
+<h3>Handouts and Class Videos</h3><br>
+<ol>
+<p class="no-box">
+
+  <li>Friday, September 8
+  <ul>
+    <li><a href="https://www.youtube.com/watch?v=7yQebMeGAm0">Video of
+    2016 class</a>
+    <li><a href="./Handouts/notes.12.1.pdf">12.1: Functions of Two
+    Variables</a>  
+    <li><a href="./Handouts/notes.12.1.table.pdf">12.1: Table of
+   Numbers</a>
+  </ul>
+<hr>
+  <li>Tuesday, September 12
+  <ul>
+    <li><a href="https://www.youtube.com/watch?v=diFTgiTjP7c">Video of
+    2016 class</a> 
+    <li><a href="./Handouts/worksheet.12.1.pdf">12.1: Slicing Functions</a>
+    <!--(we only did problem 2)-->
+    <li><a href="./Handouts/worksheet.12.3.pdf">12.3:  Contour Lines</a>
+    <!--(we only did problem 2)-->
+  </ul>
+
+<li>Wednesday, September 13
+  <ul>
+    <li><a href="https://youtu.be/qxsZgVnWUDk">Video of 2016 class</a>
+    <li><a href="./Handouts/notes.12.4.pdf">12.4: Planes</a>
+  </ul>
+
+  </ul>
+
+  <li>Friday, September 15
+  <ul>
+    <li><a href="https://youtu.be/J2OBDn5slm4">Video of 2016 class</a>
+    <li><a href="./Handouts/notes.13.1-2.pdf">13.1 and 13.2: Vectors</a>
+    <li><a href="./Handouts/notes.13.3.pdf">13.3: Dot Products</a>
+  </ul>
+<hr>
+  <li>Tuesday, September 19
+  <ul>
+    <li><a href="https://youtu.be/mXNJqpmdUP8">Video of 2016 class</a>
+    <li><a href="./Handouts/notes.13.3.a.pdf">13.3: Dot Products</a>
+    <li><a href="./Handouts/worksheet.14.1.pdf">14.1: Partial Derivatives</a>
+    <li><a href="./Handouts/notes.14.1.pdf">14.1: Partial Derivative</a>
+  </ul>
+  <li>Wednesday, September 20
+  <ul>
+    <li><a href="https://youtu.be/6zYYZwSHjcQ">Video of 2016 class</a>
+    <li><a href="./Handouts/notes.14.1.b.pdf">14.1: The Partial Derivative</a>
+    <li><a href="./Handouts/notes.14.2.1.pdf">14.2: Finding Partial
+    Derivatives</a>  
+  </ul>
+
+  <li>Friday, September 22
+  <ul>
+    <li><a href="https://youtu.be/P-aYBXTVXFs">Video of 2016 class</a>
+    <li><a href="./Handouts/notes.14.2.2.pdf">14.2: More Partial
+    Derivatives</a>
+    <li><a href="./Handouts/notes.14.3.pdf">14.3: Tangent Planes and
+    Differentials</a>
+  </ul>
+<hr>
+  <li>Tuesday, September 26
+  <ul>
+    <li><a href="https://youtu.be/7KxVY3CZEiQ">Video of 2016 class</a>
+    <li><a href="./Handouts/notes.14.4.pdf">14.4: Directional Derivatives
+    and the Gradient Vector</a>
+  </ul>
+
+  <li>Wednesday, September 27
+  <ul>
+    <li><a href="https://youtu.be/ceyx61hIAGM">Video of 2016 class</a>. 
+    <li><a href="./Handouts/notes.14.6-7.pdf">14.6 and 14.7: Chain Rule
+    and Partial Derivatives</a>
+  </ul>
+
+  <li>Friday, September 29
+  <ul>
+    <li><a href="https://youtu.be/BAY30DjLZCU">Video of 2016 class</a>
+    <li><a href="./Handouts/notes.15.1-2.pdf">15.1 and 15.2: Optimization</a> 
+  </ul>
+
+<hr>
+  <li>Tuesday, October 3
+  <ul>
+    <li><a href="https://youtu.be/qGjJXHIV9yg">Video of 2016 class</a>
+    <li><a href="./Handouts/notes.15.3.pdf">15.3: Lagrange Multipliers</a> 
+  </ul>
+  <li>Wednesday, October 4
+  <ul>
+    <li>Video of class
+    <li><a href="./Handouts/notes.16.1.pdf">16.1: Introducing Definite
+    Integrals of Two Variables</a> 
+  </ul>
+  <li>Friday, October 6
+  <ul>
+    <li><a href="https://youtu.be/fmVXrO845ac">Video of class</a>
+    <li><a href="./Handouts/notes.16.2.pdf">16.2: Iterated
+    Integrals</a>
+  </ul>
+<hr>
+  <li>Tuesday, October 10
+  <ul>
+    <li><a href="https://youtu.be/NRSABVo1G10">Video of 2016 class</a>
+    <li><a href="./Handouts/notes.16.3.pdf">16.2 and 16.3: More Iterated
+    Integrals</a>
+  </ul>
+  <li>Tuesday, October 11
+  <ul>
+    <li><a href="https://youtu.be/DnxnzjsagDw">Video of 2016 class</a>
+    <li><a href="./Handouts/notes.16.4.pdf">16.4: Integrals in Polar
+    Coordinates</a> 
+  </ul>
+  <li>Friday, October 13
+  <ul>
+    <li><a href="https://youtu.be/dNup-uFGbmc">Video of 2016 class</a>
+    <li><a href="./Handouts/notes.16.5.pdf">16.5: Integrals in
+    Cylindrical and Spherical Coordinates</a>
+  </ul>
+<hr>
+  <li>Tuesday, October 17
+  <ul>
+     <li><a href="https://youtu.be/zcGwoadZiCQ">Video of 2016 class</a>
+     <li><a href="./Handouts/notes.16.5.b.pdf">16.5: More Integrals in
+     Cylindrical and Spherical Coordinates</a>
+     <li><a href="./Handouts/notes.17.1.pdf">17.1: Parametrized Curves</a>
+  </ul>
+  <li>Wednesday, October 18
+  <ul>
+    <li><a href="https://youtu.be/XHvZsMT5Ih8">Video of 2016 class</a>
+     <li><a href="./Handouts/notes.17.1.pdf">17.1: Parametrized Curves</a>
+    <li><a href="./Handouts/notes.17.2.pdf">17.2: Parametric Curves,
+    Velocity, and Acceleration</a> 
+  </ul>
+  <li>Friday, October 20
+  <ul>
+    <li><a href="https://youtu.be/BBpVlbfVNFM">Video of 2016 class</a>
+    <li><a href="./Handouts/notes.17.3.pdf">17.3: Vector Fields</a>
+    <li><a href="./Handouts/worksheet.17.3.pdf">Vector Fields Worksheet</a>
+  </ul>
+<hr>
+  <li>Tuesday, October 24
+  <ul>
+    <li><a href="https://youtu.be/AyKAh8sc7Fc">Video of 2016 class</a>
+    <li><a href="./Handouts/worksheet.18.1.pdf">18.1: Line
+    Integrals</a> 
+    <li><a href="./Handouts/notes.18.2.pdf">18.2: Evaluating Line
+    Integrals</a> 
+  </ul>
+  <li>Wednesday, October 25
+  <ul>
+    <li><a href="https://youtu.be/ZmwyxFkb8bs">Video of 2016 class</a>
+    <li><a href="./Handouts/notes.18.3-4.pdf">18.3 and 18.4: Gradient
+    Fields and Path Independence</a>
+  </ul>
+  <li>Friday, October 27
+  <ul>
+    <li><a href="https://youtu.be/pWHVRfu1VgI">Video of 2016class</a>
+    <li><a href="./Handouts/notes.18.4.pdf">18.4: Green's Theorem</a>
+    <li><a href="./Handouts/notes.19.1.pdf">19.1: Flux Integrals</a>
+  </ul>
+<hr>
+  <li>Tuesday, October 31
+  <ul>
+    <li><a href="https://youtu.be/4INbpO6Pe_8">Video of 2016 class</a>
+    <li><a href="./Handouts/notes.19.2.pdf">19.2: Evaluating Flux
+    Integrals</a> 
+  </ul> 
+ <li>Wednesday, November 1
+  <ul>
+    <li><a href="https://youtu.be/D1lO8g-5iQE">Video of 2016 class</a>
+    <li><a href="./Handouts/notes.19.2.b.pdf">19.2: Evaluating Flux
+    Integrals</a> 
+    <li><a href="./Handouts/notes.20.1.pdf">20.1: Divergence</a>
+  </ul>
+<hr>
+<li>Tuesday, November 7
+  <ul>
+    <li><a href="https://youtu.be/SoQQ1mkxuOA">Video of 2016 class</a>
+    <li><a href="./Handouts/notes.20.2.pdf">20.2: The Divergence
+    Theorem</a> 
+    <li><a href="./Handouts/notes.13.4.pdf">13.4: Cross Products</a> 
+  </ul>
+  <li>Wednesday, November 8
+  <ul>
+    <li><a href="https://youtu.be/7mB8DarIBUs">Video of 2016 class</a>
+    <li><a href="./Handouts/notes.20.3.pdf">20.3: Curl</a> 
+  </ul>
+<!--
+  <li>Tuesday, March 8
+  <ul>
+    <li><a href="https://youtu.be/WDB_PJTiBJI">Video of class</a>
+    <li><a href="./Handouts/notes.20.3-4.pdf">20.3 and 20.4: Curl and 
+    Stokes' Theorem</a>
+  </ul>
+  <li>Wednesday, March 9
+  <ul>
+    <li><a href="https://youtu.be/B6dx4dXLbLY">Video of class</a>
+  </ul>
+  <li>Friday, March 11
+  <ul>
+    <li>Video of class
+  </ul>
+-->
+</ol>
+
+</div> <!-- end main content section -->
+</div> 
+<div id="footer"><div class="spacer"></div>
+
+<hr />
+<br>
+
+</div> <!-- end container -->
+</body>
+
+</html>

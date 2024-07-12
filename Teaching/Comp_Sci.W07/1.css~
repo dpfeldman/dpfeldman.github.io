@@ -1,0 +1,127 @@
+
+
+
+p.dotted {border: 5px double #8c8c8c; background-color:#DBDBDB}
+
+p.main {border: 5px double #8c8c8c; background-color:#DBDBDB; font-size: 14px; padding: 0.5cm}
+#border-style: dotted; background-color:#E6D8FA}
+p.dashed {border-style: dashed; background-color:#333333}
+p.solid {border-style: solid}
+p.double {border-style: double}
+p.groove {border-style: groove}
+p.ridge {border-style: ridge}
+p.inset {border-style: inset}
+p.outset {border-style: outset}
+
+
+
+body {
+background-color: #DBDBDB;
+font-size: 13px;
+font-family: Sans-Serif, Verdana, Arial, SunSans-Regular;
+color:#222222;padding:0px;
+margin:30px;
+}
+a {text-decoration: none}
+a {color: #222222;}
+a:visited {color:#222222;}
+a:hover {color: #3399ff;}
+a:active { color:#000000;}
+
+a.underline {text-decoration: underline; color:#3333FF}
+
+
+ol {font-size: 15px}
+ul {font-size: 15px}
+
+h1 {
+font-size: 20px;
+letter-spacing: 0.03cm;
+text-transform:uppercase;
+background-color: #DBDBDB;
+#border:5px dotted #608341;
+#border-top:5px solid #C150E0;
+#border-bottom:5px solid #C150E0;
+padding:5px 15px;
+margin:0px }
+
+h2 {
+font-size:14px;
+letter-spacing: 0.03cm;
+background-color: #DBDBDB;
+#border:5px dotted #608341;
+#border-bottom:2px solid #564b47;
+padding: 0px 10px;
+#border-style:dotted;
+text-transform:lowercase;
+margin:15px;}
+
+h4 {
+font-size:17px;
+letter-spacing: 0.01cm;
+background-color: #DBDBDB;
+#border:5px dotted #608341;
+#border-bottom:2px solid #564b47;
+padding: 5px 15px;
+#border-style:dotted;
+#text-transform:lowercase;
+margin:12px;}
+
+img.download {vertical-align:middle;}
+
+/* ----------container zentriert das layout-------------- */
+#container {
+width: 800px;
+padding:0px;
+margin: 0px;
+margin-left: auto;
+margin-right: auto;
+} 
+
+/* ----------banner for logo-------------- */
+#banner {
+text-align: right;
+background-color: #e1ddd9;
+padding: 0px;
+margin: 0px; }
+
+#banner img {padding:10px 0px;} 
+
+/* ----------outer und inner----------------- */
+#outer{ 
+border-left: solid 200px #EBD3E0;  /* linke Menue Spalten Farbe  */ 
+background-color: #ffffff; /* Farbe fuer Inhalt Spalten  */
+ } 
+
+#inner{ margin:0px; width:100%; } /* die IE PC schlaufe */ 
+
+/* --------------left navigavtion------------- */
+#left {
+ width:200px; 
+ float:left; 
+ position:relative; 
+ margin-left:-200px; 
+ margin-right:1px;
+ }
+
+/* -----------------Inhalt--------------------- */
+#content{ 
+position: relative; 
+margin: 0px; }
+
+p{
+padding: 5px 10px;
+font-size:16px;
+margin:10px; }
+
+pre{
+font-size: 13px;
+padding: 5px 10px;
+margin:0px;}
+
+/*  ----------------footer---------------------- */ 
+#footer {
+clear:left;
+padding:0px;
+margin:0px;
+text-align: right; } 

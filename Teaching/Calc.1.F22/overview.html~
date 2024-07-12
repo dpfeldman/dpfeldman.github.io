@@ -1,0 +1,403 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Calculus I</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="container">
+<div id="header">
+<h1 align=right>calculus i</h1>
+<h2 align=right>college of the atlantic</h2> 
+<h2 align=right><a href="http://hornacek.coa.edu/dave">david p. feldman</a> |
+winter 2021</h2>  
+<br />
+<hr />
+
+</div> <!-- end header -->
+
+<div class="spacer"></div>
+<div id="left">
+
+<div id="leftcontent">
+
+  <ul>
+    <li><a href="./index.html">home</a></li>
+    <li><a href="./overview.html">info</a></li>
+    <li><a href="./schedule.html">schedule</a></li>
+    </ul>
+<p>&nbsp;</p>
+
+
+
+</div> <!-- end left content -->
+</div> <!-- end left division -->
+
+<div id="main">
+<div id="maincontent">
+
+
+<!--
+<blockquote>
+    Surely no subject in early college mathematics is more exciting or
+    more fun to teach than the calculus. It is like being the
+    ringmaster of a great three-ring circus. It has been said that one
+    can recognize the students on a college campus who have studied
+    the calculus -- they are the students with no eyebrows. In utter
+    astonishment at the incredible applicability of the subject, the
+    eyebrows of the calculus students have receded higher and higher
+    and finally vanished over the backs of their heads. 
+</blockquote>
+<p class="no-box">Howard Eves, quoted in Thompson and
+ Gardner. Calculus Made Easy. St. Martin's Press. 1998.</p>
+-->
+
+<h3>Basic Info</h3>
+
+<p><ul>
+<li><b>Instructor:</b> <a href="http://hornacek.coa.edu/dave">Dave
+Feldman</a><br></li>
+<li><b>Email:</b>dfeldman@coa.edu</li>
+<li><b>Pronouns:</b> he/him/his</li>
+<li><b>Problem Solving Sessions:</b> TBA, via Zoom.</li>
+<li><b>Teaching Assistants:</b> Goya van den Berg, Nynke Ham</li>
+  
+</ul>
+</p>
+
+<h3>Course Goals</h3>
+<p class="no-box">
+  <ol>
+    <li>Stay physically and mentally healthy and maintain intellectual
+      and personal connection in a time of dispersal and
+      isolation.</li>
+    <li>Experience the challenge, joy, and beauty of calculus.</li>
+    <li>Improve your problem solving skills and
+    mathematical confidence. Leave this
+    course with an increased ability to <i>do</i> mathematics.</li> 
+    <li>Gain a firm, grounded, enduring understanding of two of
+      the big ideas of calculus: limits and the derivative.</li>
+    <li>Be able to correctly perform mechanical
+      calculations using the course content, apply problem solving
+      skills to new areas, and effectively communicate problem solving
+      strategies in writing. </li>
+    <li>Have fun while learning a lot. </li>
+</ol>
+</p>
+
+
+<h3>Course Structure and Pacing</h3>
+
+<p>This is the twelfth time I've taught this course, so on the one
+  hand I have a very good feel for how this will go. But this is my
+  first time doing this class on zoom, so there are some things I am
+  uncertain of:
+  <ul>
+    <li>It will take me a little while to get used to the mechanics
+    of the class: writing with a sharpie on paper instead of a
+    chalkboard, looking for questions in the chat, etc. Your patience
+      and feedback is appreciated. </li>
+    <li>It will also take time for me to figure out the pace of the
+    class: how much we can comfortably cover in sixty minutes on
+      Zoom.</li>
+    <li>In addition to zoom, it is easy to for me to make videos
+    presenting content or working through examples. We can adjust the
+    ratio of recorded content to live zoom as needed.</li>
+    <li>This class meets three times a week instead of the usual
+    two. This gives us of flexibility, room to experiment, and the
+    ability to take a snow day or two.</li>  
+    <li>Ruminations on help sessions are below in a separate
+      section.</li>
+  </ul>
+</p>
+
+<p class="no-box">
+  There are four parts to this class (corresponding to the first
+  four chapters in the textbook), each with a distinct feel:</p>
+  <ol>
+    <li>Review of functions. This may seem both too slow and too
+      fast at the same time. The last week of this part of the class
+      is always difficult. Experience has shown, however, that the
+      review of functions is definitely worth it. It is essential for
+      the rest of the course.</li>
+    <li>Introduction to the derivative. Here we will learn what the
+      derivative is and what it means. This is more conceptual and
+      sometimes seems odd to those used to less conceptual and more
+      algebraic ways of thinking about math.</li> 
+    <li>Techniques of differentiation. Having learned what the
+      derivative is, we now learn lots of short cuts to calculate
+      it. This part of the class is the most traditional, in that
+      you'll learn some formulas and techniques, and then do lots of
+      practice of those techniques.</li>
+    <li>Applications of derivatives. Here we will learn several
+      different ways derivatives get used. This is the most applied
+      part of the course. It is somewhat more difficult, but most
+      students find it the most interesting, too, and a good way to
+      end the class.</li>
+  </ol>
+<p>We will cover most of the first four chapters of the text, at a pace
+  of approximately one section per class.
+</p>
+
+
+<h3>Class Meetings</h3>
+<p><ol>
+  <li>This class meets three times a week on zoom. Class sessions will
+    vary in length but will almost never be more than an hour.</li>
+  <li>Video stuff:
+    <ul>
+      <li>As much as possible, please keep your video turned on during
+	class. This will help you stay engaged and will help me have a
+	sense of how class is going. I have been teaching a long time
+	and am generally good at gauging whether or not a class is
+	following what I'm teaching.  But I won't be able to do this if
+	I'm looking at a screen full of black rectangles.</li> 
+      <li>Of course if you have connection problems or if you need to turn
+	the camera off for a few minutes, that's fine.</li>
+      <li>It's ok to wear pajamas to class. </li>
+      <li>Pets are welcome to join in. Especially cats.</li>
+    </ul></li>
+  <li>I plan on turning on zoom at 9:30 but not starting class until
+    9:45.  Please feel free to come early and hang out.  Some days I
+    might still be getting ready for class.  Some days I might play some
+    music (which you can mute if you don't like).  Other days I'll be
+    available to chat.  Most days class will end around 10:45, but I'll
+    keep zoom open until around 11:00 in case people have questions,
+    want to talk, etc.</li>    
+  <li>I strongly encourage you to take handwritten notes.  The
+    physical component of taking notes helps to keep you engaged.  And
+    taking handwritten notes requires you to do some on-the-fly
+    synthesis and prioritization, deepening your understanding.</li>
+  <li>During class there will frequently be times where you will work
+    in small groups on problems. Figuring out the best way to do this
+    on Zoom might take some trial and error.</li>
+</ol>
+</p>
+
+
+
+
+<h3>Homework and Exams</h3>
+<p class="no-box">
+
+<ol>
+  <li>There will be a homework assignment due almost every Friday. It is 
+    essential that you do these assignments, as this is how one learns
+    math, and also this is most of what
+    your evaluation will be based on.</li>
+  <li>As discussed in <a href="https://youtu.be/xxv-Sxav1qQ">this
+  video</a> there will be two parts to almost every homework
+    assignment:
+    <ol>
+      <li>Problems to be submitted on Edfinity</li>
+      <li>Problems to be submitted on "paper" (a scanned pdf) on
+	google classroom</li>
+    </ol>
+  <li>Edfinity is an online homework system. I use this system even
+    when the world is not in a global pandemic.  There are three reasons 
+    why I use Edfinity:
+    <ol>
+      <li>You get instant feedback while doing the work, so you can
+	learn right away from your mistakes. You can submit solutions
+	many times until you get everything correct.</li>
+      <li>Some problems are randomized so that you will all get
+	slightly different versions of the questions. This means that
+	collaborating with other students will be maximally effective,
+	since you'll have to share solution methods and not just the
+	final answer. </li>
+      <li>Since the problems are automatically marked, I can spend
+      more time helping you and won't have to spend as much time
+	grading.</li>
+      </ol></li>
+  <li>If you need extra time for one or two of the homework
+    assignments, it's not a big deal.  But be mindful to not fall
+    farther behind every week. </li>
+  <li>I do not expect all of the homework assignments to be easy; I
+    don't expect you to be able to sit down and do them easily the first 
+    time. Don't let yourself get frustrated.  I strongly suggest working
+    with others and seeking help if you need it.</li>
+  <li>You are strongly encouraged to work together on homework.  You
+    can also consult me, class tutors, other faculty, friends,
+    and family.  However, the homework you hand in should represent
+    your own understanding.</li>
+  <li>As I plan on sending out homework assignments and other
+    information via email/google classroom, it is important that you
+    check your email/classroom regularly.</li>
+  <li>I anticipate that there will be two exams one around week six
+    and the other during the last week of the term. These exams will be
+    open-notes and (essentially) untimed.</li>
+  <li>You will want to have at your disposal a scientific calculator or 
+    phone/tablet app.  I strongly suggest an actual calculator.  You do
+    not need a graphing calculator for this course (or, in my opinion,
+    ever). </li>
+  </ol>
+  
+</p>
+
+
+<h3>Help Sessions</h3>
+<p>
+The Teaching Assistants and I will have a handful of help sessions
+every week. You are warmly invited and encouraged to attend these
+sessions. Help sessions are relaxed, informal, and hopefully fun.
+Things that happen at help sessions: 
+<ol>
+  <li>The TAs and/or I am around to offer help on the homework.</li>
+  <li>Some students do most of the homework while at a help
+    session.  They work through problems alone or with others, and
+    find it comforting to know that help is immediately at hand if
+    needed.</li>
+  <li>Others do the problems at home and come to the help session with 
+    specific questions.</li>
+  <li>We can experiment with breakout rooms for folks who want to work
+  together in small groups during the help session.</li>
+<!--  <li>Usually there are a group of students working together at one or
+    two tables in the dining hall.  You can join this group.
+  <li>Some students prefer working in booths, which can be a bit
+    quieter.  I'll wander over to the booths and check in on students,
+    or you can move over to the large table or summon me over.-->
+  <li>Help sessions are also a chance to ask general questions about
+    the course.  Conversations also sometimes wander into other areas:
+    politics, the state of the world, what's for dinner, what classes
+    are offered next term, and so on.</li>
+  <li>Help sessions are a great way to meet other students in the
+    class.</li>
+</ol>
+</p>
+
+<p>Everyone is welcome at help sessions!  Attending these sessions help
+students do well in the class and get as much out of it as possible.</p>
+
+<p>You should also feel free to reach out to me and the Teaching
+  Assistants with questions. If you're stuck on a problem, it might
+  help to take a photo of what you've done so far and include it in an
+  email to us. We might be able to help you with a short email, or we
+  could set up a time to meet on zoom</p>
+      
+
+
+<h3>Diversity and Inclusion</h3>
+<p>It is my intent that students from all
+  backgrounds and perspectives be well served by this course,
+  that students' learning needs be addressed both in and out of class,
+  and that the diversity that students bring to this class be viewed
+  as a resource, strength, and benefit. It is my intent to present
+  materials and activities that are respectful of diversity: gender,
+  sexuality, disability, age, religion, socioeconomic status,
+  ethnicity, race, and culture.</p>
+
+<p>Learning about diverse perspectives and identities is an ongoing
+  process. I am always looking to learn more about power and privilege
+  and the harmful effects of racism, sexism, homophobia, classism, and
+  other forms of discrimination and oppression.  Your suggestions are
+  encouraged and appreciated. Please let me know ways to
+  improve the effectiveness of the course for you personally, or for
+  other students or student groups. If something was said or done in
+  class (by anyone, including me) that made you feel uncomfortable,
+  please talk to me about it.  You can also reach out to Provost Ken
+  Hill, or Associate Deans Bonnie Tai or Jamie McKown.
+</p>
+
+
+
+
+
+<h3>Evaluation</h3>
+<p class="no-box">Roughly...
+<ul>
+<li><b>Weekly Homework Assignments:</b> 70 percent.
+<li><b>Midterm:</b> 15 percent.
+<li><b>Final:</b> 15 percent.
+</ul>
+<p class="no-box">
+I do not have any quota of A's, B's, etc.  This is an unusual time.
+I'd strongly consider taking this class without letter grades.
+Perhaps for some of you not having letter grades will reduce anxiety.
+I'm happy to talk through options if anyone wants. 
+</p>
+
+  
+  
+<h3>Textbook</h3>
+<p>We will be using the following textbook for Calculus I in winter
+  2021 and Calculus II in spring 2021: 5th edition, Hughes-Hallett et
+  al, Calculus.  Single variable.  Paperback:  ISBN-10: 0470089156.
+  ISBN-13: 978-0470089156 Hardcover:  ISBN-10: 0470131594.  ISBN-13:
+  978-0470131596.</p>
+
+<p>There are many different editions of this book.  When you buy it,
+  be sure you are getting the correct one.  The best way to do this is
+  to search for it via the ISBN.  The ISBN is unique for each version
+  of the book.  E.g., the 3rd and 4th version of the same book will
+  have different ISBNs.</p> 
+
+<p>This book costs as much as $120 dollars if you buy it new.
+  However, you can get a used copy of the book for around $5 online
+  plus a few dollars for shipping.  Yup.  For under $10 you can get
+  your very own copy of an excellent calculus textbook.</p> 
+
+<p>Why is the book so inexpensive?  The edition of the book that we're
+  using is not the newest edition.  As a result, there are many, many
+  used copies available online.  Most colleges have already switched
+  editions, but I thought it didn't make sense to, since so far as I
+  can tell there is no significant difference between the different
+  editions, other than switching around the exercises.  (The only
+  reason publishers come out with new editions of calculus textbooks
+  is to undercut the used book market.  Calculus itself hasn't changed
+  in over a century.)</p> 
+
+<p>To find the book online go to amazon.com or abe.com (or your
+  favorite used bookseller) and search using one of the ISBNs
+  above. </p> 
+  
+
+  
+<h3>Official Syllabus</h3>
+<p>
+A one-page listing of the topics we'll cover in this course can be
+found <a href="./calc1_syllabus_2021.pdf">here</a>.
+</p>
+  
+
+<h3>Standard Disclaimers</h3>
+<p class="no-box">
+  <ul>
+    <li>You should expect to spend a minimum of 150 academically
+      engaged hours associated with this one-credit course. These
+      150 hours will be spent roughly as follows: 4 hr/wk "in" class,
+      1 hr/wk on discussion forums, 2 hr/wk reading, 1hr/wk writing
+      papers/blog posts, 7 hr/wk on homework.
+    <li>By enrolling in an academic institution, a student is
+      subscribing to common standards of academic honesty.  Any
+      cheating, plagiarism, falsifying or fabricating of data is a
+      breach of such standards. A student must make it his or her
+      responsibility to not use words or works of others without
+      proper acknowledgment. Plagiarism is unacceptable and evidence
+      of such activity is reported to the academic dean or his/her
+      designee. Two violations of academic integrity are grounds for
+      dismissal from the college. Students should request in-class
+      discussions of such questions when complex issues of ethical
+      scholarship arise. 
+
+
+
+
+
+
+
+</div> <!-- end main content section -->
+</div> 
+<div id="footer"><div class="spacer"></div>
+
+<hr />
+<center>
+<p class="no-box"> <a href="http://www.coa.edu">COA</a> | <a href="http://hornacek.coa.edu/dave">Dave</a> | <a href="./index.html">Calc I</a></p>
+<p>&nbsp;</p>
+</div> <!-- end footer -->
+
+</div> <!-- end container -->
+</body>
+
+</html>

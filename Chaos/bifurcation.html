@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<title>Logistic Equation: Bifurcation Diagram</title>
+    <script language="javascript" type="text/javascript" src="./jquery.min.js"></script>
+    <script language="javascript" type="text/javascript" src="./dist/jquery.jqplot.js"></script>
+    <script type="text/javascript" src="./dist/plugins/jqplot.canvasTextRenderer.min.js"></script>
+    <script type="text/javascript" src="./dist/plugins/jqplot.canvasAxisLabelRenderer.min.js"></script>
+    <script language="javascript" type="text/javascript" src="./bifurcation.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="./dist/jquery.jqplot.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="header">
+<h1 align=left>Chaos and Fractals: An Elementary Introduction</font></h1> 
+<h2 align=left>David P. Feldman</h2>  
+<h3 align=left>
+<a href="./index.html">Home</a> | 
+<a href="./programs.html">Programs</a> | 
+<a href="./contents.html">Contents</a> | 
+<a href="./author.html">Author</a> | 
+<a href="./errata.html">Errata</a> | 
+<a href="./teaching.html">Teaching</a/> | 
+<a href="./review.html">Reviews</a> |
+<a href="./buy.html">Buy</a>
+</h3>
+
+</div> <!-- end header -->
+<div class="spacer"></div>
+<br><hr/><br>
+<h1 >Logistic Equation: Bifurcation Diagram</h1>
+
+<p>This program will make a bifurcation diagram for the logistic
+equation <i>f(x)=rx(1-x)</i>.  In the boxes below enter values for
+range of parameter values you want to investigate.
+<!--  the parameter <i>r</i>, the 
+  initial conditions <i>x<sub>0</sub></i> and <i>y<sub>0</sub></i>, 
+and <i>n</i>, the number of iterates you want plotted. -->
+ </p><br><br>
+
+
+<form>
+<table>
+
+<tr><td>Number of Iterations to plot (<i>N<sub>plot</sub></i>): </td>
+<td><input type="text" name="nPlot" value="10"/></td>
+</tr>
+
+<tr><td>Number of Iterations to skip (<i>N<sub>skip</sub></i>): </td>
+<td><input type="text" name="nSkip" value="10"/></td>
+</tr>
+
+<tr><td>
+Show bifurcation diagram from r = 
+</td><td>
+<input type="text" name="rInitial" value="0.0" />
+</td>
+<td>
+to r = 
+</td><td>
+<input type="text" name="rFinal" value="4.0" />
+</td></tr>
+<tr><td>
+Increment r in steps of:
+</td><td>
+<input type="text" name="stepSize" value="0.05" />
+</td></tr>
+</table><br><br>
+<button type="button" name="mybutton"
+	onclick="makeBifurcation(this.form.nPlot.value,this.form.nSkip.value,this.form.rInitial.value,this.form.rFinal.value,this.form.stepSize.value)">Make
+  the bifurcation diagram</button>
+</form>
+<br><br>
+<!--<button type="button" name="mybutton" onclick="myFunction()">Make the time series plot</button>-->
+<div id="error"></div>
+<div id="placeholder" style="width:700px;height:350px;"></div>
+<br><br>
+<div id="info"></div>
+<br><br>
+
+<!-- how do i make the View Plot Image button as appears on the examples from jsplot?????-->
+<pre class="code prettyprint brush: js"></pre>
+
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=8192428;
+var sc_invisible=1;
+var sc_security="e3920519";
+</script>
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script>
+<noscript><div class="statcounter"><a title="tumblr hit tracking tool"
+href="http://statcounter.com/tumblr/" target="_blank"><img
+class="statcounter" src="http://c.statcounter.com/8192428/0/e3920519/1/"
+alt="tumblr hit tracking tool"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+</body>
+</html>

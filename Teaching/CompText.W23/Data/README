@@ -1,0 +1,16 @@
+
+COACourseCatalog.txt: COA's current course catalog in full
+
+COACoursesOnly.txt: only the course-listing part of the COA course catalog
+
+Carleton.txt: Full 2022-23 Academic Catalog for Carleton College from
+https://apps.carleton.edu/campus/registrar/catalog/current/assets/2022_23_Academic_catalog.pdf
+
+CarletonCoursesOnly.txt: Only the course-listing part of the Carleton catalog
+This includes descriptions of each major, so strictly speaking it's not only
+course descriptions
+
+MaineCoursesOnly.txt: Course descriptions from the University of Maine
+https://studentrecords.umaine.edu/wp-content/uploads/sites/160/2022/01/Umaine-Undergraduate-Catalog.pdf
+pages 721-1266 of the pdf
+

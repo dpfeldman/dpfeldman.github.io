@@ -1,0 +1,91 @@
+<html>
+<head>
+<title>Homework 3</title>
+</head>
+
+<br>
+<br>
+<center>
+<table align = center width=400>
+<tr align = center>
+
+<td valign=center><img src="../../Icons/comp12v.gif"> </td>
+
+<td align = center valign=center> <h1>Homework 3</h1><p></td>
+<td valign=center align=center><img src="../../Icons/comp12v.gif"> </td>
+
+</table>
+</center>
+<br>
+<br>
+
+<b>Homework 3:  Due Thursday 14 April at the beginning of class </b><p>
+
+For all these problems, you will probably want to use the program at
+<a
+href="http://hornacek.coa.edu/dave/Chaos/orbits.html">http://hornacek.coa.edu/dave/Chaos/orbits.html</a>.
+If you prefer, you could use a spreadsheet program or a programmable
+calculator.  <p>
+
+
+All of the questions below concern the logistic equation, f(x) =
+rx(1-x).  You will explore what happens to orbits of f(x) for
+different values of the growth rate r.  <p>
+
+If you want, you may do this set of experiments with a partner, and
+hand in only one write-up. I'm mainly interested in seeing that
+you've explored the system thoroughly and made some semi-careful
+observations.  This isn't meant to be a stressful ordeal.<br> 
+
+Consider the following values for the parameter r:
+<ol>
+<li> r = 0.5
+<li> r = 1.5
+<li> r = 2.8
+<li> r = 3.2
+<li> r = 3.5
+<li> r = 3.56
+<li> r = 3.835
+<li> r = 4.00
+</ol>
+
+For each of the parameter values, observe what happens to orbits of
+f(x).  <b>Consider only initial populations between 0 and 1.</b> For
+each parameter value, you should:
+<ul>
+
+<li> Determine the long-term behavior of the system.  Does the
+population die off, reach a fixed point, or reach a periodic point?
+For some parameter values you might need to plot a few thousand orbits
+to see the final behavior. 
+<li> Try a few different initial conditions for each parameter value.
+Remember that your initial conditions should always be between 0 and
+1.  You should find that overall behavior is independent of the
+initial conditions you choose.  Do not choose the initial condition
+0.5 or 0.25. 
+<li>For each parameter value, make a rough sketch the general shape of
+the orbit diagram.  (There's no need to print out the graph unless you
+really want to.)
+</ul>
+<p>
+
+
+
+<p><br>
+<hr>
+<p>
+<center>
+[<a href="http://hornacek.coa.edu/dave/index.html">Dave</a>]
+[<a href="./index.html">Chaos and Fractals</a>]
+[<a href="homework.html">Homework Page</a>]
+[<a href="http://www.coa.edu">COA</a>]
+</center>
+<p>
+<p>Web page maintained by <a href="mailto:dave@hornacek.coa.edu">dave@hornacek.coa.edu</a>.
+<p>
+</html>
+
+
+</html>
+
+

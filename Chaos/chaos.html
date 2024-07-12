@@ -1,0 +1,204 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<script type="text/javascript">
+
+    var g2 =[];
+    
+    function f(x,r)
+    {
+        // return the value of x_n+1
+        return (+r)*(+x)*(1-x);
+    }
+    
+    function cobwebiter(x0,r)
+    {
+        // Perform iterations of the logistic map
+        var x = +f(x0,r);
+        var y = +f(x,r);
+           
+        // Add data to the plot as well.
+        g2.push([x,x]);
+        g2.push([x,y]);
+
+        return [x,y];
+    }
+    
+    function cobweb(n,x0,r) 
+    {
+        var x = (+x0);      // initial value of x is 0
+        var y = 0.;          // initial value of y is y0
+        
+        g2 = [[x,y],[x,f(x,r)]];   // start with initial conditions
+        
+        // Prepare the output for reporting
+        var msg = '<table border="0.5"><tr><td width="150">x</td><td width="200">y</td></tr>';
+        msg += '<tr><td>'+x+'</td><td>'+y+'</td></tr>';
+        
+        // loop for required number of iterations
+        for (var i = 1; i <= n; i++)
+        {
+            p = cobwebiter(x,r);
+            x = p[0];
+            y = p[1];
+            
+            // record the x and y values for this iteration
+            msg += '<tr><td>'+x+'</td><td>'+y+'</td></tr>';
+        }
+        
+        // record the actual fixed point
+        msg += '<tr><td>Fixed Point</td><td>x='+(r-1)/r+'</td></tr>';
+        
+        // report the fixed point to the user
+        document.getElementById("msg").innerHTML=msg+'</table>';
+        
+        // Refresh the plot
+        $(function () {
+            var d1 = [];
+    
+            for (var i = 0; i <= 40; i++)
+                d1.push([i/40, f(i/40, r)]);
+
+            $.plot($("#placeholder"), [ { label: "r="+r, data: d1} , { data: [[0,0],[1,1]]}, { label: "cobweb", data: g2, lines: {show: true}, color: "red" }]);
+        });
+    }
+</script>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<title>Logistic Map Cobweb Diagram</title>
+    <script language="javascript" type="text/javascript" src="./flot/jquery.js"></script>
+    <script language="javascript" type="text/javascript" src="./flot/jquery.flot.js"></script>
+</head>
+<body>
+<h1>Logistic Map Cobweb Diagram</h1>
+The following is a javascript implementation of a cobweb diagram for the Logistic Map.  The logistic map is a discrete dynamical system, that exhibits chaotic behavior for certain values of its parameter, <i>r</i>.  The cobweb diagram is a geometric way of showing the behavior of the logistic map.<br/><br/>
+
+The algorithm works as follows:<br/><br/>
+
+Beginning with a certain <i>x</i> value, find the point on the parabola that corresponds to it.  Then move horizontally to a point on the line <i>y=x</i> with the same <i>y</i> coordinate.  Let <i>f(x)=rx(1-x)</i>.
+
+<ol>
+<li>Point n+1: (<i>x, f(x)</i>)</li>
+<li>Point n+2: (<i>f(x), f(x)</i>)</li>
+<li>Replace <i>x</i> with <i>f(x)</i></li> and repeat.
+</ol>
+
+<h1>Suggestions</h1>
+
+
+Enter values for <i>x<sub>0</sub></i> and <i>r</i> and a number of iterations of the logistic map to use.  The cobweb diagram will show whether the (non-zero, if there is one) fixed point of the logistic equation is attractive or repulsive.  An attractive fixed point draws the values of successive iterations of the map closer to the fixed point, while a repulsive fixed point pushes those values away from the fixed point.  There is also the possibility that the fixed point will neither attract nor repel successive iterations and instead produce a periodic orbit.<br/><br/>
+
+<ol>
+<li><i>n=200, x<sub>0</sub>=0.2, r=2</i> (<i>x=1/2</i> is an attractive fixed point)</li>
+<li><i>n=200, x<sub>0</sub>=0.2, r=3.9</i> (<i>x=29/39</i> is a repulsive fixed point)</li>
+<li><i>n=200, x<sub>0</sub>=0.2, r=3.2</i> (<i>x=22/32</i> has a 2-periodic orbit)</li>
+</ol>
+<form>
+<table>
+<tr>
+<td>
+Number of Iterations (<i>n</i>): 
+</td>
+<td>
+<input type="text" name="iterations" value="200"/>
+</td>
+</tr>
+<tr>
+<td>
+Initial Point (<i>x<sub>0</sub></i>): 
+</td>
+<td>
+<input type="text" name="initial" value="0.2" />
+</td>
+</tr>
+<tr>
+<td>
+Parameter (<i>r</i>): 
+</td>
+<td>
+<input type="text" name="param" value="1" />
+</td>
+</tr>
+</table>
+<button type="button" name="mybutton" value="10" onclick="cobweb(this.form.iterations.value,this.form.initial.value,this.form.param.value)">Run</button>
+<div id="placeholder" style="width:400px;height:440px;"></div>
+<div id="msg"></div>
+</form>
+<div id="plot">
+<script id="source" language="javascript" type="text/javascript">
+cobweb(40,0.2,1,0);
+</script>
+</div>
+<xmp>
+<script type="text/javascript">
+
+    var g2 =[];
+    
+    function f(x,r)
+    {
+        // return the value of x_n+1
+        return (+r)*(+x)*(1-x);
+    }
+        
+    function cobweb(n,x0,r,pause) 
+    {
+        var x = (+x0);      // initial value of x is 0
+        var y = 0;          // initial value of y is y0
+        
+        g2 = [[x,y],[x,f(x,r)]];   // start with initial conditions
+        
+        // Prepare the output for reporting
+        var msg = '<table border="0.5"><tr><td width="150">x</td><td width="200">y</td></tr>';
+        msg += '<tr><td>'+x+'</td><td>'+y+'</td></tr>';
+        
+        // loop until x reaches its target value
+        for (var i = 1; i <= n; i++)
+        {
+            // Perform iterations of the logistic map
+            x = f(x,r);
+            y = f(x,r);
+            
+            // record the x and y values for this iteration
+            msg += '<tr><td>'+x+'</td><td>'+y+'</td></tr>';
+            
+            // Add data to the plot as well.
+            g2.push([x,x]);
+            g2.push([x,y]);
+            
+            // Wait before continuing
+            if (pause > 0.1)
+            {
+                // refresh the plot
+                $(function () {
+                    var d1 = [];
+            
+                    for (var i = 0; i <= 40; i++)
+                        d1.push([i/40, f(i/40, r)]);
+
+                    $.plot($("#placeholder"), [ { label: "r="+r, data: d1} , { data: [[0,0],[1,1]]}, { label: "cobweb", data: g2, lines: {show: true}, color: "red" }]);
+                });
+                
+                // enforce the pause
+                setTimeout(continue,1000*pause);
+            }
+        }
+        
+        // record the actual fixed point
+        msg += '<tr><td>Fixed Point</td><td>x='+(r-1)/r+'</td></tr>';
+        
+        // report the fixed point to the user
+        document.getElementById("msg").innerHTML=msg+'</table>';
+        
+        // Refresh the plot
+        $(function () {
+            var d1 = [];
+    
+            for (var i = 0; i <= 40; i++)
+                d1.push([i/40, f(i/40, r)]);
+
+            $.plot($("#placeholder"), [ { label: "r="+r, data: d1} , { data: [[0,0],[1,1]]}, { label: "cobweb", data: g2, lines: {show: true}, color: "red" }]);
+        });
+    }
+</script>
+</xmp>
+</body>
+</html>

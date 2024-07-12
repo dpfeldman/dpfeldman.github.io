@@ -1,0 +1,132 @@
+
+\documentstyle[12pt]{article}
+\oddsidemargin=0in
+\textwidth=6.75in
+%\topmargin=-.75in
+%\textheight=9in
+%\usepackage{doublespace}
+
+\renewcommand{\arraystretch}{1.3}
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{center}
+{\Large {\bf Homework 5}}
+\end{center}
+\hspace{1cm}\\
+
+\begin{enumerate}
+
+\item Problem 1.1 from McIntyre.
+
+\item Problem 1.3 from McIntyre.
+
+\item Problem 1.5 from McIntyre.
+
+
+\item Consider the following ket:
+\begin{equation}
+  | \psi \rangle \, = \, a (\, 2i| + \rangle - i | - \rangle\,) \;.
+\label{psi}
+\end{equation}
+Solve for the $a$ that normalizes $| \psi \rangle$. 
+
+\item Using the normalized $| \psi \rangle$ from the previous problem,
+answer the following questions:
+\begin{enumerate}
+   \item  If the atom is in state $| \psi \rangle$, what is the
+    probability of measuring $S_z = 1$?
+    \item If the atom is in state $| \psi \rangle$, what is the
+    probability of measuring $S_z = -1$?
+    \item Do the probabilities add up to $1$?
+\end{enumerate}
+
+\item Suppose an atom is in the $|-\rangle_x$ state.  What is the
+probability of obtaining a $+$ if $S_z$ is measured?  (Show how this
+number arises from the bras and kets, don't just cite the experimental
+result.)
+
+\item {\bf (Optional)}
+Using the normalized $| \psi \rangle$ from the previous problem,
+answer the following questions:
+\begin{enumerate}
+   \item  If the atom is in state $| \psi \rangle$, what is the
+    probability of measuring $S_x = 1$?
+    \item If the atom is in state $| \psi \rangle$, what is the
+    probability of measuring $S_x = -1$?
+    \item Do the probabilities add up to $1$?
+\end{enumerate}
+
+\item  {\bf (Optional)} 
+\begin{enumerate}
+  \item Use complex exponentials to derive formulae for $\cos 3x$ and
+  $\sin 3x$.
+  \item Use complex exponentials and the binomial theorm to derive
+  general expressions for $\cos nx$ and $\sin nx$, where $n$ is a
+  positive integer.
+\end{enumerate}
+
+\item  {\bf (Optional)} (from p.~369 of Arfkin and Weber, Mathematical
+Methods for Physicists, fourth edition, Academic Press, 1995.)  Prove
+that:
+\begin{enumerate}
+\item 
+\begin{equation}
+\sum_{n=0}^{N-1} \cos nx \, = \, \frac{ \sin N(x/2)}{\sin x/2}
+\cos(N-1)\frac{x}{2}\;, 
+\end{equation}
+and
+\item
+\begin{equation}
+\sum_{n=1}^{N-1} \sin nx \, = \, \frac{\sin N(x/2)}{\sin x/2} \sin(N-1)
+\frac{x}{2}\;. 
+\end{equation}
+\noindent Apparently these sum are used in the analysis of
+multiple-slit diffraction patterns. 
+\end{enumerate}
+
+\item  {\bf (Optional)} (from p.~369 of Arfkin and Weber, Mathematical
+Methods for Physicists, fourth edition, Academic Press, 1995.)
+For $-1 < p < 1$, prove that
+\begin{enumerate}
+\item
+\begin{equation}
+  \sum_{n=0}^{\infty} \, = \, p^n \cos nx \, = \, \frac{ 1 - p \cos
+  x}{ 1 - 2p \cos x + p^2} \;, 
+\end{equation}
+and,
+\item
+\begin{equation}
+  \sum_{n=0}^\infty p^n \sin nx \, = \, \frac{ p \sin x}{1 - 2p\cos x
+  + p^2} \;. 
+\end{equation}
+These sums apparently are used in the theory of the Fabry-Perot
+interferometer.   
+\end{enumerate}
+
+\end{enumerate}
+
+\noindent {\bf Hints for the last two:}
+\begin{enumerate}
+
+\item Stay calm.  The expressions are large, but I don't think they
+require any math that's too fantastic or unthinkable.
+
+\item For each, combine the two sums using complex exponentials:
+$e^{ix} = \cos x + i \sin x$. 
+
+\item You'll then need to use the following result about geometric
+series:
+\begin{equation}
+  \sum_{n=1}^\infty a r^{n-1} \, = \, \frac{a}{1-r} \;,
+\end{equation} 
+for $-1 < r < 1$. 
+
+
+\end{enumerate}
+
+
+\end{document}
+
+

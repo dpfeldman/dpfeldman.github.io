@@ -1,0 +1,54 @@
+{VERSION 5 0 "IBM INTEL LINUX" "5.0" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 1 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 
+0 0 1 }{CSTYLE "2D Output" 2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 1 }
+{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Maple Output" 0 11 1 
+{CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 3 0 -1 -1 -1 0 
+0 0 0 0 0 -1 0 }{PSTYLE "" 11 12 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 }1 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }}
+{SECT 0 {EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 8 "restart;" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 30 "s := n -> sum( x^i/i!,i=0..n);" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>%\"sGf*6#%\"nG6\"6$%)operatorG%&arrow
+GF(-%$sumG6$*&)%\"xG%\"iG\"\"\"-%*factorialG6#F2!\"\"/F2;\"\"!9$F(F(F(
+" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 5 "s(2);" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6#,(\"\"\"F$%\"xGF$*&#F$\"\"#F$*$)F%F(F$F$F$" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 79 "Note:  s(2) is the 2nd partial sum
+, not the value of the infinite sum when x=2." }}}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 5 "s(4);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,,\"\"\"
+F$%\"xGF$*&#F$\"\"#F$*$)F%F(F$F$F$*&#F$\"\"'F$*$)F%\"\"$F$F$F$*&#F$\"#
+CF$*$)F%\"\"%F$F$F$" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 5 "s(6);
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,0\"\"\"F$%\"xGF$*&#F$\"\"#F$*$)F%
+F(F$F$F$*&#F$\"\"'F$*$)F%\"\"$F$F$F$*&#F$\"#CF$*$)F%\"\"%F$F$F$*&#F$\"
+$?\"F$*$)F%\"\"&F$F$F$*&#F$\"$?(F$*$)F%F-F$F$F$" }}}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 7 "x := 0;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%\"
+xG\"\"!" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 5 "s(2);" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#\"\"!" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 
+1 0 5 "s(4);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"\"!" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 5 "s(6);" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#\"\"!" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 7 "x := 1;" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>%\"xG\"\"\"" }}}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 5 "s(2);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6##\"\"&\"
+\"#" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 5 "s(4);" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6##\"#l\"#C" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 
+0 5 "s(6);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6##\"%d>\"$?(" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 9 "evalf(%);" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#$\"+cb0=F!\"*" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 
+0 7 "x := 2;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%\"xG\"\"#" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 17 "s(2), s(4), s(6);" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6%\"\"&\"\"(#\"$J$\"#X" }}}{PAGEBK }{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 64 "Let's now evaluate the sum at x=1 in the \+
+limit that n-->infinity" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 7 "x
+ := 1;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%\"xG\"\"\"" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 6 "s(10);" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6##\"(,T')*\"(+)GO" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 9 "ev
+alf(%);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#$\"+,=G=F!\"*" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 7 "s(100);" }}{PARA 12 "" 1 "" 
+{XPPMATH 20 "6##\"htR$3lUA5xTZx4/8QkoZ8n140v\"ex0'\\'**\\\\aF#3+m?n&4(
+Q_(fYL\"GyJ^F9Zy!G=NmMw.UA7*>,Gvn()z2*y(*H%\"ht++++++++++++'*o*GcG0eOC
+7!)zbNCH\">tef**fHO_q'G2#fN@&\\u0F.wyDR&oa/Bi1RLLxg<)*o*Hl<wh-!=e\"" }
+}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 9 "evalf(%);" }}{PARA 11 "" 1 
+"" {XPPMATH 20 "6#$\"+G=G=F!\"*" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 
+1 0 12 "s(infinity);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#-%$expG6#\"\"
+\"" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}}{MARK "3 0 0" 
+79 }{VIEWOPTS 1 1 0 1 1 1803 1 1 1 1 }{PAGENUMBERS 0 1 2 33 1 1 }

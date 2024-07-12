@@ -1,0 +1,340 @@
+<!DOCTYPE HTML>
+<!--
+	Hielo by TEMPLATED
+	templated.co @templatedco
+	Released for free under the 
+	Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+  <head>
+    <title>Linear Algebra 2019 | College of the Atlantic</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body class="subpage">
+    
+    <!-- Header -->
+    <header id="header">
+      <div class="logo"><a href="index.html">Linear Algebra</a> Winter 2019</div>
+      <a href="#menu">Menu</a>
+    </header>
+    
+    <!-- Nav -->
+    <nav id="menu">
+      <ul class="links">
+	<li><a href="index.html">Home</a></li>
+	<li><a href="about.html">About</a></li>
+	<li><a href="schedule.html">Schedule</a></li>
+	<li><a href="resources.html">Resources</a></li>
+      </ul>
+    </nav>
+    
+    <!-- One -->
+    <section id="One" class="wrapper style3">
+      <div class="inner">
+	<header class="align-center">
+	  <h2>linear algebra</h2>
+	  <p>with applications to differential equations</br></br>
+<h2>ABOUT THE COURSE</h2>
+	</header>
+      </div>
+    </section>
+    
+    <!-- Two -->
+    <section id="two" class="wrapper style2">
+      <div class="inner">
+	<div class="box">
+	  <div class="content">
+	    <!--<header class="align-center">
+		<p>maecenas sapien feugiat ex purus</p>
+		<h2>Lorem ipsum dolor</h2>
+	    </header>-->
+
+<header class="align-center">
+  <p>a few facts</b>
+<h2>Basic Info</h2>
+</header>
+<ul class="alt">
+  <li><b>Instructor</b>: Dave Feldman
+  <li><b>Email</b>: You can figure it out
+  <li><b>Office</b>: Second floor, Turrets Annex
+  <li><b>Pronouns</b>: he/him/his
+  <li><b>Help Sessions</b>: TBA, Dining Hall
+  <li><b>Office Hours</b>: By appointment 
+  <li><b>Tutors</b>: None
+</ul>
+
+			
+<header class="align-center">
+  <p>i guess basically i want you to learn linear algebra and also
+  some differential equations</b>
+  <h2>Course Goals</h2>
+</header>
+
+<ol> 
+<li>I want you to learn what differential equations are and how to
+  think about them: how they are used to model a range of phenomena
+  and how to interpret their solutions.
+<li>I want you to gain a firm foundation in the basic concepts of
+  elementary linear algebra, including: vectors, matrices, inverses,
+  determinants, vector spaces, linear independence, sub-spaces, basic,
+  dimension, rank, eigenvalues and eigenvectors.
+<li>I want you to gain an introduction to some of the basic analytic
+  techniques used to analyze linear differential equations, including
+  systems of linear equations.  
+<li>I want you to gain mathematical confidence, appreciation, and
+  "maturity".  As part of this, I want you to continue to work toward
+  developing a careful, systematic, and effective problem-solving
+  style. 
+<li>I want you to have fun and learn a lot.
+</ol>
+
+
+
+
+<header class="align-center">
+  <p>so, umm, what is linear algebra, anyway?</b>
+  <h2>What is Linear Algebra?</h2>
+</header>
+
+<p>Wikipedia's entry
+  on <a href="https://en.wikipedia.org/wiki/Linear_algebra">linear
+  algebra</a> has a pretty good summary:
+<blockquote>
+Linear algebra is a branch of mathematics concerned with the study of
+vectors, with families of vectors called vector spaces or linear
+spaces, and with functions that input one vector and output another,
+according to certain rules. These functions are called linear maps (or
+linear transformations or linear operators) and are often represented
+by matrices. Linear algebra is central to modern mathematics and its
+applications. An elementary application of linear algebra is to the
+solution of a system of linear equations in several unknowns. More
+advanced applications are ubiquitous... . It has extensive
+applications in engineering, physics, natural sciences and the social
+sciences. [Linear algebra is also important to study because]
+nonlinear mathematical models can often be approximated by linear
+ones.  
+</blockquote>
+
+<p> Linear algebra is a very standard topic in the college mathematics
+  curriculum.  It is usually taken by students in their sophomore
+  year.  Linear algebra is generally required for math, physics,
+  engineering, statistics, and economics majors.  While linear algebra
+  is a standard subject, there are considerable differences among
+  linear algebra courses and textbooks. Roughly speaking, there are
+  three somewhat overlapping roles that linear algebra plays in the
+  math curriculum:  
+<ol>
+<li>Linear algebra teaches a set of techniques for solving
+    problems. These classes often emphasize applications. 
+<li>Linear algebra serves as a bridge toward more formal or abstract
+    mathematics. 
+<li>Linear algebra can be an entry point for numerical
+    mathematics. This includes:  Using a computer to do mathematics
+    and solve problems and analyzing the run-time and convergence
+    properties of algorithms, writing original code.  
+</ol>
+<p>This course is mostly of type 1 but will contain elements of 2.  We
+will do only a little bit with computation in this class.  
+
+<p>This course is a combined linear algebra and differential
+  equations course.  While most math programs have separate linear
+  algebra and differential equations courses, combined courses such
+  as this one are not uncommon.  Such combined courses are often part
+  of engineering math sequences.  (Sometimes such courses are called
+  linear systems.)
+
+<p>Linear algebra and differential equations are pillars of modern
+  applied mathematics.  I think it makes sense to do an introduction
+  to them at the same time.  This course emphasizes conceptual and
+  analytic (pencil-and-paper) understanding of linear algebra and
+  differential equations.  My differential equations course focuses on
+  computational methods and mathematical modeling.  The two courses
+  are designed to complement each other.  Please note that a course in
+  python (or the equivalent) is a pre-req for differential equations
+  at COA. 
+
+
+
+
+<header class="align-center">
+  <p>these are cautionary notes for me as well as you</b>
+  <h2>Some Warnings</h2>
+</header>
+
+<ul>
+  <li>I have taught linear algebra and differential equations many
+  different time, but only once before as a combined class.  In order
+  to make this class work---really see the connections between linear
+  algebra and differential equations---we're going to need to cover a
+  lot of material.  We can do it, but maintaining a brisk pace will be
+  necessary.
+
+  <li>Most math classes the feel of the class is fairly homogeneous.
+  Some topics are a bit more difficult than others, but the class
+  doesn't have any sudden shifts.  Not this class.
+  We'll be covering very different topics that will feel very
+  different.  
+
+  <li>Linear algebra potentially has some <i>trap doors</i>:  things
+  can suddenly shift from easy to very hard without you realizing it.
+  Of course I'm going to try to not let this happen. 
+
+  <li>For most of you this will be your first "sophomore level" math
+  class, so it's a notch more advanced/abstract from that which you're
+  used to.  So you might feel a little unsettled.  This is normal, and
+  that sense of unsettledness might not fully go away until your
+  second or third math class at this level. 
+    
+  <li>My experience as a student was that linear algebra seemed very
+  easy. So I didn't do much work in the class. But then it got harder
+  quite quickly and I was lost and in a lot of trouble. As always,
+  it's important to stay caught up, because you can get left behind
+  pretty quickly in a course like this. 
+
+  <li>Also, when I took linear algebra I remember thinking that the
+  material was kinda silly and that I would never use it. However, I
+  ended up using linear algebra in almost every math and physics class
+  I took, and I used it in my research all the time---much more than I
+  use calculus. Some of the applications of linear algebra might not
+  be apparent immediately, but please believe me when I say that it is
+  a very useful topic to know.  
+
+  <li>Introductory linear algebra is at times an odd mixture of
+  tedious and straightforward calculations and austere and potentially
+  difficult abstractions.  It has a very different feel to it than
+  calculus.  I think most of you will enjoy it. 
+    
+  <li>  
+    
+</ul>
+
+
+
+<header class="align-center">
+  <p>nuts and bolts and further thoughts on the class</b>
+  <h2>About this Course</h2>
+</header>
+
+<ul>
+<li>There will be weekly assignments that you'll turn in at the end of
+  the day Friday.  (I come to campus Saturday late morning and
+  retrieve assignments.)
+<li>We'll do some sort of a low-stakes in-class (but probably open
+  notes) midterm during the middle of the term.  I don't anticipate
+  there being a final exam. 
+<li>I do not expect all of the assignments to be easy.  You'll want to
+  take advantage of help sessions and I also suggest working
+  collaboratively.  There is no TA for this class, so we'll have to
+  work to find times for help sessions that work for everyone,
+  including non-COA students.  I'm open to experimenting with online
+  help sessions.
+<li>An added challenge is that I will be on campus less than usual
+  this term.  I'll be traveling some due to my work with the Santa Fe
+  Institute, and I also have some significant dental scheduled for
+  week two.  We 
+<li>Your evaluation will be based roughly as follows:
+
+
+  <div class="table-wrapper">
+    <table>
+      <!--<thead>
+	  <tr>
+	    <th></th>
+	    <th>Thing</th>
+	    <th>Percent</th>
+	  </tr>
+      </thead>-->
+      <tbody>
+	<tr>
+	  <td>Homework</td>
+	  <td>90%</td>
+	</tr>
+	<tr>
+	  <td>In-class midterm</td>
+	  <td>10%</td>
+	</tr>
+	<!--<tr>
+	    <td>Project/final exercise</td>
+	    <td>20%</td>
+	</tr>-->
+      </tbody>
+      <!--<tfoot>
+	  <tr>
+	    <td></td>
+	    <td></td>
+	    <td></td>
+	  </tr>
+      </tfoot>-->
+    </table>
+  </div>
+
+<li>If winter weather conditions make it unsafe for you to come to campus, do 
+not come to class, even if classes have not been officially canceled.
+</ul>
+
+<header class="align-center">
+  <p>collaboration vs copying, and other details</b>
+  <h2>Homework</h2>
+</header>
+<ul>
+<li>  Any code that you submit should be uploaded to our shared google drive.  
+  Please don't email me code.  Thanks.
+<li>On the one hand, coding is a solitary activity. You need to learn how to
+write code on your own.  On the other hand, coding is a collaborative activity;
+one often discusses ideas and strategies with friends and colleagues.  
+Additionally, one sometimes grabs snippets of code from the web or even an
+entire program.  
+<li> Try to do as much coding on your own as possible.  Especially in the
+first half of the course, write from scratch, or by starting with code
+we work on together in class. 
+<li>Never hesitate to talk about coding ideas or challenges or strategies
+with others. It's ok to get help debugging, but resist the urge to get 
+help immediately every time.  Debugging is an important skill.  As the
+course progresses, you'll get better at it.
+<li>If you share code with others, that's ok, but I'd encourage you to not
+do this often.  If you do look at others' code and/or look at code on the
+web, be sure to cite your sources via comments in your code.  If at all
+possible, make sure you understand the code you use.  Sometimes that's
+not possible, in which case you should note as much via a comment in your code. 
+
+</ul>
+
+
+						
+							
+			</div>
+			</div>
+			</div>
+			</section>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="container">
+				<ul class="icons">
+				  
+	<li><a href="http://www.twitter.com/DavidFeldman" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+	<li><a href="http://www.ah.fm" class="icon fa-headphones"><span class="label">di</span></a></li>
+	<li><a href="http://ohoriscoffee.com" class="icon fa-coffee"><span class="label">Coffee</span></a></li>
+	<li><a href="http://www.coa.edu" class="icon fa-graduation-cap"><span class="label">COA</span></a></li>
+<!--	<li><a href="http://mainebeercompany.com" class="icon fa-beer"><span class="label">MBC</span></a></li>-->
+	<li><a href="http://hornacek.coa.edu/dave" class="icon fa-male"><span class="label">Dave</span></a></li>
+
+
+				</ul>
+			</div>
+			<div class="copyright">
+				&copy; Untitled. All rights reserved.
+			</div>
+		</footer>
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

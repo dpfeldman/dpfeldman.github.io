@@ -1,0 +1,419 @@
+%
+%
+\documentclass[%
+  color,
+  epsf,
+  url,
+  amssymb,
+  %slidesonly,%  Try notes or notesonly instead.
+  %notes,%      Use instead of slidesonly to typeset the notes.
+  %notesonly,%  Use instead of slidesonly to typeset notes and slides.
+  %semcolor,%   Try me if using PSTricks.
+  semhelv,%    Try me if using a PostScript printer.
+  %article,%    Try me.
+  portrait,%   Try me.
+  %sem-a4,%     Try me if using A4 paper.
+  semlayer%     This must be included, but you need the semcolor option to
+  ]{seminar}
+
+\slidesmag{4}
+\articlemag{1}
+
+%\twoup                     % Try me for twoup printing.
+
+\usepackage{epsf}
+\usepackage{url}
+
+%\portraitonly              % To print only portrait slides
+%\landscapeonly             % To print only landscape slides
+
+%\notslides{\ref{questions}-7,1}   %Try me: The slides are omitted.
+%\onlyslides{\ref{questions}-7,1}  %Try me: Only these slides are included.
+%\onlynotestoo                     %Try me: For selecting notes as well.
+
+%\topmargin=1in
+%\textwidth=9in
+
+%\setlength{\slidetopmargin}{2in}
+
+%\slidetopmargin=2in
+
+
+\colorlayers{red,blue}      % Try deleting this if using the semcolor option,
+                            % to get \blue and \red to use PostScript color.
+
+\rotateheaderstrue          % Try this out if using rotation macros.
+\newcommand{\Past}         {\stackrel{\leftarrow} {S}}
+\newcommand{\Future}       {\stackrel{\rightarrow}{S}}
+\newcommand{\all}{\stackrel{\leftrightarrow}{S}}
+\newcommand{\pr}{\rm Pr}
+\newcommand{\past}{ \,\stackrel{\leftarrow}{S} \,}
+\newcommand{\future}{\, \stackrel{\rightarrow}{S}\,}
+
+
+\title{ {\bf Some Foundations in Complex Systems}\\ Tools and
+Concepts}  
+\author{ {\bf David P. Feldman} }
+\date{July 5--11, 2004}
+
+\newcommand{\sref}[1]{SLIDE \ref{#1}}
+\newcommand{\heading}[1]{\begin{center}\large\bf #1\end{center}}
+
+\renewcommand{\slidetopmargin}{1.5in}
+
+\newpagestyle{MH}
+  {SFI Summer School, Qingdao China, July 2004\hfil\thepage}{Dave
+Feldman \hspace{3cm} {\url{http://hornacek.coa.edu/dave}}\hfil}
+\pagestyle{MH}
+
+\begin{document}
+
+
+\maketitle    % This won't show up when \onlynotestoo is in effect.
+\begin{center}
+{\large
+College of the Atlantic \\ and \\
+Santa Fe Institute} \\
+\end{center}
+\begin{center}
+{\large \tt \bf
+dave@hornacek.coa.edu \\
+\smallskip
+http://hornacek.coa.edu/dave/ }\\
+\end{center}
+
+%\hspace{3mm}\\
+%\begin{center}
+%{\large {\bf Collaborators:}}\\
+%Jim Crutchfield (Santa Fe Institute)\\
+%%Susan McKay (University of Maine)
+%\end{center}
+
+\begin{slide}
+  \ifslidesonly              % Title slide only for slidesonly selection.
+    \maketitle
+    \addtocounter{slide}{-1}
+    \slidepagestyle{empty}
+  \fi
+\end{slide}
+
+
+% **********************************************************************
+\begin{slide*}
+\centerslidesfalse
+\begin{center}
+{\bf CSSS Thoughts and Advice}
+\end{center}
+
+\begin{enumerate}
+
+\item I attended the CSSS in Santa Fe in 1996.
+
+\item The most interesting and valuable parts of the summer school
+will probably be the discussions you have with other students and the
+work you do in working groups.  The lectures are just starting point.
+
+\item The CSSS is an amazing opportunity to interact with people you
+might now normally interact with.  Take advantage of this.  
+
+\item Think of your role as both a learner and a teacher. 
+
+\item Don't spend too much energy worrying about the definition of
+complexity or complex systems.  (You wouldn't go to a history
+conference and spend a month debating what history is.)
+
+\item Working across disciplines can be challenging.  Different
+disciplines have different vocabularies and underlying assumptions.
+Be patient---it's worth it.
+
+\end{enumerate}
+
+
+\end{slide*}
+% **********************************************************************
+
+
+
+% **********************************************************************
+\begin{slide*}
+\centerslidesfalse
+\begin{center}
+{\bf Comments about my series of lectures}
+\end{center}
+
+
+\begin{enumerate}
+
+\item I am trained as a theoretical physicist.  So my approach will be
+somewhat physics-centric. 
+
+\item There is a lot of material that I'm trying to cover, so I'll
+move quickly and at times will skip some topics that I really
+shouldn't skip. 
+
+\item I will be covering some topics that some of you know very well,
+and others topics that you don't know that well.  This means there
+will be times when the lectures seem too slow or too fast.  I don't
+know how to avoid this.  This will probably be the case for all the
+lectures this month.
+
+\item Please, ask questions during the lectures!
+
+\item Please, ask questions after the lectures!
+
+\item I'd also welcome comments, critique, and conversation. 
+
+%\item I'd also welcome comments during my lectures; you may be more of
+%an expert than me on some of the topics.
+
+\item My aim is to give a somewhat opinionated survey of tools,
+methods, and ideas from complex systems.  
+
+\item We can't cover anything, so I've chosen what I think is most
+important and what you're less likely to get elsewhere. 
+
+\end{enumerate}
+
+
+\end{slide*}
+% **********************************************************************
+
+
+
+
+% **********************************************************************
+\begin{slide*}
+\centerslidesfalse
+\begin{center}
+{\bf Complex Systems?}
+\end{center}
+%{\bf Some initial thoughts about complex systems}
+
+
+
+I'm not interested in a strict definition of complex systems.
+However, it seems to me that most things we'd think of as a complex
+system share many of the following features:
+
+\begin{enumerate}
+
+
+\item Unpredictability.  A perfectly predictive theory is rarely
+possible. 
+
+\item Emergence: Systems generate patterns that are not part of the
+equations of motion:  {\em emergent phenomena}. 
+
+\item Interactions: The interactions between a system's components
+play an important role. 
+
+\item Order/Disorder:  Most complex systems are simultaneously ordered
+and disordered. 
+
+\item Heterogeneity:  Not all the elements that make up the system are
+identical.  
+
+\end{enumerate}
+
+\end{slide*}
+
+% **********************************************************************
+% **********************************************************************
+\begin{slide*}
+\centerslidesfalse
+\begin{center}
+{\bf Phenomena and Topics}
+\end{center}
+
+\begin{itemize}
+\item Another way to approach a definition of complex systems is to
+list the things that people think are complex systems:
+\begin{itemize}
+
+\item Immune system, ecosystems, economies, auction markets,
+evolutionary systems, the brain ...
+
+\item Critical phenomena/phase transitions, chaotic dynamics, fractals
+and power laws, natural computation ... 
+
+\end{itemize}
+
+\item This amounts to saying:  complex systems are what complex
+systems people study.
+
+\item This does have a nice internal consistency.
+
+\item In my opinion, what gets included as part of a discipline is
+often a frozen accident. 
+
+\end{itemize}
+
+
+
+
+\end{slide*}
+
+% **********************************************************************
+% **********************************************************************
+\begin{slide*}
+\centerslidesfalse
+\begin{center}
+{\bf Tools}
+\end{center}
+
+Most tools and techniques for complex systems will thus need to:
+\begin{enumerate}
+
+\item Measure unpredictability, distinguish between different sorts of
+unpredictability, work with probabilities
+
+\item Have tools for measuring and discovering pattern, complexity,
+structure, emergence, etc. 
+
+\item Be inferential; be inductive as well as deductive.  Must infer
+from the system itself how it should be represented.   
+
+\item Be interdisciplinary; combine methods, techniques, and areas of
+study from different fields
+
+\end{enumerate}
+
+\end{slide*}
+
+% **********************************************************************
+% **********************************************************************
+\begin{slide*}
+\centerslidesfalse
+\begin{center}
+{\bf Models}
+\end{center}
+
+We will need model systems upon which to try out tools and
+techniques:  ``fruit flies'' and ``lab rats'' for complex systems.
+Many are commonly used
+\begin{enumerate}
+\setlength{\itemsep}{-2mm}
+    \item Logistic equation
+    \item Random networks
+    \item Ising models
+    \item Cellular automata
+    \item etc.\\
+\end{enumerate}
+
+\begin{itemize}
+
+\item Also, one usually has to build a model, or choose a representation, of
+a phenomena before one can study it.  
+
+\item It is important to choose model classes carefully.
+
+\item We will also need to think about how to infer models from data.
+
+\item Models, by definition, ignore many aspects of the phenomena
+being modeled.
+
+\item There are always choices (sometimes hidden) made when building a
+model. 
+
+\end{itemize}
+
+\end{slide*}
+
+% **********************************************************************
+
+% **********************************************************************
+\begin{slide*}
+\centerslidesfalse
+\begin{center}
+{\bf Complexity: Initial Thoughts}
+\end{center}
+
+\begin{itemize}
+
+\item  The complexity of a phenomena is generally understood to be a
+measure of how difficult it to describe it.
+
+\item But, this clearly depends on the language or representation
+used for the description.  
+
+\item It also depends on what features of the thing you're trying to
+describe.  
+
+\item There are thus many different ways of measuring complexity.  I
+will aim to discuss a bunch of these in my lectures. 
+
+\item Some important, recurring questions concerning complexity
+measures: 
+\begin{enumerate}
+   \item What does the measure tell us?
+   \item Why might we want to know it?
+   \item What representational assumptions are behind it?
+\end{enumerate}
+
+\end{itemize}
+
+\end{slide*}
+
+% **********************************************************************
+
+
+% **********************************************************************
+\begin{slide*}
+\centerslidesfalse
+\begin{center}
+{\bf Outline}
+\end{center}
+
+\begin{enumerate}
+
+    \item Introductory remarks.  
+    \item Introduction to Dynamical Systems and Chaos, Part
+    I. Terminology, definition of chaos.      
+    \item Introduction to Dynamical Systems and Chaos, Part II 
+    \item Information Theory, Part I 
+    \item Information Theory, Part II 
+    \item Computation Theory, Part I: Automata and Computational Hierarchy 
+    \item Computation Theory, Part II: Universal Turing Machines and
+    Computational Complexity 
+    \item Measures of Complexity, Part I: Computational Mechanics 
+    \item Measures of Complexity, Part II: Survey of other Complexity
+    Measures  
+    \item Conclusions 
+\end{enumerate}
+
+\end{slide*}
+% **********************************************************************
+
+
+% **********************************************************************
+\begin{slide*}
+\centerslidesfalse
+\begin{center}
+{\bf Goals}
+\end{center}
+
+\begin{enumerate}
+
+\item  Present some tools, models, paradigms that are useful in
+complex systems. 
+
+\item Discuss the applicability and un-applicability of these various
+tools.  
+
+\item Provide references and advice so you can learn more about these
+topics if you wish. 
+
+\item Present some thoughts about what makes the study of complex
+systems similar too, and different from, other types of science. 
+
+\item Have fun. 
+
+\end{enumerate}
+
+\end{slide*}
+% **********************************************************************
+
+
+
+\end{document}
+

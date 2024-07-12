@@ -1,0 +1,47 @@
+
+<html>
+<head>
+<title>Chaos and Complex Systems</title>
+</head>
+
+<link rel="stylesheet" href="2.css" type="text/css" />
+
+<center><h1>chaos and  complex  systems</h1>
+<h2>
+<a href="http://www.coa.edu">college  of the atlantic</a><br>
+<a href="http://hornacek.coa.edu">david feldman</a><br>
+fall  2006  </h2>
+</center> 
+
+<p class="dotted">
+
+<br>
+
+<b><a href="overview.html">Overview</a></b><br>
+<b><a href="schedule.html">Schedule</a></b><br>
+<b><a href="expectations.html">What to Expect</a></b><br>
+<b>Homework Assignments:</b> [<a href="./hw.1.pdf">One</a>] [<a 
+href="./hw2.pdf">Two</a>] 
+[<a href="./hw3.pdf">Three</a>] 
+[<a href="./hw4.pdf">Four</a>] [<a href="./hw5.pdf">Five</a>] <br>
+
+<!--<b><a href="summary.html">Summary</a></b><br>-->
+<b><a href="projects.html">Final Project Guidelines</a></b><br>
+<!--<b>Final Project Guidelines</b><br>-->
+<b><a href="solutions.html">Homework Guidelines</a></b><br>
+<!--<b><a href="links.html">Links</a></b><br>-->
+<b><a href="bibliography.html">Bibliography</a></b><br>
+<!--<b><a href="http://hornacek.coa.edu/dave/Maple">Maple Help</a></b><br>-->
+<!--<b><a href="../Chaos+Complex_Systems/Projects/">Final Projects from the
+2001 Course</a></b><br>
+<b><a
+href="http://hornacek.coa.edu/dave/Teaching/Chaotic_Dynamics/Projects/index.html">Final
+Projects from the 1999 Course</a></b><br>-->
+
+<br>
+
+</p>
+
+
+</html>
+

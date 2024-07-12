@@ -1,0 +1,448 @@
++<!--
+	Hielo by TEMPLATED
+	templated.co @templatedco
+	Released for free under the 
+	Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+
+<html>
+  <head>
+    <title>Physics I | Fall 2021 | College of the Atlantic</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body class="subpage">
+    
+    <!-- Header -->
+    <header id="header">
+      <div class="logo"><a href="index.html">Physics I | winter 2021 </a></div>
+      <a href="#menu">Menu</a>
+    </header>
+    
+    <!-- Nav -->
+    <nav id="menu">
+      <ul class="links">
+	<li><a href="index.html">Home</a></li>
+	<li><a href="about.html">About</a></li>
+	<li><a href="schedule.html">Schedule+Assignments</a></li>
+      </ul>
+    </nav>
+    
+    <!-- One -->
+    <section id="One" class="wrapper style3">
+      <div class="inner">
+	<header class="align-center">
+	  <p>
+	    <h2>physics i</h2></br>
+	    <h2>ABOUT THE COURSE</h2>
+	</header>
+      </div>
+    </section>
+    
+    <!-- Two -->
+    <section id="two" class="wrapper style2">
+      <div class="inner">
+	<div class="box">
+	  <div class="content">
+	    <!--<header class="align-center">
+		<p>maecenas sapien feugiat ex purus</p>
+		<h2>Lorem ipsum dolor</h2>
+	    </header>-->
+
+<header class="align-center">
+  <p>a few facts</b>
+<h2>Basic Info</h2>
+</header>
+<ul class="alt">
+  <li><b>Instructor</b>: Dave Feldman </li>
+<!--  <li><b>Email</b>: You can figure it out-->
+<!--  <li><b>Office</b>: Second floor, Turrets Annex-->
+  <li><b>Pronouns</b>: he/him/his </li>
+  <li><b>Help Sessions</b>: TBA</li>
+  <li><b>Individual Meetings</b>: By appointment </li>
+  <li><b>Tutors</b>: Aniruddha "AJ" Jaydeokar, Annika Ross, Alsu Shagieva</li>
+</ul>
+<p></p>
+
+<header class="align-center">
+  <p>here's what i hope you learn in this course</b>
+  <h2>Course Goals</h2>
+</header>
+
+<ol> 
+<li>I want to help you improve your quantitative analytical skills,
+    problem solving skills, and mathematical confidence.  
+<li>I want you to learn several big physics ideas: conservation of
+    energy, momentum, and angular momentum, and Newton's laws, and be
+    able apply these ideas in quantitative and qualitative settings. 
+</ol>
+<p>Basically the idea is to learn some physics and also to learn some of
+the analytical and quantitative skills that physicists use. These
+include: </p>
+<ol>
+  <li> Developing a systematic, organized, and effective approach to
+    problem solving 
+  <li> Becoming comfortable and confident making approximations and
+    estimations 
+  <li>Mastering unit conversions and gaining familiarity with
+  dimensional analysis   
+</ol>
+
+<br>			
+<header class="align-center">
+  <p>what your evaluation will be based on</b>
+  <h2>Evaluation</h2>
+</header>
+
+<p>Your evaluation will be based on the items listed below.  I think
+  there is much to be said against grades; I believe they often
+  interfere with genuine, reflective learning. But I am happy to
+  assign grades if you wish. I do not have any quota of A's, B's, etc.  
+</p>
+
+<div class="table-wrapper">
+  <table>
+    <!--<thead>
+	<tr>
+	  <th></th>
+	  <th>Thing</th>
+	  <th>Percent</th>
+	</tr>
+    </thead>-->
+    <tbody>
+      <tr>
+	<td>Weekly Homework</td>
+	<td>70%</td>
+      </tr>
+      <tr>
+	<td>Class and lab participation</td>
+	<td>10%</td>
+      </tr>
+      <tr>
+	<td>Midterm</td>
+	<td>10%</td>
+      </tr>
+      <tr>
+	<td>Final</td>
+	<td>10%</td>
+      </tr>
+    </tbody>
+    <!--<tfoot>
+	<tr>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+	</tr>-->
+</tfoot>
+</table>
+</div>
+<p></p>
+
+
+<header class="align-center">
+  <p>what's the deal with this course?</b>
+  <h2>Structure and Pacing</h2>
+</header>
+
+<!-- <li> The final version of this and related documents can be found on
+  the course web page.-->
+<p>
+This is my eleventh time teaching this class, so I have a pretty good
+  sense of how it will go.  But this is my first time teaching it in
+  the new building and in the midst/aftermath of a global pandemic.
+
+<!-- <li> There will be times in class when we go over something that
+    you already understand. There may also occasionally be times when
+    you feel lost in class for a little bit. If this happens, don't
+    despair. Ask a question or talk to me or one of the TAs after
+    class. -->
+
+<li><b>If you are required to quarantine or isolate as a result of
+    possible exposure to COVID-19 you will not be penalized (in your
+    final grade or narrative evaluation) for missing class or lab
+    sessions.  If in doubt, please do not come to class</b>.  Let me
+    know if you have to miss class and we'll figure something out.  I
+    expect that most classes will be recorded and posted online.</li>
+
+    <li> Falling behind in this course is not a good idea. If you're
+    confused about something, it's very important that you seek help
+    sooner rather than later. This course builds on itself&mdash;what we do
+    in week three will depend on what we did in week two, what we do
+    in week four depends on week three, etc. There are many people
+    around who can offer help. However, we can't offer assistance if
+    we don't know who needs it when. You need to take responsibility
+    to seek help if you need it. On a related note ... 
+
+    <li> I do not expect all of the homework assignments to be easy; I
+    don't expect you to be able to sit down and do them easily the
+    first time. Don't let yourself get frustrated&mdash;I strongly suggest
+    working with others and seeking help if you need it. I also
+    strongly suggest that you start the homework well before it's
+    due. 
+
+    <li> In many math and physics classes the
+    textbook has a ton of examples in them. The book we'll be using
+    doesn't. The result is that students sometimes find the homework
+    to be challenging, frustrating, and occasionally even
+    annoying. However, I'm convinced that this style of homework&mdash;where
+    there's not an example just like the problem you're trying to
+    do&mdash;is much better pedagogically. You'll learn a lot more this
+    way. 
+
+    <li> This course covers fairly standard Physics I material. The
+    only exception to this is that our book begins with conservation
+    laws, and leaves Newton's laws for later. There are a few other
+    texts that do this, but most do it the other way around. The text
+    book we're using is used at many other colleges and universities
+    in the U.S. If you've had Physics before, in high school or at
+    another college, you'll probably find most of the material
+    familiar. You should talk with me to make sure that this course
+    won't be too much review for you. 
+
+    <li> This class is listed as an introductory course. I do not
+    assume that you've had physics before. Although our textbooks
+    occasionally use calculus, calculus is most definitely not a
+    prerequisite for this class. This class makes extensive use of
+    algebra and trigonometry. If you've never had trig before, you can
+    still take this class, but you might have some extra work you'll
+    need to do the first few weeks. In the past, students without a
+    trig background have taken this class and done fine. 
+
+    <li> This class is a lot of work. However, the workload is fairly
+    steady; you'll be doing approximately the same amount of work each
+    week. We'll hit the ground running and try to get lots of stuff
+    done the next few weeks. The workload will taper off some toward
+    the end of the term. 
+
+    <li>The workload in this class starts off heavier and increases in
+    difficulty and amount the first several weeks.  After around week
+    three and chapter C5 things will level off and perhaps even get
+    easier. 
+
+    <li> Labs in this class may be different than those you've
+    encountered in other science classes. There will not be a formal
+    write-up, aka a "lab report", due at the end of the lab. Instead,
+    the emphasis is on playing/experimenting with some equipment,
+    trying some stuff out, and learning some skills we won't get a
+    chance to go over in class. The exercises are, at times, open
+    ended and deliberately vague.  They're not busy work. I think it's
+    important to approach labs with this in mind. Don't try to rush
+    through; if you put a little extra time and thought into the labs
+    you'll get much more out of them.  Also, sometimes labs may be
+    puzzles or exploratory word problems. 
+
+</ol>
+</p>
+
+<header class="align-center">
+  <p>You learn math and physics (or anything, really) by
+    practicing</p>
+  <h2>Stuff about Homework</h2>
+</header>
+<p>
+  <ol>
+  <li>There will be a homework assignment due almost every Friday. It is 
+    essential that you do these assignments, as this is how one learns
+    math, and also this is most of what
+    your evaluation will be based on.</li>
+  <li>As discussed in <a href="https://youtu.be/xxv-Sxav1qQ">this
+  video</a> there will be two parts to almost every homework
+    assignment:
+    <ul>
+      <li>Problems to be submitted on Edfinity</li>
+      <li>Problems to be submitted on "paper" (a scanned pdf) on
+	google classroom</li>
+  </ul></li>
+  
+  <li>Edfinity is an online homework system. I use this system even
+    when the world is not in a global pandemic.  There are three reasons 
+    why I use Edfinity:
+    <ul>
+      <li>You get instant feedback while doing the work, so you can
+	learn right away from your mistakes. You can submit solutions
+	many times until you get everything correct.</li>
+      <li>Some problems are randomized so that you will all get
+	slightly different versions of the questions. This means that
+	collaborating with other students will be maximally effective,
+	since you'll have to share solution methods and not just the
+	final answer. </li>
+      <li>Since the problems are automatically marked, I can spend
+      more time helping you and won't have to spend as much time
+	grading.</li>
+      </ul></li>
+  <li>If you need extra time for one or two of the homework
+    assignments, it's not a big deal.  But be mindful to not fall
+    farther behind every week. </li>
+  <li>I do not expect all of the homework assignments to be easy; I
+    don't expect you to be able to sit down and do them easily the first
+    time. Don't let yourself get frustrated.  I strongly suggest working
+    with others and seeking help if you need it.  
+  <li>You are strongly encouraged to work together on homework.  You
+    can also consult me, class tutors, other faculty, friends,
+    and family.  However, the homework you hand in should represent
+    your own understanding.</li>
+  <li>As I plan on sending out homework assignments and other
+    information via email/google classroom, it is important that you
+    check your email/classroom regularly.</li>
+  <li>I anticipate that there will be two exams: one around week six
+    and the other during the last week of the term. These exams will be
+    open-notes and (essentially) untimed.</li>
+  <li>You will want to have at your disposal a scientific calculator or 
+    phone/tablet app.  I strongly suggest an actual calculator.  You do
+    not need a graphing calculator for this course (or, in my opinion,
+    ever). </li>
+  </ol>
+</p>
+
+
+
+
+<header class="align-center">
+  <p>you can get help, and a lot more, at help sessions</p>
+  <h2>Help Sessions</h2>
+</header>
+<p>
+The Teaching Assistants and I will have a handful of help sessions
+every week. <b>I do not know yet where the help sessions will be.
+    Probably in room 103 in the new building.  I might also do one or
+    two help sessions on zoom in the evening.</b>
+You are warmly invited and encouraged to attend these
+sessions. Help sessions are relaxed, informal, and hopefully fun.
+Things that happen at help sessions:
+
+<ol>
+  <li>The TAs and/or I am around to offer help on the homework.</li>
+  <li>Some students do most of the homework while at a help
+    session.  They work through problems alone or with others, and
+    find it comforting to know that help is immediately at hand if
+    needed.</li>
+  <li>Other students do the problems at home or in the library and
+    come to the help session with specific questions. </li>
+  <li>Usually there are a group of students working together at one or
+    two tables in the dining hall.  You can join this group.</li>
+  <li>Some students prefer working in booths, which can be a bit
+    quieter.  I'll wander over to the booths and check in on students,
+    or you can move over to the large table or summon me over.</li>
+  <li>Help sessions are also a chance to ask general questions about
+    the course.  Conversations also wander into other areas: politics,
+    the state of the world, what's for dinner, what classes are
+    offered next term, and so on.</li>
+  <li>Help sessions are a great way to meet other students in the
+    class.</li>
+</ol>
+Everyone is welcome at help sessions!  Attending these sessions will
+help you do well in the class and get as much out of it as
+possible.</p>  
+
+
+<header class="align-center">
+  <p>there are lots of good reasons why you might want to meet with me
+    one-on-one</p>
+  <h2>Individual Meetings</h2>
+</header>
+I am happy to meet with students one-on-one, either via zoom or in
+person.  The best way to set up an appointment is to send me an email.
+There are lots of reasons why you might want to meet with me: 
+<ol>
+  <li>You have some in-depth questions that there isn't time to
+    explore in a help session.
+  <li>You have a question that you think is too basic or you're
+  uncomfortable asking in a help session.  (You shouldn't be
+  uncomfortable, since, as the saying goes, there are no dumb
+  questions!  But I understand that you might be uncomfortable
+  nevertheless.)
+  <li>You want to discuss some challenges you're facing in the class.
+  <li>You want to talk about other classes in physics or math, or
+    internships, senior projects, etc.
+</ol>  
+Please don't hesitate to reach out if there's anything you want to
+discuss. </p>
+
+<header class="align-center">
+  <p>Everyone is welcome</p>
+  <h2>Diversity and Inclusion</h2>
+</header>
+<p>It is my intent that students from all
+  backgrounds and perspectives be well served by this course,
+  that students' learning needs be addressed both in and out of class,
+  and that the diversity that students bring to this class be viewed
+  as a resource, strength, and benefit. It is my intent to present
+  materials and activities that are respectful of diversity: gender,
+  sexuality, disability, age, religion, socioeconomic status,
+  ethnicity, race, and culture.</p>
+
+<p>Learning about diverse perspectives and identities is an ongoing
+  process. I am always looking to learn more about power and privilege
+  and the harmful effects of racism, sexism, homophobia, classism, and
+  other forms of discrimination and oppression.  Your suggestions are
+  encouraged and appreciated. Please let me know ways to
+  improve the effectiveness of the course for you personally, or for
+  other students or student groups. If something was said or done in
+  class (by anyone, including me) that made you feel uncomfortable,
+  please talk to me about it.  You can also reach out to Provost Ken
+  Hill, or Associate Deans Bonnie Tai or Jamie McKown, or Dean of
+  Students Sarah Luke.
+</p>
+
+
+
+<header class="align-center">
+  <p>Some fine print</p>
+  <h2>Statements about Academic Honesty and Hours of Academic
+    Engagement</h3>
+</header>
+<li> I am required to remind you that: "By enrolling in an academic
+  institution, a student is subscribing to common standards of
+  academic honesty. Any cheating, plagiarism, falsifying or
+  fabricating of data is a breach of such standards. A student must
+  make it his or her responsibility to not use words or works of
+  others without proper acknowledgment. Plagiarism is unacceptable and
+  evidence of such activity is reported to the academic dean or
+  his/her designee.  Two violations of academic integrity are grounds
+  for dismissal from the college. Students should request in-class
+  discussions of such questions when complex issues of ethical
+  scholarship arise."
+  
+<li>You should expect to spend 150 hours of academically engaged time
+  on this course, or 15 hours per week. In addition to 5.5 hours per
+  week in class or discussion section, in a typical week you'll spend
+  1.5 hours reading and preparing for class and 8 hours attending
+  help sessions and completing assignments. 
+</ol>
+    
+</div>
+</div>
+</div>
+</section>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="container">
+				<ul class="icons">
+				  
+	<li><a href="http://www.twitter.com/DavidFeldman" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+	<li><a href="http://www.ah.fm" class="icon fa-headphones"><span class="label">di</span></a></li>
+	<li><a href="http://ohoriscoffee.com" class="icon fa-coffee"><span class="label">Coffee</span></a></li>
+	<li><a href="http://www.coa.edu" class="icon fa-graduation-cap"><span class="label">COA</span></a></li>
+<!--	<li><a href="http://mainebeercompany.com" class="icon fa-beer"><span class="label">MBC</span></a></li>-->
+	<li><a href="http://hornacek.coa.edu/dave" class="icon fa-male"><span class="label">Dave</span></a></li>
+
+
+				</ul>
+			</div>
+			<div class="copyright">
+				&copy; Untitled. All rights reserved.
+			</div>
+		</footer>
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
+

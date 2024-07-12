@@ -1,0 +1,55 @@
+<html>
+<head>
+<title> College Albegra </title>
+</head>
+
+<body>
+
+<br>
+<h1> College Algebra </h1>
+
+This class is for students who have had algebra and probably algebra 2
+in high school.  It is not a remedial math course, but is intended to
+bring students to a reasonable level of comfort and competency in
+concepts of algebra, either for use in other classes or for its own
+sake.  This class may serve as a refresher for a subsequent
+precalculus course, but will not, on its own, prepare students for
+calculus.<p>  
+
+It is assumed that you have taken high school math, but many of you
+may not be satisfied with your level of mastery.  It has also probably
+been a long time since you took (or used) math and you may suffer from
+the "use it or lose it" phenomenon.<p>
+
+
+<br>
+
+
+<hr>
+
+<center>
+<h3>
+[<a href="http://hornacek.coa.edu/dave/Teaching/Course_Descriptions/index.html">Course List</a>]
+[<a href="http://hornacek.coa.edu/dave/Teaching/math.coa.shtml">Math at COA</a>]
+[<a href="http://hornacek.coa.edu/dave/index.html">Dave's Home Page</a>]
+[<a href="http://www.coa.edu/">COA Home Page</a>]</h4>
+</h3>
+</center>
+<p>
+<br>
+The current time is  <!--#echo var="DATE_LOCAL"-->.<br>
+This document was last modified on <!--#echo var="LAST_MODIFIED"--><br>
+Page mainted by Dave Feldman,  <a
+href=mailto:dave@hornacek.coa.edu>dave@hornacek.coa.edu</a>
+
+<!--Questions about the contents of these pages or about math at the
+College of the Atlantic should be sent to Dave Feldman at <a 
+href=mailto:dave@hornacek.coa.edu>dave@hornacek.coa.edu</a>.
+<p>-->
+
+<p>
+</html>
+
+
+
+

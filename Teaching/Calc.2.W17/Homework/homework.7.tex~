@@ -1,0 +1,99 @@
+\documentclass[12pt]{article}
+\oddsidemargin=0.0in
+\evensidemargin=0.0in
+\textwidth=6.5in
+%\topmargin=-.75in
+%\textheight=9in
+\usepackage{url}
+\usepackage{hyperref}
+ 
+\begin{document}
+\pagestyle{empty}
+ 
+\begin{center}
+{\large {\bf Calculus II}}\\
+\medskip
+{\large {\bf Homework Seven}}\\
+\medskip
+{ {\bf Due Friday 24 February, 2017}}\\
+\end{center}
+
+\noindent {\bf Link to Webwork:
+  \url{https://courses1.webwork.maa.org/webwork2/COA-ESL024}} \\ 
+
+
+\noindent {\bf Chapter 8.6:}  
+\begin{itemize}
+\setlength{\itemsep}{0mm}
+\item WeBWorK Assignment: 07Chapters8.7and8.8
+\item Textbook Problems:
+  \begin{enumerate}
+  \setlength{\itemsep}{-1mm}
+    \item 12
+    \item 20 (Optional)
+  \end{enumerate}
+\end{itemize}
+
+\noindent {\bf Chapter 8.7:}  
+\begin{itemize}
+\setlength{\itemsep}{0mm}
+\item WeBWorK Assignment: 07Chapter8.7and8.8
+\item Textbook Problems:
+  \begin{enumerate}
+  \setlength{\itemsep}{-1mm}
+    \item None
+  \end{enumerate}
+\end{itemize}
+
+\noindent {\bf Normal Distributions}
+
+\begin{enumerate}
+\setlength{\itemsep}{-1mm}
+\item The height of giraffes is distributed according to a normal
+  distribution with a mean of $5.2$ and a standard deviation of
+  $0.6$.  
+\begin{enumerate}
+\setlength{\itemsep}{-1mm}
+\item What fraction of giraffes are less than 4 meters tall?
+\item What fraction of giraffes are between 5 and 6 meters tall?
+\item What fraction of giraffes are more than 5.5 meters tall?
+\end{enumerate}
+Answer these questions two ways:
+\begin{itemize}
+\setlength{\itemsep}{-1mm}
+\item Using WolframAlpha to evaluate the integrals.  You do not need
+  to show printouts from wolfram alpha, but you should write down the
+  integrals that you are asking wolfram alpha to solve for you.
+\item Converting to z and using a z-table. See, e.g.,
+  \url{www.stat.ufl.edu/~athienit/Tables/Ztable.pdf}.  Briefly explain
+  how you used the z table to answer each of the questions. 
+\end{itemize}
+
+\item Sarah Luke is interested in the heights of COA students compared
+  to Hampshire students.  A careful study reveals that COA students
+  have an average height of 63 inches and a standard deviation of 4
+  inches.  Sarah then sends a team of RAs on a trip to Massachusetts
+  to measure the heights of some Hampshire students.  The RA team
+  manages to convince 25 Hampshire students to be measured.  The mean
+  of these 25 Hampshire students is 66 inches. 
+  %The standard deviation of this sample of Hampshire students is 3.
+\begin{enumerate}
+\setlength{\itemsep}{-1mm}
+  \item What is the null hypothesis?
+  \item What is the p-value?
+  \item Should you reject the null?  Do you think it is likely that
+    the average heights of Hampshire and and COA students are the
+    same? 
+\end{enumerate}
+
+\item Repeat the above question, but suppose that the RAs measured 100
+  Hampshire students and found an average height of 66 inches.  
+
+\end{enumerate}
+
+
+
+
+
+
+\end{document}

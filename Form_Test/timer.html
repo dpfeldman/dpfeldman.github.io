@@ -1,0 +1,123 @@
+
+<html>
+<head>
+<title> Testing Forms </title>
+</head>
+
+
+
+<SCRIPT LANGUAGE="JAVASCRIPT">
+// <!-- Quick! Hide the java!
+
+// Speaking of Java, this particular script is (C) Copyright 2002 Jim Tucek
+// If you wish to use my CountDown script, these comments must be left
+// alone!  That is all.
+
+// Visit www.jracademy.com/~jtucek/ for script information and a bit of help
+// setting it up, or www.jracademy.com/~jtucek/email.html for contact
+// information.
+
+function start()
+{
+setup(document.forms["form1"].time2.value,"form1");
+repeat()
+}
+
+function repeat() 
+{
+down("form1");
+setTimeout("repeat()",1000);
+}
+
+function setup(day,box)
+{
+today = (new Date()).getTime();
+the_day = (new Date(day)).getTime();
+time = (the_day - today);
+document.forms[box].time2.value=time;
+}
+
+function down(box)
+{
+
+document.forms[box].time2.value = document.forms[box].time2.value - 1000;
+time = document.forms[box].time2.value;
+days = (time - (time % 86400000)) / 86400000;
+time = time - (days * 86400000);
+hours = (time - (time % 3600000)) / 3600000;
+time = time - (hours * 3600000);
+mins = (time - (time % 60000)) / 60000;
+time = time - (mins * 60000);
+secs = (time - (time % 1000)) / 1000;
+if(days==1) out = "1 day, ";
+else out = days+" days, ";
+if(hours < 10) out = out+"0";
+out = out+hours+":";
+if(mins < 10) out = out+"0";
+out = out+mins+":";
+if(secs < 10) out = out+"0";
+out = out+secs;
+if(days+hours+mins+secs> 1) document.forms[box].time.value = out;
+else document.forms[box].time.value = ("It's here!");
+//          The final message ------>   ^^^^^^^^^^
+}
+// I'm back! -->
+</SCRIPT>
+
+
+<body background="___" onLoad="start()"  ... >
+
+<h1> Countdown</h1><p>
+<br>
+<hr>
+<FORM name="form1">
+<input type="text" name="time" size="18" value=" "> before my 
+sabbatical begins. 
+<input type="hidden" name="time2" size="0" value="June 9, 2002 19:30:15">
+</FORM>
+
+
+</body>
+</html>
+
+
+
+<HR>
+<br>
+<table border=0 cellspacing=0 width = 700 >
+<tr>
+  <td align=left valign = top>
+  David P. Feldman</td>
+  <td>
+  <a href=mailto:dave@hornacek.coa.edu>dave@hornacek.coa.edu</a>
+  </td>
+</tr>
+<tr>
+    <td>
+    <a href="http://www.coa.edu">College of the Atlantic</a>
+    </td>
+    <td>
+    207 288-5015 (<i>Phone</i>)
+    </td>
+</tr>  
+<tr>
+    <td>
+    105 Eden St.
+    </td>
+    <td> 
+    207 288-4126 (<i>Fax</i>)
+    </td>
+</tr>
+<tr>
+    <td>
+    Bar Harbor, ME 04609
+    </td>
+    <td>
+    <a href="http://hornacek.coa.edu/dave">http://hornacek.coa.edu/dave</a>
+    </td>
+</tr>
+
+
+</table><p><br>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Physics III</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="container">
+<div id="header">
+<h1>Physics III</h1>
+<h2>a physics course at <a
+href="http://www.coa.edu">college of the atlantic</a></h2> 
+<h2><a href="http://hornacek.coa.edu/dave">david p. feldman</a> |
+spring 2010</h2>  
+<br />
+<hr />
+
+</div> <!-- end header -->
+
+<div class="spacer"></div>
+<div id="left">
+
+<div id="leftcontent">
+
+  <ul>
+    <li><a href="./index.html">Home</a></li>
+    <li><a href="./overview.html">Course Info</a></li>
+    <li><a href="./description.html">Course Description</a></li>
+    <li><a href="./homework.html">Assignments</a></li>
+    <li><a href="./schedule.html">Schedule</a></li>
+    <li><a href="./handouts.html">Handouts</a></li>
+    <li><a href="./projects.html">Final Project</a></li>
+    </ul>
+<p>&nbsp;</p>
+
+<!--<h3>News</h3>
+<p class="news">01.03.09 | site contructed<br />01.05.09 | term -->
+<!--starts<br />1/19 | Design completed</p> 
+-->
+
+</div> <!-- end left content -->
+</div> <!-- end left division -->
+
+<div id="main">
+<div id="maincontent">
+
+<h3>Handouts from class</h3>
+<br>
+
+<!--<p class="no-box"><b>Chapter 5</b></p>
+<ul>
+  <li><a href="Handouts/notes.5.1.pdf">How far did the cat run?</a>
+  <li><a href="Handouts/notes.5.1-2.summary.pdf">Definite Integral
+  Summary</a>
+  <li><a href="Handouts/sums.practice.pdf">Practice with Sigma Notation</a>
+  <li><a href="Handouts/maple.basics.mw">Maple Basics</a> [Maple Worksheet]
+  <li><a href="Handouts/sums.mw">Sums in Maple</a> [Maple Worksheet]
+  <li><a href="Handouts/cat.mw">Left- and Right-hand sums in Maple</a>
+  [Maple Worksheet] 
+  <li><a href="Handouts/notes.5.2.pdf">Definite Integrals and
+  Their Interpretations</a>
+</ul>
+<p class="no-box"><b>Chapter 6</b></p>
+<ul>
+  <li>first 
+  <li>second
+</ul>
+-->
+
+</div> <!-- end main content section -->
+</div> 
+<div id="footer"><div class="spacer"></div>
+
+<hr />
+<center>
+<p class="no-box"><a href="http://www.coa.edu">COA</a> | <a href="http://hornacek.coa.edu">Dave</a> 
+</center>
+</div> <!-- end footer -->
+
+</div> <!-- end container -->
+</body>
+
+</html>

@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- based on the band template from https://www.w3schools.com/w3css/w3css_templates.asp -->
+<head>
+<title>introduction to chaos + fractals</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+<link rel="stylesheet" href="./w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button
+		       w3-padding-large">HOME</a>
+    <a href="#description" class="w3-bar-item w3-button w3-padding-large w3-hide-small">description</a>
+    <a href="#axioms" class="w3-bar-item w3-button w3-padding-large w3-hide-small">axioms</a>
+    <a href="#info" class="w3-bar-item w3-button w3-padding-large w3-hide-small">more info</a>
+    <a href="#schedule" class="w3-bar-item w3-button w3-padding-large w3-hide-small">schedule</a>
+<!--    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">resources</a>-->
+<!--    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Media</a>
+      </div>-->
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#axioms" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">axioms</a>
+  <a href="#info" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">info</a>
+  <a href="#schedule" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">schedule</a>
+</div> 
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="images/cloud_crop_2.jpg" style="width:100%">
+    <div class="w3-display-topmiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h1>introduction to chaos &amp; fractals</h1>
+      <h2><a href="https://www.coa.edu" class="heading" target="_blank">college of the atlantic</a></h2>
+      <h3><a href="http://hornacek.coa.edu/dave" class="heading" target="_blank">dave feldman</a></h3>
+    </div>
+  </div>
+  
+  <!-- The Description Section -->
+  <div class="w3-container w3-content w3-white w3-center w3-padding-64
+	      w3-medium" style="max-width:1000px" id="description">
+    <h2 class="w3-wide">INTRODUCTION TO CHAOS &amp; FRACTALS</h2>
+    <p class="">college of the atlantic</p>
+    <p class="">fall 2023</p>
+    <p class=""><a href="http:/hornacek.coa.edu/dave" target="_blank" style="heading">dave feldman</a></p> 
+    <p class="w3-justify">
+      This course presents an elementary introduction to chaos and fractals. The main focus will be on using discrete dynamical systems to illustrate many of the key phenomena of chaotic dynamics: stable and unstable fixed and periodic points, deterministic chaos, bifurcations, and universality. A central result of this study will be the realization that very simple non-linear equations can exhibit extremely complex behavior. In particular, a simple deterministic system (i.e., physical system governed by simple, exact mathematical rules) can behave in a way that is unpredictable and random, (i.e., chaotic). This result suggests that there are potentially far-reaching limits on the ability of science to predict certain phenomena. Students in this class will also learn about fractals---self-similar geometric objects---including the Mandelbrot set and Julia sets. We will also read about and discuss the development of the field of chaos. In so doing, we will examine the nature of scientific communities, with a particular eye toward how changes in scientific outlooks occur. Throughout the course, students will be encouraged to explore the relations between chaos, fractals, and other areas of study such as literature, art, and cultural studies. Students who successfully complete this class should gain a quantitative and qualitative understanding of the basic ideas of chaos and fractals, a greater understanding of the cultural practice of science, and improved mathematical skills. Evaluation will be based on class and lab participation, weekly problem sets several short writing assignments and a final project. Level: Introductory. Prerequisite: A high school algebra course or signature of instructor. Lab fee: $10. Class limit: 24. Meets the following degree requirements: ES QR </p>
+<br>
+    
+    <h3 class"w3-wide w3-left-align" style="text-align:left">Who/When/Where</h3>
+    <p style="text-align:left">
+	<ul style="text-align:left">
+	  <li><b>Instructor</b>: Dave Feldman</li>
+	  <li><b>Pronouns</b>: he/him/his</li>
+	  <li><b>Meeting Times</b>: Tuesday + Friday, 11:10 - 12:. Labs/Discussions
+	    Monday 2:35 - 4:00 or 6:30 - 8:00</li>
+	  <li><b>Location</b>: Room 103, Center for Human Ecology
+	  <li><b>Help Sessions</b>:
+	    <a href="https://calendar.google.com/calendar/u/0?cid=Y191cjNya3VtMm1ibzBwOWQ5Y29hb2R0NHF2a0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t"
+	       target="_blank">Help Session Schedule</a> (updated frequently) </li>
+	  <li><b>Individual Meetings</b>: By appointment </li>
+	  <li><b>Tutors</b>: Laila Hammoudeh, Emiliana Reinoso,
+	    Alsu Shagieva, Noelle Stringer, Will Valenzuela-Tyson.
+	    (Laila is mainly a tutor for Energy, but she can likely
+	    also help with some of the assignments in this class.)</li>
+      </ul></p>
+  </div>
+</div>
+
+<!-- The Axioms Section -->
+<div class="w3-black" id="axioms">
+  <div class="w3-container w3-black w3-content w3-padding-64" style="max-width:1000px">
+    <h1 class="w3-wide">AXIOMS</h1>
+    <p>
+      In mathematics, axioms are propositions that are assumed to be
+      true. The mathematician <a href="https://fardila.com/"
+      target="_blank">Federico Ardila-Mantilla</a> has written 
+      four axioms that guide the work he does in education and
+      outreach. Federico's axioms resonate strongly with me. They are:   
+<ol>
+<li>Mathematical potential is distributed equally among different
+  groups, irrespective of geographic, demographic, and economic
+  boundaries. </li>
+<li>Everyone can have joyful, meaningful, and empowering mathematical
+  experiences.</li> 
+<li>Mathematics is a powerful, malleable tool that can be shaped and
+  used differently by various communities to serve their needs.</li> 
+<li>Every student deserves to be treated with dignity and
+  respect.</li>
+</ol>
+</p>
+<p>
+  <h2 class="w3-wide">Community Agreement</h2>
+<p>
+Taking the above axioms as a starting point, let's think about what
+type of community we want to create this term.  Here is a community
+agreement based on one written by Federico Ardila-Mantilla.
+<blockquote>
+This course aims to offer a joyful, meaningful, and empowering
+experience to every participant; we will build that rich experience
+together by devoting our strongest available effort to the class. You
+will be stretched and supported. Please be prepared to take an
+active, critical, patient, creative, and generous role in your own
+learning and that of your classmates. 
+</blockquote>
+    </div>
+  </div>
+
+<!-- The MORE INFO Section -->
+<div class="w3-white" id="info">
+  <div class="w3-container w3-white w3-content w3-padding-64" style="max-width:1000px">
+    <h1 class="w3-wide">MORE COURSE INFO and ADVICE</h1>
+
+    <h3>Course Goals</h3><p>
+      <ol>
+	<li>Stay physically and mentally healthy and maintain intellectual
+	  and personal connection during a potentially difficult
+	  time.</li>
+	<li>I want you to gain a solid understanding of the basic
+	  mathematical ideas behind chaos and fractals. As part of this, I
+	  hope you'll leave this course thinking somewhat differently
+	  about order and disorder, simplicity and complexity.</li>
+	<li>I want to help you improve your basic facility with algebra
+	  and functions, your problem solving skills, your ability to create
+	  and interpret different types of graphs, and your overall
+	  mathematical confidence.</li>
+	<li>I want you to gain a sense of how math and physics is done, and
+	  gain an awareness that these are not static, "dead" disciplines. I
+	  want you to gain a greater understanding of science as an
+	  institution and science as a culture, and how science intersects
+	  and influences other creative and scholarly areas.</li>
+	<li>Have fun while growing and learning. </li>
+      </ol>
+    </p>
+    
+    <hr><h3>Texts</h3><p>
+      <ol>
+	<li><i>Chaos: Making a New
+	    Science</i> by <a href="http://www.around.com/" target="_blank">James Gleick</a>.
+	  This is a popular science book and is not a traditional text.  I have
+	  around a dozen copies I can loan out.</li>
+	<li><a href="http://hornacek.coa.edu/dave/Chaos"
+	       target="_blank"><i>Chaos and Fractals: An Elementary
+	      Introduction</i></a>, David Feldman, Oxford University
+	  Press, 2012.  I'd suggest checking out the list
+	  of <a href="http://hornacek.coa.edu/dave/Chaos/errata.html"
+		target="_blank">errata</a>.  Multiple copies will be on reserve
+	  on the library and I have copies to loan.</li> 
+	<li>We'll also read a few short papers, and maybe a short story
+	  and some poetry.  The exact assignments will depend on the interests
+	  of the class. 
+      </ol>
+    </p>
+
+    <hr><h3>Evaluation</h3><p>
+      
+      Your evaluation will be loosely based on the following:
+      <ul>
+	<li><b>Weekly Homework Assignments:</b> 50 percent.
+	<li><b>Final Project:</b> 25 percent.
+	<li><b>Class/Lab Participation/Engagement:</b> 10 percent.
+	<li><b>Short Reflection Pieces:</b> 15 percent.
+      </ul>
+    </p>    
+    <p>In general, I recommend against grades; I believe
+      they are more likely than not to interfere with genuine, reflective
+      learning.  This is especially true in this class, where I have found
+      that many of the class activities <i>really</i> don't lend themselves to
+      letter grading. I do not have any quota of A's, B's, etc. </p> 
+    
+
+    <hr><h3>Course Structure and Flow</h3>
+    
+    <p>This is the eighteenth(!) time I've taught this course, so I have a
+      pretty good feel for how the class will go. That said, more than any
+      other course I teach, this course varies from offering to offering
+      depending on the interests and personalities of the students in the
+      class.</p> 
+    <p>
+      <ul>
+	<li>This course is somewhat difficult to describe. I think the most
+	  important pre-requisite is to approach the material with an open
+	  mind and a sense of exploration and adventure. With a little
+	  intellectual initiative I think you will find many opportunities to
+	  make connections between the material of this course and other
+	  interests of yours. </li> 
+	<li>This class is large, by COA standards, at least. The class was
+	  large the last time I taught it, and I think it worked well.</li>
+	<li>There will be two smaller discussions sections/labs that will
+	  allow us to do some more interactive labs and investigations and
+	  also discuss some readings.</li>
+	<li>In many traditional math classes the instructor shows you how to
+	  do a bunch of problems, you go home and obediently practice the
+	  stuff your instructor showed you, and then you take a test. This
+	  class will not be like that. There will be some traditional-style
+	  homework, but there will be many other exercises too.</li>
+	<li>Some of the homework assignments are more like laboratory
+	  exercises. That is, rather than doing a quick problem and getting a
+	  simple answer, I'll ask you to explore some stuff, make
+	  observations, and look for patterns. Frequently these assignments
+	  will have open-ended questions. You will enjoy these assignments
+	  more if you approach them as you would a good laboratory exercise in
+	  a science class.</li>   
+	<li>We will do a wide variety of things in the discussion sections,
+	  including some hands-on exercises and explorations.</li>
+	<li>This class is not a systematic review of algebra or trigonometry;
+	  it is not explicitly designed to prepare you for further math
+	  classes. Nevertheless, you will review and strengthen your
+	  understanding of algebra and functions by taking this course.</li>
+	<li>The material we'll be reading about in Gleick's book, and the work
+	  we'll do in my book and in class will shift in and out of phase with
+	  each other. The two books don't cover the same topics in the same
+	  order. In the past this hasn't been a problem; it's just something
+	  to be aware of.</li>
+	<li>In terms of the math stuff we'll be doing, it will take a few
+	  weeks to get to the chaos material. Before we do, what we're doing
+	  might seem odd. The initial exercises we do might seem boring or
+	  irrelevant, but this phase of the course is essential groundwork for
+	  what's to follow.</li>
+	<li>There will frequently be readings or exercises assigned for
+	  class. When this is the case, you should read carefully and be ready
+	  share ideas and questions.</li>
+      </ul>
+    </p>
+
+<!--    <h3>Some Details and Logistics</h3>
+    <p><ol>
+	<li>This class fulfills both the <b>ES</b> and the <b>QR</b>
+	  requirements. At the same time.</li>
+	<li>Homework will usually be due Fridays at the end of the day. If
+	  you need extra time on the assignments, that's fine, but please
+	  let me know.</li>
+	<li>You will do some short writing for this class in addition to
+	  problem sets.</li>
+	<li>You will also do a final project.  If you wish, you can
+	  collaborate with other students. Projects take a wide variety of
+	  forms and can be on almost any topic related to the course material.</li>
+    </ol></p>
+    -->
+    
+    <hr><h3>Stuff about Homework</h3><p>
+      <ol>
+	<li>There will be an assignment due almost every Friday. It is 
+	  essential that you do these assignments, as this is how one learns
+	  math, and also this is most of what your evaluation will be based
+	  on.</li> 
+	<li>There will be two parts to almost every homework assignment:
+	  <ul>
+	    <li>Problems to be submitted on WeBWorK</li>
+	    <li>Problems to be submitted on "paper" (a scanned pdf) on
+	      google classroom</li>
+	</ul></li>
+	
+	<li>WeBWorK is an online homework system. There are three
+	  reasons why I use WeBWorK:
+	  <ul>
+	    <li>You get instant feedback while doing the work, so you can
+	      learn right away from your mistakes. You can submit solutions
+	      many times until you get everything correct.</li>
+	    <li>Some problems are randomized so that you will all get
+	      slightly different versions of the questions. This means that
+	      collaborating with other students will be maximally effective,
+	      since you'll have to share solution methods and not just the
+	      final answer. </li>
+	    <li>Since the problems are automatically marked, I can spend
+	      more time helping you and won't have to spend as much time
+	      grading.</li>
+	</ul></li>	
+	<li>If you need extra time for one or two of the homework
+	  assignments, it's not a big deal.  But be mindful to not fall
+	  farther behind every week. </li>
+	<li>I do not expect all of the homework assignments to be easy; I
+	  don't expect you to be able to sit down and do them easily the first
+	  time. Don't let yourself get frustrated.  I strongly suggest working
+	  with others and seeking help if you need it.  
+	<li>You are strongly encouraged to work together on homework.  You
+	  can also consult me, class tutors, other faculty, friends,
+	  and family.  However, the homework you hand in should represent
+	  your own understanding.</li>
+	<li>As I plan on sending out homework assignments and other
+	  information via email/google classroom, it is important that you
+	  check your email/classroom regularly.</li>
+      </ol>
+    </p>
+    
+    <hr><h3>Stuff about the Reflection Assignments</h3><p> There will be
+      one or two reflection assignments. The goal of this assignment
+      is for you to spend time reflecting on and digesting some of the
+      themes of this course. Explore some ideas from the class that
+      have captured your imagination. Your piece should show evidence
+      of sustained inquiry. Find something that interests you or
+      perplexes you and explore. Push your ideas and (gently) push
+      yourself.  Ideally, your piece should be emotionally and
+      intellectually satisfying to you. Choose a question, word,
+      phrase, issue, image, equation, person, quotation, or idea from
+      the readings or discussion and dig deeply.</p>
+    <p>I suspect many of you will write a paper that is an essay or is
+      generally essay-like.  If so, your paper should be around
+      two-three pages in length. However, there are many other options:</p>
+    <p><ul>
+	<li>You could write a short story, a lyric essay, a poem.</li>
+	<li>You could create a drawing, a cartoon, a painting.</li>
+	<li>You could collaborate with someone else in the class and
+	  record a dialog, or jointly create something.  If you choose a
+	  non-essay option, your piece should be roughly equivalent to a
+	  two-three page essay. (I honestly don’t know what that
+	  means.)</li>
+      </ul>
+      You can collaborate with another student on the reflection
+      assignments if you wish. </p>
+    
+    
+    <hr><h3>Help Sessions</h3>
+    <p>
+      The Teaching Assistants and I will have a handful of help sessions
+      every week. You are warmly invited and encouraged to attend these
+      sessions. Help sessions are relaxed, informal, and hopefully fun.
+      Things that happen at help sessions: 
+      <ol>
+	<li>The TAs and/or I am around to offer help on the homework.</li>
+	<li>Some students do most of the homework while at a help
+	  session.  They work through problems alone or with others, and
+	  find it comforting to know that help is immediately at hand if
+	  needed.</li>
+	<li>Others do the problems at home and come to the help session with 
+	  specific questions.</li>
+	<li>Some students work in groups at help sessions, others work more
+	  or less alone.</li>
+	<li>Help sessions are also a chance to ask general questions about
+	  the course.  Conversations also sometimes wander into other areas:
+	  politics, the state of the world, what's for dinner, what classes
+	  are offered next term, and so on.</li>
+	<li>Help sessions are a great way to meet other students in the
+	  class.</li>
+	<li>Often there will be coffee/tea and/or snacks.</li>
+      </ol>
+    </p>
+    
+    <hr><h3>Individual Meetings</h3>
+    <p>I am happy to meet with students one-on-one.  The best way to set
+      up an appointment is to send an email.  There are lots of reasons
+      why you might want to meet with me: 
+      <ol>
+	<li>You have some in-depth questions that there isn't time to
+	  explore in a help session.</li>
+	<li>You have a question that you think is too basic or you're
+	  uncomfortable asking in a help session.  (You shouldn't be
+	  uncomfortable, since, as the saying goes, there are no dumb
+	  questions!  But I understand that you might be uncomfortable
+	  nevertheless.)</li>
+	<li>You want to explore possibilities for energy projects on campus
+	  or in the community.</li>
+	<li>You want to discuss some challenges you're facing in the class.
+	<li>You want to talk about other classes in energy or physics, or
+	  internships, senior projects, etc.
+      </ol>  
+      Please don't hesitate to reach out if there's anything you want to
+      discuss. You should also feel free to reach out to the
+      TAs. </p>
+    
+    <hr><h3>Diversity, Inclusion, and Belonging</h3>
+    <p>It is my intent that students from all
+      backgrounds and perspectives be well served by this course,
+      that students' learning needs be addressed both in and out of class,
+      and that the diversity that students bring to this class be viewed
+      as a resource, strength, and benefit. I aim to present
+      materials and activities that are respectful of diversity: gender,
+      sexuality, disability, age, religion, socioeconomic status,
+      ethnicity, race, and culture.</p>
+    
+    <p>Learning about diverse perspectives and identities is an ongoing
+      process. I am always looking to learn more about power and privilege
+      and the harmful effects of racism, sexism, homophobia, classism, and
+      other forms of discrimination and oppression.  Your suggestions are
+      encouraged and appreciated. Please let me know ways to
+      improve the effectiveness of the course for you personally, or for
+      other students or student groups. If something was said or done in
+      class (by anyone, including me) that made you feel uncomfortable,
+      please let me know.  You can also reach out to Provost Ken
+      Hill, or Associate Kourtney Collum or Jamie McKown.
+    </p>
+    
+    <hr><h3>Statements about Academic Honesty and Hours of Academic
+      Engagement</h3>
+    <p><ul>
+	<li> I am required to remind you that: "By enrolling in an academic
+	  institution, a student is subscribing to common standards of
+	  academic honesty. Any cheating, plagiarism, falsifying or
+	  fabricating of data is a breach of such standards. A student must
+	  make it his or her responsibility to not use words or works of
+	  others without proper acknowledgment. Plagiarism is unacceptable and
+	  evidence of such activity is reported to the academic dean or
+	  his/her designee.  Two violations of academic integrity are grounds
+	  for dismissal from the college. Students should request in-class
+	  discussions of such questions when complex issues of ethical
+	  scholarship arise."</li>
+	
+	<li>I am also required to say that: You should expect to
+	  spend 150 hours of academically engaged time on this
+	  course, or 15 hours per week. In addition to 4.5 hours per 
+	  week in class or discussion section, in a typical week
+	  you'll spend 2 hours reading and preparing for class and
+	  8.5 hours attending help sessions and completing
+	  assignments. </li> 
+    </ul></p>
+    
+  </div>
+</div>
+
+
+<!-- The SCHEDULE Section -->
+<div class="w3-black" id="schedule">
+  <div class="w3-container w3-content w3-padding-64" style="max-width:1000px">
+    <h1 class="w3-wide">SCHEDULE</h1>
+    <div class="w3-container">
+      
+      <h2>Important Links</h2>
+      <div class="w3-container">
+	<ul>
+	  <li><a href="https://calendar.google.com/calendar/u/0?cid=Y191cjNya3VtMm1ibzBwOWQ5Y29hb2R0NHF2a0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t"
+		 target="_blank"><b>Schedule for Help Sessions</b></a>. During most
+	    lab sessions I will be able to provide some homework help (for
+	    those who aren't in that lab).  </li>
+	  <li><a href="https://webwork-hosting.runestone.academy/webwork2/coa-feldman-es1026i-fall2023"
+	  target="_blank"><b>WeBWorK<b><a>. This is where you'll do the
+	  online portions of the homework.</li>
+	  <li>Google Classroom</li>
+	</ul>
+      </div>
+
+      <hr class="week">
+      <h2>Week 01</h2>      
+      <div class="w3-container">
+        <h6 class="w3-text-lilac"><i class="fa fa-child fa-fw
+          w3-margin-right"></i><b>Class 01.1:</b> Tuesday, September 12, 2023</h6>
+        <p><ul>
+	    <li>Introductions. Axioms. Palindromes. Functions.</li>
+	    <li>Handouts: none</li>
+	  </ul>
+	</p>
+        <hr>
+      </div>
+      
+      <div class="w3-container">
+        <h6 class="w3-text-lilac"><i class="fa fa-child fa-fw
+          w3-margin-right"></i><b>Class 01.2</b>: Friday, September 15, 2023</h6>
+        <p><ul>
+	    <li>More with Palindromes. Iteration.</li>
+	    <li><a href="https://PollEv.com​/davidfeldman809" target="_blank">PollEv.com​/davidfeldman809</a></li>
+	    <li><a href="./images/word_cloud.png" target="_blank">word cloud</a></li>
+	    <li>Handout: <a href="./pdf/chapter01.pdf" target="_blank">Functions</a></li>
+	    <li>Handout: <a href="./pdf/chapter02.A.pdf" target="_blank">Iteration</a></li>
+	  </ul>
+	</p>
+        <hr>
+      </div>
+	
+      <div class="w3-container">
+        <h6 class="w3-text-lime"><i class="fa fa-calendar fa-fw
+          w3-margin-right"></i><b>Week 01 Assignment</b>: Friday,
+          September 15, 2023</h6>
+        <p><ul>
+	    <li><a href="./pdf/homework.01.pdf" target="_blank">Week
+	    01 Assignment</a></li>
+	  </ul>
+	</p>
+      </div>
+
+      <hr class="week">
+
+      <h2>Week 02</h2>
+      <div class="w3-container">
+        <h6 class="w3-text-light-blue"><i class="fa fa-flask fa-fw
+          w3-margin-right"></i><b>Discussion/Lab 02:</b> Monday, September 18, 2023</h6>
+        <p><ul>
+	    <li><b>Before class:</b> Read "The Butterfly Effect"
+	      (Chapter 1) from <i>Chaos</i>, by James Gleick</li> 
+	    <li><b>Before class:</b>
+	    Watch <a href="https://www.youtube.com/watch?v=Lh1iGSCD8II"
+		     target="_blank">Chaotic Water Wheel</a> [1:19]</li>
+	    <li>Optional, in case you're
+	      curious: <a href="https://journals.ametsoc.org/downloadpdf/journals/atsc/20/2/1520-0469_1963_020_0130_dnf_2_0_co_2.pdf">Deterministic 
+		Non-periodic Flow</a> The 1963 paper by Edward Lorenz
+	      that Gleick mentions in the chapter.</li>
+	  </ul>
+	</p>
+        <hr>
+      </div>
+
+      <div class="w3-container">
+        <h6 class="w3-text-lilac"><i class="fa fa-child fa-fw
+          w3-margin-right"></i><b>Class 02.1:</b> Tuesday, September 19, 2023</h6>
+        <p><ul>
+	    <li>Graphical iteration. Introduction to the Logistic Equation.</li>
+	    <li>Handouts: [<a href="./pdf/graphs_and_time_series_2023.pdf">Time Series Plots</a>]
+	       [<a href="./pdf/chapter05_A.pdf">Graphical Iteration I</a>]
+	      [<a href="./pdf/chapter05_B.pdf">Graphical Iteration II</a>]
+	      [<a href="./pdf/chapter05_C.pdf">Graphical Iteration III</a>]
+	     <!-- [<a href="./pdf/chapter07_A.pdf">Logistic Equation Introduction</a>]</li>-->
+	    <li><a href="http://hornacek.coa.edu/dave/Chaos/time_series.html"
+		   target="blank">Logistic Equation Time Series Generator</a></li>
+	  </ul>
+	</p>
+        <hr>
+      </div>
+      
+      <div class="w3-container">
+        <h6 class="w3-text-lilac"><i class="fa fa-child fa-fw
+          w3-margin-right"></i><b>Class 02.2</b>: Friday, September 22, 2023</h6>
+        <p><ul>
+	    <li><b><a href="./pdf/explorations.01.pdf"
+		      target="_blank">Explorations to do before
+		  class!!</a></b></li> 
+	    <li>Logistic equation. Chaos!</li>
+	    <li>Handouts: [<a href="./pdf/chapter05_C2.pdf"
+	    target="_blank">Even More Graphical Iteration, Again</a>]
+	       [<a href="./pdf/chapter07.pdf"
+	    target="_blank">Graphical Iteration and the Logistic
+		Equation</a>]
+	        [<a href="./pdf/chapter10.pdf"
+	    target="_blank">Graphical Iteration and SDIC</a>]
+	    </li>
+	    <li>Links: [<a href="http://hornacek.coa.edu/dave/Chaos/time_series.html"
+		   target="blank">Logistic Equation Time Series
+		Generator</a>]
+	      [<a href="http://hornacek.coa.edu/dave/Chaos/initial_conditions.html"
+		  target="_blank">Comparing Initial Conditions</a>]
+	      [<a href="https://www.complexityexplorer.org/explore/interactive-apps/logistic-map-app"
+		   target="_blank">Logistic Cobweb Diagram Generator</a>]<li>
+	  </ul>
+	</p>
+        <hr>
+      </div>
+
+   <div class="w3-container">
+        <h6 class="w3-text-lime"><i class="fa fa-calendar fa-fw
+          w3-margin-right"></i><b>Week 02 Assignment</b>: Friday,
+          September 22, 2023</h6>
+        <p><ul>
+	    <li><a href="./pdf/homework.02.pdf" target="_blank">Week
+	    02 Assignment</a></li>
+	  </ul>
+	</p>
+      </div>
+      
+      
+      <!-- ********************************************************************** -->
+      <hr class="week">
+      <h2>Week 03</h2>
+
+   <div class="w3-container">
+        <h6 class="w3-text-light-blue"><i class="fa fa-flask fa-fw
+          w3-margin-right"></i><b>Discussion/Lab 03:</b> Monday, September 18, 2023</h6>
+        <p><ul>
+	    <li><b>Before class:</b> Read "Life's Ups and Downs" (Chapter 13) from <i>Chaos</i>, by James Gleick. Note that this is <i>not</i> the next chapter in the book. We're going out of oder. </li>
+	    <li>Papers to look at, in case you're curious:
+	      <ul>
+		<li>Tien-Yien Li and James
+		Yorke <a href="https://people.fjfi.cvut.cz/vybirja2/Seminar/Li-Yorke%20Period%20Three%20Implies%20Chaos.pdf"
+		target="_blank">Period Three Implies Chaos</a>, <i>The
+		American Mathematical Monthly</i>, Vol. 82, No. 10,
+		1975.</li> 
+		<li>Robert
+		M. May, <a href="https://rocs.hu-berlin.de/courses/complex-systems-2021/pdf/May_1976.pdf"
+		target="_blank">Simple mathematical models with very
+		complicated dynamics</a>, <i>Nature</i>, Vol. 261,
+		1967.</li> 
+	    </ul></li>
+	    <li>Handout: <a href="./pdf/moebius.pdf" target="_blank">Moebius strip adventures</a></li>
+	  </ul>
+	</p>
+        <hr>
+   </div>
+    
+      <div class="w3-container">
+        <h6 class="w3-text-lilac"><i class="fa fa-child fa-fw
+          w3-margin-right"></i><b>Class 03.1</b>: Tuesday, September 26, 2023</h6>
+        <p><ul>
+	    <li>Bifurcation diagram. </li>
+	    <li>Handouts: 
+	    </li>
+	    <li>Links: [<a href="http://hornacek.coa.edu/dave/Chaos/time_series.html"
+		   target="blank">Logistic Equation Time Series
+		Generator</a>]
+	      [<a href="http://hornacek.coa.edu/dave/Chaos/initial_conditions.html"
+		  target="_blank">Comparing Initial Conditions</a>]
+	      [<a href="https://www.complexityexplorer.org/explore/interactive-apps/logistic-map-app"
+		  target="_blank">Logistic Cobweb Diagram Generator</a>]<li>
+	      [<a href="https://s3.amazonaws.com/complexityexplorer/DynamicsAndChaos/Programs/bifurcation.html"
+		   target="_blank">Logistic Equation Bifurcation Diagram</a>]</li>
+	</ul></p>
+        <hr>
+      </div>
+
+        
+      <div class="w3-container">
+        <h6 class="w3-text-lilac"><i class="fa fa-child fa-fw
+          w3-margin-right"></i><b>Class 03.2</b>: Friday, September 29, 2023</h6>
+        <p><ul>
+	    <li>Bifurcation diagram. Universality. Statistical Stability of Chaos.</li>
+	    <li><b>Before class:</b> <a href="./pdf/explorations.02.pdf">Exploration</a></li>
+	    <li>Handouts: 
+	      [<a href="./pdf/chapter13.pdf"
+		  target="_blank">Logistic Equation and Histograms</a>]
+	      [<a href="./pdf/chapter10.pdf"
+		  target="_blank">Graphical Iteration and SDIC</a>]
+	    </li>
+	    <li>Links: [<a href="http://hornacek.coa.edu/dave/Chaos/time_series.html"
+		   target="blank">Logistic Equation Time Series
+		Generator</a>]
+	      [<a href="http://hornacek.coa.edu/dave/Chaos/initial_conditions.html"
+		  target="_blank">Comparing Initial Conditions</a>]
+	      [<a href="https://www.complexityexplorer.org/courses/166-introduction-to-dynamical-systems-and-chaos/segments/16292"
+		   target="_blank">Bifurcation Diagrams</a>]</li>
+	</ul></p>
+        <hr>
+      </div>
+   
+   <div class="w3-container">
+        <h6 class="w3-text-lime"><i class="fa fa-calendar fa-fw w3-margin-right"></i><b>Week 03 Assignment</b>: Friday, September 29, 2023</h6>
+        <p><ul>
+	    <li><a href="./pdf/homework.03.pdf" target="_blank">Week 03 Assignment</a></li>
+	  </ul>
+	</p>
+      </div>
+   
+      <!-- ****************************************************************************************** -->
+      <hr class="week">
+      <h2>Week 04</h2>
+
+
+   <div class="w3-container">
+        <h6 class="w3-text-light-blue"><i class="fa fa-flask fa-fw
+          w3-margin-right"></i><b>Discussion/Lab 04:</b> Monday, October 2, 2023</h6>
+        <p><ul>
+	    <li><b>Before class:</b> Read "Universality" and "The Experimenter" from <i>Chaos</i>, by James Gleick.</li>
+	    <li>Papers to look at, in case you're curious:
+	      <ul>
+		<li></li>
+		    </ul></li>
+	    <!--<li>Handout: <a href="./pdf/moebius.pdf" target="_blank">Moebius strip adventures</a></li>-->
+	</ul></p>
+	<hr>
+   </div>
+
+      <div class="w3-container">
+        <h6 class="w3-text-lilac"><i class="fa fa-child fa-fw
+          w3-margin-right"></i><b>Class 04.1</b>: Tuesday, October 3, 2023</h6>
+        <p><ul>
+	    <li></li>
+	    <li>Handouts: 
+	      [<a href="./pdf/randomness.pdf"
+		  target="_blank">Logistic Equation, Symbols, and Histograms</a>]
+	    </li>
+	    <li>Links: [<a href="http://hornacek.coa.edu/dave/Chaos/time_series.html"
+		   target="blank">Logistic Equation Time Series
+		Generator</a>]
+	      [<a href="http://hornacek.coa.edu/dave/Chaos/initial_conditions.html"
+		  target="_blank">Comparing Initial Conditions</a>]
+	      <!--[<a href="https://www.complexityexplorer.org/courses/166-introduction-to-dynamical-systems-and-chaos/segments/16292"
+		   target="_blank">Bifurcation Diagrams</a>]</li>-->
+	</ul></p>
+        <hr>
+      </div>
+   
+     
+      <div class="w3-container">
+        <h6 class="w3-text-lilac"><i class="fa fa-child fa-fw
+          w3-margin-right"></i><b>Class 04.2</b>: Friday, October 6, 2023</h6>
+        <p><ul>
+	    <li>Introducing Fractals and the Self-Similarity Dimension</li>
+	    <li>Handouts: 
+	      [<a href="./pdf/chapter16_A.pdf"
+		  target="_blank">Introducing Self-Similarity Dimension</a>]
+	      	      [<a href="./pdf/chapter16_B.pdf"
+		  target="_blank">Self-Similarity Dimension Practice</a>]
+	    </li>
+	</ul></p>
+        <hr>
+      </div>     
+   
+      <div class="w3-container">	
+      </div>
+
+
+   <div class="w3-container">
+        <h6 class="w3-text-lime"><i class="fa fa-calendar fa-fw w3-margin-right"></i><b>Week 04 Assignment</b>: Friday, October 6, 2023</h6>
+        <p><ul>
+	    <li><a href="./pdf/homework.04.pdf" target="_blank">Week 04 Assignment</a></li>
+	  </ul>
+	</p>
+      </div>
+      
+      <!-- ****************************************************************************************** -->
+      <hr class="week">
+      <h2>Week 05</h2>
+
+        <div class="w3-container">
+        <h6 class="w3-text-light-blue"><i class="fa fa-flask fa-fw
+          w3-margin-right"></i><b>Discussion/Lab 05:</b> Monday, October 9, 2023</h6>
+        <p><ul>
+	    <li><b>Before class:</b> Read "Geometry of Nature" from <i>Chaos</i>, by James Gleick.</li>
+	    <li><b>Before class:</b> Read <a href="https://www.americanscientist.org/article/father-of-fractals" target="_blank">Father of Fractals</a>,
+	      a review by Brian Hayes in <i>American Scientist</i> of Mandelbrot's memoir.</li>
+	    <!--<li>Papers to look at, in case you're curious:
+	      <ul>
+		<li></li>-->
+	    </ul></li>
+	    <!--<li>Handout: <a href="./pdf/moebius.pdf" target="_blank">Moebius strip adventures</a></li>-->
+	</ul></p>
+	<hr>
+   </div>
+   
+   <div class="w3-container">
+        <h6 class="w3-text-lime"><i class="fa fa-calendar fa-fw
+        w3-margin-right"></i><b>Reflection 01</b>: Target Date:
+        Monday, October 9, 2023</h6> 
+        <p><ul>
+	    <li><a href="./pdf/reflections.01.pdf" target="_blank">First Reflection Assignment</a></li>
+	  </ul>
+	</p>
+	<hr>
+      </div>
+   
+      <div class="w3-container">
+        <h6 class="w3-text-lilac"><i class="fa fa-child fa-fw
+          w3-margin-right"></i><b>Class 05.1</b>: Tuesday, October 10, 2023</h6>
+        <p><ul>
+	    <li>Self-Similarity Dimension, Random Fractals</li>
+	    <li>Handouts: 
+	      	      [<a href="./pdf/chapter16_C.pdf"
+		  target="_blank">More Self-Similarity Dimension Practice</a>]
+	    </li>
+	</ul></p>
+        <hr>
+      </div>
+        
+      <div class="w3-container">
+        <h6 class="w3-text-lilac"><i class="fa fa-child fa-fw
+          w3-margin-right"></i><b>Class 05.2</b>: Friday, October 13, 2023</h6>
+        <p><ul>
+	    <li>Distributions: Normal and Fractal</li>
+	    <li>Handouts: 
+	      	      [<a href="./pdf/chapter16_C.pdf"
+		  target="_blank">More Self-Similarity Dimension Practice</a>]
+	    </li>
+	    <li>Links:<ul>
+		<li><a href="https://colab.research.google.com/drive/1dCGf05VKw13IaIuZSVP0lB5oYskx4ozN?usp=sharing"
+		       target="_blank">Central Limit Simulation</a></li>
+		<li><a href="https://docs.google.com/presentation/d/1Vj2IzytU2fuE0fZgRLqfA0kscQO-TARyA_soXqhtykU/edit?usp=sharing"
+		       target="_blank">Word Frequency
+		    Exercise</a></li>
+		<li><a href="https://www.youtube.com/watch?v=GUvuR8KKy0s"
+		       target="_blank">Word Frequencies Video I</a></li>
+		<li><a href="https://www.youtube.com/watch?v=T5TtvM4EPMs"
+		target="_blank">Word Frequencies Video II</a></li>
+	      </ul>
+	</ul></p>
+        <hr>
+      </div>
+
+   <div class="w3-container">
+        <h6 class="w3-text-lime"><i class="fa fa-calendar fa-fw w3-margin-right"></i><b>Week 05 Assignment</b>: Friday, October 13, 2023</h6>
+        <p><ul>
+	    <li><a href="./pdf/homework.05.pdf" target="_blank">Week 05 Assignment</a></li>
+	  </ul>
+	</p>
+      </div>
+
+      
+  
+      <!-- ********************************************************************** -->
+      <hr class="week">
+      <h2>Week 06</h2>
+
+     <div class="w3-container">
+        <h6 class="w3-text-light-blue"><i class="fa fa-flask fa-fw
+          w3-margin-right"></i><b>Discussion/Lab 6:</b> Monday, October 16, 2023</h6>
+        <p><ul>
+	    <li><b>Before class:</b> Read Fractals from <i>Emergent
+	    Strategy</i>, by <a href="https://adriennemareebrown.net/"
+	    target="_blank">adrienne maree brown</a> (AK Press
+	    2017).</li> 
+	    <li><b>Before class:</b> Read
+	    <a href="https://nautil.us/cloudy-with-a-chance-of-war-234998/"
+	    target="_blank">Cloudy with a Chance of War</a>, Nautilus,
+	    2014, by David Berreby.</li>
+	    </ul></li>
+	</ul></p>
+	<hr>
+     </div>
+
+     <div class="w3-container">
+       <h6 class="w3-text-lilac"><i class="fa fa-child fa-fw
+					   w3-margin-right"></i><b>Class 06.1</b>: Tuesday, October 17, 2023</h6>
+       <p><ul>
+	   <li>Fractal Distributions, Cellular Automata, Mid-term Check-in, When do Averages Exist?</li>
+	   <li>Handouts: 
+	     [<a href="./pdf/chapter19_B.pdf"
+		  target="_blank">Self-Similar Distributions</a>]
+	    </li>
+	   <li>Links:<ul>
+	       <li><a href="https://elife-asu.github.io/wss-modules/modules/1-1d-cellular-automata/" target="_blank">Elementary Cellular Automata (1D ECA) Simulator</a></li>
+	       <li><a href="https://colab.research.google.com/drive/1aJG1dliljMW1cMw95H4CsfKAFagfAGpG?usp=sharing" target="_blank">Coin Toss Simulator</a></li>
+	       <li><a href="https://colab.research.google.com/drive/1oik2hCIWdlnjd7AdxLGllmxgAQCWrJZx?usp=sharing" target="_blank">St. Petersberg Game Simulator</a></li>
+	     </ul>
+	</ul></p>
+        <hr>
+     </div>
+
+     <div class="w3-container">
+       <h6 class="w3-text-lilac"><i class="fa fa-child fa-fw w3-margin-right"></i><b>Class 06.2</b>: Friday, October 20, 2023</h6>
+       <p><ul>
+	   <li>Fractal Show and Tell!</li>
+	   <li>The Chaos Game!!</li>
+	   <li>Handouts: None</li>
+	   <li>Links:<ul>
+	       <li><a href="http://www.shodor.org/cgi-bin/gasket/gasket.pl" taget="_blank">Very basic chaos game simulator</a></li>
+	       <li><a href="https://andrew.wang-hoyer.com/experiments/chaos-game/?b=0&c=94_103_102_112&cm=2&e=5_1_4_3&h=0&n=4&t=s0.7239r-0.3106p0.25_s0.611r0.2758p0.7107_s0.727r-0.15p0.2256&v=0"
+		      target="_blank">Very fancy chaos game simulator</a></li>
+	     </ul>
+	</ul></p>
+        <hr>
+      </div>
+
+  <div class="w3-container">
+        <h6 class="w3-text-lime"><i class="fa fa-calendar fa-fw w3-margin-right"></i><b>Week 06 Assignment</b>: Friday, October 20, 2023</h6>
+        <p><ul>
+	    <li><a href="./pdf/homework.06.pdf" target="_blank">Week 06 Assignment</a></li>
+	  </ul>
+	</p>
+      </div>
+
+
+      <!-- ********************************************************************** -->
+      <hr class="week">
+      <h2>Week 07</h2>
+
+   <div class="w3-container">
+        <h6 class="w3-text-light-blue"><i class="fa fa-flask fa-fw
+          w3-margin-right"></i><b>Discussion/Lab 7:</b> Monday, October 23, 2023</h6>
+        <p><ul>
+	    <li><b>Before class:</b> Read "Images of Chaos" from Gleick.</li> 
+	    <li><b>In class:</b>
+	      Two drawing activities.</li>
+	    <li>Links:<ul>
+		<li><a href="https://www.youtube.com/watch?v=JbfhzlMk2eY" target="_blank">Hitomezashi Stitch Patterns</a> with
+		  <a href="https://linktr.ee/Ayliean" target="_blank">Alyiean MacDonald</a></li>
+		<li><a href="https://www.youtube.com/watch?v=EdyociU35u8" target="_blank">Sierpinski Triangla via Trapezoidal Squiggles</a>
+		  by Vi Hart</li>
+	      </ul>
+	</ul></p>
+	<hr>
+     </div>
+
+
+     <div class="w3-container">
+       <h6 class="w3-text-lilac"><i class="fa fa-child fa-fw w3-margin-right"></i><b>Class 07.1</b>: Tuesday, October 24, 2023</h6>
+       <p><ul>
+	   <li>Infinities, Cardinality of the Cantor Set, Introduction to Complex Numbers</li>
+	   <li>Handouts: <a href="./pdf/chapter23.pdf" tareget="_blank">Complex Number Practice</a></li>
+	   <li>Links:<ul>
+	       <li><a href="https://www.algorithm-archive.org/contents/barnsley/barnsley.html" target="_blank">Barnsley Fern</a></li>
+	       <li><a href="https://brain.cc.kogakuin.ac.jp/~kanamaru/Chaos/e/Newton/" target="_blank">Fractal Basin Boundary</a></li>
+	     </ul>
+       </ul></p>
+       <hr>
+     </div>
+     
+     
+     <div class="w3-container">
+       <h6 class="w3-text-lilac"><i class="fa fa-child fa-fw w3-margin-right"></i><b>Class 07.2</b>: Friday, October 27, 2023</h6>
+       <p><ul>
+	   <li>Julia Sets</li>
+	   <li>Handouts:
+	     [<a href="./pdf/chapter24.pdf" target="_blank">Complex Number Iteration</a>]
+	     [<a href="./pdf/chapter25.pdf" target="_blank">Another Julia Set</a>]
+	   </li>
+	   <li>Links:<ul>
+	       <li><a href="https://wolframalpha.com" target="_blank">Wolfram Alpha</a></li>
+	       <li><a href="https://www.mathsisfun.com/numbers/complex-number-calculator.html"
+		      target="blank">Complex Number Calculator</a></li>
+	       <li><a href="https://sciencedemos.org.uk/julia.php"
+		      target="blank">Julia Set Generator</a>, less psychedelic</li>
+	       <li><a href="https://www.kylepaulsen.com/stuff/juliaSet.html"
+		      target="blank">Julia Set Generator</a>, more psychedelic</li> 
+	       <li><a href="http://shodor.org/interactivate/activities/JuliaSets/"
+		      target="blank">Julia Set Generator</a>, barebones but
+		 effective</li>
+	       <li></li>
+	     </ul>
+       </ul></p>
+       <hr>
+     </div>
+     
+     <div class="w3-container">	
+     </div>
+     
+     
+     <div class="w3-container">
+       <h6 class="w3-text-lime"><i class="fa fa-calendar fa-fw w3-margin-right"></i><b>Week 07 Assignment</b>: Friday, October 27, 2023</h6>
+       <p><ul>
+	   <li><a href="./pdf/homework.07.pdf" target="_blank">Week 07 Assignment</a></li>
+	 </ul>
+       </p>
+     </div>
+     
+     <!-- ********************************************************************** -->
+     <hr class="week">
+     <h2>Week 08</h2>
+     
+     
+     <div class="w3-container">
+       <h6 class="w3-text-light-blue"><i class="fa fa-flask fa-fw
+          w3-margin-right"></i><b>Discussion/Lab 8:</b> Monday, October 30, 2023</h6>
+       <p><ul>
+	   <li><b>Before class:</b> 
+	     <ul>
+	       <li><b>Read</b>: <a href="https://www.quantamagazine.org/the-hidden-heroines-of-chaos-20190520/"
+				   target="blank">Hidden Heroines of Chaos</a> by Joshua Sokol,
+		 <i>Quanta Magazine</i>, May 2019.</li>
+	       <li><b>Read:</b> <a href="https://caltechletters.org/viewpoints/feynman-harassment-science"
+				   target="blank">Feynman, Harassment, and the Culture of
+		   Science</a>, by <a href="https://www.aidabehmard.com/"
+				      target="blank">Aida Behmard</a>, <i>caltech letters</i>,
+		 October 2019.  CW: This article contains discussion of sexual
+		 harassment and mentions sexual assault.</li>
+	       <li><b>Watch:</b> <a href="https://www.youtube.com/watch?v=wnw0Ma98j5Q"
+				    target="blank">A
+		   fresh perspective for physics</a>, an interview with <a href="http://www.cprescodweinstein.com/"
+									   target="blank">Chanda Prescod-Weinstein</a></li>
+	       <li><b>Read: (optional but recommended):</b> <a href="https://arxiv.org/pdf/0801.1590.pdf" target="_blank">
+		   Fermi, Pasta, Ulam, and a <i>mysterious</i> lady</a> by Theirry Dauxois</li>
+	   </ul></li>
+	</ul></p>
+	<hr>
+     </div>
+
+
+        
+     <div class="w3-container">
+       <h6 class="w3-text-lilac"><i class="fa fa-child fa-fw w3-margin-right"></i><b>Class 08.1</b>: Tuesday, October 31, 2023</h6>
+       <p><ul>
+	   <li>The Mandelbrot Set. The Henon Map</li>
+	   <li>Handouts:
+	     [<a href="./pdf/henon.pdf" target="_blank">The Henon Map</a>]
+	   </li>
+	   <li>Links:<ul>
+	       <li><a href="https://sciencedemos.org.uk/julia.php"
+		      target="blank">Julia Set Generator</a>, less psychedelic</li>
+	       <li><a href="https://www.kylepaulsen.com/stuff/juliaSet.html"
+		      target="blank">Julia Set Generator</a>, more psychedelic</li> 
+	       <li><a href="http://shodor.org/interactivate/activities/JuliaSets/"
+		      target="blank">Julia Set Generator</a>, barebones but
+		 effective</li>
+	       <li><a href="https://jmaio.dev/mandelbrot-maps/#/m@-0.2026229,0.017513,1,0/j@0.0004837,-0.0086118,1,0"
+		      target="blank">Mandelbrot Set Explorer</a></li>
+	       <!--<li><a href="https://www.geogebra.org/m/BUVhcRSv#material/XQprvGbW"
+		      target="blank">Mandelrot Set Painter<a/> by Ben Sparks</li>-->
+	       <li><a href="https://mandel.gart.nz/" target="_blank">Mandelbrot Set Explorer</a></li>
+	       <li><a href="https://s3.amazonaws.com/complexityexplorer/DynamicsAndChaos/Programs/henon_time_series.html"
+		      target="blank">Henon Map Time Series</a></li>
+	       <li><a href="https://experiences.mathemarium.fr/L-attracteur-de-Henon.html"
+		      target="blank">L'attracteur de Henon</a> at
+		 the <a href="https://experiences.mathemarium.fr/">Experimentarium
+		   Digitale</a></li>
+	     </ul>
+       </ul></p>
+       <hr>
+     </div>
+
+
+     <div class="w3-container">
+       <h6 class="w3-text-lilac"><i class="fa fa-child fa-fw w3-margin-right"></i><b>Class 08.2</b>: Friday, November 3, 2023</h6>
+       <p><ul>
+	   <li>More about the Mandelbrot Set. The Henon Map. Strange Attractors! </li>
+	   <li>Handouts:
+	     [<a href="./pdf/henon.pdf" target="_blank">The Henon Map</a>]
+	   </li>
+	   <li>Links:<ul>
+	       <li><a href="https://jmaio.dev/mandelbrot-maps/#/m@-0.2026229,0.017513,1,0/j@0.0004837,-0.0086118,1,0"
+		      target="blank">Mandelbrot Set Explorer</a></li>
+	       <!--<li><a href="https://www.geogebra.org/m/BUVhcRSv#material/XQprvGbW"
+		      target="blank">Mandelrot Set Painter<a/> by Ben Sparks</li>-->
+	       <li><a href="https://mandel.gart.nz/" target="_blank">Mandelbrot Set Explorer</a></li>
+	       <li><a href="https://www.marksmath.org/visualization/julia2.html" target="_blank">Julia Sets and the Mandelbrot Set</a></li>
+	       <li><a href="https://s3.amazonaws.com/complexityexplorer/DynamicsAndChaos/Programs/henon_time_series.html"
+		      target="blank">Henon Map Time Series</a></li>
+	       <li><a href="https://experiences.mathemarium.fr/L-attracteur-de-Henon.html"
+		      target="blank">L'attracteur de Henon</a> at
+		 the <a href="https://experiences.mathemarium.fr/">Experimentarium
+		   Digitale</a></li>
+	       <li><a href="https://blbadger.github.io/henon-map.html" target="_blank">The Henon Map</a></li>
+	       <li><a href="https://experiences.mathemarium.fr/Lorenz-3D-Flot.html"
+		      target="blank">Lorenz attractor</a></li>
+	       <li><a href="https://experiences.mathemarium.fr/Lorenz-attractor.html"
+		      target="blank">Lorenz attractor</a></li>
+	       <li><a href="https://itp.uni-frankfurt.de/~gros/Vorlesungen/SO/simulation_example/"
+		      target="blank">Another Lorenz simulator</a></li>
+	       <li><a href="http://www.malinc.se/m/Lorenz.php"
+		      target="blank">The butterfly effect</a>.  Literally.</li>
+	     </ul>
+       </ul></p>
+       <hr>
+     </div>
+     
+     <div class="w3-container">	
+     </div>
+
+     
+     <div class="w3-container">
+       <h6 class="w3-text-lime"><i class="fa fa-calendar fa-fw w3-margin-right"></i><b>Week 08 Assignment</b>: Friday, November 3, 2023</h6>
+       <p><ul>
+	   <li><a href="./pdf/homework.08.pdf" target="_blank">Week 08 Assignment</a></li>
+	 </ul>
+       </p>
+     </div>
+     
+      <!-- ********************************************************************** -->
+      <hr class="week">
+      <h2>Week 09</h2>
+
+
+   <div class="w3-container">
+        <h6 class="w3-text-light-blue"><i class="fa fa-flask fa-fw
+          w3-margin-right"></i><b>Discussion/Lab 9:</b> Monday, November 6, 2023</h6>
+        <p><ul>
+	    <li><b>Before class:</b> Watch: "The Secret Life of Chaos".</li> 
+	    <li><b>In class:</b>
+	      Spontaneously synchronizing metronomes.</li>
+	    <li>Links:<ul>
+		<li><a href="https://www.youtube.com/watch?v=T58lGKREubo" target="_blank">Spontaneous Synchronization</a></li>
+	      </ul>
+	</ul></p>
+	<hr>
+   </div>
+
+
+     <div class="w3-container">
+       <h6 class="w3-text-lilac"><i class="fa fa-child fa-fw w3-margin-right"></i><b>Class 09.1</b>: Tuesday, November 7, 2023</h6>
+       <p><ul>
+	   <li>More Strange Attractors. Turing Patterns</li>
+	   <li>Handouts: Paper cut-out Rossler Attractor
+	     <!-- [<a href="./pdf/henon.pdf" target="_blank">The Henon Map</a>]-->
+	   </li>
+	   <li>Links:<ul>
+	       <li><a href="https://experiences.mathemarium.fr/Attracteur-de-Rossler.html" target="_blank">Attracteur de Rossler</a></li>
+	       <li><a href="https://experiences.mathemarium.fr/Structures-de-Turing.html"
+		      target="blank">Structures de Turing</a></li>
+	       <li><a href="http://www.karlsims.com/rdtool.html" target="_blank">Turing Patterns</a> by Karl Sims</li>
+	     </ul>
+       </ul></p>
+       <hr>
+     </div>
+       
+     <div class="w3-container">
+       <h6 class="w3-text-lime"><i class="fa fa-calendar fa-fw w3-margin-right"></i><b>There is no week 09 homework</b></h6>
+     </div>
+		
+      
+
+      <!-- ********************************************************************** -->
+      <hr class="week">
+      <h2>Week 10</h2>
+      
+
+
+        
+     <div class="w3-container">
+       <h6 class="w3-text-lime"><i class="fa fa-calendar fa-fw w3-margin-right"></i><b>"Final" "Project"</b>: Friday, November 17, 2023</h6>
+       <p><ul>
+	   <li><a href="./pdf/final.project.pdf" target="_blank">Final Project Guidelines</a></li>
+	 </ul>
+       </p>
+     </div>
+		
+      
+
+	</div>
+    </div>
+  </div>
+
+
+  <!-- The RESOURCES Section -->
+<!--  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">RESOURCES</h2>
+    <p class="w3-opacity w3-center"><i>links and such</i></p>
+    <div class="w3-container">
+      <ul>
+	<li>The
+	textbook: <a href="https://longformmath.com/proofs-home"
+	target="_blank">Proofs: A Long-Form Mathematics Textbook</a>
+	by <a href="https://webpages.csus.edu/Jay.Cummings/"
+	target="_blank">Jay Cummings</a>.</li>
+	<li>LaTeX:
+	  <ul>
+	    <li>asdf</li>
+	  </ul>
+      </ul>
+      
+    </div>
+    
+  </div>
+  -->
+
+  
+<!-- Ticket Modal -->
+<div id="ticketModal" class="w3-modal">
+  <div class="w3-modal-content w3-animate-top w3-card-4">
+    <header class="w3-container w3-teal w3-center w3-padding-32"> 
+      <span onclick="document.getElementById('ticketModal').style.display='none'" 
+	    class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+      <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+    </header>
+    <div class="w3-container">
+      <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+      <input class="w3-input w3-border" type="text" placeholder="How many?">
+      <p><label><i class="fa fa-user"></i> Send To</label></p>
+      <input class="w3-input w3-border" type="text" placeholder="Enter email">
+      <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+      <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+      <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+    </div>
+  </div>
+</div>
+
+  <!-- The Contact Section -->
+<!--  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<img src="./view.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+<!--  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>-->
+<a href="https://twitter.com/DavidFeldman"
+   target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+<a href="http://hornacek.coa.edu/dave" target="_blank"><i class="fa fa-user w3-hover-opacity"></i></a>
+<!--  <i class="fa fa-linkedin w3-hover-opacity"></i>-->
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 8000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>

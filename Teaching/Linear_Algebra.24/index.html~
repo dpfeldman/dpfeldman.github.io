@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Linear Algebra | S24 | College of the Atlantic</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+<link rel="stylesheet" href="./w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<script src="https://kit.fontawesome.com/905fa5e9e8.js" crossorigin="anonymous"></script>-->
+<!--<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Courier New", monospace;
+  letter-spacing: 3px;
+}-->
+
+.w3-bar .w3-button {
+  padding: 10px;
+}
+
+</style>
+</head>
+<body>
+  
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-top w3-card" id="myNavbar">
+      <a href="#home" class="w3-bar-item w3-button w3-wide">Top
+	<i class="fa fa-arrow-circle-up"></i></a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+	<a href="#info" class="w3-bar-item w3-button">
+	  <i class="fa fa-question"></i> Basic Info</a>
+	<a href="#axioms" class="w3-bar-item w3-button">
+	  <i class="fa fa-asterisk"></i> Axioms</a>
+	<a href="#about" class="w3-bar-item w3-button">
+	  <i class="fa fa-thumbs-up"></i> More Info</a>
+	<a href="#schedule" class="w3-bar-item w3-button">
+	  <i class="fa fa-calendar"></i> Schedule</a>
+      </div>
+
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+	<i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+    <a href="#info" onclick="w3_close()" class="w3-bar-item w3-button">Basic Info</a>
+    <a href="#axioms" onclick="w3_close()" class="w3-bar-item w3-button">Axioms</a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">More Info</a>
+    <a href="#schedule" onclick="w3_close()" class="w3-bar-item w3-button">Schedule</a>
+  </nav>
+  
+  <!-- Header -->
+  <header class="w3-panel w3-center"
+	  style="font-family: 'Courier New', monospace;padding:34px ;background-color:#264653; color:#fff"
+	  id="home">
+    <h1 class="w3-x large">Linear Algebra</h1>
+    <h2 class="w3-x large"><a href="../../index.html">David P. Feldman</a></h2>
+    <h5>College of the Atlantic, Spring 2024</h5>
+  </header>
+
+  <!-- Page content -->
+  <div class="w3-content" style="max-width:1300px">
+    
+    <div class="w3-container w3-padding-64 w3-large" id="info">
+      <h1>Basic Info</h1>
+      
+      <h4>Linear Algebra: Official Course Description</h4>
+      <p>Linear algebra is a foundational area of mathematics, finding
+      widespread application in statistics, machine learning,
+      economics, physics, and across the sciences. The starting point
+      for this course is to consider basic properties of matrices and
+      techniques for solving systems of linear equations. Abstracting
+      and formalizing the process of solving linear equations leads us
+      to the notion of a vector space and related ideas, such as
+      linear independence, dimension, and basis. The course then turns
+      to further properties of matrices and vector spaces, including
+      determinants, eigenvalues and eigenvectors, and linear
+      transformations. As time permits, we will study various
+      applications of linear algebra, such as image compression,
+      dynamical systems (with a focus on ecological applications),
+      Markov chains, and Google's PageRank algorithm. Students who
+      successfully complete this course will gain a solid introduction
+      to the calculational techniques and key constructions and ideas
+      of linear algebra that will prepare them for further work in the
+      sciences and mathematics. Additionally, students will gain
+      experience working at a level of generality and abstraction
+      above that encountered in a typical introductory calculus
+      sequence. Evaluation will be based on weekly problem
+      sets. Students who enroll in this course should have
+      successfully completed a high-school-level algebra class and be
+      motivated to explore a powerful and broadly-used branch of
+      mathematics that for most has a very different feel than the
+      functions-precalculus-calculus sequence. Calculus is not a
+      prerequisite for this class. Level:
+      Introductory/Intermediate. Prerequisites: Highschool level
+      algebra class. Class limit: None. Lab fee: None. Meets the
+      following degree requirements: <b>QR</b>.</p> 
+      
+      <hr class="day"></hr>
+      
+      <h4>Who/when/where</h4>
+      <p>
+	<ul>
+	  <li><b>Instructor</b>: <a href="../../index.html">Dave Feldman</a></li>
+	  <li><b>Pronouns</b>: he/him/his</li>
+	  <li><b>Meeting Times</b>: Tuesday, Wednesday, Friday, 2:30 - 4:00</li>
+	  <li><b>Location</b>: Room 103, Center for Human Ecology
+	  <li><b>Help Sessions</b>:
+	    <a href="https://calendar.google.com/calendar/u/0?cid=Y191cjNya3VtMm1ibzBwOWQ5Y29hb2R0NHF2a0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t"
+	       target="_blank">Help Session Schedule</a> (updated frequently) </li>
+	  <li><b>Individual Meetings</b>: By appointment </li>
+	  <li><b>Tutors</b>: None</li>
+      </ul></p>
+    </div>
+    
+    <hr>
+    
+    <!-- Axioms Section -->
+    <div class="w3-container w3-padding-32 w3-large" id="axioms">
+      <h1>Axioms</h1>
+      <p> In mathematics, axioms are propositions that are assumed to be
+	true. The mathematician Federico Ardila-Mantilla has written four
+	axioms that guide the work he does in education and
+	outreach. Federico's axioms resonate strongly with me. They are:
+	<ol>
+	  <li>Mathematical potential is distributed equally among
+	    different groups, irrespective of geographic, demographic, and
+	    economic boundaries.</li> 
+	  <li>Everyone can have joyful, meaningful, and empowering
+	    math experiences.</li> 
+	  <li>Math is a powerful, malleable tool that can be
+	    shaped and used differently by various communities to serve their
+	    needs.</li>
+	  <li>Every student deserves to be treated with dignity and
+	    respect.</li>
+	</ol>
+      </p>
+      <h3>Community Agreement</h3>
+      <p> Taking the above axioms as a starting point, let's think about
+	what type of community we want to create this term. Here is a
+	community agreement based on one written by Federico
+	Ardila-Mantilla.
+	<blockquote>
+          This course aims to offer a joyful, meaningful, and
+          empowering experience to every participant; we will build
+          that rich experience together by devoting our strongest
+          available effort to the class. You will be challenged and
+          supported. Please be prepared to take an active, critical,
+          patient, creative, and generous role in your own learning and
+          that of your classmates.  
+	</blockquote>
+      </p>
+      
+    </div>
+    <hr>
+
+
+   <div class="w3-container w3-padding-32 w3-large" id="axioms">
+     <h1><i class="fa fa-heart fa-fw
+          w3-margin-right"></i>Acknowledgments</h1>
+     <p>This course is closely based on the introductory linear algebra
+     class (<a href="https://www.gvsu.edu/catalog/course/mth-204.htm"
+     target="_blank">MTH 204</a>) offered by
+     <a href="https://www.gvsu.edu/math/" target="_blank">Grand Valley
+     State University</a>.  I am grateful to
+     <a href="https://faculty.gvsu.edu/boelkinm/Home/MB.html"
+     target="_blank">Professor Matt Boelkins</a>, who shared his
+     syllabus and assignments for MTH204. These teaching materials
+     were developed collaboratively by the team of faculty at Grand
+     Valley who rotate through teaching Linear Algebra.</p>
+
+     <p>Huge thanks to <a href="https://davidaustinm.github.io/"
+     target="_blank">David Austin</a> who has made his excellent
+     textbook, <a href="" target="_blank">Understanding Linear
+     Algebra</a> freely available online. David is a professor at
+     Grand Valley State. (Btw, Matt has also written an open textbook
+     series, <a href="https://activecalculus.org/"
+     target="_blank">Active Calculus</a>, that looks great. I will
+     consider using it next fall when I teach Calculus.) 
+     </p>
+     
+   </div>
+
+   <hr>
+    
+    <!-- Axioms Section -->
+    <div class="w3-container w3-padding-32 w3-large" id="about">
+      <h1>Course Information and Advice</h1>
+
+      <h3>Course Structure</h3>
+      <p>
+	<ol>
+	  <li>We will closely
+	  follow <a href="https://understandinglinearalgebra.org/ula.html"
+	  target="_blank">Understanding Linear Algebra</a> by David
+	    Austin. My plan is to cover Chapter 1-4.</li>
+	  <li>There will be three sorts of work you will do for this
+	    course:
+	    <ul>
+	      <li><b>Daily Prep Work</b>. For almost all classes there
+	      will be a preview assignment designed to get you warmed
+	      up for that day's class. This will be evaluated entirely
+	      on effort and completeness. If you don't complete a few
+		of the prep assignments, that's ok.</li>
+	      <li><b>Weekly Homework Assignments</b>, described
+		below.</li>
+	      <li><b>Labs</b>. Roughly every other week there will
+		be a "lab" that you'll start in class and then finish
+		on your own. You'll do this work in pairs. The labs
+		are applications or mini case studies.</li>
+	    </ul>
+	  </li>
+	  <li>All work can be <b>resubmitted without penalty</b> up to
+	    (roughly) a few weeks after I return it to you.</li>
+	  <li>Your final evaluation will be roughly weighted as
+	  follows: Daily Prep (20%), Weekly Homework (50%), Labs
+	  (30%).</li> 
+	</ol>
+      </p>
+
+      <hr class="day"></hr>
+      
+      <h3>What is Linear Algebra?</h3>
+      <p>
+	Wikipedia's entry (from 2013, I think)
+	on <a href="http://en.wikipedia.org/wiki/Linear_algebra">linear 
+	  algebra</a> has a good summary:
+	
+	<blockquote>
+	  Linear algebra is a branch of mathematics concerned with the study of
+	  vectors, with families of vectors called vector spaces or linear
+	  spaces, and with functions that input one vector and output another,
+	  according to certain rules. These functions are called linear maps (or
+	  linear transformations or linear operators) and are often represented
+	  by matrices. Linear algebra is central to modern mathematics and its
+	  applications. An elementary application of linear algebra is to the
+	  solution of a system of linear equations in several unknowns. More
+	  advanced applications are ubiquitous... . 
+	  <!--, in areas as diverse as abstract
+	  algebra and functional analysis. ... 
+	  Linear algebra has a concrete
+	  representation in analytic geometry and is generalized in operator
+	  theory and in module theory.-->
+	  It has extensive applications in
+	  engineering, physics, natural sciences and the social
+	  sciences. [Linear algebra is also important to study because]
+	  nonlinear mathematical models can often be approximated by 
+	  linear ones. 
+	</blockquote>
+      </p>
+      
+      <p class="no-box">There are considerable differences among
+	linear algebra courses and textbooks.  Roughly speaking, there are
+	three not mutually exclusive roles that linear algebra plays in the
+	math curriculum:
+	<ul>
+	  <li>1: Linear algebra teaches a set of techniques for solving
+	    problems.  These classes often emphasize applications. </li>
+	  <li>2A: Linear algebra serves as a bridge toward more formal or
+	    abstract mathematics.</li>
+	  <li>2B: Sometimes this includes introducing students to methods of
+	    proof.</li> 
+	  <li>3A: Linear algebra can be an entry point for numerical mathematics.
+	    This includes using a computer to do mathematics and solve
+	    problems.</li>
+	  <li>3B: This can also include analyzing the run-time and convergence
+	    properties of algorithms and writing original code. </li>
+	</ul>
+      <p class="no-box">
+	This course is mostly of type 1 and 3A, with a little bit of 2A. 
+	I'm not certain of the exact balance; this will depend on the
+	interests of the class. For more on the particular flavor this
+	course, see the
+	<a href="https://understandinglinearalgebra.org/preface-1.html"
+	   target="_blank">Our Goals</a> section of our textbook. </p>
+
+      
+      <hr class="day"></hr>
+      <h3>Stuff about Homework</h3><p>
+      <ol>
+	<li>There will be an assignment due almost every Friday. It is 
+	  essential that you do these assignments, as this is how one learns
+	  math, and also this is most of what your evaluation will be based
+	  on.</li> 
+	<li>There will be two parts to almost every homework assignment:
+	  <ul>
+	    <li>Problems to be submitted on WeBWorK</li>
+	    <li>Problems to be submitted on "paper" (a scanned pdf) on
+	      google classroom</li>
+	</ul></li>
+	
+	<li>WeBWorK is an online homework system. There are three
+	  reasons why I use WeBWorK:
+	  <ul>
+	    <li>You get instant feedback while doing the work, so you can
+	      learn right away from your mistakes. You can submit solutions
+	      many times until you get everything correct.</li>
+	    <li>Some problems are randomized so that you will all get
+	      slightly different versions of the questions. This means that
+	      collaborating with other students will be maximally effective,
+	      since you'll have to share solution methods and not just the
+	      final answer. </li>
+	    <li>Since the problems are automatically marked, I can spend
+	      more time helping you and won't have to spend as much time
+	      grading.</li>
+	</ul></li>
+
+	<li>I will make comments on your exercises and give one of
+	two marks: <b>Success!</b> or <b>Not Yet</b>. A Not Yet mark
+	means that you haven't quite demonstrated
+	mastery/understanding of the learning goals for that
+	exercise. You can resubmit any "Not Yet" assignments without
+	penalty. </li>
+	
+	<li>If you need extra time for one or two of the homework
+	  assignments, it's not a big deal. But be mindful to not fall
+	  farther behind every week. </li>
+	<li>I do not expect all of the homework assignments to be easy; I
+	  don't expect you to be able to sit down and do them easily the first
+	  time. Don't let yourself get frustrated. I strongly suggest working
+	  with others and seeking help if you need it.  
+	<li>You are strongly encouraged to work together on homework. You
+	  can also consult me, class tutors, other faculty, friends,
+	  and family. However, the homework you hand in should represent
+	  your own understanding.</li>
+	<li>As I plan on sending out homework assignments and other
+	  information via email/google classroom, it is important that you
+	  check your email/classroom regularly.</li>
+	<li>You will need access to a computer or tablet in order to
+	read the textbook and do the homework. </li>
+      </ol>
+      </p>
+
+      <hr class="day"></hr>
+      <h3>Some Warnings and Things to Think About</h3>
+      <p>
+	This is my seventh time teaching a version of this course, so
+	I have a pretty good sense of how it will go. Some thoughts:
+	<ol>
+	  <li>There are no official TAs for this course. So we'll have
+	  to work creatively to make sure everyone can get the help
+	    they need.</li>
+
+	  <li>I am structuring things a little differently,
+	  modeled off of the GVSU course. These feels like a minor
+	  adjustment, and not a major shift in how I usually teach,
+	  but it's definitely a bit of an adjustment. Let's give it a
+	  shot and see how it goes.</li>
+	  
+	  <li>Linear algebra is standard topic in the college
+	  mathematics curricula. It is usually taken by students in
+	  their sophomore year. Linear Algebra is required for math,
+	  physics, engineering, statistics, and economics majors. I
+	  suspect it's required for chemistry majors, but I'm not
+	  sure. In general, anyone who works in a mathematical field
+	  will need to know linear algebra.</li> 
+
+	  <li>My experience as a student was that linear algebra
+	  seemed very easy. So I didn't do much work in the class. But
+	  then it got harder quite quickly and I was lost and in a lot
+	  of trouble. As always, it's important to stay caught up,
+	  because you can get left behind pretty quickly in a course
+	  like this.</li> 
+
+	  <li>Also, when I took linear algebra I remember thinking
+	  that the material was kinda silly and that I would never use
+	  it. However, I ended up using linear algebra in almost every
+	  math and physics class I took, and I use it in my research
+	  all the time---much more than I use calculus. Some of the
+	  applications of linear algebra might not be apparent
+	  immediately, but please believe me when I say that it is a
+	  very useful topic to know. </li> 
+
+	  <li>Linear algebra potentially has some trap doors: things
+	  can suddenly shift from easy to very hard without you
+	  realizing it. Of course I'm going to try to not let this
+	  happen. </li> 
+
+	</ol>
+      </p>
+
+      <hr class="day"></hr>
+      <h3>Help Sessions</h3>
+      <p>
+	I will have a handful of help sessions
+	every week. You are warmly invited and encouraged to attend these
+	sessions. Help sessions are relaxed, informal, and hopefully fun.
+	Things that happen at help sessions: 
+	<ol>
+	  <li>I am around to offer help on the homework.</li>
+	  <li>Some students do most of the homework while at a help
+	    session.  They work through problems alone or with others, and
+	    find it comforting to know that help is immediately at hand if
+	    needed.</li>
+	  <li>Others do the problems at home and come to the help session with 
+	    specific questions.</li>
+	  <li>Some students work in groups at help sessions, others work more
+	    or less alone.</li>
+	  <li>Help sessions are also a chance to ask general questions about
+	    the course.  Conversations also sometimes wander into other areas:
+	    politics, the state of the world, what's for dinner, what classes
+	    are offered next term, and so on.</li>
+	  <li>Help sessions are a great way to meet other students in the
+	    class.</li>
+	  <li>Often there will be coffee/tea and/or snacks.</li>
+	</ol>
+      </p>
+
+      <hr class="day"></hr>
+      
+      <h3>Individual Meetings</h3>
+      <p>I am happy to meet with students one-on-one.  The best way to set
+	up an appointment is to send an email.  There are lots of reasons
+	why you might want to meet with me: 
+	<ol>
+	  <li>You have some in-depth questions that there isn't time to
+	    explore in a help session.</li>
+	  <li>You have a question that you think is too basic or you're
+	    uncomfortable asking in a help session.  (You shouldn't be
+	    uncomfortable, since, as the saying goes, there are no dumb
+	    questions!  But I understand that you might be uncomfortable
+	    nevertheless.)</li>
+	  <li>You want to explore possibilities for energy projects on campus
+	    or in the community.</li>
+	  <li>You want to discuss some challenges you're facing in the class.
+	  <li>You want to talk about other classes in energy or physics, or
+	    internships, senior projects, etc.
+	</ol>  
+	Please don't hesitate to reach out if there's anything you want to
+	discuss. You should also feel free to reach out to the
+	TAs. </p>
+
+      <hr class="day"></hr>
+
+      <h3>What your Evaluation is Based on</h3>
+      
+      <p>Your evaluation will be based on your performance on homework
+	assignments (approx 90%) and your contributions in lab
+	sections (approx 10%).  There will be weekly homework assignments
+	and, towards the end of the course, some mini-case studies and
+	projects.  I think there is much to be said against grades; I
+	believe they often interfere with genuine, reflective learning. But
+	I am happy to assign grades if you wish. I do not have any quota of
+	A's, B's, etc. 
+      </p>
+
+      <hr class="day"></hr>
+
+      <h3>Diversity, Inclusion, and Belonging</h3>
+      <p>It is my intent that students from all
+	backgrounds and perspectives be well served by this course,
+	that students' learning needs be addressed both in and out of class,
+	and that the diversity that students bring to this class be viewed
+	as a resource, strength, and benefit. I aim to present
+	materials and activities that are respectful of diversity: gender,
+	sexuality, disability, age, religion, socioeconomic status,
+	ethnicity, race, and culture.</p>
+      
+      <p>Learning about diverse perspectives and identities is an ongoing
+	process. I am always looking to learn more about power and privilege
+	and the harmful effects of racism, sexism, homophobia, classism, and
+	other forms of discrimination and oppression.  Your suggestions are
+	encouraged and appreciated. Please let me know ways to
+	improve the effectiveness of the course for you personally, or for
+	other students or student groups. If something was said or done in
+	class (by anyone, including me) that made you feel uncomfortable,
+	please let me know.  You can also reach out to Provost Ken
+	Hill, or Associate Kourtney Collum or Jamie McKown.
+      </p>
+
+      <hr class="day"></hr>
+
+      <h3>Statements about Academic Honesty and Hours of Academic
+    Engagement</h3>
+      <p><ul>
+	  <li> I am required to remind you that: "By enrolling in an academic
+	    institution, a student is subscribing to common standards of
+	    academic honesty. Any cheating, plagiarism, falsifying or
+	    fabricating of data is a breach of such standards. A student must
+	    make it his or her responsibility to not use words or works of
+	    others without proper acknowledgment. Plagiarism is unacceptable and
+	    evidence of such activity is reported to the academic dean or
+	    his/her designee.  Two violations of academic integrity are grounds
+	    for dismissal from the college. Students should request in-class
+	    discussions of such questions when complex issues of ethical
+	    scholarship arise."</li>
+	    
+	  <li>I am also required to say that: You should expect to
+	    spend 150 hours of academically engaged time on this
+	    course, or 15 hours per week. In addition to 4.5 hours per 
+	    week in class or discussion section, in a typical week
+	    you'll spend 2 hours reading and preparing for class and
+	    8.5 hours attending help sessions and completing
+	    assignments. </li> 
+	</ul></p>
+
+
+	  
+    </div>
+    <hr></hr>
+
+
+    <!-- ********************************************************************** -->
+    <!-- schedule Section -->
+    <div class="w3-container w3-padding-32 w3-large" id="schedule">
+      <h1>  <i class="fa fa-calendar fa-fw
+          w3-margin-right"></i>Schedule</h1>
+
+      <h2><i class="fa fa-exclamation fa-fw"></i>Important Links</h2>
+      <div class="w3-container">
+	<ul>
+	  <li><a href="https://understandinglinearalgebra.org/ula.html"
+	  target="_blank"><b>Understanding Linear Algebra</b></a>. Our Textbook.</li>  
+	  <li><a href="https://webwork-hosting.runestone.academy/webwork2/coa-feldman-es2048im-spring2024"
+	  target="_blank"><b>WeBWorK</b></a>.  Platform for online
+	    homework.</li>
+	  <li><a href="https://calendar.google.com/calendar/u/0?cid=Y191cjNya3VtMm1ibzBwOWQ5Y29hb2R0NHF2a0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t"
+	  target="_blank"><b>Schedule for Help Sessions</b></a>. Will vary
+	  some from week to week. </li>
+	  <li><a href="https://classroom.google.com/u/0/c/NjY4NjE5MjkwMjQ1"
+		 target="_blank"><b>Google Classroom</b></a>. This is where you'll upload homework.</li>
+	  <li><a href="./pdf/homework_expectations.pdf" target="_blank"><b>Homework Expectations and Guidelines</b></a>.</li>
+	</ul>
+      </div>
+      
+	<h2>Week 01</h2>
+
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Tuesday, April 2, 2024</h6>
+          <p><ul class="w3-ul">
+	      <li>Introductions. What do we expect for the solutions
+	      of systems of linear equations? (Chapter 1.1)</li>
+	      <li>Handouts:
+		<ul>
+		  <li><a href="./pdf/class01a.pdf"
+			 target="_blank">Activity 1.1.1</a></li>
+		  <li><a href="./pdf/class01b.pdf"
+		  	 target="_blank">Activity 1.1.2</a></li>
+		  <li><a href="./pdf/class01c.pdf"
+			 target="_blank">Activity 1.1.3</a></li>
+		</ul>						  
+	    </ul></p><hr class="day">
+        </div>
+	
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Wednesday, April 3, 2024</h6> 
+          <p><ul class="w3-ul">
+	      <!--<li><a href="https://PollEv.com​/davidfeldman809" target="_blank">PollEv.com​/davidfeldman809</a></li>-->
+	      <!--<li><a href="./images/wordcloud.png" target="_blank">Wordcloud</a></li>-->
+	      <li><b>Prep Work</b>: Do <a href="https://understandinglinearalgebra.org/sec-finding-solutions.html" target="_blank">
+		  preview activity 1.2.1</a>.</li>
+	      <li>Finding solutions to linear systems. RREF. (Chapter 1.2)</li>
+	      <li>Handouts:
+		<ul>
+		  <li><a href="./pdf/class02a.pdf" target="_blank">Activity 1.2.1</a></li>
+		  <li><a href="./pdf/class02b.pdf" target="_blank">Activity 1.2.2</a></li>
+		  <li><a href="./pdf/class02c.pdf" target="_blank">Activity 1.2.3</a></li>
+	      </ul></li>
+	    </ul></p><hr class="day">
+        </div>
+	
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Friday, April 5, 2024</h6>
+          <p><ul class="w3-ul">
+	      <li><b>Prep Work</b>: Read <a href="https://understandinglinearalgebra.org/sec-sage-introduction.html" target="_blank">
+		  Section 1.3.1</a> and do activity 1.3.1.</li>
+	      <li>More about RREF. Computing with Sage (Chapter 1.3). </li>
+	      <li>Handout: TBA</li>
+	    </ul></p><hr class="day">
+        </div>
+		
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-paperclip fa-fw
+          w3-margin-right"></i>Friday, April 5, 2024</h6>
+          <p class="w3-text-pink"><ul class="w3-ul">
+	      <li>Homework 01: WeBWorK only!</li>
+	      <!--<li><a href="./pdf/homework.01.pdf" class="w3-xlarge w3-text-homework"
+	      target="_blank"><b>Homework 01</b></a>, due Friday, April 5, 2024</li>-->
+	</ul></p></div>
+
+	
+	<hr class="week">
+	<h2>Week 02</h2>
+	
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+					      w3-margin-right"></i>Tuesday, April 9, 2024</h6>
+          <p><ul class="w3-ul">
+	      <li>Pivots and Intro to Vectors. (Chapter 1.4. Start 2.1.)
+	      <li>Handouts:
+		<ol><li><a href="./pdf/class04a.pdf" target="_blank">Activities 1.4.2 and 1.4.2: pivots</a></li>
+		  <li><a href="./pdf/class04b.pdf" target="_blank">Preview Activity 2.1.1: vectors</a></li>
+		</ol>
+	  </ul></p><hr class="day">
+	</div>
+
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Wednesday, April 10, 2024</h6> 
+          <p><ul class="w3-ul">
+	      <li><b>Prep Work Before Class</b>: Do activity 2.1.2</li>
+	      <li>Vectors and Linear Combinations (Chapter 2.1)</li>
+	      <li>Handouts:</li>
+	    </ul></p><hr class="day">
+        </div>
+	
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Friday, April 12, 2024</h6>
+          <p><ul class="w3-ul">
+	      <li>Matrix Multiplication and Linear Combinations (Chapter 2.2)</li>
+	      <li>Handouts:
+		<ul><li><a href="./pdf/class06a.pdf" target="_blank">Activity 2.2.2: Matrix-vector Multiplication</a></li>
+		  <li>We also worked through 2.2.3 and 2.2.4 from the book.</li>
+		  </ul></li>
+	    </ul></p><hr class="day">
+        </div>
+
+	<div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-paperclip fa-fw
+          w3-margin-right"></i>Friday, April 12, 2024</h6>
+          <p class="w3-text-pink"><ul class="w3-ul">
+	      <li><a href="./pdf/homework.02.pdf" class="w3-xlarge w3-text-homework"
+		     target="_blank"><b>Homework 02</b></a>, due Friday, April 12, 2024</li>
+	      <li><a href="./pdf/lab-1-systems.pdf" class="w3-xlarge w3-text-homework"
+		     target="_blank"><b>Lab 01</b></a>, due Friday, April 12, 2024</li>
+	</ul></p></div>
+	
+	<hr class="week">
+
+	<h2>Week 03</h2>
+
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Tuesday, April 16, 2024</h6>
+          <p><ul class="w3-ul">
+	      <li>Matrix Multiplication (end of 2.2), start Span (2.3)</li>
+	      <li>Activities: 2.2.5 and 2.3.1(a)</li>
+	    </ul></p><hr class="day">
+        </div>
+	
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Wednesday, April 17, 2024</h6> 
+          <p><ul class="w3-ul">
+	      <li>Finish Span (2.3). Start Lab 02.</li>
+	      <li>Activities: 2.3.1(b), <a href="./pdf/class08a.pdf" target="_blank">2.3.3</a></li>
+	    </ul></p><hr class="day">
+        </div>
+	
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Friday, April 19, 2024</h6>
+          <p><ul class="w3-ul">
+	      <li>TBA</li>
+	  </ul></p><hr class="day">
+        </div>
+
+	<div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-paperclip fa-fw
+          w3-margin-right"></i>Friday, April 19, 2024</h6>
+          <p class="w3-text-pink"><ul class="w3-ul">
+	      <li><a href="./pdf/homework.03.pdf" class="w3-xlarge w3-text-homework"
+	      target="_blank"><b>Homework 03</b></a>, due Friday, April 19, 2024</li>
+	</ul></p></div>
+	
+	
+	<hr class="week">
+
+	<h2>Week 04</h2>
+
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Tuesday, April 22, 2024</h6>
+          <p><ul class="w3-ul">
+	      <li>Before class: Do preview activity 2.5.1</li>
+	      <li>Matrix Transformations (2.5)</li>
+	      <li>Activities: 2.5.2, 2.5.2, 2.5.4</li>
+	    </ul></p><hr class="day">
+        </div>
+	
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Wednesday, April 23, 2024</h6> 
+          <p><ul class="w3-ul">
+	      <li>Do preview activity 5.6.1:
+		<a href="https://understandinglinearalgebra.org/sec-transforms-geom.html"
+		   target="_blank">here</a></li>
+	    </ul></p><hr class="day">
+        </div>
+	
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Friday, April 26, 2024</h6>
+          <p><ul class="w3-ul">
+	      <li>Linearity. The geometry of matrix transformations</li>
+	      <li>Handout: <a href="./pdf/linearity.pdf" target="_blank">linearity</a></li>
+	      <li>Activities: 2.6.3</li>
+	  </ul></p><hr class="day">
+        </div>
+		
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-paperclip fa-fw
+          w3-margin-right"></i>Friday, April 26, 2024</h6>
+          <p class="w3-text-pink"><ul class="w3-ul">
+	      <li><a href="./pdf/homework.04.pdf" class="w3-xlarge w3-text-homework"
+	      target="_blank"><b>Homework 04</b></a>, due Friday, April
+	      26, 2024</li>
+	      <li><a href="./pdf/lab-2-Markov-intro.pdf" class="w3-xlarge w3-text-homework"
+		     target="_blank"><b>Lab 02</b></a>, due Friday, April 26, 2024</li>
+	</ul></p></div>
+	
+	<hr class="week">
+
+	<h2>Week 05</h2>
+
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Tuesday, April 30, 2024</h6>
+          <p><ul class="w3-ul">
+	      <li>Invertibility (Chapter 3.1)</li>
+	      <li>Preview activity: 3.1.1</li>
+	      <li>Activities: 3.1.2, 3.1.3</li>
+	    </ul></p><hr class="day">
+        </div>
+	
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Wednesday, May 1, 2024</h6> 
+          <p><ul class="w3-ul">
+	      <li>Triangular Matricies and LU factorization (Chapter 3.1</li> 
+	      <li>Begin Bases and coordinate systems (Chapter 3.2) </li>
+	      <li>Activities: 3.4.1, ... </li>
+	  </ul></p><hr class="day">
+        </div>
+	
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Friday, May 3, 2024</h6>
+          <p><ul class="w3-ul">
+	      <li>tba</li>
+	    </ul></p><hr class="day">
+        </div>
+
+	<div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-paperclip fa-fw
+				       w3-margin-right"></i>Friday, May 3, 2024</h6>
+          <p class="w3-text-pink"><ul class="w3-ul">
+	      <li><a href="./pdf/homework.05.pdf" class="w3-xlarge w3-text-homework"
+		     target="_blank"><b>Homework 05</b></a>, due Friday, May 3, 2024</li>
+	</ul></p></div>
+
+	<hr class="week">
+
+	
+	<h2>Week 06</h2>
+
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Tuesday, May 7, 2024</h6>
+          <p><ul class="w3-ul">
+	      <li>Bases (finish 3.2). Image compression (start 3.3)</li>
+	      <li>Handouts: <a href="./pdf/bases.pdf" target="_blank">Practice changing bases</a></li>
+	      <li>Activities: 3.2.4</li>
+	    </ul></p><hr class="day">
+        </div>
+	
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Wednesday, May 8, 2024</h6> 
+          <p><ul class="w3-ul">
+	      <li>Color models and Image Compression (chapter 3.3)</li>
+	      <li>Activities: 3.3.3</li>
+	    </ul></p><hr class="day">
+        </div>
+	
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Friday, May 10, 2024</h6>
+          <p><ul class="w3-ul">
+	      <li>Image Compression. Start determinants (chapter 3.4)</li>
+	      <li>Activities: 3.3.3 and 3.4.4 </li>
+	      <li>Video on <a href="https://www.youtube.com/watch?v=Ba89cI9eIg8" target="_blank">image compression</a>
+		by <a href="https://www.isikdogan.com/" target="_blank">Leo Isikdogan</a></li>
+	    </ul></p><hr class="day">
+        </div>
+
+	<div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-paperclip fa-fw
+				       w3-margin-right"></i>Friday, May 10, 2024</h6>
+          <p class="w3-text-pink"><ul class="w3-ul">
+	      <li><a href="./pdf/homework.06.pdf" class="w3-xlarge w3-text-homework"
+		     target="_blank"><b>Homework 6</b></a>, due Friday, May
+		10, 2024</li>
+	</ul></p></div>
+
+	
+	<hr class="week">
+
+	<h2>Week 07</h2>
+
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Tuesday, April 14, 2024</h6>
+          <p><ul class="w3-ul">
+	      <li><b>Before Class:</b> watch <a href="https://www.youtube.com/watch?v=Ip3X9LOh2dk" target="_blank">
+		  The determinant | Chapter 6, Essence of linear algebra</a> by
+		<a href="https://www.3blue1brown.com/about" target="_blank">Grant Sanderson</a>. </li>
+	      <li>The Determinant</li>
+	      <li>Activities: 3.4.3, 3.4.4</li>
+	    </ul></p><hr class="day">
+        </div>
+	
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Wednesday, April 15, 2024</h6> 
+          <p><ul class="w3-ul">
+	      <li><b>No class</b></li>
+	      <li>Watch: <a href="https://www.youtube.com/watch?v=fNk_zzaMoSs" target="_blank">Vectors</a>
+		(Chatper 1, Essence of linear algebra)</li>
+	      <li>Watch: <a href="https://www.youtube.com/watch?v=k7RM-ot2NWY" target="_blank">Linear combinations, span, and basis vectors</a>
+		(Chatper 2, Essence of linear algebra)</li>
+	      <li>Take your time with these videos and savor them.</li>
+	  </ul></p><hr class="day">
+        </div>
+	
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Friday, April 17, 2024</h6>
+          <p><ul class="w3-ul">
+	      <li>Subspaces</li>
+	      <li>Handout: <a href="./pdf/subspace.pdf" target="blank">Subspaces</a></li>
+	      <li>Handout: <a href="./pdf/col_null.pdf" target="blank">Column space, Null Space, Rank</a></li>
+	      <li><a href="https://www.youtube.com/watch?v=YQRioQ1XUck" target="_blank">This video</a> by Trefor
+		Bazett covers material similar to what we covered in class.</li>
+	  </ul></p><hr class="day">
+        </div>
+		
+	<div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-paperclip fa-fw
+				       w3-margin-right"></i>Friday, April 17, 2024</h6>
+          <p class="w3-text-pink"><ul class="w3-ul">
+	      <li><a href="./pdf/homework.07.pdf" class="w3-xlarge w3-text-homework"
+		     target="_blank"><b>Homework 7</b></a>, due Friday, May
+		17, 2024</li>
+	      <li><a href="./pdf/lab-4-jpeg-compression.pdf" class="w3-xlarge w3-text-homework"
+		     target="_blank"><b>Lab 03</b></a>, due Friday, May 17, 2024</li>
+	</ul></p></div>
+	
+	<hr class="week">
+
+	
+	<h2>Week 08</h2>
+
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Tuesday, May 21, 2024</h6>
+          <p><ul class="w3-ul">
+	      <li>Eigenvectors: What they are, and why we care. (Chapter 4.1)</li>
+	      <li>Handouts: [<a href="./pdf/eigen_intro.pdf"
+				target="_blank">Introduction to Eigenvectors</a>]</li>
+	      <li>Activities:</li>
+	    </ul></p><hr class="day">
+        </div>
+	
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Wednesday, May 22, 2024</h6> 
+          <p><ul class="w3-ul">
+	      <li>Finding Eigenvalues and Eigenvectors (Chapter 4.2).</li>
+	      <li>Handout: <a href="./pdf/eigen_finding.pdf" target="_blank">Warm up exercises and finding eigenstuff practice</a></li>
+	  </ul></p><hr class="day">
+        </div>
+	
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Friday, May 24, 2024</h6>
+          <p><ul class="w3-ul">
+	      <li>Finding Eigenvalues and vectors numerically. Begin Diagonalization</li>
+	      <li>Handout: <a href="./pdf/diag_warmup.pdf" target="_blank">A bit more EigenPractice</a>
+	      <li>Activities: 4.3.2</li>
+	    </ul></p><hr class="day">
+        </div>
+		
+	<div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-paperclip fa-fw
+				       w3-margin-right"></i>Friday, May 24, 2024</h6>
+          <p class="w3-text-pink"><ul class="w3-ul">
+	      <li><a href="./pdf/homework.08.pdf" class="w3-xlarge w3-text-homework"
+		     target="_blank"><b>Homework 8</b></a>, due Friday, November
+		3, 2023</li>
+	</ul></p></div>
+	
+	<hr class="week">
+
+	<h2>Week 09</h2>
+
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Tuesday, May 28, 2024</h6>
+          <p><ul class="w3-ul">
+	      <li>More diagonalization. Similarity transformations</li>
+	      <li>Handout: <a href="./pdf/diag+similarity.pdf" target="_blank">Diagonalization, complex eigenthings, similarity</a></li>
+	    </ul></p><hr class="day">
+        </div>
+	
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Wednesday, May 29, 2024</h6> 
+          <p><ul class="w3-ul">
+	      <li>Work on Lab 04: Fibonacci Sequences</li>
+	    </ul></p><hr class="day">
+        </div>
+	
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Friday, May 31, 2024</h6>
+          <p><ul class="w3-ul">
+	      <li>tba</li>
+	      <li>Activities: tba</li>
+	    </ul></p><hr class="day">
+        </div>
+
+<!--	<div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-paperclip fa-fw
+				       w3-margin-right"></i>Friday, May 31, 2024</h6>
+          <p class="w3-text-pink"><ul class="w3-ul">
+	      <li><a href="./pdf/homework.09.pdf" class="w3-xlarge w3-text-homework"
+		     target="_blank"><b>Homework 9</b></a>, due Friday, May 31, 2024</li>
+	</ul></p></div>
+-->	
+
+	
+	<hr class="week">
+
+	<h2>Week 10</h2>
+
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Tuesday, June 4, 2024</h6>
+          <p><ul class="w3-ul">
+	      <li>tba</li>
+	      <li>Activities: tba</li>
+	    </ul></p><hr class="day">
+        </div>
+	
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Wednesday, Jun 5, 2024</h6> 
+          <p><ul class="w3-ul">
+	      <li>Conclusions. tba. </li>
+	      <li>Activities</li>
+	    </ul></p><hr class="day">
+        </div>
+	
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Friday, June 7, 2024</h6>
+          <p><ul class="w3-ul">
+	      <li>No class meeting!</li>
+	    </ul></p><hr class="day">
+        </div>
+		
+	<div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-paperclip fa-fw
+				       w3-margin-right"></i>Friday, June 7, 2024</h6>
+          <p class="w3-text-pink"><ul class="w3-ul">
+	      <li><a href="./pdf/homework.09.pdf" class="w3-xlarge w3-text-homework"
+		     target="_blank"><b>Homework 09</b></a>, due Friday, June 7,
+		2024</li>
+	      <li><a href="./pdf/lab-Fibonacci.pdf" class="w3-xlarge w3-text-homework"
+		     target="_blank"><b>Lab 04</b></a>, due Friday, June 7,
+		2024</li>
+	</ul></p></div>
+
+
+	
+    </div>
+
+    <hr>
+    <div class="w3-container w3-padding-64 w3-large" id="info">
+    <p>
+      The building in which we gather for this class, and all of
+      College of the Atlantic, is located on traditional lands of the
+      Wabanaki people. The four Native American tribes in Maine today
+      are the Maliseet, Micmac, Penobscot, and Passamaquoddy,
+      collectively referred to as the Wabanaki. I believe it is important
+      to acknowledge that our presence on this land entangles us in the
+      web of colonialism, past and present. The future, however, is
+      still unwritten.</p> 
+    
+    </div>
+
+  </div>
+  
+    <!-- End page content -->
+  </div>
+
+<!-- Footer -->
+  <footer  class="w3-center"
+	style="padding:7px ;background-color:#000; color:#fff">
+<!--  class="w3-center w3-light-grey w3-padding-16" style="background-color:#d8cac2!important">-->
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp"
+  title="W3.CSS" target="_blank"
+  class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+
+</body>
+</html>
+

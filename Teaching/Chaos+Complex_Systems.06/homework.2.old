@@ -1,0 +1,127 @@
+<html>
+<head>
+<title>Homework 2</title>
+</head>
+
+
+<body background="/icons/dots_1960.gif">
+
+<br>
+<center>
+<table align = center width=85% bgcolor=999999 cellpadding=10> 
+
+
+<tr>
+<td><br> <h1 align=center>Homework 2</h1><p>
+
+<br>
+<br>
+
+<b>Homework 2:  Due Friday 28 September</b><p>  
+<br>
+
+
+<b>Not yet complete:  more to be added shortly</b>
+
+<ol>
+
+
+<li>Calculate the self-similarity dimension of the following objects.
+Be sure to sketch the object and 
+
+<a href="http://www.ukmail.org/~oswin/dimension.html">here</a> is a
+nice discussion of self-similarity dimension that may prove
+useful. And <a
+href="http://www.cs.cornell.edu/courses/cs312/2000fa/handouts/fractals.html">here</a>
+is another nice page about self-similarity and dimension. 
+
+<ol>
+
+<li><a
+href="http://www.shodor.org/interactivate/activities/carpet/index.html">The
+Sierpinski carpet</a>. 
+
+<li> The Cantor middle-fifths set.  (I.e., at each stage of the
+construction, remove the middle fifth of the unit interval.) 
+<li> <a
+href="http://www.geocities.com/Eureka/Plaza/4033/sierpinski_enver.html">
+The Sierpinski Sponge</a>.
+
+</ol>
+
+<p>
+<li><b>The Koch Curve:</b>  You can iteratively build the Koch Curve
+by using the java applet found <a
+href="http://www.arcytech.org/java/fractals/koch.shtml">here</a>.
+Take the unit interval to be the zeroth generation.  
+<ol>
+<li>Write expressions for the number of segments and the total length
+of the Koch curve at generation n. 
+<li>Determine the self-similarity dimension of the Koch curve.
+<li>In the limit that the generation n goes to infinity, what is the
+total length of the Koch curve?
+<li>Now consider the Koch curve as a function; the height of the curve
+at a given x is f(x).  Is this function continuous?  Where is this
+function differentiable?
+<li>Suppose now that you started not with a line, but with an
+equilateral triangle, and then built a snowflake.  I.e., the shape is
+now a closed curve.  As a function of n, determine the perimeter and
+the area of the snowflake.  What happens as n goes to infinity?
+Discuss.  
+</ol>
+
+
+ 
+<p>
+<li> Find a big map of the coast of Maine.  (There's a nice map
+outside Craig Greene's office.)  Measure the length of the coast using
+successively smaller "sticks" of length epsilon.  Use the relation
+between total length and epsilon to estimate the box-counting
+dimension.  Your estimate should also include an estimate of your
+error.  <a
+href="http://life.csu.edu.au/complex/tutorials/tutorial3.html">This
+web site</a> might be helpful.(20 points)<p>
+
+
+
+<li> <i>(This problem might get delayed a week; it depends how far we
+get this week.) </i>  Write the following number in binary and ternary
+(i.e., in base 2 and in base 3):
+<ol>
+  <li>15
+  <li>81
+  <li>.4
+</ol>
+<P>
+
+<li>What do you think you might do your project on?  Write a few
+paragraphs.  If you're undecided, you should write about things you're
+considering, or non-math/physics things you might want to try applying
+math to.
+<p>
+
+
+</td></tr>
+
+
+
+<tr><td>
+<center>
+<b><br>
+[<a href="http://hornacek.coa.edu/dave/index.html">Dave</a>]
+[<a
+href="./index.html">Chaos and Complex Systems</a>] 
+[<a href="homework.html">Homework Page</a>]
+[<a href="http://www.coa.edu">COA</a>]
+</b>
+</center>
+<p>
+<p>Web page maintained by <a href="mailto:dave@hornacek.coa.edu">dave@hornacek.coa.edu</a>.
+<p><br>
+</html>
+</table>
+</center>
+
+</html>
+
+

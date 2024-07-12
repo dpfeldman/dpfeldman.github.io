@@ -1,0 +1,77 @@
+\documentclass[11pt]{article}
+\oddsidemargin=0.0in
+\evensidemargin=0.0in
+\textwidth=6.5in
+\topmargin=-.25in
+\textheight=8.5in
+\usepackage{graphicx}
+ 
+\begin{document}
+\pagestyle{empty}
+ 
+\begin{center}
+{\Large {\bf Linear Algebra Homework Ten}}\\
+\medskip
+{\large {\bf College of the Atlantic}}\\
+\medskip
+{\large {\bf Due Friday March 15, 2019}}\\
+\medskip
+\end{center}
+
+
+
+\noindent Please include a cover sheet for this assignment.\\
+
+\noindent {\bf Chapter 7.5}
+\begin{enumerate}
+\setlength{\itemsep}{-1mm}
+\item 3
+\item 7
+\end{enumerate}
+
+
+\noindent {\bf Linearization and Jacobians}
+\begin{enumerate}
+\setlength{\itemsep}{3mm}
+
+
+\item Consider the nonlinear system:
+  \begin{equation}
+    x^\prime \, = \, -2x + 2x^2 \;,
+  \end{equation}
+  \begin{equation}
+    y^\prime \, = \, -3x + y + 3x^2 \;.
+  \end{equation}  
+\begin{enumerate}
+  \item Find all equilibria for this system.  Hint:  there are two.
+  \item Determine the Jacobian matrix.
+  \item Use the Jacobian matrix to classify all equilibria.
+\end{enumerate}
+
+\item The \emph{Lotka--Volterra} equations are the simplest model of a
+  predator--prey interaction.  The equations are:
+\begin{equation}
+  x(t)^\prime \, = \, Ax - Bxy \;,
+\end{equation}
+\begin{equation}
+  y(t)^\prime \, = \, Cxy - D \;,
+\end{equation}
+where $A$, $B$, $C$, and $D$ are positive constants, and $x(t)$ and
+$y(t)$ are the populations (or total biomass) of two different
+species. 
+\begin{enumerate}
+  \item Which is the population of the predators, $x$ or $y$?  Briefly
+    explain. 
+  \item Find all non-negative equilibria for the system.  (There are
+    two, one of which is $(0,0)$.) 
+  \item Determine the Jacobian for the system.
+  \item Use the Jacobian to say as much as you can about the nature of
+    the fixed points.
+  \item Optional, but recommended.  Find the eigenvectors for the
+    linearized system (i.e., the Jacobian) at $(0,0)$.  Biologically,
+    what do each of these eigenvectors represent?  
+\end{enumerate}
+
+\end{enumerate}
+
+\end{document}

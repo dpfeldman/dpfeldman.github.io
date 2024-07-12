@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>Homework 3</title>
+</head>
+
+<br>
+<br>
+<center>
+<table align = center width=400>
+<tr align = center>
+
+<td valign=center><img src="../../Icons/snowflake.2.gif"> </td>
+
+<td align = center valign=center> <h1>Homework 3</h1><p></td>
+<td valign=center align=center><img src="../../Icons/snowflake.2.gif"> </td>
+
+</table>
+</center>
+<br>
+<br>
+
+<b>Homework 3:  Due Friday 28 January  </b><p>
+
+
+<b>Project:</b><p>
+<ol>
+<li>Write a paragraph or so giving me some indication of what you
+might do for your final project.  This isn't a binding proposal.
+However, by the end of the week you should have a good idea of the
+general direction you wish to pursue.  You should also have a
+preliminary list of references.  (20 points)<p>
+</ol>
+
+
+
+<b>Calculating Fields:</b><p>
+<ol>
+<li>  Consider a long stick of length L with a charge of Q.  We are
+interested in calculating the electric field of this stick at a point
+P a distance r from the stick.  The point P is positioned such that if
+one were to draw a line from the stick to the point and that line was
+perpendicular to the stick, the line would intersect the stick at its
+midpoint.  (See Fig. E2.5 for a picture of this scenario.)  (30 points
+total) 
+<ol>
+<li>Divide the stick into chunks like we did in class.  Determine the
+field at P if the stick is broken up into 1, 2, 4, and 8 chunks.  To
+get numerical values, let L=5 and r = 2.  Remember that the electric
+field is a vector.
+<li>Compare the numerical values above with the exact value obtained
+by using equation E2.19b.
+<li>In the limit that r is much much bigger than L, what would you
+expect the field due to the stick to be and why?  Check equation
+E2.19b to make sure that it behaves as you expect.
+</ol>
+<li>E3B.1 (5 points)
+</ol>
+
+<b>Chapter E4:</b><p>
+<ol>
+<li>E4B.3 (5 points)
+<li>E4B.11 (5 points)
+<li>E4S.1 (10 points)
+<li>E4S.4 (10 points) Toaster Physics!!!
+</ol>
+
+<b>Bonus</b><p>
+There are lots of great problems.  Here are some you could try.
+<ol>
+<li>E2R.1 (A neat and useful geometric trick for calculating fields.)
+<li>E2A.1 (Calculus.  Shows you a sneaky way to do an integral.)
+<li>E2A.2  (More dipole stuff.  Uses the binomial approximation.)
+<li>E3A.1 (More integration tricks.)
+<li>E4R.2  (Chemical Cells.)
+<li>E4R.3  (How to figure out how much a car battery weighs without
+actually weighing it.)
+</ol>
+<p><br>
+
+<hr>
+<p>
+<center>
+[<a href="http://hornacek.coa.edu/dave/index.html">Dave</a>]
+[<a href="http://hornacek.coa.edu/dave/Teaching/Physics.2.W00/index.html">Physics II</a>]
+[<a href="homework.html">Homework Page</a>]
+[<a href="http://www.coa.edu">COA</a>]
+</center>
+<p>
+<p>Web page maintained by <a href="mailto:dave@hornacek.coa.edu">dave@hornacek.coa.edu</a>.
+<p>
+</html>
+
+
+</html>
+
+

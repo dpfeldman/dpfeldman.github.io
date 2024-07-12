@@ -1,0 +1,330 @@
+<header><title>David P. Feldman Research</title></header>
+
+<body>
+<center><h1>Statement of Research Interests</h1>
+<h2><i> David P. Feldman </i></h2></center>
+
+
+My research centers around the idea of complexity.  What is complexity?
+Complex is the opposite of simple; the complex is that which is neither 
+perfectly regular nor utterly random.   Thus, something which is complex 
+has a long description.  At present, physics lacks a  
+statistic which satisfactorily captures this notion of complexity.
+This is a serious deficiency, for the vast majority of 
+natural processes reside in the expanse between the random and
+the perfectly regular.  <p>
+
+Over the past year I've been looking at quantities that
+could provide a measure of complexity or structure --
+<i> Excess Entropy </I> and <I> Statistical Complexity</I>.  These
+statistics have been put forth by Dr. James P. Crutchfield of the 
+UC Berkeley Physics Department and the Santa Fe Institute.  My
+work has been carried out under his guidance.<p> 
+
+Briefly, a calculation of the statistical complexity involves examining a
+data stream and formally building a computational model that can reproduce
+that data in a statistical sense.  The statistical complexity is then a
+measure of the informational size of the reconstructed model.  The
+statistical complexity is set apart from other proposals for a complexity
+measure because it explicitly makes reference to the computational class of 
+the model being built.  In this sense, statistical com
+\documentstyle[11pt]{article}
+
+\oddsidemargin=0in
+\textwidth=6.7in
+\headheight=-0.7in
+\footheight=0.5in
+\textheight=8.6in
+
+\begin{document}
+\thispagestyle{empty}
+\bibliographystyle{unsrt}
+\begin{center}
+{\huge {\bf David P. Feldman} } \\
+\bigskip
+\bigskip
+{\huge {\bf Statement of Research Interests} } \
+\end{center}
+\bigskip
+\bigskip
+%\bigskip
+My research is concerned with discovering and and quantifying
+structure in a statistical setting:  either statistical mechanics or
+the study of dynamical systems.  In particular, I seek answers to the
+following questions:  How much apparent memory is stored in
+spatially-extended configurations?  How can one discover and classify
+the intrinsic computation ``embedded'' in a system?  That is, how much
+memory is required to produce a configuration and {\em how} is that
+memory utilized?
+
+Historically, many of these questions stem from the study of
+dynamical systems in the 1970's and early '80's when it was realized
+that the Shannon entropy provides a broadly-applicable tool that can
+be used to quantify the unpredictability inherent in a system.
+However, the entropy does not provide any measure of correlational
+structure.  A good deal of effort, of which my work has been a small
+part, has been expended over the past 15 years or so to try and fill
+this void and define a general measure of global correlational
+structure.  This broad area of research is sometimes referred to as
+``complexity,'' a term I try to avoid, as I feel its widespread
+overuse and misuse has largely stripped the word of its meaning. 
+
+
+Questions of memory and measures of correlational structure also occur
+naturally in a statistical mechanical setting.  For example, in an
+interacting many-body system, we might wish to inquire about the
+memory utilized by the system across space and/or time.  More
+generally, we seek an answer to the question:  Is the system
+organized, and if so, to what extent?  Statistical mechanics answers
+these questions indirectly, at best.  
+%Correlation functions and the
+%correlation length are related to, but do not directly address issues of
+%memory as the excess entropy does.  Furthermore, statistical mechanics
+%does not have a general methodology for discovering and quantifying
+%structure; order parameters and structure factors are usually
+%constructed in an {\em ad hoc}\/ manner.
+
+
+One approach to addressing theses questions
+makes use of information theory
+and quantifies a system's memory by means of the {\em excess entropy}: a
+quantity which measures the manner in which entropy densities of
+finite-size subsystems converge to the entropy density of the entire,
+infinite system.  For translationally invariant systems, the excess
+entropy is equivalent to the mutual information between two
+semi-infinite halves of a configuration.  In the literature, excess
+entropy goes by several other names, the most well-known of which is
+the {\em Effective Measure Complexity}.
+% \cite{Gras86}. 
+
+Another approach to these questions uses the architectural analysis of
+information processing available within computation theory. 
+Specifically, computational abilities of a system are inferred by first
+determining the {\em causal states},
+% \cite{Crut89}, 
+which, roughly
+speaking, are elements of the minimal set of aggregate variables
+which can be used to statistically reproduce the original
+configuration.  The causal state may thus be viewed as the ``true'' or
+``hidden'' states of the process.  The causal states, together with
+their transition probabilities, constitute a model---known as an
+$\epsilon$-machine---of the original process.  The model
+%$\epsilon$-machine \cite{Crut89}---of the original process.  The model
+is chosen to belong to the least powerful computational model
+class(es) in a stochastic generalization of the Chomsky Hierarchy that
+admits a finite description of the process.  The structure of the
+$\epsilon$-machine tells us how a system utilizes its memory to
+produce the observed configurations. 
+
+
+My work has mainly been concerned with calculating the above
+quantities for model statistical mechanical systems.
+The results of these calculations have enabled me to refine the
+interpretations of the quantities and compare and contrast these newer
+measures of structure and memory with extant quantities in statistical
+mechanics and information theory.
+\\
+\newpage
+% **********************************************************************
+%\bigskip
+\noindent {\Large {\bf Recent Accomplishments}} \\
+
+%\smallskip
+\noindent {\bf Exact Analytic Calculation of Excess Entropy,
+and Determination of $\epsilon$-machines for One-Dimensional,
+Finite-Range Classical Spin Systems} \\
+
+Using transfer matrix techniques I developed exact analytic methods
+to calculate the excess entropy and determine
+the $\epsilon$-machine for one-dimensional, finite range classical
+spin systems.  These results enabled me to perform a
+%spin systems \cite{Crut97a}.  These results enabled me to perform a
+detailed comparison of statistical mechanical, information theoretical
+and computational approaches to statistical structure and pattern.
+There are two main conclusions that have emerged from   
+%\cite{Feld97b}.  There are two main conclusions that have emerged from
+this work.  First, I found that the excess entropy acts as a
+wavenumber-independent ``order parameter'' for periodic structures.  In
+contrast to the structure factors, which detect structure at a given
+wavenumber, the excess entropy is sensitive to periodic order of any
+periodicity.  
+
+Second, this work has demonstrated that architectural measures of
+structure provided by computation theory are particularly necessary
+for the characterization of structure that is highly entropic and does
+not have a strong periodic component.  The information theoretic and
+statistical mechanical measures of structure fail to adequately
+capture structure for these sorts of highly entropic, but not
+structureless systems. 
+
+
+\medskip
+\noindent {\bf Analyzed and Critiqued a Recently-Proposed Measure of
+Statistical Complexity} \vspace{2mm}
+
+I have shown that a measure of statistical
+complexity recently proposed by L{\'o}pez-Ruiz, Mancini, and Calbet
+vanishes exponentially fast as a function of the system 
+size for all finite-step ergodic Markov chains.  As a
+result, the proposed complexity measure vanishes in the thermodynamic
+limit for a broad class of highly-structured systems, making it of dubious
+relevance in a statistical mechanical context.
+
+%I have proved that a recently-proposed measure of statistical complexity
+%\cite{Lope95} vanishes exponentially fast as a function of the system
+%size for all finite-step ergodic Markov chains \cite{Feld97a}.  As a
+%result, the proposed complexity measure vanishes in the thermodynamic
+%limit for a broad class of highly-structured systems, making it of dubious
+%relevance in a statistical mechanical context.
+
+
+
+\bigskip
+\bigskip
+\noindent {\Large {\bf Current Research}} \\
+
+%\smallskip
+\noindent {\bf Extension of Results to more than One Dimension} \vspace{2mm}
+
+I am currently working on
+extending the definitions of excess entropy and causal states to more
+than one dimension.  While fair amount has been written about how to do
+this, almost no examples have been worked
+%this \cite{Lind90,Hans97}, almost no examples have been worked
+through.  I am presently developing code to 
+determine the causal states and $\epsilon$-machines
+numerically.  Using my exact one-dimensional results,
+I expect to develop a theory of 
+``finite size scaling'' for $\epsilon$-machines.  I'll then consider
+some reversible cellular automata and the two-dimensional
+Ising model. \\
+
+\medskip
+\noindent {\bf Multifractal Spectra} \vspace{2mm}
+
+Calculating the multifractal spectrum is an often-used method to
+characterize the range of fluctuations produced by a dynamical system.
+Along the way, quantities analogous to the
+partition function, temperature, and free energies or statistical
+mechanics are encountered.  In my view, a clear interpretation of
+these ``statistical mechanical-like'' quantities is still lacking.  I
+am embarking on a line of work that I hope will solidify some of the
+statistical mechanical analogies.  Specifically, I have calculated the
+multifractal spectrum for one-dimensional spin systems.
+%using the methods of ref.~\cite{Youn93}.  
+I believe that
+the simplicity of the model and the direct fashion in which the
+thermodynamic formalism can be compared to thermodynamics itself will
+help strengthen the interpretation of the multifractal spectrum and
+related quantities.  A preliminary draft of a paper reporting this
+work is underway. 
+
+%{\footnotesize
+%%\vspace{-0.2in}
+%\bibliography{dave.master}
+%\vspace{-0.2in}
+%}
+
+\end{document}
+plexity can be
+viewed as a measure of the intrinsic computational ability of a system. <p>
+
+Excess entropy, roughly speaking, is a measure of how the entropies of
+successively larger subsets of a system converge to the entropy of the
+entire system.  Excess entropy provides a rigorous lower bound for 
+statistical complexity.  <p>
+
+
+Recently, I have derived an exact method for determining the
+excess entropy of any system described by a finite size transfer
+matrix.  These include <i>all</i> one-dimensional Ising models with
+finite range interaction, as well as one-dimensional Slater KDP
+models.  The latter are noteworthy since they exhibit a first-order
+phase transition between an ordered and a disordered state.<p>
+
+
+
+Presently, excess entropy and statistical complexity have
+been calculated for only a few systems, none of which have
+a clear physical realization.  Filling this void by actually 
+carrying out calculations of these quantities for physics systems
+is the main thrust of my work.  There are two main goals. 
+First, by calculating these quantities for well-understood systems, we will
+learn more about how these measures of complexity behave.
+Eventually, we hope to be able to make some general statements about the
+origins of complexity.  Second, this approach is a new way of looking at
+physical systems, and thus will extend our knowledge of the systems under
+study.<p>
+
+
+Thus far, my results confirm the anticipated behavior of the excess 
+entropy; it is found to reach a maximum in regions in between perfect order
+(zero entropy per site at absolute zero) and perfect disorder 
+(corresponding to infinite temperature).  To carry out these calculations, I
+have adapted the method of transfer matrices, a standard tool in
+statistical mechanics.
+I anticipate developing Monte Carlo simulations to complement my
+analytic work.  For the time being, however, I would like to push 
+the analytic work as far as I can.<p>
+
+
+<h2>Future Plans</h2>
+
+In general, I plan to continue examining the relationships between
+computational ability -- measured via excess entropy and statistical
+complexity -- and disorder.  Is it always the case that excess
+entropy reaches a single maximum in between zero and infinite temperature?
+
+
+
+My future research plans include examining the following: <ul>
+
+<li> <b>Excess Entropy of 1D Classical Spin Systems.</b>  
+In the very near future, I will complete a 
+thorough treatment of the 1D Ising and Slater KDP models.
+I also plan to consider continuous systems, such as the 1D XY model.
+The goal is to gain a sense of the range of behaviors
+exhibited by excess entropy.   
+Plots of excess entropy vs. entropy density look qualitatively similar
+over a wide range of models and parameter values.  Is there any 
+quantitative relationship (scaling, universality) between these different 
+behaviors? <p>
+
+<li> <b>Excess Entropy of 1D Quantum Systems </b>.  Will quantum
+systems exhibit different behavior than classical systems?  <p>
+
+<li> <b>Excess Entropy of Disordered 1D Systems </b>. How does the
+excess entropy behave for disordered systems?  Will this approach of
+looking at the computational ability of systems lead to any new insight
+into the physics involved?  <p>
+
+
+<li> <b>Generalization to More than One Dimension</b>.  Once I enter
+the world of two dimensions, I expect the range of behavior to become
+much richer.  In particular, it will be possible to examine systems
+that exhibit continuous (second-order) phase transitions.
+The obvious system to examine first is the 2D nearest
+neighbor Ising model in zero external field.  There are a wealth of
+analytic tools available; I plan to use these tools to calculate --
+hopefully analytically -- the excess entropy and statistical complexity.
+<p>
+
+</ul>
+
+In the long term,
+once a method for measuring complexity is refined and well-understood,
+I would like to examine the origins of complexity and apply these
+tools to other fields.  Particularly fruitful applications might be found
+in the field of Evolutionary Genetics.  
+At present, evolutionary theory has little to say
+about the emergence of increasingly complex life forms.  Once a satisfactory
+measure of complexity is put forth, we will at least have the 
+mathematical vocabulary to begin to address these questions of the origins
+of complexity in the natural and physical world.
+<p>
+
+<hr>
+[<a href="home.html">Dave's Home Page</a>]
+<p>
+
+</body>

@@ -1,0 +1,23 @@
+body {
+  background-color : #ffffff;
+font-size: 13px;
+font-family: Verdana, Arial, SunSans-Regular, Sans-Serif;
+color:#564b47;
+  color : #000000;
+  margin : 0px 0px 0px 0px;
+}
+#content {
+  background-color : #ffffff;
+  position : absolute;
+  left : 160px;
+  top : 0px;
+}
+#leftnav {
+  position : fixed;
+  width : 150px;
+  height : 100%; 
+  border-right : 2px solid #c0c;
+  margin-right : 15px;
+  padding-bottom : 20px;
+  background-color : #cccccc;
+}

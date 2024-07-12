@@ -1,0 +1,264 @@
+<html>
+<head>
+<title>SFI CSSS  in China</title>
+</head>
+
+<center>
+<h1> Complex Systems Summer School </h1>
+<h2> July 2005, Beijing, China</h2>
+ <h2> Some Foundations in Complex Systems:  Tools and Concepts</h2>
+<h3> David P. Feldman </h3>
+</center>
+<br>
+<h3> Lecture Notes </h3>
+
+
+These notes are, almost verbatim, the overheads I used for my
+talks in Beijing, and are an extension of the notes I developed for my
+2004 lectures in Qingdao.  I will be putting online 
+updated lecture notes as they become available.  
+Each section is available in postscript or pdf, printed either one
+slide or four slides per page.<p>
+
+<ol>
+<li>Introductory Comments. (Updated 3 July 2005)<br>   
+    [<a href="intro.ps">ps, one slide per page</a>]
+    [<a href="intro.4.ps">ps, four slides per page</a>]
+    [<a href="intro.pdf">pdf, one slide per page</a>]
+    [<a href="intro.4.pdf">pdf, four slides per page</a>]
+
+<li>Introduction to Dynamical Systems and Chaos, Part I. Terminology,
+definition of chaos.  (Updated 3 July 2005)  <br>
+    [<a href="chaos.ps">ps, one slide per page</a>]
+    [<a href="chaos.4.ps">ps, four slides per page</a>]
+    [<a href="chaos.pdf">pdf, one slide per page</a>]
+    [<a href="chaos.4.pdf">pdf, four slides per page</a>]
+
+<li>Introduction to Dynamical Systems and Chaos, Part II.  Bifurcation
+    diagram, universality, a detour about power laws, lyapunov
+    exponents, symbolic dynamics.  (Updated 3 July 2005)<br>
+    [<a href="chaos.2.ps">ps, one slide per page</a>]
+    [<a href="chaos.2.4.ps">ps, four slides per page</a>]
+    [<a href="chaos.2.pdf">pdf, one slide per page</a>]
+    [<a href="chaos.2.4.pdf">pdf, four slides per page</a>]
+
+<li>Information Theory, Part I.  Basic definitions and
+    interpretations.  (Updated 4 July 2005)<br>    
+    [<a href="info.1.ps">ps, one slide per page</a>]
+    [<a href="info.1.4.ps">ps, four slides per page</a>]
+    [<a href="info.1.pdf">pdf, one slide per page</a>]
+    [<a href="info.1.4.pdf">pdf, four slides per page</a>]
+
+<li>Information Theory, Part II.  (Updated 5 July 2005)<br>
+    [<a href="info.2.ps">ps, one slide per page</a>]
+    [<a href="info.2.4.ps">ps, four slides per page</a>]
+    [<a href="info.2.pdf">pdf, one slide per page</a>]
+    [<a href="info.2.4.pdf">pdf, four slides per page</a>]
+
+<li>Computation Theory, Part I:  Automata and Computational
+    Hierarchy.  (Updated 5 July 2005)<br>
+    [<a href="comp.1.ps">ps, one slide per page</a>]
+    [<a href="comp.1.4.ps">ps, four slides per page</a>]
+    [<a href="comp.1.pdf">pdf, one slide per page</a>]
+    [<a href="comp.1.4.pdf">pdf, four slides per page</a>]
+
+<li>Computation Theory, Part II:  Universal Turing Machines and
+Computational Complexity.  (Updated 5 July 2005)<br> 
+    [<a href="comp.2.ps">ps, one slide per page</a>]
+    [<a href="comp.2.4.ps">ps, four slides per page</a>]
+    [<a href="comp.2.pdf">pdf, one slide per page</a>]
+    [<a href="comp.2.4.pdf">pdf, four slides per page</a>]
+
+<li>A Very, Very Little Bit about Time Series Analysis.  (Updated 3
+    July 2005)<br>
+    [<a href="time.series.ps">ps, one slide per page</a>]
+    [<a href="time.series.4.ps">ps, four slides per page</a>]
+    [<a href="time.series.pdf">pdf, one slide per page</a>]
+    [<a href="time.series.4.pdf">pdf, four slides per page</a>]
+
+<li>Measures of Complexity, Part I: Computational Mechanics.  (Updated
+    July 2004) <br>
+    [<a href="comp.mech.ps">ps, one slide per page</a>]
+    [<a href="comp.mech.4.ps">ps, four slides per page</a>]
+    [<a href="comp.mech.pdf">pdf, one slide per page</a>]
+    [<a href="comp.mech.4.pdf">pdf, four slides per page</a>]
+
+<li>Measures of Complexity, Part II:  Survey of other Complexity
+Measures (Updated July 2004) <br>
+    [<a href="complexity.ps">ps, one slide per page</a>]
+    [<a href="complexity.4.ps">ps, four slides per page</a>]
+    [<a href="complexity.pdf">pdf, one slide per page</a>]
+    [<a href="complexity.4.pdf">pdf, four slides per page</a>]
+
+<li>Conclusions (Updated July 2004)<br>
+    [<a href="conclusions.ps">ps, one slide per page</a>]
+    [<a href="conclusion.ps">ps, four slides per page</a>]
+    [<a href="conclusion.pdf">pdf, one slide per page</a>]
+    [<a href="conclusion.4.pdf">pdf, four slides per page</a>]
+
+</ol>
+
+<p>
+
+<p><br><b>Coming soon: annotated bibliography</b><p><br>
+
+<a
+href="http://www.santafe.edu/education/indexCSSS.php"><b>2005
+Summer School Information</b></a>
+
+<p><br>
+
+
+<!--The lecture notes above contain sufficient references to allow
+interested readers to pursue the ideas in them further.  The list
+below contains a selected list of review papers and overviews that may
+be of interest to some students at the CSSS.  None of these are
+required, and many touch upon topics that I won't discuss in my
+lectures.  It might be fun to form groups to read and some of these
+papers together.<p>-->
+
+
+<!--<h4>General overviews and review</h4>
+
+<ul>
+
+<li> <a href="http://www.santafe.edu/~chaos">J. P. Crutchfield</a>, <a
+href="http://www.santafe.edu/projects/CompMech/papers/wlboac.html">What
+Lies Between Order and Chaos?</a> in Art and Complexity, J. Casti,
+editor, Oxford University Press (2002). <i>An interesting,
+non-technical essay discussing how new patterns are discovered, and
+how complexity arises from the interplay between order and chaos.</I>
+<p>
+
+<li> <a href="http://www.santafe.edu/~chaos">J. P. Crutchfield</a>, <a
+      href="http://www.santafe.edu/projects/CompMech/papers/EverNewTitlePage.html">Is
+      Anything Ever New?</a> Considering Emergence, in
+      Complexity: Metaphors, Models, and Reality, G. Cowan, D. Pines,
+      and D. Melzner, editors, SFI Series in the Sciences of
+      Complexity XIX, Addison-Wesley, Redwood City (1994) 479-497.  
+      <i>This essay is a review of an approach to defining and then
+      detecting the emergence of complexity in nonlinear processes. It
+      is a non-technical synopsis of a longer, more technical paper,
+      The Calculi of Emergence, which is listed below.</i><p>
+
+
+<li>G. W. Flake, <a
+href="http://mitpress.mit.edu/books/FLAOH/cbnhtml/home.html">The
+Computational Beauty of Nature:  Computer Explorations of Fractals, Chaos,
+Complex Systems, and Adaptation</a>.  MIT Press. 1998.  <i>An
+excellent introduction to the central models and ideas of complex
+systems.  Technical in places, but very accessible and very clear.
+Highly recommended.</i><p>
+
+<li>S. A. Levin.  <a
+href="http://www.princeton.edu/~seasplan/lifesciences/Bulletin%20Am%20Math%20Soc.pdf">Complex
+Adaptive Systems:  Exploring the known, the
+unknown, and the unknowable</a>.  Bulletin of the American Mathematical 
+Society.  40:3-19.  2002.  <i>I've only skimmed this.  Appears to be a
+nice review of complex adaptive systems in the context of evolutionary
+ecology.</i> <p>
+
+<li><a href="http://cob.jmu.edu/rosserjb/">J.B. Rosser</a>.  <a
+href="http://cob.jmu.edu/rosserjb/GENERIC.CPX.doc">On the
+Complexities of Complex Economic Dynamics</a>. 
+Journal of Economic Perspectives.  13:169-192.  1999.  <i>I've only
+read about half of this.  It strikes me as a thorough, even-handed
+review of the applications of "complexity theory" to economics.
+Presents good spectrum of views, from those who think complexity is
+mostly hype, to those who believe it has contributed significant new
+understandings.  Contains around 125 references.</I> <a
+href="http://ideas.repec.org/a/aea/jecper/v13y1999i4p169-192.html">pdf
+format, for AEA members</a><p>
+
+</ul>
+
+<p><br>
+<h4>Somewhat more technical papers and books</h4>
+
+<ul>
+
+<li>R. Badii and A. Politi.  <i>Complexity: Hierarchy structures and
+scaling in physics</i>.   Cambridge.  1997.  <i>Thorough text of
+different approaches to complexity.  Has a physics focus but contains
+much of general interest and applications to a number of different
+fields.  Clear and thorough.  More focused than the book by Flake (and
+hence a little less general), and more technically demanding at times.
+Highly recommended.</i><p>
+
+<li>  <a href="http://www.santafe.edu/~chaos">J. P. Crutchfield</a>
+and  <a href="http://hornacek.coa.edu/dave">D.P. Feldman</a>, <a
+href="http://hornacek.coa.edu/dave/Publications/RURO.html"> 
+Regularities Unseen, Randomness Observed: The Entropy Convergence
+Hierarchy</a>.  <i>Chaos</i>, <b>15</b>: 25-54. 2003.  <i>Thorough
+application of excess entropy and other measures of entropy
+convergence to a wide range of stochastic processes.  Contains
+thorough review of information theory, excess entropy, etc. </i><p>
+
+<li> <a href="http://hornacek.coa.edu/dave">D.P. Feldman</a> and <a
+	href="http://www.santafe.edu/~chaos">J. P. Crutchfield</a>,
+	<a href="http://hornacek.coa.edu/dave/Publications/DNCO.html">
+	Discovering Non-critical 
+Organization: Statistical Mechanical, Information Theoretic, 
+and Computational Views of Patterns in Simple One-Dimensional
+Spin Systems</a>.  Santa Fe Institute Working Paper 98-04-026.  <i>A
+review of computational mechanics and information theory and a
+comparision with quantities from statistical mechanics.  Contains
+detailed results for one-dimensinal Ising models.  Written especially
+for people with a background in statistical mechanics, but should be
+accessible to others as well.</i>
+<p>
+
+<li> <a href="http://www.santafe.edu/~chaos">J. P. Crutchfield</a>,
+<a
+href="http://www.santafe.edu/projects/CompMech/papers/CalcEmergTitlePage.html">The
+Calculi of Emergence: Computation, Dynamics, and Induction</a>,
+Physica D 75 (1994) 11-54. <i>An excellent overview of computational
+mechanics.  A nice introductory section motivating why one needs
+special tools to study emergence.  Contains many illustrative
+examples. Highly recommended.</i><p> 
+
+
+<li>  <a href="http://hornacek.coa.edu/dave">D.P. Feldman</a>and <a
+href="http://www.santafe.edu/~chaos">J. P. Crutchfield</a>,  <a
+href="Publications/MSCW.html"> Statistical Measures of Complexity:
+Why?</a> Physics Letters A, <b>238</b>:(4-5), 244-252, 1998.  <i>A
+short, not too technical paper critiquing several complexity
+measures.</i><p> 
+
+<li> <a
+href="http://www.cscs.umich.edu/~crshalizi/">C. R. Shalizi</a>,
+<a href="http://arxiv.org/abs/nlin.AO/0307015">Methods and Techniques
+of Complex Systems Science: An Overview</a>.  In Thomas S.
+  Deisboeck, J. Yasha Kresh and Thomas B. Kepler (eds.), <i>Complex Systems
+  Science in Biomedicine</i> (Kluwer).  2004. <i>An excellent,
+  thorough review.  Covers many tools: statistical learning and model
+  selection; time series analysis; cellular automata; agent-based
+  models; the evaluation of complex-systems models; information
+  theory; and ways of measuring complexity.  Contains 265 references.
+  Highly recommended.</i><p>
+
+
+<li><a href="http://www.cscs.umich.edu/~crshalizi/">C. R. Shalizi</a>, 
+<a href="http://arxiv.org/abs/cond-mat/9907176">Computational
+Mechanics: Pattern and Prediction, Structure and Simplicity</a>.
+<i>Journal of Statistical Physics</i>  104:816-879.  2001.
+<i>Thorough, rigorous treatment of computational mechanics.
+Recommended for those who want to understand the mathematical
+underpinnings of causal states and computational mechanics</i>.
+
+</ul>
+
+<br>
+<br>
+-->
+
+
+(Last Updated 5 July 2005.)<p>
+
+<hr>
+<br>
+[<a href="../index.html">Dave's Home Page</a>]
+<p>
+
+
+</html>

@@ -1,0 +1,212 @@
+body {
+	margin-left: 30px;
+	font-size: 90%;
+	font: normal small Arial, Helvetica, sans-serif;
+	margin: 10px;
+	background: #999;
+	}
+
+h1, h2, h3 {
+	text-transform: lowercase;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: normal;
+	font-style: italic;
+	width: 350px;
+	color: #000;
+	padding: 5px 0px 10px 0;
+	border-bottom: 2px solid #EEEEEE;
+	font-size: 2em;
+
+}
+
+h4 {
+	text-transform: lowercase;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: normal;
+	font-style: italic;
+	width: 250px;
+	color: #000;
+	padding: 0px 15px 0px 15px;
+	border-left: 2px solid #EEEEEE;
+	font-size: 1.5em;
+
+}
+
+a, a:visited, a:hover, a:active {
+	color: #069;
+	text-decoration: none;
+	}
+
+li {
+//	list-style-type: square;
+}
+table {
+	font-size: 90%;
+}
+
+table.floatright {
+	float: right;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	clear: right;
+//	caption-side: bottom;
+//	border: 1px solid #000;
+}
+img.floatleft {
+	float: left;
+	margin-right: 20px;
+	margin-left:20px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	clear: left;
+}
+img.floatright {
+	float: right;
+	margin-right:20px;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	clear: right;
+}
+#logo {
+	padding-left: 20px;
+	height: 104px;
+	background: url(ChalkBoard01.JPG);
+	color: #fff;
+	margin: 1px;
+	border: 2px solid #000;
+}	
+	#logo h1 {
+	padding: 0px 0 0 0px;
+	color: #fff;
+	letter-spacing: 1px;
+	font-size: 2.3em;
+	text-transform: capitalize;
+	border-bottom: 0px;
+}
+	#logo h2 {
+	margin-top: -15px;
+	margin-left: 40px;
+	color: #fff;
+	letter-spacing: 1px;
+	font-size: 1.6em;
+	text-transform: lowercase;
+	border-bottom: 0px;
+}
+
+#logo a {
+	color: #fff;
+	border: 0px;
+}
+
+#actualcontent {
+	margin: 0px 10px 0px 30px;
+	clear: left;
+}
+
+#content {
+	padding: 10px;
+	width: 723px;
+	border: 2px solid #000;
+	background: #fff;
+	margin: 20px 10px 1px 40px;
+	}
+#content page{
+	padding: 15px;
+}
+#footer {
+	padding: 10px;
+//	background: #ccc;
+//	border-bottom: 1px solid #36a;
+//	border-right: 1px solid #36a;
+//	border-top: 1px solid #36a;
+	}
+
+#navbar {
+	background: #fff;
+	padding: 5px;
+	margin: 2px;
+	font-size: 90%;
+//	border: 2px solid #000;
+	}
+	
+#navbar li {
+	float: left;
+	list-style-type: none;
+	padding: 0px;
+	white-space: nowrap;
+}
+#navbar ul {
+	margin: 0;
+	padding: 0;
+}
+#navbar a {
+	padding: 0px 20px 0px 20px;
+	background-color: #fff;
+	border: 1px solid #fff;
+}
+#navbar a:link, #navlist a:visited, #navbar a:visited {
+	color: #369;
+}
+#navbar a:hover, #navbar a:active {
+	color: #fff;
+	border: 1px solid #000;
+	background-color: #999;
+}
+#uberlink a:link, #uberlink a:visited, 
+#uberlink a:hover, #uberlink a:active {
+//	text-decoration: underline;
+	color: #369;
+	background-color: #fff;
+	border: 1px solid #fff;
+}
+
+/*************************************
+Styling for the expand/collapse stuff
+*************************************/
+
+dl {
+	padding: 0px;
+	margin: 1px;
+	display:block;
+//	border-width:1px;
+//	border-style:dotted;
+}
+
+dd {
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-left:25px;
+	margin-right:25px;
+//	border: 1px dotted;
+}
+
+
+//.expand{padding-bottom:.75em}
+
+.expand a {
+  display:block;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 10px;
+}
+.expand a:link, .expand a:visited {
+  border-width:1px;
+  background-image:url(img/arrow-down.gif);
+  background-repeat:no-repeat;
+  background-position:98% 50%;
+}
+
+.expand a:active, .expand a:focus {
+}
+
+.expand a.open:link, .expand a.open:visited {
+  border-style:solid;
+  background:#eee url(img/arrow-up.gif) no-repeat 98% 50%
+}
+
+.expand a:hover {
+  background:#eee url(img/arrow-down.gif) no-repeat 98% 50%
+}
+
