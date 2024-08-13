@@ -1,0 +1,129 @@
+\documentclass[12pt]{article}
+\oddsidemargin=-0.250in
+\evensidemargin=-0.250in
+\textwidth=6.5in
+%\topmargin=-.75in
+%\textheight=9in
+\usepackage{url}
+ 
+\begin{document}
+\pagestyle{empty}
+ 
+\begin{center}
+{\large {\bf Calculus II}}\\
+\medskip
+{\large {\bf Homework Ten \\
+\medskip
+(not really a final)}}\\
+\medskip
+{ {\bf Due Friday 1 June, 2007}}\\
+\end{center}
+
+\hspace{2mm}\\
+
+\begin{enumerate}
+
+
+\item The number of email messages per day received by an
+  academic administrator is well approximated by a Gaussian
+  distribution with mean $80$ and standard deviation $20$.
+
+\begin{enumerate}
+
+\item Write down the probability density function $p(x)$.
+
+\item Determine the probability that the administrator receives
+  between $90$ and $110$ email messages.  Do this two ways:
+\begin{enumerate}
+  \item Have Maple evaluate a definite integral.
+  \item Approximate the definite integral by hand.  Form both left and
+  right hand sums.  Use a $\Delta x$ of $10$. 
+\end{enumerate}
+
+\item What is the probability that between $60$ and $100$ messages are
+  received? 
+
+\item What is the probability that more than $150$ messages are
+  received? 
+
+\end{enumerate}
+
+
+
+\item Let $t$ denote the time it takes between successive emails,
+  measured in minutes.  The distribution of $t$ is well described by
+  an exponential distribution:
+\begin{equation}
+  p(t) \, = \lambda e^{-\lambda t} \;,
+\end{equation}
+where $t>0$ and $\lambda$ is a positive constant. 
+
+\begin{enumerate}
+
+\item Suppose that the mean time between emails is $15$ minutes.  Use
+  this information to solve for $\lambda$.
+
+\item Calculate the cumulative distribution function $P(t)$.
+
+\item Use $P(t)$ to answer the following questions:
+\begin{enumerate}
+  \item What is the probability that the time between successive
+  emails is less than $5$ minutes?
+  \item What is the probability that the time between successive
+  emails is more than one hour?
+  \item What is the probability that the time between successive
+  emails is between $10$ and $20$ minutes?
+\end{enumerate}
+
+\end{enumerate}
+
+
+\newpage
+
+\item For the purposes of this problem, assume the following:
+\begin{itemize}
+%  \item You are $25$ when you graduate from college and you will work
+%  until you are $60$.
+  \item College costs $100,000$ dollars.  Assume that you would pay
+  this amount of money up front.  I.e, you need to pay this amount the
+  day you enter college.  This isn't true, but it simplifies things. 
+  \item Interest rates are five percent compounded continually.
+  \item Assume that people save all of the money they make.  This, of
+  course, isn't true. 
+  \item If you do not go to college your starting salary will be
+  \$$21,000$ a year. 
+  \item If you do go to college your starting salary will be
+  \$$33,000$ a year. 
+  \item Assume that you get a raise of 4 percent a year.  Further, assume (not that 
+realistically) that this raise is awarded continuously instead of at the end of every 
+year.   Ignore inflation. 
+\end{itemize}
+The above data about salaries was taken from U.S.~Census Bureau, ``The
+Big Payoff: Educational Attainment and synthetic Estimates of
+Work-Life Earnings,'' July 2002,
+\url{www.census.gov/prod/2002pubs/p23-210.pdf}. 
+
+\begin{enumerate}
+
+\item How much money will the following two options yield the time
+  you're thirty? 
+\begin{itemize}
+  \item At age $20$ you take the $100,000$ that you would have spend
+  on college, put it in the bank, and go to work.
+  \item You go to college and when you are $25$ you start work.
+\end{itemize}
+
+\item How much money will the above two options yield at the time
+  you're forty?
+
+\item {\bf (Optional)} Women aged $25--29$ in the US with a bachelor's
+  degree make, on average $81$\% what men make.  Suppose a man and a
+  women go to college and both start work at $25$.  How much money
+  will each have when they are $60$?  
+
+\end{enumerate}
+
+\end{enumerate}
+
+
+\end{document}
