@@ -1,7 +1,7 @@
 /* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
-html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0;background-color:#81b29A}
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0;background-color:#dbe6e0}
 article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}summary{display:list-item}
 audio,canvas,progress,video{display:inline-block}progress{vertical-align:baseline}
 audio:not([controls]){display:none;height:0}[hidden],template{display:none}
@@ -29,9 +29,9 @@ h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-
 .w3-serif{font-family:serif}.w3-sans-serif{font-family:sans-serif}.w3-cursive{font-family:cursive}.w3-monospace{font-family:monospace}
 h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:600;margin:10px 0}.w3-wide{letter-spacing:4px}
 
-hr{border:0;border-top:16px solid #e07a5f;margin:0px 0px; border-radius: 5px; margin-top: 10px}
-hr.week{border:3px solid #e07a5f; border-radius: 5px}
-hr.day{border:2px solid #f2cc8f; border-radius: 5px}
+hr{border:0;border-top:16px solid #629371;margin:0px 0px; border-radius: 5px; margin-top: 10px}
+hr.week{border:3px solid #4e3144; border-radius: 5px}
+hr.day{border:2px solid #629371; border-radius: 5px}
 
 .w3-image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
 .w3-table,.w3-table-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}.w3-table-all{border:1px solid #ccc}
@@ -153,7 +153,7 @@ hr.day{border:2px solid #f2cc8f; border-radius: 5px}
 .w3-transparent,.w3-hover-none:hover{background-color:transparent!important}
 .w3-hover-none:hover{box-shadow:none!important}
 /* Colors */
-.w3-top,.w3-hover-top:hover{color:#fff!important;background-color:#293241!important} 
+.w3-top,.w3-hover-top:hover{color:#fff!important;background-color:#243924!important} 
 .w3-amber,.w3-hover-amber:hover{color:#000!important;background-color:#ffc107!important}
 .w3-aqua,.w3-hover-aqua:hover{color:#000!important;background-color:#00ffff!important}
 .w3-blue,.w3-hover-blue:hover{color:#fff!important;background-color:#2196F3!important}
