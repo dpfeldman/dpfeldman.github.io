@@ -644,21 +644,21 @@ chapters in the textbook), each with a distinct feel:
 	      target="_blank"><b>Homework 04</b></a>, due Friday, October 11, 2024</li>
 	</ul></p></div>
 
-	<div class="w3-container">
+	        <div class="w3-container">
           <h6 class="w3-text-black"><i class="fa fa-paperclip fa-fw
-					      w3-margin-right"></i>Assignment: Friday, October 11, 2024</h6>
+          w3-margin-right"></i>Assignment: Friday, October 11, 2024</h6>
           <p class="w3-text-pink"><ul class="w3-ul">
 	      <li><a href="./pdf/field_guide.pdf" class="w3-xlarge w3-text-homework"
-		     target="_blank"><b>Field Guide to Functions</b></a>, due Friday, October 11, 2024</li>
-	</ul></p></div>
+	      target="_blank"><b>Field Guide to Functions</b></a>, due Friday, October 11, 2024</li>
+		</ul></p></div>
 	
-	<hr class="week">
-	
-	<h2>Week 05</h2>
-
-        <div class="w3-container">
+		<hr class="week">
+		
+		<h2>Week 04</h2>
+		
+		<div class="w3-container">
           <h6 class="w3-text-black"><i class="fa fa-child fa-fw
-          w3-margin-right"></i>Class: Monday, October 14, 2024</h6>
+          w3-margin-right"></i>Class: Monday, October 7, 2024</h6>
           <p><ul class="w3-ul">
 	      <li>Average speed. Instantaneous speed. </li>
 	      <li>Handouts:
@@ -670,32 +670,43 @@ chapters in the textbook), each with a distinct feel:
 
 	<div class="w3-container">
 	  <h6 class="w3-text-black"><i class="fa fa-flask fa-fw w3-margin-right"></i>
-	    Lab: Monday, October 14, 2024</h6>
+	    Lab: Monday, October 7, 2024</h6>
 	  <p><ul class="w3-ul">
 	      <li>Average and Instantaneous Speeds.</li>
 	      <li>Handout: [<a href="./pdf/lab.04.pdf" target="_blank">Part A<a/>]</li>
+	      <li>Handout: [<a href="./pdf/lab.04.b.pdf" target="_blank">Part B<a/>]</li>
 	      </li>
 	  </ul></p><hr class="day">
 	</div>
 	
         <div class="w3-container">
           <h6 class="w3-text-black"><i class="fa fa-child fa-fw
-          w3-margin-right"></i>Class: Thursday, October 17, 2024</h6> 
+          w3-margin-right"></i>Class: Thursday, October 10, 2024</h6> 
           <p><ul class="w3-ul">
-	      <li>tba</li>
+	      <li>Derivative at a point. The derivative function.</li>
 	      <li>Handouts: [<a href="./pdf/handout.2.2.c.pdf" target="_blank">Derivative at a Point</a>]
+		<!--[<a href="./pdf/handout.2.3.a.pdf" target="_blank">Graphing the Derivative Function</a>]-->
 		[<a href="./pdf/handout.2.4.a.pdf" target="_blank">Derivative Interpretations</a>]
+		<li>(On the second handout, we only did problem 2.)
 	      </li>
 	    </ul></p><hr class="day">
         </div>
 	
         <div class="w3-container">
           <h6 class="w3-text-black"><i class="fa fa-paperclip fa-fw
-          w3-margin-right"></i>Assignment: Friday, October 18, 2024</h6>
+          w3-margin-right"></i>Assignment: Friday, October 11, 2024</h6>
           <p class="w3-text-pink"><ul class="w3-ul">
 	      <li><a href="./pdf/homework.04.pdf" class="w3-xlarge w3-text-homework"
-	      target="_blank"><b>Homework 05</b></a>, due Friday, October 18, 2024</li>
+	      target="_blank"><b>Homework 04</b></a>, due Friday, October 11, 2024</li>
 	</ul></p></div>
+
+	        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-paperclip fa-fw
+          w3-margin-right"></i>Assignment: Friday, October 11, 2024</h6>
+          <p class="w3-text-pink"><ul class="w3-ul">
+	      <li><a href="./pdf/field_guide.pdf" class="w3-xlarge w3-text-homework"
+	      target="_blank"><b>Field Guide to Functions</b></a>, due Friday, October 11, 2024</li>
+		</ul></p></div>
 	
 	<hr class="week">
 
