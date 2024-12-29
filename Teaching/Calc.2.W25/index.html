@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Thermodynamics | W25 | College of the Atlantic</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+<link rel="stylesheet" href="./w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<script src="https://kit.fontawesome.com/905fa5e9e8.js" crossorigin="anonymous"></script>-->
+<!--<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Courier New", monospace;
+  letter-spacing: 3px;
+}-->
+
+.w3-bar .w3-button {
+  padding: 10px;
+}
+
+</style>
+</head>
+<body>
+  
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-top w3-card" id="myNavbar">
+      <a href="#home" class="w3-bar-item w3-button w3-wide">Top
+	<i class="fa fa-arrow-circle-up"></i></a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+	<a href="#info" class="w3-bar-item w3-button">
+	  <i class="fa fa-question"></i> Basic Info</a>
+	<a href="#axioms" class="w3-bar-item w3-button">
+	  <i class="fa fa-asterisk"></i> Axioms</a>
+	<a href="#about" class="w3-bar-item w3-button">
+	  <i class="fa fa-thumbs-up"></i> More Info</a>
+	<a href="#schedule" class="w3-bar-item w3-button">
+	  <i class="fa fa-calendar"></i> Schedule</a>
+      </div>
+
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+	<i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+    <a href="#info" onclick="w3_close()" class="w3-bar-item w3-button">Basic Info</a>
+    <a href="#axioms" onclick="w3_close()" class="w3-bar-item w3-button">Axioms</a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">More Info</a>
+    <a href="#schedule" onclick="w3_close()" class="w3-bar-item w3-button">Schedule</a>
+  </nav>
+  
+  <!-- Header -->
+  <header class="w3-panel w3-center"
+	  style="font-family: 'Courier New', monospace;padding:34px ;background-color:#1f4e78; color:#fff"
+	  id="home">
+    <h1 class="w3-x large">Thermodynamics</h1>
+    <h2 class="w3-x large"><a href="../../index.html">David P. Feldman</a></h2>
+    <h5>College of the Atlantic, Winter 2025</h5>
+  </header>
+
+  <!-- Page content -->
+  <div class="w3-content" style="max-width:1300px">
+    
+    <div class="w3-container w3-padding-64 w3-large" id="info">
+      <h1>Basic Info</h1>
+      
+      <h4>Linear Algebra: Official Course Description</h4>
+      <p>Thermodynamics is the area of physics concerned with the
+      behavior of very large collections of particles. Examples
+      include the water molecules in glass of water, the electrons in
+      a wire, or the photons given off by a light bulb. Thermodynamics
+      studies properties of collections of particles that are largely
+      independent of the particles' detail, for example, the tendency
+      for heat to flow from a hot object to a cold one. This course
+      will begin with a treatment of the first law of thermodynamics
+      and basic thermal physics. Topics to be covered include the
+      conservation of energy, heat and work, the ideal gas, the
+      equipartition of energy, heat capacities, and latent heat. We
+      will then move to the second law of thermodynamics, beginning
+      with a statistical definition of entropy. This will require
+      learning some combinatorics (a mathematical technique for
+      counting) and approximation methods for working with very large
+      numbers. This statistical approach will enable us to understand
+      the origin of the second law of thermodynamics, and will lead
+      naturally to statistical definitions of temperature, pressure,
+      and chemical potential. We will then turn our attention to two
+      broad areas of application. The first of these is heat engines
+      and refrigerators, including heat pumps. The second set of
+      applications involve free energy and chemical
+      equilibrium. Depending on student interest, we will cover
+      batteries and fuel cells, phase transitions, adiabatic lapse
+      rates in meteorology, and nitrogen fixation. Thermodynamics is a
+      broadly applicable field of physics, and so this course should
+      be of relevance to students whose interests are in almost any
+      area of science or engineering, as well as those who wish to
+      gain a general introduction to a field that is one of the
+      pillars of modern physical science. Evaluation will be based on
+      weekly problem sets and a final research paper, presentation, or
+      lab project. Level: Intermediate. Prerequisites: Calculus II and
+      either a college-level physics or chemistry class. Course Limit:
+      20. Lab Fee: None. Meets the following degree requirements: QR
+      ES </p> 
+
+      <hr class="day"></hr>
+      
+      <h4>Who/when/where</h4>
+      <p>
+	<ul>
+	  <li><b>Instructor</b>: <a href="../../index.html">Dave Feldman</a></li>
+	  <li><b>Pronouns</b>: he/him/his</li>
+	  <li><b>Meeting Times</b>: Monday, Wednesday, Thursday, 9:15 - 10:30</li>
+	  <li><b>Location</b>: Room 103, Center for Human Ecology
+	  <li><b>Help Sessions</b>:
+	    <a href="https://calendar.google.com/calendar/u/0?cid=Y191cjNya3VtMm1ibzBwOWQ5Y29hb2R0NHF2a0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t"
+	       target="_blank">Help Session Schedule</a> (updated frequently) </li>
+	  <li><b>Individual Meetings</b>: By appointment </li>
+	  <li><b>Tutors</b>: None</li>
+      </ul></p>
+    </div>
+    
+    <hr>
+    
+    <!-- Axioms Section -->
+    <div class="w3-container w3-padding-32 w3-large" id="axioms">
+      <h1>Axioms</h1>
+      <p> In mathematics, axioms are propositions that are assumed to be
+	true. The mathematician Federico Ardila-Mantilla has written four
+	axioms that guide the work he does in education and
+	outreach. Federico's axioms resonate strongly with me. They are:
+	<ol>
+	  <li>Mathematical potential is distributed equally among
+	    different groups, irrespective of geographic, demographic, and
+	    economic boundaries.</li> 
+	  <li>Everyone can have joyful, meaningful, and empowering
+	    math experiences.</li> 
+	  <li>Math is a powerful, malleable tool that can be
+	    shaped and used differently by various communities to serve their
+	    needs.</li>
+	  <li>Every student deserves to be treated with dignity and
+	    respect.</li>
+	</ol>
+      </p>
+      <h3>Community Agreement</h3>
+      <p> Taking the above axioms as a starting point, let's think about
+	what type of community we want to create this term. Here is a
+	community agreement based on one written by Federico
+	Ardila-Mantilla.
+	<blockquote>
+          This course aims to offer a joyful, meaningful, and
+          empowering experience to every participant; we will build
+          that rich experience together by devoting our strongest
+          available effort to the class. You will be challenged and
+          supported. Please be prepared to take an active, critical,
+          patient, creative, and generous role in your own learning and
+          that of your classmates.  
+	</blockquote>
+      </p>
+      
+    </div>
+    <hr>
+
+<!--
+   <div class="w3-container w3-padding-32 w3-large" id="axioms">
+     <h1><i class="fa fa-heart fa-fw
+          w3-margin-right"></i>Acknowledgments</h1>
+     <p>This course is closely based on the introductory linear algebra
+     class (<a href="https://www.gvsu.edu/catalog/course/mth-204.htm"
+     target="_blank">MTH 204</a>) offered by
+     <a href="https://www.gvsu.edu/math/" target="_blank">Grand Valley
+     State University</a>.  I am grateful to
+     <a href="https://faculty.gvsu.edu/boelkinm/Home/MB.html"
+     target="_blank">Professor Matt Boelkins</a>, who shared his
+     syllabus and assignments for MTH204. These teaching materials
+     were developed collaboratively by the team of faculty at Grand
+     Valley who rotate through teaching Linear Algebra.</p>
+
+     <p>Huge thanks to <a href="https://davidaustinm.github.io/"
+     target="_blank">David Austin</a> who has made his excellent
+     textbook, <a href="" target="_blank">Understanding Linear
+     Algebra</a> freely available online. David is a professor at
+     Grand Valley State. (Btw, Matt has also written an open textbook
+     series, <a href="https://activecalculus.org/"
+     target="_blank">Active Calculus</a>, that looks great. I will
+     consider using it next fall when I teach Calculus.) 
+     </p>
+     
+   </div>
+   <hr>
+   -->
+   
+    <!-- Axioms Section -->
+    <div class="w3-container w3-padding-32 w3-large" id="about">
+      <h1>Course Information and Advice</h1>
+
+      <h3><i class="fa fa-building-o fa-fw
+      w3-margin-right"></i>Structure and Pacing</h3>
+      <p>
+	<ol>
+	  <li>We will closely
+	    follow <a href="https://physics.weber.edu/thermal/"
+		      target="_blank">An Introduction to Thermal Physics</a> by
+	    <a href="https://physics.weber.edu/schroeder/"
+	       target="_blank">Daniel Schroeder</a>. I would like to
+	    cover most of chapters 1-4 and a little bit of chapter 5.</li>
+	  <li>The only work for this course will be weekly homework
+	    assignments. These problem sets will likely be longer,
+	    more challenging, and funner than those you've done for
+	    other classes.</li>
+	  <li>All work can be <b>resubmitted without penalty</b> up to
+	    (roughly) a few weeks after I return it to you.</li>
+	</ol>
+      </p>
+
+      <p>
+	This is my fifth time teaching this course, so I have a pretty
+	good feel for how it will go. There are three parts to the
+	class, each with a somewhat different vibe:</p>
+      <ul>
+	<li>Chapter 1. This will be conservation of energy in various
+	guises. Most of this material will be new to you, but it will
+	  have a familiar feel.</li>
+	<li>Chapter 2-3. Here we will encounter entropy and the second
+	  law of thermodynamics in various guises. This material will
+	  be new, some of the math will be new, and it will be a bit
+	  abstract and big-picture.</li> 
+	<li>Chapter 4-5. Here we will apply all the new stuff from
+	chapters 2-3 to a wide array of phenomena. This will be the
+	most interesting, challenging, and perhaps the most rewarding
+	  part of the class.</li>
+      </ul>
+      <hr class="day"></hr>
+      
+      <h3><i class="fa fa-thermometer-half fa-fw w3-margin-right"></i>What is Thermodynamics?</h3>
+      <p>
+	Wikipedia's entry (from December 2024)
+	on <a href="http://en.wikipedia.org/wiki/Thermodynamics"
+	target="_blank">thermodynamics</a> has a good summary: 
+	
+	<blockquote>
+	  Thermodynamics is a branch of physics that deals with heat,
+	  work, and temperature, and their relation to energy,
+	  entropy, and the physical properties of matter and
+	  radiation. The behavior of these quantities is governed by
+	  the four laws of thermodynamics, which convey a quantitative
+	  description using measurable macroscopic physical
+	  quantities, but may be explained in terms of microscopic
+	  constituents by statistical mechanics. Thermodynamics
+	  applies to a wide variety of topics in science and
+	  engineering, especially physical chemistry, biochemistry,
+	  chemical engineering and mechanical engineering, but also in
+	  other complex fields such as meteorology.
+	</blockquote>
+      </p>
+      
+      <p class="no-box">This course covers a fairly standard set of
+      thermodynamics
+      topics. The <a href="https://physics.weber.edu/thermal/"
+      target="_blank">book</a> we'll be using is excellent; I think it
+      is clear, covers a good set of topics, and writing is informal,
+      concise, welcoming, and extremely effective. There are different
+      flavors of thermodynamics courses, usually catering to students
+      in a particular major: physics, chemistry, chemical engineering,
+      atmospheric science, and so on. Our textbook is intended for
+      physics majors, but includes a fair amount of chemistry. I think
+      this course will serve as a good foundational thermo class for
+      everyone, regardless of their particular reason(s) for learning
+      the subject.</p> 
+
+      <p>One of the things I really like about the study of
+      thermodynamics is that it is a foundational area of physics that
+      explains why some reaction can only occur in one direction, thus
+      perhaps explaining why time moves only forward and not
+      left-and-right like space. Thermodynamics also explains practical
+      things, like how refrigerators and heat pumps work, and why
+      little bubble form in a glass of cool water after it sits in
+      room temperature for a while.</p>
+
+      
+      <hr class="day"></hr>
+      <h3><i class="fa fa-paperclip fa-fw w3-margin-right"></i>Stuff about Homework</h3><p>
+      <ol>
+	<li>There will be an assignment due almost every Friday. It is 
+	  essential that you do these assignments, as this is how one learns
+	  math, and also this is most of what your evaluation will be based
+	  on.</li> 
+	<li><i class="fa fa-question-circle"></i>
+	<i class="fa fa-exclamation-circle"></i>
+	I think it would be best to not use google classroom to
+	submit homework, but instead to submit the assignments on
+	actual pieces of paper, like in olden times. But let's
+	discuss this.</li>
+	<li>If you need extra time for one or two of the homework
+	  assignments, it's not a big deal. But be mindful to not fall
+	  farther behind every week. </li>
+	<li>I do not expect all of the homework assignments to be easy; I
+	  don't expect you to be able to sit down and do them easily the first
+	  time. Don't let yourself get frustrated. I strongly suggest working
+	  with others and seeking help if you need it.  
+	<li>You are strongly encouraged to work together on homework. You
+	  can also consult me, class tutors, other faculty, friends,
+	  and family. However, the homework you hand in should represent
+	  your own understanding.</li>
+	<li>As I plan on sending out homework assignments and other
+	  information via email/google classroom, it is important that you
+	  check your email/classroom regularly.</li>
+      </ol>
+      </p>
+
+      <hr class="day"></hr>
+      <h3><i class="fa fa-commenting-o fa-fw w3-margin-right"></i>Other Thoughts</h3>
+      <p>
+	<ol>
+	  <li><i class="fa fa-question-circle"></i> <i class="fa fa-exclamation-circle"></i> More than
+	    any class I teach, in Thermodynamics I find myself
+	    lecturing at the board. This has worked well in the
+	    past. However, we could consider partially "flipping" the
+	    class. I.e., doing reading before we cover a topic in
+	    class, or watching videos from the 2021 hybrid version of
+	    the course.</li>
+	  <li>You will want to have at your disposal a scientific
+	    calculator or phone/tablet app. I strongly suggest an
+	    actual calculator. You do not need a graphing calculator
+	    for this course (or, in my opinion, ever).</li> 
+	  <li><i class="fa fa-question-circle"></i>
+	    <i class="fa fa-exclamation-circle"></i>
+	      This class is medium-sized, and there are no teaching
+	    assistants. We will have to figure out how optimally
+	    schedule help sessions. I suspect this will take a week or
+	      two to figure this out.</li>
+	  <li>I would also encourage you to schedule some group work
+	    times without me.</li>
+	  <li> <i class="fa fa-exclamation-circle fa-fw"></i>
+	      Some of the problems in this course are multi-step
+	  problems for which the solution path will not be immediately
+	  clear. Some problems may take several pages to work
+	  through. My hope is that this is challenging and
+	    rewarding. </li>
+	</ol>
+      </p>
+
+      <hr class="day"></hr>
+      <h3><i class="fa fa-life-saver fa-fw
+		    w3-margin-right"></i>Help Sessions</h3>
+      <p>
+	I will have a handful of help sessions
+	every week. You are warmly invited and encouraged to attend these
+	sessions. Help sessions are relaxed, informal, and hopefully fun.
+	Things that happen at help sessions: 
+	<ol>
+	  <li>I am around to offer help on the homework.</li>
+	  <li>Some students do most of the homework while at a help
+	    session.  They work through problems alone or with others, and
+	    find it comforting to know that help is immediately at hand if
+	    needed.</li>
+	  <li>Others do the problems at home and come to the help session with 
+	    specific questions.</li>
+	  <li>Some students work in groups at help sessions, others work more
+	    or less alone.</li>
+	  <li>Help sessions are also a chance to ask general questions about
+	    the course.  Conversations also sometimes wander into other areas:
+	    politics, the state of the world, what's for dinner, what classes
+	    are offered next term, and so on.</li>
+	  <li>Help sessions are a great way to meet other students in the
+	    class.</li>
+	  <li>Often there will be coffee/tea and/or snacks.</li>
+	</ol>
+      </p>
+
+      <hr class="day"></hr>
+      
+      <h3><i class="fa fa-user-o fa-fw w3-margin-right"></i>Individual Meetings</h3>
+      <p>I am happy to meet with students one-on-one.  The best way to set
+	up an appointment is to send an email.  There are lots of reasons
+	why you might want to meet with me: 
+	<ol>
+	  <li>You have some in-depth questions that there isn't time to
+	    explore in a help session.</li>
+	  <li>You have a question that you think is too basic or you're
+	    uncomfortable asking in a help session.  (You shouldn't be
+	    uncomfortable, since, as the saying goes, there are no dumb
+	    questions!  But I understand that you might be uncomfortable
+	    nevertheless.)</li>
+	  <li>You want to explore possibilities for energy projects on campus
+	    or in the community.</li>
+	  <li>You want to discuss some challenges you're facing in the class.
+	  <li>You want to talk about other classes in energy or physics, or
+	    internships, senior projects, etc.
+	</ol>  
+	Please don't hesitate to reach out if there's anything you want to
+	discuss. You should also feel free to reach out to the
+	TAs. </p>
+
+      <hr class="day"></hr>
+
+      <h3><i class="fa fa-bullseye fa-fw w3-margin-right"></i>What your
+      Evaluation is Based on</h3> 
+      
+      <p>Your evaluation will be based on your performance on homework
+	assignments. I think there is much to be said against grades; I 
+	believe they often interfere with genuine, reflective learning. But
+	I am happy to assign grades if you wish. I do not have any quota of
+	A's, B's, etc. 
+      </p>
+
+      <hr class="day"></hr>
+
+      <h3><i class="fa fa-universal-access fa-fw w3-margin-right"></i>Diversity, Inclusion, and Belonging</h3>
+      <p>It is my intent that students from all
+	backgrounds and perspectives be well served by this course,
+	that students' learning needs be addressed both in and out of class,
+	and that the diversity that students bring to this class be viewed
+	as a resource, strength, and benefit. I aim to present
+	materials and activities that are respectful of diversity: gender,
+	sexuality, disability, age, religion, socioeconomic status,
+	ethnicity, race, and culture.</p>
+      
+      <p>Learning about diverse perspectives and identities is an ongoing
+	process. I am always looking to learn more about power and privilege
+	and the harmful effects of racism, sexism, homophobia, classism, and
+	other forms of discrimination and oppression.  Your suggestions are
+	encouraged and appreciated. Please let me know ways to
+	improve the effectiveness of the course for you personally, or for
+	other students or student groups. If something was said or done in
+	class (by anyone, including me) that made you feel uncomfortable,
+	please let me know.  You can also reach out to Provost Ken
+	Hill or Associate Dean Kourtney Collum.
+      </p>
+
+      <hr class="day"></hr>
+
+      <h3><i class="fa fa-institution fa-fw
+		    w3-margin-right"></i>Statements about Academic Honesty
+	  and Hours of Academic Engagement</h3>
+      <p>I am required to remind you that: "By enrolling in an academic
+	    institution, a student is subscribing to common standards of
+	    academic honesty. Any cheating, plagiarism, falsifying or
+	    fabricating of data is a breach of such standards. A student must
+	    make it his or her responsibility to not use words or works of
+	    others without proper acknowledgment. Plagiarism is unacceptable and
+	    evidence of such activity is reported to the academic dean or
+	    his/her designee.  Two violations of academic integrity are grounds
+	    for dismissal from the college. Students should request in-class
+	    discussions of such questions when complex issues of ethical
+	    scholarship arise."</p>
+	    
+	  <p>I am also required to say that: You should expect to
+	    spend 150 hours of academically engaged time on this
+	    course, or 15 hours per week. In addition to 4.5 hours per 
+	    week in class or discussion section, in a typical week
+	    you'll spend 2 hours reading and preparing for class and
+	    8.5 hours attending help sessions and completing
+	    assignments. </p> 
+
+
+	  
+    </div>
+    <hr></hr>
+
+
+    <!-- ********************************************************************** -->
+    <!-- schedule Section -->
+    <div class="w3-container w3-padding-32 w3-large" id="schedule">
+      <h1>  <i class="fa fa-calendar fa-fw
+          w3-margin-right"></i>Schedule</h1>
+
+      <h2><i class="fa fa-exclamation fa-fw"></i>Important Links</h2>
+      <div class="w3-container">
+	<ul>
+	  <li><a href="https://calendar.google.com/calendar/u/0?cid=Y191cjNya3VtMm1ibzBwOWQ5Y29hb2R0NHF2a0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t"
+	  target="_blank"><b>Schedule for Help Sessions</b></a>. Will vary
+	  some from week to week. </li>
+	  <li><a href="https://classroom.google.com/u/0/c/NzQyMjY1ODgyODk5"
+		 target="_blank"><b>Google Classroom</b></a>. This is where you'll upload homework.</li>
+	  <li><a href="./pdf/homework_expectations.pdf" target="_blank"><b>Homework Expectations and Guidelines</b></a>.</li>
+	</ul>
+      </div>
+      
+	<h2>Week 01</h2>
+
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw w3-margin-right"></i>Monday, January 6, 2025</h6>
+          <p><ul class="w3-ul">
+	      <li>Introductions and Logistics.</li>
+	      <li>Ideal gas law.</li>
+	    </ul></p><hr class="day">
+        </div>
+	
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw w3-margin-right"></i>Wednesday, January 8, 2025</h6> 
+          <p><ul class="w3-ul">
+	      <li>TBA</li>
+	    </ul></p><hr class="day">
+        </div>
+	
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw w3-margin-right"></i>Thursday, January 9, 2025</h6>
+          <p><ul class="w3-ul">
+	      <li>TBA</li>
+	    </ul></p><hr class="day">
+        </div>
+		
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-paperclip fa-fw
+          w3-margin-right"></i>Friday, January 10, 2025</h6>
+          <p class="w3-text-homework"><ul class="w3-ul">
+	      <li><a href="./pdf/homework.01.pdf" class="w3-xlarge w3-text-homework"
+		     target="_blank"><b>Homework 01</b></a>, due
+		     Friday, January 10, 2025</li>
+	</ul></p></div>
+	
+	<hr class="week">
+
+	<h2>Week 02</h2>
+
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw w3-margin-right"></i>Monday, January 13, 2025</h6>
+          <p><ul class="w3-ul">
+	      <li>TBA.</li>
+	    </ul></p><hr class="day">
+        </div>
+	
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw w3-margin-right"></i>Wednesday, January 15, 2025</h6> 
+          <p><ul class="w3-ul">
+	      <li>TBA</li>
+	    </ul></p><hr class="day">
+        </div>
+	
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw w3-margin-right"></i>Thursday, January 16, 2025</h6>
+          <p><ul class="w3-ul">
+	      <li>TBA</li>
+	    </ul></p><hr class="day">
+        </div>
+		
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-paperclip fa-fw
+          w3-margin-right"></i>Friday, January 17, 2025</h6>
+          <p class="w3-text-homework"><ul class="w3-ul">
+	      <li><a href="./pdf/homework.01.pdf" class="w3-xlarge w3-text-homework"
+		     target="_blank"><b>Homework 02</b></a>, due
+		     Friday, January 17, 2025</li>
+	</ul></p></div>
+	
+	<hr class="week">
+
+	
+	<h2>Week 03</h2>
+
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw w3-margin-right"></i>Monday, January 20, 2025</h6>
+          <p><ul class="w3-ul">
+	      <li>TBA.</li>
+	    </ul></p><hr class="day">
+        </div>
+	
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw w3-margin-right"></i>Wednesday, January 22, 2025</h6> 
+          <p><ul class="w3-ul">
+	      <li>TBA</li>
+	    </ul></p><hr class="day">
+        </div>
+	
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw w3-margin-right"></i>Thursday, January 23, 2025</h6>
+          <p><ul class="w3-ul">
+	      <li>TBA</li>
+	    </ul></p><hr class="day">
+        </div>
+		
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-paperclip fa-fw
+          w3-margin-right"></i>Friday, January 24, 2025</h6>
+          <p class="w3-text-homework"><ul class="w3-ul">
+	      <li><a href="./pdf/homework.01.pdf" class="w3-xlarge w3-text-homework"
+		     target="_blank"><b>Homework 03</b></a>, due
+		     Friday, January 23, 2025</li>
+	</ul></p></div>
+	
+	<hr class="week">
+
+	
+	<h2>Week 04</h2>
+
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw w3-margin-right"></i>Monday, January 27, 2025</h6>
+          <p><ul class="w3-ul">
+	      <li>TBA.</li>
+	    </ul></p><hr class="day">
+        </div>
+	
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw w3-margin-right"></i>Wednesday, January 29, 2025</h6> 
+          <p><ul class="w3-ul">
+	      <li>TBA</li>
+	    </ul></p><hr class="day">
+        </div>
+	
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw w3-margin-right"></i>Thursday, January 30, 2025</h6>
+          <p><ul class="w3-ul">
+	      <li>TBA</li>
+	    </ul></p><hr class="day">
+        </div>
+		
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-paperclip fa-fw
+          w3-margin-right"></i>Friday, January 31, 2025</h6>
+          <p class="w3-text-homework"><ul class="w3-ul">
+	      <li><a href="./pdf/homework.01.pdf" class="w3-xlarge w3-text-homework"
+		     target="_blank"><b>Homework 04</b></a>, due
+		     Friday, January 131, 2025</li>
+	</ul></p></div>
+	
+	<hr class="week">
+
+	
+	<h2>Week 05</h2>
+
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw w3-margin-right"></i>Monday, February 3, 2025</h6>
+          <p><ul class="w3-ul">
+	      <li>TBA.</li>
+	    </ul></p><hr class="day">
+        </div>
+	
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw w3-margin-right"></i>Wednesday, February 5, 2025</h6> 
+          <p><ul class="w3-ul">
+	      <li>TBA</li>
+	    </ul></p><hr class="day">
+        </div>
+	
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw w3-margin-right"></i>Thursday, February 6, 2025</h6>
+          <p><ul class="w3-ul">
+	      <li>TBA</li>
+	    </ul></p><hr class="day">
+        </div>
+		
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-paperclip fa-fw
+          w3-margin-right"></i>Friday, February 7, 2025</h6>
+          <p class="w3-text-homework"><ul class="w3-ul">
+	      <li><a href="./pdf/homework.01.pdf" class="w3-xlarge w3-text-homework"
+		     target="_blank"><b>Homework 05</b></a>, due
+		     Friday, February 7, 2025</li>
+	</ul></p></div>
+	
+	<hr class="week">
+
+	
+	<h2>Week 06</h2>
+
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw w3-margin-right"></i>Monday, February 10, 2025</h6>
+          <p><ul class="w3-ul">
+	      <li>TBA.</li>
+	    </ul></p><hr class="day">
+        </div>
+	
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw w3-margin-right"></i>Wednesday, February 12, 2025</h6> 
+          <p><ul class="w3-ul">
+	      <li>TBA</li>
+	    </ul></p><hr class="day">
+        </div>
+	
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw w3-margin-right"></i>Thursday, February 13, 2025</h6>
+          <p><ul class="w3-ul">
+	      <li>TBA</li>
+	    </ul></p><hr class="day">
+        </div>
+		
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-heart fa-fw
+          w3-margin-right"></i>Friday, February 14, 2025</h6>
+          <p class="w3-text-homework"><ul class="w3-ul">
+	      <li><a href="./pdf/homework.01.pdf" class="w3-xlarge w3-text-homework"
+		     target="_blank"><b>Homework 06</b></a>, due
+		     Friday, February 14, 2025</li>
+	</ul></p></div>
+	
+	<hr class="week">
+
+	
+	<h2>Week 07</h2>
+
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw w3-margin-right"></i>Monday, February 17, 2025</h6>
+          <p><ul class="w3-ul">
+	      <li>TBA.</li>
+	    </ul></p><hr class="day">
+        </div>
+	
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw w3-margin-right"></i>Wednesday, February 19, 2025</h6> 
+          <p><ul class="w3-ul">
+	      <li>TBA</li>
+	    </ul></p><hr class="day">
+        </div>
+	
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw w3-margin-right"></i>Thursday, February 20, 2025</h6>
+          <p><ul class="w3-ul">
+	      <li>TBA</li>
+	    </ul></p><hr class="day">
+        </div>
+		
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-paperclip fa-fw
+          w3-margin-right"></i>Friday, February 21, 2025</h6>
+          <p class="w3-text-homework"><ul class="w3-ul">
+	      <li><a href="./pdf/homework.01.pdf" class="w3-xlarge w3-text-homework"
+		     target="_blank"><b>Homework 07</b></a>, due
+		     Friday, February 21, 2025</li>
+	</ul></p></div>
+	
+	<hr class="week">
+
+	
+	<h2>Week 08</h2>
+
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw w3-margin-right"></i>Monday, February 24, 2025</h6>
+          <p><ul class="w3-ul">
+	      <li>TBA.</li>
+	    </ul></p><hr class="day">
+        </div>
+	
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw w3-margin-right"></i>Wednesday, February 25, 2025</h6> 
+          <p><ul class="w3-ul">
+	      <li>TBA</li>
+	    </ul></p><hr class="day">
+        </div>
+	
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw w3-margin-right"></i>Thursday, February 26, 2025</h6>
+          <p><ul class="w3-ul">
+	      <li>TBA</li>
+	    </ul></p><hr class="day">
+        </div>
+		
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-paperclip fa-fw
+          w3-margin-right"></i>Friday, February 27, 2025</h6>
+          <p class="w3-text-homework"><ul class="w3-ul">
+	      <li><a href="./pdf/homework.01.pdf" class="w3-xlarge w3-text-homework"
+		     target="_blank"><b>Homework 08</b></a>, due
+		     Friday, February 27, 2025</li>
+	</ul></p></div>
+	
+	<hr class="week">
+
+	
+	<h2>Week 09</h2>
+
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw w3-margin-right"></i>Monday, March 3, 2025</h6>
+          <p><ul class="w3-ul">
+	      <li>TBA.</li>
+	    </ul></p><hr class="day">
+        </div>
+	
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw w3-margin-right"></i>Wednesday, March 5, 2025</h6> 
+          <p><ul class="w3-ul">
+	      <li>TBA</li>
+	    </ul></p><hr class="day">
+        </div>
+	
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw w3-margin-right"></i>Thursday, March 6, 2025</h6>
+          <p><ul class="w3-ul">
+	      <li>TBA</li>
+	    </ul></p><hr class="day">
+        </div>
+		
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-paperclip fa-fw
+          w3-margin-right"></i>Friday, March 7, 2025</h6>
+          <p class="w3-text-homework"><ul class="w3-ul">
+	      <li><a href="./pdf/homework.01.pdf" class="w3-xlarge w3-text-homework"
+		     target="_blank"><b>Homework 09</b></a>, due
+		     Friday, March 9, 2025</li>
+	</ul></p></div>
+	
+	<hr class="week">
+
+		
+	<h2>Week 10</h2>
+
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw w3-margin-right"></i>Monday, March 10, 2025</h6>
+          <p><ul class="w3-ul">
+	      <li>TBA.</li>
+	    </ul></p><hr class="day">
+        </div>
+	
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw w3-margin-right"></i>Wednesday, March 12, 2025</h6> 
+          <p><ul class="w3-ul">
+	      <li>TBA</li>
+	    </ul></p><hr class="day">
+        </div>
+	
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw w3-margin-right"></i>Thursday, March 13, 2025</h6>
+          <p><ul class="w3-ul">
+	      <li>TBA</li>
+	    </ul></p><hr class="day">
+        </div>
+		
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-paperclip fa-fw
+          w3-margin-right"></i>Friday, March 13, 2025</h6>
+          <p class="w3-text-homework"><ul class="w3-ul">
+	      <li><a href="./pdf/homework.01.pdf" class="w3-xlarge w3-text-homework"
+		     target="_blank"><b>Homework 10</b></a>, due
+		     Friday, March 13, 2025</li>
+	</ul></p></div>
+	
+    </div>
+
+    <hr>
+    <div class="w3-container w3-padding-64 w3-large" id="info">
+    <p>
+      The building in which we gather for this class, and all of
+      College of the Atlantic, is located on traditional lands of the
+      Wabanaki people. The four Native American tribes in Maine today
+      are the Maliseet, Micmac, Penobscot, and Passamaquoddy,
+      collectively referred to as the Wabanaki. I believe it is important
+      to acknowledge that our presence on this land entangles us in the
+      web of colonialism, past and present. The future, however, is
+      still unwritten.</p> 
+    
+    </div>
+
+  </div>
+  
+    <!-- End page content -->
+  </div>
+
+<!-- Footer -->
+  <footer  class="w3-center"
+	style="padding:7px ;background-color:#00a3e8; color:#fff">
+<!--  class="w3-center w3-light-grey w3-padding-16" style="background-color:#d8cac2!important">-->
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp"
+  title="W3.CSS" target="_blank"
+  class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+
+</body>
+</html>
+
