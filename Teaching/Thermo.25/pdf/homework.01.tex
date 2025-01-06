@@ -1,0 +1,90 @@
+\documentclass[12pt]{article}
+\oddsidemargin=0.0in
+\evensidemargin=0.0in
+\textwidth=6.5in
+\topmargin=-0.35in
+\textheight=9in
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+%\usepackage{doublespace}
+ 
+\begin{document}
+\pagestyle{empty}
+ 
+\begin{center}
+{\LARGE {\bf Homework One}}\\
+\bigskip
+{\Large {\bf Thermodynamics}}\\
+\bigskip
+{\Large {\bf College of the Atlantic}}\\
+\bigskip
+{ {\bf Due Friday, January 10, 2025}}\\ 
+\end{center}
+\medskip
+
+
+\noindent All problems are from the textbook, unless otherwise noted. 
+
+\begin{enumerate}
+\setlength{\itemsep}{-1mm}
+  \item 1.4
+%  \item 1.9
+  \item 1.11
+  \item 1.12
+  \item 1.14
+  \item This is a problem based on question 1.16 from the textbook.
+    The goal is to use Newton's second law ($\vec{F}_{\rm net} =
+    m\vec{a}$) and the ideal gas law to derive the barometric
+    equation.  To do so, consider a slab of air with a thickness of
+    $\Delta z$ at rest at a height $z$ above the surface of the earth.
+    Denote by $M$ the mass of the air in the slab.  Let $A$ be the
+    horizontal area of the slab.  
+    \begin{enumerate}
+    \item Use Newton's law to derive an expression for
+      $\frac{dP}{dz}$, the rate at which pressure changes with
+      altitude.  \emph{Hints:}
+      \begin{itemize}
+      \item The derivative is defined as:
+        \begin{equation}
+          \frac{dP}{dz} \, = \, \lim_{\Delta z \rightarrow 0}
+          \frac{P(z+\Delta z) - P(z)}{\Delta z} \;.
+        \end{equation}
+      \item There are three forces acting on the slab.
+      \end{itemize}
+      \item Use your answer to the previous problem and the ideal gas
+        law to show that:
+        \begin{equation}
+          \frac{dP}{dz} \, = \, -\frac{mg}{kT}P \;,
+          \label{eq:barometric}
+          \end{equation}
+        where $m$ is the average mass of the air molecules.  This
+        equation is known as the barometric equation.
+      \item Show that, assuming that $T$ is constant, the solution to
+        Eq.~(\ref{eq:barometric}) is given by:
+        \begin{equation}
+          P(z) \, = \, P(0) e^{-mgz/kT} \;,
+          \label{eq:solution}
+          \end{equation}
+        where $P(0)$ is the pressure at sea level.
+      \item Use Eq.~(\ref{eq:solution}) to calculate the pressure, in
+        atmospheres, at the following locations:
+        \begin{enumerate}
+        \item Cadillac Mountain
+        \item Katahdin Mountain
+        \item Nevado Huascar\'an
+        \item Cerro El Pital
+        \item The Zugspitze
+        %\item Mount Elbrus
+        %\item Гора Эльбрус
+        \end{enumerate}
+        Assume that the pressure at sea level is $1$ atm. 
+    \end{enumerate}
+
+\end{enumerate}
+
+
+
+
+
+
+\end{document}
