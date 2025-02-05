@@ -1,0 +1,87 @@
+\documentclass[12pt]{article}
+\oddsidemargin=0.0in
+\evensidemargin=0.0in
+\textwidth=6.5in
+\topmargin=-0.35in
+\textheight=9in
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage[normalem]{ulem}
+%\usepackage{doublespace}
+ 
+\begin{document}
+\pagestyle{empty}
+ 
+\begin{center}
+{\LARGE {\bf Homework Five}}\\
+\medskip
+{\Large {\bf Thermodynamics}}\\
+\medskip
+{\Large {\bf College of the Atlantic}}\\
+\medskip
+{ {\bf Due Friday, Feb 7, 2025}}\\  
+\end{center}
+\medskip
+
+
+\noindent All problems are from the textbook, unless otherwise stated. 
+
+
+\begin{enumerate}
+  \setlength{\itemsep}{4mm}
+
+\item Deriving a useful approximation.
+  \begin{enumerate}
+  \item What is the derivative of $\ln(1+x)$?
+  \item Evaluate this derivative for $x=0$.
+  \item Figure out the equation of the line tangent to $\ln(1+x)$ at
+    the point $x=1$. You should find that the equation of the tangent
+    line is simply $y=x$.
+  \item You have thus derived the approximation we've used in class
+    repeatedly over the last several days:
+    \begin{equation}
+      \ln(1+x) \, \approx x \;,
+      \label{eq:approx}
+    \end{equation}
+    which is valid for $|x|\ll 1$.  
+    \item Check the accuracy of the approximation in
+      Eq.~(\ref{eq:approx}) for $x=0.1$, $x=0.01$, and
+      $x=0.001$. I.e., for each value of $x$ evaluate the left-hand
+      side of Eq.~(\ref{eq:approx}) using a calculator, and compare it
+      two the right-hand side.
+  \end{enumerate}
+
+  
+\item Suppose you flip $1000$ coins.
+  \begin{enumerate}
+    \item Write down an expression for the multiplity of the
+      macrostate for $500$ heads and $500$ tails.
+    \item Write down an expression for $\Omega_{\rm all}$, the total
+      number of microstates. (I.e., the total number outcomes that can
+      occur if you flip $1000$ coins.
+    \item Determine the probability of the macrostate with $500$ heads
+      and $500$ tails. Do so by using Sterling's approximation:
+      \begin{equation}
+        N! \approx N^Ne^{-N}\sqrt{2\pi N} \;.
+      \end{equation}
+  \end{enumerate}
+
+\item 2.21 (Use WolframAlpha or desmos or whatever you're used to
+  using to make plots.)
+
+\item 2.26
+
+\item {\bf Optional:} 2.17. In this problem you'll determine an
+  expression for the multiplicity of an Einstin solid for $q <<
+  N$. Good practice using Sterling's approximation and the Taylor
+  expansion for the natural log, if that's your thing.
+
+  
+\end{enumerate}
+
+
+
+
+
+
+\end{document}
