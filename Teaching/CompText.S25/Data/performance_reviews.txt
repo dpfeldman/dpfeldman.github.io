@@ -1,0 +1,37 @@
+
+
+
+We met in the fall of 2014 and instantly connected. We had both had long careers in technology, one as an operator and the other as an investor.  One of us had a PhD in computational linguistics and the other an MBA; one of us was starting a company and the other invested in startups. We were both working mothers and had both often been the only woman in the room at work. We had both experienced bias in the workplace and were both starting to think about how to change the systems that perpetuated such inequities.
+
+Those common experiences laid a foundation that’s helped us work together as founder and investor/board member. They also taught us that the words we choose—and the words chosen about us—are at the very core of the bias we face.
+
+When we met, few people were talking about bias in language, especially in the workplace. Now, spurred on partially by the Black Lives Matter and #MeToo movements, businesses are much more focused on prioritizing diversity, equity, and inclusion (DEI). There is broad recognition that diverse teams deliver better results and do better serving a diverse market, and that equity is a critical goal unto itself. But is that focus making its way into how people communicate at work? We decided it was time to gather fresh data to help us answer that question, and areunveiling the results <http://textio.com/feedback-bias> of that undertaking today.
+
+Our new Textio research report on language biases in the workplace— released on June 15 <http://textio.com/feedback-bias>— shows that we have a lot of room for improvement when it comes to making real behavioral change, despite increasing public commitment to embrace DEI.
+
+The report summarizes findings from two data sets. First, a wide range of people were surveyed this spring on the feedback they have received at work, with the goal of determining whether different groups of people are experiencing feedback differently. Second, the report shares findings on the language patterns within people’s real performance feedback documents—received by more than 25,000 people at over 250 different organizations. In combination, the data sets explore whether, and to what extent, different groups of people are getting different kinds of job feedback.
+
+Looking at both survey data and at the documented written feedback, some stark facts emerge: different groups of people /do/ get different kinds of feedback at work—with women, Black people, Latinx people, and older workers receiving the lowest-quality feedback. These findings cut across organizations, meaning that the patterns are not specific to just one entity or its feedback culture.
+
+Among the report’s noteworthy findings: Feedback to men tends to focus on the substance of their work, whereas women are 22% more likely to receive feedback on their personality. Women are also twice as likely to report being described as /collaborative/ and /nice,/ seven times more likely to report being described as /opinionated,/ and 11 times more likely to report being labeled as /abrasive./ By contrast, men are three times more likely to report being described as /confident,/ and almost four times as likely to report being described as /ambitious./
+
+Race and ethnicity also play a significant role in the feedback that people receive. Asian people are described as /brilliant /more than twice as often as white people, and more than four times as often as Black or Latinx people. The same is true for the term /genius/, which Asian people hear 1.7 times more often than white people, and 4.5 times more often than Black people. On the other hand, the term /overachiever/ —typically applied to strong performers transcending low expectations—is used to describe Black women 4.5 times more often than it is used to describe white men.
+
+In the eyes of the feedback provider, /brilliant geniuses/ are expected to perform well; /overachievers/ perform well despite having inherent limitations. The encoded message underneath these patterns is both biased and clear: Some groups are credited with more baseline talent than others. This plays out not just in written feedback, but in opportunities for challenging stretch assignments and promotion rates over time.
+
+Both personality descriptors like /nice /and so-called fixed mindset traits like /genius/ and /overachiever /(which imply innate characteristics) are unactionable feedback. In other words, they do not communicate how an employee might improve and reach the next level.
+
+Not surprisingly, the groups who receive the least actionable feedback also tend to be least represented in business overall, and in leadership in particular. For instance, for every piece of unactionable (or non- constructive) feedback received by white men under 40, women over 40 receive 4.4; Black women (across age groups), in contrast, receive 8.8.
+
+Why does this matter? Specific and constructive feedback about someone’s work performance offers them more opportunities to grow. When one group of people systematically receives feedback that is vague and biased by gender or ethnicity, we expect to see this manifest in disparate career opportunities and outcomes.
+
+In a 2021 gender and racial pay gap analysis published by the American Association of University Women, the highest-paid group, Asian men, earned more than double the lowest-paid groups, Black and Latinx women. In other words, the people that consistently receive the most problematic feedback at work also have the lowest pay. There may be no clearer indication of the impact of receiving low-quality feedback over a long period of time. In this context, it’s hardly surprising that the people receiving the least and lowest quality feedback are also consistently the least represented in corporate C-suites and boards.  
+
+The pervasiveness of language bias illustrates how challenging it is to get beyond good intentions and create lasting, systemic change in the workplace. For DEI policies to have real impact, it’s not enough to just state an intention; organizations need to build robust systems of accountability that set employees up for equitable behavior. These systems need to cut across the whole employee experience.
+
+On an individual manager level, there are some straightforward ways to ensure you’re providing less biased, more useful feedback to all. Avoid commenting on employees’ personality traits, and focus on behaviors.  Provide concrete examples. Recommend specific changes in employee behavior that would bring about better outcomes, and suggest new ways to approach challenging situations.
+
+Everyone deserves to get constructive, unbiased professional feedback.  Not everyone receives it. If we address the differences in the kinds of feedback that different people receive, we can begin to address even more significant workplace inequities: access to career growth, earnings power, advancement, and leadership.
+
+
+
