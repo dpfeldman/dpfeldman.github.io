@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Language, Power, and Computation: Computational Text Analysis</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+<link rel="stylesheet" href="./w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Sans-serif";
+  letter-spacing: 3px;
+}
+
+.w3-bar .w3-button {
+  padding: 10px;
+}
+
+</style>
+</head>
+<body>
+
+  <!-- colors from https://chatgpt.com/share/67d8c936-d828-800f-a4d7-4a7633cf5f8a -->
+
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-top w3-card" id="myNavbar">
+      <a href="#home" class="w3-bar-item w3-button w3-wide">Top
+	<i class="fa fa-arrow-circle-up"></i></a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+	<a href="#info" class="w3-bar-item w3-button">
+	  <i class="fa fa-question"></i> Basic Info</a>
+	<a href="#goals" class="w3-bar-item w3-button">
+	  <i class="fa fa-asterisk"></i> Goals + Expectation</a>
+	<a href="#about" class="w3-bar-item w3-button">
+	  <i class="fa fa-thumbs-up"></i> More Info</a>
+	<a href="#schedule" class="w3-bar-item w3-button">
+	  <i class="fa fa-calendar"></i> Schedule</a>
+		<a href="#resources" class="w3-bar-item w3-button">
+		  <i class="fa fa-folder"></i> Resources</a>
+      </div>
+
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+	<i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+    <a href="#info" onclick="w3_close()" class="w3-bar-item w3-button">Basic Info</a>
+    <a href="#goals" onclick="w3_close()" class="w3-bar-item w3-button">Goals + Expectations</a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">More Info</a>
+    <a href="#schedule" onclick="w3_close()" class="w3-bar-item
+						    w3-button">Schedule</a>
+    <a href="#resources" onclick="w3_close()" class="w3-bar-item w3-button">Resources</a>
+  </nav>
+  
+  <!-- Header -->
+  <header class="w3-panel w3-center"
+	  style="padding:34px ;background-color:#0A2540; color:#4effa0"
+	  id="home">
+    <h1 class="w3-x large">Language, Power, and Computation: Computational Text Analysis</h1>
+    <h2 class="w3-x large"><a href="../../" target="_blank">David P. Feldman</a></h2>
+    <h2 class="w3-x large"><a href="https://www.coa.edu/live/profiles/4234-palak-taneja"
+			      target="_blank">Palak Taneja</a></h2>
+    <h5>College of the Atlantic, Spring 2025</h5>
+  </header>
+
+  <!-- Page content -->
+  <div class="w3-content" style="max-width:1300px">
+    
+    <div class="w3-container w3-padding-64 w3-large" id="info">
+      <h1>Basic Info</h1>
+      
+      <p><b>Computational text analysis</b> (CTA) is an emerging field that
+      uses computation to analyze texts. CTA draws on the fields of
+      computer science, machine learning, computational linguistics,
+      and literary theory. Using machine learning and statistics,
+      computers can be used to explore how language is used in
+      particular contexts, including how frequently different words
+      are used, the sentiment of a word/text, as well as nuances in
+      the ways words are associated with one another. We will use CTA
+      to engage in "Distant Reading", a term coined by literary
+      theorist Franco Moretti. Distant Reading stands in contrast to
+      the more familiar "Close Reading": a deep engagement with a
+      particular text or a passage from a text. Distant Reading
+      engages not with a particular text, but with a large corpus of
+      texts: e.g., all novels published in English in the 20th
+      century, all articles written in The New York Times and The
+      Washington Post in the last decade, or the lyrics of all top-100
+      pop songs from the 1980s. Computational techniques applied to
+      large collections of texts allow one to ask broad questions
+      about structural and linguistic change over time and to look for
+      patterns of language use that would not be evident from analysis
+      of one or even several individual texts. Distant Reading, and
+      computational text analysis more generally, is not intended to
+      replace close reading, but to complement it. We will use CTA to
+      explore how power structures and systems such as race, gender,
+      and colonialism manifest themselves in bodies of text.</p>
+            
+      <p> This class meets the <b>QR</b> and the <b>HS</b>
+      requirements. It does not meet the ES requirement.</p> 
+      <hr class="day"></hr>
+      
+      <h4>Who/when/where</h4>
+      <p>
+	<ul>
+	  <li><b>Instructor</b>: Dave Feldman (he/him)</li>
+	  <li><b>Instructor</b>: Palak Taneja (she/her)</li>
+	  <li><b>Meeting Times</b>: Monday 2:35 - 4:00 + Thursday
+	    2:30 - 5:30</li>
+	  <li><b>Location</b>: Room 103, Center for Human Ecology
+	  <li><b>Help Sessions</b>:
+	    <a href="https://calendar.google.com/calendar/u/0?cid=Y191cjNya3VtMm1ibzBwOWQ5Y29hb2R0NHF2a0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t"
+	       target="_blank">Help Session Schedule</a> (updated frequently) </li>
+	  <li><b>Individual Meetings</b>: By appointment </li>
+	  <li><b>Teaching Assistant</b>: Shea Turner-Matthews</li>
+      </ul></p>
+<!--      <hr class="day"></hr> -->
+      
+<!--    <h4>Textbook</h4>
+    <p>We will more or less follow the first four chapters of this
+    <a href="https://www.amazon.com/Deborah-Hughes-Hallett-Calculus-Single-Multivariable/dp/B008UBBTME/"
+    target="_blank">textbook</a>. There is no need to buy a copy. I
+    have old copies of the book that you use if you want. (Btw, while
+    calculus is the mathematics of change, calculus itself hasn't
+    changed in a century or more. So there is no need to work with
+    the most current version of a calculus text.)</p>
+-->
+    </div>
+
+    
+    <hr>
+    
+    <!-- Goals Section -->
+    <div class="w3-container w3-padding-64 w3-large" id="goals">
+      <h1>Goals and Expectations</h1>
+      <ol>
+	<li>Stay physically and mentally healthy and maintain
+	  intellectual and personal connection during a potentially
+	  difficult time.</li>
+	<li>Gain a grounded introduction to various techniques in
+	  natural language processing, including word frequency
+	  analysis, semantic embeddings, sentiment analysis, and topic
+	  modeling.
+	  <ol>
+	    <li>Understand qualitatively how these methods work.</li>
+	    <li>Be able to implement these methods using existing
+	      python packages.</li>
+	    <li>Understand the strengths and limitations of these methods.</li>
+	    </ol></li>
+	<li>Gain experience posing research questions that can be
+	addressed with computational text analysis, particularly
+	  questions that explore how racism, sexism, nationalism, and
+	colonialism manifest in bodies of texts. This includes
+	situating and contextualizing your research and presenting
+	your results.</li>
+	<li>Improve your programming skills and analytical/computational thinking.</li> 
+	<li>Have fun while growing and learning.</li>
+      </ol>
+      
+      <h3>Community Agreement</h3>
+      <p> Let's think about what type of community we want to create this term. Here is a
+	community agreement based on one written by
+	<a href="https://fardila.com/" target="_blank">Federico Ardila-Mantilla</a>.
+	<blockquote>
+          This course aims to offer a joyful, meaningful, and
+          empowering experience to every participant; we will build
+          that rich experience together by devoting our strongest
+          available effort to the class. You will be challenged and
+          supported. Please be prepared to take an active, critical,
+          patient, creative, and generous role in your own learning and
+          that of your classmates.  
+	</blockquote>
+      </p>
+      
+      <h3>Participation and Engagement</h3>
+      
+      <p> We will do a lot of different things in our class sessions, including discussing readings. The readings we do will range widely in content,
+	style, and difficulty. There are several goals and motivations we have for discussions:</p> 
+      <ul>
+	<li>The discussions are a chance to figure out some things
+	  together. We will be doing some readings that are sometimes technically and/or theoretically
+	  difficult and subtle and, we hope, interesting. Working together, we can solidify and deepen our understanding. 
+	<li>In some of the discussions it will be particularly valuable to hear a diversity of opinions. We expect there
+	  will be a range of reactions and responses to some of what we read, and there is tremendous value to actively
+	  listening to and engaging with a diversity of thought and experiences. 
+      </ul>
+      
+      <p>Expectations for class discussions:
+	<ul>
+	  <li>Prepare. Do the reading and think about it. Expect to
+	  spend an hour or two preparing, although obviously this will
+	  vary a lot from reading to reading. Take notes, write down
+	  questions, and prepare responses to any questions we might
+	    have posed.</li>
+	  <li>Have a copy (electronic or paper) of the reading open so we can easily refer to the text if needed.</li>
+	  <!--<li>If you can work with a hard copy of the reading. I think
+	  it is easier to engage with a text via a physical copy, and
+	  as much as possible I don't want us to have laptops open
+	  when we meet. But regardless, be sure to have a copy, -->
+	  <li> Be present. Listen to others, respond, and contribute
+	  your own ideas and questions.  </li>
+	</ul>
+	
+      <p>We should all work to create an inviting atmosphere and
+      ensure that there is opportunity for all to contribute. At the
+      same time, there is no need for everybody to contribute
+      equally. It is natural for some people to talk more than others,
+      and we think this is normal and good. Also, we expect that
+      students will engage and contribute at different levels,
+      depending on prior coursework. Again, we see this diversity of
+      backgrounds as a strength and not a weakness; there are roles
+      for everyone to play. Asking good questions is as important as
+      providing answers.</p> 
+
+      <p>The point of discussions is not to figure out who is right and who
+	is wrong, but to help all of us get to a deeper, and not necessarily uniform, understanding. Disagreements can and will happen,
+	of course, but those disagreements will be investigated in a way that respects every participant's right to their own opinion.</p> 
+      
+      <p><b>Attendance policy: </b> Because of the workshop/seminar nature of this class, attendance and active participation are crucial.
+	As such, your attendance in class is necessary not only to your success but also to the success of your classmates. Therefore,
+	<b>you are allowed two unexcused absences without penalty</b>. Please don't hesitate to contact us in case of illness, emergencies,
+	and other extenuating circumstances.</p>
+
+      <h3>What your Evaluation is Based on</h3>
+      
+      <p>Your evaluation will be based loosely on the following:
+	<ul>
+	  <li>Class participation and engagement: 20 percent</li>
+	  <li>Short homework exercises, coding and otherwise: 20 percent</li>
+	  <li>Leading paper discussion: 10 percent</li>
+	  <li>Final project: 50 percent</li>
+	</ul>
+	In general, we recommend against grades; we believe they are more likely than not to interfere with genuine, reflective learning.
+	This is especially true in this class, where we have found that many of the class activities really don't lend themselves to
+	letter grading. We do not have any quota of A's, B's, etc. 
+      </p>
+
+
+      
+    </div>
+    <hr>
+
+    <!-- Aboout Section -->
+    <div class="w3-container w3-padding-64 w3-large" id="about">
+      <h1>More Course Info and Advice</h1>
+      <h3>Structure and Pacing</h3>
+      <p>
+	<ul>
+	  <li>It is perhaps best to think of this course as a
+	    workshop/seminar.
+	    <ul>
+	      <li>It is a <b>workshop</b> in that we'll be doing lots
+	      of experimenting, trying things out, and so on. Expect
+	      to be doing lots of coding, de-bugging, re-thinking,
+	      and so on, both in groups and individually.  </li>
+	      <li>It's a <b>seminar</b> in the sense that there will
+	      often be readings and/or exercises for class, and we'll
+	      spend class discussing and comparing ideas and results.</li> 
+	    </ul>
+	  </li>
+	  <li>Relatedly, we will not be following a textbook, nor will
+	    be there be many homework assignments to hand in.</li>
+	  <li>The syllabus is fluid and the pacing and exact topics we
+	  cover will depend on the students in the class.</li>
+	</ul>
+      </p>
+            
+      <hr class="day"></hr>
+
+      <h3>What this Class Isn't</h3><p>
+      <ol>
+	<li>This is not a class on artificial intellegence (whatever
+	  that means).</li>
+	<li>We will not cover large language models (LLMs) such as
+	  ChatGPT, etc.</li>
+	<li>This is not an introductory programing class, in the sense
+	that it's not designed to systematically cover a standard set
+	of introductory coding topics and skills. That said, the
+	course does cover some coding techniques, and so could be a
+	good chance to "level up" your coding skills -- including for
+	those who have no coding experience.</li>
+      </ol>
+      </p>
+
+
+      <hr class="day"></hr>
+      <h3>Help/Coding Sessions</h3>
+      <p>
+	Once we get into the more programming-intensive part of the
+	course, there will be help/coding sessions. 
+	You are warmly invited and encouraged to attend these
+	sessions. Help sessions are relaxed, informal, and hopefully fun.
+	Things that happen at help sessions: 
+	<ol>
+	  <li>The TAs and/or I am around to offer help on assignments
+	  and the final project.</li>
+	  <!--<li>Some students do most of the homework while at a help
+	    session.  They work through problems alone or with others, and
+	    find it comforting to know that help is immediately at hand if
+	    needed.</li>
+	  <li>Others do the problems at home and come to the help session with 
+	    specific questions.</li>-->
+	  <li>Some students work in groups at help sessions, others work more
+	    or less alone.</li>
+	  <li>Help sessions are also a chance to ask general questions about
+	    the course. Conversations also sometimes wander into other areas:
+	    politics, the state of the world, what's for dinner, what classes
+	    are offered next term, and so on.</li>
+	  <li>Help sessions are a great way to meet other students in the
+	    class.</li>
+	  <li>Almost always there will be coffee/tea and/or snacks.</li>
+	</ol>
+      </p>
+
+      <hr class="day"></hr>
+      
+      <h3>Individual Meetings</h3>
+      <p>We are happy to meet with students one-on-one. The best way to set
+	up an appointment is to send an email. There are lots of reasons
+	why you might want to meet: 
+	<ol>
+	  <li>You have some in-depth questions that there isn't time to
+	    explore in a help session.</li>
+	  <li>You have a question that you think is too basic or you're
+	    uncomfortable asking in a help session. (You shouldn't be
+	    uncomfortable, since, as the saying goes, there are no dumb
+	    questions!  But we understand that you might be uncomfortable
+	    nevertheless.)</li>
+	  <li>You want to explore possibilities for your project.</li>
+	  <li>You want to discuss some challenges you're facing in the class.
+	</ol>  
+	Please don't hesitate to reach out if there's anything you want to
+	discuss. You should also feel free to reach out to the
+	TA. </p>
+
+      <hr class="day"></hr>
+
+  
+      <h3>Diversity, Inclusion, and Belonging</h3>
+      <p>It is our intention that students from all
+	backgrounds and perspectives be well served by this course,
+	that students' learning needs be addressed both in and out of class,
+	and that the diversity that students bring to this class be viewed
+	as a resource, strength, and benefit. we aim to present
+	materials and activities that are respectful of diversity: gender,
+	sexuality, disability, age, religion, socioeconomic status,
+	ethnicity, race, and culture.</p>
+      
+      <p>Learning about diverse perspectives and identities is an ongoing
+	process. We are always looking to learn more about power and privilege
+	and the harmful effects of racism, sexism, homophobia, classism, and
+	other forms of discrimination and oppression. Your suggestions are
+	encouraged and appreciated. Please let us know of ways to
+	improve the effectiveness of the course for you personally, or for
+	other students or student groups. If something was said or done in
+	class (by anyone, including us) that made you feel uncomfortable,
+	please let me know. You can also reach out to Provost Ken
+	Hill or Associate Dean Kourtney Collum.
+      </p>
+
+      <hr class="day"></hr>
+
+      <h3>Gender-based discrimination: Title IX</h3>
+
+      <p>COA is dedicated to establishing and maintaining a safe and inclusive
+      campus where all community members have equal access to COA’s
+      educational and employment opportunities. We strive to promote
+      an environment of respect, safety, and well-being and will not
+      tolerate gender-based or sexual discrimination nor sexual
+      harassment of any kind. </p>
+
+      <p>As faculty members, we are considered "responsible employees"
+      and are required to share any disclosures of sexual or
+      gender-based misconduct with the Title IX Coordinator. This
+      includes disclosures of experiences that happened before an
+      individual's time at COA. This is to ensure that all community
+      members who have experienced sexual misconduct receive support,
+      options, and information about their rights and
+      resources. Community members are not obligated to respond to
+      this outreach, and this will not generate a report to law
+      enforcement. </p>
+
+      <p>For more information regarding Title IX, our institutional policy,
+	and to access helpful resources, visit COA’s Title IX website:
+	<a href="https://www.coa.edu/human-resources/title-ix" target="_blank">https://www.coa.edu/human-resources/title-ix</a>.</p> 
+
+      <p>If you have any questions or want to explore support and
+	assistance, please contact COA’s Title IX Coordinator,
+	Puranjot Kaur, at pkaur@coa.edu. Speaking to the Title IX
+	Coordinator does not automatically initiate a college
+	resolution. Instead, much of her work is around providing
+	supportive measures to ensure you can continue to engage in
+	COA's programs and activities.</p>
+      
+      <p><b>Note on Pregnancy and Related Conditions:</b></p>
+      
+      <p>Title IX prohibits discrimination based on sex in education
+	programs and activities. This prohibition on discrimination extends
+	to pregnancy and related conditions. Pregnancy and related
+	conditions encompass pregnancy, childbirth, miscarriage, termination
+	of pregnancy, false pregnancy, lactation, or recovery from any of
+	these conditions. </p> 
+      
+      <p>Students experiencing pregnancy or related conditions may
+	voluntarily initiate contact with the Title IX Coordinator to
+	request reasonable adjustments available under Title IX. Reasonable
+	adjustments may include but are not limited to: excusing student
+	absences; allowing students to make up missed work; opportunities to
+	move around during class; additional breaks; missing some or all of
+	a class session to nurse or pump, and to have the opportunity to
+	make up any work missed. Information on lactation space on campus
+	can be found here:
+	<a href="http://www.coa.edu/human-resources/title-ix/support-resources/lactation-space"
+	   target="_blank">http://www.coa.edu/human-resources/title-ix/support-resources/lactation-space</a>.</p> 
+      
+      <p>Students who believe they have been subject to discrimination
+	because of pregnancy or related condition status may file a
+	formal complaint with the Title IX Coordinator. If you are a
+	pregnant or parenting student, and you are in need of any
+	adjustments. please let me know at your earliest
+	convenience.</p> 
+      
+      <hr class="day"></hr>
+
+      
+      <h3>Statements about Academic Honesty and Hours of Academic
+    Engagement</h3>
+      <p><ul>
+	  <li>We are required to remind you that: "By enrolling in an academic
+	    institution, a student is subscribing to common standards of
+	    academic honesty. Any cheating, plagiarism, falsifying or
+	    fabricating of data is a breach of such standards. A student must
+	    make it his or her responsibility to not use words or works of
+	    others without proper acknowledgment. Plagiarism is unacceptable and
+	    evidence of such activity is reported to the academic dean or
+	    his/her designee.  Two violations of academic integrity are grounds
+	    for dismissal from the college. Students should request in-class
+	    discussions of such questions when complex issues of ethical
+	    scholarship arise."</li>
+	    
+	  <li>We are also required to say that: You should expect to
+	    spend 150 hours of academically engaged time on this
+	    course, or 15 hours per week. In addition to 4.5 hours per 
+	    week in class or discussion section, in a typical week
+	    you'll spend 2 hours reading and preparing for class and
+	    8.5 hours attending help sessions and completing
+	    assignments. </li> 
+	</ul></p>
+
+	  
+    </div>
+    <hr></hr>
+    
+    <!-- schedule Section -->
+    <div class="w3-container w3-padding-32 w3-large" id="schedule">
+      <h1>  <i class="fa fa-calendar fa-fw
+		      w3-margin-right"></i>Schedule</h1>
+      
+      <h2>Important Links</h2>
+      <div class="w3-container">
+	<ul>
+	  <li><a href="https://calendar.google.com/calendar/u/0?cid=Y191cjNya3VtMm1ibzBwOWQ5Y29hb2R0NHF2a0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t"
+	  target="_blank"><b>Schedule for Help Sessions</b></a>. Will vary
+	  some from week to week. 
+	  <li><a href="https://classroom.google.com/u/0/c/NzA1Mjg3NTAyMDA4"
+	  target="_blank"><b>Google Classroom</b> </a>.
+	</ul>
+      </div>
+
+      
+	
+	<h2>Week 01</h2>
+
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Class: Monday, March 31, 2025</h6>
+          <p><ul class="w3-ul">
+	      <li>Introductions to course and each other.</li>
+	      <li>Bag of Words Exercise.</li>
+	      <li>Handout: [<a href="./Docs/bag_of_words.pdf" target="_blank">Bag of Words Activity</a>] </li>
+	  </ul></p><hr class="day">
+	</div>
+
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Class: Thursday, April 3, 2025</h6> 
+          <p><ul class="w3-ul">
+	      <li>Before class, read the following:
+		<ol>
+		  <li><a href="https://the.ink/p/kamala-versus-daenerys"  target="_blank">Mayflower Mouth</a>,
+		    by <a href="http://www.anand.ly/" target="_blank">Anand Giridharadas</a>.</li> 
+		  
+		  <li><a href="https://www.wbur.org/onlyagame/2020/06/26/racial-stereotypes-sports-broadcast-bias"
+			 target="_blank">'Crafty' Vs. 'Sneaky': How Racial Bias In Sports
+		      Broadcasting Hurts Everyone</a>, by Karen Given, broadcast on WBUR, 27 June 2020. Based on
+		    <a href="https://scholarworks.utrgv.edu/cgi/viewcontent.cgi?article=1013&context=soc_fac"
+		       target="_blank">research</a> by
+		    <a href="https://twitter.com/SociologistRay" target="_blank">Rashawn Ray</a> and
+		    <a href="https://liberalarts.tamu.edu/sociology/profile/steven-foy/#:~:text=Steven%20Foy%20is%20an%20Associate,colorism%2C%20and%20mental%20health)."
+		       target="_blank">Steven Foy</a>.</li>
+
+		  <li><a href="https://openlab.citytech.cuny.edu/fywpd/files/2020/02/OneCorrectWay.pdf"
+			 target="_blank">There is one Correct Way of Writing and Speaking</a>, by Anjali Pattanayak, in
+		    <a href="https://textbooks.lib.wvu.edu/badideas/badideasaboutwriting-book.pdf"
+		       target="_blank">Bad Ideas about Writing</a>, Edited by
+		    Cheryl E. Ball & Drew M. Loewe, West Virginia University Libraries, 2017.</li> 
+
+		  <li><a href="https://modelviewculture.com/pieces/i-can-text-you-a-pile-of-poo-but-i-cant-write-my-name" target="_blank">
+		      I Can Text You A Pile of Poo, But I Can’t Write My Name</a> by Aditya Mukerjee, in <i>Model View Culture:
+		      A magazine about technology, culture and diversity</i>, Issue 18, March 2015.</li>
+
+		  <li><a href="https://fortune.com/2022/06/15/performance-reviews-bias-gender-race-language-textio-kieran-snyder-aileen-lee/"
+			 target="_blank">No more ‘abrasive,’ ‘opinionated,’ or ‘nice’: Why managers need to stop giving women and people of color feedback on their personality</a>
+		    by <a href="https://www.linkedin.com/in/kieran-snyder/" target="_blank">Kieran Snyder</a>
+		    and <a href="https://en.wikipedia.org/wiki/Aileen_Lee" target="_blank">Aileen Lee</a>, <i>Fortune</i>, Jun 15, 2022.</li>
+		</ol>
+	      </li>
+	      <li>Reading Questions:<ul>
+		  <li>What, if anything, particulary resonated with you?</li>
+		  <li>What questions do you have about the readings?</li>
+		  <li>What are some questions or topics you'd like to discuss as a class?</li>
+		  <li>Are there any intersections or similar themes across some or all of the essays?</li>
+	      </ul></li>
+	      <li>In class:<ol>
+		  <li>Discuss readings</li>
+		  <li>Introduction to Python!</li>
+	      </ol></li>
+	      <li>Notebooks and links:<ul>
+		  <li><a href="https://colab.research.google.com/drive/14cookW4sYs1uvNepLUh57GLY2YZ8vSJ5?usp=sharing" target="_blank">
+		      Introduction to python and google colab</a> </li>
+		  <li><a href="https://github.com/dpfeldman/dpfeldman.github.io/tree/master/Teaching/CompText.S25/Data" target="_blank">
+		      Directory of data files</a></li>
+		  <li><a href="https://colab.research.google.com/drive/1-0uprdRrponHN0fCbl20IkTaSDFNiyG-?usp=sharing" target="_blank">
+		      Working with files in google colab</a></li>
+		  <li><a href="https://colab.research.google.com/drive/1Q2yGa97cjWBT5p0dnZ7-pUNIx2UdMMsv?usp=sharing" target="_blank">
+		      Cleaning files and randomizing</a></li
+		  <li><a href="" target="_blank"></a></li>
+	  </ul></p>
+        </div>
+	
+<!--        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-paperclip fa-fw
+          w3-margin-right"></i>Assignment: Friday, September 20, 2024</h6>
+          <p class="w3-text-pink"><ul class="w3-ul">
+	      <li><a href="./pdf/homework.01.pdf" class="w3-xlarge w3-text-homework"
+	      target="_blank"><b>Homework 01</b></a>, due Friday, September
+	      20, 2024</li>
+	</ul></p></div>-->
+	
+	<hr class="week">
+
+	
+	<h2>Week 02</h2>
+
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Class: Monday, April 7, 2025</h6>
+          <p><ul class="w3-ul">
+	      <li>Before class<ul>
+		<li>Read <a href="https://walshbr.com/textanalysiscoursebook/book/reading-at-scale/distant-reading/" target="blank">
+		    Distant Reading</a>, a section from <i>Introduction to Text Analysis: A Coursebook</i> by
+		  <a href="http://walshbr.com/" target="_blank">Brandon Walsh</a> and
+		  <a href="https://www.wlu.edu/profile/horowitz-sarah" target="_blank">Sarah Horowitz</a></li>
+		<li>Do this:
+		  <a href="https://colab.research.google.com/drive/1cgCl1Hs1RSizXmMpcMkSb1OYj6eY0566?usp=sharing" target="_blank">Exploration 01: COA Course Descriptions</a>.
+		Do not worry if you can't get all the way through. Spend maybe an hour on this. More if it's fun. Less if you hit a wall. </li>
+	      </ul></li>
+	      <li>In Class<ol>
+		  <li>Discuss reading</li>
+		  <li>Discuss colab exploration</li>
+		  <li>Introduction to NLTK, stop words, tokens, word frequencies</li>
+	      </ol></li>
+
+
+	  </ul></p><hr class="day">
+	</div>
+
+	<div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Class: Thursday, April 10, 2025</h6>
+          <p><ul class="w3-ul">
+	      <li>Before class. Read:
+		<ol>
+		  <li>by <a href="https://lucy3.github.io/" target="_blank">Lucy Li</a></li>
+	      </ol></li>
+	  </ul></p>
+	</div>
+	<hr class="week">
+
+	<h2>Week 03</h2>
+
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Class: Monday, April 14, 2025</h6>
+          <p><ul class="w3-ul">
+	      <li>tba</li>
+	  </ul></p><hr class="day">
+	</div>
+
+	<div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Class: Thursday, April 17, 2025</h6>
+          <p><ul class="w3-ul">
+	      <li>tba</li>
+	  </ul></p>
+	</div>
+	<hr class="week">
+
+	<h2>Week 04</h2>
+
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Class: Monday, April 21, 2025</h6>
+          <p><ul class="w3-ul">
+	      <li>tba</li>
+	  </ul></p><hr class="day">
+	</div>
+
+	<div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Class: Thursday, April 25, 2025</h6>
+          <p><ul class="w3-ul">
+	      <li>tba</li>
+	  </ul></p>
+	</div>
+	<hr class="week">
+
+
+	<h2>Week 05</h2>
+
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Class: Monday, April 28, 2025</h6>
+          <p><ul class="w3-ul">
+	      <li>tba</li>
+	  </ul></p><hr class="day">
+	</div>
+
+	<div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Class: Thursday, May 1, 2025</h6>
+          <p><ul class="w3-ul">
+	      <li>tba</li>
+	  </ul></p>
+	</div>
+	<hr class="week">
+
+	<h2>Week 06</h2>
+
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Class: Monday, May 5, 2025</h6>
+          <p><ul class="w3-ul">
+	      <li>tba</li>
+	  </ul></p><hr class="day">
+	</div>
+
+	<div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Class: Thursday, May 8, 2025</h6>
+          <p><ul class="w3-ul">
+	      <li>tba</li>
+	  </ul></p>
+	</div>
+	<hr class="week">
+
+	<h2>Week 07</h2>
+
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Class: Monday, May 12, 2025</h6>
+          <p><ul class="w3-ul">
+	      <li>tba</li>
+	  </ul></p><hr class="day">
+	</div>
+
+	<div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Class: Thursday, May 15, 2025</h6>
+          <p><ul class="w3-ul">
+	      <li>tba</li>
+	  </ul></p>
+	</div>
+	<hr class="week">
+
+	<h2>Week 08</h2>
+
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Class: Monday, May 19, 2025</h6>
+          <p><ul class="w3-ul">
+	      <li>tba</li>
+	  </ul></p><hr class="day">
+	</div>
+
+	<div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Class: Thursday, May 22, 2025</h6>
+          <p><ul class="w3-ul">
+	      <li>tba</li>
+	  </ul></p>
+	</div>
+	<hr class="week">
+
+	<h2>Week 09</h2>
+
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Class: Monday, May 26, 2025</h6>
+          <p><ul class="w3-ul">
+	      <li>tba</li>
+	  </ul></p><hr class="day">
+	</div>
+
+	<div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Class: Thursday, May 29, 2025</h6>
+          <p><ul class="w3-ul">
+	      <li>tba</li>
+	  </ul></p>
+	</div>
+	<hr class="week">
+
+	<h2>Week 10</h2>
+
+        <div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Class: Monday, June 2, 2025</h6>
+          <p><ul class="w3-ul">
+	      <li>tba</li>
+	  </ul></p><hr class="day">
+	</div>
+
+	<div class="w3-container">
+          <h6 class="w3-text-black"><i class="fa fa-child fa-fw
+          w3-margin-right"></i>Class: Thursday, June 5, 2025</h6>
+          <p><ul class="w3-ul">
+	      <li>tba</li>
+	  </ul></p>
+	</div>
+	<hr class="week">
+
+	
+    </div>
+
+    <!-- schedule Section -->
+    <div class="w3-container w3-padding-32 w3-large" id="resources">
+      <h1>  <i class="fa fa-folder fa-fw
+		      w3-margin-right"></i>Resources</h1>
+
+      <h3>Software and Data</h3>
+      <ul>
+    <li><a href="https://txtlab.org/data-sets/" target="_blank">A
+    collection of digital humanities data sets</a>, curated by
+    <a href="" target="_blank">.txtlab</a> a laboratory for cultural
+    analytics at McGill University.</li>
+    
+   <li><a href="https://nlp.stanford.edu/projects/glove/"
+   target="_blank">GloVe</a> Global Vectors for Word
+     Representation</li>
+
+   <li><a href="https://spacy.io/" target="_blank">spaCy</a>, a
+   python library for NLP. Fast, efficient. </li>
+
+   <li>Tensorflow's <a href="https://projector.tensorflow.org/"
+		       target="_blank">projector tool</a></li> 
+   <li><a href="https://saifmohammad.com/WebPages/nrc-vad.html"
+   target="_blank">The NRC Valence, Arousal, and Dominance (NRC-VAD)
+   Lexicon</a> by Saif M. Mohammad.</li>
+
+   <li><a href="https://github.com/ddemszky/textbook-analysis"
+   target="_blank">Code for the US History Textbook project</a></li>
+
+   </ul>
+
+      <h3>Books and Such</h3>
+      <ul>
+	<!--<li><a href="https://dhdebates.gc.cuny.edu/projects/debates-in-the-digital-humanities-2023" target="_blank">Debates in the Digital Humanties</a>,
+	  edited by <a href="https://mkgold.net/" target="_blank">Matthew K. Gold</a> and
+	  <a href="" target="_blank">Lauren Klein</a>
+	  University of Minnesota Press, 2023.</li>-->
+	<li><a href="https://github.com/jacobeisenstein/gt-nlp-class/blob/master/notes/eisenstein-nlp-notes.pdf"
+	       target="_blank">Natural Language Processing</a> by
+	  <a href="https://jacobeisenstein.github.io/" target="_blank">Jacob Eisenstein</a></li>
+	<li><a href="https://web.stanford.edu/~jurafsky/slp3/"
+	target="_blank">Speech and Language Processing</a> (3rd ed. draft) by
+	  <a href="http://web.stanford.edu/people/jurafsky/" target="_blank">Dan Jurafsky</a>
+	and <a href="http://www.cs.colorado.edu/~martin/" target="_blank">James H. Martin</a></li>
+
+	   <li><a href="https://dhdebates.gc.cuny.edu/projects/project-collection/debates-in-the-digital-humanities?collectionOrder=debates-in-the-digital-humanities"
+    target="_blank">Debates in the Digital Humanties</a>, a book series. All of the books are available online an dhave open annotations.</li>
+
+      <li><a href="https://datasittersclub.github.io/site/books.html"
+	     target="_blank">The data-sitters club</a>. A fun and
+	     colloquial guide to digital humanities computational text
+	analysis </li>
+      
+    <li><a href="https://uta.pressbooks.pub/datanotebook/"
+    target="_blank">the Data Notebook</a>, an online suite of open interactive resources that provides instructional materials for
+    introductory data analytics and data visualization approaches relevant to a wide range of subjects and
+      disciplines. Specifically, this book focuses on principles related to data storytelling, and provides tangible research steps and
+    include case studies, mini-lessons, and interactive instructional
+      components.
+      By <a href="https://www.kentonrambsy.com/about-me/" target="_blank">Kenton Rambsy</a> and
+    <a href="https://www.uta.edu/academics/faculty/profile?username=peace"
+    target="_blank">Peace Ossom Ossom-Williamson</a>. </li>
+      </ul>
+
+      <h3>Other Courses</h3>
+      <ul>
+	<li>ENG 790 + QTM 490 at Emory University: <a href="https://github.com/emory-qtm/2023-quant-lit/tree/main" target="_blank">Quantitative Literary Analysis: Theory and Practice</a>
+	  by <a href="https://lklein.com/" target="_blank">Lauren Klein</a> and
+	  <a href="https://writingprogram.emory.edu/people/bios/Miller-Ben.html" target="_blank">Ben J. Miller</a>.</li>
+
+	<li>QTM 340 at Emory University: <a href="https://github.com/laurenfklein/QTM340-Fall22" target="_blank">Practical Approaches to Data Science with Text</a>
+	  by <a href="https://lklein.com/" target="_blank">Lauren Klein</a>.</li>
+	  
+	<li>CS663 at the University of Southern
+	California: <a href="https://jonmay.github.io/USC-CS662/"
+	target="_blank">Advanced Natural Language Processing</a> by
+	<a href="https://jonmay.github.io/webpage/" target="_blank">Jonathan May</a></li>
+
+	<li>CS124 at Stanford University: <a href="https://web.stanford.edu/class/cs124/" target="blank">From Languages to Information</a>
+	  by <a href="https://web.stanford.edu/~jurafsky/" target="_blank">Dan Jurafsky</a></li>
+
+	<li>CS 329R, OB 687, PSYCH 257A/B, LINGUIST 281A, SCRE 392R at Stanford University: <a href="https://web.stanford.edu/class/cs329r" target="_blank">Race
+	    and Natural Language Processing</a> by
+	  <a href="https://web.stanford.edu/~eberhard/index.html" target="_blank">Jennifer L. Eberhardt</a> amd
+	  <a href="https://web.stanford.edu/~jurafsky/" target="_blank">Dan Jurafsky</a></li>
+	
+	<li>DIGHUM 150C at UC Berkeley: <a href="http://icla2022.jonreeve.com/" target="_blank">Introduction to Computational Literary Analysis</a>
+	  (Summer 20220) by <a href="https://jonreeve.com/" target="_blank">Jonathan Reeve</a>.</li>
+	
+	<li>DHUM 70000 at the CUNY Grad Center: <a href="https://dhintro2020.commons.gc.cuny.edu/"
+	       target="_blank">Introduction to Digital Humanites</a> (2020)
+	  by <a href="http://mkgold.net/" target="_blank">Matthew K. Gold</a>.</li>
+	
+	<li>CSC321 at the Universtiy of Toronto: <a href="https://www.cs.toronto.edu/~lczhang/321/">CSC321
+	    neural networks and Machine Learning</a>, by <a href="https://www.cs.toronto.edu/~lczhang/" target="_blank">Lisa Zhang</a>
+	  and Pouria Fewzee. Not specific to text, but has many text
+	  examples. Includes some lecture notes, slides, and python notebooks.</li>
+	
+	<li>Digital Humanities Summer Institute 2021 at Columbia University: <a href="https://dhsi2021.jonreeve.com/article/00-syllabus.html"
+	       target="_blank">Meaningful Text Analysis with Word Embeddings</a> by
+	  <a href="https://jonreeve.com/" target="_blank">Jonathan
+	    Reeve</a>. Videos for the course can be found
+	  <a href="https://tubedu.org/c/computational_literary_analysis/videos?s=1"
+	     target="_blank">here</a></li>
+	<li>ELE391 at the University of Rhode Island:
+	  <a href="https://github.com/mchiovaro/Introduction-to-ML" target="_blank">Introduction to Machine Learning</a>
+	  by <a href="https://mchiovaro.github.io/" target="_blank">Megan Chiovaro</a>.
+      </ul>
+
+      <h3>Tutorials and Explainers</h3>
+      <ul>
+	<li><a href="https://dariuslfuller.medium.com/creating-visuals-with-nltks-freqdist-ac4e667e49f3"
+	       target="_blank">Creating visuals with NLTK's FreqDist</a> by
+	  Darius Fuller. Shows how to make some better-looking frequency
+	  distribution charts.</li>
+	
+	<li><a href="https://www.youtube.com/watch?v=ISPId9Lhc1g"
+	       target="_blank"> The Illustrated Word2vec - A Gentle Intro to
+	    Word Embeddings in Machine Learning</a>, a helpful, short
+	  video by Jay Alammar. He has lots of other explainer videos
+	  on his youtube channel. Jay's
+	  artcile, <a href="https://jalammar.github.io/illustrated-word2vec/">The
+	    Illustrated Word2vec</a>, is also excellent and highly
+	  recommended.</li>
+	<li><a href="https://www.tensorflow.org/text/tutorials/word2vec" target="_blank">A word2vec tutorial</a>
+	from tensorflow</li>
+	</ul>
+      
+    </div>
+
+
+
+    
+    <hr>
+    <div class="w3-container w3-padding-64 w3-large" id="info">
+    <p>
+      The building in which we gather for this class, and all of
+      College of the Atlantic, is located on traditional lands of the
+      Wabanaki people. The four Native American tribes in Maine today
+      are the Maliseet, Micmac, Penobscot, and Passamaquoddy,
+      collectively referred to as the Wabanaki. I believe it is important to
+      acknowledge that our presence on this land entangles us in the
+      web of colonialism, past and present. The future, however, is
+      still unwritten.</p> 
+    
+ 
+    
+    </div>
+
+  </div>
+  
+    <!-- End page content -->
+  </div>
+
+<!-- Footer -->
+  <footer  class="w3-center"
+	style="padding:7px ;background-color:#0A2540; color:#4EFFA0">
+<!--  class="w3-center w3-light-grey w3-padding-16" style="background-color:#d8cac2!important">-->
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp"
+  title="W3.CSS" target="_blank"
+  class="w3-hover-text-green">w3.car's</a></p>
+</footer>
+
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+
+</body>
+</html>
+
