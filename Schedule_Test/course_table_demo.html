@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Course Catalog</title>
+  <title>Testing Dynamic Tables</title>
   <!-- DataTables CSS -->
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
   <style>
@@ -20,16 +20,14 @@
   </style>
 </head>
 <body>
-  <h1>Course Catalog</h1>
+  <h1>Course Offering</h1>
+  <h2>Just a test. This is not official or anything.</h2>
   <table id="courses" class="display">
     <thead>
       <tr>
         <th>FacultyName</th>
         <th>CourseName</th>
-        <th>Instructor</th>
-        <th>Department</th>
-        <th>Requirement</th>
-        <th>Time</th>
+        <th>Degree Requirements Met</th>
       </tr>
     </thead>
     <tbody>
@@ -58,9 +56,6 @@
               <td>${row["FacultyName"]}</td>
               <td>${row["CourseName"]}</td>
               <td>${row["CourseDivision"]}</td>
-              <td>${row["CourseDescription"]}</td>
-<!--              <td>${row["Requirement"]}</td>
-              <td>${row["Time"]}</td>-->
             `;
             tbody.appendChild(tr);
           }
