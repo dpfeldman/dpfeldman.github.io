@@ -24,8 +24,8 @@
   <table id="courses" class="display">
     <thead>
       <tr>
-        <th>Course Code</th>
-        <th>Title</th>
+        <th>FacultyName</th>
+        <th>CourseName</th>
         <th>Instructor</th>
         <th>Department</th>
         <th>Requirement</th>
@@ -52,15 +52,15 @@
         const tbody = document.querySelector("#courses tbody");
 
         data.forEach(row => {
-          if (row["Course Code"]) { // skip empty rows
+          if (row["FacultyName"]) { // skip empty rows
             const tr = document.createElement("tr");
             tr.innerHTML = `
-              <td>${row["Course Code"]}</td>
-              <td>${row["Title"]}</td>
-              <td>${row["Instructor"]}</td>
-              <td>${row["Department"]}</td>
-              <td>${row["Requirement"]}</td>
-              <td>${row["Time"]}</td>
+              <td>${row["FacultyName"]}</td>
+              <td>${row["CourseName"]}</td>
+              <td>${row["CourseDivision"]}</td>
+              <td>${row["CourseDescription"]}</td>
+<!--              <td>${row["Requirement"]}</td>
+              <td>${row["Time"]}</td>-->
             `;
             tbody.appendChild(tr);
           }

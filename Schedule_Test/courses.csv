@@ -1,210 +1,210 @@
-FacultyName,Semester,Department,Course,CourseName,CourseDivision,MaximumEnroll,TotalEnrolled,MeetingRoom,Days,StartTime,EndTime,CourseDescription
-"Anderson, John",B25Q,MD,2017,Farming the Wild,,11,12,W2,MR,7:25 AM,10:25 AM,ollowing degree requirements: None.
-"Anderson, John",B25Q,MD,1022,Working the Sea,,10,11,W2,MR,4:10 PM,5:35 PM,Class limit: 10.  Lab Fee $100. Meets the following degree requirements: None.
-"Anderson, John",B25Q,MD,1022,Working the Sea,,10,11,W2,W,2:35 PM,5:35 PM,Class limit: 10.  Lab Fee $100. Meets the following degree requirements: None.
-"Baker, Jodi",B25Q,AD,1060,Movement Training Basics,ADS,11,10,BG,TF,1:00 PM,4:00 PM,Prerequisites: None.  Class limit: 11. Lab fee: $50. Default grading option: Credit/No Credit. Meets the following degree requirements: ADS.
-"Baker, Jodi",B25Q,AD,1060,Movement Training Basics,ADS,11,10,MH,T,6:00 PM,9:00 PM,Prerequisites: None.  Class limit: 11. Lab fee: $50. Default grading option: Credit/No Credit. Meets the following degree requirements: ADS.
-"Baker, Jodi",B25Q,AD,1060,Movement Training Basics,ADS,11,11,BG,TF,9:00 AM,12:00 PM,Prerequisites: None.  Class limit: 11. Lab fee: $50. Default grading option: Credit/No Credit. Meets the following degree requirements: ADS.
-"Baker, Jodi",B25Q,AD,1060,Movement Training Basics,ADS,11,11,MH,T,6:00 PM,9:00 PM,Prerequisites: None.  Class limit: 11. Lab fee: $50. Default grading option: Credit/No Credit. Meets the following degree requirements: ADS.
-"Becker, Michael",B25Q,HS,1117,Spanish: Immersive Beginning I,HS,10,10,D,MTWRF,7:25 AM,8:50 AM,t: 10. Lab fee: $30. Meets the following degree requirements: HS
-"Blotnick, Ryan",B25Q,AD,3085,Jazz Ensemble,,8,6,MH,MR,1:00 PM,4:00 PM,he following degree requirements: ADS.
-"Buchanan, Rebecca",B25Q,ED,3107,CANCELLED: Culturally Sustaining and Revitalizing Education,HS ED,15,0,Flexible Classroom,R,4:10 PM,8:00 PM,"ents: ED, HS."
-"Capers, Colin",B25Q,HE,1010,Human Ecology Core Course,HE,15,12,,MR,9:00 AM,10:25 AM,"a series of directed readings and activities.
+FacultyName,CourseName,CourseDivision,CourseDescription
+"Anderson, John",Farming the Wild,,ollowing degree requirements: None.
+"Anderson, John",Working the Sea,,Class limit: 10.  Lab Fee $100. Meets the following degree requirements: None.
+"Anderson, John",Working the Sea,,Class limit: 10.  Lab Fee $100. Meets the following degree requirements: None.
+"Baker, Jodi",Movement Training Basics,ADS,Prerequisites: None.  Class limit: 11. Lab fee: $50. Default grading option: Credit/No Credit. Meets the following degree requirements: ADS.
+"Baker, Jodi",Movement Training Basics,ADS,Prerequisites: None.  Class limit: 11. Lab fee: $50. Default grading option: Credit/No Credit. Meets the following degree requirements: ADS.
+"Baker, Jodi",Movement Training Basics,ADS,Prerequisites: None.  Class limit: 11. Lab fee: $50. Default grading option: Credit/No Credit. Meets the following degree requirements: ADS.
+"Baker, Jodi",Movement Training Basics,ADS,Prerequisites: None.  Class limit: 11. Lab fee: $50. Default grading option: Credit/No Credit. Meets the following degree requirements: ADS.
+"Becker, Michael",Spanish: Immersive Beginning I,HS,t: 10. Lab fee: $30. Meets the following degree requirements: HS
+"Blotnick, Ryan",Jazz Ensemble,,he following degree requirements: ADS.
+"Buchanan, Rebecca",CANCELLED: Culturally Sustaining and Revitalizing Education,HS ED,"ents: ED, HS."
+"Capers, Colin",Human Ecology Core Course,HE,"a series of directed readings and activities.
 
 Level:  Introductory.  Lab fee: $30.  Meets the following degree requirements: HE"
-"Capers, Colin",B25Q,HE,1010,Human Ecology Core Course,HE,15,12,,W,2:35 PM,5:35 PM,"a series of directed readings and activities.
+"Capers, Colin",Human Ecology Core Course,HE,"a series of directed readings and activities.
 
 Level:  Introductory.  Lab fee: $30.  Meets the following degree requirements: HE"
-"Cline, Ken",B25Q,HS,1032,Acadia: Exploring the National Park Idea,HS,20,17,T1,F,1:00 PM,5:35 PM,b fee: $50. Meets the following degree requirements: HS
-"Cline, Ken",B25Q,HS,1032,Acadia: Exploring the National Park Idea,HS,20,17,T1,T,1:00 PM,2:25 PM,b fee: $50. Meets the following degree requirements: HS
-"Cline, Ken",B25Q,HS,3023,International Wildlife Policy and Protected Areas,HS,20,16,T2,MR,1:00 PM,2:25 PM,l Politics. Class limit: 20. Lab fee: $15. Meets the following degree requirements: HS.
-"Cox, Gray",B25Q,HS,2093,Strategies for Social Change,HS,15,14,ES,TF,4:10 PM,5:35 PM,"eloping a sample strategy document for a viewpoint of the student’s choice. 
+"Cline, Ken",Acadia: Exploring the National Park Idea,HS,b fee: $50. Meets the following degree requirements: HS
+"Cline, Ken",Acadia: Exploring the National Park Idea,HS,b fee: $50. Meets the following degree requirements: HS
+"Cline, Ken",International Wildlife Policy and Protected Areas,HS,l Politics. Class limit: 20. Lab fee: $15. Meets the following degree requirements: HS.
+"Cox, Gray",Strategies for Social Change,HS,"eloping a sample strategy document for a viewpoint of the student’s choice. 
 
 Level: Introductory/Intermediate.  Prerequisites: None.  Class limit: 15.  Lab fee: None.  Meets the following degree requirements: HS"
-"Earley, Annika",B25Q,AD,1077,Fundamentals of Drawing,ADS,12,12,Drawing Studio,TF,9:00 AM,12:00 PM,"ability to respond to feedback in one’s work.
+"Earley, Annika",Fundamentals of Drawing,ADS,"ability to respond to feedback in one’s work.
 
 Level: Introductory. Prerequisites: None. Class limit: 12. Lab fee: $80. Meets the following degree requirements: ADS."
-"Earley, Annika",B25Q,AD,4019,Studio Printmaking,ADS,8,6,Printmaking,TF,1:00 PM,4:00 PM,"Intermediate/Advanced.  Prerequisite: Permission of the instructor, Introduction to Arts and Design, and a drawing class.  Class limit: 8. Lab fee: $200.  Meets the following degree requirements: ADS"
-"Edwards, Torrie",B25Q,ES,1093,Introduction to Computer Science: Data,QR,15,8,General Classroom,MR,10:35 AM,12:00 PM,"es in computer science, machine learning, data science, robotics, and related areas. 
+"Earley, Annika",Studio Printmaking,ADS,"Intermediate/Advanced.  Prerequisite: Permission of the instructor, Introduction to Arts and Design, and a drawing class.  Class limit: 8. Lab fee: $200.  Meets the following degree requirements: ADS"
+"Edwards, Torrie",Introduction to Computer Science: Data,QR,"es in computer science, machine learning, data science, robotics, and related areas. 
 
 Level: Introductory. Prerequisites: None. Class limit: 15. Lab fee: None. Meets the following degree requirements: QR."
-"Edwards, Torrie",B25Q,ES,1093,Introduction to Computer Science: Data,QR,15,8,General Classroom,W,9:00 AM,10:25 AM,"es in computer science, machine learning, data science, robotics, and related areas. 
+"Edwards, Torrie",Introduction to Computer Science: Data,QR,"es in computer science, machine learning, data science, robotics, and related areas. 
 
 Level: Introductory. Prerequisites: None. Class limit: 15. Lab fee: None. Meets the following degree requirements: QR."
-"Edwards, Torrie",B25Q,ES,1093,Introduction to Computer Science: Data,QR,15,17,General Classroom,MR,9:00 AM,10:25 AM,"es in computer science, machine learning, data science, robotics, and related areas. 
+"Edwards, Torrie",Introduction to Computer Science: Data,QR,"es in computer science, machine learning, data science, robotics, and related areas. 
 
 Level: Introductory. Prerequisites: None. Class limit: 15. Lab fee: None. Meets the following degree requirements: QR."
-"Edwards, Torrie",B25Q,ES,1093,Introduction to Computer Science: Data,QR,15,17,General Classroom,W,2:35 PM,4:00 PM,"es in computer science, machine learning, data science, robotics, and related areas. 
+"Edwards, Torrie",Introduction to Computer Science: Data,QR,"es in computer science, machine learning, data science, robotics, and related areas. 
 
 Level: Introductory. Prerequisites: None. Class limit: 15. Lab fee: None. Meets the following degree requirements: QR."
-"Feldman, David",B25Q,ES,1057,Physics and Math of Sustainable Energy Lab,,15,10,General Classroom,F,2:35 PM,4:00 PM,
-"Feldman, David",B25Q,ES,1057,Physics and Math of Sustainable Energy Lab,,15,14,General Classroom,F,1:00 PM,2:25 PM,
-"Feldman, David",B25Q,ES,1056,Physics and Mathematics of Sustainable Energy,ES QR,30,24,General Classroom,TF,10:35 AM,12:00 PM,"Evaluation will be based on weekly problem sets. 
+"Feldman, David",Physics and Math of Sustainable Energy Lab,,
+"Feldman, David",Physics and Math of Sustainable Energy Lab,,
+"Feldman, David",Physics and Mathematics of Sustainable Energy,ES QR,"Evaluation will be based on weekly problem sets. 
 
 Level: Introductory.  Prerequisites: None.  Class Limit: 30.  Lab fee $10.00  Meets the following degree requirements: QR ES"
-"Ferrari , Melissa",B25Q,AD,1080,Frame by Frame: Hand-Drawn Animation,ADS,12,10,S5,TF,9:00 AM,12:00 PM,"oughtful participation in critiques and class discussions.
+"Ferrari , Melissa",Frame by Frame: Hand-Drawn Animation,ADS,"oughtful participation in critiques and class discussions.
 
 Level: Introductory. Prerequisites: None. Class limit: 12.  Lab fee: $50. Meets the following degree requirements: ADS."
-"Friedlander, Jay",B25Q,HS,3111,Designing Your Life,,14,14,Flexible Seminar Room,W,2:35 PM,5:35 PM,"roduce over the course of the term including: class participation and facilitation; reflection papers; and a final project.
+"Friedlander, Jay",Designing Your Life,,"roduce over the course of the term including: class participation and facilitation; reflection papers; and a final project.
 
 Level: Introductory. Prerequisites: None.  Class limit: 14.  Lab fee: $40.  Meets the following degree requirements: HS."
-"Friedlander, Jay",B25Q,HS,3062,Solutions,HS,15,13,SM,MR,10:35 AM,12:00 PM,15. Lab fee: $50.  Meets the following degree requirements: HS
-"Fuller, Linda",B25Q,ED,5016,Student Teaching Internship,ED,99,2,,N\A,12:00 AM,12:00 AM,"COA internship requirement if it is completed prior to graduation. 
+"Friedlander, Jay",Solutions,HS,15. Lab fee: $50.  Meets the following degree requirements: HS
+"Fuller, Linda",Student Teaching Internship,ED,"COA internship requirement if it is completed prior to graduation. 
 
 Level: Advanced. Prerequisites: Permission of Ed Studies Program Director.  Meets the following degree requirements: ED"
-"Gadeken, Kara",B25Q,ES,4066,Estuaries,ES,10,9,Flexible Classroom,F,1:00 PM,5:35 PM,erequisites: Introduction to Oceanography and Marine Biology or Intertidal Ecology.  Class limit: 10. Lab fee: $150. Meets the following degree requirements: ES.
-"Gadeken, Kara",B25Q,ES,4066,Estuaries,ES,10,9,MC,TF,10:35 AM,12:00 PM,erequisites: Introduction to Oceanography and Marine Biology or Intertidal Ecology.  Class limit: 10. Lab fee: $150. Meets the following degree requirements: ES.
-"Gadeken, Kara",B25Q,ES,1090,Intertidal Ecology,ES,18,16,Flexible Classroom,MR,10:35 AM,12:00 PM,"ology: Natural History but not both.
+"Gadeken, Kara",Estuaries,ES,erequisites: Introduction to Oceanography and Marine Biology or Intertidal Ecology.  Class limit: 10. Lab fee: $150. Meets the following degree requirements: ES.
+"Gadeken, Kara",Estuaries,ES,erequisites: Introduction to Oceanography and Marine Biology or Intertidal Ecology.  Class limit: 10. Lab fee: $150. Meets the following degree requirements: ES.
+"Gadeken, Kara",Intertidal Ecology,ES,"ology: Natural History but not both.
 
 Level: Introductory. Prerequisites: None. Class limit: 16. Lab fee: $40. Meets the following degree requirements: ES."
-"Gadeken, Kara",B25Q,ES,1090,Intertidal Ecology,ES,18,16,Zoology Lab,M,1:00 PM,4:00 PM,"ology: Natural History but not both.
+"Gadeken, Kara",Intertidal Ecology,ES,"ology: Natural History but not both.
 
 Level: Introductory. Prerequisites: None. Class limit: 16. Lab fee: $40. Meets the following degree requirements: ES."
-"Gagnon da Silva, Pamela",B25Q,HS,1053,Intimate Partner Violence: Dynamics and Community Response,HS,12,11,T2,TF,1:00 PM,2:25 PM,fee: $10. Meets the following degree requirements: HS.
-"Gibson, David",B25Q,MD,4014,Building Science and Energy Auditing,,12,9,L1,MR,10:35 AM,12:00 PM,"of field skills.
+"Gagnon da Silva, Pamela",Intimate Partner Violence: Dynamics and Community Response,HS,fee: $10. Meets the following degree requirements: HS.
+"Gibson, David",Building Science and Energy Auditing,,"of field skills.
 
 Level: Intermediate/Advanced. Prerequisites: Physics and Mathematics of Sustainable Energy. Class Limit: 12. Lab fee: $50. Meets the following degree requirements: None."
-"Gibson, David",B25Q,MD,4015,Building Science and Energy Auditing LAB,,12,2,L1,W,2:35 PM,5:35 PM,
-"Gibson, David",B25Q,MD,4015,Building Science and Energy Auditing LAB,,12,7,L1,T,1:00 PM,4:00 PM,
-"Graham, Carrie",B25Q,ES,2037,Introductory Entomology,ES,16,15,MC,MR,10:35 AM,12:00 PM,"s, performance on lab quizzes, participation and one paper with presentation.
+"Gibson, David",Building Science and Energy Auditing LAB,,
+"Gibson, David",Building Science and Energy Auditing LAB,,
+"Graham, Carrie",Introductory Entomology,ES,"s, performance on lab quizzes, participation and one paper with presentation.
 
 Level: Introductory/Intermediate.  Prerequisites: Bio 1 or permission of instructor.  Class limit: 16.  Lab fee $35.  Meets the following degree requirements: ES"
-"Graham, Carrie",B25Q,ES,2037,Introductory Entomology,ES,16,15,MC,T,1:00 PM,4:00 PM,"s, performance on lab quizzes, participation and one paper with presentation.
+"Graham, Carrie",Introductory Entomology,ES,"s, performance on lab quizzes, participation and one paper with presentation.
 
 Level: Introductory/Intermediate.  Prerequisites: Bio 1 or permission of instructor.  Class limit: 16.  Lab fee $35.  Meets the following degree requirements: ES"
-"Hall, Sarah",B25Q,ES,1038,Geology of Mt. Desert Island,ES,14,13,Geology Lab,TF,9:00 AM,12:00 PM,"short quizzes, additional written assignments and lab reports. Offered every fall. 
+"Hall, Sarah",Geology of Mt. Desert Island,ES,"short quizzes, additional written assignments and lab reports. Offered every fall. 
 
 Level: Introductory. Prerequisites: none. Class limit: 14.  Lab Fee: $50.  Meets the following degree requirements: ES"
-"Hanson, Nathaniel",B25Q,MD,2019,Paddlesport Instructor and Leadership Course,,10,9,,TF,1:00 PM,4:00 PM,have enough experience that they know they’ll enjoy spending at least forty hours in a canoe or kayak as part of this course. Class limit: 10. Lab fee: $75. Meets the following degree requirements: None.
-"Henderson, Jonathan",B25Q,AD,4057,Music for Narrative Media,ADS,12,7,S5,TF,1:00 PM,4:00 PM,"ensure preparedness.
+"Hanson, Nathaniel",Paddlesport Instructor and Leadership Course,,have enough experience that they know they’ll enjoy spending at least forty hours in a canoe or kayak as part of this course. Class limit: 10. Lab fee: $75. Meets the following degree requirements: None.
+"Henderson, Jonathan",Music for Narrative Media,ADS,"ensure preparedness.
 
 Level: Intermediate/Advanced. Prerequisites: Working knowledge of an instrument (acoustic, electric, or electronic) is required. Class limit: 12. Lab fee: $25.  Meets the following degree requirements: ADS."
-"Henderson, Jonathan",B25Q,AD,1078,Shellac to Spotify: 100 Years of Recorded Music,ADS,12,11,Graphics/Media Room,MR,1:00 PM,4:00 PM,wing degree requirements: ADS.
-"Herrington, Matthew",B25Q,HS,1124,Constitutional Law: Supreme Court and Civil Liberties,HS,15,10,Flexible Classroom,TF,10:35 AM,12:00 PM,tes: None. Class limit: 15. Lab fee: None. Meets the following degree requirements: HS.
-"Ialeggio, Anna",B25Q,AD,1079,Introduction to Ceramic Sculpture,ADS,12,12,P,MR,1:00 PM,4:00 PM,Leve: Introductory. Prerequisites: None. Class limit: 12.  Lab fee: $120.  Meets the following degree requirements: ADS.
-"Jacoby, Franklin",B25Q,HS,2098,Introduction to Philosophy of Mind,HS,15,12,ES,MR,10:35 AM,12:00 PM,y/Intermediate.  Prerequisites: None.  Class limit: 15.  Lab fee: None. Meets the following degree requirements: HS.
-"Khor, Su Yin",B25Q,HS,1110,Food and identity in writing: Multimodality in composition,W HS,12,9,SM,MR,2:35 PM,4:00 PM,"rratives to document your learning trajectory, which will also be used for assessment purposes.
+"Henderson, Jonathan",Shellac to Spotify: 100 Years of Recorded Music,ADS,wing degree requirements: ADS.
+"Herrington, Matthew",Constitutional Law: Supreme Court and Civil Liberties,HS,tes: None. Class limit: 15. Lab fee: None. Meets the following degree requirements: HS.
+"Ialeggio, Anna",Introduction to Ceramic Sculpture,ADS,Leve: Introductory. Prerequisites: None. Class limit: 12.  Lab fee: $120.  Meets the following degree requirements: ADS.
+"Jacoby, Franklin",Introduction to Philosophy of Mind,HS,y/Intermediate.  Prerequisites: None.  Class limit: 15.  Lab fee: None. Meets the following degree requirements: HS.
+"Khor, Su Yin",Food and identity in writing: Multimodality in composition,W HS,"rratives to document your learning trajectory, which will also be used for assessment purposes.
 
 Level: Introductory. Prerequisites: None.  Class limit: 12.  Lab fee: None.  Meets the following degree requirements: HS, W."
-"Kim, June",B25Q,AD,4049,CANCELLED: Advanced Photography,ADS,12,0,Graphics/Media Room,MR,9:00 AM,12:00 PM,nce/knowledge. Class limit: 12. Lab fee: $110. Meets the following degree requirements: ADS.
-"Koch, Galen",B25Q,AD,2048,Audiocraft: Writing and Producing Longform Narrative Audio,ADS,12,11,Graphics/Media Room,TF,9:00 AM,12:00 PM,. Class limit: 12. Lab fee: $0.  Meets the following degree requirements: ADS.
-"Lakey, Heather",B25Q,HE,1010,Human Ecology Core Course,HE,15,13,T1,MR,9:00 AM,10:25 AM,"a series of directed readings and activities.
+"Kim, June",CANCELLED: Advanced Photography,ADS,nce/knowledge. Class limit: 12. Lab fee: $110. Meets the following degree requirements: ADS.
+"Koch, Galen",Audiocraft: Writing and Producing Longform Narrative Audio,ADS,. Class limit: 12. Lab fee: $0.  Meets the following degree requirements: ADS.
+"Lakey, Heather",Human Ecology Core Course,HE,"a series of directed readings and activities.
 
 Level:  Introductory.  Lab fee: $30.  Meets the following degree requirements: HE"
-"Lakey, Heather",B25Q,HE,1010,Human Ecology Core Course,HE,15,13,T1,W,2:35 PM,5:35 PM,"a series of directed readings and activities.
+"Lakey, Heather",Human Ecology Core Course,HE,"a series of directed readings and activities.
 
 Level:  Introductory.  Lab fee: $30.  Meets the following degree requirements: HE"
-"Lakey, Heather",B25Q,HS,2096,"Nature, Humans, and Philosophy",HS,15,16,T1,MR,1:00 PM,2:25 PM,Level: Introductory/Intermediate.  Prerequisites: None.  Class limit: 15.  Lab fee: None.  Meets the following degree requirements: HS
-"Little-Siebold, Todd",B25Q,HS,3040,History of Agriculture: Apples,HS HY,11,11,T2,TF,2:35 PM,5:35 PM,"mmunity-based research, and policy/planning issues.  It is also very appropriate for students who like apples and just want to know (a lot) more.
+"Lakey, Heather","Nature, Humans, and Philosophy",HS,Level: Introductory/Intermediate.  Prerequisites: None.  Class limit: 15.  Lab fee: None.  Meets the following degree requirements: HS
+"Little-Siebold, Todd",History of Agriculture: Apples,HS HY,"mmunity-based research, and policy/planning issues.  It is also very appropriate for students who like apples and just want to know (a lot) more.
 
 Level: Intermediate. Limit: 11. Lab Fee: $125.00. Meets the following degree requirements: HS HY"
-"Little-Siebold, Todd",B25Q,HS,2061,Indigenous America,HS HY,15,14,T2,TF,10:35 AM,12:00 PM,"signments.  Class limit: 15.  Lab fee: none.  Meets the following degree requirements:  HS, HY"
-"Longsworth, Gordon",B25Q,HS,2020,Geographic Information Systems I: Foundations & Applications,HS,10,10,GIS Lab,TWF,9:00 AM,10:25 AM,"ed on critique of student independent final project work and related documentation.
+"Little-Siebold, Todd",Indigenous America,HS HY,"signments.  Class limit: 15.  Lab fee: none.  Meets the following degree requirements:  HS, HY"
+"Longsworth, Gordon",Geographic Information Systems I: Foundations & Applications,HS,"ed on critique of student independent final project work and related documentation.
 
 Level: Introductory/Intermediate. Pre-requisites: Basic computer literacy. Class Limit: 10. Lab Fee: $75. Meets the following degree requirements: HS."
-"Mahoney, Daniel",B25Q,HS,2071,CANCELLED: Little Magazines,HS,12,2,T1,TF,10:35 AM,12:00 PM,"ected to complete a midterm and a final project. 
+"Mahoney, Daniel",CANCELLED: Little Magazines,HS,"ected to complete a midterm and a final project. 
 
 Level: Introductory/Intermediate.  Prerequisites: Writing Seminar, a creative writing or literature class.  Class limit: 12.  Lab fee: none. Meets the following degree requirements: HS."
-"McKown, Jamie",B25Q,HS,5064,CANCELLED: Voting and Elections: Case Studies,HS,8,0,,MR,10:35 AM,12:00 PM,"esponse papers, and a longer form research or advocacy project due at the end of the term.
+"McKown, Jamie",CANCELLED: Voting and Elections: Case Studies,HS,"esponse papers, and a longer form research or advocacy project due at the end of the term.
 
 Level: Advanced. Prerequisites: None. Class limit: 8. Lab fee: None. Meets the following degree requirements: HS."
-"McKown, Jamie",B25Q,HS,1102,"Equal Rights, Equal Voices: Articulating Suffrage",HS HY,12,7,Flexible Classroom,W,6:30 PM,8:00 PM,"llowing degree requirements: HS, HY"
-"McKown, Jamie",B25Q,HS,1102,"Equal Rights, Equal Voices: Articulating Suffrage",HS HY,12,7,SM,MR,1:00 PM,2:25 PM,"llowing degree requirements: HS, HY"
-"McKown, Jamie",B25Q,HE,1010,Human Ecology Core Course,HE,15,12,Flexible Classroom,MR,9:00 AM,10:25 AM,"a series of directed readings and activities.
+"McKown, Jamie","Equal Rights, Equal Voices: Articulating Suffrage",HS HY,"llowing degree requirements: HS, HY"
+"McKown, Jamie","Equal Rights, Equal Voices: Articulating Suffrage",HS HY,"llowing degree requirements: HS, HY"
+"McKown, Jamie",Human Ecology Core Course,HE,"a series of directed readings and activities.
 
 Level:  Introductory.  Lab fee: $30.  Meets the following degree requirements: HE"
-"McKown, Jamie",B25Q,HE,1010,Human Ecology Core Course,HE,15,12,Flexible Classroom,W,2:35 PM,5:35 PM,"a series of directed readings and activities.
+"McKown, Jamie",Human Ecology Core Course,HE,"a series of directed readings and activities.
 
 Level:  Introductory.  Lab fee: $30.  Meets the following degree requirements: HE"
-"Morse, Suzanne",B25Q,HE,1010,CANCELLED: Human Ecology Core Course,HE,15,0,,MR,9:00 AM,10:25 AM,"a series of directed readings and activities.
+"Morse, Suzanne",CANCELLED: Human Ecology Core Course,HE,"a series of directed readings and activities.
 
 Level:  Introductory.  Lab fee: $30.  Meets the following degree requirements: HE"
-"Morse, Suzanne",B25Q,HE,1010,CANCELLED: Human Ecology Core Course,HE,15,0,,W,2:35 PM,5:35 PM,"a series of directed readings and activities.
+"Morse, Suzanne",CANCELLED: Human Ecology Core Course,HE,"a series of directed readings and activities.
 
 Level:  Introductory.  Lab fee: $30.  Meets the following degree requirements: HE"
-"Morse, Suzanne",B25Q,ES,4067,Special Topics in the Biology and Politics of Seeds,ES,10,10,Botany Lab,TF,9:00 AM,12:00 PM,"project.
+"Morse, Suzanne",Special Topics in the Biology and Politics of Seeds,ES,"project.
 
 Level: Intermediate/Advanced. Prerequisites: Seeds, Plants and People, Biology: Form and Function are helpful. Class limit: 12. Lab fee: $50. Meets the following degree requirements: ES."
-"Neuhouser, Jeffry",B25Q,HE,1010,Human Ecology Core Course,HE,15,12,Career Center,MR,9:00 AM,10:25 AM,"a series of directed readings and activities.
+"Neuhouser, Jeffry",Human Ecology Core Course,HE,"a series of directed readings and activities.
 
 Level:  Introductory.  Lab fee: $30.  Meets the following degree requirements: HE"
-"Neuhouser, Jeffry",B25Q,HE,1010,Human Ecology Core Course,HE,15,12,Career Center,W,2:35 PM,5:35 PM,"a series of directed readings and activities.
+"Neuhouser, Jeffry",Human Ecology Core Course,HE,"a series of directed readings and activities.
 
 Level:  Introductory.  Lab fee: $30.  Meets the following degree requirements: HE"
-"Nguyen, Duc Hien",B25Q,HS,1119,Introduction to Microeconomics,HS QR,15,6,Flexible Classroom,MR,1:00 PM,2:25 PM,"ty with elementary algebra will be helpful but not required. Class limit: 15.  Lab fee: None.  Meets the following degree requirements: HS, QR."
-"Nguyen, Duc Hien",B25Q,HS,1125,The Price of Knowledge: Economics of Education,HS QR,12,10,Flexible Seminar Room,MR,9:00 AM,10:25 AM,"c.
+"Nguyen, Duc Hien",Introduction to Microeconomics,HS QR,"ty with elementary algebra will be helpful but not required. Class limit: 15.  Lab fee: None.  Meets the following degree requirements: HS, QR."
+"Nguyen, Duc Hien",The Price of Knowledge: Economics of Education,HS QR,"c.
 
 Level: Introductory. Prerequisites: None. Class limit: 12.  Lab fee: None.  Meets the following degree requirements: HS, QR."
-"Nugent, April",B25Q,MD,2017,Farming the Wild,,11,12,W2,MR,7:25 AM,10:25 AM,ollowing degree requirements: None.
-"Pena, Karla",B25Q,HS,5066,Spanish: Advanced,HS,10,1,D,MTRF,10:35 AM,12:00 PM,t: 10. Lab fee: $30. Meets the following degree requirements: HS.
-"Pena, Karla",B25Q,HS,5066,Spanish: Advanced,HS,10,1,D,W,9:00 AM,10:25 AM,t: 10. Lab fee: $30. Meets the following degree requirements: HS.
-"Pena, Karla",B25Q,HS,1118,Spanish: Beginning II,HS,10,10,D,MTWRF,9:00 AM,10:25 AM,"ntly class participation. 
+"Nugent, April",Farming the Wild,,ollowing degree requirements: None.
+"Pena, Karla",Spanish: Advanced,HS,t: 10. Lab fee: $30. Meets the following degree requirements: HS.
+"Pena, Karla",Spanish: Advanced,HS,t: 10. Lab fee: $30. Meets the following degree requirements: HS.
+"Pena, Karla",Spanish: Beginning II,HS,"ntly class participation. 
 
 Level: Introductory. Prerequisite: Instructor Permission. Class limit: 10. Lab fee: $30. Meets the following degree requirements: HS"
-"Pena, Karla",B25Q,HS,1117,Spanish: Immersive Beginning I,HS,10,10,D,MTWRF,7:25 AM,8:50 AM,t: 10. Lab fee: $30. Meets the following degree requirements: HS
-"Robbins, Dani",B25Q,AD,1056,Beginning Contemporary Dance Technique,ADS,11,12,BG,MR,4:10 PM,5:35 PM,ry. Prerequisites: none. Class limit: 11. Lab fee: $30. Meets the following degree requirements: ADS.
-"Sebastian, Neeraj",B25Q,AD,4046,Drawing Intensive / Developing a Studio Practice,ADS,8,10,S3,MR,1:00 PM,4:00 PM,"the work to evolve and change in response to feedback and critique. 
+"Pena, Karla",Spanish: Immersive Beginning I,HS,t: 10. Lab fee: $30. Meets the following degree requirements: HS
+"Robbins, Dani",Beginning Contemporary Dance Technique,ADS,ry. Prerequisites: none. Class limit: 11. Lab fee: $30. Meets the following degree requirements: ADS.
+"Sebastian, Neeraj",Drawing Intensive / Developing a Studio Practice,ADS,"the work to evolve and change in response to feedback and critique. 
 
 Level: Intermediate/Advanced. Prerequisites: At least one ADS course.  Class limit: 8.  Lab fee: $100.  Meets the following degree requirements: ADS."
-"Sebastian, Neeraj",B25Q,AD,4046,Drawing Intensive / Developing a Studio Practice,ADS,8,10,S4,MR,1:00 PM,4:00 PM,"the work to evolve and change in response to feedback and critique. 
+"Sebastian, Neeraj",Drawing Intensive / Developing a Studio Practice,ADS,"the work to evolve and change in response to feedback and critique. 
 
 Level: Intermediate/Advanced. Prerequisites: At least one ADS course.  Class limit: 8.  Lab fee: $100.  Meets the following degree requirements: ADS."
-"Sebastian, Neeraj",B25Q,HE,1010,Human Ecology Core Course,HE,15,12,Painting Studio,MR,9:00 AM,10:25 AM,"a series of directed readings and activities.
+"Sebastian, Neeraj",Human Ecology Core Course,HE,"a series of directed readings and activities.
 
 Level:  Introductory.  Lab fee: $30.  Meets the following degree requirements: HE"
-"Sebastian, Neeraj",B25Q,HE,1010,Human Ecology Core Course,HE,15,12,Painting Studio,W,2:35 PM,5:35 PM,"a series of directed readings and activities.
+"Sebastian, Neeraj",Human Ecology Core Course,HE,"a series of directed readings and activities.
 
 Level:  Introductory.  Lab fee: $30.  Meets the following degree requirements: HE"
-"Sigler Sibara, Josie",B25Q,HS,3135,Your Turn: Critical/Creative Inquiries in Board Game Media,HS,12,10,L4,TF,2:35 PM,5:35 PM,"mathematics, and media studies. 
+"Sigler Sibara, Josie",Your Turn: Critical/Creative Inquiries in Board Game Media,HS,"mathematics, and media studies. 
 
 Level: Intermediate. Prerequisites: None. Class limit: 12.  Lab fee: None. Meets the following degree requirements: HS."
-"Slabach, Brittany",B25Q,ES,2010,Ecology:  Natural History,ES,18,18,,TF,7:25 AM,10:25 AM,"idal Ecology but not both. 
+"Slabach, Brittany",Ecology:  Natural History,ES,"idal Ecology but not both. 
 
 Level: Introductory/Intermediate. Prerequisites: None; field work involves strenuous hiking. Class Limit: 11. Lab fee: $95.  Meets the following degree requirements: ES"
-"Slabach, Brittany",B25Q,ES,3104,Vertebrate Zoology,ES,11,17,Zoology Lab,TF,1:00 PM,4:00 PM,erequisites: ES1054 Biology: Form and Function and a course in ecology. Class limit: 11.  Lab fee: $75.  Meets the following degree requirements: ES.
-"Smith, Hillary",B25Q,HS,3106,Blue Food Systems,HS,15,14,ES,M,1:00 PM,2:25 PM,: none. Meets the following degree requirements: HS.
-"Smith, Hillary",B25Q,HS,3106,Blue Food Systems,HS,15,14,ES,R,1:00 PM,4:00 PM,: none. Meets the following degree requirements: HS.
-"Stabinsky, Doreen",B25Q,HS,4116,Political Economies of Carbon,HS,12,14,ES,W,2:35 PM,4:00 PM,"vel: Intermediate/Advanced. Prerequisites: One or more courses in natural or physical sciences, social theory, economics and/or politics. Class limit: 12. Lab fee: None.  Meets the following degree requirements: HS."
-"Stabinsky, Doreen",B25Q,HS,4116,Political Economies of Carbon,HS,12,14,T2,MR,2:35 PM,4:00 PM,"vel: Intermediate/Advanced. Prerequisites: One or more courses in natural or physical sciences, social theory, economics and/or politics. Class limit: 12. Lab fee: None.  Meets the following degree requirements: HS."
-"Stephenson, Toby",B25Q,MD,2018,"Navigation: skills, tools, and the drivers of seafaring",,12,12,,MWR,9:00 AM,10:25 AM,"es in class and lab.
+"Slabach, Brittany",Vertebrate Zoology,ES,erequisites: ES1054 Biology: Form and Function and a course in ecology. Class limit: 11.  Lab fee: $75.  Meets the following degree requirements: ES.
+"Smith, Hillary",Blue Food Systems,HS,: none. Meets the following degree requirements: HS.
+"Smith, Hillary",Blue Food Systems,HS,: none. Meets the following degree requirements: HS.
+"Stabinsky, Doreen",Political Economies of Carbon,HS,"vel: Intermediate/Advanced. Prerequisites: One or more courses in natural or physical sciences, social theory, economics and/or politics. Class limit: 12. Lab fee: None.  Meets the following degree requirements: HS."
+"Stabinsky, Doreen",Political Economies of Carbon,HS,"vel: Intermediate/Advanced. Prerequisites: One or more courses in natural or physical sciences, social theory, economics and/or politics. Class limit: 12. Lab fee: None.  Meets the following degree requirements: HS."
+"Stephenson, Toby","Navigation: skills, tools, and the drivers of seafaring",,"es in class and lab.
 
 Level: Introductory/Intermediate. Prerequisites: None. Class limit: 12. Lab fee: $100. Meets the following degree requirements: None."
-"Stephenson, Toby",B25Q,MD,1022,Working the Sea,,10,11,W2,MR,4:10 PM,5:35 PM,Class limit: 10.  Lab Fee $100. Meets the following degree requirements: None.
-"Stephenson, Toby",B25Q,MD,1022,Working the Sea,,10,11,W2,W,2:35 PM,5:35 PM,Class limit: 10.  Lab Fee $100. Meets the following degree requirements: None.
-"Sullivan , Leeann",B25Q,HS,2129,Environmental Justice,HS,12,11,Flexible Seminar Room,F,1:00 PM,4:00 PM,"rough a combination of self-assessment, written assignments, and in-person engagement.
+"Stephenson, Toby",Working the Sea,,Class limit: 10.  Lab Fee $100. Meets the following degree requirements: None.
+"Stephenson, Toby",Working the Sea,,Class limit: 10.  Lab Fee $100. Meets the following degree requirements: None.
+"Sullivan , Leeann",Environmental Justice,HS,"rough a combination of self-assessment, written assignments, and in-person engagement.
 
 Level: Introductory/Intermediate. Prerequisites: None.  Class limit: 12. Lab fee: $0. Meets the following degree requirements: HS."
-"Taneja, Palak",B25Q,HS,2115,College Seminar: The World of Ms. Marvel,W HS,12,7,Flexible Seminar Room,M,2:35 PM,4:00 PM,"quisites: None.  Class limit: 12.  Lab fee: None.  Meets the following degree requirements: HS, W."
-"Taneja, Palak",B25Q,HS,2115,College Seminar: The World of Ms. Marvel,W HS,12,7,Flexible Seminar Room,R,2:35 PM,5:35 PM,"quisites: None.  Class limit: 12.  Lab fee: None.  Meets the following degree requirements: HS, W."
-"Taneja, Palak",B25Q,HS,3134,The Empire Writes Back,HS,15,14,Flexible Seminar Room,MR,10:35 AM,12:00 PM,degree requirements: HS.
-"Taylor, Davis",B25Q,HS,3090,Homesteading: Theory and Practice,HS,12,12,T2,MR,10:35 AM,12:00 PM,the following degree requirements: HS.
-"Todd, Sean",B25Q,ES,1022,Introduction to Oceanography,ES,14,14,Botany Lab,F,1:00 PM,4:00 PM,"sible visits to the college's islands, Mount Desert Rock and Great Duck Island. Evaluation will be by lab, quizzes and a final paper.
+"Taneja, Palak",College Seminar: The World of Ms. Marvel,W HS,"quisites: None.  Class limit: 12.  Lab fee: None.  Meets the following degree requirements: HS, W."
+"Taneja, Palak",College Seminar: The World of Ms. Marvel,W HS,"quisites: None.  Class limit: 12.  Lab fee: None.  Meets the following degree requirements: HS, W."
+"Taneja, Palak",The Empire Writes Back,HS,degree requirements: HS.
+"Taylor, Davis",Homesteading: Theory and Practice,HS,the following degree requirements: HS.
+"Todd, Sean",Introduction to Oceanography,ES,"sible visits to the college's islands, Mount Desert Rock and Great Duck Island. Evaluation will be by lab, quizzes and a final paper.
 
 Level: Introductory. Lab fee: $200. Class limit: 15. Meets the following degree requirements: ES"
-"Todd, Sean",B25Q,ES,1022,Introduction to Oceanography,ES,14,14,Zoology Lab,TF,10:35 AM,12:00 PM,"sible visits to the college's islands, Mount Desert Rock and Great Duck Island. Evaluation will be by lab, quizzes and a final paper.
+"Todd, Sean",Introduction to Oceanography,ES,"sible visits to the college's islands, Mount Desert Rock and Great Duck Island. Evaluation will be by lab, quizzes and a final paper.
 
 Level: Introductory. Lab fee: $200. Class limit: 15. Meets the following degree requirements: ES"
-"Todd, Sean",B25Q,ES,2030,Marine Mammal Biology I,ES,12,11,Zoology Lab,R,1:00 PM,4:00 PM,ss limit: 12.  Lab fee: $275.  Meets the following degree requirements: ES
-"Todd, Sean",B25Q,ES,2030,Marine Mammal Biology I,ES,12,11,Zoology Lab,TF,9:00 AM,10:25 AM,ss limit: 12.  Lab fee: $275.  Meets the following degree requirements: ES
-"Tsygankova, Valeria",B25Q,HS,1126,Pushing the Boundaries of the Essay,W HS,12,9,SM,TF,2:35 PM,4:00 PM,"s and has no prerequisites. 
+"Todd, Sean",Marine Mammal Biology I,ES,ss limit: 12.  Lab fee: $275.  Meets the following degree requirements: ES
+"Todd, Sean",Marine Mammal Biology I,ES,ss limit: 12.  Lab fee: $275.  Meets the following degree requirements: ES
+"Tsygankova, Valeria",Pushing the Boundaries of the Essay,W HS,"s and has no prerequisites. 
 
 Level: Introductory. Prerequisites: None. Class limit: 12.  Lab fee: None. Meets the following degree requirements: W, HS."
-"Turok, Katharine",B25Q,HS,3131,Writing Goes Wild: Environmental Adventures and Impacts,W HS,12,12,ES,TF,1:00 PM,2:25 PM,"None. Meets the following degree requirements: W, HS."
-"van Vliet, Netta",B25Q,HS,1120,Introduction to Cultural Anthropology,HS,15,14,Geology Lab,MR,10:35 AM,12:00 PM,"n, and weekly reading responses.
+"Turok, Katharine",Writing Goes Wild: Environmental Adventures and Impacts,W HS,"None. Meets the following degree requirements: W, HS."
+"van Vliet, Netta",Introduction to Cultural Anthropology,HS,"n, and weekly reading responses.
 
 Level: Introductory. Prerequisites: None. Class limit: 15. Lab fee: None. Meets the following degree requirements: HS."
-"van Vliet, Netta",B25Q,HS,2120,Marx and Marxisms,HS,15,14,Geology Lab,MR,1:00 PM,2:25 PM,"ased on class participation, weekly reading responses, collaborative small group and individual projects.
+"van Vliet, Netta",Marx and Marxisms,HS,"ased on class participation, weekly reading responses, collaborative small group and individual projects.
 
 Level: Introductory/Intermediate. Prerequisites: None.  Class limit: 15.  Lab fee: None.  Meets the following degree requirements: HS."
-"van Vliet, Netta",B25Q,HS,2120,Marx and Marxisms,HS,15,14,Geology Lab,R,6:00 PM,8:00 PM,"ased on class participation, weekly reading responses, collaborative small group and individual projects.
+"van Vliet, Netta",Marx and Marxisms,HS,"ased on class participation, weekly reading responses, collaborative small group and individual projects.
 
 Level: Introductory/Intermediate. Prerequisites: None.  Class limit: 15.  Lab fee: None.  Meets the following degree requirements: HS."
-"Waldron, Karen",B25Q,HS,4117,Intersectional Voicing: Modern US Women Novelists,HS,15,5,SM,TF,10:35 AM,12:00 PM,sites: None. Class limit: 15. Lab fee: None. Meets the following degree requirements: HS.
-"Weber, Jill",B25Q,ES,2014,Trees and Shrubs of Mount Desert Island,ES,16,16,Botany Lab,MR,1:00 PM,4:00 PM,the following degree requirements: ES
-"Winer, Joshua",B25Q,AD,1026,Introduction to Photography,ADS,13,13,Graphics/Media Room,TF,2:35 PM,5:35 PM,evel: Introductory. Prerequisites: none. Lab Fee: $110.  Class Limit: 13.  Meets the following requirements: ADS
-"Woolsey, Scott",B25Q,HE,1010,Human Ecology Core Course,HE,15,12,T2,MR,9:00 AM,10:25 AM,"a series of directed readings and activities.
+"Waldron, Karen",Intersectional Voicing: Modern US Women Novelists,HS,sites: None. Class limit: 15. Lab fee: None. Meets the following degree requirements: HS.
+"Weber, Jill",Trees and Shrubs of Mount Desert Island,ES,the following degree requirements: ES
+"Winer, Joshua",Introduction to Photography,ADS,evel: Introductory. Prerequisites: none. Lab Fee: $110.  Class Limit: 13.  Meets the following requirements: ADS
+"Woolsey, Scott",Human Ecology Core Course,HE,"a series of directed readings and activities.
 
 Level:  Introductory.  Lab fee: $30.  Meets the following degree requirements: HE"
-"Woolsey, Scott",B25Q,HE,1010,Human Ecology Core Course,HE,15,12,T2,W,2:35 PM,5:35 PM,"a series of directed readings and activities.
+"Woolsey, Scott",Human Ecology Core Course,HE,"a series of directed readings and activities.
 
 Level:  Introductory.  Lab fee: $30.  Meets the following degree requirements: HE"
