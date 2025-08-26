@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Course Scheduler</title>
+
+  <!-- FullCalendar CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.css" rel="stylesheet">
+  <style>
+    body { font-family: Arial, sans-serif; display: flex; gap: 20px; padding: 20px; }
+    #course-list { width: 200px; border: 1px solid #ccc; padding: 10px; }
+    #course-list button { display: block; margin: 5px 0; width: 100%; }
+    #calendar { flex: 1; }
+  </style>
+</head>
+<body>
+  <div id="course-list">
+    <h3>Courses</h3>
+    <input type="file" id="csvFile" accept=".csv"><br><br>
+    <div id="courses"></div>
+  </div>
+  <div id="calendar"></div>
+
+  <!-- Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
+  <script>
+    // Initialize calendar
+    const calendarEl = document.getElementById('calendar');
+    const calendar = new FullCalendar.Calendar(calendarEl, {
+      initialView: 'timeGridWeek',
+      slotMinTime: "08:00:00",
+      slotMaxTime: "20:00:00",
+      allDaySlot: false,
+      weekends: false // only Mon-Fri
+    });
+    calendar.render();
+
+    // Parse CSV and show course list
+    document.getElementById('csvFile').addEventListener('change', function(e) {
+      const file = e.target.files[0];
+      Papa.parse(file, {
+        header: true,
+        complete: function(results) {
+          const coursesDiv = document.getElementById('courses');
+          coursesDiv.innerHTML = "";
+          results.data.forEach(course => {
+            if (course.Name && course.Meetings) {
+              const btn = document.createElement('button');
+              btn.textContent = course.Name;
+              btn.onclick = () => addCourseToCalendar(course);
+              coursesDiv.appendChild(btn);
+            }
+          });
+        }
+      });
+    });
+
+    // Map day abbreviations to FullCalendar weekdays
+    const dayMap = {
+      "M": "2024-08-19", // Monday (dummy date)
+      "T": "2024-08-20", // Tuesday
+      "W": "2024-08-21", // Wednesday
+      "R": "2024-08-22", // Thursday
+      "F": "2024-08-23"  // Friday
+    };
+
+    function addCourseToCalendar(course) {
+      let meetings;
+      try {
+        meetings = JSON.parse(course.Meetings);
+      } catch (err) {
+        alert("Invalid JSON in Meetings for " + course.Name);
+        return;
+      }
+
+      meetings.forEach(meeting => {
+        const days = meeting.days.split("");
+        days.forEach(d => {
+          if (dayMap[d]) {
+            calendar.addEvent({
+              title: course.Name,
+              start: dayMap[d] + "T" + meeting.start,
+              end: dayMap[d] + "T" + meeting.end
+            });
+          }
+        });
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Course Scheduler</title>
+
+  <!-- FullCalendar CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/main.min.css" rel="stylesheet" />
+
+  <style>
+    :root {
+      --border: #d9d9e3;
+      --bg: #f8f9fb;
+      --active-bg: #e0f0ff;
+    }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; background: var(--bg); }
+    .app { display: grid; grid-template-columns: 280px 1fr; gap: 16px; padding: 16px; }
+    .panel { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 14px; }
+    #course-list h2 { margin: 0 0 10px; font-size: 18px; }
+    .hint { color: #555; font-size: 12px; margin: 8px 0 12px; }
+    .row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+    .row > * { flex: 0 0 auto; }
+    input[type="file"] { max-width: 100%; }
+    button { cursor: pointer; border-radius: 10px; border: 1px solid var(--border); background: #fff; padding: 8px 12px; }
+    button:hover { background: #f1f4f9; }
+    .course-btn { display: flex; width: 100%; justify-content: space-between; align-items: center; margin: 6px 0; }
+    .course-btn.active { font-weight: bold; background: var(--active-bg); }
+    .badge { font-size: 11px; padding: 2px 6px; border-radius: 999px; border: 1px solid var(--border); }
+    #courses { max-height: 60vh; overflow: auto; padding-right: 4px; }
+    #msg { font-size: 12px; color: #444; margin-top: 8px; white-space: pre-wrap; }
+    
+    #calendar { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 8px; }
+      /* Remove today's column shading */
+    .fc .fc-day-today,
+    .fc .fc-timegrid-col.fc-day-today,
+    .fc .fc-daygrid-day.fc-day-today,
+    .fc-theme-standard .fc-scrollgrid .fc-day-today {
+      background: transparent !important;
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <div id="course-list" class="panel">
+      <h2>Courses</h2>
+      <div class="row">
+        <input type="file" id="csvFile" accept=".csv" />
+	<button id="loadF25" title="Load F25.csv from this site">Fall 2025</button>	
+        <button id="loadSample">Load sample data</button>
+        <button id="clearCalendar" title="Remove all events">Clear calendar</button>
+      </div>
+      <div class="hint">Click a course to add <strong>all</strong> of its scheduled meetings to the weekly calendar.</div>
+      <div id="courses"></div>
+      <div id="msg"></div>
+    </div>
+
+    <div id="calendar"></div>
+  </div>
+
+  <!-- FullCalendar JS (bundled global build) -->
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js"></script>
+  <!-- PapaParse for CSV parsing -->
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
+  <script>
+    // --- Utilities ---------------------------------------------------------
+    const DAY_OFFSETS = { M: 0, T: 1, W: 2, R: 3, F: 4 }; // U=Sunday (optional), S=Saturday, R=Thursday
+
+    function parseTimeParts(hhmmss) {
+      const [h, m = "0", s = "0"] = String(hhmmss).trim().split(":");
+      return [Number(h), Number(m), Number(s)];
+    }
+
+    function dateWithTime(baseDate, timeStr) {
+      const d = new Date(baseDate);
+      const [h, m, s] = parseTimeParts(timeStr);
+      d.setHours(h, m, s || 0, 0);
+      return d;
+    }
+
+    function safeParseMeetings(jsonStr) {
+      // First attempt strict JSON parse
+      try { return JSON.parse(jsonStr); } catch (_) {}
+      // Fallback: try to repair single quotes -> double quotes
+      try { return JSON.parse(String(jsonStr).replace(/'(?=[^\w])/g, '"').replace(/\"\"/g, '"')); } catch (e) {
+        throw new Error("Invalid Meetings JSON: " + e.message);
+      }
+    }
+
+    function setMsg(text) {
+      document.getElementById('msg').textContent = text || '';
+    }
+
+    // --- Calendar ----------------------------------------------------------
+    const calendarEl = document.getElementById('calendar');
+    const calendar = new FullCalendar.Calendar(calendarEl, {
+      initialView: 'timeGridWeek',
+      firstDay: 1,              // Monday-start week
+      slotMinTime: '07:00:00',
+      slotMaxTime: '20:00:00',
+      allDaySlot: false,
+      nowIndicator: false,
+	height: 'auto',
+	weekends: false
+    });
+    calendar.render();
+
+
+
+
+
+    
+    function addCourseToCalendar(course, btn) {
+      setMsg('');
+
+      // Toggle: remove if already on calendar
+      const existing = calendar.getEvents().filter(evt => evt.extendedProps && evt.extendedProps.courseName === course.Name);
+      if (existing.length > 0) {
+        existing.forEach(evt => evt.remove());
+        if (btn) {
+          btn.querySelector('.badge').textContent = 'add';
+          btn.classList.remove('active');
+        }
+        return;
+      }
+
+      // Otherwise parse meetings and add
+      let meetings;
+      try {
+        meetings = safeParseMeetings(course.Meetings);
+        if (!Array.isArray(meetings)) throw new Error('Meetings must be an array');
+      } catch (err) {
+        setMsg(`⚠️ ${course.Name}: ${err.message}`);
+        console.error('Parse error for', course.Name, err, course.Meetings);
+        return;
+      }
+
+      const baseMonday = new Date(calendar.view.currentStart); // Monday of current view
+
+      meetings.forEach((m) => {
+        if (!m || !m.days || !m.start || !m.end) return;
+        const letters = String(m.days).toUpperCase().replace(/\s+/g, '').split('');
+        letters.forEach((L) => {
+          const offset = DAY_OFFSETS[L];
+          if (offset == null) return;
+          const day = new Date(baseMonday);
+          day.setDate(day.getDate() + offset);
+          const start = dateWithTime(day, m.start);
+          const end = dateWithTime(day, m.end);
+          calendar.addEvent({
+            title: course.Name,
+            start,
+            end,
+            extendedProps: { courseName: course.Name },
+          });
+        });
+      });
+
+      if (btn) {
+        btn.querySelector('.badge').textContent = 'remove';
+        btn.classList.add('active');
+      }
+    }
+
+    function clearCalendar() {
+      calendar.getEvents().forEach(evt => evt.remove());
+      document.querySelectorAll('.course-btn').forEach(btn => {
+        btn.classList.remove('active');
+        btn.querySelector('.badge').textContent = 'add';
+      });
+    }
+
+    // --- CSV -> Course list -----------------------------------------------
+    function renderCourseButtons(rows) {
+      const container = document.getElementById('courses');
+      container.innerHTML = '';
+      let count = 0;
+      rows.forEach((row) => {
+        if (!row || !row.Name || !row.Meetings) return;
+        const btn = document.createElement('button');
+        btn.className = 'course-btn';
+        btn.innerHTML = `<span>${row.Name}</span><span class="badge">add</span>`;
+        btn.addEventListener('click', () => addCourseToCalendar(row, btn));
+        container.appendChild(btn);
+        count++;
+      });
+      setMsg(count ? `Loaded ${count} course${count === 1 ? '' : 's'}.` : 'No valid rows found (need Name and Meetings columns).');
+    }
+
+    // File input
+    document.getElementById('csvFile').addEventListener('change', (e) => {
+      setMsg('');
+      const file = e.target.files && e.target.files[0];
+      if (!file) return;
+      Papa.parse(file, {
+        header: true,
+        skipEmptyLines: 'greedy',
+        complete: (results) => {
+          if (results.errors && results.errors.length) {
+            console.warn('PapaParse errors:', results.errors);
+            setMsg('⚠️ CSV parse warnings: see console.');
+          }
+          renderCourseButtons(results.data || []);
+        },
+        error: (err) => {
+          console.error('PapaParse error:', err);
+          setMsg('⚠️ Could not parse CSV: ' + err.message);
+        }
+      });
+    });
+
+    // Sample data button (guaranteed to work)
+    const SAMPLE_CSV = `Name,Meetings\n` +
+      `Calculus I,"[{""days"":""MWF"",""start"":""09:00:00"",""end"":""10:00:00""}]"\n` +
+      `Biology 101,"[{""days"":""TR"",""start"":""11:00:00"",""end"":""12:30:00""},{""days"":""F"",""start"":""14:00:00"",""end"":""16:00:00""}]"\n` +
+      `History of Art,"[{""days"":""M"",""start"":""14:00:00"",""end"":""16:00:00""}]"`;
+
+    document.getElementById('loadSample').addEventListener('click', () => {
+      Papa.parse(SAMPLE_CSV, { header: true, complete: (res) => renderCourseButtons(res.data) });
+    });
+
+    document.getElementById('clearCalendar').addEventListener('click', clearCalendar);
+
+
+    // Load F25.csv from the same directory as this page
+    document.getElementById('loadF25').addEventListener('click', async () => {
+      setMsg('');
+      try {
+        const res = await fetch('F25.csv', { cache: 'no-cache' });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const text = await res.text();
+        // Clear calendar when switching datasets
+        clearCalendar();
+        Papa.parse(text, {
+          header: true,
+          skipEmptyLines: 'greedy',
+          complete: (results) => {
+            if (results.errors && results.errors.length) {
+              console.warn('PapaParse errors:', results.errors);
+              setMsg('⚠️ CSV parse warnings: see console.');
+            }
+            renderCourseButtons(results.data || []);
+          },
+          error: (err) => {
+            console.error('PapaParse error:', err);
+            setMsg('⚠️ Could not parse F25.csv: ' + err.message);
+          }
+        });
+      } catch (e) {
+        console.error('Failed to load F25.csv', e);
+        setMsg('⚠️ Could not load F25.csv. Ensure it is in the same folder as this HTML.');
+      }
+    });
+
+    // Load Fall 2025 button
+    document.getElementById('loadFall2025').addEventListener('click', () => {
+      fetch('F25.csv')
+        .then(resp => resp.text())
+        .then(text => {
+          Papa.parse(text, {
+            header: true,
+            skipEmptyLines: 'greedy',
+            complete: (res) => renderCourseButtons(res.data),
+            error: (err) => setMsg('⚠️ Could not parse F25.csv: ' + err.message)
+          });
+        })
+        .catch(err => setMsg('⚠️ Could not load F25.csv: ' + err.message));
+    });
+
+
+
+
+
+  </script>
+</body>
+</html>
