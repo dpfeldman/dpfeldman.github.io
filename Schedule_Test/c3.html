@@ -48,7 +48,7 @@
 <body>
   <div class="app">
     <div id="course-list" class="panel">
-      <h2>Courses</h2>
+      <h2>Course List</h2>
       <div class="row">
         <input type="file" id="csvFile" accept=".csv" />
 	<button id="loadF25" title="Load F25.csv from this site">Fall 2025</button>	
@@ -213,9 +213,9 @@
 	calendar.getEvents().forEach(evt => evt.remove());
 	document.querySelectorAll('.course-btn').forEach(btn => {
 	    btn.classList.remove('active');
-	    btn.querySelector('.badge').textContent = 'add';
+	    /* btn.querySelector('.badge').textContent = 'add';
 	    btn.style.removeProperty('--course-color');
-	    btn.style.removeProperty('--course-color-bg');
+	    btn.style.removeProperty('--course-color-bg'); */
 	});
     }
 
