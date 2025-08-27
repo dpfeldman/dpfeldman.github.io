@@ -25,12 +25,7 @@
     button { cursor: pointer; border-radius: 10px; border: 1px solid var(--border); background: #fff; padding: 8px 12px; }
     button:hover { background: #f1f4f9; }
     .course-btn { display: flex; width: 100%; justify-content: space-between; align-items: center; margin: 6px 0; }
-    /* .course-btn.active { font-weight: bold; background: var(--active-bg); } */ 
-    .course-btn.active {
-	font-weight: bold;
-	background: var(--course-color-bg, #e0f0ff); /* fallback */
-	border-left: 6px solid var(--course-color, #3b82f6);
-    }
+    .course-btn.active { font-weight: bold; background: var(--active-bg); }
     .badge { font-size: 11px; padding: 2px 6px; border-radius: 999px; border: 1px solid var(--border); }
     #courses { max-height: 60vh; overflow: auto; padding-right: 4px; }
     #msg { font-size: 12px; color: #444; margin-top: 8px; white-space: pre-wrap; }
@@ -72,32 +67,6 @@
     // --- Utilities ---------------------------------------------------------
     const DAY_OFFSETS = { M: 0, T: 1, W: 2, R: 3, F: 4 }; // U=Sunday (optional), S=Saturday, R=Thursday
 
-    // --- Color utilities ----------------------------------------------------
-    const PALETTE = [
-	'#2563eb', '#16a34a', '#dc2626', '#9333ea', '#f59e0b',
-	'#0891b2', '#d946ef', '#059669', '#ef4444', '#8b5cf6'
-    ];
-    const courseColors = new Map();
-    
-    function hashCourse(name) {
-	let h = 0;
-	for (let i = 0; i < name.length; i++) h = (h * 31 + name.charCodeAt(i)) >>> 0;
-	return h;
-    }
-    function pickColor(name) {
-	if (courseColors.has(name)) return courseColors.get(name);
-	const color = PALETTE[hashCourse(name) % PALETTE.length];
-	courseColors.set(name, color);
-	return color;
-    }
-    function hexToRGBA(hex, alpha) {
-	const m = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
-	if (!m) return hex; // fallback
-	const r = parseInt(m[1], 16), g = parseInt(m[2], 16), b = parseInt(m[3], 16);
-	return `rgba(${r}, ${g}, ${b}, ${alpha})`;
-    }
-    // --- End Color utilities
-    
     function parseTimeParts(hhmmss) {
       const [h, m = "0", s = "0"] = String(hhmmss).trim().split(":");
       return [Number(h), Number(m), Number(s)];
@@ -151,10 +120,7 @@
         existing.forEach(evt => evt.remove());
         if (btn) {
           btn.querySelector('.badge').textContent = 'add';
-            btn.classList.remove('active');
-	    btn.style.removeProperty('--course-color');
-	    btn.style.removeProperty('--course-color-bg');
-
+          btn.classList.remove('active');
         }
         return;
       }
@@ -181,42 +147,28 @@
           const day = new Date(baseMonday);
           day.setDate(day.getDate() + offset);
           const start = dateWithTime(day, m.start);
-            const end = dateWithTime(day, m.end);
-	    const color = pickColor(course.Name);
-            calendar.addEvent({
-		/*  title: course.Name,
-		    start,
-		    end,
-		    extendedProps: { courseName: course.Name },
-		    }); */
-		title: course.Name,
-		start,
-		end,
-		backgroundColor: color,
-		borderColor: color,
-		extendedProps: { courseName: course.Name },
-	    });
-	});
+          const end = dateWithTime(day, m.end);
+          calendar.addEvent({
+            title: course.Name,
+            start,
+            end,
+            extendedProps: { courseName: course.Name },
+          });
+        });
       });
 
       if (btn) {
-          btn.querySelector('.badge').textContent = 'remove';
-	  const color = pickColor(course.Name);
-	  btn.style.setProperty('--course-color', color);
-	  btn.style.setProperty('--course-color-bg', hexToRGBA(color, 0.12));
-	  btn.classList.add('active');
-	  
+        btn.querySelector('.badge').textContent = 'remove';
+        btn.classList.add('active');
       }
     }
 
     function clearCalendar() {
-	calendar.getEvents().forEach(evt => evt.remove());
-	document.querySelectorAll('.course-btn').forEach(btn => {
-	    btn.classList.remove('active');
-	    btn.querySelector('.badge').textContent = 'add';
-	    btn.style.removeProperty('--course-color');
-	    btn.style.removeProperty('--course-color-bg');
-	});
+      calendar.getEvents().forEach(evt => evt.remove());
+      document.querySelectorAll('.course-btn').forEach(btn => {
+        btn.classList.remove('active');
+        btn.querySelector('.badge').textContent = 'add';
+      });
     }
 
     // --- CSV -> Course list -----------------------------------------------
