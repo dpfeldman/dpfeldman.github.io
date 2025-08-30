@@ -52,10 +52,12 @@
       <div class="row">
         <input type="file" id="csvFile" accept=".csv" />
 	<button id="loadF25" title="Load F25.csv from this site">Fall 2025</button>	
-        <button id="loadSample">Load sample data</button>
-        <button id="clearCalendar" title="Remove all events">Clear calendar</button>
+        <!--<button id="loadSample">Load sample data</button>-->
+        <button id="clearCalendar" title="Remove all events">Clear course selections</button>
       </div>
-      <div class="hint">Click a course to add <strong>all</strong> of its scheduled meetings to the weekly calendar.</div>
+            <div class="hint">Once you select a term, an alphabetical list of all of that term's classes will appear below.</div>
+      <div class="hint">Click a course to add all of its scheduled meetings to the weekly calendar.</div>
+      <div class="hint">For courses with multiple lab sections, you will need to select a lab section by hand.</div>
       <div id="courses"></div>
       <div id="msg"></div>
     </div>
@@ -266,9 +268,9 @@
       `Biology 101,"[{""days"":""TR"",""start"":""11:00:00"",""end"":""12:30:00""},{""days"":""F"",""start"":""14:00:00"",""end"":""16:00:00""}]"\n` +
       `History of Art,"[{""days"":""M"",""start"":""14:00:00"",""end"":""16:00:00""}]"`;
 
-    document.getElementById('loadSample').addEventListener('click', () => {
-      Papa.parse(SAMPLE_CSV, { header: true, complete: (res) => renderCourseButtons(res.data) });
-    });
+//    document.getElementById('loadSample').addEventListener('click', () => {
+//      Papa.parse(SAMPLE_CSV, { header: true, complete: (res) => renderCourseButtons(res.data) });
+//    });
 
     document.getElementById('clearCalendar').addEventListener('click', clearCalendar);
 
