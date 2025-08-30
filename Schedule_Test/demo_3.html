@@ -30,8 +30,7 @@
   </style>
 </head>
 <body>
-  <h1>Course Offering</h1>
-  <h2>Just a test. This is not official or anything.</h2>
+  <h1>Course Offering: Fall 2025</h1>
 
   <div class="filters">
     <label>
@@ -48,6 +47,11 @@
     </label>
   </div>
 
+  <div>
+    <p>Below is a list of all classes offered in Fall 2025. You can sort this list of classes alphabetically by Faculty or Course Title.</p>
+    <p>Use the 'Requirements' drop-down menu to see all classes that meet a particular requirement (AD, ADS, QR, etc)./p>
+    </div>
+  
   <table id="courses" class="display">
     <thead>
       <tr>
@@ -89,7 +93,7 @@
 
         // Initialize DataTable
         const table = $("#courses").DataTable({
-          pageLength: 25,
+          pageLength: 100,
           order: [[1, "asc"]],
           dom: 'frtip'
         });
