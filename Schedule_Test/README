@@ -1,0 +1,8 @@
+
+So, the colors for courses are chosen by a hash function. What I'd prefer
+would be for the colors to cycle among, say, six different colors. There
+should be a way to do this. 
+
+c3.html is the version I was working on.
+
+c4.html has some conflict highlight stuff going on that I haven't looked at yet
