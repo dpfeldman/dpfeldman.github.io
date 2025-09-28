@@ -19,7 +19,7 @@
   <h1>Course Offering</h1>
   <h2>Just a test. This is not official or anything.</h2>
 
-  <!-- Filters live OUTSIDE the table (valid HTML structure) -->
+  <!-- Filters -->
   <div class="filters">
     <label>
       Instructor:
@@ -33,6 +33,12 @@
         <option value="">All</option>
       </select>
     </label>
+    <label>
+      Level:
+      <select id="filter-level">
+        <option value="">All</option>
+      </select>
+    </label>
   </div>
 
   <table id="courses" class="display">
@@ -41,6 +47,7 @@
         <th>Faculty Name</th>
         <th>Course Name</th>
         <th>Degree Requirements Met</th>
+        <th>Level</th>
       </tr>
     </thead>
     <tbody>
@@ -59,20 +66,13 @@
       return String(text).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     }
 
-    // Robust tokenizer for requirement codes (handles unicode spaces, slashes, pipes, commas, semicolons, hyphens, parentheses)
     function tokenizeRequirements(cell) {
       if (!cell) return [];
-      const raw = String(cell).replace(/\u00A0/g, ' ').trim(); // normalize NBSP -> space
+      const raw = String(cell).replace(/\u00A0/g, ' ').trim();
       if (!raw) return [];
-
-      // First pass: split on common delimiters
       const rough = raw.split(/[\s,;|/()\-]+/u).map(t => t.trim()).filter(Boolean);
-
-      // Normalize to uppercase tokens
       const out = new Set(rough.map(t => t.toUpperCase()));
-
-      // Second pass: ensure specific short codes (like AD vs ADS) are captured as whole tokens
-      const KNOWN = ["ES","QR","AD","ADS"]; // add more codes here as needed
+      const KNOWN = ["ES","QR","AD","ADS"];
       for (const code of KNOWN) {
         const re = new RegExp(`(^|[\s,;|/()\-])${code}([\s,;|/()\-]|$)`, 'i');
         if (re.test(raw)) out.add(code);
@@ -80,7 +80,6 @@
       return Array.from(out);
     }
 
-    // ---- Main ----
     Papa.parse("./courses.csv", {
       download: true,
       header: true,
@@ -90,25 +89,43 @@
 
         // Build rows
         data.forEach(row => {
-          if (row["FacultyName"]) { // skip empty rows
+          if (row["FacultyName"]) {
             const tr = document.createElement("tr");
             tr.innerHTML = `
               <td>${row["FacultyName"] ?? ''}</td>
               <td>${row["CourseName"] ?? ''}</td>
               <td>${row["CourseDivision"] ?? ''}</td>
+              <td>${row["Level"] ?? ''}</td>
             `;
             tbody.appendChild(tr);
           }
         });
 
-        // Init DataTable
+        // --- Desired custom order for Level ---
+        const desiredOrder = [
+          "Introductory",
+          "Introductory/Intermediate",
+          "Intermediate",
+          "Intermediate/Advanced",
+          "Advanced"
+        ];
+
+        // --- Custom sort for Level column using desired order ---
+        const levelOrderMap = desiredOrder.reduce((acc, v, i) => { acc[v] = i; return acc; }, {});
+        $.fn.dataTable.ext.type.order['level-order-pre'] = function (d) {
+          const t = String(d || '').trim();
+          return Object.prototype.hasOwnProperty.call(levelOrderMap, t) ? levelOrderMap[t] : 9999;
+        };
+
+        // Init DataTable (apply custom type to Level column index 3)
         const table = $("#courses").DataTable({
           pageLength: 25,
           order: [[1, "asc"]],
-          dom: 'frtip'
+          dom: 'frtip',
+          columnDefs: [ { targets: 3, type: 'level-order' } ]
         });
 
-        // --- Populate Instructor dropdown (unique values) ---
+        // Instructors dropdown
         const instructors = Array.from(new Set(
           data.map(r => (r["FacultyName"] || '').trim()).filter(Boolean)
         )).sort((a,b) => a.localeCompare(b, undefined, {sensitivity:'base'}));
@@ -119,7 +136,7 @@
           opt.value = name; opt.textContent = name; deptSelect.appendChild(opt);
         }
 
-        // --- Tokenize requirements and populate dropdown with single tokens only ---
+        // Requirements dropdown (single tokens only)
         const tokenSet = new Set();
         data.forEach(r => tokenizeRequirements(r["CourseDivision"]).forEach(t => tokenSet.add(t)));
         const requirementTokens = Array.from(tokenSet).sort((a,b) => a.localeCompare(b, undefined, {sensitivity:'base'}));
@@ -130,26 +147,42 @@
           opt.value = tok; opt.textContent = tok; reqSelect.appendChild(opt);
         }
 
-        // --- Filtering logic ---
+        // Level dropdown using desired order, but only include levels present in data
+        const presentLevels = new Set(
+          data.map(r => (r["Level"] || '').trim()).filter(Boolean)
+        );
+        const levels = [
+          ...desiredOrder.filter(l => presentLevels.has(l)),
+          ...Array.from(presentLevels).filter(l => !desiredOrder.includes(l)).sort((a,b) => a.localeCompare(b, undefined, {sensitivity:'base'}))
+        ];
+
+        const levelSelect = document.getElementById("filter-level");
+        for (const lvl of levels) {
+          const opt = document.createElement("option");
+          opt.value = lvl; opt.textContent = lvl; levelSelect.appendChild(opt);
+        }
+
+        // Filtering logic
         deptSelect.addEventListener("change", function () {
           const val = this.value;
           table.column(0).search(val ? '^' + escapeRegex(val) + '$' : '', true, false).draw();
         });
 
         reqSelect.addEventListener("change", function () {
-          const val = this.value; // already uppercase token
+          const val = this.value;
           if (val) {
-            // Whole-token match within multi-valued cells (won't conflate AD with ADS)
-            const boundary = '([\\s,;|/()\\-])';
-            const regex = `(^|${boundary})${escapeRegex(val)}($|${boundary})`;
+            const boundary = '[\\s,;|/()\\-]';
+            const regex = `(^|${boundary})${escapeRegex(val)}(${boundary}|$)`;
             table.column(2).search(regex, true, false).draw();
           } else {
             table.column(2).search('', true, false).draw();
           }
         });
 
-        // Debug tip (optional): uncomment to see what tokens were detected
-        // console.log('Requirement tokens:', requirementTokens);
+        levelSelect.addEventListener("change", function () {
+          const val = this.value;
+          table.column(3).search(val ? '^' + escapeRegex(val) + '$' : '', true, false).draw();
+        });
       }
     });
   </script>

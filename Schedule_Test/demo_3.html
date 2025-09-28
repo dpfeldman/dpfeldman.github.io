@@ -91,6 +91,12 @@
         <option value="">All</option>
       </select>
     </label>
+       <label>
+      Level:
+      <select id="filter-level">
+        <option value="">All</option>
+      </select>
+    </label>
     <label>
       Requirements:
       <select id="filter-requirements">
@@ -105,6 +111,7 @@
       <tr>
         <th>Faculty Name</th>
         <th>Course Name</th>
+	<th>Level</th>
         <th>Degree Requirements Met</th>
       </tr>
     </thead>
@@ -160,6 +167,7 @@
 		  tr.innerHTML = `
               <td>${row["FacultyName"]}</td>
               <td>${row["CourseName"]}</td>
+              <td>${row["Level"] ?? ''}</td>
               <td>${row["CourseDivision"]}</td>
             `;
 		  tbody.appendChild(tr);
@@ -196,6 +204,18 @@
           opt.value = tok; opt.textContent = tok; reqSelect.appendChild(opt);
         }
 
+
+        // Level dropdown
+        const levelSelect = document.getElementById("filter-level");
+        const levels = Array.from(new Set(
+          data.map(r => (r["Level"] || '').trim()).filter(Boolean)
+        )).sort((a,b) => a.localeCompare(b, undefined, {sensitivity:'base'}));
+        for (const lvl of levels) {
+          const opt = document.createElement("option");
+          opt.value = lvl; opt.textContent = lvl; levelSelect.appendChild(opt);
+        }
+
+	  
         // --- Filtering logic ---
         deptSelect.addEventListener("change", function () {
           const val = this.value;
@@ -214,12 +234,14 @@
           }
         });
 
-        // Debug tip (optional): uncomment to see what tokens were detected
-        // console.log('Requirement tokens:', requirementTokens);
+	  levelSelect.addEventListener("change", function () {
+              const val = this.value;
+              table.column(3).search(val ? '^' + escapeRegex(val) + '$' : '', true, false).draw();
+          });
       }
     });
-
-
+    
+    
   </script>
 </body>
 </html>

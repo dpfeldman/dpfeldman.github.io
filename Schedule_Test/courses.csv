@@ -1,71 +1,71 @@
-FacultyName,CourseName,CourseDivision
-"Cline, Ken",Acadia: Exploring the National Park Idea,HS
-"Koch, Galen",Audiocraft: Writing and Producing Longform Narrative Audio,ADS
-"Robbins, Dani",Beginning Contemporary Dance Technique,ADS
-"Smith, Hillary",Blue Food Systems,HS
-"Gibson, David",Building Science and Energy Auditing,
-"Taneja, Palak",College Seminar: The World of Ms. Marvel,W HS
-"Herrington, Matthew",Constitutional Law: Supreme Court and Civil Liberties,HS
-"Friedlander, Jay",Designing Your Life,
-"Sebastian, Neeraj",Drawing Intensive / Developing a Studio Practice,ADS
-"Slabach, Brittany",Ecology:  Natural History,ES
-"Sullivan , Leeann",Environmental Justice,HS
-"McKown, Jamie","Equal Rights, Equal Voices: Articulating Suffrage",HS HY
-"Gadeken, Kara",Estuaries,ES
-"Anderson, John",Farming the Wild,
-"Khor, Su Yin",Food and identity in writing: Multimodality in composition,W HS
-"Ferrari , Melissa",Frame by Frame: Hand-Drawn Animation,ADS
-"Earley, Annika",Fundamentals of Drawing,ADS
-"Longsworth, Gordon",Geographic Information Systems I: Foundations & Applications,HS
-"Hall, Sarah",Geology of Mt. Desert Island,ES
-"Little-Siebold, Todd",History of Agriculture: Apples,HS HY
-"Taylor, Davis",Homesteading: Theory and Practice,HS
-"Capers, Colin",Human Ecology Core Course Section A,HE
-"Lakey, Heather",Human Ecology Core Course Section B,HE
-"McKown, Jamie",Human Ecology Core Course Section C,HE
-"Neuhouser, Jeffry",Human Ecology Core Course Section E,HE
-"Sebastian, Neeraj",Human Ecology Core Course Section F,HE
-"Woolsey, Scott",Human Ecology Core Course Section G,HE
-"Little-Siebold, Todd",Indigenous America,HS HY
-"Cline, Ken",International Wildlife Policy and Protected Areas,HS
-"Waldron, Karen",Intersectional Voicing: Modern US Women Novelists,HS
-"Gadeken, Kara",Intertidal Ecology,ES
-"Gagnon da Silva, Pamela",Intimate Partner Violence: Dynamics and Community Response,HS
-"Ialeggio, Anna",Introduction to Ceramic Sculpture,ADS
-"Edwards, Torrie",Introduction to Computer Science: Data Section A,QR
-"Edwards, Torrie",Introduction to Computer Science: Data Section B,QR
-"van Vliet, Netta",Introduction to Cultural Anthropology,HS
-"Nguyen, Duc Hien",Introduction to Microeconomics,HS QR
-"Todd, Sean",Introduction to Oceanography,ES
-"Jacoby, Franklin",Introduction to Philosophy of Mind,HS
-"Winer, Joshua",Introduction to Photography,ADS
-"Graham, Carrie",Introductory Entomology,ES
-"Blotnick, Ryan",Jazz Ensemble,
-"Todd, Sean",Marine Mammal Biology I,ES
-"van Vliet, Netta",Marx and Marxisms,HS
-"Baker, Jodi",Movement Training Basics Section A,ADS
-"Baker, Jodi",Movement Training Basics Section B,ADS
-"Henderson, Jonathan",Music for Narrative Media,ADS
-"Lakey, Heather","Nature, Humans, and Philosophy",HS
-"Stephenson, Toby","Navigation: skills, tools, and the drivers of seafaring",
-"Hanson, Nathaniel",Paddlesport Instructor and Leadership Course,
-"Feldman, David",Physics and Mathematics of Sustainable Energy,ES QR
-"Stabinsky, Doreen",Political Economies of Carbon,HS
-"Tsygankova, Valeria",Pushing the Boundaries of the Essay,W HS
-"Henderson, Jonathan",Shellac to Spotify: 100 Years of Recorded Music,ADS
-"Friedlander, Jay",Solutions,HS
-"Pena, Karla",Spanish: Advanced,HS
-"Pena, Karla",Spanish: Beginning II,HS
-"Becker, Michael",Spanish: Immersive Beginning I,HS
-"Morse, Suzanne",Special Topics in the Biology and Politics of Seeds,ES
-"Cox, Gray",Strategies for Social Change,HS
-"Fuller, Linda",Student Teaching Internship,ED
-"Earley, Annika",Studio Printmaking,ADS
-"Taneja, Palak",The Empire Writes Back,HS
-"Nguyen, Duc Hien",The Price of Knowledge: Economics of Education,HS QR
-"Weber, Jill",Trees and Shrubs of Mount Desert Island,ES
-"Anderson, John",Tutorial: Human Anatomy and Physiology,
-"Slabach, Brittany",Vertebrate Zoology,ES
-"Anderson, John",Working the Sea,
-"Turok, Katharine",Writing Goes Wild: Environmental Adventures and Impacts,W HS
-"Sigler Sibara, Josie",Your Turn: Critical/Creative Inquiries in Board Game Media,HS
+FacultyName,CourseName,CourseDivision,Level
+"Cline, Ken",Acadia: Exploring the National Park Idea,HS,Introductory
+"Koch, Galen",Audiocraft: Writing and Producing Longform Narrative Audio,ADS,Introductory/Intermediate
+"Robbins, Dani",Beginning Contemporary Dance Technique,ADS,Introductory
+"Smith, Hillary",Blue Food Systems,HS,Intermediate
+"Gibson, David",Building Science and Energy Auditing,,Intermediate/Advanced
+"Taneja, Palak",College Seminar: The World of Ms. Marvel,W HS,Introductory/Intermediate
+"Herrington, Matthew",Constitutional Law: Supreme Court and Civil Liberties,HS,Introductory
+"Friedlander, Jay",Designing Your Life,,Intermediate
+"Sebastian, Neeraj",Drawing Intensive / Developing a Studio Practice,ADS,Intermediate/Advanced
+"Slabach, Brittany",Ecology:  Natural History,ES,Introductory/Intermediate
+"Sullivan , Leeann",Environmental Justice,HS,Introductory/Intermediate
+"McKown, Jamie","Equal Rights, Equal Voices: Articulating Suffrage",HS HY,Introductory
+"Gadeken, Kara",Estuaries,ES,Intermediate/Advanced
+"Anderson, John",Farming the Wild,,Introductory/Intermediate
+"Khor, Su Yin",Food and identity in writing: Multimodality in composition,W HS,Introductory
+"Ferrari , Melissa",Frame by Frame: Hand-Drawn Animation,ADS,Introductory
+"Earley, Annika",Fundamentals of Drawing,ADS,Introductory
+"Longsworth, Gordon",Geographic Information Systems I: Foundations & Applications,HS,Introductory/Intermediate
+"Hall, Sarah",Geology of Mt. Desert Island,ES,Introductory
+"Little-Siebold, Todd",History of Agriculture: Apples,HS HY,Intermediate
+"Taylor, Davis",Homesteading: Theory and Practice,HS,Intermediate
+"Capers, Colin",Human Ecology Core Course Section A,HE,Introductory
+"Lakey, Heather",Human Ecology Core Course Section B,HE,Introductory
+"McKown, Jamie",Human Ecology Core Course Section C,HE,Introductory
+"Neuhouser, Jeffry",Human Ecology Core Course Section E,HE,Introductory
+"Sebastian, Neeraj",Human Ecology Core Course Section F,HE,Introductory
+"Woolsey, Scott",Human Ecology Core Course Section G,HE,Introductory
+"Little-Siebold, Todd",Indigenous America,HS HY,Introductory/Intermediate
+"Cline, Ken",International Wildlife Policy and Protected Areas,HS,Intermediate
+"Waldron, Karen",Intersectional Voicing: Modern US Women Novelists,HS,Intermediate/Advanced
+"Gadeken, Kara",Intertidal Ecology,ES,Introductory
+"Gagnon da Silva, Pamela",Intimate Partner Violence: Dynamics and Community Response,HS,Introductory
+"Ialeggio, Anna",Introduction to Ceramic Sculpture,ADS,Introductory
+"Edwards, Torrie",Introduction to Computer Science: Data Section A,QR,Introductory
+"Edwards, Torrie",Introduction to Computer Science: Data Section B,QR,Introductory
+"van Vliet, Netta",Introduction to Cultural Anthropology,HS,Introductory
+"Nguyen, Duc Hien",Introduction to Microeconomics,HS QR,Introductory
+"Todd, Sean",Introduction to Oceanography,ES,Introductory
+"Jacoby, Franklin",Introduction to Philosophy of Mind,HS,Introductory/Intermediate
+"Winer, Joshua",Introduction to Photography,ADS,Introductory
+"Graham, Carrie",Introductory Entomology,ES,Introductory/Intermediate
+"Blotnick, Ryan",Jazz Ensemble,,Intermediate
+"Todd, Sean",Marine Mammal Biology I,ES,Introductory/Intermediate
+"van Vliet, Netta",Marx and Marxisms,HS,Introductory/Intermediate
+"Baker, Jodi",Movement Training Basics Section A,ADS,Introductory
+"Baker, Jodi",Movement Training Basics Section B,ADS,Introductory
+"Henderson, Jonathan",Music for Narrative Media,ADS,Intermediate/Advanced
+"Lakey, Heather","Nature, Humans, and Philosophy",HS,Introductory/Intermediate
+"Stephenson, Toby","Navigation: skills, tools, and the drivers of seafaring",,Introductory/Intermediate
+"Hanson, Nathaniel",Paddlesport Instructor and Leadership Course,,Introductory/Intermediate
+"Feldman, David",Physics and Mathematics of Sustainable Energy,ES QR,Introductory
+"Stabinsky, Doreen",Political Economies of Carbon,HS,Intermediate/Advanced
+"Tsygankova, Valeria",Pushing the Boundaries of the Essay,W HS,Introductory
+"Henderson, Jonathan",Shellac to Spotify: 100 Years of Recorded Music,ADS,Introductory
+"Friedlander, Jay",Solutions,HS,Intermediate
+"Pena, Karla",Spanish: Advanced,HS,Advanced
+"Pena, Karla",Spanish: Beginning II,HS,Introductory
+"Becker, Michael",Spanish: Immersive Beginning I,HS,Introductory
+"Morse, Suzanne",Special Topics in the Biology and Politics of Seeds,ES,Intermediate/Advanced
+"Cox, Gray",Strategies for Social Change,HS,Introductory/Intermediate
+"Fuller, Linda",Student Teaching Internship,ED,Advanced
+"Earley, Annika",Studio Printmaking,ADS,Intermediate/Advanced
+"Taneja, Palak",The Empire Writes Back,HS,Intermediate
+"Nguyen, Duc Hien",The Price of Knowledge: Economics of Education,HS QR,Introductory
+"Weber, Jill",Trees and Shrubs of Mount Desert Island,ES,Introductory/Intermediate
+"Anderson, John",Tutorial: Human Anatomy and Physiology,,Intermediate/Advanced
+"Slabach, Brittany",Vertebrate Zoology,ES,Intermediate
+"Anderson, John",Working the Sea,,Introductory
+"Turok, Katharine",Writing Goes Wild: Environmental Adventures and Impacts,W HS,Intermediate
+"Sigler Sibara, Josie",Your Turn: Critical/Creative Inquiries in Board Game Media,HS,Intermediate
