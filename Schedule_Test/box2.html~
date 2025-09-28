@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiple Dismissible Boxes</title>
+  <style>
+    .message-box {
+      position: relative;
+      background-color: #f0f8ff;
+      border: 1px solid #b0c4de;
+      padding: 15px 40px 15px 15px;
+      margin: 20px 0;
+      border-radius: 8px;
+      font-family: Arial, sans-serif;
+      max-width: 400px;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 8px;
+      right: 12px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #555;
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+
+    .close-btn:hover {
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <div class="message-box">
+    <button class="close-btn" onclick="this.parentElement.style.display='none'">×</button>
+    This is the first message box.
+  </div>
+
+  <div class="message-box">
+    <button class="close-btn" onclick="this.parentElement.style.display='none'">×</button>
+    This is the second message box.
+  </div>
+</body>
+</html>

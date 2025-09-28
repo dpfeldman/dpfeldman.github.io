@@ -12,8 +12,7 @@
       margin: 20px;
     }
     h1 {
-	text-align: center;
-	color:#455550;
+      text-align: center;
     }
     h2 {
       text-align: center;
@@ -31,8 +30,8 @@
 
    .message-box {
       position: relative;
-      background-color: #98ACD7;
-      border: 2px solid #273B65;
+      background-color: #f0f8ff;
+      border: 2px solid #b0c4de;
       padding: 15px 40px 15px 15px;
       margin: 20px 0;
       border-radius: 8px;
@@ -46,7 +45,7 @@
       right: 12px;
       font-size: 18px;
       font-weight: bold;
-      color: #58523F;
+      color: #aaa;
       cursor: pointer;
       border: none;
       background: none;
@@ -61,7 +60,6 @@
 </head>
 <body>
   <h1>Course Offering: Fall 2025</h1>
-  <h1>College of the Atlantic</h1>
 
  <div class="message-box">
     <button class="close-btn" onclick="this.parentElement.style.display='none'">×</button>
@@ -119,32 +117,6 @@
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
 
   <script>
-
-    function escapeRegex(text) {
-      return String(text).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    }
-
-    // Robust tokenizer for requirement codes (handles unicode spaces, slashes, pipes, commas, semicolons, hyphens, parentheses)
-    function tokenizeRequirements(cell) {
-      if (!cell) return [];
-      const raw = String(cell).replace(/\u00A0/g, ' ').trim(); // normalize NBSP -> space
-      if (!raw) return [];
-
-      // First pass: split on common delimiters
-      const rough = raw.split(/[\s,;|/()\-]+/u).map(t => t.trim()).filter(Boolean);
-
-      // Normalize to uppercase tokens
-      const out = new Set(rough.map(t => t.toUpperCase()));
-
-      // Second pass: ensure specific short codes (like AD vs ADS) are captured as whole tokens
-      const KNOWN = ["ES","QR","AD","ADS"]; // add more codes here as needed
-      for (const code of KNOWN) {
-        const re = new RegExp(`(^|[\s,;|/()\-])${code}([\s,;|/()\-]|$)`, 'i');
-        if (re.test(raw)) out.add(code);
-      }
-      return Array.from(out);
-    }
-
     // Load CSV file and initialize DataTable
     Papa.parse("./courses.csv", {
       download: true,
@@ -153,18 +125,17 @@
         const data = results.data;
         const tbody = document.querySelector("#courses tbody");
 
-	  // Build rows
-          data.forEach(row => {
-              if (row["FacultyName"]) { // skip empty rows
-		  const tr = document.createElement("tr");
-		  tr.innerHTML = `
+        data.forEach(row => {
+          if (row["FacultyName"]) { // skip empty rows
+            const tr = document.createElement("tr");
+            tr.innerHTML = `
               <td>${row["FacultyName"]}</td>
               <td>${row["CourseName"]}</td>
               <td>${row["CourseDivision"]}</td>
             `;
-		  tbody.appendChild(tr);
-              }
-          });
+            tbody.appendChild(tr);
+          }
+        });
 
         // Initialize DataTable
         const table = $("#courses").DataTable({
@@ -173,53 +144,64 @@
           dom: 'frtip'
         });
 
-        // --- Populate Instructor dropdown (unique values) ---
-        const instructors = Array.from(new Set(
-          data.map(r => (r["FacultyName"] || '').trim()).filter(Boolean)
-        )).sort((a,b) => a.localeCompare(b, undefined, {sensitivity:'base'}));
+        // Collect unique values for filters
+        const departments = [...new Set(data.map(r => r["FacultyName"]).filter(Boolean))].sort();
+
+        // --- Tokenize CourseDivision into individual requirements ---
+        const requirementTokens = new Set();
+        data.forEach(r => {
+          if (r["CourseDivision"]) {
+            r["CourseDivision"]
+              .split(/[,; ]+/) // split on spaces, commas, or semicolons
+              .map(token => token.trim())
+              .filter(Boolean)
+              .forEach(token => requirementTokens.add(token));
+          }
+        });
+        const requirements = [...requirementTokens].sort();
 
         const deptSelect = document.getElementById("filter-instructor");
-        for (const name of instructors) {
-          const opt = document.createElement("option");
-          opt.value = name; opt.textContent = name; deptSelect.appendChild(opt);
-        }
+        const reqSelect = document.getElementById("filter-requirements");    
 
-	  
-       // --- Tokenize requirements and populate dropdown with single tokens only ---
-        const tokenSet = new Set();
-        data.forEach(r => tokenizeRequirements(r["CourseDivision"]).forEach(t => tokenSet.add(t)));
-        const requirementTokens = Array.from(tokenSet).sort((a,b) => a.localeCompare(b, undefined, {sensitivity:'base'}));
+        departments.forEach(dep => {
+          const option = document.createElement("option");
+          option.value = dep;
+          option.textContent = dep;
+          deptSelect.appendChild(option);
+        });
 
-        const reqSelect = document.getElementById("filter-requirements");
-        for (const tok of requirementTokens) {
-          const opt = document.createElement("option");
-          opt.value = tok; opt.textContent = tok; reqSelect.appendChild(opt);
-        }
+        requirements.forEach(req => {
+          const option = document.createElement("option");
+          option.value = req;
+          option.textContent = req;
+          reqSelect.appendChild(option);
+        });
 
-        // --- Filtering logic ---
-        deptSelect.addEventListener("change", function () {
+        // Apply filters on change
+        deptSelect.addEventListener("change", function() {
           const val = this.value;
           table.column(0).search(val ? '^' + escapeRegex(val) + '$' : '', true, false).draw();
         });
 
-        reqSelect.addEventListener("change", function () {
-          const val = this.value; // already uppercase token
-          if (val) {
-            // Whole-token match within multi-valued cells (won't conflate AD with ADS)
-            const boundary = '([\\s,;|/()\\-])';
-            const regex = `(^|${boundary})${escapeRegex(val)}($|${boundary})`;
-            table.column(2).search(regex, true, false).draw();
-          } else {
-            table.column(2).search('', true, false).draw();
-          }
-        });
+	  reqSelect.addEventListener("change", function() {
+	      const val = this.value;
+	      if (val) {
+		  // Require exact token match (not substring)
+		  const regex = `(^|[ ,;])${escapeRegex(val)}([ ,;]|$)`;
+		  table.column(2).search(regex, true, false).draw();
+	      } else {
+		  table.column(2).search('', true, false).draw();
+	      }
+	  });
+	  
+	  // Helper to escape regex special chars
+	  function escapeRegex(text) {
+	      return text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+	  }
 
-        // Debug tip (optional): uncomment to see what tokens were detected
-        // console.log('Requirement tokens:', requirementTokens);
+    
       }
     });
-
-
   </script>
 </body>
 </html>

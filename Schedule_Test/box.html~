@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dismissible Box Example</title>
+  <style>
+    .message-box {
+      position: relative;
+      background-color: #f0f8ff;
+      border: 1px solid #b0c4de;
+      padding: 15px 40px 15px 15px;
+      margin: 20px 0;
+      border-radius: 8px;
+      font-family: Arial, sans-serif;
+      max-width: 400px;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 8px;
+      right: 12px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #555;
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+
+    .close-btn:hover {
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <div class="message-box" id="infoBox">
+    <button class="close-btn" onclick="dismissBox()">×</button>
+    This is some information for the user. You can dismiss this box by clicking the X.
+  </div>
+
+  <script>
+    function dismissBox() {
+      document.getElementById("infoBox").style.display = "none";
+    }
+  </script>
+</body>
+</html>
