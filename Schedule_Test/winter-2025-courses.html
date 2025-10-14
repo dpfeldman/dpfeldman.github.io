@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>COA Course Offering: Winter 2025</title>
+  <title>COA Course Offering: Winter 2026</title>
   <!-- DataTables CSS -->
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" />
   <style>
@@ -55,7 +55,7 @@
 
     </head>
 <body>
-  <h1>Course Offering: Fall 2025</h1>
+  <h1>Course Offering: Winter 2026</h1>
   <h1>College of the Atlantic</h1>
  <div class="message-box">
     <button class="close-btn" onclick="this.parentElement.style.display='none'">×</button>
@@ -79,7 +79,7 @@
   </div>
 
   <div>
-    <p>Below is a list of all classes offered in Fall 2025. You can
+    <p>Below is a list of all classes offered in Winter 2026. You can
     sort this list of classes alphabetically by Faculty or Course
     Title, or you can sort by level, either low-to-high or high-to-low.</p>  
     <p>Use the 'Requirements' drop-down menu to see all classes that
@@ -182,7 +182,7 @@
       backdrop.setAttribute('aria-hidden', 'true');
     }
 
-    Papa.parse("./courses_2.csv", {
+    Papa.parse("./winter_courses_output.csv", {
       download: true,
       header: true,
       complete: function (results) {
