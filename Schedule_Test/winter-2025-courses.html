@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>COA Course Offering: Winter 2025</title>
+  <!-- DataTables CSS -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" />
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h1, h2 { text-align: center; color:#455550}
+    table { width: 100%; }
+    .filters { margin: 1em 0; text-align: center; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .filters label { margin: 0 0.25em; }
+    select { padding: 6px 8px; }
+    .course-link { background: none; border: none; padding: 0; text-decoration: underline; cursor: pointer; font: inherit; }
+    /* Modal styles */
+    .modal-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.35); display: none; align-items: center; justify-content: center; }
+    .modal { background: #fff; max-width: 720px; width: 92%; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.25); }
+    .modal-header { display: flex; justify-content: space-between; align-items: center; padding: 14px 18px; border-bottom: 1px solid #eee; }
+    .modal-title { font-weight: 600; }
+    .modal-close { background: none; border: none; font-size: 22px; line-height: 1; cursor: pointer; }
+    .modal-body { padding: 16px 18px; white-space: pre-wrap; }
+
+  .message-box {
+      position: relative;
+      background-color: #98ACD7;
+      border: 2px solid #273B65;
+      padding: 15px 40px 15px 15px;
+      margin: 20px 0;
+      border-radius: 8px;
+      font-family: Arial, sans-serif;
+      max-width: 100%;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 8px;
+      right: 12px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #58523F;
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+
+    .close-btn:hover {
+      color: #000;
+    }
+
+  </style>
+
+
+
+    </head>
+<body>
+  <h1>Course Offering: Fall 2025</h1>
+  <h1>College of the Atlantic</h1>
+ <div class="message-box">
+    <button class="close-btn" onclick="this.parentElement.style.display='none'">×</button>
+    <b>Note:</b>  We make every attempt to keep the information on this
+    page up to date. In the event that there is a discrepancy between
+    this course listing and the one in CAMS, the CAMS listing should
+    be assumed to be correct.
+  </div>
+
+  <div class="message-box">
+    <button class="close-btn" onclick="this.parentElement.style.display='none'">×</button>
+     <b>Note</b>: This page is to be used for browsing through
+    courses. You cannot register for courses on this
+     page. Registration occurs on the CAMS system.
+  </div>
+
+   <div class="message-box">
+    <button class="close-btn" onclick="this.parentElement.style.display='none'">×</button>
+     <b>Note</b>: This page is best viewed on a tablet or computer, not
+     a phone.
+  </div>
+
+  <div>
+    <p>Below is a list of all classes offered in Fall 2025. You can
+    sort this list of classes alphabetically by Faculty or Course
+    Title, or you can sort by level, either low-to-high or high-to-low.</p>  
+    <p>Use the 'Requirements' drop-down menu to see all classes that
+      meet a particular requirement (AD, ADS, QR, etc).</p>
+    <p>If you click on a course title, you will get a pop-up box
+      showing the course's description.</p>
+    <p>This webpage was written by
+    <a href="https://dpfeldman.github.io/" target="_blank">Dave
+    Feldman</a>, making heavy use of generative AI
+    (chatGpt). Feedback should be sent to Dave at dfeldman@coa.edu.</p>
+    </div>
+
+  <!-- Filters -->
+  <div class="filters">
+    <label>
+      Instructor:
+      <select id="filter-instructor">
+        <option value="">All</option>
+      </select>
+    </label>
+    <label>
+      Requirements:
+      <select id="filter-requirements">
+        <option value="">All</option>
+      </select>
+    </label>
+    <label>
+      Level:
+      <select id="filter-level">
+        <option value="">All</option>
+      </select>
+    </label>
+  </div>
+
+  <table id="courses" class="display">
+    <thead>
+      <tr>
+        <th>Faculty Name</th>
+        <th>Course Name</th>
+        <th>Degree Requirements Met</th>
+        <th>Level</th>
+        <th>Description</th><!-- hidden -->
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Data will be loaded from CSV -->
+    </tbody>
+  </table>
+
+  <!-- Modal -->
+  <div id="desc-backdrop" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal" role="document">
+      <div class="modal-header">
+        <div id="desc-title" class="modal-title"></div>
+        <button id="desc-close" class="modal-close" aria-label="Close">×</button>
+      </div>
+      <div id="desc-body" class="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- jQuery and DataTables JS -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
+  <script>
+    // ---- Helpers ----
+    function escapeRegex(text) {
+      return String(text).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    }
+
+    function tokenizeRequirements(cell) {
+      if (!cell) return [];
+      const raw = String(cell).replace(/\u00A0/g, ' ').trim();
+      if (!raw) return [];
+      const rough = raw.split(/[\s,;|/()\-]+/u).map(t => t.trim()).filter(Boolean);
+      const out = new Set(rough.map(t => t.toUpperCase()));
+      const KNOWN = ["ES","QR","AD","ADS"];
+      for (const code of KNOWN) {
+        const re = new RegExp(`(^|[\s,;|/()\-])${code}([\s,;|/()\-]|$)`, 'i');
+        if (re.test(raw)) out.add(code);
+      }
+      return Array.from(out);
+    }
+
+    function openModal(title, body) {
+      const backdrop = document.getElementById('desc-backdrop');
+      const titleEl = document.getElementById('desc-title');
+      const bodyEl = document.getElementById('desc-body');
+      titleEl.textContent = title || '';
+      bodyEl.textContent = body || '(No description provided)';
+      backdrop.style.display = 'flex';
+      backdrop.setAttribute('aria-hidden', 'false');
+      // focus close for accessibility
+      document.getElementById('desc-close').focus();
+    }
+    function closeModal() {
+      const backdrop = document.getElementById('desc-backdrop');
+      backdrop.style.display = 'none';
+      backdrop.setAttribute('aria-hidden', 'true');
+    }
+
+    Papa.parse("./courses_2.csv", {
+      download: true,
+      header: true,
+      complete: function (results) {
+        const data = results.data || [];
+        const tbody = document.querySelector("#courses tbody");
+
+        // Build rows
+        data.forEach(row => {
+          if (row["FacultyName"]) {
+            const tr = document.createElement("tr");
+            const courseName = row["CourseName"] ?? '';
+            tr.innerHTML = `
+              <td>${row["FacultyName"] ?? ''}</td>
+              <td><button type="button" class="course-link" aria-haspopup="dialog">${courseName}</button></td>
+              <td>${row["CourseDivision"] ?? ''}</td>
+              <td>${row["Level"] ?? ''}</td>
+              <td>${row["Description"] ?? ''}</td>
+            `;
+            tbody.appendChild(tr);
+          }
+        });
+
+        // Desired custom order for Level
+        const desiredOrder = [
+          "Introductory",
+          "Introductory/Intermediate",
+          "Intermediate",
+          "Intermediate/Advanced",
+          "Advanced"
+        ];
+
+        // Custom sort for Level
+        const levelOrderMap = desiredOrder.reduce((acc, v, i) => { acc[v] = i; return acc; }, {});
+        $.fn.dataTable.ext.type.order['level-order-pre'] = function (d) {
+          const t = String(d || '').trim();
+          return Object.prototype.hasOwnProperty.call(levelOrderMap, t) ? levelOrderMap[t] : 9999;
+        };
+
+        // Init DataTable (hide Description column index 4)
+        const table = $("#courses").DataTable({
+          pageLength: 100,
+          order: [[1, "asc"]],
+          dom: 'frtip',
+          columnDefs: [
+            { targets: 3, type: 'level-order' },
+            { targets: 4, visible: false, searchable: false }
+          ]
+        });
+
+        // Instructor dropdown
+        const instructors = Array.from(new Set(
+          data.map(r => (r["FacultyName"] || '').trim()).filter(Boolean)
+        )).sort((a,b) => a.localeCompare(b, undefined, {sensitivity:'base'}));
+        const deptSelect = document.getElementById("filter-instructor");
+        for (const name of instructors) {
+          const opt = document.createElement("option");
+          opt.value = name; opt.textContent = name; deptSelect.appendChild(opt);
+        }
+
+        // Requirements dropdown (tokens only)
+        const tokenSet = new Set();
+        data.forEach(r => tokenizeRequirements(r["CourseDivision"]).forEach(t => tokenSet.add(t)));
+        const requirementTokens = Array.from(tokenSet).sort((a,b) => a.localeCompare(b, undefined, {sensitivity:'base'}));
+        const reqSelect = document.getElementById("filter-requirements");
+        for (const tok of requirementTokens) {
+          const opt = document.createElement("option");
+          opt.value = tok; opt.textContent = tok; reqSelect.appendChild(opt);
+        }
+
+        // Level dropdown using desired order but only those present
+        const presentLevels = new Set(
+          data.map(r => (r["Level"] || '').trim()).filter(Boolean)
+        );
+        const levels = [
+          ...desiredOrder.filter(l => presentLevels.has(l)),
+          ...Array.from(presentLevels).filter(l => !desiredOrder.includes(l)).sort((a,b) => a.localeCompare(b, undefined, {sensitivity:'base'}))
+        ];
+        const levelSelect = document.getElementById("filter-level");
+        for (const lvl of levels) {
+          const opt = document.createElement("option");
+          opt.value = lvl; opt.textContent = lvl; levelSelect.appendChild(opt);
+        }
+
+        // Filtering logic
+        deptSelect.addEventListener("change", function () {
+          const val = this.value;
+          table.column(0).search(val ? '^' + escapeRegex(val) + '$' : '', true, false).draw();
+        });
+        reqSelect.addEventListener("change", function () {
+          const val = this.value;
+          if (val) {
+            const boundary = '[\\s,;|/()\\-]';
+            const regex = `(^|${boundary})${escapeRegex(val)}(${boundary}|$)`;
+            table.column(2).search(regex, true, false).draw();
+          } else {
+            table.column(2).search('', true, false).draw();
+          }
+        });
+        levelSelect.addEventListener("change", function () {
+          const val = this.value;
+          table.column(3).search(val ? '^' + escapeRegex(val) + '$' : '', true, false).draw();
+        });
+
+        // Click handler for Course Name to show Description modal
+        $('#courses tbody').on('click', 'button.course-link', function(e){
+          e.preventDefault();
+          const tr = $(this).closest('tr');
+          const row = table.row(tr);
+          const rowData = row.data();
+          const courseTitle = rowData[1];
+          const description = rowData[4] || '(No description provided)';
+          openModal(courseTitle, description);
+        });
+
+        // Modal close interactions
+        document.getElementById('desc-close').addEventListener('click', closeModal);
+        document.getElementById('desc-backdrop').addEventListener('click', function(e){
+          if (e.target === this) closeModal();
+        });
+        document.addEventListener('keydown', function(e){
+          if (e.key === 'Escape') closeModal();
+        });
+      }
+    });
+  </script>
+</body>
+</html>
