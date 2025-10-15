@@ -174,7 +174,8 @@
     const titleEl = document.getElementById('desc-title');
     const bodyEl = document.getElementById('desc-body');
     titleEl.innerHTML = title || '';
-    bodyEl.textContent = body || '(No description provided)';
+    //  bodyEl.textContent = body || '(No description provided)';
+      bodyEl.innerHTML = body || '(No description provided)';
     backdrop.style.display = 'flex';
     backdrop.setAttribute('aria-hidden', 'false');
     document.getElementById('desc-close').focus();
