@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Course Scheduler</title>
+  <title>College of the Atlantic: Course Scheduler</title>
 
   <!-- FullCalendar CSS -->
   <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/main.min.css" rel="stylesheet" />
@@ -74,7 +74,7 @@
 <body>
   <div class="app">
     <div id="course-list" class="panel">
-      <h2>Courses</h2>
+      <h2>COA Schedule Builder</h2>
       <div class="row">
         <input type="file" id="csvFile" accept=".csv" />
         <button id="loadF25" title="Load F25.csv from this site">Fall 2025</button>
@@ -86,10 +86,13 @@
 	<button class="close-btn" onclick="this.parentElement.style.display='none'">×</button>
 	<b>Click on Winter 2026 to load the winter courses</b>
   </div>
-
   <div class="message-box">
     <button class="close-btn" onclick="this.parentElement.style.display='none'">×</button>
     Courses are listed alphabetically. Click on a course to add its scheduled meetings to the weekly calendar. Click on the course again and the meeting times will be removed from the calendar.
+  </div>
+  <div class="message-box">
+    <button class="close-btn" onclick="this.parentElement.style.display='none'">×</button>
+    This website is experimental and is still under development. This page was developed by Dave Feldman, with significant assistance from ChatGPT. Comments and suggestions should be sent to Dave at dfeldman@coa.edu.
   </div>
       <div class="hint"></div>
       <div class="hint"></div>
@@ -273,95 +276,54 @@
 
     document.getElementById('clearCalendar').addEventListener('click', clearCalendar);
 
-    // Load F25.csv from the same directory as this page
-    document.getElementById('loadF25').addEventListener('click', async () => {
-      setMsg('');
-      try {
-        const res = await fetch('F25.csv', { cache: 'no-cache' });
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        const text = await res.text();
-        // Clear calendar when switching datasets
-        clearCalendar();
-        Papa.parse(text, {
-          header: true,
-          skipEmptyLines: 'greedy',
-          complete: (results) => {
-            if (results.errors && results.errors.length) {
-              console.warn('PapaParse errors:', results.errors);
-              setMsg('⚠️ CSV parse warnings: see console.');
-            }
-            renderCourseButtons(results.data || []);
-          },
-          error: (err) => {
-            console.error('PapaParse error:', err);
-            setMsg('⚠️ Could not parse F25.csv: ' + err.message);
-          }
-        });
-      } catch (e) {
-        console.error('Failed to load F25.csv', e);
-        setMsg('⚠️ Could not load F25.csv. Ensure it is in the same folder as this HTML.');
+ 
+
+
+async function loadCsvFromSameDir(filename, niceName) {
+  setMsg('');
+  try {
+    // Add a cache-buster to avoid stale files on static hosts/CDNs
+    const res = await fetch(`${filename}?v=${Date.now()}`, { cache: 'no-cache' });
+    if (!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText || ''}`.trim());
+    const text = await res.text();
+
+    // Switching datasets: reset calendar & buttons
+    clearCalendar();
+
+    Papa.parse(text, {
+      header: true,
+      skipEmptyLines: 'greedy',
+      complete: (results) => {
+        if (results.errors && results.errors.length) {
+          console.warn(`${niceName} PapaParse errors:`, results.errors);
+          setMsg('⚠️ CSV parse warnings: see console.');
+        }
+        renderCourseButtons(results.data || []);
+      },
+      error: (err) => {
+        console.error(`${niceName} PapaParse error:`, err);
+        setMsg(`⚠️ Could not parse ${filename}: ` + err.message);
       }
     });
+  } catch (e) {
+    console.error(`Failed to load ${filename}`, e);
+    setMsg(`⚠️ Could not load ${filename}. Ensure it is in the same folder as this HTML.`);
+  }
+}
 
-    // Load Fall 2025 button
-    document.getElementById('loadFall2025').addEventListener('click', () => {
-      fetch('F25.csv')
-        .then(resp => resp.text())
-        .then(text => {
-          Papa.parse(text, {
-            header: true,
-            skipEmptyLines: 'greedy',
-            complete: (res) => renderCourseButtons(res.data),
-            error: (err) => setMsg('⚠️ Could not parse F25.csv: ' + err.message)
-          });
-        })
-        .catch(err => setMsg('⚠️ Could not load F25.csv: ' + err.message));
-    });
+// Fall 2025
+document.getElementById('loadF25').addEventListener('click', () => {
+  loadCsvFromSameDir('F25.csv', 'Fall 2025');
+});
 
-    // Load W26.csv from the same directory as this page
-    document.getElementById('loadF25').addEventListener('click', async () => {
-      setMsg('');
-      try {
-        const res = await fetch('W26.csv', { cache: 'no-cache' });
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        const text = await res.text();
-        // Clear calendar when switching datasets
-        clearCalendar();
-        Papa.parse(text, {
-          header: true,
-          skipEmptyLines: 'greedy',
-          complete: (results) => {
-            if (results.errors && results.errors.length) {
-              console.warn('PapaParse errors:', results.errors);
-              setMsg('⚠️ CSV parse warnings: see console.');
-            }
-            renderCourseButtons(results.data || []);
-          },
-          error: (err) => {
-            console.error('PapaParse error:', err);
-            setMsg('⚠️ Could not parse W26.csv: ' + err.message);
-          }
-        });
-      } catch (e) {
-        console.error('Failed to load W26.csv', e);
-        setMsg('⚠️ Could not load W26.csv. Ensure it is in the same folder as this HTML.');
-      }
-    });
+// Winter 2026
+document.getElementById('loadW26').addEventListener('click', () => {
+  loadCsvFromSameDir('W26.csv', 'Winter 2026');
+});
 
-    // Load Fall 2025 button
-    document.getElementById('loadWinter2026').addEventListener('click', () => {
-      fetch('W26.csv')
-        .then(resp => resp.text())
-        .then(text => {
-          Papa.parse(text, {
-            header: true,
-            skipEmptyLines: 'greedy',
-            complete: (res) => renderCourseButtons(res.data),
-            error: (err) => setMsg('⚠️ Could not parse W26.csv: ' + err.message)
-          });
-        })
-        .catch(err => setMsg('⚠️ Could not load W26.csv: ' + err.message));
-    });
+
+    
+  
   </script>
 </body>
 </html>

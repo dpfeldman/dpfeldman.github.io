@@ -1,0 +1,84 @@
+FacultyName,Department,Course,Section,CourseName,CourseDivision,MaximumEnroll,TotalEnrolled,MeetingRoom,Days,StartTime,EndTime
+"Lepcio, Andrea",AD,2047,,10X Dramatic Writing Studio,AD,12,0,SM,MR,1:00:00 PM,2:25:00 PM
+"Ialeggio, Anna",AD,4059,,Advanced Ceramic Sculpture ,ADS,12,0,P,TF,2:35:00 PM,5:35:00 PM
+"McLean, Adam",AD,4060,,Advanced Music Theory,ADS,12,0,LH,WF,4:10:00 PM,5:35:00 PM
+"Clinger, Catherine",AD,5032,,Advanced Studio Printmaking,ADS,5,0,Printmaking,TF,9:30:00 AM,12:00:00 PM
+"Clinger, Catherine",AD,5032,,Advanced Studio Printmaking,ADS,5,0,Printmaking,W,2:35:00 PM,4:00:00 PM
+"Lakey, Heather",HS,1075,,Animals and Ethics,HS,12,0,T1,TF,2:35:00 PM,4:00:00 PM
+"Morse, Suzanne",MD,3019,,Archiving COA: a practicum,,12,0,Botany Lab,MR,10:35:00 AM,12:00:00 PM
+"Santavicca, Elliot",MD,3019,,Archiving COA: a practicum,,12,0,Botany Lab,MR,10:35:00 AM,12:00:00 PM
+"Gadeken, Kara",ES,1052,,Biology: Cellular Processes of Life,ES,16,0,LH,MR,10:35:00 AM,12:00:00 PM
+"Letcher, Susan",ES,1052,,Biology: Cellular Processes of Life,ES,16,0,LH,MR,10:35:00 AM,12:00:00 PM
+"Gadeken, Kara",ES,1053,B,Biology: Cellular Processes of Life Lab,,8,0,Zoology Lab,W,2:35:00 PM,5:35:00 PM
+"Letcher, Susan",ES,1053,A,Biology: Cellular Processes of Life Lab,,8,0,Zoology Lab,M,1:00:00 PM,4:00:00 PM
+"Hilliard , Richard ",ES,1094,,Chemistry I ,ES QR,15,0,Chemistry Lab,T,1:00:00 PM,4:00:00 PM
+"Hilliard , Richard ",ES,1094,,Chemistry I ,ES QR,15,0,Flexible Classroom,TF,9:00:00 AM,10:25:00 AM
+"Stabinsky, Doreen",HS,1054,,Climate Justice,HS,25,0,Flexible Seminar Room,TF,10:35:00 AM,12:00:00 PM
+"Slabach, Brittany",ES,1092,,Collecting Nature: Exploration of Scientific Collection,ES,11,1,MC,TF,10:35:00 AM,12:00:00 PM
+"Slabach, Brittany",ES,1092,,Collecting Nature: Exploration of Scientific Collection,ES,11,1,Zoology Lab,F,1:00:00 PM,4:00:00 PM
+"van Vliet, Netta",HS,2133,,"Colonialism, Nationalism, and the Nation-State ",HS,15,0,Geology Lab,MR,10:35:00 AM,12:00:00 PM
+"Rock, Jennifer",HS,3138,,Communicating Science ,W,12,0,ES,F,9:00:00 AM,10:25:00 AM
+"Rock, Jennifer",HS,3138,,Communicating Science ,W,12,0,ES,R,4:10:00 PM,5:35:00 PM
+"Robbins, Dani",AD,3088,,Contemporary Dance Composition ,ADS,10,0,BG,MR,4:10:00 PM,5:35:00 PM
+"Robbins, Dani",AD,3088,,Contemporary Dance Composition ,ADS,10,0,BG,W,6:30:00 PM,8:00:00 PM
+"Clinger, Catherine",MD,4013,,Demons from the Depths,HY,12,0,Geology Lab,TF,2:35:00 PM,4:00:00 PM
+"Hall, Sarah",MD,4013,,Demons from the Depths,HY,12,0,Geology Lab,TF,2:35:00 PM,4:00:00 PM
+"Ferrari , Melissa ",AD,4058,,Devices of Wonder: Moving Pictures ,ADS,12,0,S5,MR,9:00:00 AM,12:00:00 PM
+"Ferrari , Melissa ",AD,4058,,Devices of Wonder: Moving Pictures ,ADS,12,0,S6,MR,9:00:00 AM,12:00:00 PM
+"Feldman, David",ES,3022,,Differential Equations,ES QR,99,0,General Classroom,MW,2:35:00 PM,4:00:00 PM
+"Khor, Su Yin",HS,3136,,"Entry Point: Identity, Language, and Power ",W HS,12,0,Graphics/Media Room,W,2:35:00 PM,4:00:00 PM
+"Khor, Su Yin",HS,3136,,"Entry Point: Identity, Language, and Power ",W HS,12,0,SM,MR,2:35:00 PM,4:00:00 PM
+"Soares, Zachary",HS,3136,,"Entry Point: Identity, Language, and Power ",W HS,12,0,Graphics/Media Room,W,2:35:00 PM,4:00:00 PM
+"Soares, Zachary",HS,3136,,"Entry Point: Identity, Language, and Power ",W HS,12,0,SM,MR,2:35:00 PM,4:00:00 PM
+"Little-Siebold, Todd",HS,1011,,Environmental History,HS HY,15,0,SM,MR,10:35:00 AM,12:00:00 PM
+"Smith, Jasmine",ED,1010,,Experiential Education,HS ED,15,0,ES,TF,4:10:00 PM,5:35:00 PM
+"Capers, Colin",AD,2050,,Film Theory ,AD,12,0,Flexible Seminar Room,MR,2:35:00 PM,4:00:00 PM
+"Titcomb , Anna",MD,1037,,Foundations of Human Nutrition,,14,0,Flexible Classroom,MR,2:35:00 PM,4:00:00 PM
+"Earley, Annika",AD,1077,,Fundamentals of Drawing,ADS,12,0,S3,TF,9:00:00 AM,12:00:00 PM
+"Sebastian, Neeraj",AD,1071,,Fundamentals of Painting ,ADS,12,0,Painting Studio,TF,2:35:00 PM,5:35:00 PM
+"Longsworth, Gordon",HS,2020,,Geographic Information Systems I: Foundations & Applications,HS,10,0,GIS Lab,TWF,9:00:00 AM,10:25:00 AM
+"Hall, Sarah",ES,1075,,Geology of National Parks,ES,16,0,Geology Lab,TF,9:00:00 AM,12:00:00 PM
+"Little-Siebold, Todd",HS,4056,,Histories of Race,HS HY,12,0,D,MR,2:35:00 PM,4:00:00 PM
+"Tsygankova, Valeria ",HS,2132,,How Writing Works: Looking Under the Hood ,W HS,12,0,ES,MR,1:00:00 PM,2:25:00 PM
+"Hill, Kenneth",ED,1016,,Introduction to Adolescent Psychology,HS ED,15,0,T2,MR,10:35:00 AM,12:00:00 PM
+"Nguyen, Duc Hien",HS,1123,,Introduction to Macroeconomics ,HS QR,15,0,Flexible Classroom,MR,9:00:00 AM,10:25:00 AM
+"Todd, Sean",ES,2012,,Introduction to Statistics and Research Design,QR,15,0,General Classroom,MR,9:00:00 AM,10:25:00 AM
+"Todd, Sean",ES,2012,,Introduction to Statistics and Research Design,QR,15,0,General Classroom,T,1:00:00 PM,4:00:00 PM
+"Turok, Katharine",HS,2125,,"Journeys: Writing for Voyagers, Trekkers, Wanderers",W HS,12,0,Flexible Seminar Room,TF,1:00:00 PM,2:25:00 PM
+"Donovan, Martha",HS,2076,,"Life Stories: Memory, Family, and Place ",HS,12,0,T2,MR,2:35:00 PM,4:00:00 PM
+"Taneja, Palak",HS,2112,,Midnight's Children,HS,15,0,Flexible Classroom,TF,1:00:00 PM,2:25:00 PM
+"Baker, Jodi",AD,4061,,Music Theater Production ,ADS,12,0,MH,MTRF,9:00:00 AM,4:00:00 PM
+"Baker, Jodi",AD,4061,,Music Theater Production ,ADS,12,0,MH,W,2:35:00 PM,5:35:00 PM
+"Henderson, Jonathan",AD,4061,,Music Theater Production ,ADS,12,0,MH,MTRF,9:00:00 AM,4:00:00 PM
+"Henderson, Jonathan",AD,4061,,Music Theater Production ,ADS,12,0,MH,W,2:35:00 PM,5:35:00 PM
+"Cline, Ken",HS,3070,,Native American Law,HS,20,0,T2,MR,1:00:00 PM,2:25:00 PM
+"Benson, Robert",HS,1128,,Now what?: Finding purpose in chaotic times,HS,12,0,T1,TF,1:00:00 PM,2:25:00 PM
+"Brothers , Tionna ",ES,3109,,Organic Chemistry I,ES,15,0,Chemistry Lab,F,1:00:00 PM,4:00:00 PM
+"Brothers , Tionna ",ES,3109,,Organic Chemistry I,ES,15,0,Flexible Classroom,TF,10:35:00 AM,12:00:00 PM
+"Jacoby, Franklin",HS,2123,,Our Life with Words: Philosophies of Language,HS,15,0,ES,MR,9:00:00 AM,10:25:00 AM
+"Cline, Ken",HS,3031,,"Our Public Lands:  Past, Present, and Future",HS HY,25,0,ES,TF,1:00:00 PM,2:25:00 PM
+"Cline, Ken",HS,3031,,"Our Public Lands:  Past, Present, and Future",HS HY,25,0,ES,W,4:10:00 PM,5:35:00 PM
+"Lakey, Heather",HS,1065,,Philosophies of Good and Evil,HS,12,0,T1,TF,10:35:00 AM,12:00:00 PM
+"Diemler , Cory ",ES,1095,,Physics I,ES QR,20,0,General Classroom,MR,1:00:00 PM,2:25:00 PM
+"Diemler , Cory ",ES,1095,,Physics I,ES QR,20,0,General Classroom,W,9:00:00 AM,12:00:00 PM
+"Letcher, Susan",ES,1081,,Plants and People: Economic Botany,ES,20,0,Flexible Seminar Room,TF,9:00:00 AM,10:25:00 AM
+"Cox, Gray",HS,1127,,Political Economy of Artificial Intelligence,HS,15,0,Flexible Classroom,MR,1:00:00 PM,2:25:00 PM
+"Cox, Gray",HS,1127,,Political Economy of Artificial Intelligence,HS,15,0,Flexible Classroom,W,2:35:00 PM,4:00:00 PM
+"Nguyen, Duc Hien",HS,1127,,Political Economy of Artificial Intelligence,HS,15,0,Flexible Classroom,MR,1:00:00 PM,2:25:00 PM
+"Nguyen, Duc Hien",HS,1127,,Political Economy of Artificial Intelligence,HS,15,0,Flexible Classroom,W,2:35:00 PM,4:00:00 PM
+"Ialeggio, Anna",AD,1081,,Sci-Fi & Sculpture: World-Building as Art Practice,ADS,12,0,S4,TF,9:00:00 AM,12:00:00 PM
+"Ialeggio, Anna",AD,1081,,Sci-Fi & Sculpture: World-Building as Art Practice,ADS,12,0,S6,TF,9:00:00 AM,12:00:00 PM
+"Ferrari , Melissa ",AD,2049,,Stop Motion Animation ,ADS,12,0,S5,MR,1:00:00 PM,4:00:00 PM
+"Ferrari , Melissa ",AD,2049,,Stop Motion Animation ,ADS,12,0,S6,MR,1:00:00 PM,4:00:00 PM
+"Sanborn, Kelley",ED,3012,,Supporting Students with Disabilities in the Reg. Classroom,ED,15,0,SM,W,4:10:00 PM,7:30:00 PM
+"Lock, Timothy",AD,1082,,Sustainable Architecture: Ecological Artifact,AD,15,0,Drawing Studio,TF,1:00:00 PM,2:25:00 PM
+"Friedlander, Jay",HS,3035,,Sustainable Strategies,HS,15,0,Flexible Classroom,MR,10:35:00 AM,12:00:00 PM
+"Fuller, Linda",ED,1023,,Teaching as an Act of Hope,HS ED,15,0,ES,MR,2:35:00 PM,4:00:00 PM
+"Waldron, Karen",HS,5070,,The Nature of Narrative II ,HS,12,0,SM,TF,10:35:00 AM,12:00:00 PM
+"Waldron, Karen",HS,2134,,The Power of Poetry: Six U.S. Women Poets ,HS,15,0,SM,TF,2:35:00 PM,4:00:00 PM
+"van Vliet, Netta",HS,3137,,Thinking Critically about Current Events ,HS,12,0,Geology Lab,MR,1:00:00 PM,2:25:00 PM
+"Collum, Kourtney",HS,2087,,Transforming Food Systems,HS,20,0,Flexible Seminar Room,MR,9:00:00 AM,10:25:00 AM
+"Pena, Karla",HS,5069,,YUCATAN: Advanced Self-Directed Cultural Immersion ,HS,5,0,,N\A,12:00:00 AM,12:00:00 AM
+"Pena, Karla",HS,3126,,YUCATAN: Immersion Practica in Spanish and Yucatecan Culture,HS,12,0,,N\A,12:00:00 AM,12:00:00 AM
+"Pena, Karla",HS,6010,,YUCATAN: Spanish Pre-Registration,,12,0,,N\A,12:00:00 AM,12:00:00 AM
+"Pena, Karla",HS,3127,,YUCATAN: The Maya of Yesterday and Today ,HS,12,0,,N\A,12:00:00 AM,12:00:00 AM
