@@ -43,6 +43,32 @@
       background-color: var(--conflict-bg) !important;
       border-color: red !important;
     }
+     .message-box {
+      position: relative;
+      background-color: #f0f8ff;
+      border: 1px solid #b0c4de;
+      padding: 15px 40px 15px 15px;
+      margin: 20px 0;
+      border-radius: 8px;
+      font-family: Arial, sans-serif;
+      max-width: 400px;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 8px;
+      right: 12px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #555;
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+
+    .close-btn:hover {
+      color: #000;
+    }
   </style>
 </head>
 <body>
@@ -55,7 +81,18 @@
         <button id="loadSample">Load sample data</button>
         <button id="clearCalendar" title="Remove all events">Clear calendar</button>
       </div>
-      <div class="hint">Click a course to add <strong>all</strong> of its scheduled meetings to the weekly calendar.</div>
+      <div class="message-box">
+	<button class="close-btn" onclick="this.parentElement.style.display='none'">×</button>
+	<b>Click on Winter 2026 to load the winter courses</b>
+  </div>
+
+  <div class="message-box">
+    <button class="close-btn" onclick="this.parentElement.style.display='none'">×</button>
+    Courses are listed alphabetically. Click on a course to add its scheduled meetings to the weekly calendar. Click on the course again and the meeting times will be removed from the calendar.
+  </div>
+      <div class="hint">.</div>
+      <div class="hint"></div>
+      <div class="hint"> </div>
       <div id="courses"></div>
       <div id="msg"></div>
     </div>
