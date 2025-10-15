@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>College of the Atlantic: Course Scheduler</title>
+
+  <!-- FullCalendar CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/main.min.css" rel="stylesheet" />
+
+  <style>
+    :root {
+      --border: #d9d9e3;
+      --bg: #f8f9fb;
+      --active-bg: #e0f0ff;
+      --conflict-bg: #ffe0e0;
+    }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; background: var(--bg); }
+    .app { display: grid; grid-template-columns: 280px 1fr; gap: 16px; padding: 16px; }
+    .panel { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 14px; }
+    #course-list h2 { margin: 0 0 10px; font-size: 18px; }
+    .hint { color: #555; font-size: 12px; margin: 8px 0 12px; }
+    .row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+    .row > * { flex: 0 0 auto; }
+    input[type="file"] { max-width: 100%; }
+    button { cursor: pointer; border-radius: 10px; border: 1px solid var(--border); background: #fff; padding: 8px 12px; }
+    button:hover { background: #f1f4f9; }
+    .course-btn { display: flex; width: 100%; justify-content: space-between; align-items: center; margin: 6px 0; }
+    .course-btn.active { font-weight: bold; background: var(--active-bg); }
+    .badge { font-size: 11px; padding: 2px 6px; border-radius: 999px; border: 1px solid var(--border); }
+    #courses { max-height: 60vh; overflow: auto; padding-right: 4px; }
+    #msg { font-size: 12px; color: #444; margin-top: 8px; white-space: pre-wrap; }
+    #calendar { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 8px; }
+    /* Remove today's column shading */
+    .fc .fc-day-today,
+    .fc .fc-timegrid-col.fc-day-today,
+    .fc .fc-daygrid-day.fc-day-today,
+    .fc-theme-standard .fc-scrollgrid .fc-day-today {
+      background: transparent !important;
+    }
+    /* Conflict highlighting */
+    .fc-event.conflict {
+      background-color: var(--conflict-bg) !important;
+      border-color: red !important;
+    }
+     .message-box {
+      position: relative;
+      background-color: #f0f8ff;
+      border: 1px solid #b0c4de;
+      padding: 15px 40px 15px 15px;
+      margin: 20px 0;
+      border-radius: 8px;
+      font-family: Arial, sans-serif;
+      max-width: 400px;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 8px;
+      right: 12px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #555;
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+
+    .close-btn:hover {
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <div id="course-list" class="panel">
+      <h2>COA Schedule Builder</h2>
+      <div class="row">
+        <input type="file" id="csvFile" accept=".csv" />
+        <button id="loadF25" title="Load F25.csv from this site">Fall 2025</button>
+	<button id="loadW26" title="Load W26.csv from this site">Winter 2026</button>
+        <button id="loadSample">Load sample data</button>
+        <button id="clearCalendar" title="Remove all events">Clear calendar</button>
+      </div>
+      <div class="message-box">
+	<button class="close-btn" onclick="this.parentElement.style.display='none'">×</button>
+	<b>Click on Winter 2026 to load the winter courses</b>
+  </div>
+  <div class="message-box">
+    <button class="close-btn" onclick="this.parentElement.style.display='none'">×</button>
+    Courses are listed alphabetically. Click on a course to add its scheduled meetings to the weekly calendar. Click on the course again and the meeting times will be removed from the calendar.
+  </div>
+  <div class="message-box">
+    <button class="close-btn" onclick="this.parentElement.style.display='none'">×</button>
+    This website is experimental and is still under development. This page was developed by Dave Feldman, with significant assistance from ChatGPT. Comments and suggestions should be sent to Dave at dfeldman@coa.edu.
+  </div>
+      <div class="hint"></div>
+      <div class="hint"></div>
+      <div id="courses"></div>
+      <div id="msg"></div>
+    </div>
+
+    <div id="calendar"></div>
+  </div>
+
+  <!-- FullCalendar JS (bundled global build) -->
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js"></script>
+  <!-- PapaParse for CSV parsing -->
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
+  <script>
+    // --- Utilities ---------------------------------------------------------
+    const DAY_OFFSETS = { M: 0, T: 1, W: 2, R: 3, F: 4 }; // Only weekdays
+
+    function parseTimeParts(hhmmss) {
+      const [h, m = "0", s = "0"] = String(hhmmss).trim().split(":");
+      return [Number(h), Number(m), Number(s)];
+    }
+
+    function dateWithTime(baseDate, timeStr) {
+      const d = new Date(baseDate);
+      const [h, m, s] = parseTimeParts(timeStr);
+      d.setHours(h, m, s || 0, 0);
+      return d;
+    }
+
+    function safeParseMeetings(jsonStr) {
+      try { return JSON.parse(jsonStr); } catch (_) {}
+      try { return JSON.parse(String(jsonStr).replace(/'(?=[^\w])/g, '"').replace(/\"\"/g, '"')); } catch (e) {
+        throw new Error("Invalid Meetings JSON: " + e.message);
+      }
+    }
+
+    function setMsg(text) {
+      document.getElementById('msg').textContent = text || '';
+    }
+
+    function checkConflicts() {
+      const events = calendar.getEvents();
+      events.forEach(evt => evt.setProp('classNames', [])); // reset
+
+      for (let i = 0; i < events.length; i++) {
+        for (let j = i + 1; j < events.length; j++) {
+          if (events[i].start < events[j].end && events[j].start < events[i].end) {
+            // Overlap
+            events[i].setProp('classNames', ['conflict']);
+            events[j].setProp('classNames', ['conflict']);
+          }
+        }
+      }
+    }
+
+    // --- Calendar ----------------------------------------------------------
+    const calendarEl = document.getElementById('calendar');
+    const calendar = new FullCalendar.Calendar(calendarEl, {
+      initialView: 'timeGridWeek',
+      firstDay: 1,
+      slotMinTime: '07:00:00',
+      slotMaxTime: '20:00:00',
+      allDaySlot: false,
+      nowIndicator: false,
+      height: 'auto',
+      weekends: false,
+      eventAdd: checkConflicts,
+      eventRemove: checkConflicts,
+    });
+    calendar.render();
+
+    function addCourseToCalendar(course, btn) {
+      setMsg('');
+
+      const existing = calendar.getEvents().filter(evt => evt.extendedProps && evt.extendedProps.courseName === course.Name);
+      if (existing.length > 0) {
+        existing.forEach(evt => evt.remove());
+        if (btn) {
+          btn.querySelector('.badge').textContent = 'add';
+          btn.classList.remove('active');
+        }
+        checkConflicts();
+        return;
+      }
+
+      let meetings;
+      try {
+        meetings = safeParseMeetings(course.Meetings);
+        if (!Array.isArray(meetings)) throw new Error('Meetings must be an array');
+      } catch (err) {
+        setMsg(`⚠️ ${course.Name}: ${err.message}`);
+        console.error('Parse error for', course.Name, err, course.Meetings);
+        return;
+      }
+
+      const baseMonday = new Date(calendar.view.currentStart);
+
+      meetings.forEach((m) => {
+        if (!m || !m.days || !m.start || !m.end) return;
+        const letters = String(m.days).toUpperCase().replace(/\s+/g, '').split('');
+        letters.forEach((L) => {
+          const offset = DAY_OFFSETS[L];
+          if (offset == null) return;
+          const day = new Date(baseMonday);
+          day.setDate(day.getDate() + offset);
+          const start = dateWithTime(day, m.start);
+          const end = dateWithTime(day, m.end);
+          calendar.addEvent({
+            title: course.Name,
+            start,
+            end,
+            extendedProps: { courseName: course.Name },
+          });
+        });
+      });
+
+      if (btn) {
+        btn.querySelector('.badge').textContent = 'remove';
+        btn.classList.add('active');
+      }
+
+      checkConflicts();
+    }
+
+    function clearCalendar() {
+      calendar.getEvents().forEach(evt => evt.remove());
+      document.querySelectorAll('.course-btn').forEach(btn => {
+        btn.classList.remove('active');
+        btn.querySelector('.badge').textContent = 'add';
+      });
+      checkConflicts();
+    }
+
+    function renderCourseButtons(rows) {
+      const container = document.getElementById('courses');
+      container.innerHTML = '';
+      let count = 0;
+      rows.forEach((row) => {
+        if (!row || !row.Name || !row.Meetings) return;
+        const btn = document.createElement('button');
+        btn.className = 'course-btn';
+        btn.innerHTML = `<span>${row.Name}</span><span class=\"badge\">add</span>`;
+        btn.addEventListener('click', () => addCourseToCalendar(row, btn));
+        container.appendChild(btn);
+        count++;
+      });
+      setMsg(count ? `Loaded ${count} course${count === 1 ? '' : 's'}.` : 'No valid rows found (need Name and Meetings columns).');
+    }
+
+    document.getElementById('csvFile').addEventListener('change', (e) => {
+      setMsg('');
+      const file = e.target.files && e.target.files[0];
+      if (!file) return;
+      Papa.parse(file, {
+        header: true,
+        skipEmptyLines: 'greedy',
+        complete: (results) => {
+          if (results.errors && results.errors.length) {
+            console.warn('PapaParse errors:', results.errors);
+            setMsg('⚠️ CSV parse warnings: see console.');
+          }
+          renderCourseButtons(results.data || []);
+        },
+        error: (err) => {
+          console.error('PapaParse error:', err);
+          setMsg('⚠️ Could not parse CSV: ' + err.message);
+        }
+      });
+    });
+
+    const SAMPLE_CSV = `Name,Meetings\n` +
+      `Calculus I,"[{""days"":""MWF"",""start"":""09:00:00"",""end"":""10:00:00""}]"\n` +
+      `Biology 101,"[{""days"":""TR"",""start"":""11:00:00"",""end"":""12:30:00""},{""days"":""F"",""start"":""14:00:00"",""end"":""16:00:00""}]"\n` +
+      `History of Art,"[{""days"":""M"",""start"":""14:00:00"",""end"":""16:00:00""}]"`;
+
+    document.getElementById('loadSample').addEventListener('click', () => {
+      Papa.parse(SAMPLE_CSV, { header: true, complete: (res) => renderCourseButtons(res.data) });
+    });
+
+    document.getElementById('clearCalendar').addEventListener('click', clearCalendar);
+
+ 
+
+
+async function loadCsvFromSameDir(filename, niceName) {
+  setMsg('');
+  try {
+    // Add a cache-buster to avoid stale files on static hosts/CDNs
+    const res = await fetch(`${filename}?v=${Date.now()}`, { cache: 'no-cache' });
+    if (!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText || ''}`.trim());
+    const text = await res.text();
+
+    // Switching datasets: reset calendar & buttons
+    clearCalendar();
+
+    Papa.parse(text, {
+      header: true,
+      skipEmptyLines: 'greedy',
+      complete: (results) => {
+        if (results.errors && results.errors.length) {
+          console.warn(`${niceName} PapaParse errors:`, results.errors);
+          setMsg('⚠️ CSV parse warnings: see console.');
+        }
+        renderCourseButtons(results.data || []);
+      },
+      error: (err) => {
+        console.error(`${niceName} PapaParse error:`, err);
+        setMsg(`⚠️ Could not parse ${filename}: ` + err.message);
+      }
+    });
+  } catch (e) {
+    console.error(`Failed to load ${filename}`, e);
+    setMsg(`⚠️ Could not load ${filename}. Ensure it is in the same folder as this HTML.`);
+  }
+}
+
+// Fall 2025
+document.getElementById('loadF25').addEventListener('click', () => {
+  loadCsvFromSameDir('F25.csv', 'Fall 2025');
+});
+
+// Winter 2026
+document.getElementById('loadW26').addEventListener('click', () => {
+  loadCsvFromSameDir('W26.csv', 'Winter 2026');
+});
+
+
+    
+  
+  </script>
+</body>
+</html>
