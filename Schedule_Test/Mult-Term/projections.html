@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>COA Course Offerings – Multi-Term</title>
+  <!-- DataTables CSS -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" />
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h1, h2 { text-align: center; color:#455550; }
+    table { width: 100%; }
+    .filters {
+      margin: 1em 0;
+      text-align: center;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .filters label { margin: 0 0.25em; }
+    select { padding: 6px 8px; }
+
+    .course-link, .bonus-link {
+      background: none;
+      border: none;
+      padding: 0;
+      text-decoration: underline;
+      cursor: pointer;
+      font: inherit;
+    }
+
+    /* Layout for term columns */
+    .term-tables {
+      display: flex;
+      gap: 1.5rem;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      margin-top: 1rem;
+    }
+    .term-column {
+      min-width: 360px;
+      flex: 1 0 360px;
+    }
+    .term-column h3 {
+      text-align: center;
+      margin-bottom: 0.5rem;
+      color: #273B65;
+    }
+
+    /* Modal styles */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.35);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+    .modal {
+      background: #fff;
+      max-width: 720px;
+      width: 92%;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    }
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 18px;
+      border-bottom: 1px solid #eee;
+    }
+    .modal-title { font-weight: 600; }
+    .modal-close {
+      background: none;
+      border: none;
+      font-size: 22px;
+      line-height: 1;
+      cursor: pointer;
+    }
+    .modal-body {
+      padding: 16px 18px;
+      white-space: pre-wrap;
+    }
+    .subtitle {
+      font-size: 0.9em;
+      color: #555;
+      margin-top: 2px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Course Offerings by Term</h1>
+  <h2>College of the Atlantic</h2>
+
+  <!-- Filters -->
+  <div class="filters">
+    <label>
+      Instructor:
+      <select id="filter-instructor">
+        <option value="">All</option>
+      </select>
+    </label>
+    <label>
+      Requirements:
+      <select id="filter-requirements">
+        <option value="">All</option>
+      </select>
+    </label>
+    <label>
+      Level:
+      <select id="filter-level">
+        <option value="">All</option>
+      </select>
+    </label>
+  </div>
+
+  <!-- Container for all term tables -->
+  <div id="term-tables" class="term-tables">
+    <!-- JS will inject one .term-column with a table per term -->
+  </div>
+
+  <!-- Modal -->
+  <div id="desc-backdrop" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal" role="document">
+      <div class="modal-header">
+        <div id="desc-title" class="modal-title"></div>
+        <button id="desc-close" class="modal-close" aria-label="Close">×</button>
+      </div>
+      <div id="desc-body" class="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- jQuery and DataTables JS -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
+  <script>
+    // ---- Helpers ----
+    function escapeRegex(text) {
+      return String(text).replace(/[.*+?^${}()|[\\]\\\\]/g, '\\$&');
+    }
+
+    function tokenizeRequirements(cell) {
+      if (!cell) return [];
+      const raw = String(cell).replace(/\\u00A0/g, ' ').trim();
+      if (!raw) return [];
+      const rough = raw.split(/[\\s,;|/()\\-]+/u).map(t => t.trim()).filter(Boolean);
+      const out = new Set(rough.map(t => t.toUpperCase()));
+      const KNOWN = ["ES","QR","AD","ADS"];
+      for (const code of KNOWN) {
+        const re = new RegExp(`(^|[\\s,;|/()\\-])${code}([\\s,;|/()\\-]|$)`, 'i');
+        if (re.test(raw)) out.add(code);
+      }
+      return Array.from(out);
+    }
+
+    function openModal(title, body) {
+      const backdrop = document.getElementById('desc-backdrop');
+      const titleEl = document.getElementById('desc-title');
+      const bodyEl = document.getElementById('desc-body');
+      titleEl.innerHTML = title || '';
+      bodyEl.innerHTML  = body || '(No description provided)'; // allow simple HTML in descriptions/bonus
+      backdrop.style.display = 'flex';
+      backdrop.setAttribute('aria-hidden', 'false');
+      document.getElementById('desc-close').focus();
+    }
+    function closeModal() {
+      const backdrop = document.getElementById('desc-backdrop');
+      backdrop.style.display = 'none';
+      backdrop.setAttribute('aria-hidden', 'true');
+    }
+
+    // Map term codes like F25, W26, S26 to sorting keys and labels
+    // function termSortKey(code) {
+    //  if (!code) return Number.POSITIVE_INFINITY;
+    //   const c = code.trim().toUpperCase();
+    //  const season = c[0];
+    //  const yearPart = parseInt(c.slice(1), 10);
+    //  const seasonOrder = { F: 0, W: 1, S: 2 }; // Fall -> Winter -> Spring
+    //  const so = seasonOrder[season] !== undefined ? seasonOrder[season] : 9;
+    //  return yearPart * 10 + so;
+    // }
+
+    function termSortKey(code) {
+	if (!code) return Number.POSITIVE_INFINITY;
+	const c = code.trim().toUpperCase();
+	const season = c[0];
+	const yearPart = parseInt(c.slice(1), 10);
+	if (Number.isNaN(yearPart)) return Number.POSITIVE_INFINITY;
+	
+	let academicStart; // academic year starts in Fall
+	let offset;
+	
+	if (season === 'F') {
+	    // Fall 25 belongs to academic year 25
+	    academicStart = yearPart;
+	    offset = 0; // Fall
+	} else if (season === 'W') {
+	    // Winter 26 belongs to academic year 25
+	    academicStart = yearPart - 1;
+	    offset = 1; // Winter
+	} else if (season === 'S') {
+	    // Spring 26 belongs to academic year 25
+	    academicStart = yearPart - 1;
+	    offset = 2; // Spring
+	} else {
+	    // Unknown season: push to the end
+	    academicStart = yearPart;
+	    offset = 9;
+	}
+
+	// Any monotone function of (academicStart, offset) works:
+	return academicStart * 10 + offset;
+    }
+
+    
+    function termLabel(code) {
+      const c = code.trim().toUpperCase();
+      const seasonMap = { F: "Fall", W: "Winter", S: "Spring" };
+      const season = seasonMap[c[0]] || c[0];
+      const year = "20" + c.slice(1); // F25 -> 2025
+      return `${season} ${year} (${c})`;
+    }
+
+    Papa.parse("./multi_term_test.csv", { // <-- change to your CSV filename
+      download: true,
+      header: true,
+      complete: function (results) {
+        const rawData = results.data || [];
+        const data = rawData.filter(r => (r["FacultyName"] || '').trim() && (r["Term"] || r["term"] || '').trim());
+
+        const termTablesContainer = document.getElementById("term-tables");
+
+        // Figure out unique terms
+        const termSet = new Set(
+          data.map(r => (r["Term"] || r["term"] || '').trim()).filter(Boolean)
+        );
+        const terms = Array.from(termSet).sort((a,b) => termSortKey(a) - termSortKey(b));
+
+        // Build one table per term
+        terms.forEach(termCode => {
+          const termCourses = data.filter(r => (r["Term"] || r["term"]).trim() === termCode);
+          if (!termCourses.length) return;
+
+          const colDiv = document.createElement("div");
+          colDiv.className = "term-column";
+
+          const h3 = document.createElement("h3");
+          h3.textContent = termLabel(termCode);
+          colDiv.appendChild(h3);
+
+          const tableId = `courses-${termCode}`;
+          const table = document.createElement("table");
+          table.id = tableId;
+          table.className = "display term-table";
+
+          table.innerHTML = `
+            <thead>
+              <tr>
+                <th>Faculty Name</th>
+                <th>Course Name</th>
+                <th>Degree Requirements Met</th>
+                <th>Level</th>
+                <th>Bonus Information</th>
+                <th>Description</th>
+                <th>BonusRaw</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          `;
+          colDiv.appendChild(table);
+          termTablesContainer.appendChild(colDiv);
+
+          const tbody = table.querySelector("tbody");
+
+          termCourses.forEach(row => {
+            const tr = document.createElement("tr");
+            const courseName = row["CourseName"] ?? '';
+            const bonusRaw   = row["Bonus Information"] ?? '';
+            const description = row["Description"] ?? '';
+
+            tr.innerHTML = `
+              <td>${row["FacultyName"] ?? ''}</td>
+              <td>
+                <button type="button"
+                        class="course-link"
+                        aria-haspopup="dialog">
+                  ${courseName}
+                </button>
+              </td>
+              <td>${row["CourseDivision"] ?? ''}</td>
+              <td>${row["Level"] ?? ''}</td>
+              <td>${
+                bonusRaw
+                  ? '<button type="button" class="bonus-link" aria-haspopup="dialog">Additional Information</button>'
+                  : ''
+              }</td>
+              <td>${description}</td>
+              <td>${bonusRaw}</td>
+            `;
+            tbody.appendChild(tr);
+          });
+        });
+
+        // Desired custom order for Level
+        const desiredOrder = [
+          "Introductory",
+          "Introductory/Intermediate",
+          "Intermediate",
+          "Intermediate/Advanced",
+          "Advanced"
+        ];
+        const levelOrderMap = desiredOrder.reduce((acc, v, i) => { acc[v] = i; return acc; }, {});
+        $.fn.dataTable.ext.type.order['level-order-pre'] = function (d) {
+          const t = String(d || '').trim();
+          return Object.prototype.hasOwnProperty.call(levelOrderMap, t) ? levelOrderMap[t] : 9999;
+        };
+
+        // Initialise DataTables for all term tables
+        const tables = [];
+        $(".term-table").each(function(){
+          const dt = $(this).DataTable({
+            pageLength: 50,
+            order: [[1, "asc"]],
+            dom: 'frtip',
+            columnDefs: [
+              { targets: 3, type: 'level-order' },      // Level
+              { targets: [5,6], visible: false, searchable: false } // Description & BonusRaw hidden
+            ]
+          });
+          tables.push(dt);
+        });
+
+        // Build global filters (Instructor / Requirements / Level) based on ALL data
+        const instructors = Array.from(new Set(
+          data.map(r => (r["FacultyName"] || '').trim()).filter(Boolean)
+        )).sort((a,b) => a.localeCompare(b, undefined, {sensitivity:'base'}));
+        const deptSelect = document.getElementById("filter-instructor");
+        for (const name of instructors) {
+          const opt = document.createElement("option");
+          opt.value = name; opt.textContent = name; deptSelect.appendChild(opt);
+        }
+
+        const tokenSet = new Set();
+        data.forEach(r => tokenizeRequirements(r["CourseDivision"]).forEach(t => tokenSet.add(t)));
+        const requirementTokens = Array.from(tokenSet).sort((a,b) => a.localeCompare(b, undefined, {sensitivity:'base'}));
+        const reqSelect = document.getElementById("filter-requirements");
+        for (const tok of requirementTokens) {
+          const opt = document.createElement("option");
+          opt.value = tok; opt.textContent = tok; reqSelect.appendChild(opt);
+        }
+
+        const presentLevels = new Set(
+          data.map(r => (r["Level"] || '').trim()).filter(Boolean)
+        );
+        const levels = [
+          ...desiredOrder.filter(l => presentLevels.has(l)),
+          ...Array.from(presentLevels).filter(l => !desiredOrder.includes(l))
+                .sort((a,b) => a.localeCompare(b, undefined, {sensitivity:'base'}))
+        ];
+        const levelSelect = document.getElementById("filter-level");
+        for (const lvl of levels) {
+          const opt = document.createElement("option");
+          opt.value = lvl; opt.textContent = lvl; levelSelect.appendChild(opt);
+        }
+
+        // Filtering logic (apply to ALL term tables)
+        deptSelect.addEventListener("change", function () {
+          const val = this.value;
+          tables.forEach(dt => {
+            dt.column(0).search(val ? '^' + escapeRegex(val) + '$' : '', true, false);
+            dt.draw();
+          });
+        });
+
+        reqSelect.addEventListener("change", function () {
+          const val = this.value;
+          tables.forEach(dt => {
+            if (val) {
+              const boundary = '[\\s,;|/()\\-]';
+              const regex = `(^|${boundary})${escapeRegex(val)}(${boundary}|$)`;
+              dt.column(2).search(regex, true, false);
+            } else {
+              dt.column(2).search('', true, false);
+            }
+            dt.draw();
+          });
+        });
+
+        levelSelect.addEventListener("change", function () {
+          const val = this.value;
+          tables.forEach(dt => {
+            dt.column(3).search(val ? '^' + escapeRegex(val) + '$' : '', true, false);
+            dt.draw();
+          });
+        });
+
+        // Event delegation for Course Name -> Description modal
+        $("#term-tables").on("click", "button.course-link", function(e){
+          e.preventDefault();
+          const $table = $(this).closest("table");
+          const dt = $table.DataTable();
+          const row = dt.row($(this).closest("tr"));
+          const rowData = row.data();
+          const courseTitle = $(this).text();
+          const instructor  = rowData[0] || '';
+          const description = rowData[5] || '(No description provided)';
+          const titleHtml = `<div>${courseTitle}</div><div class="subtitle">Instructor: ${instructor}</div>`;
+          openModal(titleHtml, description);
+        });
+
+        // Event delegation for Bonus Information -> Bonus modal
+        $("#term-tables").on("click", "button.bonus-link", function(e){
+          e.preventDefault();
+          const $table = $(this).closest("table");
+          const dt = $table.DataTable();
+          const row = dt.row($(this).closest("tr"));
+          const rowData = row.data();
+          const courseTitle = $(this).closest("tr").find("button.course-link").text();
+          const bonus = rowData[6] || '(No additional information provided)';
+          const titleHtml = `<div>${courseTitle}</div><div class="subtitle">Additional Information</div>`;
+          openModal(titleHtml, bonus);
+        });
+
+        // Modal close interactions
+        document.getElementById('desc-close').addEventListener('click', closeModal);
+        document.getElementById('desc-backdrop').addEventListener('click', function(e){
+          if (e.target === this) closeModal();
+        });
+        document.addEventListener('keydown', function(e){
+          if (e.key === 'Escape') closeModal();
+        });
+      }
+    });
+  </script>
+</body>
+</html>
