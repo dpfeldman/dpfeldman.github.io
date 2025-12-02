@@ -300,7 +300,7 @@
       return `${season} ${year} (${c})`;
     }
 
-    Papa.parse("./multi_term_test.csv", { // <-- change to your CSV filename
+    Papa.parse("./projections_output.csv", { // <-- change to your CSV filename
       download: true,
       header: true,
       complete: function (results) {
