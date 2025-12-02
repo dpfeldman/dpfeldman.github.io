@@ -66,12 +66,12 @@
 /* Column width controls (applies to all term tables) */
 .term-column table th:nth-child(1),
 .term-column table td:nth-child(1) {
-  width: 110px;   /* Faculty Name */
+  width: 140px;   /* Faculty Name */
 }
 
 .term-column table th:nth-child(2),
 .term-column table td:nth-child(2) {
-  width: 330px;   /* Course Name */
+  width: 280px;   /* Course Name */
 }
 
 .term-column table th:nth-child(3),
@@ -81,12 +81,12 @@
 
 .term-column table th:nth-child(4),
 .term-column table td:nth-child(4) {
-  width: 30px;   /* Level */
+  width: 120px;   /* Level */
 }
 
 .term-column table th:nth-child(5),
 .term-column table td:nth-child(5) {
-  width: 70px;   /* Bonus Info (visible cell) */
+  width: 140px;   /* Bonus Info (visible cell) */
 }
 
     
@@ -327,8 +327,8 @@
       return `${season} ${year} (${c})`;
     }
 
-    Papa.parse( //"./multi_term_test.csv", { // <-- change to your CSV filename
-	"./projections_output.csv", { // <-- change to your CSV filename
+    Papa.parse("./multi_term_test.csv", { // <-- change to your CSV filename
+	// "./projections_output.csv", { // <-- change to your CSV filename
       download: true,
       header: true,
       complete: function (results) {
@@ -367,7 +367,7 @@
                 <th>Course Name</th>
                 <th>Reqs Met</th>
                 <th>Level</th>
-                <th>Bonus Info</th>
+                <th>Bonus Information</th>
                 <th>Description</th>
                 <th>BonusRaw</th>
               </tr>
@@ -408,21 +408,14 @@
           });
         });
 
-        // Desired custom order for Level: If using unabbreviated levels
-        /* const desiredOrder = [
+        // Desired custom order for Level
+        const desiredOrder = [
           "Introductory",
           "Introductory/Intermediate",
           "Intermediate",
           "Intermediate/Advanced",
           "Advanced"
-        ]; */
-	  const desiredOrder = [
-          "I",
-          "I/M",
-          "M",
-          "M/A",
-          "A"
-		  ];
+        ];
         const levelOrderMap = desiredOrder.reduce((acc, v, i) => { acc[v] = i; return acc; }, {});
         $.fn.dataTable.ext.type.order['level-order-pre'] = function (d) {
           const t = String(d || '').trim();
