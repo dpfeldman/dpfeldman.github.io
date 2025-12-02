@@ -30,6 +30,24 @@
       font: inherit;
     }
 
+/* Make all filter boxes a warm yellow */
+.filters select,
+.filters input[type="text"] {
+  background-color: #FFE498;
+  border: 1px solid #BFA665;
+  padding: 6px 8px;
+  border-radius: 4px;
+}
+
+/* Optional: darken on focus for accessibility */
+.filters select:focus,
+.filters input[type="text"]:focus {
+  outline: none;
+  background-color: #FFD97A;
+  border-color: #8C6E1E;
+}
+
+    
     /* Layout for term columns */
     /*.term-tables {
       display: flex;
