@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" />
   <style>
     body { font-family: Arial, sans-serif; margin: 20px; }
-    h1, h2 { text-align: center; color:#274c34; }
+    h1, h2 { text-align: center; color:#808744; }
     table { width: 100%; }
     .filters {
       margin: 1em 0;
@@ -54,7 +54,7 @@
     .term-column {
 	display: inline-block; /* line them up left-to-right */
 	vertical-align: top;
-	width: 820px;          /* adjust width if you like */
+	width: 920px;          /* adjust width if you like */
 	margin-right: 1.5rem;
     }
     
@@ -63,10 +63,37 @@
 	table-layout: fixed;   /* helps prevent weird squeezing */
     }
 
+/* Column width controls (applies to all term tables) */
+.term-column table th:nth-child(1),
+.term-column table td:nth-child(1) {
+  width: 140px;   /* Faculty Name */
+}
+
+.term-column table th:nth-child(2),
+.term-column table td:nth-child(2) {
+  width: 280px;   /* Course Name */
+}
+
+.term-column table th:nth-child(3),
+.term-column table td:nth-child(3) {
+  width: 40px;   /* Requirements */
+}
+
+.term-column table th:nth-child(4),
+.term-column table td:nth-child(4) {
+  width: 120px;   /* Level */
+}
+
+.term-column table th:nth-child(5),
+.term-column table td:nth-child(5) {
+  width: 140px;   /* Bonus Info (visible cell) */
+}
+
+    
     .term-column h3 {
       text-align: center;
       margin-bottom: 0.5rem;
-      color: #273B65;
+      color: #693827;
     }
 
     /* Modal styles */
@@ -300,7 +327,8 @@
       return `${season} ${year} (${c})`;
     }
 
-    Papa.parse("./projections_output.csv", { // <-- change to your CSV filename
+    Papa.parse("./multi_term_test.csv", { // <-- change to your CSV filename
+	// "./projections_output.csv", { // <-- change to your CSV filename
       download: true,
       header: true,
       complete: function (results) {
@@ -337,7 +365,7 @@
               <tr>
                 <th>Faculty Name</th>
                 <th>Course Name</th>
-                <th>Requirements Met</th>
+                <th>Reqs Met</th>
                 <th>Level</th>
                 <th>Bonus Information</th>
                 <th>Description</th>
