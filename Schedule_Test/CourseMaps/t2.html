@@ -1,0 +1,69 @@
+<script>
+let data = [];   // will be filled from JSON
+
+// --- Load data ---
+fetch("courses.json")
+  .then(response => response.json())
+  .then(json => {
+    data = json;
+    init();      // only start once data is loaded
+  })
+  .catch(err => {
+    console.error("Error loading courses.json:", err);
+  });
+
+// --- Initialize once data is available ---
+function init() {
+  // Extract numeric fields automatically
+  const fields = Object.keys(data[0]).filter(k => k !== "title");
+
+  const xSelect = document.getElementById("xSelect");
+  const ySelect = document.getElementById("ySelect");
+
+  fields.forEach(f => {
+    xSelect.add(new Option(f, f));
+    ySelect.add(new Option(f, f));
+  });
+
+  xSelect.value = fields[0];
+  ySelect.value = fields[1];
+
+  xSelect.addEventListener("change", updatePlot);
+  ySelect.addEventListener("change", updatePlot);
+
+  updatePlot();
+}
+
+// --- Plot update function ---
+function updatePlot() {
+  const xField = xSelect.value;
+  const yField = ySelect.value;
+
+  const trace = {
+    x: data.map(d => d[xField]),
+    y: data.map(d => d[yField]),
+    text: data.map(d => d.title),
+    mode: "markers+text",
+    type: "scatter",
+    textposition: "top center",
+    marker: {
+      size: 10,
+      color: "#2a7fff",
+      line: { color: "white", width: 1 },
+      opacity: 0.8
+    },
+    hovertemplate:
+      "<b>%{text}</b><br>" +
+      `${xField}: %{x}<br>` +
+      `${yField}: %{y}<extra></extra>`
+  };
+
+  const layout = {
+    xaxis: { title: xField, range: [0.5, 10.5] },
+    yaxis: { title: yField, range: [0.5, 10.5] },
+    margin: { t: 20 }
+  };
+
+  Plotly.newPlot("plot", [trace], layout, { responsive: true });
+}
+</script>

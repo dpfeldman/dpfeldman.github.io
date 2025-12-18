@@ -1,0 +1,79 @@
+[
+    {
+	"title": "Introduction to Chaos and Fractals",
+	"traditional": 9,
+	"difficulty": 1,
+	"abstract": 7,
+	"writing": 5
+    },
+    {
+	"title": "Calculus I",
+	"traditional": 3,
+	"difficulty": 3,
+	"abstract": 4,
+	"writing": 2
+    },
+    {
+	"title": "Calculus II",
+	"traditional": 7,
+	"difficulty": 4,
+	"abstract": 4,
+	"writing": 2
+    },
+       {
+	"title": "Calculus III",
+	"traditional": 1,
+	"difficulty": 6,
+	"abstract": 5,
+	"writing": 2
+       },
+       {
+	"title": "Physics I",
+	"traditional": 2,
+	"difficulty": 3,
+	"abstract": 2,
+	"writing": 2
+       },
+       {
+	"title": "Physics II",
+	"traditional": 8,
+	"difficulty": 3.5,
+	"abstract": 6,
+	   "writing": 2
+       },
+    {
+	"title": "Proofs and Mathematical Structures",
+	"traditional": 4,
+	"difficulty": 7,
+	"abstract": 9,
+	"writing": 2
+    },
+    {
+	"title": "Group Theory",
+	"traditional": 4,
+	"difficulty": 6,
+	"abstract": 10,
+	"writing": 2
+    },
+    {
+	"title": "Thermodynamics",
+	"traditional": 2,
+	"difficulty": 8,
+	"abstract": 6,
+	"writing": 2
+    },
+    {
+	"title": "Physics of Energy",
+	"traditional": 5,
+	"difficulty": 2,
+	"abstract": 1,
+	"writing": 2
+    },
+    {
+	"title": "Linear Algebra",
+	"traditional" :4,
+	"difficulty" :3,
+	"abstract": 7,
+	"writing": 4
+    }
+]

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Course Ratings Explorer</title>
+  <script src="https://cdn.plot.ly/plotly-2.30.0.min.js"></script>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      max-width: 900px;
+      margin: 2rem auto;
+    }
+    select {
+      margin-right: 1rem;
+      padding: 0.25rem;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Explore Courses</h2>
+
+<label>
+  X-axis:
+  <select id="xSelect"></select>
+</label>
+
+<label>
+  Y-axis:
+  <select id="ySelect"></select>
+</label>
+
+<div id="plot" style="height: 500px;"></div>
+
+<script>
+const data = [
+  {
+    title: "Chaos & Dynamical Systems",
+    traditional: 3,
+    difficulty: 8,
+    abstract: 9,
+    writing: 5
+  },
+  {
+    title: "Calculus I",
+    traditional: 7,
+    difficulty: 6,
+    abstract: 6,
+    writing: 2
+  }
+];
+
+// --- Extract numeric fields automatically ---
+const fields = Object.keys(data[0]).filter(k => k !== "title");
+
+// --- Populate dropdowns ---
+const xSelect = document.getElementById("xSelect");
+const ySelect = document.getElementById("ySelect");
+
+fields.forEach(f => {
+  xSelect.add(new Option(f, f));
+  ySelect.add(new Option(f, f));
+});
+
+xSelect.value = fields[0];
+ySelect.value = fields[1];
+
+// --- Plot update function ---
+function updatePlot() {
+  const xField = xSelect.value;
+  const yField = ySelect.value;
+
+  const trace = {
+    x: data.map(d => d[xField]),
+    y: data.map(d => d[yField]),
+    text: data.map(d => d.title),
+    mode: "markers",
+    type: "scatter",
+    marker: {
+      size: 12,
+      color: "#2a7fff"
+    },
+    hovertemplate:
+      "<b>%{text}</b><br>" +
+      `${xField}: %{x}<br>` +
+      `${yField}: %{y}<extra></extra>`
+  };
+
+  const layout = {
+    xaxis: { title: xField, range: [0.5, 10.5] },
+    yaxis: { title: yField, range: [0.5, 10.5] },
+    margin: { t: 20 }
+  };
+
+  Plotly.newPlot("plot", [trace], layout, {responsive: true});
+}
+
+// --- Event listeners ---
+xSelect.addEventListener("change", updatePlot);
+ySelect.addEventListener("change", updatePlot);
+
+// --- Initial plot ---
+updatePlot();
+</script>
+
+</body>
+</html>
