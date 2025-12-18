@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Course Ratings Explorer</title>
+  <script src="https://cdn.plot.ly/plotly-2.30.0.min.js"></script>
+  <style>
+    body{
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      max-width: 980px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      line-height: 1.35;
+    }
+    .controls{
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: 0.75rem 0 1rem 0;
+    }
+    label{
+      display: inline-flex;
+      gap: 0.5rem;
+      align-items: center;
+    }
+    select{
+      padding: 0.25rem 0.5rem;
+    }
+    #plot{
+      height: 560px;
+    }
+    .note{
+      color: #555;
+      font-size: 0.95rem;
+      margin-top: 0.5rem;
+    }
+    .error{
+      color: #b00020;
+      white-space: pre-wrap;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      margin-top: 1rem;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Explore Courses</h2>
+
+<div class="controls">
+  <label>
+    X-axis:
+    <select id="xSelect"></select>
+  </label>
+
+  <label>
+    Y-axis:
+    <select id="ySelect"></select>
+  </label>
+
+  <label>
+  <input type="checkbox" id="prereqToggle" checked>
+  Show prerequisites
+</label>
+
+</div>
+
+<div id="plot"></div>
+<div class="note">Tip: drag to zoom, double-click to reset.</div>
+<div id="error" class="error"></div>
+
+<script>
+/*
+  Implements:
+  1) Label map (FIELD_META)
+  2) Dropdowns use human-friendly labels, values remain machine keys
+  3) Axis titles + tooltip use labels
+  4) Dropdown order control + ability to hide fields (via ORDERED_FIELDS)
+*/
+
+// --- 1) Human-friendly field labels (edit these to match your JSON keys) ---
+const FIELD_META = {
+  traditional: { label: "Traditional ↔ Experimental" },
+  difficulty:  { label: "Difficulty" },
+  abstract:    { label: "Concrete ↔ Abstract" },
+  //writing:     { label: "Writing intensity" }
+};
+
+  // This controls what shows up first on the default plot
+const DEFAULT_AXES = {
+  x: "abstract",
+  y: "difficulty"
+};
+
+
+const PREREQS = [
+  // ["Course A", "Course B"],  // A is prerequisite for B (A → B)
+    ["Calculus I", "Calculus II"],
+    ["Calculus II", "Calculus III"]
+];
+
+  
+// --- 4) Control dropdown order (and hide fields) ---
+// If you want full manual control, list them here in the order you want.
+// Any keys not listed here won't appear in dropdowns.
+const ORDERED_FIELDS = ["difficulty", "abstract", "traditional"];
+
+// Data loaded from file
+let courses = [];
+
+function showError(msg) {
+  const el = document.getElementById("error");
+  el.textContent = msg;
+  el.style.display = "block";
+}
+
+// --- Load the data from courses.json ---
+fetch("math-physics-courses.json")
+  .then(r => {
+    if (!r.ok) throw new Error(`HTTP ${r.status} while loading courses.json`);
+    return r.json();
+  })
+  .then(json => {
+    if (!Array.isArray(json) || json.length === 0) {
+      throw new Error("courses.json loaded, but it isn't a non-empty JSON array.");
+    }
+    courses = json;
+    init();
+  })
+  .catch(err => {
+    console.error(err);
+    showError(
+      "Could not load the json file!\n\n" +
+      "Common causes:\n" +
+      "- You're opening index.html via file:// instead of a local web server\n" +
+      "- courses.json is not in the same folder as index.html\n" +
+      "- courses.json contains invalid JSON (trailing commas, comments, etc.)\n\n" +
+      "Error:\n" + err.message
+    );
+  });
+
+function getLabel(fieldKey) {
+  return FIELD_META[fieldKey]?.label || fieldKey;
+}
+
+function init() {
+  const xSelect = document.getElementById("xSelect");
+  const ySelect = document.getElementById("ySelect");
+
+  // Determine available numeric fields from the data
+  const discovered = Object.keys(courses[0]).filter(k => k !== "title");
+
+  // Use ORDERED_FIELDS if provided, but only keep ones that exist in the data
+  const fields = ORDERED_FIELDS
+    .filter(k => discovered.includes(k));
+
+  if (fields.length < 2) {
+    throw new Error(
+      "Need at least two numeric fields to plot. " +
+      "Check ORDERED_FIELDS and your courses.json keys."
+    );
+  }
+
+  // Clear any existing options (in case of re-init)
+  xSelect.innerHTML = "";
+  ySelect.innerHTML = "";
+
+  // --- 2) Dropdowns show labels but store machine keys ---
+  fields.forEach(f => {
+    const label = getLabel(f);
+    xSelect.add(new Option(label, f));
+    ySelect.add(new Option(label, f));
+  });
+
+  //xSelect.value = fields[0];
+  //ySelect.value = fields[1];
+
+    xSelect.value = fields.includes(DEFAULT_AXES.x) ? DEFAULT_AXES.x : fields[0];
+    ySelect.value = fields.includes(DEFAULT_AXES.y) ? DEFAULT_AXES.y : fields[1];
+
+    
+  xSelect.addEventListener("change", updatePlot);
+  ySelect.addEventListener("change", updatePlot);
+
+  updatePlot();
+}
+
+  function updatePlot() {
+
+      const showPrereqs = document.getElementById("prereqToggle")?.checked;
+
+  const xField = document.getElementById("xSelect").value;
+  const yField = document.getElementById("ySelect").value;
+
+  // --- 3) Use labels in axis titles and tooltip ---
+  const xLabel = getLabel(xField);
+  const yLabel = getLabel(yField);
+
+  const trace = {
+    x: courses.map(d => d[xField]),
+    y: courses.map(d => d[yField]),
+    text: courses.map(d => d.title),
+    mode: "markers+text",
+    type: "scatter",
+    textposition: "top center",
+    marker: {
+      size: 10,
+      color: "#2a7fff",
+      opacity: 0.8,
+      line: { color: "white", width: 1 }
+    },
+    hovertemplate:
+      "<b>%{text}</b><br>" +
+      `${xLabel}: %{x}<br>` +
+      `${yLabel}: %{y}<extra></extra>`
+  };
+
+  // --- Build arrow annotations for prerequisites (A -> B) ---
+  const pos = new Map(
+    courses.map(d => [d.title, { x: d[xField], y: d[yField] }])
+  );
+
+  /* const prereqAnnotations = PREREQS
+    .map(([a, b]) => {
+      const A = pos.get(a);
+      const B = pos.get(b);
+      if (!A || !B) return null; // skip if title doesn't match exactly
+
+      return {
+        x: B.x, y: B.y,         // arrow head at B (dependent)
+        ax: A.x, ay: A.y,       // arrow tail at A (prereq)
+        xref: "x", yref: "y",
+        axref: "x", ayref: "y",
+        showarrow: true,
+        arrowhead: 3,
+        arrowsize: 1,
+        arrowwidth: 1.5,
+        arrowcolor: "rgba(0,0,0,0.45)"
+      };
+    })
+    .filter(Boolean);
+  */
+
+let prereqAnnotations = [];
+
+if (showPrereqs) {
+  const pos = new Map(
+    courses.map(d => [d.title, { x: d[xField], y: d[yField] }])
+  );
+
+  prereqAnnotations = PREREQS
+    .map(([a, b]) => {
+      const A = pos.get(a);
+      const B = pos.get(b);
+      if (!A || !B) return null;
+
+      return {
+        x: B.x, y: B.y,
+        ax: A.x, ay: A.y,
+        xref: "x", yref: "y",
+        axref: "x", ayref: "y",
+        showarrow: true,
+        arrowhead: 3,
+        arrowsize: 1,
+        arrowwidth: 1.5,
+        arrowcolor: "rgba(0,0,0,0.45)"
+      };
+    })
+    .filter(Boolean);
+}
+      
+
+
+  const layout = {
+    xaxis: { title: xLabel, range: [0.5, 10.5], dtick: 1 },
+    yaxis: { title: yLabel, range: [0.5, 10.5], dtick: 1 },
+    margin: { t: 20, r: 10, b: 50, l: 60 },
+    annotations: prereqAnnotations
+  };
+
+  Plotly.newPlot("plot", [trace], layout, { responsive: true });
+}
+
+document
+  .getElementById("prereqToggle")
+  .addEventListener("change", updatePlot);
+
+</script>
+
+</body>
+</html>

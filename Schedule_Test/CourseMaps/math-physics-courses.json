@@ -51,7 +51,7 @@
     {
 	"title": "Group Theory",
 	"traditional": 4,
-	"difficulty": 6,
+	"difficulty": 8,
 	"abstract": 10,
 	"writing": 2
     },
@@ -74,6 +74,13 @@
 	"traditional" :4,
 	"difficulty" :3,
 	"abstract": 7,
+	"writing": 4
+    },
+    {
+	"title": "Differential Equations",
+	"traditional" :8,
+	"difficulty" :7,
+	"abstract": 5,
 	"writing": 4
     }
 ]
