@@ -210,7 +210,40 @@
 	}
 }
 
+.help-icon {
+  margin-left: 6px;
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  border: 1px solid #777;
+  background: #FFE498;       /* matches your input color */
+  color: #222;
+  font-weight: 700;
+  line-height: 20px;
+  cursor: pointer;
+}
 
+.help-popover {
+  display: none;
+  position: absolute;
+  max-width: 360px;
+  background: #fff;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.18);
+  padding: 12px 12px 10px 12px;
+  z-index: 10000;
+}
+
+.help-popover-title {
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.help-popover-body p { margin: 6px 0; }
+.help-popover-body ul { margin: 6px 0 0 18px; }
+
+.filters { position: relative; }
 
 
   </style>
@@ -240,13 +273,26 @@
       </select>
     </label>
 
-
-  <!-- NEW: global text search -->
-  <label>
-    Search:
-    <input type="text" id="global-search" placeholder="Search all terms…" />
-  </label>
+    <!-- NEW: global text search -->
+    <label>
+      Search:
+      <input type="text" id="global-search" placeholder="Search all terms…" />
+      <button type="button" class="help-icon" aria-label="Help" aria-expanded="false">?</button>
+    </label>
   </div>
+
+
+<div id="help-popover" class="help-popover" role="dialog" aria-hidden="true">
+  <div class="help-popover-title">Help</div>
+  <div class="help-popover-body">
+    <p><b>Search</b> filters courses across all terms.</p>
+    <p>Use the dropdowns to filter by Instructor, Requirement, and Level.</p>
+    <ul>
+      <li>Click a course title for the description.</li>
+      <li>Click “Additional Information” for bonus info.</li>
+    </ul>
+  </div>
+</div>
   
   <!-- Top horizontal scrollbar -->
   <div id="top-scroll" class="top-scroll">
@@ -671,7 +717,47 @@ function syncHorizontalScroll() {
     window.addEventListener('resize', updateScrollHint);
   </script>
 
+  <script>
+    (function () {
+  const btn = document.querySelector('.help-icon');
+  const pop = document.getElementById('help-popover');
+  if (!btn || !pop) return;
 
+  function openPopover() {
+    // Position popover near the button
+    const b = btn.getBoundingClientRect();
+    const parent = document.querySelector('.filters').getBoundingClientRect();
+
+    pop.style.left = (b.left - parent.left) + 'px';
+    pop.style.top  = (b.bottom - parent.top + 8) + 'px';
+
+    pop.style.display = 'block';
+    pop.setAttribute('aria-hidden', 'false');
+    btn.setAttribute('aria-expanded', 'true');
+  }
+
+  function closePopover() {
+    pop.style.display = 'none';
+    pop.setAttribute('aria-hidden', 'true');
+    btn.setAttribute('aria-expanded', 'false');
+  }
+
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    if (pop.style.display === 'block') closePopover();
+    else openPopover();
+  });
+
+  // Click outside closes
+  document.addEventListener('click', () => closePopover());
+
+  // Escape closes
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closePopover();
+  });
+})();
+
+  </script>
   
 </body>
 </html>
