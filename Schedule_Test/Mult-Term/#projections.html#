@@ -240,12 +240,11 @@
       </select>
     </label>
 
-
-  <!-- NEW: global text search -->
-  <label>
-    Search:
-    <input type="text" id="global-search" placeholder="Search all terms…" />
-  </label>
+    <!-- NEW: global text search -->
+    <label>
+      Search:
+      <input type="text" id="global-search" placeholder="Search all terms…" />
+    </label>
   </div>
   
   <!-- Top horizontal scrollbar -->
