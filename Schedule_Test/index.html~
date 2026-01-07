@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Course Tools</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-inner">
+      <h1>Course Tools</h1>
+      <p>
+        Quick links to course listings, schedules, maps, and planning tools.
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <section class="group">
+      <h2>Listings</h2>
+
+      <article class="card">
+        <div class="card-top">
+          <h3>Course Listings by Term</h3>
+          <span class="badge">Stable</span>
+        </div>
+        <p>Searchable listings with filters (credits, level, designations, etc.).</p>
+        <div class="links">
+          <a href="listings.html">Open →</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-top">
+          <h3>All Courses A–Z</h3>
+          <span class="badge badge-muted">Draft</span>
+        </div>
+        <p>One page index of courses with quick metadata and links.</p>
+        <div class="links">
+          <a href="az.html">Open →</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="group">
+      <h2>Schedules</h2>
+
+      <article class="card">
+        <div class="card-top">
+          <h3>Weekly Schedule Grid</h3>
+          <span class="badge">Stable</span>
+        </div>
+        <p>Visual weekly schedule by term (good for spotting conflicts fast).</p>
+        <div class="links">
+          <a href="schedule-grid.html">Open →</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-top">
+          <h3>Conflict Checker</h3>
+          <span class="badge badge-warn">Experimental</span>
+        </div>
+        <p>Pick courses and see overlaps highlighted (time conflicts, labs, etc.).</p>
+        <div class="links">
+          <a href="conflicts.html">Open →</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="group">
+      <h2>Maps</h2>
+
+      <article class="card">
+        <div class="card-top">
+          <h3>Course Map / Pathways</h3>
+          <span class="badge badge-muted">Draft</span>
+        </div>
+        <p>Visual “what to take next” maps (prereqs, clusters, sequences).</p>
+        <div class="links">
+          <a href="course-map.html">Open →</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      Dave Feldman · <a href="https://dpfeldman.github.io/">Homepage</a>
+    </p>
+  </footer>
+</body>
+</html>
