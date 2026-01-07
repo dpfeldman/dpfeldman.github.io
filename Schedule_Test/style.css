@@ -5,9 +5,9 @@
   --muted: #5b616a;
   --border: #e5e7eb;
 
-  --accent: #2f6f6d;
+  --accent: #693827;
 
-  --badge: #e8f2f1;
+  --badge: #C6D9F7;
   --badge-text: #1f4f4d;
 
   --badge-muted: #f2f2f2;
@@ -42,12 +42,25 @@ header h1 {
   margin: 0 0 0.35rem 0;
   font-size: 2rem;
   letter-spacing: -0.01em;
+  margin-bottom: -0.5rem;
+  margin-top: -0.6rem;
+}
+
+header h2 {
+    margin-top: 0.3rem;
+    margin-bottom: -0.49rem;
+}
+
+header h3 {
+    margin-top: 0.3rem;
+    margin-borrom: -0.96rem;
 }
 
 header p {
   margin: 0;
   color: var(--muted);
   max-width: 700px;
+  margin-bottom: -0.5rem;
 }
 
 main {
@@ -56,6 +69,10 @@ main {
   padding: 1.75rem 1rem 2.5rem;
   display: grid;
   gap: 2rem;
+}
+
+main p{
+    margin: -0.2rem;
 }
 
 .group h2 {
@@ -83,6 +100,7 @@ main {
 }
 
 .card h3 {
+    color: var(--accent);
   margin: 0;
   font-size: 1.15rem;
 }
@@ -134,4 +152,14 @@ footer {
 footer a {
   color: var(--accent);
   text-decoration: none;
+}
+
+.aside {
+  margin: 0.6rem 0 0.9rem;
+  padding-left: 0.75rem;
+  border-left: 3px solid var(--accent);
+
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #4f5b5a;
 }
