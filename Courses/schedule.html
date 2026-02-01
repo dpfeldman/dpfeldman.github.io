@@ -12,13 +12,13 @@
     :root {
       --border: #d9d9e3;
       --bg: #f8f9fb;
-      --active-bg: #e0f0ff;
-      --conflict-bg: #ffe0e0;
+      --active-bg: #c6D9F7;
+      --conflict-bg: #FFa581;
     }
     body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; background: var(--bg); }
     .app { display: grid; grid-template-columns: 280px 1fr; gap: 16px; padding: 16px; }
-    .panel { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 14px; }
-    #course-list h2 { margin: 0 0 10px; font-size: 18px; }
+    .panel { background: #294C84; border: 1px solid var(--border); border-radius: 12px; padding: 14px; }
+    #course-list h2 { margin: 0 0 10px; font-size: 18px; color: #fff}
     .hint { color: #555; font-size: 12px; margin: 8px 0 12px; }
     .row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
     .row > * { flex: 0 0 auto; }
@@ -41,12 +41,12 @@
     /* Conflict highlighting */
     .fc-event.conflict {
       background-color: var(--conflict-bg) !important;
-      border-color: red !important;
+      border-color: #FFA581 !important;
     }
      .message-box {
       position: relative;
-      background-color: #f0f8ff;
-      border: 1px solid #b0c4de;
+      background-color: #c6d9f7;
+      border: 1px solid #c6d9f7;
       padding: 15px 40px 15px 15px;
       margin: 20px 0;
       border-radius: 8px;
@@ -54,6 +54,20 @@
       max-width: 400px;
     }
 
+.course-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 64px; /* space for badge */
+}
+
+.badge {
+  position: absolute;
+  right: 12px;
+}
+
+     
     .close-btn {
       position: absolute;
       top: 8px;
@@ -80,20 +94,17 @@
         <button id="loadF25" title="Load F25.csv from this site">Fall 2025</button>
 	<button id="loadW26" title="Load W26.csv from this site">Winter 2026</button>
 	<button id="loadS26" title="Load S26.csv from this site">Spring 2026</button>
-        <button id="loadSample">Load sample data</button>
+        <!--<button id="loadSample">Load sample data</button>-->
         <button id="clearCalendar" title="Remove all events">Clear calendar</button>
       </div>
-      <div class="message-box">
+      <!--<div class="message-box">
 	<button class="close-btn" onclick="this.parentElement.style.display='none'">×</button>
-	<b>Click on Winter 2026 to load the winter courses</b>
-  </div>
+	<b>Click on Spring 2026 to load the winter courses</b>
+  </div>-->
   <div class="message-box">
     <button class="close-btn" onclick="this.parentElement.style.display='none'">×</button>
+    	<b>Click on Spring 2026 to load the winter courses</b><br>
     Courses are listed alphabetically. Click on a course to add its scheduled meetings to the weekly calendar. Click on the course again and the meeting times will be removed from the calendar.
-  </div>
-  <div class="message-box">
-    <button class="close-btn" onclick="this.parentElement.style.display='none'">×</button>
-    This website is experimental and is still under development. This page was developed by Dave Feldman, with significant assistance from ChatGPT. Comments and suggestions should be sent to Dave at dfeldman@coa.edu.
   </div>
       <div class="hint"></div>
       <div class="hint"></div>
@@ -101,7 +112,18 @@
       <div id="msg"></div>
     </div>
 
-    <div id="calendar"></div>
+
+    <div id="calendar-wrapper">
+      <div id="calendar"></div>
+      <div id="calendar-note">
+	This website is experimental and is still under development. This page was developed by Dave Feldman, with significant assistance from ChatGPT.
+	Comments and suggestions should be sent to Dave at dfeldman@coa.edu. In the event that the information on this page and in CAMS are inconsistent,
+	the CAMS listing should be assumed to be correct.
+      </div>
+    </div>
+
+
+
   </div>
 
   <!-- FullCalendar JS (bundled global build) -->
@@ -163,7 +185,9 @@
       height: 'auto',
       weekends: false,
       eventAdd: checkConflicts,
-      eventRemove: checkConflicts,
+	eventRemove: checkConflicts,
+	eventBackgroundColor: '#294C84',
+	// eventBorderColor: '#FFA581',
     });
     calendar.render();
 
@@ -266,14 +290,14 @@
       });
     });
 
-    const SAMPLE_CSV = `Name,Meetings\n` +
-      `Calculus I,"[{""days"":""MWF"",""start"":""09:00:00"",""end"":""10:00:00""}]"\n` +
-      `Biology 101,"[{""days"":""TR"",""start"":""11:00:00"",""end"":""12:30:00""},{""days"":""F"",""start"":""14:00:00"",""end"":""16:00:00""}]"\n` +
-      `History of Art,"[{""days"":""M"",""start"":""14:00:00"",""end"":""16:00:00""}]"`;
-
-    document.getElementById('loadSample').addEventListener('click', () => {
-      Papa.parse(SAMPLE_CSV, { header: true, complete: (res) => renderCourseButtons(res.data) });
-    });
+//    const SAMPLE_CSV = `Name,Meetings\n` +
+//      `Calculus I,"[{""days"":""MWF"",""start"":""09:00:00"",""end"":""10:00:00""}]"\n` +
+//      `Biology 101,"[{""days"":""TR"",""start"":""11:00:00"",""end"":""12:30:00""},{""days"":""F"",""start"":""14:00:00"",""end"":""16:00:00""}]"\n` +
+//      `History of Art,"[{""days"":""M"",""start"":""14:00:00"",""end"":""16:00:00""}]"`;
+//
+//    document.getElementById('loadSample').addEventListener('click', () => {
+//      Papa.parse(SAMPLE_CSV, { header: true, complete: (res) => renderCourseButtons(res.data) });
+//    });
 
     document.getElementById('clearCalendar').addEventListener('click', clearCalendar);
 
