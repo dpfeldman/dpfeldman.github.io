@@ -79,6 +79,7 @@
         <input type="file" id="csvFile" accept=".csv" />
         <button id="loadF25" title="Load F25.csv from this site">Fall 2025</button>
 	<button id="loadW26" title="Load W26.csv from this site">Winter 2026</button>
+	<button id="loadS26" title="Load S26.csv from this site">Spring 2026</button>
         <button id="loadSample">Load sample data</button>
         <button id="clearCalendar" title="Remove all events">Clear calendar</button>
       </div>
@@ -319,6 +320,11 @@ document.getElementById('loadF25').addEventListener('click', () => {
 // Winter 2026
 document.getElementById('loadW26').addEventListener('click', () => {
   loadCsvFromSameDir('W26.csv', 'Winter 2026');
+});
+
+// Spring 2026
+document.getElementById('loadS26').addEventListener('click', () => {
+  loadCsvFromSameDir('S26.csv', 'Spring 2026');
 });
 
 
