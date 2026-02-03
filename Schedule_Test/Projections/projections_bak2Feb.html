@@ -48,7 +48,26 @@
 }
 
 /* Top scrollbar */
+.top-scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: 16px;          /* just enough to show scrollbar */
+  margin-top: 50px;
+  margin-bottom: -20px;
+  /* background: #ff00ff; */
+  border: 2px solid #693827
+}
 
+.top-scroll-inner {
+  height: 1px;           /* invisible content */
+}
+
+/* Make sure bottom scroll stays active */
+.term-tables {
+  overflow-x: auto;
+}
+
+    
     /* Layout for term columns */
     /*.term-tables {
       display: flex;
@@ -63,26 +82,24 @@
       flex: 1 0 360px;
     }*/
 
-
-.term-tables {
-  overflow-x: auto;
-  overflow-y: hidden;
-  white-space: nowrap;
-
-  /* The trick */
-  direction: rtl;     /* flips scrollbar to top */
-}
-
-.term-column {
-  direction: ltr;     /* restore normal text direction */
-  display: inline-block;
-  vertical-align: top;
-  width: 420px;
-  margin-right: 1.5rem;
-  white-space: normal;
-}
-
+    .term-tables {
+	display: block;
+	overflow-x: auto;      /* horizontal scroll when needed */
+	white-space: nowrap;   /* keep columns on one line */
+	margin-top: 1rem;
+    }
     
+    .term-column {
+	display: inline-block; /* line them up left-to-right */
+	vertical-align: top;
+	width: 920px;          /* adjust width if you like */
+	margin-right: 1.5rem;
+    }
+    
+    .term-column table {
+	width: 100%;
+	table-layout: fixed;   /* helps prevent weird squeezing */
+    }
 
 /* Column width controls (applies to all term tables) */
 .term-column table th:nth-child(1),
@@ -278,9 +295,9 @@
 </div>
   
   <!-- Top horizontal scrollbar -->
-<!--  <div id="top-scroll" class="top-scroll">
+  <div id="top-scroll" class="top-scroll">
     <div id="top-scroll-inner"></div>
-  </div>-->
+  </div>
 
 <div class="scroll-hint">
   <div id="term-tables" class="term-tables"></div>
@@ -291,14 +308,14 @@
   
   <! -- orig -->
   <!-- Container for all term tables -->
-  <div id="term-tables" class="term-tables">
+  <!--<div id="term-tables" class="term-tables">-->
     <!-- JS will inject one .term-column with a table per term -->
-  </div>
+  <!--</div>-->
 
   <!-- implement scrolling hint -->
-  <!--<div class="scroll-hint">
+  <div class="scroll-hint">
     <div id="term-tables" class="term-tables"></div>
-  </div>-->
+  </div>
 
 
   <!-- Modal -->
@@ -422,7 +439,7 @@ $.fn.dataTable.ext.type.order['course-name-bracket-last-pre'] = function (d) {
     }
 
 
-/* function syncHorizontalScroll() {
+/*function syncHorizontalScroll() {
   const top = document.getElementById('top-scroll');
   const bottom = document.getElementById('term-tables');
   const topInner = document.getElementById('top-scroll-inner');
@@ -453,8 +470,26 @@ $.fn.dataTable.ext.type.order['course-name-bracket-last-pre'] = function (d) {
     }
     isSyncingBottom = false;
   });
-} */
+}*/
 
+function syncHorizontalScroll() {
+  const top = document.getElementById('top-scroll');
+  const bottom = document.getElementById('term-tables');
+  const topInner = document.getElementById('top-scroll-inner');
+  if (!top || !bottom || !topInner) return;
+
+  // Recompute width every time
+  topInner.style.width = bottom.scrollWidth + 'px';
+
+  // Keep positions matched
+  top.scrollLeft = bottom.scrollLeft;
+
+  // Assign (don’t stack) handlers
+  top.onscroll = () => { bottom.scrollLeft = top.scrollLeft; };
+  bottom.onscroll = () => { top.scrollLeft = bottom.scrollLeft; };
+}
+
+    
     
     Papa.parse( //"./multi_term_test.csv", { // <-- change to your CSV filename
 	"./projections_output.csv", { // <-- change to your CSV filename
@@ -583,6 +618,9 @@ $.fn.dataTable.ext.type.order['course-name-bracket-last-pre'] = function (d) {
           tables.push(dt);
         });
 
+	  setTimeout(syncHorizontalScroll, 50);
+
+	  
 	  // Global search across all term tables
 	  const globalSearchInput = document.getElementById("global-search");
 	  if (globalSearchInput) {
@@ -695,11 +733,15 @@ $.fn.dataTable.ext.type.order['course-name-bracket-last-pre'] = function (d) {
         document.addEventListener('keydown', function(e){
           if (e.key === 'Escape') closeModal();
         });
-	  //syncHorizontalScroll();
-	  //window.addEventListener('resize', syncHorizontalScroll);
- 
+	  syncHorizontalScroll();
+	  window.addEventListener('resize', syncHorizontalScroll);
+
+    // Let layout settle, then sync scrollbars
+    setTimeout(syncHorizontalScroll, 50);
+
+	  
       }
-    });
+	});
     </script>
 
   <script>

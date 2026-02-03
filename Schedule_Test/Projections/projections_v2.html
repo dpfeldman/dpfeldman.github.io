@@ -48,41 +48,44 @@
 }
 
 /* Top scrollbar */
-
-    /* Layout for term columns */
-    /*.term-tables {
-      display: flex;
-      gap: 1.5rem;
-      align-items: flex-start;
-      flex-wrap: nowrap;
-      overflow-x: auto;
-      margin-top: 1rem;
-    }
-    .term-column {
-      min-width: 360px;
-      flex: 1 0 360px;
-    }*/
-
-
-.term-tables {
+.top-scroll {
   overflow-x: auto;
   overflow-y: hidden;
-  white-space: nowrap;
-
-  /* The trick */
-  direction: rtl;     /* flips scrollbar to top */
+  height: 16px;          /* just enough to show scrollbar */
+  margin-top: 50px;
+  margin-bottom: -20px;
+  /* background: #ff00ff; */
+  border: 2px solid #693827
 }
 
-.term-column {
-  direction: ltr;     /* restore normal text direction */
-  display: inline-block;
-  vertical-align: top;
-  width: 420px;
-  margin-right: 1.5rem;
-  white-space: normal;
+.top-scroll-inner {
+  height: 1px;           /* invisible content */
 }
 
+/* Make sure bottom scroll stays active */
+.term-tables {
+  overflow-x: auto;
+}
+
+
+    .term-tables {
+	display: block;
+	overflow-x: auto;      /* horizontal scroll when needed */
+	white-space: nowrap;   /* keep columns on one line */
+	margin-top: 1rem;
+    }
     
+    .term-column {
+	display: inline-block; /* line them up left-to-right */
+	vertical-align: top;
+	width: 920px;          /* adjust width if you like */
+	margin-right: 1.5rem;
+    }
+    
+    .term-column table {
+	width: 100%;
+	table-layout: fixed;   /* helps prevent weird squeezing */
+    }
 
 /* Column width controls (applies to all term tables) */
 .term-column table th:nth-child(1),
@@ -277,10 +280,6 @@
   </div>
 </div>
   
-  <!-- Top horizontal scrollbar -->
-<!--  <div id="top-scroll" class="top-scroll">
-    <div id="top-scroll-inner"></div>
-  </div>-->
 
 <div class="scroll-hint">
   <div id="term-tables" class="term-tables"></div>
@@ -291,14 +290,14 @@
   
   <! -- orig -->
   <!-- Container for all term tables -->
-  <div id="term-tables" class="term-tables">
+  <!--<div id="term-tables" class="term-tables">-->
     <!-- JS will inject one .term-column with a table per term -->
-  </div>
+  <!--</div>-->
 
   <!-- implement scrolling hint -->
-  <!--<div class="scroll-hint">
+  <div class="scroll-hint">
     <div id="term-tables" class="term-tables"></div>
-  </div>-->
+  </div>
 
 
   <!-- Modal -->
@@ -324,7 +323,7 @@
       return String(text).replace(/[.*+?^${}()|[\\]\\\\]/g, '\\$&');
     }
 
-    function tokenizeRequirements(cell) {
+/*    function tokenizeRequirements(cell) {
       if (!cell) return [];
       const raw = String(cell).replace(/\\u00A0/g, ' ').trim();
       if (!raw) return [];
@@ -337,7 +336,26 @@
       }
       return Array.from(out);
     }
+*/
 
+function tokenizeRequirements(cell) {
+  if (!cell) return [];
+  const raw = String(cell).replace(/\u00A0/g, ' ').trim().toUpperCase();
+  if (!raw) return [];
+
+  const CODES = ["AD","ADS","ES","HS","HY","QR","W"];
+  const out = new Set();
+
+  for (const code of CODES) {
+    // boundary-aware: won't conflate AD vs ADS, etc.
+    const re = new RegExp(`(^|[\\s,;|/()\\-])${code}([\\s,;|/()\\-]|$)`, 'i');
+    if (re.test(raw)) out.add(code);
+  }
+  return Array.from(out);
+}
+
+
+    
 // Sort Course Name so items starting with '[' come last (e.g., "[no classes]")
 $.fn.dataTable.ext.type.order['course-name-bracket-last-pre'] = function (d) {
   // d might be HTML (button) or plain text; convert to visible text
@@ -422,39 +440,8 @@ $.fn.dataTable.ext.type.order['course-name-bracket-last-pre'] = function (d) {
     }
 
 
-/* function syncHorizontalScroll() {
-  const top = document.getElementById('top-scroll');
-  const bottom = document.getElementById('term-tables');
-  const topInner = document.getElementById('top-scroll-inner');
-
-  if (!top || !bottom || !topInner) return;
-
-  // Match widths so scrollbar sizes line up
-  topInner.style.width = bottom.scrollWidth + 'px';
-
 
     
-  // Sync scrolling
-  let isSyncingTop = false;
-  let isSyncingBottom = false;
-
-  top.addEventListener('scroll', () => {
-    if (!isSyncingTop) {
-      isSyncingBottom = true;
-      bottom.scrollLeft = top.scrollLeft;
-    }
-    isSyncingTop = false;
-  });
-
-  bottom.addEventListener('scroll', () => {
-    if (!isSyncingBottom) {
-      isSyncingTop = true;
-      top.scrollLeft = bottom.scrollLeft;
-    }
-    isSyncingBottom = false;
-  });
-} */
-
     
     Papa.parse( //"./multi_term_test.csv", { // <-- change to your CSV filename
 	"./projections_output.csv", { // <-- change to your CSV filename
@@ -583,6 +570,7 @@ $.fn.dataTable.ext.type.order['course-name-bracket-last-pre'] = function (d) {
           tables.push(dt);
         });
 
+	  
 	  // Global search across all term tables
 	  const globalSearchInput = document.getElementById("global-search");
 	  if (globalSearchInput) {
@@ -606,15 +594,38 @@ $.fn.dataTable.ext.type.order['course-name-bracket-last-pre'] = function (d) {
           opt.value = name; opt.textContent = name; deptSelect.appendChild(opt);
         }
 
-        const tokenSet = new Set();
+        /*const tokenSet = new Set();
         data.forEach(r => tokenizeRequirements(r["CourseDivision"]).forEach(t => tokenSet.add(t)));
         const requirementTokens = Array.from(tokenSet).sort((a,b) => a.localeCompare(b, undefined, {sensitivity:'base'}));
         const reqSelect = document.getElementById("filter-requirements");
         for (const tok of requirementTokens) {
           const opt = document.createElement("option");
           opt.value = tok; opt.textContent = tok; reqSelect.appendChild(opt);
-        }
+        }*/
 
+// Requirements dropdown (fixed codes in desired order)
+const REQ_ORDER = ["AD","ADS","ES","HS","HY","QR","W"];
+const tokenSet = new Set();
+data.forEach(r =>
+  tokenizeRequirements(r["CourseDivision"])
+    .forEach(t => tokenSet.add(t))
+);
+
+const reqSelect = document.getElementById("filter-requirements");
+
+// Clear existing options (keep "All")
+reqSelect.innerHTML = '<option value="">All</option>';
+
+REQ_ORDER
+  .filter(code => tokenSet.has(code))   // only show codes that appear
+  .forEach(code => {
+    const opt = document.createElement("option");
+    opt.value = code;
+    opt.textContent = code;
+    reqSelect.appendChild(opt);
+  });
+
+	  
         const presentLevels = new Set(
           data.map(r => (r["Level"] || '').trim()).filter(Boolean)
         );
@@ -695,11 +706,11 @@ $.fn.dataTable.ext.type.order['course-name-bracket-last-pre'] = function (d) {
         document.addEventListener('keydown', function(e){
           if (e.key === 'Escape') closeModal();
         });
-	  //syncHorizontalScroll();
-	  //window.addEventListener('resize', syncHorizontalScroll);
- 
+
+
+	  
       }
-    });
+	});
     </script>
 
   <script>
