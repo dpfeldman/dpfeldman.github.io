@@ -30,7 +30,36 @@
       font: inherit;
     }
 
-/* Make all filter boxes a warm yellow */
+
+  .message-box {
+      position: relative;
+      background-color: #c6D9F7;
+      border: 2px solid #808744;
+      padding: 15px 40px 15px 15px;
+      margin: 20px 0;
+      border-radius: 8px;
+      font-family: Arial, sans-serif;
+      max-width: 100%;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 8px;
+      right: 12px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #58523F;
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+
+    .close-btn:hover {
+      color: #000;
+    }
+
+    
+/* Filter boxes */
 .filters select,
 .filters input[type="text"] {
   background-color: #A6B9D7;
@@ -244,6 +273,27 @@
   </div>
 </div>
   
+  <div class="message-box">
+    <button class="close-btn" onclick="this.parentElement.style.display='none'">×</button>
+    <b>Notes</b>
+    <ul>
+      <li>This page will not display properly on a phone.</li>
+      <li><b>Scroll right</b> to see more terms!!!</li>
+      <li>The search box searches all course titles and descriptions
+	across all terms.</li>
+      <li>You can filter courses by degree requirement, level, and
+      instructor.</li> 
+      <li>This page is experimental and is still under production.</li>
+
+      <li>We make every attempt to keep the information on this page
+      up to date. In the event that there is a discrepancy between
+      this course listing and the one in CAMS, the CAMS listing should
+      be assumed to be correct. This webpage was written by Dave
+      Feldman, making heavy use of generative AI: chatGpt for this
+      webpage, and gemini the python code that processes a complicated
+      csv into a format that is suitable for rendering online. Feedback
+      should be sent to Dave at dfeldman@coa.edu.</li> 
+  </div>
 
 
 <div class="top-scroll-container">
