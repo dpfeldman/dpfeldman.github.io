@@ -91,11 +91,29 @@
 
 }
 
+/* Flip BOTH the content strip and the meta text back upright */
+/*.term-tables,
+.scroll-meta {
+  transform: rotateX(180deg);
+}*/
+
+
+.scroll-meta {
+  text-align: right;
+  font-size: 0.95em;
+  color: #555;
+  margin: 6px 0 4px 0;   /* space above and tight to scrollbar */
+  padding-right: 8px;
+}
+
+
+
 .term-tables {
     display: inline-block;   /* expand to full width of all term columns */
     white-space: nowrap;     /* keep columns on one line */
     margin-top: 1rem;
     overflow: visible;       /* IMPORTANT: do not scroll here */
+    transform: rotateX(180deg);
 }
 
 .term-column {
@@ -296,11 +314,16 @@
   </div>
 
 
-<div class="top-scroll-container">
-  <div id="term-tables" class="term-tables">
-    <!-- term columns injected here -->
+  <div class="scroll-meta">
+    Last updated 4 February, 2026. <b>Scroll Right to see More Terms! ------></b>
   </div>
-</div>
+   
+  
+  <div class="top-scroll-container">
+    <div id="term-tables" class="term-tables">
+      <!-- term columns injected here -->
+    </div>
+  </div>
 
 
   <!-- Modal -->
