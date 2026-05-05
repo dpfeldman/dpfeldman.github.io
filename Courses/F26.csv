@@ -1,71 +1,71 @@
-Name,LevelCode,Level
-Animals and Arguments,1,Introductory
-"Apples: History, Horticulture, Culture, and Science",3,Intermediate
-Art Since 1900: Harmony and Conflict,1,Introductory
-Audio Production as Compositional Tool,1,Introductory
-Beginning Contemporary Dance Technique,1,Introductory
-Boat Systems and Operations,3,Intermediate
-Career Ecology Seminar,1,Introductory
-"Changing Schools, Changing Society",1,Introductory
-Child Development,1,Introductory
-Children's Literature,1,Introductory
-Comparative Global Politics of Biodiversity & Climate Change,4,Intermediate/Advanced
-Composer's Ensemble,2,Introductory/Intermediate
-Congressional Elections Workshop,3,Intermediate
-Drawing Intensive / Developing a Studio Practice,4,Intermediate/Advanced
-Ecology: Natural History,2,Introductory/Intermediate
-"Education, the Media, and Society: Introductory",1,Introductory
-Endgame Decarbonization,2,Introductory/Intermediate
-Engaging Mindfully with AI: A Human Ecological Approach,6,
-"Equal Rights, Equal Voices: Articulating Suffrage",1,Introductory
-Fine Art Photography,4,Intermediate/Advanced
-Food Sovereignty,1,Introductory
-Forms of Poetry,2,Introductory/Intermediate
-Forty Studies that Changed Psychology,1,Introductory
-Fundamentals of Painting,1,Introductory
-Geographic Information Systems I: Foundations & Applications,2,Introductory/Intermediate
-Geology of Mt. Desert Island,1,Introductory
-"Hard(ly) Working: The Promises, Problems, & Politics of Work",2,Introductory/Intermediate
-Illuminated Landscapes: Experimental Animation & Projection,2,Introductory/Intermediate
-Intertidal Ecology,1,Introductory
-Introduction to Ceramic Sculpture,1,Introductory
-Introduction to Microeconomics,1,Introductory
-Introduction to Mycology,2,Introductory/Intermediate
-Introduction to Philosophy of Mind,2,Introductory/Intermediate
-Introduction to Photography,1,Introductory
-Introduction to Wildlife Ecology,1,Introductory
-Introductory Entomology,2,Introductory/Intermediate
-Invertebrate Zoology,3,Intermediate
-"Journeys: Writing for Voyagers, Trekkers, Wanderers",2,Introductory/Intermediate
-Little Magazines: Seminar in Contemp. Literary Publishing,2,Introductory/Intermediate
-Movement Training Basics Section A,1,Introductory
-Movement Training Basics Section B,1,Introductory
-Museums and the Making of Public Knowledge,2,Introductory/Intermediate
-Music Fundamentals,2,Introductory/Intermediate
-"Nature, Humans, and Philosophy",2,Introductory/Intermediate
-Neurobiology of Sensation and Perception,2,Introductory/Intermediate
-Nonfiction Filmmaking,2,Introductory/Intermediate
-"Peasants, Food, and Resistance",3,Intermediate
-Physics and Math of Sustainable Energy Lab A,1,Introductory
-Physics and Math of Sustainable Energy Lab B,1,Introductory
-Physics and Mathematics of Sustainable Energy,1,Introductory
-Place Through Pigments,2,Introductory/Intermediate
-Plant Systematics,5,Advanced
-Population and Community Ecology,4,Intermediate/Advanced
-Public Speaking Workshop,1,Introductory
-Rocks and Minerals,2,Introductory/Intermediate
-Spanish: Beginning II,1,Introductory
-Spanish: Communication and Discussion,5,Advanced
-Spanish: Immersive Beginning I,1,Introductory
-"Structuralism: Resistance, Change, Politics",2,Introductory/Intermediate
-The Camino,4,Intermediate/Advanced
-"The Craft, Theory, and Practice of Interviewing",5,Advanced
-The Human Ecology of Apples,4,Intermediate/Advanced
-The Human Ecology of Apples: Projects,4,Intermediate/Advanced
-The Measure of Our Lives: Toni Morrison Seminar,4,Intermediate/Advanced
-Trees and Shrubs of Mount Desert Island,2,Introductory/Intermediate
-Unraveling Writing Myths: Genre Explorations Across Contexts,2,Introductory/Intermediate
-Utopia/Dystopia,1,Introductory
-Waste,4,Intermediate/Advanced
-"Water, Design, and Environmental Futures",2,Introductory/Intermediate
-"Writing as Art, Craft, and Social Action",2,Introductory/Intermediate
+Name,LevelCode,Level,Meetings
+Animals and Arguments,1,Introductory,"[{""days"": ""TF"", ""start"": ""13:00:00"", ""end"": ""14:25:00""}]"
+"Apples: History, Horticulture, Culture, and Science",3,Intermediate,"[{""days"": ""RF"", ""start"": ""13:00:00"", ""end"": ""17:00:00""},{""days"": ""RF"", ""start"": ""08:00:00"", ""end"": ""12:00:00""}]"
+Art Since 1900: Harmony and Conflict,1,Introductory,"[{""days"": ""TF"", ""start"": ""14:35:00"", ""end"": ""16:00:00""}]"
+Audio Production as Compositional Tool,1,Introductory,"[{""days"": ""MR"", ""start"": ""13:00:00"", ""end"": ""16:00:00""}]"
+Beginning Contemporary Dance Technique,1,Introductory,"[{""days"": ""MR"", ""start"": ""16:10:00"", ""end"": ""17:35:00""}]"
+Boat Systems and Operations,3,Intermediate,"[{""days"": ""MR"", ""start"": ""09:00:00"", ""end"": ""10:25:00""},{""days"": ""W"", ""start"": ""09:00:00"", ""end"": ""12:00:00""}]"
+Career Ecology Seminar,1,Introductory,"[{""days"": ""TF"", ""start"": ""09:00:00"", ""end"": ""10:25:00""},{""days"": ""W"", ""start"": ""14:35:00"", ""end"": ""17:35:00""}]"
+"Changing Schools, Changing Society",1,Introductory,"[{""days"": ""W"", ""start"": ""16:10:00"", ""end"": ""19:45:00""}]"
+Child Development,1,Introductory,"[{""days"": ""TF"", ""start"": ""18:00:00"", ""end"": ""19:30:00""}]"
+Children's Literature,1,Introductory,"[{""days"": ""MR"", ""start"": ""18:30:00"", ""end"": ""20:00:00""}]"
+Comparative Global Politics of Biodiversity & Climate Change,4,Intermediate/Advanced,"[{""days"": ""TF"", ""start"": ""14:35:00"", ""end"": ""16:00:00""},{""days"": ""W"", ""start"": ""14:35:00"", ""end"": ""16:00:00""}]"
+Composer's Ensemble,2,Introductory/Intermediate,"[{""days"": ""M"", ""start"": ""13:00:00"", ""end"": ""14:25:00""},{""days"": ""R"", ""start"": ""13:00:00"", ""end"": ""16:00:00""}]"
+Congressional Elections Workshop,3,Intermediate,"[{""days"": ""TF"", ""start"": ""13:00:00"", ""end"": ""14:25:00""},{""days"": ""W"", ""start"": ""18:30:00"", ""end"": ""20:00:00""}]"
+Drawing Intensive / Developing a Studio Practice,4,Intermediate/Advanced,"[{""days"": ""MR"", ""start"": ""09:00:00"", ""end"": ""12:00:00""}]"
+Ecology: Natural History,2,Introductory/Intermediate,"[{""days"": ""MR"", ""start"": ""13:00:00"", ""end"": ""16:00:00""}]"
+"Education, the Media, and Society: Introductory",1,Introductory,"[{""days"": ""MR"", ""start"": ""10:35:00"", ""end"": ""12:00:00""}]"
+Endgame Decarbonization,2,Introductory/Intermediate,"[{""days"": ""TF"", ""start"": ""09:00:00"", ""end"": ""10:25:00""}]"
+Engaging Mindfully with AI: A Human Ecological Approach,6,,"[{""days"": ""MR"", ""start"": ""14:35:00"", ""end"": ""16:00:00""}]"
+"Equal Rights, Equal Voices: Articulating Suffrage",1,Introductory,"[{""days"": ""TF"", ""start"": ""09:00:00"", ""end"": ""10:25:00""}]"
+Fine Art Photography,4,Intermediate/Advanced,"[{""days"": ""MR"", ""start"": ""09:00:00"", ""end"": ""12:00:00""}]"
+Food Sovereignty,1,Introductory,"[{""days"": ""F"", ""start"": ""13:00:00"", ""end"": ""16:00:00""}]"
+Forms of Poetry,2,Introductory/Intermediate,"[{""days"": ""F"", ""start"": ""13:00:00"", ""end"": ""14:25:00""},{""days"": ""T"", ""start"": ""13:00:00"", ""end"": ""16:00:00""}]"
+Forty Studies that Changed Psychology,1,Introductory,"[{""days"": ""MR"", ""start"": ""10:35:00"", ""end"": ""12:00:00""}]"
+Fundamentals of Painting,1,Introductory,"[{""days"": ""MR"", ""start"": ""13:00:00"", ""end"": ""16:00:00""}]"
+Geographic Information Systems I: Foundations & Applications,2,Introductory/Intermediate,"[{""days"": ""TWF"", ""start"": ""09:00:00"", ""end"": ""10:25:00""}]"
+Geology of Mt. Desert Island,1,Introductory,"[{""days"": ""TF"", ""start"": ""09:00:00"", ""end"": ""12:00:00""}]"
+"Hard(ly) Working: The Promises, Problems, & Politics of Work",2,Introductory/Intermediate,"[{""days"": ""MR"", ""start"": ""13:00:00"", ""end"": ""14:25:00""}]"
+Illuminated Landscapes: Experimental Animation & Projection,2,Introductory/Intermediate,"[{""days"": ""TF"", ""start"": ""13:00:00"", ""end"": ""16:00:00""}]"
+Intertidal Ecology,1,Introductory,"[{""days"": ""MR"", ""start"": ""13:00:00"", ""end"": ""16:00:00""}]"
+Introduction to Ceramic Sculpture,1,Introductory,"[{""days"": ""MR"", ""start"": ""09:00:00"", ""end"": ""12:00:00""}]"
+Introduction to Microeconomics,1,Introductory,"[{""days"": ""MR"", ""start"": ""09:00:00"", ""end"": ""10:25:00""}]"
+Introduction to Mycology,2,Introductory/Intermediate,"[{""days"": ""F"", ""start"": ""11:00:00"", ""end"": ""16:00:00""},{""days"": ""T"", ""start"": ""13:00:00"", ""end"": ""16:00:00""}]"
+Introduction to Philosophy of Mind,2,Introductory/Intermediate,"[{""days"": ""MR"", ""start"": ""10:35:00"", ""end"": ""12:00:00""}]"
+Introduction to Photography,1,Introductory,"[{""days"": ""TF"", ""start"": ""14:35:00"", ""end"": ""17:35:00""}]"
+Introduction to Wildlife Ecology,1,Introductory,"[{""days"": ""MR"", ""start"": ""09:00:00"", ""end"": ""10:25:00""}]"
+Introductory Entomology,2,Introductory/Intermediate,"[{""days"": ""MR"", ""start"": ""10:35:00"", ""end"": ""12:00:00""},{""days"": ""T"", ""start"": ""13:00:00"", ""end"": ""16:00:00""}]"
+Invertebrate Zoology,3,Intermediate,"[{""days"": ""MR"", ""start"": ""09:00:00"", ""end"": ""10:25:00""},{""days"": ""T"", ""start"": ""13:00:00"", ""end"": ""16:00:00""}]"
+"Journeys: Writing for Voyagers, Trekkers, Wanderers",2,Introductory/Intermediate,"[{""days"": ""TF"", ""start"": ""14:35:00"", ""end"": ""16:00:00""}]"
+Little Magazines: Seminar in Contemp. Literary Publishing,2,Introductory/Intermediate,"[{""days"": ""TF"", ""start"": ""09:00:00"", ""end"": ""10:25:00""}]"
+Movement Training Basics Section A,1,Introductory,"[{""days"": ""T"", ""start"": ""18:00:00"", ""end"": ""21:00:00""},{""days"": ""TF"", ""start"": ""09:00:00"", ""end"": ""12:00:00""}]"
+Movement Training Basics Section B,1,Introductory,"[{""days"": ""T"", ""start"": ""18:00:00"", ""end"": ""21:00:00""},{""days"": ""TF"", ""start"": ""13:00:00"", ""end"": ""16:00:00""}]"
+Museums and the Making of Public Knowledge,2,Introductory/Intermediate,"[{""days"": ""M"", ""start"": ""14:35:00"", ""end"": ""17:35:00""}]"
+Music Fundamentals,2,Introductory/Intermediate,"[{""days"": ""WF"", ""start"": ""16:10:00"", ""end"": ""17:35:00""}]"
+"Nature, Humans, and Philosophy",2,Introductory/Intermediate,"[{""days"": ""TF"", ""start"": ""14:35:00"", ""end"": ""16:00:00""}]"
+Neurobiology of Sensation and Perception,2,Introductory/Intermediate,"[{""days"": ""F"", ""start"": ""13:00:00"", ""end"": ""16:00:00""},{""days"": ""TF"", ""start"": ""10:35:00"", ""end"": ""12:00:00""}]"
+Nonfiction Filmmaking,2,Introductory/Intermediate,"[{""days"": ""TF"", ""start"": ""09:00:00"", ""end"": ""12:00:00""}]"
+"Peasants, Food, and Resistance",3,Intermediate,"[{""days"": ""TF"", ""start"": ""10:35:00"", ""end"": ""12:00:00""}]"
+Physics and Math of Sustainable Energy Lab A,1,Introductory,"[{""days"": ""F"", ""start"": ""13:00:00"", ""end"": ""14:25:00""}]"
+Physics and Math of Sustainable Energy Lab B,1,Introductory,"[{""days"": ""F"", ""start"": ""14:35:00"", ""end"": ""16:00:00""}]"
+Physics and Mathematics of Sustainable Energy,1,Introductory,"[{""days"": ""TF"", ""start"": ""10:35:00"", ""end"": ""12:00:00""}]"
+Place Through Pigments,2,Introductory/Intermediate,"[{""days"": ""MR"", ""start"": ""13:00:00"", ""end"": ""16:00:00""}]"
+Plant Systematics,5,Advanced,"[{""days"": ""R"", ""start"": ""13:00:00"", ""end"": ""16:00:00""},{""days"": ""TF"", ""start"": ""09:00:00"", ""end"": ""10:25:00""}]"
+Population and Community Ecology,4,Intermediate/Advanced,"[{""days"": ""MR"", ""start"": ""09:00:00"", ""end"": ""10:25:00""}]"
+Public Speaking Workshop,1,Introductory,"[{""days"": ""M"", ""start"": ""16:10:00"", ""end"": ""20:00:00""}]"
+Rocks and Minerals,2,Introductory/Intermediate,"[{""days"": ""R"", ""start"": ""09:00:00"", ""end"": ""12:00:00""},{""days"": ""T"", ""start"": ""14:35:00"", ""end"": ""16:00:00""}]"
+Spanish: Beginning II,1,Introductory,"[{""days"": ""MTRF"", ""start"": ""09:00:00"", ""end"": ""10:25:00""},{""days"": ""W"", ""start"": ""08:00:00"", ""end"": ""10:00:00""}]"
+Spanish: Communication and Discussion,5,Advanced,"[{""days"": ""MTRF"", ""start"": ""10:35:00"", ""end"": ""12:00:00""}]"
+Spanish: Immersive Beginning I,1,Introductory,"[{""days"": ""MTRF"", ""start"": ""07:25:00"", ""end"": ""08:50:00""},{""days"": ""W"", ""start"": ""08:00:00"", ""end"": ""10:00:00""}]"
+"Structuralism: Resistance, Change, Politics",2,Introductory/Intermediate,"[{""days"": ""R"", ""start"": ""18:00:00"", ""end"": ""20:00:00""},{""days"": ""TF"", ""start"": ""13:00:00"", ""end"": ""14:25:00""}]"
+The Camino,4,Intermediate/Advanced,"[{""days"": ""N\A"", ""start"": ""00:00:00"", ""end"": ""00:00:00""}]"
+"The Craft, Theory, and Practice of Interviewing",5,Advanced,"[{""days"": ""MR"", ""start"": ""14:35:00"", ""end"": ""16:00:00""}]"
+The Human Ecology of Apples,4,Intermediate/Advanced,"[{""days"": ""N\A"", ""start"": ""00:00:00"", ""end"": ""00:00:00""}]"
+The Human Ecology of Apples: Projects,4,Intermediate/Advanced,"[{""days"": ""N\A"", ""start"": ""00:00:00"", ""end"": ""00:00:00""}]"
+The Measure of Our Lives: Toni Morrison Seminar,4,Intermediate/Advanced,"[{""days"": ""TF"", ""start"": ""10:35:00"", ""end"": ""12:00:00""}]"
+Trees and Shrubs of Mount Desert Island,2,Introductory/Intermediate,"[{""days"": ""MR"", ""start"": ""13:00:00"", ""end"": ""16:00:00""}]"
+Unraveling Writing Myths: Genre Explorations Across Contexts,2,Introductory/Intermediate,"[{""days"": ""MR"", ""start"": ""13:00:00"", ""end"": ""14:25:00""}]"
+Utopia/Dystopia,1,Introductory,"[{""days"": ""TF"", ""start"": ""10:35:00"", ""end"": ""12:00:00""}]"
+Waste,4,Intermediate/Advanced,"[{""days"": ""R"", ""start"": ""18:00:00"", ""end"": ""20:00:00""},{""days"": ""TF"", ""start"": ""10:35:00"", ""end"": ""12:00:00""}]"
+"Water, Design, and Environmental Futures",2,Introductory/Intermediate,"[{""days"": ""MR"", ""start"": ""13:00:00"", ""end"": ""14:25:00""},{""days"": ""W"", ""start"": ""14:35:00"", ""end"": ""16:00:00""}]"
+"Writing as Art, Craft, and Social Action",2,Introductory/Intermediate,"[{""days"": ""MR"", ""start"": ""14:35:00"", ""end"": ""16:00:00""}]"

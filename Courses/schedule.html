@@ -104,7 +104,7 @@
   </div>-->
   <div class="message-box">
     <button class="close-btn" onclick="this.parentElement.style.display='none'">×</button>
-    	<b>Click on Spring 2026 to load the spring courses</b><br>
+    	<b>Click on Fall 2026 to load the fall courses!</b><br>
     Courses are listed alphabetically. Click on a course to add its scheduled meetings to the weekly calendar. Click on the course again and the meeting times will be removed from the calendar.
   </div>
       <div class="hint"></div>
@@ -337,25 +337,25 @@ async function loadCsvFromSameDir(filename, niceName) {
   }
 }
 
-// Fall 2025
-document.getElementById('loadF25').addEventListener('click', () => {
-  loadCsvFromSameDir('F25.csv', 'Fall 2025');
-});
-
-// Winter 2026
-document.getElementById('loadW26').addEventListener('click', () => {
-  loadCsvFromSameDir('W26.csv', 'Winter 2026');
-});
-
-// Spring 2026
-document.getElementById('loadS26').addEventListener('click', () => {
-  loadCsvFromSameDir('S26.csv', 'Spring 2026');
-});
-
+    // Fall 2025
+    document.getElementById('loadF25').addEventListener('click', () => {
+	loadCsvFromSameDir('F25.csv', 'Fall 2025');
+    });
+    
+    // Winter 2026
+    document.getElementById('loadW26').addEventListener('click', () => {
+	loadCsvFromSameDir('W26.csv', 'Winter 2026');
+    });
+    
     // Spring 2026
     document.getElementById('loadS26').addEventListener('click', () => {
+	loadCsvFromSameDir('S26.csv', 'Spring 2026');
+    });
+    
+    // Spring 2026
+    document.getElementById('loadF26').addEventListener('click', () => {
 	loadCsvFromSameDir('F26.csv', 'Fall 2026');
-});
+    });
 
 
     
