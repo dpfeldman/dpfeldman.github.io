@@ -78,8 +78,9 @@
     Title, or you can sort by level, either low-to-high or high-to-low.</p>  
     <p>Use the 'Requirements' drop-down menu to see all classes that
       meet a particular requirement (AD, ADS, QR, etc).</p>
+
     <p>If you click on a course title, you will get a pop-up box
-      showing the course's description.</p>
+      showing the course's description. </p>
     <p>Some courses have <b>Bonus Information</b> listed. Click on the "Additional Information" button.</p>
     <p>  We make every attempt to keep the information on this
     page up to date. In the event that there is a discrepancy between
@@ -203,7 +204,7 @@
             <td>${row["CourseDivision"] ?? ''}</td>
             <td>${row["Level"] ?? ''}</td>
             <td>${bonusRaw ? '<button type="button" class="bonus-link" aria-haspopup="dialog">Additional Information</button>' : ''}</td>
-            <td>${row["Description"] ?? ''}</td>
+            <td>${row["CourseDescription"] ?? ''}</td>
             <td>${bonusRaw}</td>
           `;
           tbody.appendChild(tr);
