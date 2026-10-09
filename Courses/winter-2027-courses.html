@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>COA Course Offering: Spring 2026</title>
+  <title>COA Course Offering: Winter 2027</title>
   <!-- DataTables CSS -->
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" />
   <style>
@@ -55,7 +55,7 @@
 
     </head>
 <body>
-  <h1>Course Offering: Spring 2026</h1>
+  <h1>Course Offering: Winter 2027</h1>
   <h1>College of the Atlantic</h1>
 
 
@@ -73,13 +73,14 @@
   </div>
 
   <div>
-    <p>Below is a list of all classes offered in Spring 2026. You can
+    <p>Below is a list of all classes offered in Winter 2027. You can
     sort this list of classes alphabetically by Faculty or Course
     Title, or you can sort by level, either low-to-high or high-to-low.</p>  
     <p>Use the 'Requirements' drop-down menu to see all classes that
       meet a particular requirement (AD, ADS, QR, etc).</p>
+
     <p>If you click on a course title, you will get a pop-up box
-      showing the course's description.</p>
+      showing the course's description. </p>
     <p>Some courses have <b>Bonus Information</b> listed. Click on the "Additional Information" button.</p>
     <p>  We make every attempt to keep the information on this
     page up to date. In the event that there is a discrepancy between
@@ -184,7 +185,7 @@
     backdrop.setAttribute('aria-hidden', 'true');
   }
 
-  Papa.parse("./spring_courses_with_descriptions.csv", {
+  Papa.parse("./winter_courses_27_with_descriptions.csv", {
     download: true,
     header: true,
     complete: function (results) {
@@ -203,7 +204,7 @@
             <td>${row["CourseDivision"] ?? ''}</td>
             <td>${row["Level"] ?? ''}</td>
             <td>${bonusRaw ? '<button type="button" class="bonus-link" aria-haspopup="dialog">Additional Information</button>' : ''}</td>
-            <td>${row["Description"] ?? ''}</td>
+            <td>${row["CourseDescription"] ?? ''}</td>
             <td>${bonusRaw}</td>
           `;
           tbody.appendChild(tr);
