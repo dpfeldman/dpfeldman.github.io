@@ -101,7 +101,6 @@ h3 {
 	margin-left:0px;
 	background-color:#FFFFFF;
 	padding-bottom:6px;
-	background:url(img/background.png);
 }
 #main_right {
 	float:right;
@@ -111,7 +110,6 @@ h3 {
 	margin-left:0px;
 	background-color:#FFFFFF;
 	padding-bottom:6px;
-	background:url(img/background.png);
 }
 #main_left {
 	float:left;
@@ -121,7 +119,6 @@ h3 {
 	margin-left:0px;
 	background-color:#FFFFFF;
 	padding-bottom:6px;
-	background:url(img/background.png);
 }
 #maincontent p {
 	color:#333333;
@@ -207,4 +204,43 @@ h3 {
 }
 #footer hr {
 	color:#ff0000;
+}
+
+@media screen and (max-width: 600px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    #container {
+        width: 96%;
+    }
+
+    #main {
+        width: 100%;
+        font-size: 17px;
+    }
+
+    #maincontent p {
+        margin-left: 10px;
+        margin-right: 10px;
+        line-height: 1.5;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h1.big {
+        font-size: 42px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    h3 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
